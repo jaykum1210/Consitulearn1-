@@ -88,14 +88,16 @@ html, body {
     display: flex;
     align-items: center;
     gap: 5px;
-    padding: 5px;
+    /* padding: 5px; */
+    width: 23vw;
     border-radius: 15px;
     background: powderblue;
 }
 
 .search input {
     border: none;
-    padding: 5px;
+    padding: 15px;
+    width: 60vw;
     border-radius: 10px;
     font-size: 16px;
 }
@@ -288,8 +290,15 @@ hr {
 .course-container {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin: 40px 0;
+    align-items: center;
+    gap: 100px;
+
+}
+
+.coursesimg{
+    height: 40%;
+    width: 100%;
+    border-radius: 8px;
 }
 
 #course-button{
@@ -316,17 +325,16 @@ hr {
 }
 
 .intro-box {
-    width: 250px;
-    padding: 20px;
-    border: 2px solid #ddd;
+    background-color: rgb(245, 245, 245);
+    border: 2px solid rgb(204, 204, 204);
     border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 450px;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    position: relative;
-    overflow: hidden;
-    background-color: white;
-    cursor: pointer;
-    border: 2px solid black;
+    box-shadow: 0 6px 8px rgb(0,0,0,0.3);
+    transition: all 0.2s ease, height 0.2s ease;
+
 }
 
 .intro-box:hover {
@@ -342,10 +350,6 @@ hr {
     margin: 20px;
 }
 
-.intro-box p {
-    opacity: 0;
-    transition: opacity 0.3s;
-}
 
 .intro-box:hover p {
     opacity: 1;
@@ -353,8 +357,9 @@ hr {
 
 /* Changed #course-button to .course-button for class-based usage */
 .course-button {
-    background-color:blue;
+    background-color:rgb(46, 28, 163);
     color: white;
+    
     font-size: 100%;
     border-radius: 10px;
     border: 0px;
@@ -363,7 +368,7 @@ hr {
 }
 
 .course-button:hover {
-    background-color: rgb(3, 3, 162);
+    background-color: rgb(83, 83, 176);
     text-decoration: underline;
 }
 
@@ -414,21 +419,65 @@ hr {
     text-decoration: underline;
 }
 
+/* Footer */
 footer {
-    background-color: #333;
+
+    background-color:  #37475a;
     color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+    /* display: flex; */
     text-align: center;
-    padding: 5px;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    margin-bottom: 0px;
+    flex: 1;
+    margin: 10px;
 }
 
-footer a {
-    color: #1E90FF;
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
     text-decoration: none;
+    color: white;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: white;
+    width: 30px;
+    margin: 0 5px;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
 }
