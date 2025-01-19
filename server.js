@@ -1,60 +1,84 @@
-// Import necessary modules
 const express = require('express');
-const bodyParser = require('body-parser');
+const mysql = require('mysql2');
 const bcrypt = require('bcryptjs');
-const mongoose = require('mongoose');
-
-// Initialize Express app
+const bodyParser = require('body-parser');
 const app = express();
-const PORT = 3000;
 
-// Middleware to parse incoming JSON data
+// Middleware to parse JSON
 app.use(bodyParser.json());
 
-// Connect to MongoDB database
-mongoose.connect('mongodb://127.0.0.1:27017/constitulearn', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-}).then(() => console.log('MongoDB connected'))
-  .catch((err) => console.error('Database connection error:', err));
-
-// Create a User schema
-const userSchema = new mongoose.Schema({
-    username: { type: String, required: true, unique: true },
-    email: { type: String, required: true, unique: true },
-    password: { type: String, required: true },
+// Create a connection to the MySQL database
+const db = mysql.createConnection({
+  host: 'localhost',
+  user: 'root', // Replace with your MySQL username
+  password: '', // Replace with your MySQL password
+  database: 'constituLearn', // Replace with your MySQL database name
 });
 
-// Create User model
-const User = mongoose.model('User', userSchema);
+// Connect to MySQL
+db.connect((err) => {
+  if (err) {
+    console.error('Error connecting to MySQL:', err);
+  } else {
+    console.log('Connected to MySQL');
+  }
+});
 
-// Signup route
+// Sign-up Route
 app.post('/signup', async (req, res) => {
-    const { username, email, password } = req.body;
+  const { username, email, password } = req.body;
 
-    try {
-        // Hash the password using bcryptjs
-        const hashedPassword = await bcrypt.hash(password, 10);
-
-        // Save the new user to the database
-        const newUser = new User({
-            username,
-            email,
-            password: hashedPassword,
-        });
-
-        await newUser.save();
-
-        res.status(201).json({ message: 'User registered successfully!' });
-    } catch (err) {
-        if (err.code === 11000) { // Duplicate username or email
-            return res.status(400).json({ error: 'Email or username already exists' });
-        }
-        res.status(500).json({ error: 'Something went wrong, please try again' });
+  // Check if the user already exists
+  db.query('SELECT * FROM users WHERE email = ?', [email], async (err, results) => {
+    if (err) {
+      return res.status(500).json({ message: 'Database error', error: err });
     }
+
+    if (results.length > 0) {
+      return res.status(400).json({ message: 'Email already exists' });
+    }
+
+    // Hash the password before storing it
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    // Insert the new user into the database
+    db.query('INSERT INTO users (username, email, password) VALUES (?, ?, ?)', 
+      [username, email, hashedPassword], (err, results) => {
+        if (err) {
+          return res.status(500).json({ message: 'Error creating user', error: err });
+        }
+        res.status(201).json({ message: 'User created successfully' });
+      });
+  });
+});
+
+// Login Route
+app.post('/login', (req, res) => {
+  const { email, password } = req.body;
+
+  // Find user by email
+  db.query('SELECT * FROM users WHERE email = ?', [email], async (err, results) => {
+    if (err) {
+      return res.status(500).json({ message: 'Database error', error: err });
+    }
+
+    if (results.length === 0) {
+      return res.status(400).json({ message: 'Invalid email or password' });
+    }
+
+    const user = results[0];
+
+    // Compare the hashed password
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!isMatch) {
+      return res.status(400).json({ message: 'Invalid email or password' });
+    }
+
+    res.status(200).json({ message: 'Login successful' });
+  });
 });
 
 // Start the server
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
 });

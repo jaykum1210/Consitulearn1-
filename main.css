@@ -11,7 +11,15 @@ html, body {
     background-attachment: fixed;
     background-size: cover;
 }
-
+.chat-bot{
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
 .header {
     display: flex;
     justify-content: center;
@@ -24,7 +32,7 @@ html, body {
 .header img {
     width: 90px;
     height: 90px;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .header h1 {
@@ -96,9 +104,9 @@ html, body {
 
 .search input {
     border: none;
-    padding: 15px;
+    padding: 10px;
     width: 60vw;
-    border-radius: 10px;
+    border-radius: 20px;
     font-size: 16px;
 }
 
