@@ -118,7 +118,13 @@ html, body {
     border: none;
     border-radius: 25px;
 }
-
+#search-icon{
+    display: flex;
+}
+#search-icon i{
+    padding-left: 15px;
+    font-size: larger;
+}
 .search button:hover {
     background-color: rgb(200, 10, 10);
     text-decoration: underline;
