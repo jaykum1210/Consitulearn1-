@@ -74,13 +74,13 @@ html, body {
 }
 
 .signup button {
-    color: white;
+    color: #1e3a5f;
     padding: 10px 40px;
     border: none;
     border-radius: 15px;
-    background-color: rgb(239, 10, 10);
+    background-color:  lightgray;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
 }
 .signup a{
@@ -88,14 +88,14 @@ html, body {
     text-decoration: none;
 }
 .signup button:hover {
-    background-color: rgb(200, 10, 10);
+    background-color:;
     text-decoration: underline;
 }
 
 .search {
     display: flex;
     align-items: center;
-    gap: 5px;
+    /* gap: 5px; */
     /* padding: 5px; */
     width: 23vw;
     border-radius: 15px;
@@ -106,28 +106,29 @@ html, body {
     border: none;
     padding: 10px;
     width: 60vw;
-    border-radius: 20px;
+    border-radius: 20px 0 0 20px;
     font-size: 16px;
 }
 
 .search button {
     padding: 12px;
     cursor: pointer;
-    background-color: rgb(239, 10, 10);
-    color: white;
+    background-color: lightgray;
+    color: #1e3a5f;
     border: none;
-    border-radius: 25px;
+    border-radius: 0 20px 20px 0;
 }
+
 #search-icon{
+    border: none;
     display: flex;
+    font-size: 18px;
 }
-#search-icon i{
-    padding-left: 15px;
-    font-size: larger;
-}
+
 .search button:hover {
     background-color: rgb(200, 10, 10);
-    text-decoration: underline;
+    text-decoration: none;
+
 }
 
 .welcome {

@@ -102,7 +102,9 @@
     color: red;
     text-decoration: underline;
 }
-
+#terms{
+    align-items: center;
+}
 /* Footer Styling */
 footer {
     background-color: #333;
