@@ -88,7 +88,7 @@ html, body {
     text-decoration: none;
 }
 .signup button:hover {
-    background-color:;
+    /* background-color:; */
     text-decoration: underline;
 }
 
