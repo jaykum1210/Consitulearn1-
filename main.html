@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConstituLearn</title>
+    <title>EduCrack</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="website-icon.png" type="image/png">
+    <link rel="icon" href="website icon.webp" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=devnagri">
 </head>
 
 <body>
     <!--chat bot in bottom right-->
     <div id="chat-bot">
         <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds" alt="chat bot image" target="_blank">
-            <img src="chat-bot.png" class="chat-bot">
+            <img src="chat box.jpeg" class="chat-bot" alt="chat Bot Image">
         </a>
     </div>
     <!--header with image, name, signup, login, list, and search-->
     <div class="header">
         <div class="header-left">
-            <a href="main.html"> <img
-                    src="https://mrkrish07.github.io/Constitu1/DALL%C2%B7E%202024-11-18%2006.58.42%20-%20A%20modern%20and%20sleek%20logo%20design%20for%20'ConstituLearn'.%20The%20logo%20should%20feature%20a%20professional%20and%20academic%20feel,%20with%20a%20stylized%20book%20or%20Constitution%20the.webp"></a>
-            <h1>ConstituLearn</h1>
+            <a href="main.html"> <img src="website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
         </div>
         <div class="items">
             <ul>
-                <li title="Know about the website"> <a href="about.html" target="_parent"> About us</a></li>
-                <li title="Courses available"><a href="#courses"> Courses </a></li>
-                <li title="Video,Notes,etc..."><a href="#resources">Resources</a></li>
-                <li title="Test & Games"><a href="#quizzes">Quizzes</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li id="course-dropdown">Courses
+                    <ul class="course-dropdown">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>                    
+                </li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#quizzes">Quizzes</a></li>
             </ul>
         </div>
 
@@ -50,137 +56,91 @@
     </div>
     <!--start of website-->
     <div class="welcome">
-        <img src="https://mrkrish07.github.io/Constitu1/DALL%C2%B7E%202024-11-18%2006.58.42%20-%20A%20modern%20and%20sleek%20logo%20design%20for%20'ConstituLearn'.%20The%20logo%20should%20feature%20a%20professional%20and%20academic%20feel,%20with%20a%20stylized%20book%20or%20Constitution%20the.webp"
-            style="width: 150px;height: 150px;border-radius: 20px;"><br>
-        <em><u>Welcome To ConstituLearn</u></em>
-        <p style="font-weight: normal; font-size: 25px;text-align: center;padding: 20px;">
-            A Platform To Learn About The Constitution Of India In An Interactive Way.
+        <img src="website logo.webp" alt="Educrack logo" style="width: 150px;height: 150px;border-radius: 20px;"><br>
+        <em><u>Welcome To EduCrack</u></em>
+        <p style="font-weight: normal; font-size: 25px;text-align: center;padding: 20px; font-family:Arial, Helvetica, sans-serif ;align-self: start;">
+            EduCrack: Bridging the Gap Between Hard Work and Success!
         </p>
     </div>
     <!--About Indian Constitution,Legislature,Laws,Fundamental,etc...-->
     <div class="parts" id="explore">
-        <h1>Explore the Three Major Components of Constitution</h1>
+        <h3>Browse Our Courses: Expert Preparation for JEE, NEET, UPSC, and CLAT.</h3>
     </div>
     <!--branches of constitution-->
     <div class="boxes">
         <div class="box">
-            <img src="legislature.webp">
-            <h1>Legislature</h1>
-            <h2>The branch resposible for Making <br>Laws</h2>
+            <img src="jee-course.jpg" alt="JEE Course Logo">
+            <h1>JEE</h1>
+            <h2>Unlock your JEE success with our expert courses.</h2>
+            <a href="#jee-goto"><button id="main-course-button"> Explore Course</button></a>
         </div>
         <div class="box">
-            <img src="executive1.webp">
-            <h1>Executive</h1>
-            <h2>The branch responsible for Enforcing <br>laws</h2>
+            <img src="neet-course.jpg" alt="NEET Course Logo">
+            <h1>NEET</h1>
+            <h2>Prepare for NEET with confidence and precision.</h2>
+            <a href="#neet-goto"><button id="main-course-button"> Explore Course</button></a>
         </div>
         <div class="box">
-            <img src="judiciary.webp">
-            <h1>Judiciary</h1>
-            <h2>The branch responsible for interpreting <br>Laws</h2>
+            <img src="clat-course.jpg" alt="CLAT Course Logo">
+            <h1>CLAT</h1>
+            <h2>Crack CLAT with tailored courses for success.</h2>
+            <a href="#clat-goto"><button id="main-course-button"> Explore Course</button></a>
+        </div>
+        <div class="box">
+            <img src="upsc-course.jpg" alt="UPSC Course Logo">
+            <h1>UPSC</h1>
+            <h2>Your path to UPSC excellence starts here.</h2>
+            <a href="#upsc-goto"><button id="main-course-button"> Explore Course</button></a>
         </div>
     </div>
     <!--Horizontal line-->
     <hr>
-    <!--Course-->
-    <div class="courses" id="courses">
-        <h1>Courses</h1>
-    </div>
-    <!--types of courses-->
-    <div class="cou-box">
-        <div class="course-box" id="basic">
-            <img src="basic.webp"><br>
-            <h2>Basic Courses</h2>
-            <h4>
-                <ul>
-                    <li>Introduction to Indian Constitution</li>
-                    <li>Fundamental Rights and Duties</li>
-                    <li>Structure of the Government</li>
-                    <li>Electoral System & Politics</li>
-                </ul>
-            </h4>
-            <button class="button1">Check Now</button>
-        </div>
-        <div class="course-box">
-            <img src="intermediate.webp"><br>
-            <h2>Intermediate Courses</h2>
-            <h4>
-                <ul>
-                    <li>Indian Federalism</li>
-                    <li>Judiciary System in India</li>
-                    <li>Law-Making Process</li>
-                    <li>Amendments to the Constitution</li>
-                </ul>
-            </h4>
-            <button class="button1">Check Now</button>
-        </div>
-        <div class="course-box">
-            <img src="advance.jpg"><br>
-            <h2>Advance Course</h2>
-            <h4>
-                <ul>
-                    <li>Constitutional Law</li>
-                    <li>Criminal Law</li>
-                    <li>Contract Law</li>
-                    <li>Civil Procedure Code (CPC)</li>
-                </ul>
-            </h4>
-            <button class="button1">Check Now</button>
-        </div>
-    </div>
-    <!--horizontal line-->
-    <br>
-    <hr><br>
     <!--Basic course-->
-    <div class="basic-course">
-        <h1>Basic Courses Available</h1>
+    <div class="basic-course" id="jee-goto">
+        <h1>JEE Courses</h1>
     </div>
-    <!--types of basic courses-->
-    <!--full area of the box-->
     <div class="course-container">
         <!--basic course 1-->
         <div class="intro-box">
-            <h2>Basic Course 1</h2>
-            <img src="Evolution.jpg" alt="evolution" class="coursesimg">
-            <h3> Introduction to the Indian Constitution</h3>
-            <p>Learn the foundation of the Indian Constitution, including its Preamble, objectives,
-                and guiding principles that define the nation's identity and governance.</p>
+            <h2>Physics</h2>
+            <img src="physics course.jpg" alt="Physics Course" class="coursesimg">
+            <h3>JEE Physics Unleashed</h3>
+            <p>Explore the principles of Physics with in-depth explanations, real-world applications, and problem-solving techniques.</p>
             <!--button-->
             <button id=course-button>Enroll Now</button>
         </div>
         <!--basic course 2-->
         <div class="intro-box">
-            <h2>Basic Course 2</h2>
-            <img src="enrol2.webp" alt="" class="coursesimg">
-            <h3>Fundamental Rights and Duties</h3>
-            <p>Understand the rights guaranteed to every citizen and the duties expected from them
-                to ensure the smooth functioning of society.</p>
+            <h2>Chemistry</h2>
+            <img src="chemistry course.jpg" alt="Chemistry Course" class="coursesimg">
+            <h3>JEE Chemistry Secrets</h3>
+            <p>Understand the core concepts of Chemistry through interactive learning, practical insights, and structured problem-solving.</p>
             <!--button-->
             <button id=course-button>Enroll Now</button>
         </div>
         <!--basic course 3-->
         <div class="intro-box">
-            <h2>Basic Course 3</h2>
-            <img src="Executive.webp" alt="" class="coursesimg">
-            <h3>Structure of Judiciary in India</h3>
-            <p>Get insights into the Indian judiciary's hierarchy, its role in justice delivery, and
-                the importance of judicial independence.</p>
+            <h2>Maths</h2>
+            <img src="maths course.jpg" alt="Maths Course" class="coursesimg">
+            <h3>JEE Math Decoded</h3>
+            <p>Master Mathematics with step-by-step explanations, shortcut techniques, and rigorous problem-solving practice.</p>
             <!--button-->
             <button id=course-button>Enroll Now</button>
         </div>
 
     </div>
-    <!-- intermediate courses-->
-    <div class="basic-course">
-        <h1>Intermediate Course Available</h1>
+    <!-- Neet courses-->
+    <div class="basic-course" id="neet-goto">
+        <h1>NEET Courses</h1>
     </div>
-    <!-- type of intermediate courses-->
+    <!-- type of Neet courses-->
     <!--full area of the box-->
     <div class="course-container">
         <!--intermediate course 1-->
         <div class="intro-box">
-            <h2>Intermediate Course 1</h2>
-            <img src="intermediate1.jpg" alt="" class="coursesimg">
-            <h3>Indian Federalism</h3>
+            <h2>Physics</h2>
+            <img src="physics neet course.jpg" alt="Physics Course" class="coursesimg">
+            <h3>NEET Physics Simplified</h3>
             <p>Federalism is a system of government where power is shared between a central
                 authority and regional units, ensuring local governance within a unified state.</p>
             <!--button-->
@@ -188,9 +148,9 @@
         </div>
         <!--intermediate course 2-->
         <div class="intro-box">
-            <h2>Intermediate Course 2</h2>
-            <img src="intermediate2.jpg" alt="" class="coursesimg">
-            <h3>Judiciary System in India</h3>
+            <h2>Chemistry</h2>
+            <img src="chemistry neet course.jpg" alt="Chemistry Course" class="coursesimg">
+            <h3>NEET Chemistry Explained</h3>
             <p>The Judiciary System in India is an independent body that ensures justice
                 through its hierarchical structure of courts, with the Supreme Court at the top.</p>
             <!--button-->
@@ -198,9 +158,9 @@
         </div>
         <!--intermediate course 3-->
         <div class="intro-box">
-            <h2>Intermediate Course 3</h2>
-            <img src="lawmaking.jpg" alt="" class="coursesimg">
-            <h3>Law-Making Process</h3>
+            <h2>Biology</h2>
+            <img src="biology neet course.jpg" alt="Biology Course" class="coursesimg">
+            <h3>Mastering NEET Biology</h3>
             <p>The Law-Making Process is the formal procedure through which laws are proposed,
                 discussed, debated, and enacted by legislative bodies to govern society.</p>
             <!--button-->
@@ -208,44 +168,74 @@
         </div>
 
     </div>
-    <!-- advance courses-->
-    <div class="basic-course">
-        <h1>Advance Course Available</h1>
+    <div class="basic-course" id="clat-goto">
+        <h1>CLAT Courses</h1>
     </div>
     <!-- type of intermediate courses-->
     <!--full area of the box-->
     <div class="course-container">
         <!--advance course 1-->
         <div class="intro-box">
-            <h2>Advance Course 1</h2>
-            <img src="constitution-law.png" alt="" class="coursesimg">
-            <h3>Constitutional Law</h3>
-            <p>Constitutional Law deals with the interpretation and application of a country's
-                constitution, defining the structure, powers, and responsibilities of government institutions.</p>
+            <h2>Reasoning & Logic</h2>
+            <img src="Compulsory upsc.jpg" alt="Compulsory Subjects" class="coursesimg">
+            <h3>Enhance Logical Abilities</h3>
+            <p>Enhance your problem-solving and critical thinking abilities with various reasoning techniques and logical challenges.</p>
             <!--button-->
             <button id=course-button>Enroll Now</button>
         </div>
         <!--advance course 2-->
         <div class="intro-box">
-            <h2>Advance Course 2</h2>
-            <img src="criminal-law.png" alt="" class="coursesimg">
-            <h3>Criminal Law</h3>
-            <p>Criminal Law governs crimes and punishments, outlining the legal process for investigation, prosecution,
-                defense, and sentencing to ensure justice and uphold public safety.<br></p>
+            <h2>Language & Communication</h2>
+            <img src="Humanities and social science.jpg" alt="" class="coursesimg">
+            <h3>Master English Proficiency</h3>
+            <p>Enhance your language skills by improving reading comprehension, grammar, vocabulary, and staying updated with current affairs.</p>
             <!--button-->
             <button id=course-button>Enroll Now</button>
         </div>
         <!--advance course 3-->
         <div class="intro-box">
-            <h2>Advance Course 3</h2>
-            <img src="contract-law.png" alt="" class="coursesimg">
-            <h3>Contract Law</h3>
-            <p> Contract Law defines the rules for creating, enforcing, and resolving disputes in agreements, ensuring
-                parties fulfill their legal obligations and protecting mutual interests.</p>
+            <h2>Quantitative & Data Skills</h2>
+            <img src="science course.jpg" alt="" class="coursesimg">
+            <h3>Strengthen Math & Analysis</h3>
+            <p> Build a strong foundation in mathematics and data interpretation to tackle real-world problems with confidence.</p>
             <!--button-->
             <button id=course-button>Enroll Now</button>
         </div>
-
+    </div>
+    <!-- advance courses-->
+    <div class="basic-course" id="upsc-goto"> 
+        <h1>UPSC Courses</h1>
+    </div>
+    <!-- type of intermediate courses-->
+    <!--full area of the box-->
+    <div class="course-container">
+        <!--advance course 1-->
+        <div class="intro-box">
+            <h2>Compulsory Subjects</h2>
+            <img src="Compulsory upsc.jpg" alt="Compulsory Subjects" class="coursesimg">
+            <h3>Core Subjects for Success</h3>
+            <p>Covers General Studies, Ethics, English, and Indian Language, focusing on history, polity, and governance.</p>
+            <!--button-->
+            <button id=course-button>Enroll Now</button>
+        </div>
+        <!--advance course 2-->
+        <div class="intro-box">
+            <h2>Humanities & Social Sciences</h2>
+            <img src="Humanities and social science.jpg" alt="" class="coursesimg">
+            <h3>Explore Society & Culture</h3>
+            <p>Includes Anthropology, Geography, Political Science, Sociology, History, Law, Philosophy, and Psychology, exploring society and governance.</p>
+            <!--button-->
+            <button id=course-button>Enroll Now</button>
+        </div>
+        <!--advance course 3-->
+        <div class="intro-box">
+            <h2>Science & Technology</h2>
+            <img src="science course.jpg" alt="" class="coursesimg">
+            <h3>Understand Innovation & Progress</h3>
+            <p>Covers Physics, Chemistry, Mathematics, Zoology, Botany, Engineering, Agriculture, and Medical Science, focusing on science and technology.</p>
+            <!--button-->
+            <button id=course-button>Enroll Now</button>
+        </div>
     </div>
     <!--horizontal line-->
     <hr>

@@ -67,7 +67,8 @@
 .header img {
     width: 90px;
     height: 90px;
-    border-radius: 30px;
+    border-radius: 40px;
+    padding: 20px;
 }
 
 .header h1 {
@@ -99,12 +100,10 @@
 
 .header li a:hover,
 .header li a:active {
-    color: red;
+    /* color: red; */
     text-decoration: underline;
 }
-#terms{
-    align-items: center;
-}
+
 /* Footer Styling */
 footer {
     background-color: #333;
