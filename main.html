@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="website icon.webp" type="image/png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=devnagri">
 </head>
 
 <body>
@@ -20,14 +19,17 @@
     <!--header with image, name, signup, login, list, and search-->
     <div class="header">
         <div class="header-left">
+            <!--website logo-->
             <a href="main.html"> <img src="website logo.webp" alt="Educrack Logo"></a>
+            <!--website name-->
             <h1>EduCrack</h1>
         </div>
+        <!--Header list-->
         <div class="items">
             <ul>
                 <li><a href="#about">About Us</a></li>
-                <li id="course-dropdown">Courses
-                    <ul class="course-dropdown">
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
                         <li class="course-names"><a href="#jee-goto">JEE</a></li>
                         <li class="course-names"><a href="#neet-goto">NEET</a></li>
                         <li class="course-names"><a href="#clat-goto">CLAT</a></li>
@@ -62,30 +64,34 @@
             EduCrack: Bridging the Gap Between Hard Work and Success!
         </p>
     </div>
-    <!--About Indian Constitution,Legislature,Laws,Fundamental,etc...-->
+    <!--About Courses-->
     <div class="parts" id="explore">
         <h3>Browse Our Courses: Expert Preparation for JEE, NEET, UPSC, and CLAT.</h3>
     </div>
-    <!--branches of constitution-->
+    <!--Courses Available-->
     <div class="boxes">
+        <!--Box 1 Jee-->
         <div class="box">
             <img src="jee-course.jpg" alt="JEE Course Logo">
             <h1>JEE</h1>
             <h2>Unlock your JEE success with our expert courses.</h2>
             <a href="#jee-goto"><button id="main-course-button"> Explore Course</button></a>
         </div>
+        <!--Box 2 Neet-->
         <div class="box">
             <img src="neet-course.jpg" alt="NEET Course Logo">
             <h1>NEET</h1>
             <h2>Prepare for NEET with confidence and precision.</h2>
             <a href="#neet-goto"><button id="main-course-button"> Explore Course</button></a>
         </div>
+        <!--Box 3 Clat-->
         <div class="box">
             <img src="clat-course.jpg" alt="CLAT Course Logo">
             <h1>CLAT</h1>
             <h2>Crack CLAT with tailored courses for success.</h2>
             <a href="#clat-goto"><button id="main-course-button"> Explore Course</button></a>
         </div>
+        <!--Box 4 Upsc-->
         <div class="box">
             <img src="upsc-course.jpg" alt="UPSC Course Logo">
             <h1>UPSC</h1>
@@ -95,21 +101,21 @@
     </div>
     <!--Horizontal line-->
     <hr>
-    <!--Basic course-->
+    <!--Jee course-->
     <div class="basic-course" id="jee-goto">
         <h1>JEE Courses</h1>
     </div>
     <div class="course-container">
-        <!--basic course 1-->
+        <!--Jee Physics-->
         <div class="intro-box">
             <h2>Physics</h2>
             <img src="physics course.jpg" alt="Physics Course" class="coursesimg">
             <h3>JEE Physics Unleashed</h3>
             <p>Explore the principles of Physics with in-depth explanations, real-world applications, and problem-solving techniques.</p>
             <!--button-->
-            <button id=course-button>Enroll Now</button>
+            <a href="physics-jee.html" target="_parent"><button id=course-button >Enroll Now</button></a>
         </div>
-        <!--basic course 2-->
+        <!--Jee Chemistry-->
         <div class="intro-box">
             <h2>Chemistry</h2>
             <img src="chemistry course.jpg" alt="Chemistry Course" class="coursesimg">
@@ -118,7 +124,7 @@
             <!--button-->
             <button id=course-button>Enroll Now</button>
         </div>
-        <!--basic course 3-->
+        <!--Jee Maths-->
         <div class="intro-box">
             <h2>Maths</h2>
             <img src="maths course.jpg" alt="Maths Course" class="coursesimg">
@@ -136,7 +142,7 @@
     <!-- type of Neet courses-->
     <!--full area of the box-->
     <div class="course-container">
-        <!--intermediate course 1-->
+        <!--Neet Physics-->
         <div class="intro-box">
             <h2>Physics</h2>
             <img src="physics neet course.jpg" alt="Physics Course" class="coursesimg">
@@ -146,7 +152,7 @@
             <!--button-->
             <button id=course-button>Enroll Now</button>
         </div>
-        <!--intermediate course 2-->
+        <!--Neet Chemsitry-->
         <div class="intro-box">
             <h2>Chemistry</h2>
             <img src="chemistry neet course.jpg" alt="Chemistry Course" class="coursesimg">
@@ -156,7 +162,7 @@
             <!--button-->
             <button id=course-button>Enroll Now</button>
         </div>
-        <!--intermediate course 3-->
+        <!--Neet Biology-->
         <div class="intro-box">
             <h2>Biology</h2>
             <img src="biology neet course.jpg" alt="Biology Course" class="coursesimg">
@@ -168,13 +174,14 @@
         </div>
 
     </div>
+    <!--Clat Course-->
     <div class="basic-course" id="clat-goto">
         <h1>CLAT Courses</h1>
     </div>
-    <!-- type of intermediate courses-->
+    <!-- type of clat course-->
     <!--full area of the box-->
     <div class="course-container">
-        <!--advance course 1-->
+        <!--Reasoning & Logic in clat-->
         <div class="intro-box">
             <h2>Reasoning & Logic</h2>
             <img src="Compulsory upsc.jpg" alt="Compulsory Subjects" class="coursesimg">
@@ -183,7 +190,7 @@
             <!--button-->
             <button id=course-button>Enroll Now</button>
         </div>
-        <!--advance course 2-->
+        <!--Language and Communication course-->
         <div class="intro-box">
             <h2>Language & Communication</h2>
             <img src="Humanities and social science.jpg" alt="" class="coursesimg">
@@ -192,7 +199,7 @@
             <!--button-->
             <button id=course-button>Enroll Now</button>
         </div>
-        <!--advance course 3-->
+        <!--Quantitative & Data Skills Course-->
         <div class="intro-box">
             <h2>Quantitative & Data Skills</h2>
             <img src="science course.jpg" alt="" class="coursesimg">
@@ -202,14 +209,14 @@
             <button id=course-button>Enroll Now</button>
         </div>
     </div>
-    <!-- advance courses-->
+    <!-- Upsc Course-->
     <div class="basic-course" id="upsc-goto"> 
         <h1>UPSC Courses</h1>
     </div>
-    <!-- type of intermediate courses-->
+    <!-- type of Upsc curse-->
     <!--full area of the box-->
     <div class="course-container">
-        <!--advance course 1-->
+        <!---->
         <div class="intro-box">
             <h2>Compulsory Subjects</h2>
             <img src="Compulsory upsc.jpg" alt="Compulsory Subjects" class="coursesimg">

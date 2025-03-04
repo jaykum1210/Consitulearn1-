@@ -1,17 +1,19 @@
 html {
     scroll-behavior: smooth;
-}  
+}
 
-html, body {
-    height: 220%;
+html,
+body {
     margin: 0;
     padding: 0;
+    min-height: 100vh;
     background: linear-gradient(to bottom, rgba(135, 206, 235, 0.7), rgba(255, 255, 255, 0.3));
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-.chat-bot{
+
+.chat-bot {
     height: 60px;
     width: 60px;
     position: fixed;
@@ -20,6 +22,7 @@ html, body {
     border: 2px solid black;
     border-radius: 50%;
 }
+
 .header {
     display: flex;
     justify-content: center;
@@ -61,23 +64,26 @@ html, body {
     cursor: pointer;
 }
 
-.header li a:link, 
+.header li a:link,
 .header li a:visited {
-    color: black; 
+    color: black;
     text-decoration: none;
 }
 
-.header li a:hover, 
+.header li a:hover,
 .header li a:active {
-        text-decoration: underline;
-}
-#course-dropdown {
-    position: relative;
-}
-#course-dropdown:hover{
     text-decoration: underline;
 }
-#course-dropdown .course-dropdown {
+
+.course-dropdown {
+    position: relative;
+}
+
+.course-dropdown:hover {
+    text-decoration: underline;
+}
+
+.course-dropdown .course-drop {
     display: none;
     position: absolute;
     top: 100%;
@@ -91,11 +97,11 @@ html, body {
     z-index: 1000;
 }
 
-#course-dropdown:hover .course-dropdown {
+.course-dropdown:hover .course-drop {
     display: block;
 }
 
-#course-dropdown .course-dropdown li a {
+.course-dropdown .course-drop li a {
     color: black;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
@@ -103,7 +109,7 @@ html, body {
     display: block;
 }
 
-#course-dropdown .course-dropdown li a:hover {
+.course-dropdown .course-drop li a:hover {
     background-color: #f0f0f0;
 }
 
@@ -112,15 +118,17 @@ html, body {
     padding: 10px 40px;
     border: none;
     border-radius: 15px;
-    background-color:  lightgray;
+    background-color: lightgray;
     cursor: pointer;
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
 }
-.signup a{
+
+.signup a {
     color: white;
     text-decoration: none;
 }
+
 .signup button:hover {
     text-decoration: underline;
 }
@@ -150,7 +158,7 @@ html, body {
     border-radius: 0 20px 20px 0;
 }
 
-#search-icon{
+#search-icon {
     border: none;
     display: flex;
     font-size: 18px;
@@ -181,7 +189,7 @@ html, body {
 .boxes {
     display: flex;
     gap: 70px;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     width: 75%;
     margin: auto;
@@ -217,7 +225,8 @@ html, body {
 .box h2 {
     font-size: 15px;
 }
-#main-course-button{
+
+#main-course-button {
     background-color: #ccc;
     color: black;
     width: 150px;
@@ -226,10 +235,12 @@ html, body {
     border-radius: 20px;
     font-size: 14px;
 }
-#main-course-button:hover{
+
+#main-course-button:hover {
     text-decoration: underline;
     cursor: pointer;
 }
+
 hr {
     border: 1.5px solid black;
     margin-top: 50px;
@@ -260,7 +271,7 @@ hr {
     width: 300px;
     height: 450px;
     text-align: center;
-    box-shadow: 0 6px 8px rgb(0,0,0,0.3);
+    box-shadow: 0 6px 8px rgb(0, 0, 0, 0.3);
     transition: all 0.2s ease, height 0.2s ease;
 }
 
@@ -296,7 +307,7 @@ hr {
 }
 
 .button1 {
-    background-color:blue;
+    background-color: blue;
     color: white;
     font-size: 100%;
     border-radius: 10px;
@@ -326,18 +337,18 @@ hr {
 
 }
 
-.coursesimg{
+.coursesimg {
     height: 50%;
     width: 90%;
     border-radius: 8px;
 }
 
-#course-button{
+#course-button {
     background-color: #007bff;
     color: white;
     font-size: 16px;
     padding: 12px 30px;
-    border: none; 
+    border: none;
     border-radius: 25px;
     cursor: pointer;
     text-align: center;
@@ -363,7 +374,7 @@ hr {
     width: 350px;
     height: 550px;
     text-align: center;
-    box-shadow: 0 6px 8px rgb(0,0,0,0.3);
+    box-shadow: 0 6px 8px rgb(0, 0, 0, 0.3);
     transition: all 0.2s ease, height 0.2s ease;
 
 }
@@ -389,9 +400,9 @@ hr {
 
 /* Changed #course-button to .course-button for class-based usage */
 .course-button {
-    background-color:rgb(46, 28, 163);
+    background-color: rgb(46, 28, 163);
     color: white;
-    
+
     font-size: 100%;
     border-radius: 10px;
     border: 0px;
@@ -419,6 +430,7 @@ hr {
     column-gap: 150px;
     padding: 40px;
 }
+
 .resource {
     background-color: rgb(245, 245, 245);
     border: 2px solid rgb(204, 204, 204);
@@ -454,7 +466,7 @@ hr {
 /* Footer */
 footer {
 
-    background-color:  #37475a;
+    background-color: #37475a;
     color: white;
     padding: 20px 0;
 }

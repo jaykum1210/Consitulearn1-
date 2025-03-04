@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Physics Topics</title>
+  <style>
+    /* Basic Page Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      text-align: center;
+    }
+
+    h1 {
+      color: #003366;
+      margin: 20px 0;
+    }
+
+    /* Accordion Container */
+    .accordion-container {
+      width: 60%;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Details and Summary Styling */
+    details {
+      margin: 10px 0;
+      border-radius: 5px;
+      overflow: hidden;
+      background: #e6f2ff;
+      text-align: left;
+      transition: background 0.3s ease;
+    }
+
+    summary {
+      background: #007acc;
+      color: white;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      list-style: none;
+      outline: none;
+    }
+
+    /* Remove default marker */
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details[open] summary {
+      background: #005b99;
+    }
+
+    .accordion-content {
+      padding: 15px;
+      font-size: 16px;
+      color: #003366;
+    }
+
+    .accordion-content p {
+      margin: 5px 0;
+      padding-left: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Physics Topics & Subtopics</h1>
+
+  <div class="accordion-container">
+    <!-- Accordion Item 1 -->
+    <details>
+      <summary>Motion & Kinematics</summary>
+      <div class="accordion-content">
+        <p>✅ Speed</p>
+        <p>✅ Velocity</p>
+        <p>✅ Acceleration</p>
+      </div>
+    </details>
+
+    <!-- Accordion Item 2 -->
+    <details>
+      <summary id="">Newton’s Laws of Motion</summary>
+      <div class="accordion-content">
+        <p>✅ First Law - Law of Inertia</p>
+        <p>✅ Second Law - F = ma</p>
+        <p>✅ Third Law - Action & Reaction</p>
+      </div>
+    </details>
+
+    <!-- Accordion Item 3 -->
+    <details>
+      <summary>Work, Energy & Power</summary>
+      <div class="accordion-content">
+        <p>✅ Work Done</p>
+        <p>✅ Kinetic & Potential Energy</p>
+        <p>✅ Power & Efficiency</p>
+      </div>
+    </details>
+  </div>
+
+</body>
+</html>
+        
