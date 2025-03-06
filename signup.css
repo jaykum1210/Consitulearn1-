@@ -28,8 +28,8 @@
 
 .signup-form input[type="text"],
 .signup-form input[type="email"],
-.signup-form input[type="password"],
-.signup-form input[type="checkbox"] {
+.signup-form input[type="password"]
+{
     width: 100%;
     padding: 10px;
     margin-top: 5px;
