@@ -239,6 +239,7 @@ body {
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 /* Details & Summary for Accordion */
 details {
     margin: 10px 0;
@@ -284,17 +285,98 @@ details[open] summary {
     margin: 5px 0;
     padding-left: 10px;
 }
-.accordion-content a {
+.accordion-content a{
     text-decoration: none;
-    color: #003366;
+    color: black;
 }
-.subtype summary{
+.accordion-content li{
+    list-style-type: square;
+}
+#topics{
+    margin: 20px 50px 50px 50px;
+}
+#topic-head{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+}
+#heading-topics{
+    font-size: larger;
+    text-decoration: underline;
+}
+.topic-name{
+    text-align: left;
+    /* margin-left: 55px; */
+}
+.topic-description table {
+    width: 60%;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.topic-description th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+.topic-description th {
+    background-color: #0789df;
+    color: white;
+}
+.topic-description tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+footer {
+
+    background-color: #37475a;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    font-size: 24px;
-    font-family: 'Times New Roman', Times, serif;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
 }
-.subtype summary:hover {
-    background-color: #66b2ff !important;
-  }  
+
+.footer-about,
+.footer-links,
+.footer-social {
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: white;
+    width: 30px;
+    margin: 0 5px;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: white;
+}
+.footer-bottom a{
+    color: white;
+}

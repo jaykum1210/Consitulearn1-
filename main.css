@@ -462,7 +462,10 @@ hr {
     font-weight: bold;
     text-decoration: underline;
 }
-
+.resources-types a{
+    color: black;
+    text-decoration: none;
+}
 /* Footer */
 footer {
 
