@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-chemistry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 6 - Electrochemistry</div>
+        <div class="topic-name">
+            <h1 id="Redox">1. Redox Reactions (Oxidation-Reduction Reactions)</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>Redox reactions involve the simultaneous oxidation (loss of electrons) and reduction (gain of
+                        electrons).</li>
+                    <li>These reactions are crucial in chemical, biological, and industrial processes.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Oxidation and Reduction</h2>
+                <ol style="list-style-type: lower-roman;">
+                    <li>
+                        <p><b>Oxidation</b></p>
+                        <ul>
+                            <li>Loss of electrons.</li>
+                            <li>Increase in oxidation number.</li>
+                            <li>Addition of oxygen or removal of hydrogen.</li>
+                            <li>Example: Zn → Zn<sup>2+</sup> + 2e<sup>-</sup> (Zinc is oxidized.)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Reduction</b></p>
+                        <ul>
+                            <li>Gain of electrons.</li>
+                            <li>Decrease in oxidation number.</li>
+                            <li>Removal of oxygen or addition of hydrogen.</li>
+                            <li>Example: Cu<sup>2+</sup> + 2e<sup>-</sup> → Cu (Copper ion is reduced.)</li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Mnemonic to Remember</h2>
+                <ul>
+                    <li><b>OIL RIG:</b></li>
+                    <li>Oxidation Is Loss (of electrons).</li>
+                    <li>Reduction Is Gain (of electrons).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Oxidizing and Reducing Agents</h2>
+                <table>
+                    <tr>
+                        <th>Term</th>
+                        <th>Definition</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>Oxidizing Agent</td>
+                        <td>Gains electrons and gets reduced.</td>
+                        <td>MnO<sub>4</sub><sup>-</sup> in acidic medium</td>
+                    </tr>
+                    <tr>
+                        <td>Reducing Agent</td>
+                        <td>Loses electrons and gets oxidized.</td>
+                        <td>Zn metal</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Oxidation Number Rules</h2>
+                <ul>
+                    <li>Free elements: Oxidation number = 0 (e.g., O<sub>2</sub>, N<sub>2</sub>).</li>
+                    <li>Monoatomic ions: Oxidation number = charge of ion (e.g., Na<sup>+</sup> = +1).</li>
+                    <li>Oxygen = -2 (except in peroxides, where it is -1).</li>
+                    <li>Hydrogen = +1 (except in metal hydrides, where it is -1).</li>
+                    <li>Sum of oxidation numbers in a neutral compound = 0.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Balancing Redox Reactions</h2>
+                <h3>Half-Reaction Method (Acidic Medium)</h3>
+                <ol>
+                    <li>Split reaction into oxidation and reduction half-reactions.</li>
+                    <li>Balance all elements except H and O.</li>
+                    <li>Balance oxygen with H<sub>2</sub>O.</li>
+                    <li>Balance hydrogen with H<sup>+</sup>.</li>
+                    <li>Balance charge using electrons.</li>
+                    <li>Multiply half-reactions to cancel electrons and combine.</li>
+                </ol>
+                <p>Example: MnO<sub>4</sub><sup>-</sup> + Fe<sup>2+</sup> → Mn<sup>2+</sup> + Fe<sup>3+</sup> (in acidic
+                    medium)</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Redox Reactions</h2>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>Combination</td>
+                        <td>Two reactants form one product.</td>
+                        <td>2Mg + O<sub>2</sub> → 2MgO</td>
+                    </tr>
+                    <tr>
+                        <td>Decomposition</td>
+                        <td>One compound breaks into multiple products.</td>
+                        <td>2H<sub>2</sub>O → 2H<sub>2</sub> + O<sub>2</sub></td>
+                    </tr>
+                    <tr>
+                        <td>Displacement</td>
+                        <td>One element replaces another in a compound.</td>
+                        <td>Zn + CuSO<sub>4</sub> → ZnSO<sub>4</sub> + Cu</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Redox in Everyday Life</h2>
+                <ul>
+                    <li><b>Corrosion:</b> Rusting of iron is a redox reaction.</li>
+                    <li><b>Electrochemical Cells:</b> Batteries work on redox reactions.</li>
+                    <li><b>Respiration:</b> Oxidation of glucose releases energy.</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Cells">2. Electrochemical Cells</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>Electrochemical cells convert chemical energy into electrical energy (or vice versa) through
+                        redox reactions.</li>
+                    <li>Used in batteries, corrosion protection, and electrolysis.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Electrochemical Cells</h2>
+                <ul>
+                    <li><b>Galvanic (Voltaic) Cells</b> – Convert chemical energy into electrical energy.</li>
+                    <li><b>Electrolytic Cells</b> – Use electrical energy to drive a chemical reaction.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Galvanic (Voltaic) Cells</h2>
+                <h3>Definition</h3>
+                <p>A Galvanic cell generates electrical energy from a spontaneous redox reaction.</p>
+
+                <h3>Components</h3>
+                <ul>
+                    <li><b>Anode (-)</b> – Where oxidation occurs (electrons are lost).</li>
+                    <li><b>Cathode (+)</b> – Where reduction occurs (electrons are gained).</li>
+                    <li><b>Electrolyte</b> – Solution containing ions that facilitate the reaction.</li>
+                    <li><b>Salt Bridge</b> – Maintains charge balance by allowing ion exchange.</li>
+                    <li><b>External Circuit</b> – Allows electron flow from anode to cathode.</li>
+                </ul>
+
+                <h3>Example: Daniel Cell (Zn-Cu Cell)</h3>
+                <ul>
+                    <li>Oxidation at Anode: Zn(s) → Zn²⁺(aq) + 2e⁻</li>
+                    <li>Reduction at Cathode: Cu²⁺(aq) + 2e⁻ → Cu(s)</li>
+                    <li>Electrons flow from Zn (anode) to Cu (cathode) through the wire.</li>
+                    <li>Voltage generated: ~1.1V.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Electrolytic Cells</h2>
+                <h3>Definition</h3>
+                <p>An electrolytic cell uses an external power source to drive a non-spontaneous redox reaction.</p>
+
+                <h3>Components</h3>
+                <ul>
+                    <li><b>Anode (+)</b> – Oxidation occurs (electrons are lost).</li>
+                    <li><b>Cathode (-)</b> – Reduction occurs (electrons are gained).</li>
+                    <li><b>Electrolyte</b> – Conducts ions.</li>
+                    <li><b>Battery/Power Source</b> – Provides energy.</li>
+                </ul>
+
+                <h3>Example: Electrolysis of Water</h3>
+                <ul>
+                    <li>2H₂O(l) → 2H₂(g) + O₂(g)</li>
+                    <li>H₂ forms at Cathode (-), O₂ forms at Anode (+).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Differences Between Galvanic & Electrolytic Cells</h2>
+                <table>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Galvanic Cell</th>
+                        <th>Electrolytic Cell</th>
+                    </tr>
+                    <tr>
+                        <td>Energy Conversion</td>
+                        <td>Chemical → Electrical</td>
+                        <td>Electrical → Chemical</td>
+                    </tr>
+                    <tr>
+                        <td>Reaction Type</td>
+                        <td>Spontaneous</td>
+                        <td>Non-Spontaneous</td>
+                    </tr>
+                    <tr>
+                        <td>Anode Charge</td>
+                        <td>Negative (-)</td>
+                        <td>Positive (+)</td>
+                    </tr>
+                    <tr>
+                        <td>Cathode Charge</td>
+                        <td>Positive (+)</td>
+                        <td>Negative (-)</td>
+                    </tr>
+                    <tr>
+                        <td>Example</td>
+                        <td>Batteries (Zn-Cu)</td>
+                        <td>Electrolysis of water</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Standard Electrode Potential (E°)</h2>
+                <ul>
+                    <li>Each half-cell has a standard reduction potential (E°) measured in volts.</li>
+                    <li>Cell potential: E°<sub>cell</sub> = E°<sub>cathode</sub> - E°<sub>anode</sub></li>
+                    <li>If E°<sub>cell</sub> > 0, the reaction is spontaneous (Galvanic Cell).</li>
+                    <li>If E°<sub>cell</sub>
+                        < 0, the reaction is non-spontaneous (Electrolytic Cell).</li>
+                </ul>
+
+                <h3>Example Calculation (Zn-Cu Cell)</h3>
+                <ul>
+                    <li>E°(Cu²⁺/Cu) = +0.34V</li>
+                    <li>E°(Zn²⁺/Zn) = -0.76V</li>
+                    <li>E°<sub>cell</sub> = (0.34) - (-0.76) = 1.10V</li>
+                    <li>Since E°<sub>cell</sub> > 0, the reaction is spontaneous.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Electrochemical Cells</h2>
+                <ul>
+                    <li>Batteries (Alkaline, Lithium-ion, Lead-acid).</li>
+                    <li>Corrosion Prevention (Galvanization, Cathodic protection).</li>
+                    <li>Electroplating (Gold/Silver plating on jewelry).</li>
+                    <li>Industrial Electrolysis (Chlorine, Hydrogen production).</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="">3. Nernst Equation</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>The Nernst equation calculates the cell potential (E) of an electrochemical cell under
+                        non-standard conditions.</li>
+                    <li>It accounts for the effect of ion concentration on cell voltage.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Standard Cell Potential</h2>
+                <ul>
+                    <li>Formula: \( E_{cell}^o = E_{cathode}^o - E_{anode}^o \)</li>
+                    <li>Applies only at standard conditions:
+                        <ul>
+                            <li>Temperature: 298 K</li>
+                            <li>Pressure: 1 atm</li>
+                            <li>Concentration: 1 M</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Nernst Equation Formula</h2>
+                <ul>
+                    <li>At 298 K: \( E = E^o - \frac{0.0591}{n} \log Q \)</li>
+                    <li>General form: \( E = E^o - \frac{RT}{nF} \ln Q \)</li>
+                    <li>Where:
+                        <ul>
+                            <li>R = Gas constant (8.314 J/mol·K)</li>
+                            <li>T = Temperature in Kelvin</li>
+                            <li>n = Number of electrons transferred</li>
+                            <li>F = Faraday’s constant (96485 C/mol)</li>
+                            <li>Q = Reaction quotient</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+
+                <h2>Reaction Quotient (Q)</h2>
+                <p>Formula: \( Q = \frac{[Products]^{coefficients}}{[Reactants]^{coefficients}} \)</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example Calculation</h2>
+                <p>Zn-Cu Galvanic Cell:</p>
+                <ul>
+                    <li>Given:
+                        <ul>
+                            <li>\( E^o(Zn^{2+}/Zn) = -0.76V \)</li>
+                            <li>\( E^o(Cu^{2+}/Cu) = +0.34V \)</li>
+                            <li>Concentrations: [Cu²⁺] = 0.01M, [Zn²⁺] = 1M</li>
+                            <li>n = 2 electrons</li>
+                        </ul>
+                    </li>
+                    <li>Step 1: \( E_{cell}^o = 0.34V - (-0.76V) = 1.10V
+                    <li>Step 2: \( Q = \frac{[Zn^{2+}]}{[Cu^{2+}]} = \frac{1}{0.01} = 100 \)</li>
+                    <li>Step 3: \( E = 1.10V - \frac{0.0591}{2} \log (100) \)</li>
+                    <li>Final Answer: \( E = 1.04V \)</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Special Cases</h2>
+                <ul>
+                    <li>Effect of Concentration on E:
+                        <ul>
+                            <li>Increasing reactant concentration increases E.</li>
+                            <li>Increasing product concentration decreases E.</li>
+                        </ul>
+                    </li>
+                    <li>Equilibrium Condition: When E = 0, \( Q = K_{eq} \), and:
+                        <ul>
+                            <li>\( \log K_{eq} = \frac{nE^o}{0.0591} \)</li>
+                        </ul>
+                    </li>
+                    <li>Concentration Cells:
+                        <ul>
+                            <li>Operate due to concentration differences.</li>
+                            <li>Formula: \( E = -\frac{0.0591}{n} \log \frac{[dilute]}{[concentrated]} \)</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of the Nernst Equation</h2>
+                <ul>
+                    <li>Batteries – Predicting battery voltage at different charge levels.</li>
+                    <li>Biological Systems – Ion movement in neurons.</li>
+                    <li>Corrosion Prevention – Understanding metal reactions.</li>
+                    <li>Industrial Electrolysis – Controlling electrochemical processes.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

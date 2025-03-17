@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-maths.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 5 - Binomial Theorem</div>
+        <div class="topic-name">
+            <div class="topic-description">
+                <h1>Expansion of Binomials: General Term & Middle Term</h1>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Binomial Theorem</h2>
+                <p>The Binomial Theorem provides a formula to expand binomials raised to a positive integer power.
+                    For any positive integer <b>n</b>, the expansion of <b>(a + b)<sup>n</sup></b> is:</p>
+                <p><b>(a + b)<sup>n</sup> = &sum;<sub>k=0</sub><sup>n</sup> (n<sub>k</sub>) a<sup>n-k</sup>
+                        b<sup>k</sup></b></p>
+                <ul>
+                    <li><b>(n<sub>k</sub>)</b> is the binomial coefficient, representing "n choose k".</li>
+                    <li><b>a<sup>n-k</sup></b> and <b>b<sup>k</sup></b> are the respective powers of a and b in each
+                        term of the expansion.</li>
+                    <li>The sum runs from <b>k = 0</b> to <b>k = n</b>, resulting in <b>n + 1</b> terms.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>General Term in Binomial Expansion</h2>
+                <p>The general term <b>T<sub>k</sub></b> in the binomial expansion of <b>(a + b)<sup>n</sup></b> is
+                    given by:</p>
+                <p><b>T<sub>k</sub> = (n<sub>k</sub>) a<sup>n-k</sup> b<sup>k</sup></b></p>
+                <ul>
+                    <li><b>T<sub>k</sub></b> is the k-th term in the expansion (starting from <b>k = 0</b>).</li>
+                    <li><b>(n<sub>k</sub>)</b> is the binomial coefficient, which counts how many ways you can
+                        choose <b>k</b> items from <b>n</b>.</li>
+                    <li><b>a<sup>n-k</sup></b> and <b>b<sup>k</sup></b> are the powers of a and b in the respective
+                        terms.</li>
+                </ul>
+
+                <h3>Example: Expansion of <b>(a + b)<sup>4</sup></b></h3>
+                <p>Using the Binomial Theorem, the expansion of <b>(a + b)<sup>4</sup></b> is:</p>
+                <p><b>(a + b)<sup>4</sup> = &sum;<sub>k=0</sub><sup>4</sup> (4<sub>k</sub>) a<sup>4-k</sup>
+                        b<sup>k</sup></b></p>
+                <p>The terms are:</p>
+                <ul>
+                    <li>For <b>k = 0</b>: (4<sub>0</sub>) a<sup>4</sup> b<sup>0</sup> = a<sup>4</sup></li>
+                    <li>For <b>k = 1</b>: (4<sub>1</sub>) a<sup>3</sup> b<sup>1</sup> = 4a<sup>3</sup> b</li>
+                    <li>For <b>k = 2</b>: (4<sub>2</sub>) a<sup>2</sup> b<sup>2</sup> = 6a<sup>2</sup> b<sup>2</sup>
+                    </li>
+                    <li>For <b>k = 3</b>: (4<sub>3</sub>) a<sup>1</sup> b<sup>3</sup> = 4ab<sup>3</sup></li>
+                    <li>For <b>k = 4</b>: (4<sub>4</sub>) a<sup>0</sup> b<sup>4</sup> = b<sup>4</sup></li>
+                </ul>
+                <p>Thus, the full expansion is:</p>
+                <p><b>a<sup>4</sup> + 4a<sup>3</sup> b + 6a<sup>2</sup> b<sup>2</sup> + 4ab<sup>3</sup> +
+                        b<sup>4</sup></b></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Middle Term of Binomial Expansion</h2>
+                <p>The middle term is the term that appears in the center of the expansion. Depending on whether
+                    <b>n</b> is odd or even, the middle term(s) differ:
+                </p>
+                <ul>
+                    <li>For odd <b>n</b>, the middle term is the term corresponding to <b>k = n/2</b>.</li>
+                    <li>For even <b>n</b>, there are two middle terms, corresponding to <b>k = n/2 - 1</b> and <b>k
+                            = n/2</b>.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Example: Middle Term of <b>(a + b)<sup>5</sup></b></h3>
+                <p>The general term is:</p>
+                <p><b>T<sub>k</sub> = (5<sub>k</sub>) a<sup>5-k</sup> b<sup>k</sup></b></p>
+                <p>The expansion is:</p>
+                <p><b>a<sup>5</sup> + 5a<sup>4</sup> b + 10a<sup>3</sup> b<sup>2</sup> + 10a<sup>2</sup>
+                        b<sup>3</sup> + 5ab<sup>4</sup> + b<sup>5</sup></b></p>
+                <p>Since <b>n = 5</b> is odd, the middle term corresponds to <b>k = 5/2 = 2</b>.</p>
+                <p>The middle term is:</p>
+                <p><b>T<sub>2</sub> = (5<sub>2</sub>) a<sup>3</sup> b<sup>2</sup> = 10a<sup>3</sup>
+                        b<sup>2</sup></b></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Example: Middle Terms of <b>(a + b)<sup>6</sup></b></h3>
+                <p>The general term is:</p>
+                <p><b>T<sub>k</sub> = (6<sub>k</sub>) a<sup>6-k</sup> b<sup>k</sup></b></p>
+                <p>The expansion is:</p>
+                <p><b>a<sup>6</sup> + 6a<sup>5</sup> b + 15a<sup>4</sup> b<sup>2</sup> + 20a<sup>3</sup>
+                        b<sup>3</sup> + 15a<sup>2</sup> b<sup>4</sup> + 6ab<sup>5</sup> + b<sup>6</sup></b></p>
+                <p>Since <b>n = 6</b> is even, there are two middle terms corresponding to <b>k = 2</b> and <b>k =
+                        3</b>:</p>
+                <ul>
+                    <li>For <b>k = 2</b>: <b>T<sub>2</sub> = (6<sub>2</sub>) a<sup>4</sup> b<sup>2</sup> =
+                            15a<sup>4</sup> b<sup>2</sup></b></li>
+                    <li>For <b>k = 3</b>: <b>T<sub>3</sub> = (6<sub>3</sub>) a<sup>3</sup> b<sup>3</sup> =
+                            20a<sup>3</sup> b<sup>3</sup></b></li>
+                </ul>
+                <p>Thus, the middle terms are <b>15a<sup>4</sup> b<sup>2</sup></b> and <b>20a<sup>3</sup>
+                        b<sup>3</sup></b>.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

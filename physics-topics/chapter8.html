@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-physics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 8 - Oscillations</div>
+        <div class="topic-name">
+            <h1>1. Simple Harmonic Motion (SHM)</h1>
+            <div class="topic-description">
+                <h2>Introduction to SHM</h2>
+                <ul>
+                    <li>Simple Harmonic Motion (SHM) is a type of periodic motion where an object moves back and
+                        forth about a fixed point under a restoring force proportional to its displacement.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Examples</h2>
+                <ul>
+                    <li>Motion of a pendulum ⏳</li>
+                    <li>Vibration of a spring</li>
+                    <li>Motion of atoms in a crystal lattice</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Conditions for SHM</h2>
+                <ul>
+                    <li>The restoring force is proportional to the displacement: F ∝ -x</li>
+                    <li>Acceleration is proportional to displacement and directed towards the equilibrium position:
+                        a = -ω²x</li>
+                    <li>The object oscillates around a stable equilibrium position.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Equation of Motion for SHM</h2>
+                <ul>
+                    <li>General Equation: x(t) = A cos(ωt + φ)</li>
+                    <li>Velocity: v = -Aω sin(ωt + φ)</li>
+                    <li>Acceleration: a = -Aω² cos(ωt + φ)</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Time Period and Frequency</h2>
+                <ul>
+                    <li>Time period (T): T = 2π / ω</li>
+                    <li>Frequency (f): f = 1 / T</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Energy in SHM</h2>
+                <ul>
+                    <li>Kinetic Energy (KE): KE = (1/2) mω² (A² - x²)</li>
+                    <li>Potential Energy (PE): PE = (1/2) mω² x²</li>
+                    <li>Total Energy: E = (1/2) mω² A²</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Examples of SHM</h2>
+                <ul>
+                    <li>Simple Pendulum – A bob oscillating under gravity.</li>
+                    <li>Spring-Mass System – A mass attached to a spring.</li>
+                    <li>Vibrating Strings – Motion of musical instrument strings.</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Damped">2. Damped and Forced Oscillations</h1>
+            <div class="topic-description">
+                <h2>Damped Oscillations</h2>
+                <ul>
+                    <li>In real-world situations, oscillations do not continue forever because of resistive forces like
+                        friction or air resistance.</li>
+                    <li>The amplitude decreases over time due to energy loss.</li>
+                    <li>The damping force is proportional to velocity.</li>
+                    <li>The motion eventually stops if damping is strong enough.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Equation of Damped Motion</h2>
+                <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>m</mi>
+                        <mfrac>
+                            <msup>
+                                <mi>d</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mi>dt</mi>
+                        </mfrac>
+                        <mi>x</mi> +
+                        <mi>b</mi>
+                        <mfrac>
+                            <mi>d</mi>
+                            <mi>dt</mi>
+                        </mfrac>
+                        <mi>x</mi> +
+                        <mi>k</mi>
+                        <mi>x</mi> = 0
+                    </math></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Damping</h2>
+                <ul>
+                    <li><b>Underdamping:</b> Oscillations continue but gradually reduce in amplitude.</li>
+                    <li><b>Critical Damping:</b> The system returns to equilibrium in the shortest time without
+                        oscillating.</li>
+                    <li><b>Overdamping:</b> The system returns to equilibrium very slowly without oscillating.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Forced Oscillations</h2>
+                <p>When an external periodic force is applied to a system, it undergoes forced oscillations.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Equation of Forced Motion</h2>
+                <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>m</mi>
+                        <mfrac>
+                            <msup>
+                                <mi>d</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mi>dt</mi>
+                        </mfrac>
+                        <mi>x</mi> +
+                        <mi>b</mi>
+                        <mfrac>
+                            <mi>d</mi>
+                            <mi>dt</mi>
+                        </mfrac>
+                        <mi>x</mi> +
+                        <mi>k</mi>
+                        <mi>x</mi> =
+                        <mi>F</mi><sub>0</sub>
+                        <mo>cos</mo>
+                        <mo>(</mo>
+                        <mi>&omega;t</mi>
+                        <mo>)</mo>
+                    </math></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Resonance in Forced Oscillations</h2>
+                <ul>
+                    <li>When the frequency of the external force matches the natural frequency of the system, resonance
+                        occurs.</li>
+                    <li>Resonance leads to maximum amplitude and can cause structural damage.</li>
+                    <li>Real-life applications include musical instruments, radio tuning, and earthquake-resistant
+                        buildings.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Comparison: Damped vs. Forced Oscillations</h2>
+                <table>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Damped Oscillations</th>
+                        <th>Forced Oscillations</th>
+                    </tr>
+                    <tr>
+                        <td>Cause</td>
+                        <td>Energy loss due to resistance</td>
+                        <td>External periodic force applied</td>
+                    </tr>
+                    <tr>
+                        <td>Amplitude</td>
+                        <td>Decreases over time</td>
+                        <td>May increase if resonance occurs</td>
+                    </tr>
+                    <tr>
+                        <td>Example</td>
+                        <td>A pendulum in air slows down</td>
+                        <td>Tuning a radio to a specific frequency</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications</h2>
+                <ul>
+                    <li>Car Shock Absorbers – Use damping to reduce vibrations.</li>
+                    <li>Seismographs – Detect earthquakes using damping principles.</li>
+                    <li>Musical Instruments – Strings undergo forced oscillations when plucked.</li>
+                    <li>Buildings & Bridges – Designed to avoid resonance effects.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Conclusion</h2>
+                <p>Damping helps control oscillations, while forced oscillations are useful in engineering, music, and
+                    physics!</p>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Resonance">3. Resonance</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <p>Resonance is a phenomenon that occurs when a system is subjected to an external periodic force with a
+                    frequency equal to its natural frequency. This leads to a large increase in amplitude of
+                    oscillation.</p>
+                <p><b>Example:</b> When you push a swing at just the right moments (matching its natural frequency), the
+                    swing moves higher.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Conditions for Resonance</h2>
+                <ul>
+                    <li>The system must have a natural frequency of oscillation.</li>
+                    <li>An external periodic force must be applied.</li>
+                    <li>The frequency of the external force must match the natural frequency of the system.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Explanation Using Forced Oscillation Equation</h2>
+                <p>The equation governing forced oscillations is:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>m</mi>
+                    <mfrac>
+                        <mrow>
+                            <msup>
+                                <mi>d</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mi>x</mi>
+                        </mrow>
+                        <mrow>
+                            <msup>
+                                <mi>d</mi>
+                                <mi>t</mi>
+                            </msup>
+                            <mn>2</mn>
+                        </mrow>
+                    </mfrac>
+                    <mo>+</mo>
+                    <mi>b</mi>
+                    <mfrac>
+                        <mrow>
+                            <mi>d</mi>
+                            <mi>x</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>d</mi>
+                            <mi>t</mi>
+                        </mrow>
+                    </mfrac>
+                    <mo>+</mo>
+                    <mi>k</mi>
+                    <mi>x</mi>
+                    <mo>=</mo>
+                    <mi>F</mi><sub>0</sub>
+                    <mo>cos</mo>(<mi>&omega;t</mi>)
+                </math>
+                <p>where:</p>
+                <ul>
+                    <li><b>m</b> = Mass of the system</li>
+                    <li><b>b</b> = Damping coefficient</li>
+                    <li><b>k</b> = Spring constant</li>
+                    <li><b>F<sub>0</sub></b> = Amplitude of external force</li>
+                    <li><b>&omega;</b> = Frequency of external force</li>
+                </ul>
+                <p>When <b>&omega;</b> matches the natural frequency, the amplitude becomes maximum, leading to
+                    resonance.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Resonance</h2>
+                <ul>
+                    <li><b>Mechanical Resonance</b> – Occurs in mechanical systems like bridges, pendulums, and
+                        vibrating plates.<br>
+                        <i>Example: The collapse of the Tacoma Narrows Bridge due to wind-induced resonance.</i>
+                    </li>
+                    <li><b>Acoustic Resonance</b> – Occurs when sound waves match the natural frequency of an
+                        object.<br>
+                        <i>Example: Soundboards in musical instruments amplify certain frequencies.</i>
+                    </li>
+                    <li><b>Electrical Resonance</b> – Occurs in circuits where inductance and capacitance create
+                        oscillations.<br>
+                        <i>Example: Tuning a radio to a specific frequency.</i>
+                    </li>
+                    <li><b>Optical Resonance</b> – Occurs in lasers and optical cavities.<br>
+                        <i>Example: Laser light amplification.</i>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Resonance</h2>
+                <ul>
+                    <li>Musical Instruments – Amplify sound at resonant frequencies.</li>
+                    <li>Microwave Ovens – Use electromagnetic resonance to heat food.</li>
+                    <li>Radio and TV Transmission – Tuning circuits use resonance to select specific frequencies.</li>
+                    <li>Seismology – Helps understand the resonance of buildings during earthquakes.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Disadvantages of Resonance</h2>
+                <ul>
+                    <li><b>Structural Damage</b> – Bridges and buildings can collapse if resonance occurs.</li>
+                    <li><b>Excessive Vibrations</b> – Machines and engines can fail due to uncontrolled resonance.</li>
+                    <li><b>Unwanted Noise</b> – Can cause loud and disturbing sounds in mechanical systems.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>How to Reduce Harmful Resonance?</h2>
+                <ul>
+                    <li><b>Damping</b> – Adding resistive forces to reduce amplitude.</li>
+                    <li><b>Changing Mass or Stiffness</b> – Altering natural frequency to avoid resonance.</li>
+                    <li><b>Shock Absorbers</b> – Used in cars and buildings to minimize resonance effects.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

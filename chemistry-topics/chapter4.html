@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-chemistry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 4 - Chemical Kinametics</div>
+        <div class="topic-name">
+            <h1 id="Rate">1. Rate Laws</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>The Rate Law expresses how the rate of a chemical reaction depends on the concentration of
+                        reactants.</li>
+                    <li>It helps in determining the reaction mechanism and predicting reaction behavior.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>General Form of Rate Law</h2>
+                <ul>
+                    <li>For a reaction: aA + bB → cC + dD</li>
+                    <li>The rate law is given by:
+                        <p>Rate = k[A]<sup>m</sup>[B]<sup>n</sup></p>
+                    </li>
+                    <li>Where:
+                        <ul>
+                            <li>k = Rate constant (depends on temperature).</li>
+                            <li>[A], [B] = Concentrations of reactants.</li>
+                            <li>m, n = Order of reaction with respect to A and B (determined experimentally).</li>
+                            <li>Overall Order = m + n.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Rate Laws</h2>
+                <ol style="list-style-type: lower-roman;">
+                    <li>
+                        <p><b>Differential Rate Law</b></p>
+                        <ul>
+                            <li>Shows how rate depends on reactant concentrations.</li>
+                            <li>Example: For a first-order reaction → Rate = k[A]</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Integrated Rate Law</b></p>
+                        <ul>
+                            <li>Relates concentration to time.</li>
+                            <li>Useful for determining half-life and predicting concentration changes over time.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Reaction Order & Rate Laws</h2>
+                <table>
+                    <tr>
+                        <th>Order</th>
+                        <th>Rate Law</th>
+                        <th>Half-Life Formula</th>
+                    </tr>
+                    <tr>
+                        <td>Zero Order</td>
+                        <td>Rate = k</td>
+                        <td>t<sub>1/2</sub> = [A]<sub>0</sub> / 2k</td>
+                    </tr>
+                    <tr>
+                        <td>First Order</td>
+                        <td>Rate = k[A]</td>
+                        <td>t<sub>1/2</sub> = 0.693 / k</td>
+                    </tr>
+                    <tr>
+                        <td>Second Order</td>
+                        <td>Rate = k[A]<sup>2</sup></td>
+                        <td>t<sub>1/2</sub> = 1 / k[A]<sub>0</sub></td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Half-Life (t<sub>1/2</sub>)</h2>
+                <ul>
+                    <li>Half-life is the time taken for a reactant's concentration to reduce to half its initial value.
+                    </li>
+                    <li>First-order reactions have a constant half-life.</li>
+                    <li>Zero and second-order reactions have variable half-life depending on initial concentration.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Factors Affecting Reaction Rate</h2>
+                <ul>
+                    <li><b>Concentration:</b> Higher concentration → Faster reaction.</li>
+                    <li><b>Temperature:</b> Higher temperature → Increases rate due to more collisions.</li>
+                    <li><b>Catalyst:</b> Lowers activation energy → Speeds up reaction.</li>
+                    <li><b>Surface Area:</b> More surface area → Faster reaction.</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none; margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Mechanisms">2. Reaction Mechanisms</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>A reaction mechanism is the step-by-step sequence of elementary reactions by which an overall
+                        chemical reaction occurs.</li>
+                    <li>It describes how reactants are converted into products, including the formation of intermediates
+                        and the breaking/forming of bonds.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Elementary Reactions & Molecularity</h2>
+                <table>
+                    <tr>
+                        <th>Molecularity</th>
+                        <th>Definition</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>Unimolecular</td>
+                        <td>Involves a single reactant molecule</td>
+                        <td>A → B</td>
+                    </tr>
+                    <tr>
+                        <td>Bimolecular</td>
+                        <td>Involves two reactant molecules</td>
+                        <td>A + B → C</td>
+                    </tr>
+                    <tr>
+                        <td>Termolecular</td>
+                        <td>Involves three reactant molecules</td>
+                        <td>A + B + C → D (Rare)</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Reaction Intermediates & Transition States</h2>
+                <ul>
+                    <li><b>Intermediates:</b> Species that are formed in one step and consumed in another.</li>
+                    <li><b>Transition State:</b> High-energy, unstable configuration of molecules during bond
+                        breaking/forming.</li>
+                </ul>
+                <h3>Example Mechanism:</h3>
+                <p>For the reaction: 2NO<sub>2</sub> → 2NO + O<sub>2</sub></p>
+                <p>Possible mechanism:</p>
+                <ul>
+                    <li>NO<sub>2</sub> + NO<sub>2</sub> → NO<sub>3</sub> + NO (Slow, Rate-Determining Step)</li>
+                    <li>NO<sub>3</sub> → NO + O<sub>2</sub> (Fast)</li>
+                </ul>
+                <p>NO<sub>3</sub> is an intermediate.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Rate-Determining Step (RDS)</h2>
+                <ul>
+                    <li>The slowest step in a reaction mechanism.</li>
+                    <li>Overall reaction rate depends on this step.</li>
+                    <li>Rate law is determined by the reactants in the RDS.</li>
+                </ul>
+                <h3>Example:</h3>
+                <p>For: A + B → C + D</p>
+                <p>Mechanism:</p>
+                <ul>
+                    <li>A + B → AB* (Slow, RDS)</li>
+                    <li>AB* → C + D (Fast)</li>
+                </ul>
+                <p>Since step 1 is slow, rate law depends only on A & B:</p>
+                <p><b>Rate = k[A][B]</b></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Catalysts & Reaction Mechanisms</h2>
+                <ul>
+                    <li>Catalysts provide an alternative pathway with lower activation energy.</li>
+                    <li>They are not consumed in the reaction.</li>
+                </ul>
+                <h3>Example:</h3>
+                <p>Enzymes in biological reactions.</p>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Influencing">3. Factors Influencing Reaction Rate</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>The rate of a chemical reaction refers to how fast reactants are converted into products.</li>
+                    <li>Several factors influence this rate by affecting the frequency and energy of molecular
+                        collisions.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Factors Affecting Reaction Rate</h2>
+                <ol style="list-style-type: lower-roman;">
+                    <li>
+                        <p><b>Concentration of Reactants</b></p>
+                        <ul>
+                            <li>Higher concentration → Faster reaction (more collisions).</li>
+                            <li>Example: A concentrated acid reacts faster than a dilute acid with the same reactant.
+                            </li>
+                            <li>Rate Law Relationship:
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>Rate</mi>
+                                    <mo>=</mo>
+                                    <mi>k</mi>
+                                    <msup>
+                                        <mi>[A]</mi>
+                                        <mi>m</mi>
+                                    </msup>
+                                    <msup>
+                                        <mi>[B]</mi>
+                                        <mi>n</mi>
+                                    </msup>
+                                </math>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Temperature</b></p>
+                        <ul>
+                            <li>Higher temperature → Faster reaction (molecules have more energy).</li>
+                            <li>More molecules exceed the activation energy (Eₐ) required for reaction.</li>
+                            <li>Follows the Arrhenius equation:
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>k</mi>
+                                    <mo>=</mo>
+                                    <mi>A</mi>
+                                    <msup>
+                                        <mi>e</mi>
+                                        <mfrac>
+                                            <mrow>
+                                                <mo>-</mo>
+                                                <msub>
+                                                    <mi>E</mi>
+                                                    <mi>a</mi>
+                                                </msub>
+                                            </mrow>
+                                            <mrow>
+                                                <mi>R</mi>
+                                                <mi>T</mi>
+                                            </mrow>
+                                        </mfrac>
+                                    </msup>
+                                </math>
+                            </li>
+                            <li>Example: Food spoils faster at room temperature than in the refrigerator.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Pressure (for Gaseous Reactions)</b></p>
+                        <ul>
+                            <li>Higher pressure → Faster reaction (molecules are closer, increasing collisions).</li>
+                            <li>Applies mainly to gaseous reactions.</li>
+                            <li>Example: In the Haber process, increasing pressure speeds up ammonia (<math
+                                    xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <msub>
+                                        <mi>NH</mi>
+                                        <mn>3</mn>
+                                    </msub>
+                                </math>) formation.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Surface Area of Reactants</b></p>
+                        <ul>
+                            <li>More surface area → Faster reaction (more reactant particles exposed).</li>
+                            <li>Example: Finely powdered sugar burns faster than a sugar cube.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Catalyst</b></p>
+                        <ul>
+                            <li>Lowers activation energy and provides an alternative reaction pathway.</li>
+                            <li>Does not get consumed in the reaction.</li>
+                            <li>Example: Enzymes in digestion speed up biological reactions.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Nature of Reactants</b></p>
+                        <ul>
+                            <li>Ionic reactions → Fast (no bond breaking needed).</li>
+                            <li>Covalent reactions → Slow (bond breaking required).</li>
+                            <li>Example: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <msub>
+                                        <mi>NaCl</mi>
+                                    </msub>
+                                </math> dissolves quickly in water, while sugar takes longer.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

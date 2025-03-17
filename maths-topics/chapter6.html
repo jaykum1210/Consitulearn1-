@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-maths.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 6 - Sequences & Series</div>
+        <div class="topic-name">
+            <div class="topic-description">
+                <h1>1. Arithmetic Progression (AP)</h1>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>What is an Arithmetic Progression (AP)?</h2>
+                <p>An Arithmetic Progression (AP) is a sequence of numbers in which the difference between
+                    consecutive terms is constant. This constant difference is called the <b>common difference</b>.
+                </p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>General Form of an AP</h2>
+                <p>The general form of an arithmetic progression is:</p>
+                <p><b>a, a + d, a + 2d, a + 3d, …</b></p>
+                <ul>
+                    <li><b>a</b> is the first term,</li>
+                    <li><b>d</b> is the common difference,</li>
+                    <li><b>n</b> is the number of terms.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+
+                <h2>nth Term of an AP</h2>
+                <p>The nth term of an arithmetic progression can be expressed by the formula:</p>
+                <p><b>T<sub>n</sub> = a + (n - 1) ⋅ d</b></p>
+                <ul>
+                    <li><b>T<sub>n</sub></b> is the nth term of the AP,</li>
+                    <li><b>a</b> is the first term,</li>
+                    <li><b>d</b> is the common difference,</li>
+                    <li><b>n</b> is the term number.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Sum of the First n Terms of an AP</h2>
+                <p>The sum of the first <b>n</b> terms of an AP, denoted as <b>S<sub>n</sub></b>, is given by the
+                    formula:</p>
+                <p><b>S<sub>n</sub> = (n / 2) ⋅ (2a + (n - 1) ⋅ d)</b></p>
+                <p>Alternatively, the sum can also be written as:</p>
+                <p><b>S<sub>n</sub> = (n / 2) ⋅ (a + l)</b></p>
+                <ul>
+                    <li><b>n</b> is the number of terms,</li>
+                    <li><b>a</b> is the first term,</li>
+                    <li><b>d</b> is the common difference,</li>
+                    <li><b>l</b> is the last term (the nth term).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+
+                <h2>Properties of an Arithmetic Progression</h2>
+                <ul>
+                    <li><b>Constant difference:</b> The difference between consecutive terms is constant, i.e.,
+                        <b>T<sub>n+1</sub> - T<sub>n</sub> = d</b>.
+                    </li>
+                    <li><b>Midpoint of terms:</b> The middle term (if the number of terms is odd) is the average of
+                        the first and last terms.</li>
+                    <li><b>Sum of odd/even number of terms:</b>
+                        <ul>
+                            <li>The sum of an odd number of terms is given by the product of the middle term and the
+                                number of terms.</li>
+                            <li>For an even number of terms, the sum is the average of the first and last term
+                                multiplied by the number of terms.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example of an Arithmetic Progression</h2>
+                <p>Consider the AP: <b>3, 7, 11, 15, 19, …</b></p>
+
+                <p>The first term <b>a = 3</b>, and the common difference <b>d = 4</b> (since <b>7 - 3 = 4</b>).</p>
+
+                <h3>Finding the nth Term:</h3>
+                <p>To find the 6th term, use the formula:</p>
+                <p><b>T<sub>n</sub> = a + (n - 1) ⋅ d</b></p>
+                <p><b>T<sub>6</sub> = 3 + (6 - 1) ⋅ 4 = 3 + 5 ⋅ 4 = 3 + 20 = 23</b></p>
+                <p>So, the 6th term is <b>23</b>.</p>
+
+                <h3>Finding the Sum of the First 6 Terms:</h3>
+                <p>We can use the formula:</p>
+                <p><b>S<sub>n</sub> = (n / 2) ⋅ (2a + (n - 1) ⋅ d)</b></p>
+                <p><b>S<sub>6</sub> = (6 / 2) ⋅ (2 ⋅ 3 + (6 - 1) ⋅ 4) = 3 ⋅ (6 + 20) = 3 ⋅ 26 = 78</b></p>
+                <p>So, the sum of the first 6 terms is <b>78</b>.</p>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <div class="topic-description">
+                <h1 id="Geometric">2. Geometric Progression (GP)</h1>
+
+                <h2>What is a Geometric Progression (GP)?</h2>
+                <p>A Geometric Progression (GP) is a sequence of numbers in which each term after the first is found
+                    by multiplying the previous term by a constant called the <b>common ratio</b>.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>General Form of a GP</h2>
+                <p>The general form of a geometric progression is:</p>
+                <p><b>a, ar, ar², ar³, ar⁴, …</b></p>
+                <ul>
+                    <li><b>a</b> is the first term,</li>
+                    <li><b>r</b> is the common ratio (i.e., the factor by which each term is multiplied to get the
+                        next term),</li>
+                    <li><b>n</b> is the number of terms.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>nth Term of a GP</h2>
+                <p>The nth term of a geometric progression is given by the formula:</p>
+                <p><b>T<sub>n</sub> = a ⋅ r<sup>n - 1</sup></b></p>
+                <ul>
+                    <li><b>T<sub>n</sub></b> is the nth term of the progression,</li>
+                    <li><b>a</b> is the first term,</li>
+                    <li><b>r</b> is the common ratio,</li>
+                    <li><b>n</b> is the term number.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Sum of the First n Terms of a GP</h2>
+                <p>The sum of the first <b>n</b> terms of a geometric progression, denoted as <b>S<sub>n</sub></b>,
+                    is given by the formula:</p>
+                <p><b>S<sub>n</sub> = a ⋅ (1 - r<sup>n</sup>) / (1 - r) </b> (for <b>r ≠ 1</b>)</p>
+                <p>If the common ratio <b>r = 1</b>, the sum is simply:</p>
+                <p><b>S<sub>n</sub> = n ⋅ a</b></p>
+
+                <h2>Infinite Geometric Series</h2>
+                <p>If the common ratio <b>|r| < 1</b>, the sum of an infinite geometric series (i.e., as <b>n →
+                                ∞</b>) is given by:</p>
+                <p><b>S<sub>∞</sub> = a / (1 - r)</b></p>
+                <ul>
+                    <li><b>a</b> is the first term,</li>
+                    <li><b>r</b> is the common ratio.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Properties of a Geometric Progression</h2>
+                <ul>
+                    <li><b>Constant ratio:</b> The ratio between consecutive terms is constant, i.e.,
+                        <b>T<sub>n+1</sub> / T<sub>n</sub> = r</b>.
+                    </li>
+                    <li><b>Exponential growth/decay:</b> If <b>r > 1</b>, the terms grow exponentially. If <b>0 < r <
+                                1</b>, the terms decrease exponentially.</li>
+                    <li><b>Multiplicative nature:</b> Each term is a product of the previous term and the common
+                        ratio.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example of a Geometric Progression</h2>
+                <p>Consider the GP: <b>2, 6, 18, 54, …</b></p>
+
+                <p>The first term <b>a = 2</b>, and the common ratio <b>r = 3</b> (since <b>6 / 2 = 3</b>).</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Finding the nth Term:</h3>
+                <p>To find the 5th term, use the formula:</p>
+                <p><b>T<sub>n</sub> = a ⋅ r<sup>n - 1</sup></b></p>
+                <p><b>T<sub>5</sub> = 2 ⋅ 3<sup>5 - 1</sup> = 2 ⋅ 3<sup>4</sup> = 2 ⋅ 81 = 162</b></p>
+                <p>So, the 5th term is <b>162</b>.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Finding the Sum of the First 4 Terms:</h3>
+                <p>We can use the sum formula:</p>
+                <p><b>S<sub>n</sub> = a ⋅ (1 - r<sup>n</sup>) / (1 - r)</b></p>
+                <p><b>S<sub>4</sub> = 2 ⋅ (1 - 3<sup>4</sup>) / (1 - 3)</b></p>
+                <p><b>S<sub>4</sub> = 2 ⋅ (1 - 81) / -2 = 2 ⋅ (-80) / -2 = 80</b></p>
+                <p>So, the sum of the first 4 terms is <b>80</b>.</p>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <div class="topic-description">
+                <h1 id="Inequality">3. AM-GM Inequality (Arithmetic Mean - Geometric Mean Inequality)</h1>
+
+                <h2>What is the AM-GM Inequality?</h2>
+                <p>The AM-GM inequality is a fundamental inequality in mathematics that relates the <b>Arithmetic
+                        Mean (AM)</b> and <b>Geometric Mean (GM)</b> of a set of non-negative numbers. The
+                    inequality states that the Arithmetic Mean of a set of non-negative numbers is always greater
+                    than or equal to their Geometric Mean.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Statement of the AM-GM Inequality</h2>
+                <p>For any set of <b>n</b> non-negative real numbers <b>x₁, x₂, …, xₙ</b>, the AM-GM inequality
+                    states:</p>
+                <p><b>x₁ + x₂ + ⋯ + xₙ / n ≥ x₁ ⋅ x₂ ⋅ ⋯ ⋅ xₙ<sup>1/n</sup></b></p>
+                <ul>
+                    <li><b>x₁, x₂, …, xₙ</b> are non-negative real numbers.</li>
+                    <li><b>Arithmetic Mean (AM)</b> is <b>(x₁ + x₂ + ⋯ + xₙ) / n</b>.</li>
+                    <li><b>Geometric Mean (GM)</b> is <b>(x₁ ⋅ x₂ ⋅ ⋯ ⋅ xₙ)<sup>1/n</sup></b>.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Equality Condition</h2>
+                <p>Equality holds if and only if <b>x₁ = x₂ = ⋯ = xₙ</b>. That is, the arithmetic mean equals the
+                    geometric mean only when all the numbers are equal.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example of AM-GM Inequality</h2>
+                <p>Let's consider the numbers <b>4</b> and <b>16</b>.</p>
+
+                <h3>Arithmetic Mean (AM):</h3>
+                <p><b>AM = (4 + 16) / 2 = 10</b></p>
+
+                <h3>Geometric Mean (GM):</h3>
+                <p><b>GM = √(4 × 16) = √64 = 8</b></p>
+
+                <h3>According to the AM-GM inequality:</h3>
+                <p><b>AM = 10 ≥ GM = 8</b></p>
+                <p>So, the AM is greater than the GM, which follows the AM-GM inequality.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Equality Condition in Action</h2>
+                <p>For equality to hold, all the numbers must be the same. For example, if we take the numbers
+                    <b>5</b> and <b>5</b>, then both the arithmetic and geometric means will be equal:
+                </p>
+
+                <h3>Arithmetic Mean (AM):</h3>
+                <p><b>AM = (5 + 5) / 2 = 5</b></p>
+
+                <h3>Geometric Mean (GM):</h3>
+                <p><b>GM = √(5 × 5) = √25 = 5</b></p>
+
+                <p>In this case, <b>AM = GM = 5</b>.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of the AM-GM Inequality</h2>
+                <ul>
+                    <li><b>Optimization Problems:</b> The AM-GM inequality is widely used to solve optimization
+                        problems, especially those involving product and sum constraints.</li>
+                    <li><b>Inequalities:</b> It is used to prove many other inequalities in mathematics, such as the
+                        Cauchy-Schwarz inequality and Holder's inequality.</li>
+                    <li><b>Economics:</b> In economics, the AM-GM inequality is applied in the analysis of
+                        production and consumption.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Generalized AM-GM Inequality</h2>
+                <p>For <b>n</b> non-negative numbers <b>x₁, x₂, …, xₙ</b>, the AM-GM inequality can be generalized
+                    as follows:</p>
+                <p><b>p₁x₁ + p₂x₂ + ⋯ + pₙxₙ / (p₁ + p₂ + ⋯ + pₙ) ≥ (x₁<sup>p₁</sup> ⋅ x₂<sup>p₂</sup> ⋅ ⋯ ⋅
+                        xₙ<sup>pₙ</sup>)<sup>1/n</sup></b></p>
+                <p>Where <b>p₁, p₂, …, pₙ</b> are positive real numbers.</p>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <div class="topic-description">
+                <h1 id="Special">4. Special Series</h1>
+                <p>Special series are certain types of series that have well-known formulas and patterns. These
+                    series frequently appear in various fields of mathematics, such as calculus, number theory, and
+                    algebra. Understanding these series and their properties is essential for solving complex
+                    problems.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>i. Arithmetic Series (AP)</h2>
+                <p>An Arithmetic Progression (AP) is a sequence of numbers where the difference between any two
+                    consecutive terms is constant. The sum of the first <b>n</b> terms of an arithmetic series is
+                    called an Arithmetic Series.</p>
+                <h3>Formula for Sum of Arithmetic Series:</h3>
+                <p><b>Sₙ = n / 2 (2a + (n - 1)d)</b></p>
+                <p>Where:</p>
+                <ul>
+                    <li><b>n</b> is the number of terms,</li>
+                    <li><b>a</b> is the first term,</li>
+                    <li><b>d</b> is the common difference between terms.</li>
+                </ul>
+                <p>Alternatively, if the last term <b>l</b> is known:</p>
+                <p><b>Sₙ = n / 2 (a + l)</b></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Geometric Series (GP)</h2>
+                <p>A Geometric Progression (GP) is a sequence where each term after the first is found by
+                    multiplying the previous term by a constant called the common ratio.</p>
+                <h3>Formula for Sum of Geometric Series:</h3>
+                <p>For the first <b>n</b> terms:</p>
+                <p><b>Sₙ = a (1 - rⁿ) / (1 - r), for r ≠ 1</b></p>
+                <p>Where:</p>
+                <ul>
+                    <li><b>a</b> is the first term,</li>
+                    <li><b>r</b> is the common ratio,</li>
+                    <li><b>n</b> is the number of terms.</li>
+                </ul>
+                <p>For an infinite geometric series (if <b>|r| < 1</b>):</p>
+                <p><b>Sₙ = a / (1 - r)</b></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. Sum of Natural Numbers</h2>
+                <p>The sum of the first <b>n</b> natural numbers is:</p>
+                <p><b>Sₙ = n(n + 1) / 2</b></p>
+                <p>This is an example of an Arithmetic Series where the common difference is 1.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iv. Sum of Squares of Natural Numbers</h2>
+                <p>The sum of the squares of the first <b>n</b> natural numbers is:</p>
+                <p><b>Sₙ = n(n + 1)(2n + 1) / 6</b></p>
+                <p>This formula helps in evaluating the sum of squared terms in a sequence.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>v. Sum of Cubes of Natural Numbers</h2>
+                <p>The sum of the cubes of the first <b>n</b> natural numbers is:</p>
+                <p><b>Sₙ = (n(n + 1) / 2)²</b></p>
+                <p>This is a special series where the sum of cubes follows a perfect square pattern.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>vi. The Binomial Expansion (Binomial Theorem)</h2>
+                <p>The Binomial Theorem provides the expansion of powers of a binomial expression <b>(a + b)ⁿ</b>.
+                    The expansion is:</p>
+                <p><b>(a + b)ⁿ = ∑(k = 0 to n) (n C k) a^(n-k) bᵏ</b></p>
+                <p>Where:</p>
+                <ul>
+                    <li><b>(n C k)</b> are the binomial coefficients.</li>
+                </ul>
+                <p>The series is used to expand expressions like <b>(a + b)ⁿ</b>.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>vii. Harmonic Series</h2>
+                <p>The Harmonic Series is the sum of the reciprocals of the natural numbers:</p>
+                <p><b>Hₙ = 1 + 1/2 + 1/3 + 1/4 + ⋯ + 1/n</b></p>
+                <p>This series is important in number theory and calculus. Note that the harmonic series diverges,
+                    meaning it grows without bound as <b>n</b> increases, but it does so very slowly.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>viii. Exponential Series</h2>
+                <p>The Exponential Series represents the exponential function <b>eˣ</b> as an infinite series:</p>
+                <p><b>eˣ = 1 + x + x² / 2! + x³ / 3! + x⁴ / 4! + …</b></p>
+                <p>This series is crucial in calculus, especially in solving differential equations and modeling
+                    growth.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ix. Sine and Cosine Series (Maclaurin Series)</h2>
+                <h3>Sine Function:</h3>
+                <p><b>sin(x) = x - x³ / 3! + x⁵ / 5! - x⁷ / 7! + …</b></p>
+                <h3>Cosine Function:</h3>
+                <p><b>cos(x) = 1 - x² / 2! + x⁴ / 4! - x⁶ / 6! + …</b></p>
+                <p>These series are used for approximating the sine and cosine functions, particularly in numerical
+                    methods and physics.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>x. Infinite Series of Powers of 2</h2>
+                <p>The sum of the first <b>n</b> terms of powers of 2 (i.e., 1, 2, 4, 8, 16, …) is:</p>
+                <p><b>Sₙ = 1 + 2 + 4 + 8 + ⋯ + 2ⁿ⁻¹ = 2ⁿ - 1</b></p>
+                <p>This is a Geometric Series with the common ratio <b>r = 2</b>.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>xi. Sum of Terms Involving Factorials</h2>
+                <p>Some special series involve factorials. For instance, the exponential series is an example where
+                    factorials appear in the denominator:</p>
+                <p><b>eˣ = ∑(n = 0 to ∞) xⁿ / n!</b></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>xii. Fibonacci Series</h2>
+                <p>The Fibonacci Series is a sequence where each term is the sum of the two preceding terms,
+                    starting with 0 and 1. The sequence looks like:</p>
+                <p><b>0, 1, 1, 2, 3, 5, 8, 13, 21, …</b></p>
+                <p>This sequence is important in various areas, including combinatorics, number theory, and even in
+                    nature.</p>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Series">5. Arithmetico-Geometric Series (AG Series)</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>An Arithmetico-Geometric Series is a series that combines elements of both an Arithmetic
+                        Progression (AP) and a Geometric Progression (GP).</li>
+                    <li>In this series, each term is the product of a term from an arithmetic progression and a term
+                        from a geometric progression.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>General Form</h2>
+                <ul>
+                    <li>The general form of an Arithmetico-Geometric series is: </li>
+                    <p>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>S</mi>
+                                <mo>=</mo>
+                                <mi>a</mi>
+                                <mo>+</mo>
+                                <mrow>
+                                    <mi>a</mi>
+                                    <mo>+</mo>
+                                    <mi>d</mi>
+                                </mrow>
+                                <mi>r</mi>
+                                <mo>+</mo>
+                                <mrow>
+                                    <mi>a</mi>
+                                    <mo>+</mo>
+                                    <mrow>
+                                        <mi>2d</mi>
+                                    </mrow>
+                                </mrow>
+                                <mi>r</mi>
+                                <msup>
+                                    <mn>2</mn>
+                                </msup>
+                                <mo>+</mo>
+                                <mrow>
+                                    <mi>a</mi>
+                                    <mo>+</mo>
+                                    <mrow>
+                                        <mi>3d</mi>
+                                    </mrow>
+                                </mrow>
+                                <mi>r</mi>
+                                <msup>
+                                    <mn>3</mn>
+                                </msup>
+                                <mo>+</mo>...
+                            </mrow>
+                        </math>
+                    </p>
+                    <li>Where: </li>
+                    <ul>
+                        <li><b>a</b> = first term of the arithmetic progression.</li>
+                        <li><b>d</b> = common difference of the arithmetic progression.</li>
+                        <li><b>r</b> = common ratio of the geometric progression.</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Summation of Arithmetico-Geometric Series</h2>
+                <ul>
+                    <li>The sum of an Arithmetico-Geometric series can be calculated by multiplying the series by
+                        powers of r and subtracting to simplify.</li>
+                    <li>Example: </li>
+                    <p>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>S</mi>
+                                <mo>-</mo>
+                                <mi>rS</mi>
+                                <mo>=</mo>
+                                <mi>a</mi>
+                                <mo>+</mo>
+                                <mrow>
+                                    <mi>a</mi>
+                                    <mo>+</mo>
+                                    <mi>d</mi>
+                                </mrow>
+                                <mi>r</mi>
+                                <mo>+</mo>
+                                <mrow>
+                                    <mi>a</mi>
+                                    <mo>+</mo>
+                                    <mrow>
+                                        <mi>2d</mi>
+                                    </mrow>
+                                </mrow>
+                                <mi>r</mi>
+                                <msup>
+                                    <mn>2</mn>
+                                </msup>
+                                <mo>+ ... </mo>
+                            </mrow>
+                        </math>
+                    </p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Sum Formula</h2>
+                <ul>
+                    <li>The sum can be expressed as: </li>
+                    <p>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>S</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>a</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>(1 - r)</mi>
+                                        <msup>
+                                            <mn>2</mn>
+                                        </msup>
+                                    </mrow>
+                                </mfrac>
+                                <mo>+</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>d</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>(1 - r)</mi>
+                                        <msup>
+                                            <mn>2</mn>
+                                        </msup>
+                                    </mrow>
+                                </mfrac>
+                            </mrow>
+                        </math>
+                    </p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications</h2>
+                <ul>
+                    <li><b>Physics</b>: Describing systems that have both constant and exponentially changing
+                        components (e.g., oscillations with a linear term).</li>
+                    <li><b>Economics</b>: Modeling financial situations where a constant term is added to a growing
+                        sum (e.g., growing investments with fixed contributions).</li>
+                    <li><b>Engineering</b>: In systems where signals grow or decay while an additional constant is
+                        added over time (e.g., in control systems).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example Calculation</h2>
+                <ul>
+                    <li>Consider the following series: </li>
+                    <p>
+                        S = 2 + 5x + 8x² + 11x³ + ...
+                    </p>
+                    <ul>
+                        <li><b>a</b> = 2, <b>d</b> = 3, <b>r</b> = x</li>
+                        <li>Apply the summation formula to find the sum for specific values of \(r\).</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

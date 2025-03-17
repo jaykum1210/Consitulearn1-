@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-maths.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 11 - 3D Geometry</div>
+        <div class="topic-name">
+            <h1>1. Distance, Section Formula, and Direction Cosines</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li><b>Distance</b> refers to the length of the shortest path between two points in space.</li>
+                    <li><b>Section Formula</b> is used to find the coordinates of a point dividing a line segment in
+                        a
+                        given ratio.</li>
+                    <li><b>Direction Cosines</b> represent the cosines of the angles made by a vector with the
+                        coordinate axes.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Section Formula</h2>
+                <ul>
+                    <li>The section formula is used to find the coordinates of a point dividing a line segment in a
+                        given ratio.</li>
+                    <li><b>Internal Division (in 2D)</b>: If a point divides the line segment joining (x1, y1) and
+                        (x2,
+                        y2) in the ratio m:n, the coordinates of the point are:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>(x, y)</mrow>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>m</mi>
+                                    <mi>x<sub>2</sub> + n</mi>
+                                    <mi>x<sub>1</sub>
+                                </mrow>
+                                <mrow>
+                                    <mi>m + n</mi>
+                                </mrow>
+                            </mfrac>
+                            <mo>,</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>m</mi>
+                                    <mi>y<sub>2</sub> + n</mi>
+                                    <mi>y<sub>1</sub>
+                                </mrow>
+                                <mrow>
+                                    <mi>m + n</mi>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                    </li>
+                    <li><b>External Division</b>: If a point divides the line segment joining (x1, y1) and (x2, y2)
+                        externally in the ratio m:n, the coordinates of the point are:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>(x, y)</mrow>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>m</mi>
+                                    <mi>x<sub>2</sub> - n</mi>
+                                    <mi>x<sub>1</sub>
+                                </mrow>
+                                <mrow>
+                                    <mi>m - n</mi>
+                                </mrow>
+                            </mfrac>
+                            <mo>,</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>m</mi>
+                                    <mi>y<sub>2</sub> - n</mi>
+                                    <mi>y<sub>1</sub>
+                                </mrow>
+                                <mrow>
+                                    <mi>m - n</mi>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Direction Cosines</h2>
+                <ul>
+                    <li>Direction cosines of a vector represent the cosines of the angles the vector makes with the
+                        coordinate axes.</li>
+                    <li>If the vector is <i>r = (x, y, z)</i>, the direction cosines are given by:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>(cos α, cos β, cos γ)</mrow>
+                        </math>
+                        where α, β, γ are the angles made with the x, y, and z axes, respectively.
+                    </li>
+                    <li>These direction cosines satisfy the relation:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>cos<sup>2</sup>α + cos<sup>2</sup>β + cos<sup>2</sup>γ = 1</mrow>
+                        </math>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Lines">2. Lines </h1>
+            <div class="topic-description">
+                <h2>i. Equation of a Line</h2>
+                <ul>
+                    <li><b>General Form:</b> The equation of a line is given by:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>A</mi>
+                            </msub>
+                            <mi>x</mi> + <msub>
+                                <mi>B</mi>
+                            </msub>
+                            <mi>y</mi> + <msub>
+                                <mi>C</mi>
+                            </msub> = 0
+                        </math>
+                    </li>
+                    <li><b>Slope-Intercept Form:</b> The equation of a line in slope-intercept form is:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>y</mi> = <mi>m</mi>
+                            <mi>x</mi> + <mi>c</mi>
+                        </math>
+                        where <mi>m</mi> is the slope and <mi>c</mi> is the y-intercept.
+                    </li>
+                    <li><b>Point-Slope Form:</b> The equation of a line using the point-slope form is:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>y</mi> - <msub>
+                                <mi>y</mi>
+                            </msub>
+                            <mi>1</mi> = <mi>m</mi>
+                            <mi>(x</mi> - <msub>
+                                <mi>x</mi>
+                            </msub>
+                            <mi>1</mi>)
+                        </math>
+                        where <mi>(x<sub>1</sub>, y<sub>1</sub>)</mi> is a point on the line and <mi>m</mi> is the
+                        slope.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Slope of a Line</h2>
+                <ul>
+                    <li>The slope of a line is the ratio of the change in <i>y</i> to the change in <i>x</i>:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>m</mi> =
+                            <mfrac>
+                                <mrow>
+                                    <mi>y</mi>
+                                    <sub>2</sub>
+                                    <mo>-</mo>
+                                    <mi>y</mi>
+                                    <sub>1</sub>
+                                </mrow>
+                                <mrow>
+                                    <mi>x</mi>
+                                    <sub>2</sub>
+                                    <mo>-</mo>
+                                    <mi>x</mi>
+                                    <sub>1</sub>
+                                </mrow>
+                            </mfrac>
+                        </math>
+
+                    </li>
+                    <li><b>Parallel Lines:</b> Lines with the same slope <mi>m<sub>1</sub> = m<sub>2</sub></mi>.
+                    </li>
+                    <li><b>Perpendicular Lines:</b> Lines where the product of their slopes is -1:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>m</mi>
+                            <sub>1</sub>
+                            <mo>&times;</mo>
+                            <mi>m</mi>
+                            <sub>2</sub>
+                            <mo>=</mo>
+                            <mn>-1</mn>
+                        </math>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. Distance of a Point from a Line</h2>
+                <ul>
+                    <li>The distance from a point <i>(x<sub>1</sub>, y<sub>1</sub>)</i> to a line <i>Ax + By + C =
+                            0</i>
+                        is given by:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>Distance</mi>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>|</mi>
+                                    <mi>A</mi>
+                                    <mi>x</mi>
+                                    <sub>1</sub>
+                                    <mo>+</mo>
+                                    <mi>B</mi>
+                                    <mi>y</mi>
+                                    <sub>1</sub>
+                                    <mo>+</mo>
+                                    <mi>C</mi>
+                                    <mi>|</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>A</mi>
+                                    <msup>
+                                        <mi>2</mi>
+                                    </msup>
+                                    <mo>+</mo>
+                                    <mi>B</mi>
+                                    <msup>
+                                        <mi>2</mi>
+                                    </msup>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iv. Angle Between Two Lines</h2>
+                <ul>
+                    <li>The angle θ between two lines with slopes <mi>m<sub>1</sub></mi> and <mi>m<sub>2</sub></mi>
+                        is
+                        given by:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>tan</mi>
+                            <mi>&#x3B8;</mi>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>|</mi>
+                                    <mi>m<sub>1</sub> - m<sub>2</sub></mi>
+                                    <mi>|</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>1 + m<sub>1</sub> m<sub>2</sub></mi>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>v. Intercept Form of a Line</h2>
+                <ul>
+                    <li>The equation of a line in intercept form is:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>x</mi>
+                            <mfrac>
+                                <mi>1</mi>
+                                <mi>a</mi>
+                            </mfrac> + <mi>y</mi>
+                            <mfrac>
+                                <mi>1</mi>
+                                <mi>b</mi>
+                            </mfrac> = 1
+                        </math>
+                        where <mi>a</mi> is the x-intercept and <mi>b</mi> is the y-intercept.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>vi. Collinearity of Points</h2>
+                <ul>
+                    <li>Three points <i>(x<sub>1</sub>, y<sub>1</sub>)</i>, <i>(x<sub>2</sub>, y<sub>2</sub>)</i>,
+                        <i>(x<sub>3</sub>, y<sub>3</sub>)</i> are collinear if the area of the triangle formed by
+                        them
+                        is zero. The condition for collinearity is:
+                        <br>
+                        <strong>Area = (1/2) * | x<sub>1</sub>(y<sub>2</sub> - y<sub>3</sub>) +
+                            x<sub>2</sub>(y<sub>3</sub> - y<sub>1</sub>) + x<sub>3</sub>(y<sub>1</sub> -
+                            y<sub>2</sub>)
+                            | = 0</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Plane">3. Plane</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>The equation of a plane represents a flat, two-dimensional surface in three-dimensional
+                        space.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Forms of Plane Equation</h2>
+                <ul>
+                    <li>General Form:
+                        <p>Equation:
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>A</mi>
+                                <mi>x</mi>
+                                <mo>+</mo>
+                                <mi>B</mi>
+                                <mi>y</mi>
+                                <mo>+</mo>
+                                <mi>C</mi>
+                                <mi>z</mi>
+                                <mo>+</mo>
+                                <mi>D</mi>
+                                <mo>=</mo>
+                                <mn>0</mn>
+                            </math>
+                        </p>
+                    </li>
+                    <li>Point-Normal Form:
+                        <p>Equation:
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>r</mi>
+                                <mo>&#x22C5;</mo>
+                                <mi>n</mi>
+                                <mo>=</mo>
+                                <mi>d</mi>
+                            </math>
+                        </p>
+                    </li>
+                    <li>Vector Form:
+                        <p>Equation:
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>r</mi>
+                                <mo>&#x22C5;</mo>
+                                <mi>n</mi>
+                                <mo>=</mo>
+                                <mi>a</mi>
+                                <mo>&#x22C5;</mo>
+                                <mi>n</mi>
+                            </math>
+                        </p>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Distance from a Point to a Plane</h2>
+                <ul>
+                    <li>The perpendicular distance from a point to a plane can be found using the formula:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>Distance</mi>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>|</mi>
+                                    <mi>A</mi>
+                                    <mi>x</mi>
+                                    <mo>+</mo>
+                                    <mi>B</mi>
+                                    <mi>y</mi>
+                                    <mo>+</mo>
+                                    <mi>C</mi>
+                                    <mi>z</mi>
+                                    <mo>+</mo>
+                                    <mi>D</mi>
+                                    <mi>|</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>A</mi>
+                                    <msup>
+                                        <mi>A</mi>
+                                        <mn>2</mn>
+                                    </msup>
+                                    <mo>+</mo>
+                                    <mi>B</mi>
+                                    <msup>
+                                        <mi>B</mi>
+                                        <mn>2</mn>
+                                    </msup>
+                                    <mo>+</mo>
+                                    <mi>C</mi>
+                                    <msup>
+                                        <mi>C</mi>
+                                        <mn>2</mn>
+                                    </msup>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Angle Between Two Planes</h2>
+                <ul>
+                    <li>The angle between two planes is determined by the angle between their normal vectors. The
+                        formula is:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>cos</mi>
+                            <mi>&#x3B8;</mi>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>|</mi>
+                                    <mi>A</mi>
+                                    <msub>
+                                        <mi>1</mi>
+                                    </msub>
+                                    <mi>A</mi>
+                                    <msub>
+                                        <mi>2</mi>
+                                    </msub>
+                                    <mo>+</mo>
+                                    <mi>B</mi>
+                                    <msub>
+                                        <mi>1</mi>
+                                    </msub>
+                                    <mi>B</mi>
+                                    <msub>
+                                        <mi>2</mi>
+                                    </msub>
+                                    <mo>+</mo>
+                                    <mi>C</mi>
+                                    <msub>
+                                        <mi>1</mi>
+                                    </msub>
+                                    <mi>C</mi>
+                                    <msub>
+                                        <mi>2</mi>
+                                    </msub>
+                                    <mi>|</mi>
+                                </mrow>
+                                <mrow>
+                                    <msup>
+                                        <mi>A</mi>
+                                        <mn>2</mn>
+                                    </msup>
+                                    <mo>+</mo>
+                                    <msup>
+                                        <mi>B</mi>
+                                        <mn>2</mn>
+                                    </msup>
+                                    <mo>+</mo>
+                                    <msup>
+                                        <mi>C</mi>
+                                        <mn>2</mn>
+                                    </msup>
+                                    <mo>&#8290;</mo>
+                                    <msup>
+                                        <mi>A</mi>
+                                        <mn>2</mn>
+                                    </msup>
+                                    <mo>+</mo>
+                                    <msup>
+                                        <mi>B</mi>
+                                        <mn>2</mn>
+                                    </msup>
+                                    <mo>+</mo>
+                                    <msup>
+                                        <mi>C</mi>
+                                        <mn>2</mn>
+                                    </msup>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Intersection">4. Intersection</h1>
+            <div class="topic-description">
+                <h2>Intersection of Two Planes</h2>
+                <ul>
+                    <li>The intersection of two planes generally results in a line.</li>
+                    <li>For two planes with equations:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>A</mi>
+                                <mi>1</mi>
+                                <mi>x</mi>
+                                <mo>+</mo>
+                                <mi>B</mi>
+                                <mi>1</mi>
+                                <mi>y</mi>
+                                <mo>+</mo>
+                                <mi>C</mi>
+                                <mi>1</mi>
+                                <mi>z</mi>
+                                <mo>+</mo>
+                                <mi>D</mi>
+                                <mi>1</mi>
+                                <mo>=</mo>
+                                <mn>0</mn>
+                            </mrow>
+                            <mrow>
+                                <mi>A</mi>
+                                <mi>2</mi>
+                                <mi>x</mi>
+                                <mo>+</mo>
+                                <mi>B</mi>
+                                <mi>2</mi>
+                                <mi>y</mi>
+                                <mo>+</mo>
+                                <mi>C</mi>
+                                <mi>2</mi>
+                                <mi>z</mi>
+                                <mo>+</mo>
+                                <mi>D</mi>
+                                <mi>2</mi>
+                                <mo>=</mo>
+                                <mn>0</mn>
+                            </mrow>
+                        </math>
+                    </li>
+                    <li>The direction ratios of the line of intersection can be found using the cross product of
+                        the normal vectors of the planes:</li>
+                    <ul>
+                        <li>Normal vector of the first plane: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>n</mi>
+                                <mo>₁</mo>
+                                <mo>=</mo>
+                                <mo>&lt;</mo>
+                                <mi>A</mi><sub>1</sub>
+                                <mo>,</mo>
+                                <mi>B</mi><sub>1</sub>
+                                <mo>,</mo>
+                                <mi>C</mi><sub>1</sub>
+                                <mo>&gt;</mo>
+                            </math></li>
+                        <li>Normal vector of the second plane: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>n</mi>
+                                <mo>₂</mo>
+                                <mo>=</mo>
+                                <mo>&lt;</mo>
+                                <mi>A</mi><sub>2</sub>
+                                <mo>,</mo>
+                                <mi>B</mi><sub>2</sub>
+                                <mo>,</mo>
+                                <mi>C</mi><sub>2</sub>
+                                <mo>&gt;</mo>
+                            </math></li>
+                        <li>Direction vector of the line of intersection:
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>L</mi>
+                                <mo>=</mo>
+                                <mi>n</mi>
+                                <mo>₁</mo>
+                                <mo>&#xD7;</mo>
+                                <mi>n</mi>
+                                <mo>₂</mo>
+                            </math>
+                        </li>
+                    </ul>
+                    <li>To find the equation of the line, a point on the line must be determined by solving the
+                        system of equations for x, y, and z.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Intersection of Three Planes</h2>
+                <ul>
+                    <li>The intersection of three planes can result in:</li>
+                    <ul>
+                        <li>A single point if the planes are not parallel and their normal vectors are not
+                            proportional.</li>
+                        <li>A line if two planes are parallel and the third intersects them along a line.</li>
+                        <li>No intersection if the planes are parallel or form a skew configuration.</li>
+                    </ul>
+                    <li>To find the point of intersection of three planes, solve the system of three equations:
+                    </li>
+                    <ul>
+                        <li><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>A</mi>
+                                <mi>1</mi>
+                                <mi>x</mi>
+                                <mo>+</mo>
+                                <mi>B</mi>
+                                <mi>1</mi>
+                                <mi>y</mi>
+                                <mo>+</mo>
+                                <mi>C</mi>
+                                <mi>1</mi>
+                                <mi>z</mi>
+                                <mo>+</mo>
+                                <mi>D</mi>
+                                <mi>1</mi>
+                                <mo>=</mo>
+                                <mn>0</mn>
+                            </math></li>
+                        <li><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>A</mi>
+                                <mi>2</mi>
+                                <mi>x</mi>
+                                <mo>+</mo>
+                                <mi>B</mi>
+                                <mi>2</mi>
+                                <mi>y</mi>
+                                <mo>+</mo>
+                                <mi>C</mi>
+                                <mi>2</mi>
+                                <mi>z</mi>
+                                <mo>+</mo>
+                                <mi>D</mi>
+                                <mi>2</mi>
+                                <mo>=</mo>
+                                <mn>0</mn>
+                            </math></li>
+                        <li><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>A</mi>
+                                <mi>3</mi>
+                                <mi>x</mi>
+                                <mo>+</mo>
+                                <mi>B</mi>
+                                <mi>3</mi>
+                                <mi>y</mi>
+                                <mo>+</mo>
+                                <mi>C</mi>
+                                <mi>3</mi>
+                                <mi>z</mi>
+                                <mo>+</mo>
+                                <mi>D</mi>
+                                <mi>3</mi>
+                                <mo>=</mo>
+                                <mn>0</mn>
+                            </math></li>
+                    </ul>
+                    <li>The solution to this system gives the coordinates (x, y, z) of the point of
+                        intersection.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Parallel Planes</h2>
+                <ul>
+                    <li>If two planes are parallel, they will not intersect. The normal vectors of the planes
+                        are proportional:</li>
+                    <ul>
+                        <li><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>n</mi>
+                                <mo>₁</mo>
+                                <mo>∥</mo>
+                                <mi>n</mi>
+                                <mo>₂</mo>
+                            </math></li>
+                    </ul>
+                    <li>The planes will either be distinct or coincident if the constant terms are the same.
+                        Example of two parallel planes:</li>
+                    <ul>
+                        <li><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>A</mi>
+                                <mi>1</mi>
+                                <mi>x</mi>
+                                <mo>+</mo>
+                                <mi>B</mi>
+                                <mi>1</mi>
+                                <mi>y</mi>
+                                <mo>+</mo>
+                                <mi>C</mi>
+                                <mi>1</mi>
+                                <mi>z</mi>
+                                <mo>+</mo>
+                                <mi>D</mi>
+                                <mi>1</mi>
+                                <mo>=</mo>
+                                <mn>0</mn>
+                            </math></li>
+                        <li><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>A</mi>
+                                <mi>2</mi>
+                                <mi>x</mi>
+                                <mo>+</mo>
+                                <mi>B</mi>
+                                <mi>2</mi>
+                                <mi>y</mi>
+                                <mo>+</mo>
+                                <mi>C</mi>
+                                <mi>2</mi>
+                                <mi>z</mi>
+                                <mo>+</mo>
+                                <mi>D</mi>
+                                <mi>2</mi>
+                                <mo>=</mo>
+                                <mn>0</mn>
+                            </math></li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Coincident Planes</h2>
+                <ul>
+                    <li>If two planes are coincident, they are the same plane. The equations of the two planes
+                        are either identical or proportional:</li>
+                    <ul>
+                        <li><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>A</mi>
+                                <mi>1</mi>
+                                <mi>x</mi>
+                                <mo>+</mo>
+                                <mi>B</mi>
+                                <mi>1</mi>
+                                <mi>y</mi>
+                                <mo>+</mo>
+                                <mi>C</mi>
+                                <mi>1</mi>
+                                <mi>z</mi>
+                                <mo>+</mo>
+                                <mi>D</mi>
+                                <mi>1</mi>
+                                <mo>=</mo>
+                                <mn>0</mn>
+                            </math></li>
+                        <li><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>k</mi>
+                                <mo>(</mo>
+                                <mi>A</mi>
+                                <mi>1</mi>
+                                <mi>x</mi>
+                                <mo>+</mo>
+                                <mi>B</mi>
+                                <mi>1</mi>
+                                <mi>y</mi>
+                                <mo>+</mo>
+                                <mi>C</mi>
+                                <mi>1</mi>
+                                <mi>z</mi>
+                                <mo>+</mo>
+                                <mi>D</mi>
+                                <mi>1</mi>
+                                <mo>)</mo>
+                                <mo>=</mo>
+                                <mn>0</mn>
+                            </math></li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Parallel and Non-Intersecting Planes</h2>
+                <ul>
+                    <li>If the planes are neither parallel nor coincident, they will intersect along a straight
+                        line. To find the line of intersection:</li>
+                    <ol>
+                        <li>Write the equations of the two planes:</li>
+                        <ul>
+                            <li><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>A</mi>
+                                    <mi>1</mi>
+                                    <mi>x</mi>
+                                    <mo>+</mo>
+                                    <mi>B</mi>
+                                    <mi>1</mi>
+                                    <mi>y</mi>
+                                    <mo>+</mo>
+                                    <mi>C</mi>
+                                    <mi>1</mi>
+                                    <mi>z</mi>
+                                    <mo>+</mo>
+                                    <mi>D</mi>
+                                    <mi>1</mi>
+                                    <mo>=</mo>
+                                    <mn>0</mn>
+                                </math></li>
+                            <li><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>A</mi>
+                                    <mi>2</mi>
+                                    <mi>x</mi>
+                                    <mo>+</mo>
+                                    <mi>B</mi>
+                                    <mi>2</mi>
+                                    <mi>y</mi>
+                                    <mo>+</mo>
+                                    <mi>C</mi>
+                                    <mi>2</mi>
+                                    <mi>z</mi>
+                                    <mo>+</mo>
+                                    <mi>D</mi>
+                                    <mi>2</mi>
+                                    <mo>=</mo>
+                                    <mn>0</mn>
+                                </math></li>
+                        </ul>
+                        <li>Find the direction ratios of the line by taking the cross product of the normal
+                            vectors of the planes.</li>
+                        <li>Find a point on the line by solving the system of two plane equations for two
+                            variables, then substitute to find the third variable.</li>
+                        <li>Write the parametric equation of the line:</li>
+                        <ul>
+                            <li><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>x</mi>
+                                    <mo>=</mo>
+                                    <mi>x</mi><sub>0</sub>
+                                    <mo>+</mo>
+                                    <mi>t</mi>
+                                    <mi>L</mi><sub>x</sub>
+                                </math></li>
+                            <li><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>y</mi>
+                                    <mo>=</mo>
+                                    <mi>y</mi><sub>0</sub>
+                                    <mo>+</mo>
+                                    <mi>t</mi>
+                                    <mi>L</mi><sub>y</sub>
+                                </math></li>
+                            <li><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>z</mi>
+                                    <mo>=</mo>
+                                    <mi>z</mi><sub>0</sub>
+                                    <mo>+</mo>
+                                    <mi>t</mi>
+                                    <mi>L</mi><sub>z</sub>
+                                </math></li>
+                        </ul>
+                    </ol>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

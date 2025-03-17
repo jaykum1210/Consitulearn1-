@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-chemistry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 1 - Structure of Atom</div>
+        <div class="topic-name">
+            <h1 id="Models">1. Atomic Models</h1>
+            <div class="topic-description">
+                <h2>Dalton’s Atomic Model (1803) – Indivisible Atoms</h2>
+                <ul>
+                    <li><b>Proposed by:</b> John Dalton</li>
+                    <li><b>Key Features:</b>
+                        <ul>
+                            <li>Atoms are tiny, indivisible particles.</li>
+                            <li>Atoms of the same element are identical in mass and properties.</li>
+                            <li>Atoms combine in simple whole-number ratios to form compounds.</li>
+                            <li>Atoms cannot be created or destroyed (Law of Conservation of Mass).</li>
+                        </ul>
+                    </li>
+                    <li><b>Limitations:</b>
+                        <ul>
+                            <li>Did not explain the internal structure of atoms.</li>
+                            <li>Could not explain the discovery of subatomic particles.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Thomson’s Plum Pudding Model (1897) – Discovery of Electrons</h2>
+                <ul>
+                    <li><b>Proposed by:</b> J.J. Thomson</li>
+                    <li><b>Key Features:</b>
+                        <ul>
+                            <li>Atom is a positively charged sphere with negatively charged electrons embedded in it.
+                            </li>
+                            <li>Explained the existence of electrons (discovered in cathode ray experiments).</li>
+                            <li>Atoms are electrically neutral.</li>
+                        </ul>
+                    </li>
+                    <li><b>Limitations:</b>
+                        <ul>
+                            <li>Could not explain atomic stability.</li>
+                            <li>Did not account for the presence of a nucleus.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Rutherford’s Nuclear Model (1911) – Discovery of the Nucleus</h2>
+                <ul>
+                    <li><b>Proposed by:</b> Ernest Rutherford</li>
+                    <li><b>Experiment:</b> Gold Foil Experiment</li>
+                    <li><b>Key Features:</b>
+                        <ul>
+                            <li>Atom has a dense, positively charged nucleus at the center.</li>
+                            <li>Electrons move around the nucleus in empty space.</li>
+                            <li>Most of the atom is empty space.</li>
+                        </ul>
+                    </li>
+                    <li><b>Limitations:</b>
+                        <ul>
+                            <li>Could not explain why electrons do not fall into the nucleus.</li>
+                            <li>Did not explain atomic spectra.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Bohr’s Atomic Model (1913) – Quantized Orbits</h2>
+                <ul>
+                    <li><b>Proposed by:</b> Niels Bohr</li>
+                    <li><b>Key Features:</b>
+                        <ul>
+                            <li>Electrons revolve in discrete orbits (energy levels).</li>
+                            <li>Energy is quantized – Electrons can only exist in specific energy levels.</li>
+                            <li>Electrons absorb or emit energy only when jumping between orbits.</li>
+                        </ul>
+                    </li>
+                    <li><b>Bohr’s Energy Equation:</b>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>E</mi>
+                                <mi>n</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mo>-13.6</mo>
+                                <msup>
+                                    <mi>n</mi>
+                                    <mn>2</mn>
+                                </msup>
+                            </mfrac>
+                            <mi>eV</mi>
+                        </math>
+                    </li>
+                    <li><b>Limitations:</b>
+                        <ul>
+                            <li>Could not explain spectra of multi-electron atoms.</li>
+                            <li>Did not account for electron wave nature.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Quantum Mechanical Model (1926) – Electron Clouds</h2>
+                <ul>
+                    <li><b>Proposed by:</b> Schrödinger, Heisenberg, and de Broglie</li>
+                    <li><b>Key Features:</b>
+                        <ul>
+                            <li>Electrons are not in fixed orbits, but exist in probability clouds (orbitals).</li>
+                            <li>Schrödinger’s Wave Equation describes electron behavior.</li>
+                            <li>Heisenberg’s Uncertainty Principle: It is impossible to know both position and momentum
+                                of an electron simultaneously.</li>
+                        </ul>
+                    </li>
+                    <li><b>Types of Orbitals:</b>
+                        <ul>
+                            <li>s-orbital (spherical)</li>
+                            <li>p-orbital (dumbbell-shaped)</li>
+                            <li>d & f orbitals (complex shapes)</li>
+                        </ul>
+                    </li>
+                    <li><b>Most Accurate Model used today in quantum mechanics!</b></li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none; margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Configuration">2. Electronic Configuration</h1>
+            <div class="topic-description">
+                <p>Electronic configuration refers to the systematic arrangement of electrons in different energy levels
+                    (shells and subshells) of an atom.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>i. Quantum Numbers and Orbitals</h2>
+                <ul>
+                    <li><b>Principal Quantum Number (n):</b> Indicates the main energy level (shell).</li>
+                    <li><b>Azimuthal Quantum Number (l):</b> Represents the shape of the orbital.</li>
+                    <li><b>Magnetic Quantum Number (mₗ):</b> Specifies the orientation of orbitals.</li>
+                    <li><b>Spin Quantum Number (mₛ):</b> Describes the spin of an electron.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Rules for Writing Electronic Configuration</h2>
+                <ul>
+                    <li><b>Aufbau Principle:</b> Electrons fill orbitals in order of increasing energy levels.</li>
+                    <li><b>Pauli’s Exclusion Principle:</b> No two electrons can have the same set of four quantum
+                        numbers.</li>
+                    <li><b>Hund’s Rule:</b> Each orbital in a subshell is singly occupied before pairing.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. Notation for Electronic Configuration</h2>
+                <p>Example: Carbon (C) → 1s² 2s² 2p²</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iv. Electronic Configuration of Elements</h2>
+                <table>
+                    <tr>
+                        <th>Element</th>
+                        <th>Atomic Number</th>
+                        <th>Electronic Configuration</th>
+                    </tr>
+                    <tr>
+                        <td>Hydrogen (H)</td>
+                        <td>1</td>
+                        <td>1s¹</td>
+                    </tr>
+                    <tr>
+                        <td>Helium (He)</td>
+                        <td>2</td>
+                        <td>1s²</td>
+                    </tr>
+                    <tr>
+                        <td>Carbon (C)</td>
+                        <td>6</td>
+                        <td>1s² 2s² 2p²</td>
+                    </tr>
+                    <tr>
+                        <td>Neon (Ne)</td>
+                        <td>10</td>
+                        <td>1s² 2s² 2p⁶</td>
+                    </tr>
+                    <tr>
+                        <td>Sodium (Na)</td>
+                        <td>11</td>
+                        <td>1s² 2s² 2p⁶ 3s¹</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>v. Exceptional Electronic Configurations</h2>
+                <p>Certain elements deviate from the Aufbau principle due to stability factors:</p>
+                <ul>
+                    <li><b>Chromium (Cr):</b> [Ar] 4s¹ 3d⁵ instead of [Ar] 4s² 3d⁴</li>
+                    <li><b>Copper (Cu):</b> [Ar] 4s¹ 3d¹⁰ instead of [Ar] 4s² 3d⁹</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>vi. Importance of Electronic Configuration</h2>
+                <ul>
+                    <li>Determines chemical properties and reactivity.</li>
+                    <li>Explains bonding, magnetism, and conductivity.</li>
+                    <li>Helps predict ion formation.</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none; margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Orbitals">3. Quantum Numbers and Orbitals</h1>
+            <div class="topic-description">
+                <h2>Quantum Numbers</h2>
+                <h3>Principal Quantum Number (n)</h3>
+                <ul>
+                    <li>Represents the main energy level (shell) of an electron.</li>
+                    <li>Determines the size and energy of the orbital.</li>
+                    <li>Possible values: n = 1, 2, 3, 4, ...</li>
+                </ul>
+
+                <h3>Azimuthal Quantum Number (l)</h3>
+                <ul>
+                    <li>Represents the subshell (shape of the orbital).</li>
+                    <li>Values: l = 0 to (n-1)</li>
+                    <li>Shapes:
+                        <ul>
+                            <li>l = 0 → s-orbital (Spherical)</li>
+                            <li>l = 1 → p-orbital (Dumbbell)</li>
+                            <li>l = 2 → d-orbital (Cloverleaf)</li>
+                            <li>l = 3 → f-orbital (Complex)</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Magnetic Quantum Number (mₗ)</h3>
+                <ul>
+                    <li>Determines the orientation of an orbital in space.</li>
+                    <li>Values: mₗ = -l to +l</li>
+                </ul>
+
+                <h3>Spin Quantum Number (mₛ)</h3>
+                <ul>
+                    <li>Represents the spin direction of an electron.</li>
+                    <li>Possible values: +½ or −½</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Orbitals</h2>
+                <table>
+                    <tr>
+                        <th>Orbital</th>
+                        <th>l Value</th>
+                        <th>Shape</th>
+                        <th>Number of Orbitals</th>
+                        <th>Max Electrons</th>
+                    </tr>
+                    <tr>
+                        <td>s</td>
+                        <td>0</td>
+                        <td>Spherical</td>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>p</td>
+                        <td>1</td>
+                        <td>Dumbbell</td>
+                        <td>3</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>d</td>
+                        <td>2</td>
+                        <td>Cloverleaf</td>
+                        <td>5</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>f</td>
+                        <td>3</td>
+                        <td>Complex</td>
+                        <td>7</td>
+                        <td>14</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Energy Levels and Orbital Filling</h2>
+                <ul>
+                    <li>Maximum electrons per shell:
+                        <ul>
+                            <li>K-shell (n = 1) → 2 electrons</li>
+                            <li>L-shell (n = 2) → 8 electrons</li>
+                            <li>M-shell (n = 3) → 18 electrons</li>
+                            <li>N-shell (n = 4) → 32 electrons</li>
+                        </ul>
+                    </li>
+                    <li>Orbital filling order (Aufbau principle):</li>
+                </ul>
+                <p>1s → 2s → 2p → 3s → 3p → 4s → 3d → 4p → 5s → 4d → 5p → 6s → 4f → 5d → 6p → 7s → 5f → 6d → 7p</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Relationship Between Quantum Numbers & Orbitals</h2>
+                <table>
+                    <tr>
+                        <th>Quantum Number</th>
+                        <th>Symbol</th>
+                        <th>Determines</th>
+                    </tr>
+                    <tr>
+                        <td>Principal</td>
+                        <td>n</td>
+                        <td>Energy level (shell)</td>
+                    </tr>
+                    <tr>
+                        <td>Azimuthal</td>
+                        <td>l</td>
+                        <td>Orbital shape (s, p, d, f)</td>
+                    </tr>
+                    <tr>
+                        <td>Magnetic</td>
+                        <td>mₗ</td>
+                        <td>Orbital orientation</td>
+                    </tr>
+                    <tr>
+                        <td>Spin</td>
+                        <td>mₛ</td>
+                        <td>Electron spin direction</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

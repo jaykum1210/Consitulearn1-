@@ -168,3 +168,56 @@ body {
     text-decoration: underline;
 
 }
+.boxes {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+}
+
+
+.box {
+    background-color: rgb(245, 245, 245);
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 30px;
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    justify-self: center;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+    transition: all 0.2s ease, height 0.2s ease-in-out;
+}
+
+.box img {
+    width: 260px;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 15px;
+    border: 2px solid rgb(51, 51, 51);
+}
+
+.box h1 {
+    font-size: 30px;
+    /* margin-bottom: 10px; */
+}
+
+.box h2 {
+    font-size: 15px;
+}
+#main-course-button {
+    background-color: #ccc;
+    color: black;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+#main-course-button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

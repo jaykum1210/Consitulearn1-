@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-maths.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 13 - Statistics</div>
+        <div class="topic-name">
+            <h1>1. Mean (Average)</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>The mean (also called the average) is a measure of central tendency in statistics. It is
+                        used to summarize a set of numbers by finding a central or typical value.</li>
+                </ul>
+                <h2>Formula</h2>
+                <ul>
+                    <li>For a given set of <i>n</i> numbers, the mean is calculated as:</li>
+                    <li><math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mfrac>
+                                <mrow>
+                                    <mi>&sum;</mi>
+                                    <mi>i=1</mi>
+                                    <mi>n</mi>
+                                    <mi>x<sub>i</sub></mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>n</mi>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                        <p>Where <i>x<sub>i</sub></i> are the individual values in the data set and <i>n</i> is the
+                            total number of values in the data set.</p>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Mean</h2>
+                <ol style="list-style-type: lower-roman;">
+                    <li>
+                        <p><b>Arithmetic Mean</b></p>
+                        <ul>
+                            <li>The sum of all numbers divided by the number of values.</li>
+                            <li>Example: For the set {2, 4, 6, 8}, the mean is:</li>
+                            <p>Mean = (2 + 4 + 6 + 8) / 4 = 5</p>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Weighted Mean</b></p>
+                        <ul>
+                            <li>When different values have different levels of importance or frequency.</li>
+                            <li>Formula:
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mfrac>
+                                        <mrow><i>&sum;</i>
+                                            <mi>w<sub>i</sub></mi>
+                                            <mi>x<sub>i</sub></mi>
+                                        </mrow>
+                                        <mrow><i>&sum;</i>
+                                            <mi>w<sub>i</sub></mi>
+                                        </mrow>
+                                    </mfrac>
+                                </math>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Properties of Mean</h2>
+                <ul>
+                    <li><b>Uniqueness:</b> There is only one mean for any given set of data.</li>
+                    <li><b>Sensitivity:</b> The mean is affected by extreme values (outliers) in the data.</li>
+                    <li><b>Balance Point:</b> The mean is the point where the data set would balance if plotted on a
+                        number line.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications</h2>
+                <ul>
+                    <li>Used in various fields like economics, education, and science to analyze data.</li>
+                    <li>Helps in understanding the distribution of data and making comparisons between data sets.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example</h2>
+                <ul>
+                    <li>For the data set {5, 10, 15, 20}, the mean is:</li>
+                    <p>Mean = (5 + 10 + 15 + 20) / 4 = 50 / 4 = 12.5</p>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Median">2. Median</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>The median is a measure of central tendency, which represents the middle value of a data set
+                        when it is ordered in ascending or descending order.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Steps to Calculate the Median</h2>
+                <ul>
+                    <li><b>Arrange the data:</b> Arrange the data set in ascending or descending order.</li>
+                    <li><b>Find the middle value:</b>
+                        <ul>
+                            <li>For an odd number of data points: The median is the middle value.</li>
+                            <li>For an even number of data points: The median is the average of the two middle
+                                values.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Formula</h2>
+                <ul>
+                    <li><b>Odd number of data points:</b>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mfrac>
+                                <mrow>
+                                    <mi>x</mi><sub>
+                                        <mi>n+1</mi>
+                                    </sub>
+                                </mrow>
+                                <mrow>
+                                    <mi>2</mi>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                        <p>Where <i>n</i> is the total number of values in the data set.</p>
+                    </li>
+                    <li><b>Even number of data points:</b>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mfrac>
+                                <mrow>
+                                    <mi>x</mi><sub>
+                                        <mi>n/2</mi>
+                                    </sub>
+                                </mrow>
+                                <mrow>
+                                    <mi>2</mi>
+                                </mrow>
+                            </mfrac>
+                            +
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mfrac>
+                                    <mrow>
+                                        <mi>x</mi><sub>
+                                            <mi>n/2+1</mi>
+                                        </sub>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>2</mi>
+                                    </mrow>
+                                </mfrac>
+                            </math>
+                        </math>
+                        <p>Where <i>n</i> is the total number of values in the data set, and <i>x<sub>n/2</sub></i>
+                            and <i>x<sub>n/2+1</sub></i> are the middle two values.</p>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Properties of the Median</h2>
+                <ul>
+                    <li><b>Insensitive to Outliers:</b> Unlike the mean, the median is not affected by extremely
+                        large or small values (outliers), making it a better measure of central tendency for skewed
+                        data.</li>
+                    <li><b>Middle Value:</b> The median splits the data set into two equal halves—half of the data
+                        points are less than the median, and half are greater than the median.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example</h2>
+                <ul>
+                    <li>For the data set {3, 1, 4, 2, 5}:</li>
+                    <p>Arrange in ascending order: {1, 2, 3, 4, 5}. Since there are 5 values (odd), the median is
+                        the middle value, which is 3.</p>
+                    <li>For the data set {7, 1, 3, 9}:</li>
+                    <p>Arrange in ascending order: {1, 3, 7, 9}. Since there are 4 values (even), the median is the
+                        average of the two middle values:</p>
+                    <p>Median = (3 + 7) / 2 = 5</p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications</h2>
+                <ul>
+                    <li>The median is widely used in fields like economics, healthcare, and education, especially
+                        when the data includes outliers or is skewed.</li>
+                    <li>It is a better indicator of the central tendency for non-symmetrical distributions.</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Mode">3. Mode</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>The mode is a measure of central tendency that represents the value that appears most
+                        frequently in a data set. It can be used for both numerical and categorical data.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Steps to Find the Mode</h2>
+                <ul>
+                    <li><b>Arrange the data:</b> (optional, but can help in identifying the mode).</li>
+                    <li><b>Identify the most frequent value(s):</b> The mode is the value that occurs most
+                        frequently in the data set.</li>
+                    <li>If one value appears most frequently, it is <b>unimodal</b>.</li>
+                    <li>If two values appear with the same highest frequency, the data set is <b>bimodal</b>.</li>
+                    <li>If more than two values appear with the same highest frequency, the data set is
+                        <b>multimodal</b>.
+                    </li>
+                    <li>If no value repeats, the data has <b>no mode</b>.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example</h2>
+                <ul>
+                    <li>For the data set {2, 3, 4, 4, 5, 6, 6, 6, 7}:</li>
+                    <p>The number 6 appears three times, more than any other value. Hence, the mode is 6.</p>
+                    <li>For the data set {1, 2, 2, 3, 3, 4}:</li>
+                    <p>Both 2 and 3 appear twice, and no other number repeats more. This is a bimodal data set with
+                        modes 2 and 3.</p>
+                    <li>For the data set {1, 2, 3, 4, 5}:</li>
+                    <p>All values appear only once. Hence, there is no mode in this case.</p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Properties of the Mode</h2>
+                <ul>
+                    <li><b>Can Have More Than One Mode:</b> A data set can be unimodal, bimodal, or multimodal,
+                        depending on the frequency of the values.</li>
+                    <li><b>Applicable to Categorical Data:</b> The mode is the only measure of central tendency that
+                        can be used with nominal data (data that consists of categories without inherent order).
+                    </li>
+                    <li><b>Insensitive to Outliers:</b> The mode is not affected by extreme values, unlike the mean.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications</h2>
+                <ul>
+                    <li><b>In Business:</b> The mode can represent the most popular product or service based on
+                        frequency of sales.</li>
+                    <li><b>In Medicine:</b> It can be used to identify the most common symptoms in a population.
+                    </li>
+                    <li><b>In Education:</b> Mode can indicate the most frequent grade or score in an exam.</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Variance">4. Variance</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>Variance is a statistical measure that represents the spread or dispersion of a set of
+                        values. It quantifies how far each number in the data set is from the mean (average) and,
+                        therefore, from every other number in the data set. A higher variance indicates that the
+                        numbers are more spread out, while a lower variance suggests that the numbers are closer to
+                        the mean.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Formula</h2>
+                <ul>
+                    <li><b>For a population:</b></li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>&#963;</mi>
+                            <mi>2</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>&#8721;</mi>
+                                <mi>x</mi><sub>i</sub>
+                                <mo>-</mo>
+                                <mi>&#956;</mi>
+                            </mrow>
+                            <mrow>
+                                <mi>n</mi>
+                            </mrow>
+                        </mfrac>
+                    </math>
+                    <p>Where <b>&#963;²</b> is the population variance, <b>xᵢ</b> are the data points, <b>&#956;</b>
+                        is the population mean, and <b>n</b> is the number of data points.</p>
+
+                    <li><b>For a sample:</b></li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>s</mi>
+                            <mi>2</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>&#8721;</mi>
+                                <mi>x</mi><sub>i</sub>
+                                <mo>-</mo>
+                                <mi>x&#773;</mi>
+                            </mrow>
+                            <mrow>
+                                <mi>n-1</mi>
+                            </mrow>
+                        </mfrac>
+                    </math>
+                    <p>Where <b>s²</b> is the sample variance, <b>xᵢ</b> are the data points, <b>x&#773;</b> is the
+                        sample mean, and <b>n</b> is the number of data points in the sample.</p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Steps to Calculate Variance</h2>
+                <ul>
+                    <li><b>Find the Mean:</b> First, calculate the mean (average) of the data set.</li>
+                    <li><b>Subtract the Mean:</b> Subtract the mean from each data point.</li>
+                    <li><b>Square the Differences:</b> Square each of the differences obtained in step 2.</li>
+                    <li><b>Find the Average of Squared Differences:</b></li>
+                    <ul>
+                        <li>For population variance, divide the sum of squared differences by <b>n</b>.</li>
+                        <li>For sample variance, divide the sum of squared differences by <b>n-1</b>.</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Properties of Variance</h2>
+                <ul>
+                    <li><b>Non-negative:</b> Variance is always zero or positive because it involves squaring
+                        differences (negative values become positive).</li>
+                    <li><b>Units:</b> The units of variance are the square of the units of the data. For example, if
+                        the data is in meters, the variance will be in square meters.</li>
+                    <li><b>Sensitive to Outliers:</b> Variance is sensitive to extreme values (outliers) because
+                        large differences from the mean are squared, leading to a larger variance.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example</h2>
+                <ul>
+                    <li>For the data set {3, 5, 7}:</li>
+                    <ul>
+                        <li><b>Mean:</b> <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>&#956;</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>3</mi>
+                                        <mo>+</mo>
+                                        <mi>5</mi>
+                                        <mo>+</mo>
+                                        <mi>7</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>3</mi>
+                                    </mrow>
+                                </mfrac>
+                            </math> = 5</li>
+                        <li><b>Differences from the mean:</b> (3 - 5) = -2, (5 - 5) = 0, (7 - 5) = 2</li>
+                        <li><b>Squared differences:</b> (-2)² = 4, 0² = 0, 2² = 4</li>
+                        <li><b>Sum of squared differences:</b> 4 + 0 + 4 = 8</li>
+                        <li><b>Variance:</b> σ² = 8/3 = 2.67 (for population variance)</li>
+                    </ul>
+                    <li>For a sample (with 3 data points), the sample variance would be:</li>
+                    <ul>
+                        <li><b>Variance:</b> s² = 8/(3-1) = 8/2 = 4</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Variance</h2>
+                <ul>
+                    <li><b>In Finance:</b> Variance is used to measure the risk or volatility of an investment's
+                        returns.</li>
+                    <li><b>In Quality Control:</b> It helps in assessing the consistency or variation in
+                        manufacturing processes.</li>
+                    <li><b>In Data Analysis:</b> It is used to understand the spread of data and the reliability of
+                        the mean.</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Standard">5. Standard Deviation</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>Standard Deviation is a measure of the amount of variation or dispersion of a set of values.
+                        It is the square root of the variance and is used to describe how much individual data
+                        points deviate from the mean. Unlike variance, which is in squared units, the standard
+                        deviation is in the same units as the original data, making it easier to interpret.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Formula</h2>
+                <ul>
+                    <li><b>Population Standard Deviation:</b></li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>&#963;</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>&#8721;</mi>
+                                <mi>x</mi><sub>i</sub>
+                                <mo>-</mo>
+                                <mi>&#956;</mi>
+                            </mrow>
+                            <mrow>
+                                <mi>n</mi>
+                            </mrow>
+                        </mfrac>
+                    </math>
+                    <p>Where <b>&#963;</b> is the population standard deviation, <b>xᵢ</b> are the data points,
+                        <b>&#956;</b> is the population mean, and <b>n</b> is the number of data points in the
+                        population.
+                    </p>
+
+                    <li><b>Sample Standard Deviation:</b></li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>s</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>&#8721;</mi>
+                                <mi>x</mi><sub>i</sub>
+                                <mo>-</mo>
+                                <mi>x&#773;</mi>
+                            </mrow>
+                            <mrow>
+                                <mi>n-1</mi>
+                            </mrow>
+                        </mfrac>
+                    </math>
+                    <p>Where <b>s</b> is the sample standard deviation, <b>xᵢ</b> are the data points,
+                        <b>x&#773;</b> is the sample mean, and <b>n</b> is the number of data points in the sample.
+                    </p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Steps to Calculate Standard Deviation</h2>
+                <ul>
+                    <li><b>Find the Mean:</b> Calculate the mean of the data set.</li>
+                    <li><b>Subtract the Mean:</b> Subtract the mean from each data point to find the deviation from
+                        the mean.</li>
+                    <li><b>Square the Differences:</b> Square each of the deviations.</li>
+                    <li><b>Find the Average of Squared Differences:</b></li>
+                    <ul>
+                        <li>For population standard deviation, divide the sum of squared differences by <b>n</b>.
+                        </li>
+                        <li>For sample standard deviation, divide the sum of squared differences by <b>n-1</b>.</li>
+                    </ul>
+                    <li><b>Square Root:</b> Take the square root of the variance to get the standard deviation.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Properties of Standard Deviation</h2>
+                <ul>
+                    <li><b>Non-negative:</b> The standard deviation is always non-negative because it involves
+                        taking the square root of a squared quantity.</li>
+                    <li><b>Same Units as Data:</b> Unlike variance, which has squared units, the standard deviation
+                        is in the same units as the original data, making it easier to interpret.</li>
+                    <li><b>Sensitive to Outliers:</b> Like variance, the standard deviation is sensitive to extreme
+                        values, or outliers, because it involves squaring deviations.</li>
+                    <li><b>Informs on Spread:</b> A larger standard deviation means the data points are spread out
+                        more widely from the mean, while a smaller standard deviation indicates the data points are
+                        closer to the mean.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example</h2>
+                <ul>
+                    <li>For the data set {2, 4, 6, 8}:</li>
+                    <ul>
+                        <li><b>Mean:</b> <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>&#956;</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>2</mi>
+                                        <mo>+</mo>
+                                        <mi>4</mi>
+                                        <mo>+</mo>
+                                        <mi>6</mi>
+                                        <mo>+</mo>
+                                        <mi>8</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>4</mi>
+                                    </mrow>
+                                </mfrac>
+                            </math> = 5</li>
+                        <li><b>Deviations from the mean:</b> (2 - 5) = -3, (4 - 5) = -1, (6 - 5) = 1, (8 - 5) = 3
+                        </li>
+                        <li><b>Squared deviations:</b> (-3)² = 9, (-1)² = 1, (1)² = 1, (3)² = 9</li>
+                        <li><b>Sum of squared deviations:</b> 9 + 1 + 1 + 9 = 20</li>
+                        <li><b>Variance (Population):</b> σ² = 20/4 = 5</li>
+                        <li><b>Standard Deviation (Population):</b> σ = √5 ≈ 2.24</li>
+                    </ul>
+                    <li>For a sample (with 4 data points), the sample standard deviation would be:</li>
+                    <ul>
+                        <li><b>Variance:</b> s² = 20/(4-1) = 20/3 ≈ 6.67</li>
+                        <li><b>Standard Deviation (Sample):</b> s = √6.67 ≈ 2.58</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Standard Deviation</h2>
+                <ul>
+                    <li><b>In Finance:</b> To measure the volatility or risk of an investment.</li>
+                    <li><b>In Quality Control:</b> To assess the consistency or precision of manufacturing
+                        processes.</li>
+                    <li><b>In Education:</b> To measure how spread out students' scores are from the average score.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

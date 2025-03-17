@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-chemistry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 14 - Basic Concepts</div>
+        <div class="topic-name">
+            <h1 id="Nomenclature">1. Nomenclature of Chemical Compounds</h1>
+            <div class="topic-description">
+                <h2> Definition</h2>
+                <ul>
+                    <li>Nomenclature is the systematic way of naming chemical compounds based on their composition
+                        and structure. The IUPAC (International Union of Pure and Applied Chemistry) provides
+                        standardized naming rules.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Nomenclature of Ionic Compounds</h2>
+                <ul>
+                    <li>Ionic compounds consist of a metal (cation) and a non-metal (anion).</li>
+                    <h3>Rules for Naming Ionic Compounds</h3>
+                    <ul>
+                        <li>Name the metal (cation) first, followed by the non-metal (anion).</li>
+                        <li>Change the anion's suffix to "-ide".</li>
+                        <li>Example: NaCl → Sodium chloride</li>
+                        <li>Example: MgO → Magnesium oxide</li>
+                        <li>For transition metals, indicate oxidation state using Roman numerals.</li>
+                        <li>Example: FeCl₂ → Iron(II) chloride</li>
+                        <li>Example: FeCl₃ → Iron(III) chloride</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Nomenclature of Covalent (Molecular) Compounds</h2>
+                <ul>
+                    <li>Covalent compounds consist of two or more non-metals.</li>
+                    <h3>Rules for Naming Covalent Compounds</h3>
+                    <ul>
+                        <li>Use Greek prefixes to indicate the number of atoms.</li>
+                        <li>1 = Mono-, 2 = Di-, 3 = Tri-, 4 = Tetra-, 5 = Penta-, etc.</li>
+                        <li>The second element’s name ends in "-ide".</li>
+                        <li>Example: CO₂ → Carbon dioxide</li>
+                        <li>Example: N₂O₅ → Dinitrogen pentoxide</li>
+                        <li>If the first element has only one atom, omit "mono-".</li>
+                        <li>Example: CO → Carbon monoxide, NOT Monocarbon monoxide</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Nomenclature of Acids</h2>
+                <ul>
+                    <li>Acids are named based on the anion they contain.</li>
+                    <h3>Acid Naming Rules</h3>
+                    <ul>
+                        <li>-ide (e.g., Cl⁻ = Chloride) → Hydro-___-ic acid (e.g., HCl = Hydrochloric acid)</li>
+                        <li>-ate (e.g., NO₃⁻ = Nitrate) → ___-ic acid (e.g., HNO₃ = Nitric acid)</li>
+                        <li>-ite (e.g., NO₂⁻ = Nitrite) → ___-ous acid (e.g., HNO₂ = Nitrous acid)</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Nomenclature of Bases</h2>
+                <ul>
+                    <li>Bases are named like ionic compounds.</li>
+                    <li>Example: NaOH → Sodium hydroxide</li>
+                    <li>Example: NH₄OH → Ammonium hydroxide</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Nomenclature of Organic Compounds (Basic IUPAC Rules)</h2>
+                <ul>
+                    <li>Organic compounds contain carbon and hydrogen (C-H bonds).</li>
+
+                    <h3>Alkanes (Single Bonds, -ane)</h3>
+                    <ul>
+                        <li>Formula: CₙH₂ₙ₊₂</li>
+                        <li>Example: CH₄ → Methane</li>
+                        <li>Example: C₂H₆ → Ethane</li>
+                        <li>Example: C₃H₈ → Propane</li>
+                    </ul>
+
+                    <h3>Alkenes (Double Bonds, -ene)</h3>
+                    <ul>
+                        <li>Formula: CₙH₂ₙ</li>
+                        <li>Example: C₂H₄ → Ethene</li>
+                        <li>Example: C₃H₆ → Propene</li>
+                    </ul>
+
+                    <h3>Alkynes (Triple Bonds, -yne)</h3>
+                    <ul>
+                        <li>Formula: CₙH₂ₙ₋₂</li>
+                        <li>Example: C₂H₂ → Ethyne</li>
+                        <li>Example: C₃H₄ → Propyne</li>
+                    </ul>
+
+                    <h3>Functional Group Nomenclature</h3>
+                    <table>
+                        <tr>
+                            <th>Functional Group</th>
+                            <th>Prefix/Suffix</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>Alcohol (-OH)</td>
+                            <td>-ol</td>
+                            <td>CH₃OH → Methanol</td>
+                        </tr>
+                        <tr>
+                            <td>Aldehyde (-CHO)</td>
+                            <td>-al</td>
+                            <td>CH₃CHO → Ethanal</td>
+                        </tr>
+                        <tr>
+                            <td>Ketone (-CO-)</td>
+                            <td>-one</td>
+                            <td>CH₃COCH₃ → Propanone</td>
+                        </tr>
+                        <tr>
+                            <td>Carboxylic Acid (-COOH)</td>
+                            <td>-oic acid</td>
+                            <td>CH₃COOH → Ethanoic acid</td>
+                        </tr>
+                        <tr>
+                            <td>Ester (-COO-)</td>
+                            <td>-oate</td>
+                            <td>CH₃COOCH₃ → Methyl ethanoate</td>
+                        </tr>
+                    </table>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Isomerism">2. Isomerism</h1>
+            <div class="topic-description">
+                <h2> Definition</h2>
+                <ul>
+                    <li>Isomerism refers to the phenomenon where compounds have the same molecular formula but
+                        different structures or arrangements of atoms.</li>
+                    <li>Isomers are compounds that exhibit this property.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Isomerism</h2>
+                <ul>
+                    <li>Isomerism is broadly classified into Structural Isomerism and Stereoisomerism.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>i. Structural Isomerism</h2>
+                <ul>
+                    <li>Structural isomers have different connectivity of atoms.</li>
+
+                    <h3>Types of Structural Isomerism</h3>
+                    <ol>
+                        <li>
+                            <p><b>Chain Isomerism (Skeletal Isomerism)</b></p>
+                            <ul>
+                                <li>Different arrangements of the carbon chain.</li>
+                                <li>Example: C₅H₁₂</li>
+                                <ul>
+                                    <li>n-Pentane (straight chain)</li>
+                                    <li>Iso-Pentane (branched)</li>
+                                    <li>Neo-Pentane (more branched)</li>
+                                </ul>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <p><b>Position Isomerism</b></p>
+                            <ul>
+                                <li>Functional group or substituent is placed at different positions.</li>
+                                <li>Example: C₃H₇OH</li>
+                                <ul>
+                                    <li>Propan-1-ol (OH at C-1)</li>
+                                    <li>Propan-2-ol (OH at C-2)</li>
+                                </ul>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <p><b>Functional Group Isomerism</b></p>
+                            <ul>
+                                <li>Different functional groups but same molecular formula.</li>
+                                <li>Example: C₂H₆O</li>
+                                <ul>
+                                    <li>Ethanol (Alcohol, -OH)</li>
+                                    <li>Dimethyl Ether (Ether, -O-)</li>
+                                </ul>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <p><b>Metamerism</b></p>
+                            <ul>
+                                <li>Different distribution of alkyl groups around a functional group.</li>
+                                <li>Example: C₄H₁₀O (Ethers)</li>
+                                <ul>
+                                    <li>Ethoxyethane (C₂H₅-O-C₂H₅)</li>
+                                    <li>Methoxypropane (CH₃-O-C₃H₇)</li>
+                                </ul>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <p><b>Tautomerism</b></p>
+                            <ul>
+                                <li>Dynamic interconversion between isomers, usually involving proton migration.
+                                </li>
+                                <li>Example: Keto-Enol Tautomerism</li>
+                                <ul>
+                                    <li>CH₃COCH₃ (Ketone form) ⇌ CH₂=CH-OH (Enol form)</li>
+                                </ul>
+                            </ul>
+                        </li>
+                    </ol>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Stereoisomerism</h2>
+                <ul>
+                    <li>Stereoisomers have the same connectivity but differ in spatial arrangement of atoms.</li>
+
+                    <h3>Types of Stereoisomerism</h3>
+                    <ol>
+                        <li>
+                            <p><b>Geometrical Isomerism (Cis-Trans or E-Z Isomerism)</b></p>
+                            <ul>
+                                <li>Occurs in alkenes and cyclic compounds due to restricted rotation.</li>
+                                <li>Example: But-2-ene (C₄H₈)</li>
+                                <ul>
+                                    <li>Cis-But-2-ene (Similar groups on the same side)</li>
+                                    <li>Trans-But-2-ene (Similar groups on opposite sides)</li>
+                                </ul>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <p><b>Optical Isomerism</b></p>
+                            <ul>
+                                <li>Molecules that can rotate plane-polarized light due to the presence of a chiral
+                                    center (carbon with four different groups).</li>
+                                <li>Example: Lactic Acid (C₃H₆O₃)</li>
+                                <ul>
+                                    <li>D-Lactic Acid (Rotates right, +)</li>
+                                    <li>L-Lactic Acid (Rotates left, -)</li>
+                                </ul>
+                            </ul>
+                        </li>
+                    </ol>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Effects">3. Electronic Effects in Organic Chemistry</h1>
+            <div class="topic-description">
+                <h2> Definition</h2>
+                <ul>
+                    <li>Electronic effects influence the stability, reactivity, and properties of organic molecules.
+                        These effects arise due to the distribution of electrons in a molecule.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Electronic Effects</h2>
+                <ul>
+                    <li>The main types of electronic effects are: Inductive Effect (I Effect), Resonance Effect
+                        (Mesomeric Effect, R Effect), Hyperconjugation, and Electromeric Effect.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>i. Inductive Effect (I Effect)</h2>
+                <ul>
+                    <li>The inductive effect is the permanent shifting of electrons along a sigma (σ) bond due to
+                        the electronegativity difference between atoms.</li>
+                    <li><b>Trend:</b> Decreases as distance increases from the group causing the effect.</li>
+                </ul>
+
+                <h3>Types of Inductive Effect</h3>
+                <ul>
+                    <li><b>(-I Effect)</b> → Electron-withdrawing groups (reduce electron density).</li>
+                    <ul>
+                        <li>Examples: NO₂, CN, COOH, F, Cl, Br, I</li>
+                    </ul>
+                    <li><b>(+I Effect)</b> → Electron-donating groups (increase electron density).</li>
+                    <ul>
+                        <li>Examples: Alkyl groups (CH₃, C₂H₅), -O⁻, -NH₂</li>
+                    </ul>
+                </ul>
+
+                <h3>Example:</h3>
+                <ul>
+                    <li>CH₃-CH₂-CH₂-Cl → Cl pulls electrons towards itself (-I effect).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Resonance Effect (R Effect) / Mesomeric Effect</h2>
+                <ul>
+                    <li>The resonance effect occurs when π-electrons delocalize in a conjugated system.</li>
+                    <li><b>Resonance Structures:</b> Different representations of the same molecule showing
+                        delocalization.</li>
+                    <li><b>More resonance = More stability.</b></li>
+                </ul>
+
+                <h3>Types of Resonance Effect</h3>
+                <ul>
+                    <li><b>(-R Effect)</b> → Electron-withdrawing groups reduce electron density in benzene.</li>
+                    <ul>
+                        <li>Examples: NO₂, CN, COOH, CHO, CO</li>
+                    </ul>
+                    <li><b>(+R Effect)</b> → Electron-donating groups increase electron density.</li>
+                    <ul>
+                        <li>Examples: OH, NH₂, OCH₃, Cl, Br</li>
+                    </ul>
+                </ul>
+
+                <h3>Example:</h3>
+                <ul>
+                    <li>Benzene with -OH → Activates the ring due to the +R Effect.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. Hyperconjugation ("No Bond Resonance")</h2>
+                <ul>
+                    <li>Hyperconjugation occurs when sigma (σ) electrons delocalize into an adjacent empty or
+                        partially filled p-orbital.</li>
+                    <li>Increases stability of carbocations and alkenes.</li>
+                    <li><b>More alkyl groups = More hyperconjugation = More stability</b></li>
+                </ul>
+
+                <h3>Example:</h3>
+                <ul>
+                    <li>(CH₃)₃C⁺ (Tertiary Carbocation) is more stable than CH₃CH₂⁺ (Primary Carbocation) due to
+                        hyperconjugation.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iv. Electromeric Effect (E Effect)</h2>
+                <ul>
+                    <li>The electromeric effect is a temporary shift of electrons due to an attacking reagent.</li>
+                </ul>
+
+                <h3>Types of Electromeric Effect</h3>
+                <ul>
+                    <li><b>(-E Effect)</b> → Electron-withdrawing group pulls electrons towards itself.</li>
+                    <li><b>(+E Effect)</b> → Electron-donating group pushes electrons away.</li>
+                </ul>
+
+                <h3>Example:</h3>
+                <ul>
+                    <li>CH₂=CH₂ + H⁺ → Electrons shift to one carbon to form a carbocation.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

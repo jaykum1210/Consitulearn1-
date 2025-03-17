@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-maths.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 3 - Matrices & Determinants</div>
+        <div class="topic-name">
+            <h1>1. Types & Operations on Matrices</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>A matrix is a rectangular array of numbers arranged in rows and columns.</li>
+                    <li>It is typically denoted by a capital letter, and its elements are denoted by lowercase
+                        letters with two subscripts:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>a</mi>
+                                <mi>ij</mi>
+                            </msub>
+                        </math>, where <mi>i</mi> represents the row and <mi>j</mi> represents the column.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Matrices</h2>
+                <ol style="list-style-type: lower-roman;">
+                    <li>
+                        <p><b>Row Matrix</b></p>
+                        <ul>
+                            <li>A matrix with only one row, i.e., it is of the form <math
+                                    xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <msub>
+                                        <mi>1</mi>
+                                        <mi>×n</mi>
+                                    </msub>
+                                </math>.</li>
+                            <li>Example:
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mrow>
+                                        <msub>
+                                            <mi>a</mi>
+                                            <mi>11</mi>
+                                        </msub>
+                                        <msub>
+                                            <mi>a</mi>
+                                            <mi>12</mi>
+                                        </msub>
+                                        <msub>
+                                            <mi>a</mi>
+                                            <mi>13</mi>
+                                        </msub>
+                                        <dots />
+                                        <msub>
+                                            <mi>a</mi>
+                                            <mi>1n</mi>
+                                        </msub>
+                                    </mrow>
+                                </math>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Column Matrix</b></p>
+                        <ul>
+                            <li>A matrix with only one column, i.e., it is of the form <math
+                                    xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <msub>
+                                        <mi>m</mi>
+                                        <mi>×1</mi>
+                                    </msub>
+                                </math>.</li>
+                            <li>Example:
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mrow>
+                                        <msub>
+                                            <mi>a</mi>
+                                            <mi>11</mi>
+                                        </msub>
+                                        <msub>
+                                            <mi>a</mi>
+                                            <mi>21</mi>
+                                        </msub>
+                                        <msub>
+                                            <mi>a</mi>
+                                            <mi>31</mi>
+                                        </msub>
+                                        <mrow>
+                                            <mi>⋮</mi>
+                                        </mrow>
+                                        <msub>
+                                            <mi>a</mi>
+                                            <mi>m1</mi>
+                                        </msub>
+                                    </mrow>
+                                </math>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Square Matrix</b></p>
+                        <ul>
+                            <li>A matrix where the number of rows equals the number of columns (e.g., <math
+                                    xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <msub>
+                                        <mi>n</mi>
+                                        <mi>×n</mi>
+                                    </msub>
+                                </math>).</li>
+                            <li>Example:
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mrow>
+                                        <msub>
+                                            <mi>a</mi>
+                                            <mi>11</mi>
+                                        </msub>
+                                        <msub>
+                                            <mi>a</mi>
+                                            <mi>12</mi>
+                                        </msub>
+                                        <mrow>
+                                            <mi>⋮</mi>
+                                        </mrow>
+                                        <msub>
+                                            <mi>a</mi>
+                                            <mi>n1</mi>
+                                        </msub>
+                                    </mrow>
+                                </math>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Zero (Null) Matrix</b></p>
+                        <ul>
+                            <li>A matrix in which all elements are zero. It can be of any size.</li>
+                            <li>Example:
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mrow>
+                                        <msub>
+                                            <mi>0</mi>
+                                            <mi>0</mi>
+                                        </msub>
+                                        <msub>
+                                            <mi>0</mi>
+                                            <mi>0</mi>
+                                        </msub>
+                                    </mrow>
+                                </math>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Identity Matrix</b></p>
+                        <ul>
+                            <li>A square matrix where all the diagonal elements are 1, and all other elements are 0.
+                            </li>
+                            <li>Example:
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mrow>
+                                        <msub>
+                                            <mi>1</mi>
+                                            <mi>0</mi>
+                                        </msub>
+                                        <msub>
+                                            <mi>0</mi>
+                                            <mi>1</mi>
+                                        </msub>
+                                        <msub>
+                                            <mi>0</mi>
+                                            <mi>0</mi>
+                                        </msub>
+                                    </mrow>
+                                </math>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Operations on Matrices</h2>
+                <h3>Matrix Addition</h3>
+                <ul>
+                    <li>Two matrices can be added if and only if they have the same dimensions.</li>
+                    <li>Formula:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <msub>
+                                    <mi>C</mi>
+                                    <mi>ij</mi>
+                                </msub>
+                                <mo>=</mo>
+                                <msub>
+                                    <mi>A</mi>
+                                    <mi>ij</mi>
+                                </msub>
+                                <mo>+</mo>
+                                <msub>
+                                    <mi>B</mi>
+                                    <mi>ij</mi>
+                                </msub>
+                            </mrow>
+                        </math>
+                    </li>
+                </ul>
+                <h3>Matrix Subtraction</h3>
+                <ul>
+                    <li>Matrix subtraction is similar to addition, only possible when matrices have the same
+                        dimensions.</li>
+                    <li>Formula:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <msub>
+                                    <mi>C</mi>
+                                    <mi>ij</mi>
+                                </msub>
+                                <mo>=</mo>
+                                <msub>
+                                    <mi>A</mi>
+                                    <mi>ij</mi>
+                                </msub>
+                                <mo>-</mo>
+                                <msub>
+                                    <mi>B</mi>
+                                    <mi>ij</mi>
+                                </msub>
+                            </mrow>
+                        </math>
+                    </li>
+                </ul>
+                <h3>Scalar Multiplication</h3>
+                <ul>
+                    <li>A matrix can be multiplied by a scalar.</li>
+                    <li>Formula:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <msub>
+                                    <mi>B</mi>
+                                    <mi>ij</mi>
+                                </msub>
+                                <mo>=</mo>
+                                <mi>k</mi>
+                                <mo>⋅</mo>
+                                <msub>
+                                    <mi>A</mi>
+                                    <mi>ij</mi>
+                                </msub>
+                            </mrow>
+                        </math>
+                    </li>
+                </ul>
+                <h3>Matrix Multiplication</h3>
+                <ul>
+                    <li>Matrix multiplication is only possible if the number of columns of the first matrix equals
+                        the number of rows of the second matrix.</li>
+                    <li>Formula:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <msub>
+                                    <mi>C</mi>
+                                    <mi>ij</mi>
+                                </msub>
+                                <mo>=</mo>
+                                <msum>
+                                    <mrow>
+                                        <mi>k</mi>
+                                        <mrow>
+                                            <mo>=</mo>
+                                            <mn>1</mn>
+                                            <mo>⋯</mo>
+                                            <mn>n</mn>
+                                        </mrow>
+                                    </mrow>
+                                    <mrow>
+                                        <msub>
+                                            <mi>A</mi>
+                                            <mi>ik</mi>
+                                        </msub>
+                                        <msub>
+                                            <mi>B</mi>
+                                            <mi>kj</mi>
+                                        </msub>
+                                    </mrow>
+                                </msum>
+                            </mrow>
+                        </math>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Determinants">2. Determinants: Properties & Area of a Triangle</h1>
+            <div class="topic-description">
+                <h2>i. Determinants</h2>
+                <ul>
+                    <li>A determinant is a scalar value that is computed from the elements of a square matrix. It
+                        provides useful properties about the matrix, such as whether the matrix is invertible or
+                        singular (non-invertible).</li>
+                    <li>For a square matrix, the determinant is often denoted as <math
+                            xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>det</mi>
+                            <mo>(</mo>
+                            <mi>A</mi>
+                            <mo>)</mo>
+                        </math> or <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mo>|</mo>
+                            <mi>A</mi>
+                            <mo>|</mo>
+                        </math>.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Determinant of a 2x2 Matrix</h2>
+                <p>For a 2x2 matrix:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mrow>
+                        <msub>
+                            <mi>A</mi>
+                            <mi>2×2</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <mrow>
+                            <msub>
+                                <mi>a</mi>
+                                <mi>11</mi>
+                            </msub>
+                            <msub>
+                                <mi>a</mi>
+                                <mi>12</mi>
+                            </msub>
+                        </mrow>
+                        <mrow>
+                            <msub>
+                                <mi>a</mi>
+                                <mi>21</mi>
+                            </msub>
+                            <msub>
+                                <mi>a</mi>
+                                <mi>22</mi>
+                            </msub>
+                        </mrow>
+                    </mrow>
+                </math>
+                <p>The determinant of <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>A</mi>
+                    </math> is calculated as:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>det</mi>
+                    <mo>(</mo>
+                    <mi>A</mi>
+                    <mo>)</mo>
+                    <mo>=</mo>
+                    <mi>a</mi>
+                    <mi>₁₁</mi>
+                    <mi>a</mi>
+                    <mi>₂₂</mi>
+                    <mo>-</mo>
+                    <mi>a</mi>
+                    <mi>₁₂</mi>
+                    <mi>a</mi>
+                    <mi>₂₁</mi>
+                </math>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. Determinant of a 3x3 Matrix</h2>
+                <p>For a 3x3 matrix:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mrow>
+                        <msub>
+                            <mi>A</mi>
+                            <mi>3×3</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <mrow>
+                            <msub>
+                                <mi>a</mi>
+                                <mi>11</mi>
+                            </msub>
+                            <msub>
+                                <mi>a</mi>
+                                <mi>12</mi>
+                            </msub>
+                            <msub>
+                                <mi>a</mi>
+                                <mi>13</mi>
+                            </msub>
+                        </mrow>
+                        <mrow>
+                            <msub>
+                                <mi>a</mi>
+                                <mi>21</mi>
+                            </msub>
+                            <msub>
+                                <mi>a</mi>
+                                <mi>22</mi>
+                            </msub>
+                            <msub>
+                                <mi>a</mi>
+                                <mi>23</mi>
+                            </msub>
+                        </mrow>
+                        <mrow>
+                            <msub>
+                                <mi>a</mi>
+                                <mi>31</mi>
+                            </msub>
+                            <msub>
+                                <mi>a</mi>
+                                <mi>32</mi>
+                            </msub>
+                            <msub>
+                                <mi>a</mi>
+                                <mi>33</mi>
+                            </msub>
+                        </mrow>
+                    </mrow>
+                </math>
+                <p>The determinant of <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>A</mi>
+                    </math> is calculated as:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>det</mi>
+                    <mo>(</mo>
+                    <mi>A</mi>
+                    <mo>)</mo>
+                    <mo>=</mo>
+                    <mi>a</mi>
+                    <mo>(</mo>
+                    <mi>e</mi>
+                    <mi>i</mi>
+                    <mo>-</mo>
+                    <mi>f</mi>
+                    <mi>h</mi>
+                    <mo>)</mo>
+                    <mo>-</mo>
+                    <mi>b</mi>
+                    <mo>(</mo>
+                    <mi>d</mi>
+                    <mi>i</mi>
+                    <mo>-</mo>
+                    <mi>f</mi>
+                    <mi>g</mi>
+                    <mo>)</mo>
+                    <mo>+</mo>
+                    <mi>c</mi>
+                    <mo>(</mo>
+                    <mi>d</mi>
+                    <mi>h</mi>
+                    <mo>-</mo>
+                    <mi>e</mi>
+                    <mi>g</mi>
+                    <mo>)</mo>
+                </math>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iv. Properties of Determinants</h2>
+                <ul>
+                    <li><b>Determinant of a Diagonal or Scalar Matrix:</b> The determinant of a diagonal matrix (or
+                        scalar matrix) is the product of the diagonal elements. For example, for a diagonal matrix:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <msub>
+                                    <mi>A</mi>
+                                    <mi>2×2</mi>
+                                </msub>
+                                <mo>=</mo>
+                                <mrow>
+                                    <msub>
+                                        <mi>a</mi>
+                                        <mi>11</mi>
+                                    </msub>
+                                    <msub>
+                                        <mi>a</mi>
+                                        <mi>22</mi>
+                                    </msub>
+                                </mrow>
+                            </mrow>
+                        </math> ⇒
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>det</mi>
+                            <mo>(</mo>
+                            <mi>A</mi>
+                            <mo>)</mo>
+                            <mo>=</mo>
+                            <mi>a</mi>
+                            <mo>⋅</mo>
+                            <mi>b</mi>
+                        </math>
+                    </li>
+                    <li><b>Determinant of the Identity Matrix:</b> The determinant of the identity matrix is 1.
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>det</mi>
+                            <mo>(</mo>
+                            <mi>I</mi>
+                            <mo>)</mo>
+                            <mo>=</mo>
+                            <mn>1</mn>
+                        </math>
+                    </li>
+                    <li><b>Determinant of a Zero Matrix:</b> The determinant of a zero matrix is always 0.
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>det</mi>
+                            <mo>(</mo>
+                            <mi>0</mi>
+                            <mo>)</mo>
+                            <mo>=</mo>
+                            <mn>0</mn>
+                        </math>
+                    </li>
+                    <li><b>Row Interchanges:</b> If two rows (or two columns) of a matrix are interchanged, the sign
+                        of the determinant changes (it gets multiplied by -1).</li>
+                    <li><b>Determinant of a Matrix Product:</b> The determinant of the product of two matrices is
+                        the product of their determinants:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>det</mi>
+                            <mo>(</mo>
+                            <mi>A</mi>
+                            <mi>B</mi>
+                            <mo>)</mo>
+                            <mo>=</mo>
+                            <mi>det</mi>
+                            <mo>(</mo>
+                            <mi>A</mi>
+                            <mo>)</mo>
+                            <mo>⋅</mo>
+                            <mi>det</mi>
+                            <mo>(</mo>
+                            <mi>B</mi>
+                            <mo>)</mo>
+                        </math>
+                    </li>
+                    <li><b>Scalar Multiplication:</b> If each element of a row (or column) of a matrix is multiplied
+                        by a scalar <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>k</mi>
+                        </math>, the determinant of the matrix is multiplied by <math
+                            xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>k</mi>
+                        </math> raised to the power of <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>n</mi>
+                        </math> for an <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>n</mi>
+                        </math> × <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>n</mi>
+                        </math> matrix:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>det</mi>
+                            <mo>(</mo>
+                            <mi>kA</mi>
+                            <mo>)</mo>
+                            <mo>=</mo>
+                            <mi>k</mi>
+                            <mo>ⁿ</mo>
+                            <mo>⋅</mo>
+                            <mi>det</mi>
+                            <mo>(</mo>
+                            <mi>A</mi>
+                            <mo>)</mo>
+                        </math>
+                    </li>
+                    <li><b>Singular Matrix:</b> A matrix is singular (non-invertible) if and only if its determinant
+                        is 0. That is, <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>det</mi>
+                            <mo>(</mo>
+                            <mi>A</mi>
+                            <mo>)</mo>
+                            <mo>=</mo>
+                            <mn>0</mn>
+                        </math>.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>v. Area of a Triangle Using Determinants</h2>
+                <p>One interesting application of determinants is to find the area of a triangle when the
+                    coordinates of its three vertices are given.</p>
+                <p>Let the three vertices of the triangle be
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>A</mi>
+                        <mo>(</mo>
+                        <mi>x</mi><sub>1</sub>
+                        <mo>,</mo>
+                        <mi>y</mi><sub>1</sub>
+                        <mo>)</mo>
+                    </math>,
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>B</mi>
+                        <mo>(</mo>
+                        <mi>x</mi><sub>2</sub>
+                        <mo>,</mo>
+                        <mi>y</mi><sub>2</sub>
+                        <mo>)</mo>
+                    </math>, and
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>C</mi>
+                        <mo>(</mo>
+                        <mi>x</mi><sub>3</sub>
+                        <mo>,</mo>
+                        <mi>y</mi><sub>3</sub>
+                        <mo>)</mo>
+                    </math>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Inverse">3. Inverse of a Matrix & Solving Linear Equations</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>The inverse of a matrix \( A \) is a matrix \( A^{-1} \) such that when multiplied with \( A
+                        \), it results in the identity matrix \( I \).</li>
+                    <li>Formula: \( A \times A^{-1} = A^{-1} \times A = I \)</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Conditions for Invertibility</h2>
+                <ul>
+                    <li>The matrix \( A \) has an inverse if and only if \( \det(A) \neq 0 \).</li>
+                    <li>If \( \det(A) = 0 \), the matrix is called singular and does not have an inverse.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Inverse of a 2x2 Matrix</h2>
+                <ul>
+                    <li>For a 2x2 matrix:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                            <mi>A</mi>
+                            <mo>=</mo>
+                            <mrow>
+                                <mi>a</mi>
+                                <mi>b</mi>
+                            </mrow>
+                            <mrow>
+                                <mi>c</mi>
+                                <mi>d</mi>
+                            </mrow>
+                        </mrow>
+                    </math>
+                    <li>The inverse of matrix \( A \), denoted as \( A^{-1} \), is given by:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                            <mi>A</mi>
+                            <msub>
+                                <mi>-1</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>1</mi>
+                                </mrow>
+                                <mi>det(A)</mi>
+                            </mfrac>
+                            <mrow>
+                                <mi>d</mi>
+                                <mi>-b</mi>
+                            </mrow>
+                            <mrow>
+                                <mi>-c</mi>
+                                <mi>a</mi>
+                            </mrow>
+                        </mrow>
+                    </math>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example of Inverse of a 2x2 Matrix</h2>
+                <ul>
+                    <li>Given the matrix:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                            <mi>A</mi>
+                            <mo>=</mo>
+                            <mrow>
+                                <mi>2</mi>
+                                <mi>3</mi>
+                            </mrow>
+                            <mrow>
+                                <mi>1</mi>
+                                <mi>4</mi>
+                            </mrow>
+                        </mrow>
+                    </math>
+                    <li>The determinant of \( A \) is:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                            <mi>det(A)</mi>
+                            <mo>=</mo>
+                            <mrow>
+                                <mi>(2)(4)</mi>
+                                <mo>-</mo>
+                                <mi>(3)(1)</mi>
+                                <mo>=</mo>
+                                <mi>5</mi>
+                            </mrow>
+                        </mrow>
+                    </math>
+                    <li>Since \( \det(A) = 5 \neq 0 \), the inverse exists:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                            <mi>A</mi>
+                            <msub>
+                                <mi>-1</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>1</mi>
+                                </mrow>
+                                <mi>5</mi>
+                            </mfrac>
+                            <mrow>
+                                <mi>4</mi>
+                                <mi>-3</mi>
+                            </mrow>
+                            <mrow>
+                                <mi>-1</mi>
+                                <mi>2</mi>
+                            </mrow>
+                        </mrow>
+                    </math>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Solving Linear Equations Using the Inverse Matrix</h2>
+                <ul>
+                    <li>Consider the system of linear equations:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                            <mi>a</mi>
+                            <mi>1</mi>
+                            <mi>x</mi>
+                            <mo>+</mo>
+                            <mi>b</mi>
+                            <mi>1</mi>
+                            <mi>y</mi>
+                            <mo>=</mo>
+                            <mi>c</mi>
+                            <mi>1</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>a</mi>
+                            <mi>2</mi>
+                            <mi>x</mi>
+                            <mo>+</mo>
+                            <mi>b</mi>
+                            <mi>2</mi>
+                            <mi>y</mi>
+                            <mo>=</mo>
+                            <mi>c</mi>
+                            <mi>2</mi>
+                        </mrow>
+                    </math>
+                    <li>This can be written as a matrix equation:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                            <mi>A</mi>
+                            <mo>·</mo>
+                            <mi>X</mi>
+                            <mo>=</mo>
+                            <mi>C</mi>
+                        </mrow>
+                    </math>
+                    <li>To solve for \( X \), we multiply both sides by \( A^{-1} \):</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                            <mi>A</mi>
+                            <msub>
+                                <mi>-1</mi>
+                            </msub>
+                            <mo>·</mo>
+                            <mi>A</mi>
+                            <mo>·</mo>
+                            <mi>X</mi>
+                            <mo>=</mo>
+                            <mi>A</mi>
+                            <msub>
+                                <mi>-1</mi>
+                            </msub>
+                            <mo>·</mo>
+                            <mi>C</mi>
+                        </mrow>
+                    </math>
+                    <li>Since \( A^{-1} \cdot A = I \), we get:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                            <mi>X</mi>
+                            <mo>=</mo>
+                            <mi>A</mi>
+                            <msub>
+                                <mi>-1</mi>
+                            </msub>
+                            <mo>·</mo>
+                            <mi>C</mi>
+                        </mrow>
+                    </math>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example: Solving a System of Equations</h2>
+                <ul>
+                    <li>Given the system:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                            <mi>2x</mi>
+                            <mo>+</mo>
+                            <mi>3y</mi>
+                            <mo>=</mo>
+                            <mi>5</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>x</mi>
+                            <mo>+</mo>
+                            <mi>4y</mi>
+                            <mo>=</mo>
+                            <mi>6</mi>
+                        </mrow>
+                    </math>
+                    <li>In matrix form:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                            <mi>A</mi>
+                            <mo>=</mo>
+                            <mrow>
+                                <mi>2</mi>
+                                <mi>3</mi>
+                            </mrow>
+                            <mrow>
+                                <mi>1</mi>
+                                <mi>4</mi>
+                            </mrow>
+                        </mrow>
+                    </math>
+                    <li>Multiplying the inverse of \( A \) by \( C \) gives:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                            <mi>X</mi>
+                            <mo>=</mo>
+                            <mi>A</mi>
+                            <msub>
+                                <mi>-1</mi>
+                            </msub>
+                            <mo>·</mo>
+                            <mi>C</mi>
+                        </mrow>
+                    </math>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>General Case for Solving Linear Equations</h2>
+                <ul>
+                    <li>For a system of \( n \) linear equations in \( n \) variables:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                            <mi>A</mi>
+                            <mo>·</mo>
+                            <mi>X</mi>
+                            <mo>=</mo>
+                            <mi>C</mi>
+                        </mrow>
+                    </math>
+                    <li>The solution is given by:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                            <mi>X</mi>
+                            <mo>=</mo>
+                            <mi>A</mi>
+                            <msub>
+                                <mi>-1</mi>
+                            </msub>
+                            <mo>·</mo>
+                            <mi>C</mi>
+                        </mrow>
+                    </math>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

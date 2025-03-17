@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-chemistry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 7 - Solutions</div>
+        <div class="topic-name">
+            <h1 id="Concentration">1. Concentration Units</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>Concentration is the measure of the amount of solute present in a given amount of solvent or
+                        solution.</li>
+                    <li>Different units of concentration are used depending on the application (chemistry, biology,
+                        industry, etc.).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Mass-Based Concentration Units</h2>
+                <h3>Mass Percent (% w/w)</h3>
+                <ul>
+                    <li>Formula: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>Mass %</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>Mass of solute</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>Mass of solution</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo>×</mo>
+                                <mn>100</mn>
+                            </mrow>
+                        </math></li>
+                    <li>Example: A 5% NaCl solution means 5g of NaCl is dissolved in 100g of solution.</li>
+                </ul>
+
+                <h3>Parts per Million (ppm) & Parts per Billion (ppb)</h3>
+                <ul>
+                    <li>Used for very dilute solutions, especially in environmental chemistry.</li>
+                    <li>Formula for ppm: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>ppm</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>Mass of solute</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>Mass of solution</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo>×</mo>
+                                <msup>
+                                    <mn>10</mn>
+                                    <mn>6</mn>
+                                </msup>
+                            </mrow>
+                        </math></li>
+                    <li>Formula for ppb: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>ppb</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>Mass of solute</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>Mass of solution</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo>×</mo>
+                                <msup>
+                                    <mn>10</mn>
+                                    <mn>9</mn>
+                                </msup>
+                            </mrow>
+                        </math></li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Volume-Based Concentration Units</h2>
+                <h3>Volume Percent (% v/v)</h3>
+                <ul>
+                    <li>Formula: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>Volume %</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>Volume of solute</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>Volume of solution</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo>×</mo>
+                                <mn>100</mn>
+                            </mrow>
+                        </math></li>
+                    <li>Example: 70% ethanol solution means 70 mL of ethanol in 100 mL of solution.</li>
+                </ul>
+
+                <h3>Mole Fraction (X)</h3>
+                <ul>
+                    <li>Formula: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <msub>
+                                    <mi>X</mi>
+                                    <mi>A</mi>
+                                </msub>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>Moles of component A</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>Total moles of all components</mi>
+                                    </mrow>
+                                </mfrac>
+                            </mrow>
+                        </math></li>
+                    <li>No units (dimensionless).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Molarity & Molality</h2>
+                <h3>Molarity (M)</h3>
+                <ul>
+                    <li>Formula: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>M</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>Moles of solute</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>Volume of solution (L)</mi>
+                                    </mrow>
+                                </mfrac>
+                            </mrow>
+                        </math></li>
+                </ul>
+
+                <h3>Molality (m)</h3>
+                <ul>
+                    <li>Formula: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>m</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>Moles of solute</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>Mass of solvent (kg)</mi>
+                                    </mrow>
+                                </mfrac>
+                            </mrow>
+                        </math></li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Comparison Table</h2>
+                <table>
+                    <tr>
+                        <th>Unit</th>
+                        <th>Formula</th>
+                        <th>Temperature Dependent?</th>
+                        <th>Common Usage</th>
+                    </tr>
+                    <tr>
+                        <td>Mass %</td>
+                        <td>(Mass of solute / Mass of solution) × 100</td>
+                        <td>No</td>
+                        <td>Medicine, food industry</td>
+                    </tr>
+                    <tr>
+                        <td>Volume %</td>
+                        <td>(Volume of solute / Volume of solution) × 100</td>
+                        <td>Yes</td>
+                        <td>Alcohol solutions</td>
+                    </tr>
+                    <tr>
+                        <td>ppm/ppb</td>
+                        <td>(Mass of solute / Mass of solution) × 10⁶ or 10⁹</td>
+                        <td>No</td>
+                        <td>Environmental chemistry</td>
+                    </tr>
+                    <tr>
+                        <td>Molarity (M)</td>
+                        <td>Moles of solute / Volume of solution (L)</td>
+                        <td>Yes</td>
+                        <td>Chemistry, solutions</td>
+                    </tr>
+                    <tr>
+                        <td>Molality (m)</td>
+                        <td>Moles of solute / Mass of solvent (kg)</td>
+                        <td>No</td>
+                        <td>Colligative properties</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none; margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Colligative">2. Colligative Properties</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <p>Colligative properties are physical properties of solutions that depend only on the number of solute
+                    particles, not on their identity.</p>
+                <p>Key Colligative Properties:</p>
+                <ul>
+                    <li>Relative Lowering of Vapor Pressure</li>
+                    <li>Boiling Point Elevation</li>
+                    <li>Freezing Point Depression</li>
+                    <li>Osmotic Pressure</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Relative Lowering of Vapor Pressure</h2>
+                <p>When a non-volatile solute is added to a solvent, the vapor pressure of the solution decreases.</p>
+                <p>Raoult’s Law:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub>
+                        <mi>P</mi>
+                        <mi>solution</mi>
+                    </msub>
+                    <mo>=</mo>
+                    <msub>
+                        <mi>X</mi>
+                        <mi>solvent</mi>
+                    </msub>
+                    <msub>
+                        <mi>P</mi>
+                        <mi>solvent</mi>
+                    </msub>
+                    <mo>^o</mo>
+                </math>
+                <p>Where:</p>
+                <ul>
+                    <li><math>
+                            <msub>
+                                <mi>P</mi>
+                                <mi>solution</mi>
+                            </msub>
+                        </math> = Vapor pressure of solution</li>
+                    <li><math>
+                            <msub>
+                                <mi>P</mi>
+                                <mi>solvent</mi>
+                            </msub>
+                            <mo>^o</mo>
+                        </math> = Vapor pressure of pure solvent</li>
+                    <li><math>
+                            <msub>
+                                <mi>X</mi>
+                                <mi>solvent</mi>
+                            </msub>
+                        </math> = Mole fraction of solvent</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Boiling Point Elevation</h2>
+                <p>Adding a solute increases the boiling point of a solvent.</p>
+                <math>
+                    <mrow>
+                        <mi>&#916;T</mi>
+                        <msub>
+                            <mi>b</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <mi>i</mi>
+                        <msub>
+                            <mi>K</mi>
+                            <mi>b</mi>
+                        </msub>
+                        <mi>m</mi>
+                    </mrow>
+                </math>
+                <p>Where:</p>
+                <ul>
+                    <li><math>
+                            <mi>&#916;T</mi>
+                            <msub>
+                                <mi>b</mi>
+                            </msub>
+                        </math> = Boiling point elevation</li>
+                    <li><math>
+                            <mi>i</mi>
+                        </math> = Van’t Hoff factor</li>
+                    <li><math>
+                            <msub>
+                                <mi>K</mi>
+                                <mi>b</mi>
+                            </msub>
+                        </math> = Boiling point elevation constant</li>
+                    <li><math>
+                            <mi>m</mi>
+                        </math> = Molality of solution</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Freezing Point Depression</h2>
+                <p>Adding a solute lowers the freezing point of a solvent.</p>
+                <math>
+                    <mrow>
+                        <mi>&#916;T</mi>
+                        <msub>
+                            <mi>f</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <mi>i</mi>
+                        <msub>
+                            <mi>K</mi>
+                            <mi>f</mi>
+                        </msub>
+                        <mi>m</mi>
+                    </mrow>
+                </math>
+                <p>Where:</p>
+                <ul>
+                    <li><math>
+                            <mi>&#916;T</mi>
+                            <msub>
+                                <mi>f</mi>
+                            </msub>
+                        </math> = Freezing point depression</li>
+                    <li><math>
+                            <msub>
+                                <mi>K</mi>
+                                <mi>f</mi>
+                            </msub>
+                        </math> = Freezing point depression constant</li>
+                    <li><math>
+                            <mi>i</mi>
+                        </math> = Van’t Hoff factor</li>
+                    <li><math>
+                            <mi>m</mi>
+                        </math> = Molality of solution</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Osmotic Pressure</h2>
+                <p>Osmotic pressure is the pressure required to stop the flow of solvent through a semi-permeable
+                    membrane.</p>
+                <math>
+                    <mrow>
+                        <mi>&#960;</mi>
+                        <mo>=</mo>
+                        <mi>i</mi>
+                        <mi>M</mi>
+                        <mi>R</mi>
+                        <mi>T</mi>
+                    </mrow>
+                </math>
+                <p>Where:</p>
+                <ul>
+                    <li><math>
+                            <mi>&#960;</mi>
+                        </math> = Osmotic pressure</li>
+                    <li><math>
+                            <mi>M</mi>
+                        </math> = Molarity of solution</li>
+                    <li><math>
+                            <mi>R</mi>
+                        </math> = Gas constant (0.0821 L·atm/mol·K)</li>
+                    <li><math>
+                            <mi>T</mi>
+                        </math> = Temperature in Kelvin</li>
+                    <li><math>
+                            <mi>i</mi>
+                        </math> = Van’t Hoff factor</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Van’t Hoff Factor</h2>
+                <p>The Van’t Hoff factor accounts for ionization of solutes.</p>
+                <ul>
+                    <li>For non-electrolytes: <math>
+                            <mi>i</mi>
+                            <mo>=</mo>
+                            <mn>1</mn>
+                        </math> (e.g., glucose, urea).</li>
+                    <li>For ionic compounds:
+                        <ul>
+                            <li>NaCl → <math>
+                                    <mi>i</mi>
+                                    <mo>=</mo>
+                                    <mn>2</mn>
+                                </math> (Na⁺ + Cl⁻)</li>
+                            <li>CaCl₂ → <math>
+                                    <mi>i</mi>
+                                    <mo>=</mo>
+                                    <mn>3</mn>
+                                </math> (Ca²⁺ + 2Cl⁻)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

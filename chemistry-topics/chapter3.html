@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-chemistry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 3 - Thermodynamics</div>
+        <div class="topic-name">
+            <h1 id="Thermodynamics">1. Laws of Thermodynamics</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>The Laws of Thermodynamics describe the principles governing energy transfer, heat, and work in
+                        a system.</li>
+                    <li>These laws are fundamental in physics, chemistry, and engineering.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Zeroth Law of Thermodynamics (Thermal Equilibrium)</h2>
+                <ul>
+                    <li><b>Statement:</b> If two systems (A and B) are each in thermal equilibrium with a third system
+                        (C), then A and B are also in thermal equilibrium with each other.</li>
+                    <li><b>Implication:</b>
+                        <ul>
+                            <li>Defines temperature as a fundamental property.</li>
+                            <li>Basis for thermometers (temperature measurement).</li>
+                        </ul>
+                    </li>
+                    <li><b>Example:</b> If a hot metal rod is placed in water, both eventually reach the same
+                        temperature.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>First Law of Thermodynamics (Law of Energy Conservation)</h2>
+                <ul>
+                    <li><b>Statement:</b> Energy cannot be created or destroyed, only transferred or converted from one
+                        form to another.</li>
+                    <li><b>Mathematical Expression:</b>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>&Delta;U</mi>
+                            <mo>=</mo>
+                            <mi>Q</mi>
+                            <mo>-</mo>
+                            <mi>W</mi>
+                        </math>
+                        <p>where:</p>
+                        <ul>
+                            <li>&Delta;U = Change in internal energy</li>
+                            <li>Q = Heat added to the system</li>
+                            <li>W = Work done by the system</li>
+                        </ul>
+                    </li>
+                    <li><b>Implication:</b>
+                        <ul>
+                            <li>Heat can be converted into work and vice versa.</li>
+                            <li>Energy remains constant in an isolated system.</li>
+                        </ul>
+                    </li>
+                    <li><b>Example:</b> In a steam engine, heat energy is converted into mechanical work.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Second Law of Thermodynamics (Entropy & Direction of Heat Flow)</h2>
+                <ul>
+                    <li><b>Statement:</b> Entropy (disorder) of an isolated system always increases over time.</li>
+                    <li><b>Implications:</b>
+                        <ul>
+                            <li>Heat always flows from a hotter body to a colder body, not the reverse.</li>
+                            <li>No engine can be 100% efficient (some energy is always lost as heat).</li>
+                        </ul>
+                    </li>
+                    <li><b>Mathematical Expression (Entropy Change):</b>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>&Delta;S</mi>
+                            <mo>&ge;</mo>
+                            <mn>0</mn>
+                        </math>
+                        <p>where &Delta;S is entropy change.</p>
+                    </li>
+                    <li><b>Examples:</b>
+                        <ul>
+                            <li>Ice melts into water, increasing entropy.</li>
+                            <li>Heat dissipates from hot coffee to the surrounding air.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Third Law of Thermodynamics (Absolute Zero & Entropy at 0K)</h2>
+                <ul>
+                    <li><b>Statement:</b> At absolute zero (0 K or -273.15&deg;C), the entropy of a perfect crystal is
+                        exactly zero.</li>
+                    <li><b>Implications:</b>
+                        <ul>
+                            <li>Absolute zero is the lowest possible temperature, but it is unattainable in practice.
+                            </li>
+                            <li>As temperature decreases, molecular motion decreases, reducing entropy.</li>
+                        </ul>
+                    </li>
+                    <li><b>Example:</b> Near absolute zero, gases condense into liquids or solids, showing minimal
+                        motion.</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Enthalpy">2. Enthalpy, Entropy & Gibbs Free Energy</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <p>These thermodynamic properties help describe the energy changes, spontaneity, and disorder of
+                    chemical and physical processes.</p>
+                <ul>
+                    <li><b>Enthalpy (H)</b> → Heat content of a system.</li>
+                    <li><b>Entropy (S)</b> → Measure of disorder or randomness.</li>
+                    <li><b>Gibbs Free Energy (G)</b> → Determines whether a reaction occurs spontaneously.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Enthalpy (H) – Heat Content of a System</h2>
+                <h3>Definition:</h3>
+                <p>The total heat energy of a system at constant pressure.</p>
+                <h3>Mathematical Expression:</h3>
+                <p>ΔH = H<sub>final</sub> − H<sub>initial</sub></p>
+                <h3>Types of Enthalpy Changes:</h3>
+                <ul>
+                    <li>ΔH &gt; 0 (Endothermic reaction) → Absorbs heat (e.g., melting ice).</li>
+                    <li>ΔH &lt; 0 (Exothermic reaction) → Releases heat (e.g., burning fuel).</li>
+                </ul>
+                <h3>Examples of Enthalpy Change:</h3>
+                <ul>
+                    <li><b>Combustion:</b> Exothermic (Releases heat)</li>
+                    <li><b>Evaporation:</b> Endothermic (Absorbs heat)</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Entropy (S) – Measure of Disorder</h2>
+                <h3>Definition:</h3>
+                <p>Measures randomness or disorder in a system.</p>
+                <h3>Mathematical Expression:</h3>
+                <p>ΔS = S<sub>final</sub> − S<sub>initial</sub></p>
+                <h3>Key Concept:</h3>
+                <ul>
+                    <li>Greater disorder → Higher entropy</li>
+                    <li>Ordered state → Lower entropy</li>
+                </ul>
+                <h3>Entropy & Spontaneity:</h3>
+                <ul>
+                    <li>ΔS &gt; 0: More disorder (e.g., ice melting).</li>
+                    <li>ΔS &lt; 0: Less disorder (e.g., gas condensing into liquid).</li>
+                </ul>
+                <h3>Examples of Entropy Change:</h3>
+                <ul>
+                    <li><b>Ice melting</b> → Increases entropy (ΔS &gt; 0).</li>
+                    <li><b>Water freezing</b> → Decreases entropy (ΔS &lt; 0).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Gibbs Free Energy (G) – Predicting Spontaneity</h2>
+                <h3>Definition:</h3>
+                <p>Determines if a reaction occurs spontaneously or requires external energy.</p>
+                <h3>Mathematical Expression:</h3>
+                <p>ΔG = ΔH − TΔS</p>
+                <h3>Where:</h3>
+                <ul>
+                    <li>ΔG = Gibbs free energy change</li>
+                    <li>ΔH = Enthalpy change</li>
+                    <li>T = Temperature in Kelvin</li>
+                    <li>ΔS = Entropy change</li>
+                </ul>
+                <h3>Spontaneity of a Reaction:</h3>
+                <table>
+                    <tr>
+                        <th>ΔG Value</th>
+                        <th>Spontaneity</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>ΔG &lt; 0</td>
+                        <td>Spontaneous</td>
+                        <td>Ice melting at room temperature</td>
+                    </tr>
+                    <tr>
+                        <td>ΔG &gt; 0</td>
+                        <td>Non-Spontaneous</td>
+                        <td>Water freezing at room temperature</td>
+                    </tr>
+                    <tr>
+                        <td>ΔG = 0</td>
+                        <td>Equilibrium</td>
+                        <td>Phase equilibrium (e.g., boiling water at 100°C)</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none; margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Equilibrium">3. Equilibrium Concepts</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>Equilibrium is a state where the rate of the forward reaction equals the rate of the reverse
+                        reaction.</li>
+                    <li>Concentrations of reactants and products remain constant over time.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Equilibrium</h2>
+                <h3>Physical Equilibrium</h3>
+                <ul>
+                    <li>Involves phase transitions where rates of change are equal.</li>
+                    <li>Examples:
+                        <ul>
+                            <li><b>Solid-Liquid Equilibrium:</b> H<sub>2</sub>O(s) ⇌ H<sub>2</sub>O(l) (melting/freezing
+                                at 0°C).</li>
+                            <li><b>Liquid-Gas Equilibrium:</b> H<sub>2</sub>O(l) ⇌ H<sub>2</sub>O(g)
+                                (evaporation/condensation at boiling point).</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Chemical Equilibrium</h3>
+                <ul>
+                    <li>Occurs when the rate of the forward reaction equals the rate of the reverse reaction.</li>
+                    <li>Example: N<sub>2</sub> + 3H<sub>2</sub> ⇌ 2NH<sub>3</sub>.</li>
+                    <li>Dynamic in nature: Reactions continue microscopically, but macroscopic properties remain
+                        constant.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Law of Chemical Equilibrium & Equilibrium Constant</h2>
+                <h3>Law of Mass Action</h3>
+                <p>For a reaction: aA + bB ⇌ cC + dD</p>
+                <p>Equilibrium constant (K) is given by:</p>
+                <p>K = ([C]<sup>c</sup> [D]<sup>d</sup>) / ([A]<sup>a</sup> [B]<sup>b</sup>)</p>
+
+                <h3>Types of Equilibrium Constants</h3>
+                <ul>
+                    <li>K<sub>c</sub>: Concentration-based, using molar concentrations (mol/L).</li>
+                    <li>K<sub>p</sub>: Pressure-based, used for gaseous reactions.</li>
+                </ul>
+                <p>Relation: K<sub>p</sub> = K<sub>c</sub> (RT)<sup>Δn</sup>, where Δn = (moles of gaseous products -
+                    moles of gaseous reactants).</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Le Chatelier’s Principle</h2>
+                <p>If a system at equilibrium is subjected to a change, the equilibrium shifts to oppose the change.</p>
+                <table>
+                    <tr>
+                        <th>Factor</th>
+                        <th>Change Applied</th>
+                        <th>Equilibrium Shift</th>
+                    </tr>
+                    <tr>
+                        <td>Concentration</td>
+                        <td>Increase reactants</td>
+                        <td>Forward direction (more products)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Increase products</td>
+                        <td>Reverse direction (more reactants)</td>
+                    </tr>
+                    <tr>
+                        <td>Pressure</td>
+                        <td>Increase pressure</td>
+                        <td>Towards fewer gas molecules</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Decrease pressure</td>
+                        <td>Towards more gas molecules</td>
+                    </tr>
+                    <tr>
+                        <td>Temperature</td>
+                        <td>Increase temperature</td>
+                        <td>Endothermic direction</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Decrease temperature</td>
+                        <td>Exothermic direction</td>
+                    </tr>
+                    <tr>
+                        <td>Catalyst</td>
+                        <td>Added</td>
+                        <td>No shift, only speeds up equilibrium</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Gibbs Free Energy & Equilibrium</h2>
+                <p>Relation: ΔG = -RT lnK</p>
+                <ul>
+                    <li>ΔG &lt; 0: Spontaneous reaction, K &gt; 1 (more products).</li>
+                    <li>ΔG &gt; 0: Non-spontaneous reaction, K &lt; 1 (more reactants).</li>
+                    <li>ΔG = 0: System is at equilibrium, K = 1.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Summary</h2>
+                <ul>
+                    <li>Equilibrium involves a balance between forward and reverse reactions.</li>
+                    <li>Law of Mass Action defines equilibrium constant (K).</li>
+                    <li>Le Chatelier’s Principle explains shifts due to external changes.</li>
+                    <li>Gibbs Free Energy determines spontaneity and equilibrium position.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-physics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 14 - Electromagnetic Waves</div>
+        <div class="topic-name">
+            <h1>1. Electromagnetic Spectrum</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>The Electromagnetic Spectrum is the complete range of electromagnetic waves arranged according
+                        to their wavelength or frequency.</li>
+                    <li>These waves do not require a medium to travel and can propagate through a vacuum at the speed of
+                        light (c = 3 × 10⁸ m/s).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Properties of Electromagnetic Waves</h2>
+                <ul>
+                    <li>Transverse waves – Consist of oscillating electric and magnetic fields perpendicular to each
+                        other and the direction of propagation.</li>
+                    <li>Travel at the speed of light in a vacuum.</li>
+                    <li>Obey the wave equation: c = fλ
+                        <p>where c = Speed of light (3 × 10⁸ m/s), f = Frequency (Hz), λ = Wavelength (m).</p>
+                    </li>
+                    <li>Carry energy and momentum and can exert pressure.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Electromagnetic Spectrum Classification</h2>
+                <table>
+                    <tr>
+                        <th>Type of Wave</th>
+                        <th>Wavelength Range</th>
+                        <th>Frequency Range</th>
+                        <th>Main Uses</th>
+                    </tr>
+                    <tr>
+                        <td>Radio Waves</td>
+                        <td>&gt; 1 m</td>
+                        <td>&lt; 10⁹ Hz</td>
+                        <td>Communication, broadcasting (FM, AM), satellites</td>
+                    </tr>
+                    <tr>
+                        <td>Microwaves</td>
+                        <td>1 mm – 1 m</td>
+                        <td>10⁹ − 10¹² Hz</td>
+                        <td>Radar, cooking (microwave ovens), mobile networks</td>
+                    </tr>
+                    <tr>
+                        <td>Infrared (IR) Rays</td>
+                        <td>700 nm – 1 mm</td>
+                        <td>10¹² − 10¹⁴ Hz</td>
+                        <td>Thermal imaging, remote controls, night vision</td>
+                    </tr>
+                    <tr>
+                        <td>Visible Light</td>
+                        <td>400 – 700 nm</td>
+                        <td>10¹⁴ − 10¹⁵ Hz</td>
+                        <td>Human vision, photography, optical fibers</td>
+                    </tr>
+                    <tr>
+                        <td>Ultraviolet (UV) Rays</td>
+                        <td>10 nm – 400 nm</td>
+                        <td>10¹⁵ − 10¹⁷ Hz</td>
+                        <td>Sterilization, sun tanning, fluorescence</td>
+                    </tr>
+                    <tr>
+                        <td>X-Rays</td>
+                        <td>0.01 – 10 nm</td>
+                        <td>10¹⁷ − 10²⁰ Hz</td>
+                        <td>Medical imaging, security scanners</td>
+                    </tr>
+                    <tr>
+                        <td>Gamma Rays</td>
+                        <td>&lt; 0.01 nm</td>
+                        <td>&gt; 10²⁰ Hz</td>
+                        <td>Cancer treatment, nuclear reactions, astrophysics</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Explanation of Each Region</h2>
+                <ul>
+                    <li><b>Radio Waves:</b> Longest wavelength, lowest frequency. Used in communication (TV, radio,
+                        mobile networks, Wi-Fi, satellites).</li>
+                    <li><b>Microwaves:</b> Used in microwave ovens, GPS, weather forecasting, and radar.</li>
+                    <li><b>Infrared (IR) Radiation:</b> Emitted by warm objects. Used in thermal cameras, remote
+                        controls, and fiber optic communication.</li>
+                    <li><b>Visible Light:</b> The only part of the spectrum visible to the human eye. Different colors
+                        correspond to different wavelengths.</li>
+                    <li><b>Ultraviolet (UV) Rays:</b> Present in sunlight, used for sterilization, fluorescent lights,
+                        and tanning beds.</li>
+                    <li><b>X-Rays:</b> Highly penetrating, used in medical imaging, security scanners, and
+                        crystallography.</li>
+                    <li><b>Gamma Rays:</b> Highest frequency, shortest wavelength. Used in cancer treatment,
+                        sterilization, and nuclear energy.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of the Electromagnetic Spectrum</h2>
+                <ul>
+                    <li>Communication – Radio waves and microwaves in TV, mobile phones, and satellites.</li>
+                    <li>Medical Uses – X-rays in diagnostics, gamma rays in cancer treatment.</li>
+                    <li>Security – X-ray scanners at airports.</li>
+                    <li>Energy Production – Infrared in solar panels.</li>
+                    <li>Scientific Research – Gamma rays and X-rays in astronomy and nuclear physics.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Electromagnetic">2. Properties of Electromagnetic Waves</h1>
+            <div class="topic-description">
+                <h2> Key Properties of Electromagnetic Waves</h2>
+
+                <h3>i. Transverse Nature</h3>
+                <ul>
+                    <li>Electromagnetic waves are transverse waves, meaning the electric field (E) and magnetic field
+                        (B)
+                        oscillate perpendicular to each other and to the direction of wave propagation.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>ii. Travel at the Speed of Light</h3>
+                <ul>
+                    <li>In a vacuum, all EM waves travel at the speed of light:</li>
+                    <li>c = 3.0 × 10<sup>8</sup> m/s</li>
+                    <li>In a medium, the speed decreases depending on the refractive index (n):</li>
+                    <li>v = c/n</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>iii. Do Not Require a Medium</h3>
+                <ul>
+                    <li>Unlike sound or water waves, EM waves do not need a medium to propagate and can travel through
+                        the
+                        vacuum of space.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>iv. Obey the Wave Equation</h3>
+                <ul>
+                    <li>The relationship between wavelength (λ), frequency (f), and speed (c) is:</li>
+                    <li>c = fλ</li>
+                    <li>where:</li>
+                    <ul>
+                        <li>f = Frequency (Hz)</li>
+                        <li>λ = Wavelength (m)</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>v. Carry Energy and Momentum</h3>
+                <ul>
+                    <li>Electromagnetic waves carry energy and momentum, which can exert radiation pressure on objects.
+                    </li>
+                    <li>Energy per photon is given by:</li>
+                    <li>E = hf</li>
+                    <li>where h = 6.626 × 10<sup>-34</sup> J·s (Planck’s constant).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>vi. Can Be Polarized</h3>
+                <ul>
+                    <li>Since EM waves are transverse, they can undergo polarization, meaning the electric field
+                        oscillations are restricted to a single plane.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>vii. Exhibit Reflection, Refraction, Diffraction, and Interference</h3>
+                <ul>
+                    <li><b>Reflection:</b> EM waves bounce off surfaces (e.g., mirrors).</li>
+                    <li><b>Refraction:</b> EM waves change direction when passing through different mediums (e.g., light
+                        bending in water).</li>
+                    <li><b>Diffraction:</b> EM waves spread out when passing through narrow openings.</li>
+                    <li><b>Interference:</b> Two EM waves can superpose, leading to constructive or destructive
+                        interference.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>viii. Governed by Maxwell’s Equations</h3>
+                <ul>
+                    <li>EM waves obey Maxwell’s equations, which describe how electric and magnetic fields generate each
+                        other and propagate through space.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

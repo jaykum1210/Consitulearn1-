@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-maths.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 9 - Differential Equations</div>
+        <div class="topic-name">
+            <h1>1. Order and Degree of a Polynomial</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>The **order** of a polynomial refers to the highest power of the variable \(x\) in the
+                        polynomial.</li>
+                    <li>The **degree** of a polynomial is the highest exponent of the variable \(x\) in the
+                        polynomial, indicating the highest power of the variable that appears with a non-zero
+                        coefficient.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Order of a Polynomial</h2>
+                <ul>
+                    <li>The order of a polynomial is simply the highest power of the variable \(x\) in the
+                        polynomial.</li>
+                    <li>The order tells you how many times the variable is multiplied by itself in the term with the
+                        highest exponent.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example</h2>
+                <ul>
+                    <li>For the polynomial \(P(x) = 4x^3 + 2x^2 - 7x + 5\), the order is 3 because the highest power
+                        of \(x\) is \(x^3\).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Degree of a Polynomial</h2>
+                <ul>
+                    <li>The degree of a polynomial is the highest exponent of the variable \(x\) when the polynomial
+                        is written in standard form (terms ordered from highest to lowest powers).</li>
+                    <li>The degree indicates the highest power of the variable with a non-zero coefficient.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example</h2>
+                <ul>
+                    <li>For the polynomial \(P(x) = 4x^3 + 2x^2 - 7x + 5\), the degree is 3 because the highest
+                        degree term is \(4x^3\), where the exponent of \(x\) is 3.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Difference Between Order and Degree</h2>
+                <ul>
+                    <li>The **degree** refers to the highest exponent of \(x\), while the **order** is often used
+                        interchangeably with degree, particularly in polynomials.</li>
+                    <li>The degree applies to both monomials (single terms) and polynomials (sum of terms).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Additional Notes</h2>
+                <ul>
+                    <li>For a constant polynomial (e.g., \(P(x) = 5\)), the degree is 0 because there is no
+                        variable.</li>
+                    <li>If a polynomial has multiple terms with the highest exponent (e.g., \(P(x) = 3x^2 + 2x^2 +
+                        5\)), the degree remains the highest exponent of \(x\), which in this case is 2.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Examples</h2>
+                <ol style="list-style-type: decimal;">
+                    <li>
+                        <p><b>Example 1: Polynomial with Degree 5</b></p>
+                        <ul>
+                            <li>Given the polynomial \(P(x) = 2x^5 - 3x^4 + x^2 - 7\), the degree is 5 because the
+                                highest power of \(x\) is \(x^5\). The order is also 5.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Example 2: Polynomial with Degree 1 (Linear Polynomial)</b></p>
+                        <ul>
+                            <li>Given the polynomial \(P(x) = 3x - 4\), the degree is 1 because the highest power of
+                                \(x\) is \(x^1\). The order is also 1.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Formation">2. Formation of Differential Equations</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>A differential equation is an equation that involves derivatives of a function or a set of
+                        functions.</li>
+                    <li>They can be used to model a wide range of phenomena, such as population growth, heat
+                        conduction, and mechanical vibrations.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>General Method to Form a Differential Equation</h2>
+                <ul>
+                    <li>Start with a given equation that involves variables and their derivatives.</li>
+                    <li>Eliminate arbitrary constants to get an equation involving the function and its derivatives.
+                    </li>
+                    <li>If there is an arbitrary constant, differentiate the equation with respect to the
+                        independent variable (usually x or t) to get rid of the constant and introduce a derivative.
+                    </li>
+                    <li>Write the equation in terms of derivatives of the function. The final equation will involve
+                        the dependent variable and its derivatives.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example 1: Forming a Differential Equation from a General Function</h2>
+                <p>Suppose we are given the equation:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>y</mi>
+                    <mo>=</mo>
+                    <mi>a</mi>
+                    <mi>x</mi>
+                    <msup>
+                        <mi>2</mi>
+                    </msup>
+                    <mo>+</mo>
+                    <mi>b</mi>
+                    <mi>x</mi>
+                    <mo>+</mo>
+                    <mi>c</mi>
+                </math>
+                <p>where <i>a</i>, <i>b</i>, and <i>c</i> are constants.</p>
+
+                <h3>Step 1: Differentiate the equation to eliminate constants</h3>
+                <ul>
+                    <li>Differentiate with respect to <i>x</i>:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>d</mi>
+                        <mi>y</mi>
+                        <mo>/</mo>
+                        <mi>d</mi>
+                        <mi>x</mi>
+                        <mo>=</mo>
+                        <mn>2</mn>
+                        <mi>a</mi>
+                        <mi>x</mi>
+                        <mo>+</mo>
+                        <mi>b</mi>
+                    </math>
+                    <li>Then, differentiate again:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>d</mi>
+                        <msup>
+                            <mi>2</mi>
+                        </msup>
+                        <mi>y</mi>
+                        <mo>/</mo>
+                        <mi>d</mi>
+                        <msup>
+                            <mi>x</mi>
+                            <mi>2</mi>
+                        </msup>
+                        <mo>=</mo>
+                        <mn>2</mn>
+                        <mi>a</mi>
+                    </math>
+                </ul>
+
+                <h3>Step 2: Eliminate the constants</h3>
+                <ul>
+                    <li>From the equation <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>d</mi>
+                            <msup>
+                                <mi>2</mi>
+                            </msup>
+                            <mi>y</mi>
+                            <mo>/</mo>
+                            <mi>d</mi>
+                            <msup>
+                                <mi>x</mi>
+                                <mi>2</mi>
+                            </msup>
+                            <mo>=</mo>
+                            <mn>2</mn>
+                            <mi>a</mi>
+                        </math>, we can see that the second derivative of <i>y</i> is a constant, <i>2a</i>. Thus,
+                        the differential equation becomes:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>d</mi>
+                        <msup>
+                            <mi>2</mi>
+                        </msup>
+                        <mi>y</mi>
+                        <mo>/</mo>
+                        <mi>d</mi>
+                        <msup>
+                            <mi>x</mi>
+                            <mi>2</mi>
+                        </msup>
+                        <mo>=</mo>
+                        <mn>2</mn>
+                        <mi>a</mi>
+                    </math>
+                </ul>
+                <p>This is a second-order linear differential equation.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example 2: Forming a Differential Equation from a Given Relationship</h2>
+                <p>Given the relationship between <i>x</i> and <i>y</i>:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>y</mi>
+                    <mo>=</mo>
+                    <mi>e</mi>
+                    <mi>k</mi>
+                    <mi>x</mi>
+                </math>
+                <p>where <i>k</i> is a constant.</p>
+
+                <h3>Step 1: Differentiate the equation</h3>
+                <ul>
+                    <li>Differentiate with respect to <i>x</i>:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>d</mi>
+                        <mi>y</mi>
+                        <mo>/</mo>
+                        <mi>d</mi>
+                        <mi>x</mi>
+                        <mo>=</mo>
+                        <mi>k</mi>
+                        <mi>e</mi>
+                        <mi>kx</mi>
+                    </math>
+                </ul>
+
+                <h3>Step 2: Eliminate the constant <i>k</i></h3>
+                <ul>
+                    <li>Since <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>y</mi>
+                            <mo>=</mo>
+                            <mi>e</mi>
+                            <mi>kx</mi>
+                        </math>, we can solve for <i>k</i> in terms of <i>x</i> and <i>y</i>:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>k</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mn>1</mn>
+                            <mi>x</mi>
+                        </mfrac>
+                        <mi>ln</mi>
+                        <mo>(</mo>
+                        <mi>y</mi>
+                        <mo>)</mo>
+                    </math>
+                    <li>Substitute this back into the first derivative equation to eliminate the constant <i>k</i>.
+                    </li>
+                </ul>
+
+                <p>After simplification, the final differential equation would involve <i>x</i>, <i>y</i>, and
+                    derivatives of <i>y</i>.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example 3: Forming a Differential Equation from a Physical Situation</h2>
+                <p>Suppose a population grows according to the equation:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>d</mi>
+                    <mi>P</mi>
+                    <mo>/</mo>
+                    <mi>d</mi>
+                    <mi>t</mi>
+                    <mo>=</mo>
+                    <mi>k</mi>
+                    <mi>P</mi>
+                </math>
+                <p>where <i>P</i> is the population and <i>k</i> is a constant of proportionality. This is a
+                    first-order linear differential equation representing exponential growth.</p>
+
+                <h3>Step 1: Write the equation</h3>
+                <p>The rate of change of the population <i>P</i> with respect to time <i>t</i> is proportional to
+                    the population size itself:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>d</mi>
+                    <mi>P</mi>
+                    <mo>/</mo>
+                    <mi>d</mi>
+                    <mi>t</mi>
+                    <mo>=</mo>
+                    <mi>k</mi>
+                    <mi>P</mi>
+                </math>
+                <p>This equation directly represents the rate of change of <i>P</i>, so it does not need further
+                    differentiation or simplification. It is already a differential equation.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>General Form of a First-Order Differential Equation</h2>
+                <p>A general first-order differential equation can be written as:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>F</mi>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>,</mo>
+                    <mi>y</mi>
+                    <mo>,</mo>
+                    <mi>d</mi>
+                    <mi>y</mi>
+                    <mo>/</mo>
+                    <mi>d</mi>
+                    <mi>x</mi>
+                    <mo>)</mo>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                </math>
+                <p>Where <i>F</i> is some function of <i>x</i>, <i>y</i>, and <i>d</i><i>y/dx</i>.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example 4: Formation from Initial Conditions</h2>
+                <p>Given the relationship:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>y</mi>
+                    <mo>=</mo>
+                    <mi>ln</mi>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>)</mo>
+                    <mo>+</mo>
+                    <mi>C</mi>
+                </math>
+                <p>Where <i>C</i> is a constant, we can form a differential equation by eliminating <i>C</i>.</p>
+
+                <h3>Step 1: Differentiate the equation</h3>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>d</mi>
+                    <mi>y</mi>
+                    <mo>/</mo>
+                    <mi>d</mi>
+                    <mi>x</mi>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mn>1</mn>
+                        <mi>x</mi>
+                    </mfrac>
+                </math>
+
+                <h3>Step 2: Eliminate the constant <i>C</i></h3>
+                <p>Since there is no explicit constant term in the equation after differentiation, the differential
+                    equation formed is:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>d</mi>
+                    <mi>y</mi>
+                    <mo>/</mo>
+                    <mi>d</mi>
+                    <mi>x</mi>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mn>1</mn>
+                        <mi>x</mi>
+                    </mfrac>
+                </math>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Methods">3. Methods for Solving Differential Equations</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>Solving differential equations involves finding a function (or set of functions) that
+                        satisfies the equation.</li>
+                    <li>There are various methods to solve differential equations depending on the type of equation
+                        (e.g., first-order, second-order, linear, non-linear, etc.).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>1. Separation of Variables (for First-Order Equations)</h2>
+                <ul>
+                    <li>Used when the differential equation can be written as: <math
+                            xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>dy/dx</mi>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>g(x)</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>h(y)</mi>
+                                </mrow>
+                            </mfrac>
+                        </math></li>
+                    <li>Separate the variables and integrate both sides.</li>
+                    <li>Formula: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>∫</mi>
+                            <mfrac>
+                                <mrow>
+                                    <mi>dy</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>h(y)</mi>
+                                </mrow>
+                            </mfrac>
+                            <mo>=</mo>
+                            <mi>∫g(x)dx</mi>
+                        </math></li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example</h2>
+                <p>Example: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>dy/dx</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>x</mi>
+                            </mrow>
+                            <mrow>
+                                <mi>y</mi>
+                            </mrow>
+                        </mfrac>
+                    </math></p>
+                <ul>
+                    <li>Separate the variables: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>y</mi>
+                            <mi>dy</mi>
+                            <mo>=</mo>
+                            <mi>x</mi>
+                            <mi>dx</mi>
+                        </math></li>
+                    <li>Integrate both sides: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>∫y dy</mi>
+                            <mo>=</mo>
+                            <mi>∫x dx</mi>
+                        </math></li>
+                    <li>Result: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>y²/2</mi>
+                            <mo>=</mo>
+                            <mi>x²/2</mi>
+                            <mo>+</mo>
+                            <mi>C</mi>
+                        </math></li>
+                    <li>Solution: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>y</mi>
+                            <mo>=</mo>
+                            <msup>
+                                <mrow>
+                                    <mi>x</mi>
+                                </mrow>
+                                <mrow>
+                                    <mn>2</mn>
+                                </mrow>
+                            </msup>
+                            <mo>+</mo>
+                            <mi>C</mi>
+                        </math></li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>2. Linear Differential Equations (First-Order)</h2>
+                <ul>
+                    <li>A first-order linear differential equation is of the form: <math
+                            xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>dy/dx</mi>
+                            <mo>+</mo>
+                            <mi>P(x)</mi>
+                            <mi>y</mi>
+                            <mo>=</mo>
+                            <mi>Q(x)</mi>
+                        </math></li>
+                    <li>To solve: Use the integrating factor <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>μ(x)</mi>
+                            <mo>=</mo>
+                            <mi>e</mi>
+                            <msup>
+                                <mrow>
+                                    <mi>∫P(x)dx</mi>
+                                </mrow>
+                            </msup>
+                        </math></li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example</h2>
+                <p>Example: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>dy/dx</mi>
+                        <mo>+</mo>
+                        <mn>2</mn>
+                        <mi>y</mi>
+                        <mo>=</mo>
+                        <mi>e^x</mi>
+                    </math></p>
+                <ul>
+                    <li>The integrating factor is: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>μ(x)</mi>
+                            <mo>=</mo>
+                            <mi>e</mi>
+                            <msup>
+                                <mrow>
+                                    <mi>∫2dx</mi>
+                                </mrow>
+                            </msup>
+                            <mo>=</mo>
+                            <mi>e^(2x)</mi>
+                        </math></li>
+                    <li>Multiply the equation by <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>e^(2x)</mi>
+                        </math>: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>e^(2x)dy/dx</mi>
+                            <mo>+</mo>
+                            <mi>2e^(2x)y</mi>
+                            <mo>=</mo>
+                            <mi>e^(3x)</mi>
+                        </math></li>
+                    <li>This becomes: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>d/dx(e^(2x)y)</mi>
+                            <mo>=</mo>
+                            <mi>e^(3x)</mi>
+                        </math></li>
+                    <li>Integrate both sides: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>e^(2x)y</mi>
+                            <mo>=</mo>
+                            <mi>e^(3x)/3</mi>
+                            <mo>+</mo>
+                            <mi>C</mi>
+                        </math></li>
+                    <li>Solution: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>y</mi>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>e^(x)</mi>
+                                </mrow>
+                                <mrow>
+                                    <mn>3</mn>
+                                </mrow>
+                            </mfrac>
+                            <mo>+</mo>
+                            <mi>C</mi>
+                            <msup>
+                                <mrow>
+                                    <mi>e</mi>
+                                </mrow>
+                                <mrow>
+                                    <mrow>-2x</mrow>
+                                </mrow>
+                            </msup>
+                        </math>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-physics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 9 - Waves</div>
+        <div class="topic-name">
+            <h1>1. Wave Motion and Wave Propagation</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <p>A wave is a disturbance that propagates energy and momentum through a medium or space without the
+                    transport of matter.</p>
+                <p><b>Example:</b> Ripples on water, sound waves, and light waves.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Waves</h2>
+                <h3>(A) Based on the Medium of Propagation:</h3>
+                <ul>
+                    <li><b>Mechanical Waves</b> – Require a medium (solid, liquid, or gas) to propagate.</li>
+                    <p><b>Example:</b> Sound waves, water waves, seismic waves.</p>
+                    <li><b>Electromagnetic Waves</b> – Do not require a medium and can travel through a vacuum.</li>
+                    <p><b>Example:</b> Light waves, radio waves, X-rays.</p>
+                </ul>
+
+                <h3>(B) Based on Particle Motion:</h3>
+                <ul>
+                    <li><b>Transverse Waves</b> – Particles oscillate perpendicular to the direction of wave
+                        propagation.</li>
+                    <p><b>Example:</b> Light waves, water waves.</p>
+                    <li><b>Longitudinal Waves</b> – Particles oscillate parallel to the direction of wave propagation.
+                    </li>
+                    <p><b>Example:</b> Sound waves, seismic P-waves.</p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Characteristics of Waves</h2>
+                <h3>(A) Wave Parameters</h3>
+                <ul>
+                    <li><b>Wavelength (λ)</b>: Distance between two consecutive crests or troughs.</li>
+                    <li><b>Frequency (f)</b>: Number of wave cycles per second (measured in Hz).</li>
+                    <li><b>Time Period (T)</b>: Time taken for one complete cycle of the wave.</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>T</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mn>1</mn>
+                            <mi>f</mi>
+                        </mfrac>
+                    </math>
+                    <li><b>Wave Speed (v)</b>: The speed at which a wave propagates.</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>v</mi>
+                        <mo>=</mo>
+                        <mi>f</mi>
+                        <mo>&#x22C5;</mo>
+                        <mi>&#x03BB;</mi>
+                    </math>
+                </ul>
+
+                <h3>(B) Amplitude (A)</h3>
+                <p>Maximum displacement of the wave from its mean position. Determines energy and intensity of the wave.
+                </p>
+
+                <h3>(C) Phase Difference</h3>
+                <p>Difference in the phase of oscillation between two points on a wave.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Wave Propagation</h2>
+                <h3>(A) Propagation of Mechanical Waves</h3>
+                <p>Requires a medium (solid, liquid, gas). Depends on elastic and inertial properties of the medium.</p>
+                <p><b>Examples:</b> Sound waves in air, seismic waves in Earth.</p>
+
+                <h3>(B) Propagation of Electromagnetic Waves</h3>
+                <p>Can travel through a vacuum. Propagates as oscillating electric and magnetic fields perpendicular to
+                    each other.</p>
+                <p><b>Examples:</b> Light, radio waves, X-rays.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Wave Motion</h2>
+                <ul>
+                    <li><b>Progressive (Traveling) Waves</b> – Move from one place to another, transferring energy.</li>
+                    <p><b>Example:</b> Sound waves, ocean waves.</p>
+                    <li><b>Stationary (Standing) Waves</b> – Form due to the superposition of two waves traveling in
+                        opposite directions, resulting in nodes and antinodes.</li>
+                    <p><b>Example:</b> Vibrations in a stretched string.</p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Energy and Power in Waves</h2>
+                <p>Wave Energy (E) ∝ Amplitude² (A²). Higher amplitude means greater energy transmission.</p>
+                <p>Power (P) = Energy per unit time</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>P</mi>
+                    <mo>&#x221D;</mo>
+                    <msup>
+                        <mi>A</mi>
+                        <mn>2</mn>
+                    </msup>
+                    <mo>&#x22C5;</mo>
+                    <msup>
+                        <mi>f</mi>
+                        <mn>2</mn>
+                    </msup>
+                </math>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Reflection, Refraction, and Diffraction of Waves</h2>
+                <ul>
+                    <li><b>Reflection:</b> When a wave bounces back upon hitting a surface.</li>
+                    <p><b>Example:</b> Echo in sound waves.</p>
+                    <li><b>Refraction:</b> When a wave changes direction due to a change in medium.</li>
+                    <p><b>Example:</b> Light bending in water.</p>
+                    <li><b>Diffraction:</b> The bending of waves around obstacles.</li>
+                    <p><b>Example:</b> Sound bending around corners.</p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Wave Motion</h2>
+                <ul>
+                    <li><b>Communication Systems</b> – Radio, TV, and mobile networks use electromagnetic waves.</li>
+                    <li><b>Medical Imaging</b> – Ultrasound waves are used for scanning.</li>
+                    <li><b>Seismology</b> – Studying earthquake waves to understand Earth's interior.</li>
+                    <li><b>Sonar (Sound Navigation and Ranging)</b> – Used in submarines to detect objects underwater.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Superposition">2. Superposition of waves</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>The superposition principle states that when two or more waves overlap in the same medium, the
+                        resultant displacement at any point is equal to the algebraic sum of the individual
+                        displacements at that point.</li>
+                    <li><b>Example:</b> When two sound waves meet, they interfere to form a new sound wave.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Mathematical Representation</h2>
+                <ul>
+                    <li>If two waves with displacements <math>
+                            <msub>
+                                <mi>y</mi>
+                                <mn>1</mn>
+                            </msub>
+                            <mo>(</mo>
+                            <mi>x</mi>,<mi>t</mi>
+                            <mo>)</mo>
+                        </math> and <math>
+                            <msub>
+                                <mi>y</mi>
+                                <mn>2</mn>
+                            </msub>
+                            <mo>(</mo>
+                            <mi>x</mi>,<mi>t</mi>
+                            <mo>)</mo>
+                        </math> travel through the same medium, then the resultant displacement is given by:</li>
+                    <li>
+                        <math>
+                            <mi>y</mi>
+                            <msub>
+                                <mi>resultant</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <msub>
+                                <mi>y</mi>
+                                <mn>1</mn>
+                            </msub>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>y</mi>
+                                <mn>2</mn>
+                            </msub>
+                        </math>
+                    </li>
+                    <li>This applies to all types of waves, including mechanical, sound, and electromagnetic waves.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Superposition (Interference of Waves)</h2>
+                <h3>(A) Constructive Interference</h3>
+                <ul>
+                    <li>Occurs when two waves meet in phase (crest meets crest, trough meets trough).</li>
+                    <li>The resultant amplitude is greater than the individual amplitudes.</li>
+                    <li>Condition for constructive interference:
+                        <math>
+                            <mi>&#916;x</mi>
+                            <mo>=</mo>
+                            <mi>n</mi>
+                            <mi>&#955;</mi>
+                            <mo>,</mo>
+                            <mi>n</mi>
+                            <mo>=</mo>
+                            <mn>0</mn>
+                            <mo>,</mo>
+                            <mn>1</mn>
+                            <mo>,</mo>
+                            <mn>2</mn>
+                            <mo>,...</mo>
+                        </math>
+                    </li>
+                    <li>Phase difference:
+                        <math>
+                            <mi>&#916;&#981;</mi>
+                            <mo>=</mo>
+                            <mn>0</mn>
+                            <mo>,</mo>
+                            <mn>2&#960;</mn>
+                            <mo>,</mo>
+                            <mn>4&#960;</mn>
+                            <mo>,...</mo>
+                        </math>
+                    </li>
+                    <li><b>Example:</b> Brighter light spots in Young’s Double-Slit Experiment.</li>
+                </ul>
+
+                <h3>(B) Destructive Interference</h3>
+                <ul>
+                    <li>Occurs when two waves meet out of phase (crest meets trough).</li>
+                    <li>The resultant amplitude is smaller or even zero (complete cancellation).</li>
+                    <li>Condition for destructive interference:
+                        <math>
+                            <mi>&#916;x</mi>
+                            <mo>=</mo>
+                            <mo>(</mo>
+                            <mn>2n+1</mn>
+                            <mo>)</mo>
+                            <mfrac>
+                                <mi>&#955;</mi>
+                                <mn>2</mn>
+                            </mfrac>
+                        </math>
+                    </li>
+                    <li>Phase difference:
+                        <math>
+                            <mi>&#916;&#981;</mi>
+                            <mo>=</mo>
+                            <mi>&#960;</mi>
+                            <mo>,</mo>
+                            <mn>3&#960;</mn>
+                            <mo>,</mo>
+                            <mn>5&#960;</mn>
+                            <mo>,...</mo>
+                        </math>
+                    </li>
+                    <li><b>Example:</b> Noise-canceling headphones use destructive interference to reduce sound.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Special Cases of Wave Superposition</h2>
+                <h3>(A) Beats</h3>
+                <ul>
+                    <li>Occurs when two waves of slightly different frequencies interfere.</li>
+                    <li>The amplitude of the resultant wave varies periodically with time.</li>
+                    <li>Beat Frequency:
+                        <math>
+                            <msub>
+                                <mi>f</mi>
+                                <mi>beat</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <mo>|</mo>
+                            <msub>
+                                <mi>f</mi>
+                                <mn>1</mn>
+                            </msub>
+                            <mo>-</mo>
+                            <msub>
+                                <mi>f</mi>
+                                <mn>2</mn>
+                            </msub>
+                            <mo>|</mo>
+                        </math>
+                    </li>
+                    <li><b>Example:</b> Tuning musical instruments by listening to beat frequency.</li>
+                </ul>
+
+                <h3>(B) Standing Waves (Stationary Waves)</h3>
+                <ul>
+                    <li>Formed when two waves of the same frequency and amplitude traveling in opposite directions
+                        interfere.</li>
+                    <li>The wave does not transfer energy but creates fixed points called:
+                        <ul>
+                            <li><b>Nodes (N):</b> Points of zero displacement.</li>
+                            <li><b>Antinodes (A):</b> Points of maximum displacement.</li>
+                        </ul>
+                    </li>
+                    <li><b>Example:</b> Vibrations in a stretched string, sound waves in pipes.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Energy Transfer in Superposition</h2>
+                <ul>
+                    <li>In constructive interference, energy is reinforced.</li>
+                    <li>In destructive interference, energy is redistributed but not destroyed (law of conservation of
+                        energy).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Superposition of Waves</h2>
+                <ul>
+                    <li><b>Optical Interference:</b> Used in interference patterns (Young’s Double-Slit Experiment).
+                    </li>
+                    <li><b>Radio Waves & Antennas:</b> Used in broadcasting and signal modulation.</li>
+                    <li><b>Sound Engineering:</b> Noise-canceling technology uses destructive interference.</li>
+                    <li><b>Musical Instruments:</b> Tuning forks and beats help in fine-tuning instruments.</li>
+                    <li><b>Holography & Lasers:</b> Based on wave interference principles.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Wave-motion">3. Wave Motion</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>A wave is a disturbance that propagates energy and momentum through a medium or space without
+                        transporting matter.</li>
+                    <li><b>Examples:</b> Ripples on water, sound waves, and light waves.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Waves</h2>
+                <ol style="list-style-type: lower-roman;">
+                    <li>
+                        <p><b>Based on Medium of Propagation</b></p>
+                        <ul>
+                            <li><b>Mechanical Waves:</b> Require a medium (solid, liquid, or gas) to propagate. <br>
+                                <b>Examples:</b> Sound waves, water waves, seismic waves.
+                            </li>
+                            <li><b>Electromagnetic Waves:</b> Do not require a medium and can travel through a vacuum.
+                                <br> <b>Examples:</b> Light waves, radio waves, X-rays.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Based on Particle Motion</b></p>
+                        <ul>
+                            <li><b>Transverse Waves:</b> Particles oscillate perpendicular to the direction of wave
+                                propagation. <br> <b>Examples:</b> Light waves, water waves.</li>
+                            <li><b>Longitudinal Waves:</b> Particles oscillate parallel to the direction of wave
+                                propagation. <br> <b>Examples:</b> Sound waves, seismic P-waves.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Characteristics of Waves</h2>
+                <ul>
+                    <li><b>Wavelength (λ):</b> Distance between two consecutive crests or troughs.</li>
+                    <li><b>Frequency (f):</b> Number of wave cycles per second (measured in Hz).</li>
+                    <li><b>Time Period (T):</b> Time taken for one complete cycle of the wave.
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>T</mi>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mn>1</mn>
+                                <mi>f</mi>
+                            </mfrac>
+                        </math>
+                    </li>
+                    <li><b>Wave Speed (v):</b> The speed at which a wave propagates.
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>v</mi>
+                            <mo>=</mo>
+                            <mi>fλ</mi>
+                        </math>
+                    </li>
+                    <li><b>Amplitude (A):</b> Maximum displacement of the wave from its mean position.</li>
+                    <li><b>Phase Difference:</b> Difference in the phase of oscillation between two points on a wave.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Wave Propagation</h2>
+                <ul>
+                    <li><b>Mechanical Waves:</b> Require a medium and depend on elastic and inertial properties of the
+                        medium.</li>
+                    <li><b>Electromagnetic Waves:</b> Can travel through a vacuum and propagate as oscillating electric
+                        and magnetic fields.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Wave Motion</h2>
+                <ul>
+                    <li><b>Progressive (Traveling) Waves:</b> Move from one place to another, transferring energy. <br>
+                        <b>Examples:</b> Sound waves, ocean waves.
+                    </li>
+                    <li><b>Stationary (Standing) Waves:</b> Form due to the superposition of two waves traveling in
+                        opposite directions, resulting in nodes and antinodes. <br> <b>Examples:</b> Vibrations in a
+                        stretched string.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Energy and Power in Waves</h2>
+                <ul>
+                    <li><b>Wave Energy (E)</b> ∝ A² (Amplitude squared).</li>
+                    <li><b>Power (P)</b> ∝ A²f² (Amplitude squared times Frequency squared).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Wave Phenomena</h2>
+                <ul>
+                    <li><b>Reflection:</b> When a wave bounces back upon hitting a surface. <br> <b>Example:</b> Echo in
+                        sound waves.</li>
+                    <li><b>Refraction:</b> When a wave changes direction due to a change in medium. <br> <b>Example:</b>
+                        Light bending in water.</li>
+                    <li><b>Diffraction:</b> The bending of waves around obstacles. <br> <b>Example:</b> Sound bending
+                        around corners.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Wave Motion</h2>
+                <ul>
+                    <li><b>Communication Systems:</b> Radio, TV, and mobile networks use electromagnetic waves.</li>
+                    <li><b>Medical Imaging:</b> Ultrasound waves are used for scanning.</li>
+                    <li><b>Seismology:</b> Studying earthquake waves to understand Earth's interior.</li>
+                    <li><b>Sonar (Sound Navigation and Ranging):</b> Used in submarines to detect objects underwater.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Doppler">4. Doppler Effect</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>The Doppler Effect refers to the change in frequency or wavelength of a wave when there is
+                        relative motion between the source of the wave and the observer.</li>
+                    <li>It occurs for sound waves, light waves, and other types of waves.</li>
+                    <li>Examples:
+                        <ul>
+                            <li>The sound of a moving ambulance siren appears to change pitch as it approaches and moves
+                                away.</li>
+                            <li>The redshift and blueshift of light from distant stars indicate their motion relative to
+                                Earth.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Doppler Effect in Sound Waves</h2>
+                <ul>
+                    <li>For sound waves, the observed frequency (<math>
+                            <msup>
+                                <mi>f</mi>
+                                <mo>'</mo>
+                            </msup>
+                        </math>) depends on the motion of the source and the observer relative to the medium.</li>
+                    <li><b>Doppler Effect Formula for Sound:</b></li>
+                    <li>
+                        <math>
+                            <msup>
+                                <mi>f</mi>
+                                <mo>'</mo>
+                            </msup>
+                            <mo>=</mo>
+                            <mi>f</mi>
+                            <mo>(</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>v</mi>+<mi>v<sub>o</sub></mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>v</mi>-<mi>v<sub>s</sub></mi>
+                                </mrow>
+                            </mfrac>
+                            <mo>)</mo>
+                        </math>
+                    </li>
+                    <li>Where:
+                        <ul>
+                            <li><b>f'</b> = observed frequency</li>
+                            <li><b>f</b> = actual frequency</li>
+                            <li><b>v</b> = speed of sound in the medium</li>
+                            <li><b>v<sub>o</sub></b> = velocity of the observer (+ if moving towards the source, - if
+                                moving away)</li>
+                            <li><b>v<sub>s</sub></b> = velocity of the source (+ if moving towards the observer, - if
+                                moving away)</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Special Cases</h3>
+                <ul>
+                    <li><b>Source Moving Towards Observer:</b> Frequency increases (f' > f). Example: An approaching
+                        train sounds higher-pitched.</li>
+                    <li><b>Source Moving Away from Observer:</b> Frequency decreases (f' < f). Example: An ambulance
+                            siren sounds lower-pitched after passing by.</li>
+                    <li><b>Observer Moving Towards Source:</b> Observed frequency increases.</li>
+                    <li><b>Observer Moving Away from Source:</b> Observed frequency decreases.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Doppler Effect in Light (Relativistic Doppler Effect)</h2>
+                <ul>
+                    <li>For electromagnetic waves (light), the Doppler effect is given by:</li>
+                    <li>
+                        <math>
+                            <msup>
+                                <mi>f</mi>
+                                <mo>'</mo>
+                            </msup>
+                            <mo>=</mo>
+                            <mi>f</mi>
+                            <mo>&#x2219;</mo>
+                            <mfrac>
+                                <mrow>1 - v/c</mrow>
+                                <mrow>1 + v/c</mrow>
+                            </mfrac>
+                        </math>
+                    </li>
+                    <li>Where:
+                        <ul>
+                            <li><b>c</b> = speed of light</li>
+                            <li><b>v</b> = relative velocity between source and observer</li>
+                            <li><b>f'</b> = observed frequency</li>
+                            <li><b>f</b> = actual frequency</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Redshift and Blueshift</h3>
+                <ul>
+                    <li><b>Blueshift:</b> When the source moves toward the observer, light shifts to a higher frequency
+                        (blue end of the spectrum).</li>
+                    <li><b>Redshift:</b> When the source moves away, light shifts to a lower frequency (red end of the
+                        spectrum).</li>
+                    <li><b>Example:</b> The redshift of galaxies is evidence for the expansion of the universe (Hubble’s
+                        Law).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Doppler Effect</h2>
+                <ul>
+                    <li><b>Radar Speed Detection:</b> Used by police radar guns to measure vehicle speeds.</li>
+                    <li><b>Medical Applications:</b> Doppler ultrasound measures blood flow in arteries and veins.</li>
+                    <li><b>Astronomy:</b> Used to study the motion of stars, galaxies, and the expansion of the
+                        universe.</li>
+                    <li><b>Weather Forecasting:</b> Doppler radar tracks storms and wind patterns.</li>
+                    <li><b>Navigation:</b> Used in sonar and GPS systems.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

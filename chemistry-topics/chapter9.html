@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-chemistry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 9 - Chemical Bonding & Molecular Structure</div>
+        <div class="topic-name">
+            <h1 id="Bonding">1. Ionic, Covalent, and Metallic Bonding</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <p>Chemical bonding occurs when atoms combine to form molecules or compounds. The three main types
+                    of bonds are:</p>
+                <ul>
+                    <li><b>Ionic Bonding:</b> Transfer of electrons</li>
+                    <li><b>Covalent Bonding:</b> Sharing of electrons</li>
+                    <li><b>Metallic Bonding:</b> Sea of electrons</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Ionic Bonding</h2>
+                <p><b>Definition:</b> Ionic bonding occurs when electrons are transferred from one atom to another,
+                    forming oppositely charged ions that attract each other.</p>
+                <ul>
+                    <li><b>Occurs between:</b> Metals & Non-metals</li>
+                    <li><b>Example:</b> NaCl (Sodium chloride)</li>
+                </ul>
+                <h3>How It Works:</h3>
+                <ul>
+                    <li>Metal atoms (like Na, Mg) lose electrons, forming cations (+ve ions).</li>
+                    <li>Non-metal atoms (like Cl, O) gain electrons, forming anions (–ve ions).</li>
+                    <li>The opposite charges attract, forming a strong electrostatic force.</li>
+                </ul>
+                <h3>Properties of Ionic Compounds:</h3>
+                <ul>
+                    <li>High melting & boiling points (strong ionic bonds)</li>
+                    <li>Soluble in water (polar nature)</li>
+                    <li>Conduct electricity when molten or dissolved (ions move freely)</li>
+                    <li>Brittle (ions shift under force, breaking structure)</li>
+                </ul>
+                <p><b>Example Reaction:</b> Na + Cl → Na⁺ + Cl⁻</p>
+
+                <h2>Covalent
+                    <hr style="height: 1px; background-color: black; border: none;">Bonding
+                </h2>
+                <p><b>Definition:</b> Covalent bonding occurs when atoms share electrons to achieve stability.</p>
+                <ul>
+                    <li><b>Occurs between:</b> Non-metal & Non-metal</li>
+                    <li><b>Example:</b> H₂O (Water), CO₂ (Carbon dioxide)</li>
+                </ul>
+                <h3>How It Works:</h3>
+                <ul>
+                    <li>Each atom shares valence electrons to complete its octet (8 electrons in outer shell).</li>
+                    <li>This forms molecules with strong covalent bonds between atoms.</li>
+                </ul>
+                <h3>Types of Covalent Bonds:</h3>
+                <ul>
+                    <li><b>Single Bond (−):</b> H₂, Cl₂ (1 pair of electrons shared)</li>
+                    <li><b>Double Bond (=):</b> O₂, CO₂ (2 pairs shared)</li>
+                    <li><b>Triple Bond (≡):</b> N₂, C₂H₂ (3 pairs shared)</li>
+                </ul>
+                <h3>Properties of Covalent Compounds:</h3>
+                <ul>
+                    <li>Low melting & boiling points (weak intermolecular forces)</li>
+                    <li>Poor electrical conductivity (no free electrons/ions)</li>
+                    <li>Soluble in non-polar solvents</li>
+                    <li>Forms gases, liquids, or soft solids</li>
+                </ul>
+                <p><b>Example Reaction:</b> H + H → H₂</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Metallic Bonding</h2>
+                <p><b>Definition:</b> Metallic bonding occurs when metal atoms share electrons in a "sea of
+                    electrons," allowing free movement of electrons.</p>
+                <ul>
+                    <li><b>Occurs in:</b> Metals</li>
+                    <li><b>Example:</b> Cu (Copper), Fe (Iron), Al (Aluminum)</li>
+                </ul>
+                <h3>How It Works:</h3>
+                <ul>
+                    <li>Metal atoms lose their valence electrons, forming a lattice of positive ions.</li>
+                    <li>The delocalized electrons move freely, creating strong attraction between ions.</li>
+                </ul>
+                <h3>Properties of Metallic Compounds:</h3>
+                <ul>
+                    <li>High melting & boiling points (strong bonds)</li>
+                    <li>Excellent conductivity (free-moving electrons)</li>
+                    <li>Malleable & ductile (layers slide easily)</li>
+                    <li>Lustrous (shiny) (electrons reflect light)</li>
+                </ul>
+                <p><b>Example Structure:</b> Cu + e⁻ (sea of electrons)</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2> Comparison Table</h2>
+                <table>
+                    <tr>
+                        <th>Property</th>
+                        <th>Ionic Bonding</th>
+                        <th>Covalent Bonding</th>
+                        <th>Metallic Bonding</th>
+                    </tr>
+                    <tr>
+                        <td>Type of Elements</td>
+                        <td>Metal + Non-metal</td>
+                        <td>Non-metal + Non-metal</td>
+                        <td>Metals only</td>
+                    </tr>
+                    <tr>
+                        <td>Electron Movement</td>
+                        <td>Transferred</td>
+                        <td>Shared</td>
+                        <td>Delocalized</td>
+                    </tr>
+                    <tr>
+                        <td>Strength</td>
+                        <td>Strong</td>
+                        <td>Moderate to Strong</td>
+                        <td>Very Strong</td>
+                    </tr>
+                    <tr>
+                        <td>Melting & Boiling Points</td>
+                        <td>High</td>
+                        <td>Low to Moderate</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>Electrical Conductivity</td>
+                        <td>Conducts in liquid/solution</td>
+                        <td>Poor</td>
+                        <td>Excellent</td>
+                    </tr>
+                    <tr>
+                        <td>Solubility in Water</td>
+                        <td>Soluble</td>
+                        <td>Some soluble, some not</td>
+                        <td>Insoluble</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="VSEPR">2. VSEPR Theory (Valence Shell Electron Pair Repulsion Theory)</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>VSEPR Theory helps predict molecular shapes based on electron pair repulsion.</li>
+                    <li>Electron pairs (bonding & lone pairs) arrange themselves to minimize repulsion.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Electron Pairs</h2>
+                <ul>
+                    <li><b>Bonding Pairs (BP):</b> Shared electrons forming bonds.</li>
+                    <li><b>Lone Pairs (LP):</b> Non-bonded electrons on the central atom.</li>
+                    <li>Lone pairs repel more than bonding pairs, affecting bond angles.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>VSEPR Notation (AXₙEₘ)</h2>
+                <ul>
+                    <li>A = Central atom</li>
+                    <li>Xₙ = Number of bonding atoms</li>
+                    <li>Eₘ = Number of lone pairs</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Molecular Geometries & Shapes</h2>
+                <table>
+                    <tr>
+                        <th>VSEPR Formula</th>
+                        <th>Electron Pairs</th>
+                        <th>Molecular Geometry</th>
+                        <th>Bond Angle</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>AX₂</td>
+                        <td>2 BP, 0 LP</td>
+                        <td>Linear</td>
+                        <td>180°</td>
+                        <td>CO₂, BeCl₂</td>
+                    </tr>
+                    <tr>
+                        <td>AX₃</td>
+                        <td>3 BP, 0 LP</td>
+                        <td>Trigonal Planar</td>
+                        <td>120°</td>
+                        <td>BF₃, NO₃⁻</td>
+                    </tr>
+                    <tr>
+                        <td>AX₂E</td>
+                        <td>2 BP, 1 LP</td>
+                        <td>Bent (Angular)</td>
+                        <td>&lt;120°</td>
+                        <td>SO₂, O₃</td>
+                    </tr>
+                    <tr>
+                        <td>AX₄</td>
+                        <td>4 BP, 0 LP</td>
+                        <td>Tetrahedral</td>
+                        <td>109.5°</td>
+                        <td>CH₄, NH₄⁺</td>
+                    </tr>
+                    <tr>
+                        <td>AX₃E</td>
+                        <td>3 BP, 1 LP</td>
+                        <td>Trigonal Pyramidal</td>
+                        <td>107°</td>
+                        <td>NH₃, PCl₃</td>
+                    </tr>
+                    <tr>
+                        <td>AX₂E₂</td>
+                        <td>2 BP, 2 LP</td>
+                        <td>Bent (Angular)</td>
+                        <td>104.5°</td>
+                        <td>H₂O, OF₂</td>
+                    </tr>
+                    <tr>
+                        <td>AX₅</td>
+                        <td>5 BP, 0 LP</td>
+                        <td>Trigonal Bipyramidal</td>
+                        <td>90°, 120°</td>
+                        <td>PCl₅, PF₅</td>
+                    </tr>
+                    <tr>
+                        <td>AX₄E</td>
+                        <td>4 BP, 1 LP</td>
+                        <td>Seesaw</td>
+                        <td>&lt;90°, &lt;120°</td>
+                        <td>SF₄</td>
+                    </tr>
+                    <tr>
+                        <td>AX₃E₂</td>
+                        <td>3 BP, 2 LP</td>
+                        <td>T-Shaped</td>
+                        <td>&lt;90°</td>
+                        <td>ClF₃, BrF₃</td>
+                    </tr>
+                    <tr>
+                        <td>AX₂E₃</td>
+                        <td>2 BP, 3 LP</td>
+                        <td>Linear</td>
+                        <td>180°</td>
+                        <td>XeF₂</td>
+                    </tr>
+                    <tr>
+                        <td>AX₆</td>
+                        <td>6 BP, 0 LP</td>
+                        <td>Octahedral</td>
+                        <td>90°</td>
+                        <td>SF₆, PF₆⁻</td>
+                    </tr>
+                    <tr>
+                        <td>AX₅E</td>
+                        <td>5 BP, 1 LP</td>
+                        <td>Square Pyramidal</td>
+                        <td>&lt;90°</td>
+                        <td>BrF₅</td>
+                    </tr>
+                    <tr>
+                        <td>AX₄E₂</td>
+                        <td>4 BP, 2 LP</td>
+                        <td>Square Planar</td>
+                        <td>90°</td>
+                        <td>XeF₄</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Effects of Lone Pairs on Bond Angles</h2>
+                <ul>
+                    <li>Lone pairs repel more than bonding pairs, reducing bond angles.</li>
+                    <li>Examples:
+                        <ul>
+                            <li>CH₄ (Tetrahedral, 109.5°)</li>
+                            <li>NH₃ (Trigonal Pyramidal, 107°)</li>
+                            <li>H₂O (Bent, 104.5°)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        </div>
+        <div class="topic-name">
+            <h1 id="Hybridization">3. Hybridization & Molecular Orbitals</h1>
+            <div class="topic-description">
+                <h2>Hybridization</h2>
+                <h3>Definition:</h3>
+                <ul>
+                    <li>Hybridization is the mixing of atomic orbitals to form new hybrid orbitals of equal energy
+                        used for bonding.</li>
+                    <li>It leads to stronger, more stable bonds due to better orbital overlap.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Hybridization & Molecular Geometry</h2>
+                <table>
+                    <tr>
+                        <th>Hybridization</th>
+                        <th>Orbitals Mixed</th>
+                        <th>Geometry</th>
+                        <th>Bond Angle</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>sp</td>
+                        <td>1 s + 1 p</td>
+                        <td>Linear</td>
+                        <td>180&deg;</td>
+                        <td>BeCl<sub>2</sub>, CO<sub>2</sub></td>
+                    </tr>
+                    <tr>
+                        <td>sp<sup>2</sup></td>
+                        <td>1 s + 2 p</td>
+                        <td>Trigonal Planar</td>
+                        <td>120&deg;</td>
+                        <td>BF<sub>3</sub>, C<sub>2</sub>H<sub>4</sub></td>
+                    </tr>
+                    <tr>
+                        <td>sp<sup>3</sup></td>
+                        <td>1 s + 3 p</td>
+                        <td>Tetrahedral</td>
+                        <td>109.5&deg;</td>
+                        <td>CH<sub>4</sub>, NH<sub>3</sub>, H<sub>2</sub>O</td>
+                    </tr>
+                    <tr>
+                        <td>sp<sup>3</sup>d</td>
+                        <td>1 s + 3 p + 1 d</td>
+                        <td>Trigonal Bipyramidal</td>
+                        <td>90&deg;, 120&deg;</td>
+                        <td>PCl<sub>5</sub>, SF<sub>4</sub></td>
+                    </tr>
+                    <tr>
+                        <td>sp<sup>3</sup>d<sup>2</sup></td>
+                        <td>1 s + 3 p + 2 d</td>
+                        <td>Octahedral</td>
+                        <td>90&deg;</td>
+                        <td>SF<sub>6</sub>, XeF<sub>4</sub></td>
+                    </tr>
+                </table>
+
+                <h3>Example: sp<sup>3</sup> Hybridization in CH<sub>4</sub> (Methane)</h3>
+                <ul>
+                    <li>Carbon's ground state: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>2</sup></li>
+                    <li>It hybridizes to form four sp<sup>3</sup> orbitals, creating a tetrahedral shape.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Molecular Orbital (MO) Theory</h2>
+                <h3>Definition:</h3>
+                <ul>
+                    <li>MO Theory describes molecular orbitals formed by atomic orbital overlap, considering
+                        electrons as delocalized across the molecule.</li>
+                </ul>
+
+                <h3>Types of Molecular Orbitals</h3>
+                <ul>
+                    <li><b>Bonding Molecular Orbital (BMO)</b>
+                        <ul>
+                            <li>Formed by constructive overlap (in-phase addition).</li>
+                            <li>Stabilizes the molecule (lower energy).</li>
+                            <li>Example: &sigma; (sigma) & &pi; (pi) bonds.</li>
+                        </ul>
+                    </li>
+                    <li><b>Antibonding Molecular Orbital (ABMO)</b>
+                        <ul>
+                            <li>Formed by destructive overlap (out-of-phase subtraction).</li>
+                            <li>Destabilizes the molecule (higher energy).</li>
+                            <li>Denoted as &sigma;* and &pi;*.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Molecular Orbital Diagram (O<sub>2</sub> & N<sub>2</sub>)</h2>
+                <table>
+                    <tr>
+                        <th>Molecule</th>
+                        <th>Bond Order Formula</th>
+                        <th>Bond Order Calculation</th>
+                        <th>Stability</th>
+                    </tr>
+                    <tr>
+                        <td>O<sub>2</sub></td>
+                        <td>(BMO - ABMO) / 2</td>
+                        <td>(10 - 6) / 2 = 2</td>
+                        <td>Stable, paramagnetic (unpaired e<sup>-</sup>)</td>
+                    </tr>
+                    <tr>
+                        <td>N<sub>2</sub></td>
+                        <td>(BMO - ABMO) / 2</td>
+                        <td>(10 - 4) / 2 = 3</td>
+                        <td>Strong triple bond, stable</td>
+                    </tr>
+                </table>
+
+                <h3>Bond Order Interpretation:</h3>
+                <ul>
+                    <li>Higher bond order = stronger bond</li>
+                    <li>If bond order = 0, the molecule doesn’t exist</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

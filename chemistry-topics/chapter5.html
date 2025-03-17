@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-chemistry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 5 - Chemical Equilibrium</div>
+        <div class="topic-name">
+            <h1 id="Constant">1. Equilibrium Constant (K)</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>The Equilibrium Constant (K) expresses the ratio of product concentrations to reactant
+                        concentrations at equilibrium.</li>
+                    <li>Formula:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>K</mi>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <msup>
+                                        <mo>[</mo>
+                                        <mi>C</mi>
+                                        <mo>]</mo>
+                                        <mi>c</mi>
+                                    </msup>
+                                    <msup>
+                                        <mo>[</mo>
+                                        <mi>D</mi>
+                                        <mo>]</mo>
+                                        <mi>d</mi>
+                                    </msup>
+                                </mrow>
+                                <mrow>
+                                    <msup>
+                                        <mo>[</mo>
+                                        <mi>A</mi>
+                                        <mo>]</mo>
+                                        <mi>a</mi>
+                                    </msup>
+                                    <msup>
+                                        <mo>[</mo>
+                                        <mi>B</mi>
+                                        <mo>]</mo>
+                                        <mi>b</mi>
+                                    </msup>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Equilibrium Constants</h2>
+                <ol style="list-style-type: lower-roman;">
+                    <li>
+                        <p><b>Kc (Concentration-Based)</b></p>
+                        <ul>
+                            <li>Uses molar concentrations (mol/L).</li>
+                            <li>Example:
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>N</mi>
+                                    <msub>
+                                        <mi>2</mi>
+                                    </msub>
+                                    <mo>+</mo>
+                                    <mn>3</mn>
+                                    <mi>H</mi>
+                                    <msub>
+                                        <mi>2</mi>
+                                    </msub>
+                                    <mo>&#x21CC;</mo>
+                                    <mn>2</mn>
+                                    <mi>NH</mi>
+                                    <msub>
+                                        <mi>3</mi>
+                                    </msub>
+                                </math>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Kp (Pressure-Based)</b></p>
+                        <ul>
+                            <li>Used for gaseous reactions, based on partial pressures.</li>
+                            <li>Related to Kc by:
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>K</mi>
+                                    <msub>
+                                        <mi>p</mi>
+                                    </msub>
+                                    <mo>=</mo>
+                                    <mi>K</mi>
+                                    <msub>
+                                        <mi>c</mi>
+                                    </msub>
+                                    <mo>(</mo>
+                                    <mi>R</mi>
+                                    <mi>T</mi>
+                                    <mo>)</mo>
+                                    <msup>
+                                        <mi>&#916;n</mi>
+                                    </msup>
+                                </math>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Ksp (Solubility Product Constant)</b></p>
+                        <ul>
+                            <li>Used for sparingly soluble salts.</li>
+                            <li>Example:
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>CaF</mi>
+                                    <msub>
+                                        <mi>2</mi>
+                                    </msub>
+                                    <mo>&#x21CC;</mo>
+                                    <mi>Ca</mi>
+                                    <msup>
+                                        <mo>^</mo>
+                                        <mn>2+</mn>
+                                    </msup>
+                                    <mo>+</mo>
+                                    <mn>2</mn>
+                                    <mi>F</mi>
+                                    <msup>
+                                        <mo>^</mo>
+                                        <mn>-</mn>
+                                    </msup>
+                                </math>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Relationship Between Gibbs Free Energy (ΔG) and K</h2>
+                <ul>
+                    <li>
+                        Formula:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>&#916;G</mi>
+                            <mo>=</mo>
+                            <mo>-</mo>
+                            <mi>R</mi>
+                            <mi>T</mi>
+                            <mo>ln</mo>
+                            <mi>K</mi>
+                        </math>
+                    </li>
+                    <li>If ΔG &lt; 0 → Spontaneous reaction (K &gt; 1).</li>
+                    <li>If ΔG &gt; 0 → Non-spontaneous reaction (K &lt; 1).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Effect of Temperature on K</h2>
+                <ul>
+                    <li>Endothermic Reactions: Increasing temperature increases K.</li>
+                    <li>Exothermic Reactions: Increasing temperature decreases K.</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Chatelier’s">2. Le Chatelier’s Principle</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>Le Chatelier’s Principle states that if a system at equilibrium is disturbed by an external
+                        change (like concentration, temperature, or pressure), the system will adjust itself to
+                        counteract the disturbance and restore equilibrium.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Factors Affecting Equilibrium</h2>
+                <h3>i. Change in Concentration</h3>
+                <ul>
+                    <li>Adding reactants → Shifts equilibrium right (toward products).</li>
+                    <li>Adding products → Shifts equilibrium left (toward reactants).</li>
+                    <li>Removing reactants → Shifts equilibrium left.</li>
+                    <li>Removing products → Shifts equilibrium right.</li>
+                </ul>
+                <p><b>Example:</b> \( N_2 + 3H_2 \rightleftharpoons 2NH_3 \)</p>
+                <ul>
+                    <li>Adding H₂ or N₂ → More NH₃ forms.</li>
+                    <li>Removing NH₃ → Equilibrium shifts right.</li>
+                </ul>
+
+                <h3>ii. Change in Pressure (Only for Gases)</h3>
+                <ul>
+                    <li>Increasing pressure → Shifts equilibrium to the side with fewer gas molecules.</li>
+                    <li>Decreasing pressure → Shifts equilibrium to the side with more gas molecules.</li>
+                    <li>If moles of gas are the same on both sides, pressure change has no effect.</li>
+                </ul>
+                <p><b>Example:</b> \( N_2 + 3H_2 \rightleftharpoons 2NH_3 \)</p>
+                <ul>
+                    <li>4 reactant gas molecules → 2 product gas molecules.</li>
+                    <li>Increasing pressure → Shifts equilibrium right (towards fewer molecules).</li>
+                </ul>
+
+                <h3>iii. Change in Temperature</h3>
+                <ul>
+                    <li><b>Exothermic reaction (ΔH&lt;0)</b> → Heat is a product.</li>
+                    <ul>
+                        <li>Increasing temperature → Shifts equilibrium left (more reactants).</li>
+                        <li>Decreasing temperature → Shifts equilibrium right (more products).</li>
+                    </ul>
+                    <li><b>Endothermic reaction (ΔH&gt;0)</b> → Heat is a reactant.</li>
+                    <ul>
+                        <li>Increasing temperature → Shifts equilibrium right (more products).</li>
+                        <li>Decreasing temperature → Shifts equilibrium left (more reactants).</li>
+                    </ul>
+                </ul>
+                <p><b>Example:</b> \( N_2 + 3H_2 \rightleftharpoons 2NH_3 + \text{heat} \)</p>
+                <ul>
+                    <li>Increasing temperature → Shifts left, reducing NH₃ production.</li>
+                    <li>Decreasing temperature → Shifts right, increasing NH₃ production.</li>
+                </ul>
+
+                <h3>iv. Effect of Catalyst</h3>
+                <ul>
+                    <li>Catalysts do not shift equilibrium; they only help the system reach equilibrium faster by
+                        lowering activation energy.</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none; margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Acid-Base">3. Acid-Base Equilibrium</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>Acid-base equilibrium deals with the balance between acids and bases in a solution.</li>
+                    <li>It is governed by the dissociation of acids and bases and their respective equilibrium
+                        constants.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Acid Dissociation Constant (Ka)</h2>
+                <ul>
+                    <li>Measures the strength of an acid.</li>
+                    <li>Formula: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>K</mi>
+                            <msub>
+                                <mi>a</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>[H<sup>+</sup>][A<sup>-</sup>]</mrow>
+                                <mrow>[HA]</mrow>
+                            </mfrac>
+                        </math>
+                    </li>
+                    <li>Larger Ka → Stronger acid (more dissociation).</li>
+                    <li>Smaller Ka → Weaker acid (less dissociation).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Base Dissociation Constant (Kb)</h2>
+                <ul>
+                    <li>Measures the strength of a base.</li>
+                    <li>Formula: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>K</mi>
+                            <msub>
+                                <mi>b</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>[BH<sup>+</sup>][OH<sup>-</sup>]</mrow>
+                                <mrow>[B]</mrow>
+                            </mfrac>
+                        </math>
+                    </li>
+                    <li>Larger Kb → Stronger base.</li>
+                    <li>Smaller Kb → Weaker base.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Relationship Between Ka and Kb</h2>
+                <ul>
+                    <li>For a conjugate acid-base pair:</li>
+                    <li>Formula: Ka × Kb = Kw</li>
+                    <li>Kw = 1.0 × 10<sup>-14</sup> at 25°C</li>
+                    <li>pKa + pKb = 14</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>pH and pOH</h2>
+                <ul>
+                    <li>pH Calculation: pH = -log[H<sup>+</sup>]</li>
+                    <li>pOH Calculation: pOH = -log[OH<sup>-</sup>]</li>
+                    <li>pH + pOH = 14</li>
+                    <li>Acidic Solution: pH < 7</li>
+                    <li>Neutral Solution: pH = 7</li>
+                    <li>Basic Solution: pH > 7</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Buffer Solutions</h2>
+                <ul>
+                    <li>A buffer resists changes in pH when small amounts of acid or base are added.</li>
+                    <li>Henderson-Hasselbalch Equation:</li>
+                    <li>Formula: pH = pKa + log([A<sup>-</sup>]/[HA])</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
