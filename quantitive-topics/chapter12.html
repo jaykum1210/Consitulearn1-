@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-quantitative.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 12 - Banking & Financial Mathematics</div>
+        <div class="topic-name">
+            <h1>1. Simple & Compound Interest Advanced Problems</h1>
+            <div class="topic-description">
+                <h2>i. Simple Interest (SI)</h2>
+                <p><b>Formula for Simple Interest:</b></p>
+                <p>SI = <b>P × R × T / 100</b></p>
+                <p>Where:</p>
+                <ul>
+                    <li><b>P</b> = Principal amount</li>
+                    <li><b>R</b> = Rate of interest per annum</li>
+                    <li><b>T</b> = Time in years</li>
+                </ul>
+                <p>The total amount <b>A</b> after <b>T</b> years is given by:</p>
+                <p><b>A = P + SI = P(1 + R × T / 100)</b></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Compound Interest (CI)</h2>
+                <p><b>Formula for Compound Interest:</b></p>
+                <p><b>A = P(1 + R / 100) ^ T</b></p>
+                <p>Where:</p>
+                <ul>
+                    <li><b>P</b> = Principal amount</li>
+                    <li><b>R</b> = Rate of interest per annum</li>
+                    <li><b>T</b> = Time in years</li>
+                    <li><b>A</b> = Total amount after <b>T</b> years</li>
+                </ul>
+                <p>To find the compound interest, we subtract the principal <b>P</b> from the amount <b>A</b>:</p>
+                <p><b>CI = A - P = P(1 + R / 100) ^ T - P</b></p>
+
+                <p>For compound interest compounded more frequently (quarterly, monthly), the formula is adjusted to
+                    account for the frequency of compounding.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. Advanced Problems: Simple Interest</h2>
+                <h3>Problem 1: Find the Time Period for Simple Interest</h3>
+                <p><b>Problem:</b> A sum of ₹1,500 is invested at 8% per annum simple interest. After 3 years, the
+                    interest amount is ₹360. Find the principal.</p>
+                <p><b>Solution:</b> Using the formula for Simple Interest:</p>
+                <p>SI = <b>P × R × T / 100</b></p>
+                <p>We know:</p>
+                <ul>
+                    <li>SI = ₹360</li>
+                    <li>R = 8%</li>
+                    <li>T = 3 years</li>
+                </ul>
+                <p>Substituting the values:</p>
+                <p>360 = <b>P × 8 × 3 / 100</b></p>
+                <p>360 = <b>24P / 100</b></p>
+                <p><b>P = (360 × 100) / 24 = ₹1,500</b></p>
+                <p><b>Answer:</b> The principal is ₹1,500.</p>
+
+                <h3>Problem 2: Find the Interest Earned and Total Amount</h3>
+                <p><b>Problem:</b> A sum of ₹12,000 is invested for 2 years at a rate of 10% per annum simple interest.
+                    Find the total amount at the end of 2 years.</p>
+                <p><b>Solution:</b> Using the formula for Simple Interest:</p>
+                <p>SI = <b>P × R × T / 100</b></p>
+                <p>Substitute the values:</p>
+                <ul>
+                    <li>P = ₹12,000</li>
+                    <li>R = 10%</li>
+                    <li>T = 2 years</li>
+                </ul>
+                <p>SI = <b>12,000 × 10 × 2 / 100 = ₹2,400</b></p>
+                <p>The total amount <b>A</b> will be:</p>
+                <p>A = <b>P + SI = ₹12,000 + ₹2,400 = ₹14,400</b></p>
+                <p><b>Answer:</b> The total amount after 2 years is ₹14,400.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iv. Advanced Problems: Compound Interest</h2>
+                <h3>Problem 1: Compound Interest with Quarterly Compounding</h3>
+                <p><b>Problem:</b> A sum of ₹10,000 is invested at 8% per annum interest, compounded quarterly for 2
+                    years. Find the compound interest and the total amount.</p>
+                <p><b>Solution:</b> The formula for Compound Interest when interest is compounded quarterly is:</p>
+                <p><b>A = P(1 + R / (4 × 100)) ^ (4 × T)</b></p>
+                <p>Where:</p>
+                <ul>
+                    <li>P = ₹10,000</li>
+                    <li>R = 8%</li>
+                    <li>T = 2 years</li>
+                </ul>
+                <p>Substitute the values:</p>
+                <p>A = <b>10,000 × (1 + 8 / (4 × 100)) ^ (4 × 2)</b></p>
+                <p>A = <b>10,000 × (1 + 2 / 100) ^ 8 = 10,000 × (1.02) ^ 8</b></p>
+                <p>A ≈ <b>10,000 × 1.3728 = ₹13,728</b></p>
+                <p>Now, to find the Compound Interest:</p>
+                <p>CI = <b>A - P = ₹13,728 - ₹10,000 = ₹3,728</b></p>
+                <p><b>Answer:</b> The compound interest is ₹3,728, and the total amount is ₹13,728.</p>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none; margin-top: 20px;">
+            <h1 id="Inflation">2. Inflation & Deflation Calculations</h1>
+            <div class="topic-description">
+                <h2>Inflation Calculation</h2>
+                <p>Inflation is generally measured as the percentage change in the Consumer Price Index (CPI) over a
+                    specific period of time (usually annually).</p>
+                <p>The formula to calculate inflation is:</p>
+                <p><b>Inflation Rate = (CPI at End of Year - CPI at Beginning of Year) / CPI at Beginning of Year ×
+                        100</b></p>
+                <p>Where:</p>
+                <ul>
+                    <li><b>CPI</b> (Consumer Price Index) is a measure that examines the weighted average of prices of a
+                        basket of consumer goods and services.</li>
+                </ul>
+
+                <h3>Example 1: Inflation Calculation</h3>
+                <p><b>Problem:</b> The Consumer Price Index (CPI) in January was 120 and in December it was 130. What is
+                    the inflation rate for the year?</p>
+                <p><b>Solution:</b> Using the formula for inflation:</p>
+                <p><b>Inflation Rate = (130 - 120) / 120 × 100</b></p>
+                <p>Inflation Rate = <b>10 / 120 × 100 = 8.33%</b></p>
+                <p><b>Answer:</b> The inflation rate is 8.33%.</p>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Stocks">3. Stocks, Shares & Debentures</h1>
+            <div class="topic-description">
+                <h2>Shares and Stocks</h2>
+                <p>Shares and stocks are similar concepts, but they have subtle differences.</p>
+                <ul>
+                    <li><b>Share:</b> A share represents a unit of ownership in a company. When you buy a share, you own
+                        a portion of the company and are entitled to a share of its profits (dividends) and voting
+                        rights at general meetings.</li>
+                    <li><b>Stock:</b> Stock refers to the collective ownership in a company, which consists of multiple
+                        shares. It’s often used to refer to ownership in a company without specifying the number of
+                        shares.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Types of Shares</h3>
+                <ul>
+                    <li><b>Equity Shares (Common Shares):</b>
+                        <ul>
+                            <li>Represent ownership in a company.</li>
+                            <li>Carry voting rights and entitle the shareholder to dividends.</li>
+                            <li>Dividends depend on the company’s profit.</li>
+                            <li>Risk is higher, as equity shareholders are paid after debenture holders and preference
+                                shareholders in case of liquidation.</li>
+                        </ul>
+                    </li>
+                    <li><b>Preference Shares:</b>
+                        <ul>
+                            <li>Provide a fixed dividend before equity shareholders receive any.</li>
+                            <li>Generally, preference shareholders do not have voting rights.</li>
+                            <li>In case of liquidation, preference shareholders are paid before equity shareholders.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Key Features of Shares:</h3>
+                <ul>
+                    <li><b>Face Value:</b> The nominal or original value of a share, typically set by the company.</li>
+                    <li><b>Market Value:</b> The price at which shares are traded in the stock market.</li>
+                    <li><b>Dividend:</b> A share of the company's profits paid to shareholders.</li>
+                    <li><b>Capital Gain:</b> Profit made by selling shares at a higher price than the purchase price.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Debentures</h2>
+                <p>A debenture is a debt instrument issued by companies to raise funds. It represents a loan taken by
+                    the company from debenture holders. Unlike shares, debentures do not offer ownership but instead
+                    offer fixed interest payments to the debenture holders.</p>
+
+                <h3>Key Features of Debentures:</h3>
+                <ul>
+                    <li><b>Debt Instrument:</b> Debentures are a form of borrowing for the company, and they are not
+                        ownership in the company.</li>
+                    <li><b>Fixed Interest:</b> Debenture holders receive fixed interest, also known as coupon rates,
+                        regularly.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Secured and Unsecured Debentures:</h3>
+                <ul>
+                    <li><b>Secured Debentures:</b> Backed by the company’s assets as collateral.</li>
+                    <li><b>Unsecured Debentures:</b> Not backed by any specific assets, and hence, considered riskier.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Types of Debentures:</h3>
+                <ul>
+                    <li><b>Convertible Debentures:</b> Can be converted into a specified number of equity shares after a
+                        certain period.</li>
+                    <li><b>Non-Convertible Debentures:</b> Cannot be converted into shares but offer higher interest
+                        rates due to the lack of convertibility.</li>
+                    <li><b>Redeemable Debentures:</b> Can be redeemed after a certain period.</li>
+                    <li><b>Irredeemable Debentures:</b> Cannot be redeemed but continue to pay interest.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Comparison: Shares vs. Debentures</h2>
+                <table>
+                    <tr>
+                        <th>Aspect</th>
+                        <th>Shares</th>
+                        <th>Debentures</th>
+                    </tr>
+                    <tr>
+                        <td>Nature</td>
+                        <td>Ownership in the company</td>
+                        <td>Loan to the company</td>
+                    </tr>
+                    <tr>
+                        <td>Returns</td>
+                        <td>Dividends, which depend on profit</td>
+                        <td>Fixed interest (coupon rate)</td>
+                    </tr>
+                    <tr>
+                        <td>Risk</td>
+                        <td>Higher risk, as returns depend on company performance</td>
+                        <td>Lower risk compared to shares (especially if secured)</td>
+                    </tr>
+                    <tr>
+                        <td>Voting Rights</td>
+                        <td>Yes, shareholders can vote in company matters</td>
+                        <td>No voting rights</td>
+                    </tr>
+                    <tr>
+                        <td>Priority in Liquidation</td>
+                        <td>Last to be paid (after debt holders)</td>
+                        <td>First to be paid (before equity holders)</td>
+                    </tr>
+                    <tr>
+                        <td>Convertibility</td>
+                        <td>Cannot be converted into other instruments</td>
+                        <td>Convertible into equity shares (in the case of convertible debentures)</td>
+                    </tr>
+                    <tr>
+                        <td>Repayment</td>
+                        <td>No fixed repayment, as it’s ownership-based</td>
+                        <td>Must be repaid at maturity or as per terms</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Financial Terms Related to Shares and Debentures</h2>
+                <h3>Stock Market Terms:</h3>
+                <ul>
+                    <li><b>Face Value:</b> The nominal value of a share or debenture, set by the issuing company.</li>
+                    <li><b>Market Value:</b> The price at which shares/debentures are bought or sold in the market.</li>
+                    <li><b>Dividend Yield:</b> The annual dividend paid by a company divided by the market price of the
+                        share.</li>
+                    <li><b>Capital Gain:</b> Profit from selling shares at a higher price than their purchase price.
+                    </li>
+                    <li><b>Coupon Rate (for Debentures):</b> The interest rate paid by the issuer on the debenture’s
+                        face value.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Debenture Terms:</h3>
+                <ul>
+                    <li><b>Redemption Period:</b> The time after which the debenture principal must be repaid.</li>
+                    <li><b>Interest/ Coupon Payment:</b> The fixed interest paid by the company to debenture holders.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example Problems</h2>
+                <h3>Problem 1: Calculation of Dividend for Equity Shares</h3>
+                <p><b>Problem:</b> A company has issued 1000 equity shares of face value ₹100 each. The company declares
+                    a 10% dividend. What is the total dividend earned by a shareholder with 50 shares?</p>
+                <p><b>Solution:</b>
+                <ul>
+                    <li>Dividend per share = 10% of ₹100 = ₹10</li>
+                    <li>Total Dividend = 50 shares × ₹10 = ₹500</li>
+                </ul>
+                </p>
+                <p><b>Answer:</b> The shareholder will earn ₹500 as dividend.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-quantitative.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 8 - Mensuration & Geometry</div>
+        <div class="topic-name">
+            <h1>1. Area and Perimeter of 2D Shapes</h1>
+            <div class="topic-description">
+                <h2> Definition</h2>
+                <ul>
+                    <li>The area and perimeter of a 2D shape are important measurements that describe its size and
+                        boundary.</li>
+                    <li>Area refers to the amount of space inside the boundary of the shape.</li>
+                    <li>Perimeter refers to the total length around the shape.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Formulas for Common 2D Shapes</h2>
+                <h3>1. Square</h3>
+                <ul>
+                    <li>Area: A = s²
+                        <p>Where s = Length of one side.</p>
+                    </li>
+                    <li>Perimeter: P = 4s
+                        <p>Where s = Length of one side.</p>
+                    </li>
+                </ul>
+                <h4>Example: For a square with side length 5 units:</h4>
+                <ul>
+                    <li>Area = 5² = 25 square units</li>
+                    <li>Perimeter = 4 × 5 = 20 units</li>
+                </ul>
+
+                <h3>2. Rectangle</h3>
+                <ul>
+                    <li>Area: A = l × w
+                        <p>Where l = Length, w = Width of the rectangle.</p>
+                    </li>
+                    <li>Perimeter: P = 2(l + w)
+                        <p>Where l = Length, w = Width of the rectangle.</p>
+                    </li>
+                </ul>
+                <h4>Example: For a rectangle with length 6 units and width 3 units:</h4>
+                <ul>
+                    <li>Area = 6 × 3 = 18 square units</li>
+                    <li>Perimeter = 2(6 + 3) = 18 units</li>
+                </ul>
+
+                <h3>3. Triangle</h3>
+                <ul>
+                    <li><b>Equilateral Triangle</b></li>
+                    <ul>
+                        <li>Area: A = (s²√3)/4
+                            <p>Where s = Length of one side.</p>
+                        </li>
+                        <li>Perimeter: P = 3s
+                            <p>Where s = Length of one side.</p>
+                        </li>
+                    </ul>
+                    <li><b>Right-Angled Triangle</b></li>
+                    <ul>
+                        <li>Area: A = ½ × base × height
+                            <p>Where base = Base length, height = Height.</p>
+                        </li>
+                        <li>Perimeter: P = a + b + c
+                            <p>Where a and b are the two legs, and c is the hypotenuse.</p>
+                        </li>
+                    </ul>
+                </ul>
+                <h4>Example (Equilateral Triangle): For an equilateral triangle with side length 4 units:</h4>
+                <ul>
+                    <li>Area ≈ 6.93 square units</li>
+                    <li>Perimeter = 3 × 4 = 12 units</li>
+                </ul>
+                <h4>Example (Right-Angled Triangle): For a right-angled triangle with base 6 units, height 8 units, and
+                    hypotenuse 10 units:</h4>
+                <ul>
+                    <li>Area = ½ × 6 × 8 = 24 square units</li>
+                    <li>Perimeter = 6 + 8 + 10 = 24 units</li>
+                </ul>
+
+                <h3>4. Circle</h3>
+                <ul>
+                    <li>Area: A = πr²
+                        <p>Where r = Radius of the circle, π ≈ 3.14159.</p>
+                    </li>
+                    <li>Perimeter (Circumference): P = 2πr
+                        <p>Where r = Radius of the circle, π ≈ 3.14159.</p>
+                    </li>
+                </ul>
+                <h4>Example: For a circle with radius 5 units:</h4>
+                <ul>
+                    <li>Area ≈ 78.54 square units</li>
+                    <li>Perimeter ≈ 31.42 units</li>
+                </ul>
+
+                <h3>5. Parallelogram</h3>
+                <ul>
+                    <li>Area: A = b × h
+                        <p>Where b = Base, h = Height (distance between the parallel sides).</p>
+                    </li>
+                    <li>Perimeter: P = 2(b + h)
+                        <p>Where b = Base, h = Height.</p>
+                    </li>
+                </ul>
+                <h4>Example: For a parallelogram with base 6 units and height 4 units:</h4>
+                <ul>
+                    <li>Area = 6 × 4 = 24 square units</li>
+                    <li>Perimeter = 2(6 + 4) = 20 units</li>
+                </ul>
+
+                <h3>6. Trapezium (Trapezoid)</h3>
+                <ul>
+                    <li>Area: A = ½ × (b₁ + b₂) × h
+                        <p>Where b₁ and b₂ are the lengths of the two parallel sides, h is the height (distance between
+                            the parallel sides).</p>
+                    </li>
+                    <li>Perimeter: P = a + b₁ + b₂ + c
+                        <p>Where a and c are the non-parallel sides.</p>
+                    </li>
+                </ul>
+                <h4>Example: For a trapezium with parallel sides 5 units and 7 units, and height 4 units:</h4>
+                <ul>
+                    <li>Area = ½ × (5 + 7) × 4 = 24 square units</li>
+                    <li>Perimeter = a + 5 + 7 + c (where a and c are the non-parallel sides)</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Summary Table of Formulas</h2>
+                <table>
+                    <tr>
+                        <th>Shape</th>
+                        <th>Area Formula</th>
+                        <th>Perimeter Formula</th>
+                    </tr>
+                    <tr>
+                        <td>Square</td>
+                        <td>A = s²</td>
+                        <td>P = 4s</td>
+                    </tr>
+                    <tr>
+                        <td>Rectangle</td>
+                        <td>A = l × w</td>
+                        <td>P = 2(l + w)</td>
+                    </tr>
+                    <tr>
+                        <td>Equilateral Triangle</td>
+                        <td>A = (s²√3)/4</td>
+                        <td>P = 3s</td>
+                    </tr>
+                    <tr>
+                        <td>Right-Angled Triangle</td>
+                        <td>A = ½ × base × height</td>
+                        <td>P = a + b + c</td>
+                    </tr>
+                    <tr>
+                        <td>Circle</td>
+                        <td>A = πr²</td>
+                        <td>P = 2πr</td>
+                    </tr>
+                    <tr>
+                        <td>Parallelogram</td>
+                        <td>A = b × h</td>
+                        <td>P = 2(b + h)</td>
+                    </tr>
+                    <tr>
+                        <td>Trapezium</td>
+                        <td>A = ½ × (b₁ + b₂) × h</td>
+                        <td>P = a + b₁ + b₂ + c</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Volume">2. Volume and Surface Area of 3D Shapes</h1>
+            <div class="topic-description">
+                <h2> Definition</h2>
+                <ul>
+                    <li>Volume refers to the amount of space occupied by a 3D object.</li>
+                    <li>Surface area refers to the total area of all the surfaces of a 3D object.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Formulas for Common 3D Shapes</h2>
+                <h3>1. Cube</h3>
+                <ul>
+                    <li>Volume: V = s³
+                        <p>Where s = Length of one side.</p>
+                    </li>
+                    <li>Surface Area: A = 6s²
+                        <p>Where s = Length of one side.</p>
+                    </li>
+                </ul>
+                <h4>Example: For a cube with side length 4 units:</h4>
+                <ul>
+                    <li>Volume = 4³ = 64 cubic units</li>
+                    <li>Surface Area = 6 × 4² = 6 × 16 = 96 square units</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>2. Rectangular Prism (Cuboid)</h3>
+                <ul>
+                    <li>Volume: V = l × w × h
+                        <p>Where l = Length, w = Width, h = Height.</p>
+                    </li>
+                    <li>Surface Area: A = 2lw + 2lh + 2wh
+                        <p>Where l = Length, w = Width, h = Height.</p>
+                    </li>
+                </ul>
+                <h4>Example: For a rectangular prism with length 5 units, width 3 units, and height 2 units:</h4>
+                <ul>
+                    <li>Volume = 5 × 3 × 2 = 30 cubic units</li>
+                    <li>Surface Area = 2(5 × 3 + 5 × 2 + 3 × 2) = 2(15 + 10 + 6) = 2 × 31 = 62 square units</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>3. Sphere</h3>
+                <ul>
+                    <li>Volume: V = (4/3)πr³
+                        <p>Where r = Radius of the sphere.</p>
+                    </li>
+                    <li>Surface Area: A = 4πr²
+                        <p>Where r = Radius of the sphere.</p>
+                    </li>
+                </ul>
+                <h4>Example: For a sphere with radius 3 units:</h4>
+                <ul>
+                    <li>Volume ≈ (4/3)π × 3³ = 36π ≈ 113.1 cubic units</li>
+                    <li>Surface Area = 4π × 3² = 36π ≈ 113.1 square units</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>4. Cylinder</h3>
+                <ul>
+                    <li>Volume: V = πr²h
+                        <p>Where r = Radius of the base, h = Height of the cylinder.</p>
+                    </li>
+                    <li>Surface Area: A = 2πr² + 2πrh
+                        <p>Where r = Radius of the base, h = Height of the cylinder.</p>
+                    </li>
+                </ul>
+                <h4>Example: For a cylinder with radius 4 units and height 6 units:</h4>
+                <ul>
+                    <li>Volume = π × 4² × 6 = 96π ≈ 301.59 cubic units</li>
+                    <li>Surface Area = 2π × 4² + 2π × 4 × 6 = 32π + 48π = 80π ≈ 251.33 square units</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>5. Cone</h3>
+                <ul>
+                    <li>Volume: V = (1/3)πr²h
+                        <p>Where r = Radius of the base, h = Height of the cone.</p>
+                    </li>
+                    <li>Surface Area: A = πr² + πrl
+                        <p>Where r = Radius of the base, l = Slant height of the cone.</p>
+                    </li>
+                </ul>
+                <h4>Example: For a cone with radius 3 units and height 5 units:</h4>
+                <ul>
+                    <li>Volume ≈ (1/3)π × 3² × 5 = 15π ≈ 47.12 cubic units</li>
+                    <li>Surface Area (if slant height l = 5.83) = π × 3² + π × 3 × 5.83 = 9π + 17.49π = 26.49π ≈ 83.16
+                        square units</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>6. Pyramid</h3>
+                <ul>
+                    <li>Volume: V = (1/3) × Base Area × h
+                        <p>Where h = Height of the pyramid.</p>
+                    </li>
+                    <li>Surface Area: A = b² + 2b × l
+                        <p>Where b = Length of the side of the base, l = Slant height of the pyramid.</p>
+                    </li>
+                </ul>
+                <h4>Example: For a square pyramid with base side length 4 units and height 6 units:</h4>
+                <ul>
+                    <li>Volume = (1/3) × 4² × 6 = 32 cubic units</li>
+                    <li>Surface Area (if slant height l = 6.4) = 4² + 2 × 4 × 6.4 = 16 + 51.2 = 67.2 square units</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>7. Torus (Doughnut Shape)</h3>
+                <ul>
+                    <li>Volume: V = 2π²Rr²
+                        <p>Where R = Major radius, r = Minor radius.</p>
+                    </li>
+                    <li>Surface Area: A = 4π²Rr
+                        <p>Where R = Major radius, r = Minor radius.</p>
+                    </li>
+                </ul>
+                <h4>Example: For a torus with R = 5 units and r = 2 units:</h4>
+                <ul>
+                    <li>Volume = 2π² × 5 × 2² = 40π² ≈ 395.84 cubic units</li>
+                    <li>Surface Area = 4π² × 5 × 2 = 40π² ≈ 395.84 square units</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Summary Table of Formulas</h2>
+                <table>
+                    <tr>
+                        <th>Shape</th>
+                        <th>Volume Formula</th>
+                        <th>Surface Area Formula</th>
+                    </tr>
+                    <tr>
+                        <td>Cube</td>
+                        <td>V = s³</td>
+                        <td>A = 6s²</td>
+                    </tr>
+                    <tr>
+                        <td>Rectangular Prism</td>
+                        <td>V = l × w × h</td>
+                        <td>A = 2lw + 2lh + 2wh</td>
+                    </tr>
+                    <tr>
+                        <td>Sphere</td>
+                        <td>V = (4/3)πr³</td>
+                        <td>A = 4πr²</td>
+                    </tr>
+                    <tr>
+                        <td>Cylinder</td>
+                        <td>V = πr²h</td>
+                        <td>A = 2πr² + 2πrh</td>
+                    </tr>
+                    <tr>
+                        <td>Cone</td>
+                        <td>V = (1/3)πr²h</td>
+                        <td>A = πr² + πrl</td>
+                    </tr>
+                    <tr>
+                        <td>Pyramid</td>
+                        <td>V = (1/3) × Base Area × h</td>
+                        <td>A = b² + 2b × l</td>
+                    </tr>
+                    <tr>
+                        <td>Torus</td>
+                        <td>V = 2π²Rr²</td>
+                        <td>A = 4π²Rr</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin: 20px;">
+            <h1 id="Coordinate">3. Coordinate Geometry Basics</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>Coordinate Geometry (also called Analytical Geometry) uses a coordinate system to represent
+                        geometric shapes and solve problems related to lines, curves, and shapes using algebraic
+                        equations.</li>
+                    <li>It combines algebra and geometry by using coordinates on a plane to represent points and define
+                        shapes.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>The Cartesian Plane</h2>
+                <ul>
+                    <li>The Cartesian plane is a 2D grid formed by two perpendicular number lines, the X-axis
+                        (horizontal) and the Y-axis (vertical).</li>
+                    <li>The point of intersection of the X-axis and Y-axis is called the origin, denoted as \( O(0, 0)
+                        \).</li>
+                    <li>The plane is divided into four quadrants:
+                        <ol style="list-style-type: lower-alpha;">
+                            <li>Quadrant I: Both \( x \) and \( y \) are positive.</li>
+                            <li>Quadrant II: \( x \) is negative, \( y \) is positive.</li>
+                            <li>Quadrant III: Both \( x \) and \( y \) are negative.</li>
+                            <li>Quadrant IV: \( x \) is positive, \( y \) is negative.</li>
+                        </ol>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Coordinates of a Point</h2>
+                <ul>
+                    <li>The position of any point in the plane is represented by an ordered pair \( (x, y) \), where:
+                        <ul>
+                            <li>\( x \) is the horizontal distance from the origin (along the X-axis).</li>
+                            <li>\( y \) is the vertical distance from the origin (along the Y-axis).</li>
+                        </ul>
+                    </li>
+                    <li>Example: Point \( A(3, 4) \) is 3 units to the right and 4 units above the origin.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Distance Formula</h2>
+                <ul>
+                    <li>The distance between two points \( P(x_1, y_1) \) and \( Q(x_2, y_2) \) is given by the formula:
+                        <p><b>Formula:</b> \( d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \)</p>
+                    </li>
+                    <li>Example: The distance between \( A(3, 4) \) and \( B(-2, -5) \) is approximately 10.29 units.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Midpoint Formula</h2>
+                <ul>
+                    <li>The midpoint \( M \) of a line segment joining \( P(x_1, y_1) \) and \( Q(x_2, y_2) \) is given
+                        by:
+                        <p><b>Formula:</b> \( M = \left( \frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2} \right) \)</p>
+                    </li>
+                    <li>Example: The midpoint of \( A(3, 4) \) and \( B(-2, -5) \) is \( M(0.5, -0.5) \).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Slope of a Line</h2>
+                <ul>
+                    <li>The slope \( m \) of the line through points \( P(x_1, y_1) \) and \( Q(x_2, y_2) \) is given
+                        by:
+                        <p><b>Formula:</b> \( m = \frac{y_2 - y_1}{x_2 - x_1} \)</p>
+                    </li>
+                    <li>The slope determines the steepness of the line:
+                        <ul>
+                            <li>If \( m > 0 \), the line slopes upwards from left to right.</li>
+                            <li>If \( m < 0 \), the line slopes downwards from left to right.</li>
+                            <li>If \( m = 0 \), the line is horizontal.</li>
+                            <li>If the slope is undefined, the line is vertical.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Equation of a Line</h2>
+                <ul>
+                    <li>The equation of a line can be expressed in different forms:
+                        <ul>
+                            <li><b>Slope-Intercept Form:</b> \( y = mx + c \), where \( m \) is the slope and \( c \) is
+                                the y-intercept.</li>
+                            <li><b>Point-Slope Form:</b> \( y - y_1 = m(x - x_1) \), where \( (x_1, y_1) \) is a point
+                                on the line and \( m \) is the slope.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Collinearity of Points</h2>
+                <ul>
+                    <li>Three points \( A(x_1, y_1) \), \( B(x_2, y_2) \), and \( C(x_3, y_3) \) are collinear if the
+                        area of the triangle formed by these points is zero.
+                        <p><b>Area Formula:</b> \( \text{Area} = \frac{1}{2} \left| x_1(y_2 - y_3) + x_2(y_3 - y_1) +
+                            x_3(y_1 - y_2) \right| \)</p>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Area of a Triangle</h2>
+                <ul>
+                    <li>The area of a triangle with vertices \( A(x_1, y_1) \), \( B(x_2, y_2) \), and \( C(x_3, y_3) \)
+                        is:
+                        <p><b>Area Formula:</b> \( \text{Area} = \frac{1}{2} \left| x_1(y_2 - y_3) + x_2(y_3 - y_1) +
+                            x_3(y_1 - y_2) \right| \)</p>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>General Form of the Equation of a Line</h2>
+                <ul>
+                    <li>The general form of the equation of a line is:
+                        <p><b>Formula:</b> \( Ax + By + C = 0 \), where \( A \), \( B \), and \( C \) are constants.</p>
+                    </li>
+                    <li>To convert from slope-intercept form \( y = mx + c \) to general form, rearrange the equation to
+                        \( mx - y + c = 0 \).</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h id="Properties">4. Properties of Circles & Polygons</h1>
+            <div class="topic-description">
+                <h2>Properties of Circles</h2>
+                <ul>
+                    <li>A circle is a collection of all points in a plane that are equidistant from a fixed point,
+                        called the center. The distance from the center to any point on the circle is called the radius.
+                    </li>
+                </ul>
+
+                <h3>Key Properties:</h3>
+                <h4>Radius:</h4>
+                <ul>
+                    <li>The distance from the center of the circle to any point on the circle.</li>
+                    <li>All radii of a circle are equal.</li>
+                </ul>
+
+                <h4>Diameter:</h4>
+                <ul>
+                    <li>The longest chord of the circle, passing through the center.</li>
+                    <li>It is twice the radius:
+                        <p><b>Formula:</b> \( D = 2r \), where \( r \) is the radius.</p>
+                    </li>
+                </ul>
+
+                <h4>Circumference:</h4>
+                <ul>
+                    <li>The perimeter or the boundary length of the circle.</li>
+                    <li><b>Formula:</b> \( C = 2\pi r \), where \( r \) is the radius of the circle.</li>
+                </ul>
+
+                <h4>Area:</h4>
+                <ul>
+                    <li>The space enclosed by the circle.</li>
+                    <li><b>Formula:</b> \( A = \pi r^2 \), where \( r \) is the radius.</li>
+                </ul>
+
+                <h4>Chord:</h4>
+                <ul>
+                    <li>A line segment joining two points on the circle.</li>
+                    <li>The diameter is the longest chord of the circle.</li>
+                </ul>
+
+                <h4>Secant:</h4>
+                <ul>
+                    <li>A straight line that intersects the circle at two points.</li>
+                </ul>
+
+                <h4>Tangent:</h4>
+                <ul>
+                    <li>A straight line that touches the circle at exactly one point (called the point of tangency).
+                    </li>
+                    <li>The tangent is perpendicular to the radius at the point of tangency.</li>
+                </ul>
+
+                <h4>Arc:</h4>
+                <ul>
+                    <li>A part of the circumference of the circle.</li>
+                    <li>It can be a minor arc (less than 180°) or a major arc (greater than 180°).</li>
+                </ul>
+
+                <h4>Sector:</h4>
+                <ul>
+                    <li>A region bounded by two radii and the arc between them.</li>
+                    <li><b>Formula for Area of Sector:</b> \( A = \frac{\theta}{360^\circ} \times \pi r^2 \), where \(
+                        \theta \) is the central angle of the sector.</li>
+                </ul>
+
+                <h4>Segment:</h4>
+                <ul>
+                    <li>A region bounded by a chord and the arc between the two endpoints of the chord.</li>
+                </ul>
+
+                <h4>Central Angle:</h4>
+                <ul>
+                    <li>An angle whose vertex is at the center of the circle, and whose sides pass through two points on
+                        the circle.</li>
+                </ul>
+
+                <h4>Inscribed Angle:</h4>
+                <ul>
+                    <li>An angle whose vertex is on the circle and whose sides are chords of the circle.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Properties of Polygons</h2>
+                <ul>
+                    <li>A polygon is a closed, two-dimensional shape with straight sides. Polygons can have any number
+                        of sides, and they are classified based on the number of sides they have.</li>
+                </ul>
+
+                <h3>1. Triangle (3 sides)</h3>
+                <ul>
+                    <li>The sum of the interior angles is always \( 180^\circ \).</li>
+                    <li>Types of triangles:
+                        <ul>
+                            <li>Equilateral Triangle: All sides and angles are equal (each angle is \( 60^\circ \)).
+                            </li>
+                            <li>Isosceles Triangle: Two sides are equal, and the angles opposite those sides are equal.
+                            </li>
+                            <li>Scalene Triangle: All sides and angles are different.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>2. Quadrilateral (4 sides)</h3>
+                <ul>
+                    <li>The sum of the interior angles is always \( 360^\circ \).</li>
+                    <li>Types of quadrilaterals:
+                        <ul>
+                            <li>Square: All sides and angles are equal (each angle is \( 90^\circ \)).</li>
+                            <li>Rectangle: Opposite sides are equal, and all angles are \( 90^\circ \).</li>
+                            <li>Parallelogram: Opposite sides are equal and parallel, and opposite angles are equal.
+                            </li>
+                            <li>Rhombus: All sides are equal, but angles are not necessarily \( 90^\circ \).</li>
+                            <li>Trapezium: Only one pair of opposite sides is parallel.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>3. Pentagon (5 sides)</h3>
+                <ul>
+                    <li>The sum of the interior angles is \( 540^\circ \).</li>
+                    <li>Regular pentagon: All sides and angles are equal.</li>
+                </ul>
+
+                <h3>4. Hexagon (6 sides)</h3>
+                <ul>
+                    <li>The sum of the interior angles is \( 720^\circ \).</li>
+                    <li>Regular hexagon: All sides and angles are equal. The interior angle is \( 120^\circ \).</li>
+                </ul>
+
+                <h3>5. Heptagon (7 sides)</h3>
+                <ul>
+                    <li>The sum of the interior angles is \( 900^\circ \).</li>
+                </ul>
+
+                <h3>6. Octagon (8 sides)</h3>
+                <ul>
+                    <li>The sum of the interior angles is \( 1080^\circ \).</li>
+                    <li>Regular octagon: All sides and angles are equal. The interior angle is \( 135^\circ \).</li>
+                </ul>
+
+                <h3>7. Polygon with n sides</h3>
+                <ul>
+                    <li>The sum of the interior angles of an n-sided polygon is \( (n - 2) \times 180^\circ \).</li>
+                    <li>The exterior angles of any polygon always add up to \( 360^\circ \).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Special Properties of Regular Polygons</h2>
+                <ul>
+                    <li>A regular polygon is a polygon where all sides and angles are equal. The most notable properties
+                        include:</li>
+                </ul>
+
+                <h4>Interior Angle:</h4>
+                <ul>
+                    <li>The formula for the interior angle of a regular polygon with \( n \) sides is:
+                        <p><b>Formula:</b> \( \text{Interior Angle} = \frac{(n - 2) \times 180^\circ}{n} \)</p>
+                    </li>
+                </ul>
+
+                <h4>Exterior Angle:</h4>
+                <ul>
+                    <li>The formula for the exterior angle of a regular polygon with \( n \) sides is:
+                        <p><b>Formula:</b> \( \text{Exterior Angle} = \frac{360^\circ}{n} \)</p>
+                    </li>
+                </ul>
+
+                <h4>Area of Regular Polygon:</h4>
+                <ul>
+                    <li>The area of a regular polygon can be calculated using the formula:
+                        <p><b>Formula:</b> \( A = \frac{1}{4}n \times s^2 \times \cot\left(\frac{\pi}{n}\right) \),
+                            where \( n \) is the number of sides and \( s \) is the length of each side.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Trigonometry">5. Trigonometry Basics</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>Trigonometry is the branch of mathematics that deals with the relationships between the angles
+                        and sides of triangles, particularly right-angled triangles.</li>
+                    <li>It involves six primary trigonometric ratios: sine, cosine, tangent, cosecant, secant, and
+                        cotangent.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Trigonometric Ratios</h2>
+                <ul>
+                    <li>For a right-angled triangle with an angle 𝜃:</li>
+                    <li>Hypotenuse = H (the side opposite the right angle)</li>
+                    <li>Opposite side = O (the side opposite the angle 𝜃)</li>
+                    <li>Adjacent side = A (the side adjacent to the angle 𝜃)</li>
+                </ul>
+                <ul>
+                    <li><b>Sine (sin)</b>: <br> sin𝜃 = O/H</li>
+                    <li><b>Cosine (cos)</b>: <br> cos𝜃 = A/H</li>
+                    <li><b>Tangent (tan)</b>: <br> tan𝜃 = O/A</li>
+                    <li><b>Cosecant (csc)</b>: <br> csc𝜃 = H/O</li>
+                    <li><b>Secant (sec)</b>: <br> sec𝜃 = H/A</li>
+                    <li><b>Cotangent (cot)</b>: <br> cot𝜃 = A/O</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>SI Units</h2>
+                <ul>
+                    <li>There is no specific SI unit for trigonometric ratios as they are dimensionless.</li>
+                </ul>
+
+                <h2>Important Trigonometric Identities</h2>
+                <ul>
+                    <li><b>Pythagorean Identity</b>: <br> sin²𝜃 + cos²𝜃 = 1</li>
+                    <li><b>Tangent and Secant Identity</b>: <br> tan²𝜃 + 1 = sec²𝜃</li>
+                    <li><b>Cotangent and Cosecant Identity</b>: <br> 1 + cot²𝜃 = csc²𝜃</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Special Angles in Trigonometry</h2>
+                <ul>
+                    <li><b>0°:</b> <br> sin0° = 0, cos0° = 1, tan0° = 0</li>
+                    <li><b>30°:</b> <br> sin30° = 1/2, cos30° = √3/2, tan30° = 1/√3</li>
+                    <li><b>45°:</b> <br> sin45° = √2/2, cos45° = √2/2, tan45° = 1</li>
+                    <li><b>60°:</b> <br> sin60° = √3/2, cos60° = 1/2, tan60° = √3</li>
+                    <li><b>90°:</b> <br> sin90° = 1, cos90° = 0, tan90° = ∞ (undefined)</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Trigonometric Equations</h2>
+                <ul>
+                    <li>Trigonometric equations involve finding angles that satisfy a given trigonometric expression.
+                    </li>
+                    <li>Basic strategies for solving include:</li>
+                    <ol style="list-style-type: lower-roman;">
+                        <li>Using identities to simplify the equation.</li>
+                        <li>Using known values of trigonometric ratios for special angles.</li>
+                        <li>Applying inverse trigonometric functions to solve for angles.</li>
+                    </ol>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Trigonometry</h2>
+                <ul>
+                    <li><b>Height and Distance Problems:</b> Trigonometry is used to calculate the height of objects and
+                        distances between points using right-angled triangles.</li>
+                    <li><b>Solving Triangles:</b> Trigonometric ratios help in solving right-angled and non-right-angled
+                        triangles using the sine rule and cosine rule.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Sine and Cosine Rule</h2>
+                <ul>
+                    <li><b>Sine Rule:</b> <br> a/sinA = b/sinB = c/sinC <br> Used to solve any triangle (not necessarily
+                        right-angled).</li>
+                    <li><b>Cosine Rule:</b> <br> c² = a² + b² − 2ab cosC <br> Used to solve triangles when two sides and
+                        the included angle are known, or when all three sides are known.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

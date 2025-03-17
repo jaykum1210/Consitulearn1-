@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-quantitative.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 10 - Mathematical Reasoning & Sets</div>
+        <div class="topic-name">
+            <h1>1. Venn Diagrams & Set Theory</h1>
+            <div class="topic-description">
+                <h2>Set Theory</h2>
+                <ul>
+                    <li>Set Theory deals with the study of sets, which are collections of objects or elements.</li>
+                    <li>For example, the set of all natural numbers, the set of all students in a class, etc.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Basic Terminology in Set Theory</h2>
+                <ul>
+                    <li><b>Set:</b> A collection of well-defined objects. For example,
+                        A = {1, 2, 3} is a set containing the numbers 1, 2, and 3.
+                    </li>
+                    <li><b>Element:</b> An individual object in a set. For example, 1 is an element of the set A = {1,
+                        2, 3}.</li>
+                    <li><b>Subset:</b> A set where all its elements are also contained in another set. For example,
+                        A = {1, 2} is a subset of B = {1, 2, 3}.
+                    </li>
+                    <li><b>Union (A ∪ B):</b> The set of all elements that belong to either set A, set B, or both.</li>
+                    <li><b>Intersection (A ∩ B):</b> The set of all elements that belong to both set A and set B.</li>
+                    <li><b>Difference (A − B):</b> The set of all elements that belong to A but not to B.</li>
+                    <li><b>Complement (Aᶜ):</b> The set of all elements not in A.</li>
+                    <li><b>Universal Set (U):</b> The set that contains all possible elements under consideration.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example of Set Operations</h2>
+                <ul>
+                    <li><b>A = {1, 2, 3}</b> and <b>B = {2, 3, 4}</b></li>
+                    <li><b>Union:</b> A ∪ B = {1, 2, 3, 4}</li>
+                    <li><b>Intersection:</b> A ∩ B = {2, 3}</li>
+                    <li><b>Difference:</b> A − B = {1}</li>
+                    <li><b>Complement:</b> If the universal set U = {1, 2, 3, 4, 5}, then Aᶜ = {4, 5}</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Venn Diagrams</h2>
+                <ul>
+                    <li>A Venn Diagram is a visual representation of sets and their relationships with each other.</li>
+                    <li>It uses overlapping circles to show how sets relate to one another in terms of union,
+                        intersection, and difference.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Venn Diagram Components</h2>
+                <ul>
+                    <li><b>Universal Set (U):</b> Represented by a rectangle, it includes all possible elements under
+                        consideration.</li>
+                    <li><b>Circles:</b> Represent sets within the universal set. Overlapping circles show the
+                        intersection of sets.</li>
+                    <li><b>Shaded Regions:</b> Used to illustrate operations like union, intersection, and difference.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Operations in Venn Diagrams</h2>
+                <ul>
+                    <li><b>Union:</b> The area covered by both sets. If you have two sets A and B, the union is the
+                        entire area covered by both circles.</li>
+                    <li><b>Intersection:</b> The area where both circles overlap. It shows the common elements between
+                        two sets.</li>
+                    <li><b>Difference:</b> The area in one circle that does not overlap with the other circle. It shows
+                        the elements that belong to one set but not the other.</li>
+                    <li><b>Complement:</b> The area outside a circle represents the complement of the set. It includes
+                        all elements that do not belong to the set.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Venn Diagrams</h2>
+                <ol style="list-style-type: lower-roman;">
+                    <li>
+                        <p><b>Two-Set Venn Diagram</b></p>
+                        <ul>
+                            <li>A two-set Venn diagram is used to represent the relationships between two sets.</li>
+                            <li>Example: A = {1, 2, 3}, B = {2, 3, 4}</li>
+                            <li>Union: A ∪ B = {1, 2, 3, 4}</li>
+                            <li>Intersection: A ∩ B = {2, 3}</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Three-Set Venn Diagram</b></p>
+                        <ul>
+                            <li>A three-set Venn diagram is used to represent the relationships between three sets.</li>
+                            <li>Example: A = {1, 2, 3}, B = {2, 3, 4}, C = {3, 4, 5}</li>
+                            <li>Union: A ∪ B ∪ C = {1, 2, 3, 4, 5}</li>
+                            <li>Intersection: A ∩ B ∩ C = {3}</li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Examples of Venn Diagram Problems</h2>
+                <h3>Example 1:</h3>
+                <p>In a survey, 80 people were asked if they liked tea or coffee. 50 liked tea, 40 liked coffee, and 30
+                    liked both tea and coffee. How many liked only tea, only coffee, or both?</p>
+                <ul>
+                    <li><b>T = Tea lovers</b>, <b>C = Coffee lovers</b></li>
+                    <li><b>∣T∣ = 50</b> (Tea lovers)</li>
+                    <li><b>∣C∣ = 40</b> (Coffee lovers)</li>
+                    <li><b>∣T ∩ C∣ = 30</b> (People who like both)</li>
+                    <li>Only Tea = ∣T∣ − ∣T ∩ C∣ = 50 − 30 = 20</li>
+                    <li>Only Coffee = ∣C∣ − ∣T ∩ C∣ = 40 − 30 = 10</li>
+                    <li>Thus, the final answers are:</li>
+                    <ul>
+                        <li>20 people like only tea.</li>
+                        <li>10 people like only coffee.</li>
+                        <li>30 people like both tea and coffee.</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Example 2:</h3>
+                <p>In a class of 60 students, 40 students like Mathematics, 35 like Physics, and 25 like both
+                    Mathematics and Physics. How many students like only one of the subjects?</p>
+                <ul>
+                    <li><b>M = Students who like Mathematics</b>, <b>P = Students who like Physics</b></li>
+                    <li><b>∣M∣ = 40</b></li>
+                    <li><b>∣P∣ = 35</b></li>
+                    <li><b>∣M ∩ P∣ = 25</b></li>
+                    <li>Only Mathematics = ∣M∣ − ∣M ∩ P∣ = 40 − 25 = 15</li>
+                    <li>Only Physics = ∣P∣ − ∣M ∩ P∣ = 35 − 25 = 10</li>
+                    <li>Thus, the number of students who like only one subject is:</li>
+                    <ul>
+                        <li>15 students like only Mathematics.</li>
+                        <li>10 students like only Physics.</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Logical">2. Logical Deductions</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>Logical deduction refers to the process of drawing conclusions based on given facts, rules, or
+                        premises.</li>
+                    <li>It is a critical skill in many areas such as mathematics, philosophy, and competitive exams.
+                    </li>
+                    <li>In logical deduction problems, you are provided with a set of conditions, and your task is to
+                        infer the correct relationships or conclusions from those conditions.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Logical Deduction Problems</h2>
+                <h3>Syllogism</h3>
+                <ul>
+                    <li>Syllogism is a type of logical argument where a conclusion is drawn from two given or assumed
+                        propositions (premises).</li>
+                    <li>Example:
+                        <ul>
+                            <li><b>Premise 1:</b> All men are mortal.</li>
+                            <li><b>Premise 2:</b> Socrates is a man.</li>
+                            <li><b>Conclusion:</b> Socrates is mortal.</li>
+                        </ul>
+                    </li>
+                    <p>Syllogism problems typically involve two premises, and you need to deduce the correct conclusion
+                        based on the given facts.</p>
+                    <h3>Example Problem:</h3>
+                    <ul>
+                        <li><b>Premise 1:</b> All dogs are animals.</li>
+                        <li><b>Premise 2:</b> Fido is a dog.</li>
+                        <li><b>Conclusion:</b> Fido is an animal.</li>
+                        <li><b>Answer:</b> The conclusion is valid, as it follows from the premises.</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Puzzle-based Logical Deductions</h3>
+                <ul>
+                    <li>These puzzles involve a set of conditions that describe relationships between different items or
+                        entities. You need to use these conditions to deduce certain facts or answer questions.</li>
+                    <h3>Example Problem:</h3>
+                    <p>There are four friends: A, B, C, and D.</p>
+                    <h4>Conditions:</h4>
+                    <ul>
+                        <li>A is taller than B.</li>
+                        <li>C is taller than D.</li>
+                        <li>B is shorter than D.</li>
+                    </ul>
+                    <h4>Question:</h4>
+                    <p>Who is the tallest among the four friends?</p>
+                    <h4>Solution:</h4>
+                    <ul>
+                        <li>A > B (A is taller than B).</li>
+                        <li>C > D (C is taller than D).</li>
+                        <li>B < D (B is shorter than D).</li>
+                        <li>Since A is taller than B, and B is shorter than D, we conclude that C is the tallest, as
+                            there is no restriction on C's height relative to A.</li>
+                        <li><b>Answer:</b> C is the tallest.</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Direction and Position-based Problems</h3>
+                <ul>
+                    <li>These problems involve determining someone's location, position, or direction based on a series
+                        of statements.</li>
+                    <h3>Example Problem:</h3>
+                    <p>A person walks 10 meters North, turns right, and walks 10 meters again. Then, he turns right and
+                        walks 10 meters. In which direction is he from his starting point?</p>
+                    <h4>Solution:</h4>
+                    <ul>
+                        <li>The person walks 10 meters North.</li>
+                        <li>Then, he turns right (East) and walks 10 meters.</li>
+                        <li>Finally, he turns right again (South) and walks 10 meters.</li>
+                        <li>Since the total vertical displacement (North-South) is 0 (10 meters North and 10 meters
+                            South), the person is directly East of the starting point.</li>
+                        <li><b>Answer:</b> The person is to the East of the starting point.</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Odd One Out</h3>
+                <ul>
+                    <li>These problems ask you to identify an item that doesn't belong in a given set or group.</li>
+                    <h3>Example Problem:</h3>
+                    <ul>
+                        <li>A. Lion</li>
+                        <li>B. Tiger</li>
+                        <li>C. Bear</li>
+                        <li>D. Leopard</li>
+                    </ul>
+                    <h4>Solution:</h4>
+                    <ul>
+                        <li>The first four animals (Lion, Tiger, and Leopard) are all big cats, while the Bear is not a
+                            big cat.</li>
+                        <li><b>Answer:</b> Bear is the odd one out.</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Blood Relations</h3>
+                <ul>
+                    <li>Logical deduction can be applied to blood relation problems, where you need to deduce the
+                        relationship between family members based on given information.</li>
+                    <h3>Example Problem:</h3>
+                    <p>A woman is looking at a photograph. A person asks her, "Who are you looking at?" The woman
+                        replies, "Brothers and sisters, I have none. But the father of the person in the photograph is
+                        my father’s son." Who is in the photograph?</p>
+                    <h4>Solution:</h4>
+                    <ul>
+                        <li>The woman says, "The father of the person in the photograph is my father’s son." The person
+                            in the photograph is her son because her father’s son would be her brother, and the father
+                            of the person in the photograph would then be her son.</li>
+                        <li><b>Answer:</b> The person in the photograph is the woman's son.</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Statements and Assumptions</h3>
+                <ul>
+                    <li>Logical deduction can also involve analyzing a statement and inferring whether the assumption
+                        based on it is true or false.</li>
+                    <h3>Example Problem:</h3>
+                    <p>Statement: "No birds are mammals." Assumption: "All birds are non-mammals."</p>
+                    <h4>Solution:</h4>
+                    <ul>
+                        <li>The statement is saying that no birds are mammals, which implies that all birds are
+                            non-mammals. Thus, the assumption is true.</li>
+                        <li><b>Answer:</b> The assumption is correct.</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Approaching Logical Deduction Problems</h2>
+                <ul>
+                    <li>Read the problem carefully: Understand all the conditions or premises provided.</li>
+                    <li>Break down the problem: Identify key facts and relationships that are mentioned.</li>
+                    <li>Use process of elimination: In some cases, you can eliminate incorrect options and deduce the
+                        correct answer.</li>
+                    <li>Draw diagrams if necessary: Sometimes, drawing a Venn diagram, family tree, or chart helps
+                        visualize relationships and makes deductions easier.</li>
+                    <li>Consider all possibilities: When you’re unsure about a problem, list all possible scenarios and
+                        narrow them down based on the given conditions.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Practice Problems</h2>
+                <h3>Syllogism</h3>
+                <ul>
+                    <li><b>Premise 1:</b> All roses are flowers.</li>
+                    <li><b>Premise 2:</b> Some flowers are red.</li>
+                    <li><b>Conclusion:</b> Some roses are red. Is this conclusion valid?</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Puzzle</h3>
+                <p>There are five friends: A, B, C, D, and E. They are sitting in a row. C is sitting to the immediate
+                    right of B. A is sitting to the immediate left of D. E is sitting to the immediate left of C.</p>
+                <h4>Question:</h4>
+                <p>Who is sitting in the middle?</p>
+
+                <h3>Blood Relation</h3>
+                <p>Pointing to a man, a woman says, "He is the son of my mother’s only son." How is the man related to
+                    the woman?</p>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Mathematical">3. Mathematical Puzzles & Riddles</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <p>Mathematical puzzles and riddles are fun and challenging ways to test your problem-solving skills and
+                    enhance your logical thinking. They often require creative thinking and an understanding of basic
+                    mathematical concepts. These puzzles can range from simple arithmetic to complex logic-based
+                    problems.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Common Types of Mathematical Puzzles and Riddles</h2>
+                <h3>1. Classic Number Puzzles</h3>
+                <h4>Puzzle 1: The Missing Dollar Riddle</h4>
+                <p><b>Problem:</b> Three friends check into a hotel room that costs $30. They each contribute $10, and
+                    the hotel clerk gives them a $5 discount because of an overcharge. The clerk gives $1 back to each
+                    friend and keeps $2 for himself. Now, each friend has paid $9 (totaling $27), and the clerk has kept
+                    $2. Where did the extra dollar go?</p>
+                <h4>Solution:</h4>
+                <p>This puzzle is often misleading because it suggests a discrepancy in the way the amounts are being
+                    added.</p>
+                <ul>
+                    <li>The total amount paid is $30.</li>
+                    <li>Each friend gets $1 back, so they have paid $9 each, totaling $27.</li>
+                    <li>Out of this $27, $25 is for the room, and $2 is kept by the clerk.</li>
+                    <li>There is no missing dollar; the confusion comes from adding the $2 (the clerk's tip) to the $27,
+                        which is incorrect. The $27 already includes the $2 kept by the clerk.</li>
+                </ul>
+                <p><b>Answer:</b> The riddle plays on a logical error in the way the amounts are added.</p>
+
+                <h3>2. Word-based Mathematical Riddles</h3>
+                <h4>Puzzle 2: The Bridge and Torch Problem</h4>
+                <p><b>Problem:</b> Four people need to cross a bridge at night. They have one torch, and the bridge can
+                    only hold two people at a time. The crossing times are:</p>
+                <ul>
+                    <li>Person 1: 1 minute</li>
+                    <li>Person 2: 2 minutes</li>
+                    <li>Person 3: 5 minutes</li>
+                    <li>Person 4: 10 minutes</li>
+                </ul>
+                <p>The torch must be walked back each time, and two people can cross together, but they must move at the
+                    slower person's pace. What is the shortest time in which all four people can cross the bridge?</p>
+                <h4>Solution:</h4>
+                <ul>
+                    <li>First crossing: Person 1 and Person 2 cross together (2 minutes).</li>
+                    <li>Return: Person 1 goes back with the torch (1 minute).</li>
+                    <li>Second crossing: Person 3 and Person 4 cross together (10 minutes).</li>
+                    <li>Return: Person 2 goes back with the torch (2 minutes).</li>
+                    <li>Final crossing: Person 1 and Person 2 cross together again (2 minutes).</li>
+                </ul>
+                <p>Total time = 2 + 1 + 10 + 2 + 2 = 17 minutes.</p>
+                <p><b>Answer:</b> The shortest time is 17 minutes.</p>
+
+                <h3>3. Logic-based Mathematical Riddles</h3>
+                <h4>Puzzle 3: The Two Sons Riddle</h4>
+                <p><b>Problem:</b> A man is looking at a picture of someone. His friend asks, “Who are you looking at?”
+                    The man replies, “Brothers and sisters, I have none. But the father of the person in the picture is
+                    my father’s son.” Who is in the picture?</p>
+                <h4>Solution:</h4>
+                <p>The man says, "The father of the person in the picture is my father’s son."</p>
+                <ul>
+                    <li>If the man has no brothers, "my father’s son" must refer to himself.</li>
+                    <li>Therefore, the person in the picture is his son.</li>
+                </ul>
+                <p><b>Answer:</b> The person in the picture is his son.</p>
+
+                <h3>4. Age-related Puzzles</h3>
+                <h4>Puzzle 4: The Age Difference Problem</h4>
+                <p><b>Problem:</b> A father is 30 years older than his son. In 10 years, the father will be three times
+                    as old as the son. How old are the father and the son?</p>
+                <h4>Solution:</h4>
+                <p>Let the son's age be <i>x</i>. Then the father's age is <i>x + 30</i>.</p>
+                <p>In 10 years, the son will be <i>x + 10</i>, and the father will be <i>x + 40</i>.</p>
+                <p>According to the problem, in 10 years, the father will be three times the son's age:</p>
+                <p><i>x + 40 = 3(x + 10)</i></p>
+                <p>Simplifying:</p>
+                <p><i>x + 40 = 3x + 30</i></p>
+                <p><i>40 - 30 = 3x - x</i></p>
+                <p><i>10 = 2x</i></p>
+                <p><i>x = 5</i></p>
+                <p>So, the son is 5 years old, and the father is <i>5 + 30 = 35</i> years old.</p>
+                <p><b>Answer:</b> The son is 5 years old, and the father is 35 years old.</p>
+
+                <h3>5. Pattern and Sequence Puzzles</h3>
+                <h4>Puzzle 5: The Number Sequence</h4>
+                <p><b>Problem:</b> What is the next number in the sequence: 1, 4, 9, 16, 25, __?</p>
+                <h4>Solution:</h4>
+                <p>The numbers are perfect squares:</p>
+                <ul>
+                    <li><i>1<sup>2</sup> = 1</i></li>
+                    <li><i>2<sup>2</sup> = 4</i></li>
+                    <li><i>3<sup>2</sup> = 9</i></li>
+                    <li><i>4<sup>2</sup> = 16</i></li>
+                    <li><i>5<sup>2</sup> = 25</i></li>
+                </ul>
+                <p>The next number in the sequence will be <i>6<sup>2</sup> = 36</i>.</p>
+                <p><b>Answer:</b> The next number is 36.</p>
+
+                <h3>6. Coin-related Puzzle</h3>
+                <h4>Puzzle 6: The Weighing Puzzle</h4>
+                <p><b>Problem:</b> You have 12 identical-looking coins. One of them is either heavier or lighter than
+                    the others. You have a balance scale and can only use it three times. How do you find the odd coin
+                    and determine whether it is heavier or lighter?</p>
+                <h4>Solution:</h4>
+                <ul>
+                    <li>Divide the 12 coins into three groups of 4 coins each.</li>
+                    <li>Weigh two groups (Group A and Group B). There are three possible outcomes:
+                        <ul>
+                            <li>If they balance, the odd coin is in Group C.</li>
+                            <li>If Group A is heavier or lighter, the odd coin is in Group A or Group B.</li>
+                        </ul>
+                    </li>
+                    <li>Now take the 4 coins from the group that contains the odd coin and divide them into three coins
+                        and one coin.</li>
+                    <li>Weigh the three coins against each other:
+                        <ul>
+                            <li>If they balance, the odd coin is the one not weighed, and you can determine whether it
+                                is heavier or lighter.</li>
+                            <li>If they do not balance, you will know which coin is the odd one and whether it is
+                                heavier or lighter.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><b>Answer:</b> This method will find the odd coin and determine if it is heavier or lighter in three
+                    weighings.</p>
+
+                <h3>7. Logical Deduction Puzzle</h3>
+                <h4>Puzzle 7: The Light Bulb Problem</h4>
+                <p><b>Problem:</b> You are in a room with three switches, each controlling one of three light bulbs in
+                    another room. You can’t see the bulbs from where the switches are, and you can only enter the room
+                    with the bulbs once. How do you determine which switch controls which bulb?</p>
+                <h4>Solution:</h4>
+                <ul>
+                    <li>Turn on the first switch and leave it on for a few minutes.</li>
+                    <li>After a few minutes, turn off the first switch and turn on the second switch.</li>
+                    <li>Now, enter the room with the bulbs:
+                        <ul>
+                            <li>The bulb that is on corresponds to the second switch.</li>
+                            <li>The bulb that is off and warm corresponds to the first switch (since it was on for a
+                                while and then turned off).</li>
+                            <li>The bulb that is off and cold corresponds to the third switch.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 1px; background-color: black; border: none;margin: top 20px;;">
+            <h1 id="Statements">4. Statements & Assumptions</h1>
+            <div class="topic-description">
+                <h2> Definition</h2>
+                <ul>
+                    <li>A statement is a sentence that conveys some information.</li>
+                    <li>An assumption is something taken as true for the sake of argument, even if it may not be
+                        explicitly stated.</li>
+                    <li>The goal in problems involving statements and assumptions is to determine whether an assumption
+                        logically follows from the statement provided.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Rules for Assumptions</h2>
+                <ul>
+                    <li>An assumption is valid if it is something that is implied by the statement, even if not
+                        explicitly mentioned.</li>
+                    <li>An assumption is invalid if it goes beyond the information provided or introduces something that
+                        contradicts the statement.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Assumptions</h2>
+                <ol style="list-style-type: lower-roman;">
+                    <li>
+                        <p><b>Implicit Assumptions</b></p>
+                        <ul>
+                            <li>Assumptions logically derived from the given statement.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Explicit Assumptions</b></p>
+                        <ul>
+                            <li>Assumptions that are directly or indirectly mentioned in the statement.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example Problems</h2>
+                <ol>
+                    <li>
+                        <p><b>Example 1:</b> Statement: "This project will be completed in two months." </p>
+                        <ul>
+                            <li>Assumption 1: The project will be completed within the given timeframe. (Valid)</li>
+                            <li>Assumption 2: The resources required for the project are available. (Invalid)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Example 2:</b> Statement: "We have enough time to complete the task, so we are not in a
+                            hurry." </p>
+                        <ul>
+                            <li>Assumption 1: The task will take longer to complete than expected. (Invalid)</li>
+                            <li>Assumption 2: The task can be completed without rushing. (Valid)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Example 3:</b> Statement: "The weather will be great for the outdoor event tomorrow." </p>
+                        <ul>
+                            <li>Assumption 1: The weather is expected to be good. (Valid)</li>
+                            <li>Assumption 2: The outdoor event will take place tomorrow without any problems. (Invalid)
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Example 4:</b> Statement: "All workers must report to the office at 9 AM tomorrow for the
+                            meeting." </p>
+                        <ul>
+                            <li>Assumption 1: All workers are expected to attend the meeting. (Valid)</li>
+                            <li>Assumption 2: The meeting is scheduled for tomorrow at 9 AM. (Valid)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Example 5:</b> Statement: "The company will provide training for all new employees
+                            starting next week." </p>
+                        <ul>
+                            <li>Assumption 1: All new employees will be trained. (Valid)</li>
+                            <li>Assumption 2: The training will begin next week. (Valid)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Example 6:</b> Statement: "The new law will make driving safer for everyone." </p>
+                        <ul>
+                            <li>Assumption 1: The new law will improve driving safety. (Valid)</li>
+                            <li>Assumption 2: Everyone will follow the new law. (Invalid)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Example 7:</b> Statement: "The car has been in the shop for a week, and it's still not
+                            ready." </p>
+                        <ul>
+                            <li>Assumption 1: The car is undergoing repairs. (Valid)</li>
+                            <li>Assumption 2: The car will be ready in the future. (Valid)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Example 8:</b> Statement: "The company plans to expand its operations internationally
+                            within the next five years." </p>
+                        <ul>
+                            <li>Assumption 1: The company will open new branches in other countries. (Valid)</li>
+                            <li>Assumption 2: The company will have the necessary resources for international expansion.
+                                (Invalid)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Example 9:</b> Statement: "I will be attending the party tonight." </p>
+                        <ul>
+                            <li>Assumption 1: The party is happening tonight. (Valid)</li>
+                            <li>Assumption 2: The person has been invited to the party. (Invalid)</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
