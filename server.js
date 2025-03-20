@@ -1,20 +1,24 @@
-require("dotenv").config();
-const express = require("express");
-const cors = require("cors");
-const connectDB = require("./db.js");
+const mongoose = require("mongoose");
+require("dotenv").config();  // Load environment variables
 
-const app = express();
+const connectDB = async () => {
+    try {
+        const mongoURI = process.env.MONGO_URI;
+        
+        if (!mongoURI) {
+            throw new Error("MongoDB URI is undefined. Check your environment variables.");
+        }
 
-// Middleware
-app.use(cors());
-app.use(express.json());
+        await mongoose.connect(mongoURI, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        });
 
-// Database Connection
-connectDB();
+        console.log("MongoDB connected successfully!");
+    } catch (error) {
+        console.error("Database connection error:", error);
+        process.exit(1); // Exit process with failure
+    }
+};
 
-// Routes
-app.use("/api/auth", require("./auth.js"));
-
-
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+module.exports = connectDB;
