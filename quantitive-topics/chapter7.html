@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-quantitative.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 7 - Probability & Statistics</div>
+        <div class="topic-name">
+            <h1>Basic Probability Concepts</h1>
+            <div class="topic-description">
+                <p>Probability is a branch of mathematics that deals with calculating the likelihood or chance of an
+                    event occurring. It is widely used in various fields such as statistics, finance, gaming, and
+                    science.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>i. What is Probability?</h2>
+                <p>Probability is the measure of how likely an event is to occur, expressed as a number between 0 and 1.
+                </p>
+                <p>The probability of an event (P(E)) is given by:</p>
+                <pre>P(E) = Number of favorable outcomes / Total number of possible outcomes</pre>
+                <p>where:</p>
+                <ul>
+                    <li><b>P(E)</b> is the probability of event E.</li>
+                    <li>The numerator is the number of favorable outcomes (the outcomes we are interested in).</li>
+                    <li>The denominator is the total number of possible outcomes (all outcomes that could possibly
+                        occur).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Types of Events</h2>
+                <h3>Certain Event:</h3>
+                <p>An event that is guaranteed to occur.</p>
+                <p><b>Example:</b> The probability of rolling a number between 1 and 6 on a standard die is 1 (i.e.,
+                    P(Rolling 1-6) = 1).</p>
+
+                <h3>Impossible Event:</h3>
+                <p>An event that cannot occur.</p>
+                <p><b>Example:</b> The probability of rolling a 7 on a standard 6-sided die is 0 (i.e., P(Rolling 7) =
+                    0).</p>
+
+                <h3>Simple Event:</h3>
+                <p>An event that has only one outcome.</p>
+                <p><b>Example:</b> Rolling a 4 on a standard die.</p>
+
+                <h3>Compound Event:</h3>
+                <p>An event that involves two or more simple events happening together.</p>
+                <p><b>Example:</b> Rolling an even number (i.e., 2, 4, or 6) on a standard die.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. Basic Probability Rules</h2>
+                <h3>The Probability of the Sample Space:</h3>
+                <p>The probability of the entire sample space (all possible outcomes) is always 1.</p>
+                <pre>P(Sample Space) = 1</pre>
+
+                <h3>The Probability of Complementary Events:</h3>
+                <p>The probability of the complement of an event A (i.e., the event that A does not occur) is given by:
+                </p>
+                <pre>P(A') = 1 - P(A)</pre>
+                <p>where P(A') is the probability of event A not happening.</p>
+
+                <h3>Addition Rule:</h3>
+                <p>The addition rule is used to find the probability of the occurrence of either of two events. For two
+                    events A and B:</p>
+                <ul>
+                    <li><b>For mutually exclusive events</b> (events that cannot happen at the same time):<br />
+                        <pre>P(A ∪ B) = P(A) + P(B)</pre>
+                    </li>
+                    <li><b>For non-mutually exclusive events</b> (events that can happen at the same time):<br />
+                        <pre>P(A ∪ B) = P(A) + P(B) - P(A ∩ B)</pre>
+                    </li>
+                </ul>
+
+                <h3>Multiplication Rule:</h3>
+                <p>The multiplication rule is used to find the probability of two independent events happening together:
+                </p>
+                <ul>
+                    <li><b>For independent events</b> (events that do not affect each other):<br />
+                        <pre>P(A ∩ B) = P(A) × P(B)</pre>
+                    </li>
+                    <li><b>For dependent events</b> (events where the occurrence of one affects the occurrence of the
+                        other):<br />
+                        <pre>P(A ∩ B) = P(A) × P(B|A)</pre>
+                    </li>
+                </ul>
+                <p>where P(B|A) is the conditional probability of B occurring given that A has already occurred.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iv. Conditional Probability</h2>
+                <p>Conditional probability is the probability of an event occurring given that another event has already
+                    occurred. It is represented as P(A|B), the probability of event A occurring given event B.</p>
+                <p>The formula for conditional probability is:</p>
+                <pre>P(A|B) = P(A ∩ B) / P(B)</pre>
+                <p>where:</p>
+                <ul>
+                    <li>P(A ∩ B) is the probability that both A and B occur.</li>
+                    <li>P(B) is the probability that event B occurs.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>v. Sample Space and Events</h2>
+                <p>The sample space (denoted S) is the set of all possible outcomes of a random experiment. An event is
+                    any subset of the sample space.</p>
+
+                <h3>Example 1: Rolling a Die</h3>
+                <pre>Sample space S = {1, 2, 3, 4, 5, 6}</pre>
+                <p>Event A: Rolling an even number A = {2, 4, 6}</p>
+                <p>Event B: Rolling a number greater than 4 B = {5, 6}</p>
+                <p>The probability of event A is:</p>
+                <pre>P(A) = Number of favorable outcomes for A / Total number of outcomes = 3 / 6 = 0.5</pre>
+
+                <h3>Example 2: Tossing a Coin</h3>
+                <pre>Sample space S = {H, T} (H for heads, T for tails)</pre>
+                <p>Event A: Getting heads A = {H}</p>
+                <p>The probability of event A is:</p>
+                <pre>P(A) = 1 / 2 = 0.5</pre>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>vi. Types of Probability</h2>
+                <h3>Theoretical Probability:</h3>
+                <p>This is based on the assumption that all outcomes are equally likely. For example, when tossing a
+                    fair coin, the probability of getting heads is 1/2 because there are two equally likely outcomes:
+                    heads or tails.</p>
+
+                <h3>Experimental Probability:</h3>
+                <p>This is based on observed outcomes of an experiment. It is calculated as the ratio of the number of
+                    times an event occurs to the total number of trials.</p>
+                <pre>P(E) = Number of favorable outcomes / Total number of trials</pre>
+                <p>For example, if a die is rolled 100 times and the number 6 appears 20 times, the experimental
+                    probability of rolling a 6 is 20/100 = 0.2.</p>
+
+                <h3>Empirical Probability:</h3>
+                <p>Similar to experimental probability, but typically based on a larger set of data or experiments.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>vii. Law of Large Numbers</h2>
+                <p>The Law of Large Numbers states that as the number of trials or experiments increases, the
+                    experimental probability of an event will approach the theoretical probability. For example, if you
+                    flip a fair coin many times, the proportion of heads should approach 0.5 as the number of flips
+                    increases.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>viii. Probability Distribution</h2>
+                <p>A probability distribution is a function that gives the probability of each outcome in a sample
+                    space. There are two main types of probability distributions:</p>
+                <ul>
+                    <li><b>Discrete Probability Distribution:</b> For events with a finite number of possible outcomes
+                        (e.g., rolling a die).</li>
+                    <li><b>Continuous Probability Distribution:</b> For events with an infinite number of possible
+                        outcomes (e.g., the probability of selecting a number from a continuous range).</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Mean">2. Mean, Median, and Mode</h1>
+            <div class="topic-description">
+                <h2> Definition</h2>
+                <ul>
+                    <li>Mean, Median, and Mode are measures of central tendency that summarize a dataset by identifying
+                        a "typical" value.</li>
+                </ul>
+                <h2>Mean</h2>
+                <ul>
+                    <li>The **mean** (average) is calculated by summing all values and dividing by the total number of
+                        values.</li>
+                    <li>Formula:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>Mean</mi>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>ΣX</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>n</mi>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                        <p>where ΣX = sum of all values, n = number of values.</p>
+                    </li>
+                    <li>Example: Dataset = 5, 8, 12, 14, 20</li>
+                    <li>Mean = (5 + 8 + 12 + 14 + 20) / 5 = 59 / 5 = 11.8</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>SI Unit</h2>
+                <ul>
+                    <li>The unit of mean is the same as the unit of the data (e.g., meters, seconds, etc.).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Median</h2>
+                <ul>
+                    <li>The **median** is the middle value in an ordered dataset.</li>
+                    <li>If the number of values is odd, the median is the middle value; if even, it's the average of the
+                        two middle values.</li>
+                    <li>Example (Odd number of values): Dataset = 7, 2, 9, 3, 5. Ordered = 2, 3, 5, 7, 9. Median = 5.
+                    </li>
+                    <li>Example (Even number of values): Dataset = 4, 2, 8, 10, 6, 12. Ordered = 2, 4, 6, 8, 10, 12.
+                        Median = (6 + 8) / 2 = 7.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Mode</h2>
+                <ul>
+                    <li>The **mode** is the value that appears most frequently in a dataset.</li>
+                    <li>Example (No mode): Dataset = 2, 3, 4, 5, 6 (No repetitions, no mode).</li>
+                    <li>Example (One mode): Dataset = 2, 3, 3, 5, 6 (Mode = 3).</li>
+                    <li>Example (Two modes): Dataset = 1, 2, 3, 3, 4, 5, 5 (Mode = 3, 5).</li>
+                    <li>Example (Multiple modes): Dataset = 1, 1, 2, 2, 3, 3, 4, 4 (Mode = 1, 2, 3, 4).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Comparison of Mean, Median, and Mode</h2>
+                <table>
+                    <tr>
+                        <th>Measure</th>
+                        <th>Definition</th>
+                        <th>Effect of Outliers</th>
+                        <th>Best Used For</th>
+                    </tr>
+                    <tr>
+                        <td>Mean</td>
+                        <td>Average of all values</td>
+                        <td>Affected by outliers</td>
+                        <td>Symmetrical (normal) distribution</td>
+                    </tr>
+                    <tr>
+                        <td>Median</td>
+                        <td>Middle value of ordered data</td>
+                        <td>Not affected by outliers</td>
+                        <td>Skewed data or data with outliers</td>
+                    </tr>
+                    <tr>
+                        <td>Mode</td>
+                        <td>Most frequent value</td>
+                        <td>Not affected by outliers</td>
+                        <td>Categorical data or identifying the most common value</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Mean, Median, and Mode</h2>
+                <ul>
+                    <li>**Mean**: Used to calculate the average score in exams, wages, etc.</li>
+                    <li>**Median**: Used in income distribution, housing prices, and other data where outliers can skew
+                        results.</li>
+                    <li>**Mode**: Used in market research to identify the most popular product or service.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Variance">3. Variance and Standard Deviation</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>Variance and Standard Deviation are measures of spread or dispersion in a dataset.</li>
+                    <li>They describe how much the data points in a dataset differ from the mean (average) of the
+                        dataset.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Variance</h2>
+                <ul>
+                    <li>The **variance** measures the average squared deviation of each data point from the mean.</li>
+                    <li>Formula for **Population Variance**:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>Variance</mi>
+                            <mo>(</mo>
+                            <mi>σ</mi>
+                            <mo>²</mo>
+                            <mo>)</mo>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>Σ(X<sub>i</sub> - μ)<sup>2</sup></mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>N</mi>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                        <p>Where σ² = population variance, Xi = each data point, μ = population mean, N = total number
+                            of data points.</p>
+                    </li>
+                    <li>Formula for **Sample Variance**:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>Variance</mi>
+                            <mo>(</mo>
+                            <mi>s</mi>
+                            <mo>²</mo>
+                            <mo>)</mo>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>Σ(X<sub>i</sub> - X̄)<sup>2</sup></mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>n - 1</mi>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                        <p>Where s² = sample variance, Xi = each data point, X̄ = sample mean, n = total number of data
+                            points, and (n-1) is for Bessel's correction.</p>
+                    </li>
+                    <li>Steps to Calculate Variance:
+                        <ul>
+                            <li>Find the mean of the dataset.</li>
+                            <li>Subtract the mean from each data point and square the result.</li>
+                            <li>Find the average of these squared deviations.</li>
+                        </ul>
+                    </li>
+                    <li>Example (Population Variance):
+                        <ul>
+                            <li>Dataset = 2, 4, 6, 8, 10</li>
+                            <li>Mean (μ) = (2 + 4 + 6 + 8 + 10) / 5 = 6</li>
+                            <li>Squared deviations from the mean: (2-6)² = 16, (4-6)² = 4, (6-6)² = 0, (8-6)² = 4,
+                                (10-6)² = 16</li>
+                            <li>Variance = (16 + 4 + 0 + 4 + 16) / 5 = 40 / 5 = 8</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Standard Deviation</h2>
+                <ul>
+                    <li>The **standard deviation** is the square root of the variance. It provides a measure of the
+                        spread of data points in the same unit as the data.</li>
+                    <li>Formula for **Population Standard Deviation**:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>Standard</mi>
+                            <mo>&#160;</mo>
+                            <mi>Deviation</mi>
+                            <mo>(</mo>
+                            <mi>σ</mi>
+                            <mo>)</mo>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>Σ(X<sub>i</sub> - μ)<sup>2</sup></mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>N</mi>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                    </li>
+                    <li>Formula for **Sample Standard Deviation**:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>Standard</mi>
+                            <mo>&#160;</mo>
+                            <mi>Deviation</mi>
+                            <mo>(</mo>
+                            <mi>s</mi>
+                            <mo>)</mo>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>Σ(X<sub>i</sub> - X̄)<sup>2</sup></mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>n - 1</mi>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                    </li>
+                    <li>Steps to Calculate Standard Deviation:
+                        <ul>
+                            <li>Find the variance of the dataset.</li>
+                            <li>Take the square root of the variance.</li>
+                        </ul>
+                    </li>
+                    <li>Example (Population Standard Deviation):
+                        <ul>
+                            <li>Given the dataset: 2, 4, 6, 8, 10, and variance = 8, the standard deviation is:</li>
+                            <li>Standard Deviation = √8 ≈ 2.83</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Comparison of Variance and Standard Deviation</h2>
+                <table>
+                    <tr>
+                        <th>Measure</th>
+                        <th>Variance</th>
+                        <th>Standard Deviation</th>
+                    </tr>
+                    <tr>
+                        <td>Definition</td>
+                        <td>Average of squared deviations from the mean.</td>
+                        <td>Square root of the variance.</td>
+                    </tr>
+                    <tr>
+                        <td>Units</td>
+                        <td>Squared units of the data (e.g., square meters).</td>
+                        <td>Same units as the original data (e.g., meters).</td>
+                    </tr>
+                    <tr>
+                        <td>Interpretation</td>
+                        <td>Harder to interpret due to squared units.</td>
+                        <td>Easier to interpret as it is in the same units as the data.</td>
+                    </tr>
+                    <tr>
+                        <td>Sensitivity to Outliers</td>
+                        <td>Sensitive to outliers.</td>
+                        <td>Sensitive to outliers.</td>
+                    </tr>
+                    <tr>
+                        <td>Usage</td>
+                        <td>Used in statistical calculations (e.g., ANOVA, regression).</td>
+                        <td>Used in real-world interpretation and comparisons.</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Relationship Between Variance and Standard Deviation</h2>
+                <ul>
+                    <li>The **standard deviation** is the square root of the **variance**.</li>
+                    <li>This relationship is important because variance is in squared units, making it harder to
+                        interpret, while the standard deviation is in the same units as the data, making it easier to
+                        understand.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Permutations">4. Permutations and Combinations</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>Permutations and Combinations are fundamental concepts in combinatorics, the branch of
+                        mathematics dealing with counting and arrangements.</li>
+                    <li>These concepts are used to determine the number of ways to arrange or select items from a set.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Permutations</h2>
+                <ul>
+                    <li>A **permutation** is an arrangement of objects in a specific order. The order matters in
+                        permutations.</li>
+                    <li>Formula for **Permutations**:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>P</mi>
+                            <mo>(</mo>
+                            <mi>n</mi>
+                            <mo>,</mo>
+                            <mi>r</mi>
+                            <mo>)</mo>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>n</mi>
+                                    <mi>!</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>(n - r)</mi>
+                                    <mi>!</mi>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                        <p>Where: <br />
+                            n = Total number of objects, <br />
+                            r = Number of objects to arrange, <br />
+                            ! (Factorial) is the product of all positive integers up to that number (e.g., 5! = 5 × 4 ×
+                            3 × 2 × 1 = 120).
+                        </p>
+                    </li>
+                    <li>Example:
+                        <ul>
+                            <li>If you have 5 books and want to know how many ways you can arrange 3 of them on a shelf:
+                            </li>
+                            <li>
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>P</mi>
+                                    <mo>(</mo>
+                                    <mi>5</mi>
+                                    <mo>,</mo>
+                                    <mi>3</mi>
+                                    <mo>)</mo>
+                                    <mo>=</mo>
+                                    <mfrac>
+                                        <mrow>
+                                            <mi>5</mi>
+                                            <mi>!</mi>
+                                        </mrow>
+                                        <mrow>
+                                            <mi>(5 - 3)</mi>
+                                            <mi>!</mi>
+                                        </mrow>
+                                    </mfrac>
+                                </math>
+                                <p>Which simplifies to: 5 × 4 × 3 = 60 ways to arrange 3 books from 5.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Key Points About Permutations:
+                        <ul>
+                            <li>The order of arrangement matters.</li>
+                            <li>Used for arranging items in a specific order.</li>
+                            <li>If the objects are identical, divide by the factorial of the number of identical
+                                objects.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Combinations</h2>
+                <ul>
+                    <li>A **combination** is a selection of objects where the order does not matter.</li>
+                    <li>Formula for **Combinations**:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>C</mi>
+                            <mo>(</mo>
+                            <mi>n</mi>
+                            <mo>,</mo>
+                            <mi>r</mi>
+                            <mo>)</mo>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>n</mi>
+                                    <mi>!</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>r</mi>
+                                    <mi>!</mi>
+                                    <mi>(n - r)</mi>
+                                    <mi>!</mi>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                        <p>Where: <br />
+                            n = Total number of objects, <br />
+                            r = Number of objects to choose, <br />
+                            ! (Factorial) is the product of all positive integers up to that number.
+                        </p>
+                    </li>
+                    <li>Example:
+                        <ul>
+                            <li>If you have 5 books and want to know how many ways you can choose 3 books from them
+                                (without considering order):</li>
+                            <li>
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>C</mi>
+                                    <mo>(</mo>
+                                    <mi>5</mi>
+                                    <mo>,</mo>
+                                    <mi>3</mi>
+                                    <mo>)</mo>
+                                    <mo>=</mo>
+                                    <mfrac>
+                                        <mrow>
+                                            <mi>5</mi>
+                                            <mi>!</mi>
+                                        </mrow>
+                                        <mrow>
+                                            <mi>3</mi>
+                                            <mi>!</mi>
+                                            <mi>2</mi>
+                                            <mi>!</mi>
+                                        </mrow>
+                                    </mfrac>
+                                </math>
+                                <p>Which simplifies to: 5 × 4 / 2 × 1 = 10 ways to choose 3 books from 5.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Key Points About Combinations:
+                        <ul>
+                            <li>The order of selection does not matter.</li>
+                            <li>Used for selecting items without regard to order.</li>
+                            <li>The formula accounts for the fact that the same selection can appear in different
+                                orders.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Key Differences Between Permutations and Combinations</h2>
+                <table>
+                    <tr>
+                        <th>Aspect</th>
+                        <th>Permutations</th>
+                        <th>Combinations</th>
+                    </tr>
+                    <tr>
+                        <td>Order Matters</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Formula</td>
+                        <td><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>P</mi>
+                                <mo>(</mo>
+                                <mi>n</mi>
+                                <mo>,</mo>
+                                <mi>r</mi>
+                                <mo>)</mo>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>n</mi>
+                                        <mi>!</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>(n - r)</mi>
+                                        <mi>!</mi>
+                                    </mrow>
+                                </mfrac>
+                            </math></td>
+                        <td><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>C</mi>
+                                <mo>(</mo>
+                                <mi>n</mi>
+                                <mo>,</mo>
+                                <mi>r</mi>
+                                <mo>)</mo>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>n</mi>
+                                        <mi>!</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>r</mi>
+                                        <mi>!</mi>
+                                        <mi>(n - r)</mi>
+                                        <mi>!</mi>
+                                    </mrow>
+                                </mfrac>
+                            </math></td>
+                    </tr>
+                    <tr>
+                        <td>Used For</td>
+                        <td>Arranging objects in a specific order.</td>
+                        <td>Selecting objects without regard to order.</td>
+                    </tr>
+                    <tr>
+                        <td>Example</td>
+                        <td>How many ways can 3 books be arranged from 5?</td>
+                        <td>How many ways can 3 books be chosen from 5?</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Factorial (n!)</h2>
+                <ul>
+                    <li>The **factorial** of n (denoted as n!) is the product of all positive integers from 1 to n. It
+                        is used in both permutations and combinations formulas.</li>
+                    <li>Examples:
+                        <ul>
+                            <li>5! = 5 × 4 × 3 × 2 × 1 = 120</li>
+                            <li>3! = 3 × 2 × 1 = 6</li>
+                            <li>0! = 1 (By definition, the factorial of 0 is 1)</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Special Cases</h2>
+                <ul>
+                    <li><strong>Permutations of Identical Objects:</strong> If there are identical objects in the set,
+                        divide by the factorial of the number of identical objects. For example, the number of
+                        permutations of "AAB" is:</li>
+                    <ul>
+                        <li>P = 3! / 2! = 6 / 2 = 3</li>
+                    </ul>
+
+                    <li><strong>Combinations with Repetition:</strong> When repetition of objects is allowed, the number
+                        of combinations is given by:</li>
+                    <ul>
+                        <li>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>C</mi>
+                                <mo>&#8242;</mo>
+                                <mo>(</mo>
+                                <mi>n</mi>
+                                <mo>,</mo>
+                                <mi>r</mi>
+                                <mo>)</mo>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>(n + r - 1)</mi>
+                                        <mi>!</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>r</mi>
+                                        <mi>!</mi>
+                                        <mi>(n - 1)</mi>
+                                        <mi>!</mi>
+                                    </mrow>
+                                </mfrac>
+                            </math>
+                        </li>
+                    </ul>
+
+                    <li><strong>Permutations with Repetition:</strong> When repetition is allowed, the number of
+                        permutations is:</li>
+                    <ul>
+                        <li>P′(n, r) = n<sup>r</sup></li>
+                        <li>Example: How many ways can you arrange 3 digits from {1, 2, 3} with repetition? P′(3, 3) =
+                            3<sup>3</sup> = 27</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Probability">5. Probability Distributions</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>A probability distribution describes how the probabilities are distributed over the values of a
+                        random variable.</li>
+                    <li>It provides a function that gives the probability of each possible outcome in an experiment or
+                        random process.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Probability Distributions</h2>
+                <ol>
+                    <li>
+                        <p><b>Discrete Probability Distribution</b></p>
+                        <ul>
+                            <li>The random variable can only take distinct, separate values.</li>
+                            <li>The sum of all probabilities in a discrete distribution is always equal to 1.</li>
+                            <li>Example: Consider the roll of a fair six-sided die. The random variable <i>X</i>
+                                represents the outcome of the die roll, which can take values 1, 2, 3, 4, 5, 6, each
+                                with a probability of 1/6.</li>
+                            <li>Formula:
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <msub>
+                                        <mi>P</mi>
+                                        <mi>X</mi>
+                                    </msub>
+                                    <mo>=</mo>
+                                    <mfrac>
+                                        <mrow>1</mrow>
+                                        <mrow>6</mrow>
+                                    </mfrac>
+                                </math>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Continuous Probability Distribution</b></p>
+                        <ul>
+                            <li>The random variable can take any value within a given range or interval.</li>
+                            <li>Example: A normal distribution for heights, where the variable can take any value within
+                                a continuous range.</li>
+                            <li>The probability of any specific value is 0, and probabilities are calculated for a range
+                                of values.</li>
+                            <li>Formula to find probability within range:
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mrow>
+                                        <mi>P</mi>
+                                        <mo>(</mo>
+                                        <mi>a</mi>
+                                        <mo>&#8804;</mo>
+                                        <mi>X</mi>
+                                        <mo>&#8804;</mo>
+                                        <mi>b</mi>
+                                        <mo>)</mo>
+                                        <mo>=</mo>
+                                        <mrow>
+                                            <mi>&#8747;</mi>
+                                            <mi>a</mi>
+                                            <mi>b</mi>
+                                            <mi>f</mi>
+                                            <mo>(</mo>
+                                            <mi>x</mi>
+                                            <mo>)</mo>
+                                            <mi>dx</mi>
+                                        </mrow>
+                                </math>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Common Types of Probability Distributions</h2>
+                <ol>
+                    <li>
+                        <p><b>Binomial Distribution</b> (Discrete)</p>
+                        <ul>
+                            <li>Models the number of successes in a fixed number of independent Bernoulli trials.</li>
+                            <li>Formula:
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>P</mi>
+                                    <mo>(</mo>
+                                    <mi>X</mi>
+                                    <mo>=</mo>
+                                    <mi>k</mi>
+                                    <mo>)</mo>
+                                    <mo>=</mo>
+                                    <mfrac>
+                                        <mrow>
+                                            <mi>n</mi>
+                                            <mi>k</mi>
+                                        </mrow>
+                                        <mrow>
+                                            <mi>p</mi>
+                                            <mi>k</mi>
+                                        </mrow>
+                                        <mrow>
+                                            <mi>(1-p)</mi>
+                                            <mi>(n-k)</mi>
+                                        </mrow>
+                                </math>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Poisson Distribution</b> (Discrete)</p>
+                        <ul>
+                            <li>Models the number of events occurring within a fixed interval of time or space.</li>
+                            <li>Formula:
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>P</mi>
+                                    <mo>(</mo>
+                                    <mi>X</mi>
+                                    <mo>=</mo>
+                                    <mi>k</mi>
+                                    <mo>)</mo>
+                                    <mo>=</mo>
+                                    <mfrac>
+                                        <mrow>
+                                            <mi>&#955;</mi>
+                                            <mi>k</mi>
+                                        </mrow>
+                                        <mrow>
+                                            <mi>k</mi>
+                                            <mi>!</mi>
+                                        </mrow>
+                                        <mrow>
+                                            <mi>e</mi>
+                                            <mi>-&#955;</mi>
+                                        </mrow>
+                                </math>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Normal Distribution</b> (Continuous)</p>
+                        <ul>
+                            <li>The most common continuous distribution, characterized by the mean <i>&#956;</i> and
+                                standard deviation <i>&#963;</i>.</li>
+                            <li>Formula:
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>f</mi>
+                                    <mo>(</mo>
+                                    <mi>x</mi>
+                                    <mo>)</mo>
+                                    <mo>=</mo>
+                                    <mfrac>
+                                        <mrow>1</mrow>
+                                        <mrow>
+                                            <mi>&#963;</mi>
+                                            <mi>2</mi>
+                                            <mi>&#960;</mi>
+                                        </mrow>
+                                    </mfrac>
+                                    <mrow>
+                                        <mi>e</mi>
+                                        <mo>-</mo>
+                                        <mfrac>
+                                            <mrow>
+                                                <mi>(x - &#956;)</mi>
+                                                <mi>2</mi>
+                                            </mrow>
+                                            <mrow>
+                                                <mrow>
+                                                    <mi>2</mi>
+                                                    <mi>&#963;</mi>
+                                                    <mi>2</mi>
+                                                </mrow>
+                                            </mrow>
+                                        </mfrac>
+                                </math>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Uniform Distribution</b> (Continuous)</p>
+                        <ul>
+                            <li>All outcomes are equally likely within a given range [a, b].</li>
+                            <li>Formula:
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>f</mi>
+                                    <mo>(</mo>
+                                    <mi>x</mi>
+                                    <mo>)</mo>
+                                    <mo>=</mo>
+                                    <mfrac>
+                                        <mrow>1</mrow>
+                                        <mrow>
+                                            <mi>b</mi>
+                                            <mo>-</mo>
+                                            <mi>a</mi>
+                                        </mrow>
+                                    </mfrac>
+                                </math>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Exponential Distribution</b> (Continuous)</p>
+                        <ul>
+                            <li>Models the time between events in a Poisson process.</li>
+                            <li>Formula:
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>f</mi>
+                                    <mo>(</mo>
+                                    <mi>x</mi>
+                                    <mo>)</mo>
+                                    <mo>=</mo>
+                                    <mi>&#955;</mi>
+                                    <mi>e</mi>
+                                    <mo>-</mo>
+                                    <mi>&#955;x</mi>
+                                </math>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

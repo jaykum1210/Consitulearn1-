@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-maths.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 2 - Complex Numbers & Quadratic Equations</div>
+        <div class="topic-name">
+            <h1>1. Complex Numbers, Argand Plane, Modulus & Argument</h1>
+            <div class="topic-description">
+                <h2>i. Complex Numbers</h2>
+                <p>A <strong>complex number</strong> is a number of the form:</p>
+                <p><code>z = a + bi</code>, where:</p>
+                <ul>
+                    <li><code>a</code> is the real part (Re(z))</li>
+                    <li><code>b</code> is the imaginary part (Im(z))</li>
+                    <li><code>i</code> (called iota) is the imaginary unit, defined as <code>i² = -1</code></li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Operations on Complex Numbers:</h3>
+                <ul>
+                    <li><strong>Addition:</strong> <code>(a + bi) + (c + di) = (a + c) + (b + d)i</code></li>
+                    <li><strong>Subtraction:</strong> <code>(a + bi) - (c + di) = (a - c) + (b - d)i</code></li>
+                    <li><strong>Multiplication:</strong> <code>(a + bi) × (c + di) = ac - bd + (ad + bc)i</code>
+                        (since <code>i² = -1</code>)</li>
+                    <li><strong>Division:</strong> <code>(a + bi) / (c + di) = (a + bi)(c - di) / (c² + d²)</code>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Argand Plane (Complex Plane)</h2>
+                <p>The Argand plane is a way to represent complex numbers graphically.</p>
+                <ul>
+                    <li>The x-axis represents the real part.</li>
+                    <li>The y-axis represents the imaginary part.</li>
+                    <li>A complex number <code>z = a + bi</code> is plotted as the point <code>(a, b)</code> in the
+                        plane.</li>
+                </ul>
+
+                <h3>Examples:</h3>
+                <ul>
+                    <li><code>z = 3 + 4i</code> is plotted at <code>(3, 4)</code></li>
+                    <li><code>z = -2 - i</code> is plotted at <code>(-2, -1)</code></li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. Modulus of a Complex Number</h2>
+                <p>The <strong>modulus</strong> (absolute value) of a complex number <code>z = a + bi</code> is
+                    given by:</p>
+                <p><code>|z| = √(a² + b²)</code></p>
+                <p>It represents the distance from the origin in the Argand plane.</p>
+
+                <h3>Example:</h3>
+                <p>For <code>z = 3 + 4i</code>, the modulus is:</p>
+                <p><code>|z| = √(3² + 4²) = √(9 + 16) = √25 = 5</code></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iv. Argument of a Complex Number</h2>
+                <p>The <strong>argument</strong> (or phase) of a complex number is the angle <code>θ</code> it makes
+                    with the positive x-axis, given by:</p>
+                <p><code>θ = tan⁻¹(b / a)</code></p>
+                <ul>
+                    <li><strong>Principal argument:</strong> <code>-π < θ ≤ π</code></li>
+                    <li><strong>General argument:</strong> <code>θ + 2kπ, k ∈ Z</code></li>
+                </ul>
+
+                <h3>Example:</h3>
+                <p>For <code>z = 1 + i</code>, the argument is:</p>
+                <p><code>θ = tan⁻¹(1 / 1) = tan⁻¹(1) = π/4</code></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>v. Polar Form of a Complex Number</h2>
+                <p>A complex number can also be written in polar form:</p>
+                <p><code>z = r (cos θ + i sin θ)</code>, where:</p>
+                <ul>
+                    <li><code>r = |z|</code> is the modulus</li>
+                    <li><code>θ</code> is the argument</li>
+                </ul>
+
+                <h3>Example:</h3>
+                <p>For <code>z = 1 + i</code>:</p>
+                <ul>
+                    <li><code>r = √(1² + 1²) = √2</code></li>
+                    <li><code>θ = π/4</code></li>
+                </ul>
+                <p>Thus, <code>z = √2 (cos π/4 + i sin π/4)</code></p>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Quadratic">2. Quadratic Equations, Roots & Coefficients</h1>
+            <div class="topic-description">
+                <h2>i. Quadratic Equation</h2>
+                <p>A <strong>quadratic equation</strong> is a second-degree polynomial equation in a single
+                    variable, generally written in the form:</p>
+                <p><code>ax² + bx + c = 0</code>, where:</p>
+                <ul>
+                    <li><code>a</code>, <code>b</code>, and <code>c</code> are constants (real or complex numbers),
+                    </li>
+                    <li><code>x</code> is the variable,</li>
+                    <li><code>a ≠ 0</code> (because if <code>a = 0</code>, it becomes a linear equation).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Roots of a Quadratic Equation</h2>
+                <p>The roots of a quadratic equation are the values of <code>x</code> that satisfy the equation
+                    <code>ax² + bx + c = 0</code>. These can be found using various methods:
+                </p>
+                <ul>
+                    <li><strong>Factoring</strong> (when possible),</li>
+                    <li><strong>Completing the square</strong>,</li>
+                    <li><strong>Quadratic Formula:</strong> This is the most widely used method to find the roots,
+                        and it is derived from completing the square. The quadratic formula is given by:</li>
+                </ul>
+                <p><code>x = (-b ± √(b² - 4ac)) / 2a</code></p>
+                <p>Where:</p>
+                <ul>
+                    <li><code>b² - 4ac</code> is called the discriminant.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. Discriminant</h2>
+                <p>The <strong>discriminant</strong> (<code>Δ</code>) is the expression <code>b² - 4ac</code> under
+                    the square root in the quadratic formula. It provides information about the nature of the roots
+                    of the quadratic equation:</p>
+                <ul>
+                    <li>If <code>Δ > 0</code>: The equation has two real and distinct roots.</li>
+                    <li>If <code>Δ = 0</code>: The equation has two real and identical roots (or one real root).
+                    </li>
+                    <li>If <code>Δ < 0</code>: The equation has no real roots, but two complex roots.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iv. Relationship Between Roots and Coefficients (Vieta's Formula)</h2>
+                <p>For a quadratic equation <code>ax² + bx + c = 0</code>, the following relationships exist between
+                    the roots and coefficients:</p>
+                <ul>
+                    <li>Let the roots be <code>r₁</code> and <code>r₂</code>. From Vieta's formulas:</li>
+                    <li><strong>Sum of the roots:</strong> <code>r₁ + r₂ = -b / a</code></li>
+                    <li><strong>Product of the roots:</strong> <code>r₁ ⋅ r₂ = c / a</code></li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>v. Coefficients</h2>
+                <p>In a quadratic equation <code>ax² + bx + c = 0</code>:</p>
+                <ul>
+                    <li><code>a</code> is the coefficient of <code>x²</code>, determining the parabola's "width" and
+                        "direction."</li>
+                    <li><code>b</code> is the coefficient of <code>x</code>, affecting the slope and position of the
+                        parabola.</li>
+                    <li><code>c</code> is the constant term, determining the vertical position of the parabola.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+
+                <h2>vi. Properties of Quadratic Equations</h2>
+                <p>The graph of a quadratic equation is a parabola. The following are key properties:</p>
+                <ul>
+                    <li>If <code>a > 0</code>, the parabola opens upward, and if <code>a < 0</code>, it opens
+                        downward.</li>
+                    <li>The vertex of the parabola (the point where it reaches its maximum or minimum) occurs at:
+                    </li>
+                </ul>
+                <p><code>x = -b / 2a</code></p>
+                <p>At this point, the value of <code>y</code> (or the value of the quadratic equation) is given by:
+                </p>
+                <p><code>y = (4ac - b²) / 4a</code></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>vii. Example</h2>
+                <p>Solve the quadratic equation <code>2x² - 4x - 6 = 0</code>.</p>
+
+                <h3>Identify coefficients:</h3>
+                <ul>
+                    <li><code>a = 2</code>, <code>b = -4</code>, <code>c = -6</code></li>
+                </ul>
+
+                <h3>Find the discriminant:</h3>
+                <p><code>Δ = b² - 4ac = (-4)² - 4(2)(-6) = 16 + 48 = 64</code></p>
+
+                <h3>Find the roots using the quadratic formula:</h3>
+                <p><code>x = (-(-4) ± √64) / (2(2)) = (4 ± 8) / 4</code></p>
+                <ul>
+                    <li><code>x = (4 + 8) / 4 = 12 / 4 = 3</code></li>
+                    <li><code>x = (4 - 8) / 4 = -4 / 4 = -1</code></li>
+                </ul>
+                <p>Thus, the roots are <code>x = 3</code> and <code>x = -1</code>.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

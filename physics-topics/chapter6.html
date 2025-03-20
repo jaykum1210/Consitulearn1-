@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-physics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 6 - Gravitation</div>
+        <div class="topic-name">
+            <h1>1. Newton’s Law of Gravitation</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>Newton’s Law of Gravitation explains the force of attraction between any two masses in the
+                        universe.</li>
+                    <li>It is a universal law applicable to all objects, from small particles to massive celestial
+                        bodies.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Statement of Newton’s Law of Gravitation</h2>
+                <p>"Every particle in the universe attracts every other particle with a force that is directly
+                    proportional to the product of their masses and inversely proportional to the square of the distance
+                    between them."</p>
+                <p>Mathematically,</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>F</mi>
+                    <mo>=</mo>
+                    <mi>G</mi>
+                    <mfrac>
+                        <mrow>
+                            <mi>m</mi><sub>1</sub>
+                            <mi>m</mi><sub>2</sub>
+                        </mrow>
+                        <msup>
+                            <mi>r</mi>
+                            <mn>2</mn>
+                        </msup>
+                    </mfrac>
+                </math>
+                <p>where:</p>
+                <ul>
+                    <li><b>F</b> = Gravitational force between two masses.</li>
+                    <li><b>G</b> = Universal Gravitational Constant (6.674 × 10⁻¹¹ Nm²/kg²).</li>
+                    <li><b>m<sub>1</sub>, m<sub>2</sub></b> = Masses of the two objects.</li>
+                    <li><b>r</b> = Distance between the centers of the two objects.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Characteristics of Gravitational Force</h2>
+                <ul>
+                    <li><b>Attractive Force:</b> Gravity always pulls objects toward each other, never repels.</li>
+                    <li><b>Long-Range Force:</b> Gravity acts over infinite distances, though it weakens with increasing
+                        distance.</li>
+                    <li><b>Follows Inverse Square Law:</b> The force decreases as the square of the distance increases.
+                    </li>
+                    <li><b>Mutual Force:</b> Both objects experience the same magnitude of force.</li>
+                    <li><b>Weakest Fundamental Force:</b> Compared to other fundamental forces, gravity is the weakest.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Universal Gravitational Constant (G)</h2>
+                <ul>
+                    <li>Value: 6.674 × 10⁻¹¹ Nm²/kg².</li>
+                    <li>It is a fundamental constant of nature, the same everywhere in the universe.</li>
+                    <li>Experimentally determined by Henry Cavendish using the Torsion Balance Experiment in 1798.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Newton’s Law of Gravitation</h2>
+                <ul>
+                    <li>Explains planetary motion (Kepler’s Laws are derived from it).</li>
+                    <li>Helps in calculating the weight of objects on Earth and other planets.</li>
+                    <li>Used in satellite motion and space missions (e.g., GPS, ISS orbits).</li>
+                    <li>Helps in understanding tides caused by the Moon and the Sun.</li>
+                    <li>Used in astrophysics to study the motion of stars, galaxies, and black holes.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Variation of Gravitational Force</h2>
+                <h3>(i) Effect of Distance</h3>
+                <ul>
+                    <li>If distance is doubled (r' = 2r): F' = F/4 (force reduces to one-fourth).</li>
+                    <li>If distance is halved (r' = r/2): F' = 4F (force increases four times).</li>
+                </ul>
+
+                <h3>(ii) Effect of Mass</h3>
+                <ul>
+                    <li>If one mass is doubled (m<sub>1</sub>' = 2m<sub>1</sub>): F' = 2F (force doubles).</li>
+                    <li>If both masses are doubled (m<sub>1</sub>' = 2m<sub>1</sub>, m<sub>2</sub>' = 2m<sub>2</sub>):
+                        F' = 4F (force increases four times).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Gravitational Force vs. Electrostatic Force</h2>
+                <table>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Gravitational Force</th>
+                        <th>Electrostatic Force</th>
+                    </tr>
+                    <tr>
+                        <td>Nature</td>
+                        <td>Always attractive</td>
+                        <td>Can be attractive or repulsive</td>
+                    </tr>
+                    <tr>
+                        <td>Governing Law</td>
+                        <td>Inverse square law</td>
+                        <td>Coulomb’s Law</td>
+                    </tr>
+                    <tr>
+                        <td>Relative Strength</td>
+                        <td>Very weak</td>
+                        <td>Much stronger (~10³⁶ times)</td>
+                    </tr>
+                    <tr>
+                        <td>Acts Between</td>
+                        <td>All masses</td>
+                        <td>Charged particles</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Gravitational">2. Gravitational Potential and Field - Notes</h1>
+            <div class="topic-description">
+                <h2>i. Gravitational Field</h2>
+                <h3>Definition:</h3>
+                <p>The region around a mass where it exerts a gravitational force on other masses is called its
+                    gravitational field.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Gravitational Field Intensity (g)</h3>
+                <p>It is the force experienced by a unit mass placed in the gravitational field of another mass.</p>
+                <p>Mathematically,</p>
+                <p>g = F/m = GM/r²</p>
+                <p>where:</p>
+                <ul>
+                    <li>g = Gravitational field intensity.</li>
+                    <li>F = Gravitational force.</li>
+                    <li>m = Test mass.</li>
+                    <li>G = Universal gravitational constant.</li>
+                    <li>M = Mass of the object creating the field.</li>
+                    <li>r = Distance from the center of mass.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Properties of Gravitational Field:</h3>
+                <ul>
+                    <li>Vector Quantity: It has both magnitude and direction.</li>
+                    <li>Always Directed Toward the Mass: The field lines point inward toward the source mass.</li>
+                    <li>Follows Inverse Square Law: g ∝ 1/r².</li>
+                    <li>Independent of the Test Mass: Only depends on the source mass M.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Variation of g with Height and Depth:</h3>
+                <h4>(a). Above the Earth's Surface:</h4>
+                <p>g' = g (R / (R + h))²</p>
+                <p>As height h increases, g decreases.</p>
+
+                <h4>(b). Below the Earth's Surface:</h4>
+                <p>g' = g (1 - d/R)</p>
+                <p>At the Earth's center (d = R), g = 0.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Gravitational Potential</h2>
+                <h3>Definition:</h3>
+                <p>Gravitational potential at a point is the work done per unit mass in bringing a test mass from
+                    infinity to that point in the gravitational field.</p>
+
+                <p>Mathematically,</p>
+                <p>V = -GM/r</p>
+
+                <p>where:</p>
+                <ul>
+                    <li>V = Gravitational potential.</li>
+                    <li>G = Universal gravitational constant.</li>
+                    <li>M = Mass of the body creating the field.</li>
+                    <li>r = Distance from the center of the mass.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Properties of Gravitational Potential:</h3>
+                <ul>
+                    <li>Scalar Quantity: It has magnitude but no direction.</li>
+                    <li>Always Negative: Since work is done against gravity.</li>
+                    <li>Decreases with Distance: As r increases, V approaches zero.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Gravitational Potential Difference:</h3>
+                <p>The potential difference between two points is given by:</p>
+                <p>ΔV = V₂ - V₁ = -GM (1/r₂ - 1/r₁)</p>
+                <p>where r₁ and r₂ are the distances of the two points from the mass M.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. Gravitational Potential Energy (U)</h2>
+                <h3>Definition:</h3>
+                <p>The energy possessed by a mass due to its position in a gravitational field is called gravitational
+                    potential energy.</p>
+
+                <p>Mathematically,</p>
+                <p>U = mV = -GMm/r</p>
+
+                <p>where:</p>
+                <ul>
+                    <li>U = Gravitational potential energy.</li>
+                    <li>m = Test mass.</li>
+                    <li>V = Gravitational potential.</li>
+                </ul>
+
+                <h3>Key Points:</h3>
+                <ul>
+                    <li>Negative Value: Because work is required to separate masses against gravity.</li>
+                    <li>At Infinity, U = 0: Objects at an infinite distance have no gravitational potential energy.</li>
+                    <li>If r decreases, U becomes more negative, meaning stronger binding energy.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iv. Relationship Between Gravitational Field and Potential</h2>
+                <p>The gravitational field (g) and gravitational potential (V) are related as:</p>
+                <p>g = -dV/dr</p>
+                <p>This means:</p>
+                <ul>
+                    <li>The gravitational field is the negative gradient of gravitational potential.</li>
+                    <li>It shows how potential changes with distance.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>v. Equipotential Surfaces</h2>
+                <h3>Definition:</h3>
+                <p>A surface where gravitational potential is the same at every point.</p>
+
+                <h3>Characteristics:</h3>
+                <ul>
+                    <li>No work is done when moving along an equipotential surface.</li>
+                    <li>Equipotential surfaces are perpendicular to gravitational field lines.</li>
+                    <li>The surfaces become farther apart as distance from the mass increases.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>vi. Escape Velocity (vₑ)</h2>
+                <p>The minimum velocity required for an object to escape the gravitational field of a planet without
+                    further propulsion.</p>
+                <p>Derived using gravitational potential energy and kinetic energy:</p>
+                <p>vₑ = √(2GM/R)</p>
+                <p>For Earth, vₑ ≈ 11.2 km/s.</p>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Planetary">3. Kepler's Laws of Planetary Motion</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <p>Kepler’s Laws of Planetary Motion describe how planets move around the Sun. These laws were
+                    formulated by Johannes Kepler in the early 17th century based on the observations of Tycho Brahe.
+                </p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>i. Kepler’s First Law (Law of Ellipses)</h2>
+                <h3>Statement:</h3>
+                <p>A planet moves around the Sun in an elliptical orbit, with the Sun at one of the two foci of the
+                    ellipse.</p>
+
+                <h3>Explanation:</h3>
+                <ul>
+                    <li>Planets do not move in perfect circles but in elliptical paths.</li>
+                    <li>An ellipse has two foci, and the Sun is located at one of these foci.</li>
+                    <li>The closest point in the orbit to the Sun is called the Perihelion.</li>
+                    <li>The farthest point in the orbit from the Sun is called the Aphelion.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Mathematical Representation:</h3>
+                <p>The equation of an ellipse is:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mfrac>
+                        <msup>
+                            <mi>x</mi>
+                            <mn>2</mn>
+                        </msup>
+                        <msup>
+                            <mi>a</mi>
+                            <mn>2</mn>
+                        </msup>
+                    </mfrac>
+                    <mo>+</mo>
+                    <mfrac>
+                        <msup>
+                            <mi>y</mi>
+                            <mn>2</mn>
+                        </msup>
+                        <msup>
+                            <mi>b</mi>
+                            <mn>2</mn>
+                        </msup>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                </math>
+                <p>where:</p>
+                <ul>
+                    <li><b>a</b> = semi-major axis (longest radius).</li>
+                    <li><b>b</b> = semi-minor axis (shortest radius).</li>
+                </ul>
+
+                <h3>Implication:</h3>
+                <ul>
+                    <li>The distance between a planet and the Sun changes as it moves in its orbit.</li>
+                    <li>Not all orbits are highly elliptical; some are nearly circular (like Earth's orbit).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Kepler’s Second Law (Law of Equal Areas)</h2>
+                <h3>Statement:</h3>
+                <p>A line joining a planet and the Sun sweeps out equal areas in equal intervals of time.</p>
+
+                <h3>Explanation:</h3>
+                <ul>
+                    <li>When a planet is closer to the Sun (Perihelion), it moves faster.</li>
+                    <li>When a planet is farther from the Sun (Aphelion), it moves slower.</li>
+                    <li>The area swept per unit time remains constant.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Mathematical Representation:</h3>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mfrac>
+                        <mi>dA</mi>
+                        <mi>dt</mi>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mi>constant</mi>
+                </math>
+                <p>where <b>A</b> is the area swept and <b>t</b> is time.</p>
+
+                <h3>Implication:</h3>
+                <ul>
+                    <li>Planets move faster when closer to the Sun and slower when farther.</li>
+                    <li>This is due to conservation of angular momentum (<math>
+                            <mi>L</mi>
+                            <mo>=</mo>
+                            <mi>mvr</mi>
+                        </math>).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. Kepler’s Third Law (Law of Harmonies)</h2>
+                <h3>Statement:</h3>
+                <p>The square of the orbital period of a planet is directly proportional to the cube of the semi-major
+                    axis of its orbit.</p>
+                    <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Mathematical Representation:</h3>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msup>
+                        <mi>T</mi>
+                        <mn>2</mn>
+                    </msup>
+                    <mo>&#x221D;</mo>
+                    <msup>
+                        <mi>r</mi>
+                        <mn>3</mn>
+                    </msup>
+                </math>
+                <p>or</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mfrac>
+                        <msup>
+                            <mi>T</mi>
+                            <mn>2</mn>
+                        </msup>
+                        <msup>
+                            <mi>r</mi>
+                            <mn>3</mn>
+                        </msup>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mi>constant</mi>
+                </math>
+                <p>where:</p>
+                <ul>
+                    <li><b>T</b> = Time period of revolution.</li>
+                    <li><b>r</b> = Semi-major axis of orbit.</li>
+                </ul>
+
+                <p>For planetary motion around the Sun:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msup>
+                        <mi>T</mi>
+                        <mn>2</mn>
+                    </msup>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mn>4</mn>
+                            <msup>
+                                <mi>&#x3C0;</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <msup>
+                                <mi>r</mi>
+                                <mn>3</mn>
+                            </msup>
+                        </mrow>
+                        <mrow>
+                            <mi>G</mi>
+                            <mi>M</mi>
+                        </mrow>
+                    </mfrac>
+                </math>
+                <p>where <b>G</b> is the gravitational constant and <b>M</b> is the mass of the Sun.</p>
+
+                <h3>Implication:</h3>
+                <ul>
+                    <li>Planets farther from the Sun take longer to complete one orbit than planets closer to the Sun.
+                    </li>
+                    <li>The law applies to all celestial bodies, including moons orbiting planets.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Key Takeaways</h2>
+                <ul>
+                    <li>First Law: Planets move in elliptical orbits with the Sun at one focus.</li>
+                    <li>Second Law: Planets move faster when closer to the Sun and slower when farther.</li>
+                    <li>Third Law: The farther a planet is from the Sun, the longer its orbital period.</li>
+                </ul>
+
+                <p>Kepler’s Laws were later explained using Newton’s Law of Gravitation, which showed that these motions
+                    result from gravitational forces.</p>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Satellite">4. Satellite Motion - Notes</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <p>A satellite is an object that revolves around a planet or a star due to gravitational attraction. It
+                    can be natural (e.g., Moon around Earth) or artificial (e.g., communication satellites).</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Satellites</h2>
+                <ul>
+                    <li><b>Natural Satellites:</b> Objects like the Moon, which naturally orbit planets.</li>
+                    <li><b>Artificial Satellites:</b> Man-made objects launched into space for various purposes (GPS,
+                        communication, weather monitoring).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Orbital Motion of a Satellite</h2>
+                <p>A satellite moves in a circular or elliptical orbit due to the gravitational force exerted by the
+                    planet. The required centripetal force is provided by the gravitational attraction of the planet.
+                </p>
+                <p>Mathematical Formulation:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mfrac>
+                        <mrow>
+                            <mi>GMm</mi>
+                        </mrow>
+                        <mrow>
+                            <msup>
+                                <mi>r</mi>
+                                <mn>2</mn>
+                            </msup>
+                        </mrow>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mi>mv</mi>
+                            <msup>
+                                <mi>2</mi>
+                            </msup>
+                        </mrow>
+                        <mrow>
+                            <mi>r</mi>
+                        </mrow>
+                    </mfrac>
+                </math>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Orbital Velocity</h2>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>v</mi>
+                    <mo>=</mo>
+                    <msqrt>
+                        <mfrac>
+                            <mrow>
+                                <mi>GM</mi>
+                            </mrow>
+                            <mrow>
+                                <mi>r</mi>
+                            </mrow>
+                        </mfrac>
+                    </msqrt>
+                </math>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Time Period of a Satellite</h2>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msup>
+                        <mi>T</mi>
+                        <mn>2</mn>
+                    </msup>
+                    <mo>&#x221D;</mo>
+                    <msup>
+                        <mi>r</mi>
+                        <mn>3</mn>
+                    </msup>
+                </math>
+                <p>From derivation:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>T</mi>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mn>2</mn>
+                            <mi>&pi;</mi>
+                            <msqrt>
+                                <msup>
+                                    <mi>r</mi>
+                                    <mn>3</mn>
+                                </msup>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>GM</mi>
+                                    </mrow>
+                                </mfrac>
+                            </msqrt>
+                        </mrow>
+                    </mfrac>
+                </math>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Energy of a Satellite</h2>
+                <h3>Kinetic Energy (KE)</h3>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>KE</mi>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mn>1</mn>
+                        </mrow>
+                        <mrow>
+                            <mn>2</mn>
+                        </mrow>
+                    </mfrac>
+                    <mi>mv</mi>
+                    <msup>
+                        <mn>2</mn>
+                    </msup>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mi>GMm</mi>
+                        </mrow>
+                        <mrow>
+                            <mn>2</mn>
+                            <mi>r</mi>
+                        </mrow>
+                    </mfrac>
+                </math>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Gravitational Potential Energy (PE)</h3>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>PE</mi>
+                    <mo>=</mo>
+                    <mo>-</mo>
+                    <mfrac>
+                        <mrow>
+                            <mi>GMm</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>r</mi>
+                        </mrow>
+                    </mfrac>
+                </math>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Total Energy (E)</h3>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>E</mi>
+                    <mo>=</mo>
+                    <mi>KE</mi>
+                    <mo>+</mo>
+                    <mi>PE</mi>
+                    <mo>=</mo>
+                    <mo>-</mo>
+                    <mfrac>
+                        <mrow>
+                            <mi>GMm</mi>
+                        </mrow>
+                        <mrow>
+                            <mn>2</mn>
+                            <mi>r</mi>
+                        </mrow>
+                    </mfrac>
+                </math>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Escape Velocity</h2>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>v</mi>
+                    <msub>
+                        <mi>e</mi>
+                    </msub>
+                    <mo>=</mo>
+                    <msqrt>
+                        <mfrac>
+                            <mrow>
+                                <mn>2</mn>
+                                <mi>GM</mi>
+                            </mrow>
+                            <mrow>
+                                <mi>R</mi>
+                            </mrow>
+                        </mfrac>
+                    </msqrt>
+                </math>
+                <p>For Earth:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>v</mi>
+                    <msub>
+                        <mi>e</mi>
+                    </msub>
+                    <mo>&#x2248;</mo>
+                    <mn>11.2</mn>
+                    <mo>km/s</mo>
+                </math>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Orbits</h2>
+                <ul>
+                    <li><b>Geostationary Orbit:</b> Satellite appears stationary relative to Earth. Located at an
+                        altitude of 35,786 km above Earth. Used for communication (e.g., TV, GPS).</li>
+                    <li><b>Polar Orbit:</b> Passes over both poles of Earth. Covers entire Earth in one day. Used for
+                        weather monitoring and Earth observation.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Key Takeaways</h2>
+                <ul>
+                    <li>A satellite stays in orbit due to the balance between gravitational force and centripetal force.
+                    </li>
+                    <li>Orbital velocity depends on the mass of the planet and the radius of the orbit.</li>
+                    <li>Escape velocity is the minimum speed required to break free from gravitational pull.</li>
+                    <li>Different orbits serve different purposes (geostationary for communication, polar for
+                        surveillance).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

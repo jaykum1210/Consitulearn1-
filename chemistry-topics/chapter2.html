@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-chemistry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 2 - States of Matter</div>
+        <div class="topic-name">
+            <h1 id="Gases">1. Gases & Gas Laws</h1>
+            <div class="topic-description">
+                <h2>Introduction to Gases</h2>
+                <ul>
+                    <li>Gases are one of the fundamental states of matter, characterized by:</li>
+                    <ul>
+                        <li>No fixed shape or fixed volume.</li>
+                        <li>Particles that are far apart and move freely.</li>
+                        <li>Compressibility and ability to expand.</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Properties of Gases</h2>
+                <ul>
+                    <li><b>Mass:</b> Gases have mass, but they are much less dense than solids or liquids.</li>
+                    <li><b>Volume:</b> Gases expand to fill the entire container.</li>
+                    <li><b>Pressure (P):</b> Force exerted by gas molecules per unit area. Measured in atm, mmHg, or
+                        Pascal (Pa).</li>
+                    <li><b>Temperature (T):</b> Affects the kinetic energy of gas molecules. Measured in Kelvin (K).
+                    </li>
+                    <li><b>Density (ρ):</b> Defined as mass/volume (ρ = m/V).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Gas Laws</h2>
+                <ol style="list-style-type: lower-roman;">
+                    <li>
+                        <p><b>Boyle’s Law (Pressure-Volume Relationship)</b></p>
+                        <ul>
+                            <li>The volume of a gas is inversely proportional to its pressure at constant temperature.
+                            </li>
+                            <li>Formula: P₁V₁ = P₂V₂</li>
+                            <li>Graph: A hyperbolic curve (as pressure increases, volume decreases).</li>
+                            <li>Example: Squeezing a balloon reduces its volume.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Charles’ Law (Temperature-Volume Relationship)</b></p>
+                        <ul>
+                            <li>The volume of a gas is directly proportional to its absolute temperature (K) at constant
+                                pressure.</li>
+                            <li>Formula: V₁/T₁ = V₂/T₂</li>
+                            <li>Graph: A straight line (as temperature increases, volume increases).</li>
+                            <li>Example: A balloon expands when heated.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Gay-Lussac’s Law (Pressure-Temperature Relationship)</b></p>
+                        <ul>
+                            <li>The pressure of a gas is directly proportional to its absolute temperature at constant
+                                volume.</li>
+                            <li>Formula: P₁/T₁ = P₂/T₂</li>
+                            <li>Graph: A straight line (as temperature increases, pressure increases).</li>
+                            <li>Example: A sealed aerosol can may burst when heated.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Avogadro’s Law (Volume-Number of Molecules Relationship)</b></p>
+                        <ul>
+                            <li>The volume of a gas is directly proportional to the number of gas molecules at constant
+                                pressure and temperature.</li>
+                            <li>Formula: V₁/n₁ = V₂/n₂</li>
+                            <li>Example: Adding more gas to a balloon increases its size.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Ideal Gas Law</b></p>
+                        <ul>
+                            <li>Combining all gas laws:</li>
+                            <li>Formula: PV = nRT</li>
+                            <li>Where:
+                                <ul>
+                                    <li>P = Pressure (atm or Pa)</li>
+                                    <li>V = Volume (L or m³)</li>
+                                    <li>n = Number of moles</li>
+                                    <li>R = Gas constant (0.0821 L·atm/mol·K)</li>
+                                    <li>T = Temperature (K)</li>
+                                </ul>
+                            </li>
+                            <li>Example: Used to calculate unknown gas properties in experiments.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Dalton’s Law of Partial Pressures</h2>
+                <ul>
+                    <li>The total pressure of a gas mixture is equal to the sum of the partial pressures of individual
+                        gases.</li>
+                    <li>Formula: P<sub>total</sub> = P₁ + P₂ + P₃ + …</li>
+                    <li>Example: The pressure of oxygen and nitrogen in air contributes to atmospheric pressure.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Graham’s Law of Diffusion & Effusion</h2>
+                <ul>
+                    <li><b>Diffusion:</b> Spreading of gas molecules from high to low concentration.</li>
+                    <li><b>Effusion:</b> Movement of gas through a small hole without collisions.</li>
+                    <li>Law: The rate of diffusion/effusion is inversely proportional to the square root of its molar
+                        mass.</li>
+                    <li>Formula: r₁/r₂ = √(M₂/M₁)</li>
+                    <li>Example: Lighter gases (like hydrogen) diffuse faster than heavier gases (like oxygen).</li>
+                </ul>
+            </div>
+
+        </div>
+        <hr style="height: 3px; background-color: black; border: none; margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Liquids-Solids">2. Liquids & Solids</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <p>Liquids and solids are two of the fundamental states of matter. They differ in particle arrangement,
+                    movement, and intermolecular forces.</p>
+                <table>
+                    <tr>
+                        <th>Property</th>
+                        <th>Solids</th>
+                        <th>Liquids</th>
+                    </tr>
+                    <tr>
+                        <td>Shape</td>
+                        <td>Fixed</td>
+                        <td>Takes shape of container</td>
+                    </tr>
+                    <tr>
+                        <td>Volume</td>
+                        <td>Fixed</td>
+                        <td>Fixed</td>
+                    </tr>
+                    <tr>
+                        <td>Particle Arrangement</td>
+                        <td>Tightly packed</td>
+                        <td>Loosely packed</td>
+                    </tr>
+                    <tr>
+                        <td>Intermolecular Forces</td>
+                        <td>Strongest</td>
+                        <td>Moderate</td>
+                    </tr>
+                    <tr>
+                        <td>Compressibility</td>
+                        <td>Negligible</td>
+                        <td>Slightly compressible</td>
+                    </tr>
+                    <tr>
+                        <td>Fluidity</td>
+                        <td>Does not flow</td>
+                        <td>Flows easily</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Liquids</h2>
+                <h3>Properties of Liquids</h3>
+                <ul>
+                    <li>Definite volume but no fixed shape (takes the shape of the container).</li>
+                    <li>Fluidity (ability to flow).</li>
+                    <li>Surface tension (due to cohesive forces between molecules).</li>
+                    <li>Viscosity (resistance to flow, e.g., honey is more viscous than water).</li>
+                    <li>Capillary action (rise of liquid in narrow tubes due to adhesive and cohesive forces).</li>
+                </ul>
+
+                <h3>Intermolecular Forces in Liquids</h3>
+                <ul>
+                    <li><b>Dipole-Dipole Forces:</b> Present in polar molecules (e.g., H₂O, HCl).</li>
+                    <li><b>Hydrogen Bonding:</b> Strong force in molecules with H-F, H-O, H-N bonds (e.g., water).</li>
+                    <li><b>Van der Waals Forces (London Dispersion Forces):</b> Weak forces in non-polar molecules
+                        (e.g., O₂, N₂).</li>
+                </ul>
+
+                <h3>Vaporization & Boiling Point</h3>
+                <ul>
+                    <li><b>Vaporization:</b> Liquid to gas conversion.</li>
+                    <li><b>Boiling Point:</b> Temperature at which vapor pressure equals atmospheric pressure.</li>
+                    <li><b>Factors Affecting Boiling Point:</b>
+                        <ul>
+                            <li>Stronger intermolecular forces → Higher boiling point.</li>
+                            <li>Higher altitude → Lower boiling point.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Solids</h2>
+                <h3>Properties of Solids</h3>
+                <ul>
+                    <li>Definite shape and volume.</li>
+                    <li>High density and incompressibility.</li>
+                    <li>Strong intermolecular forces keep particles fixed in position.</li>
+                    <li>Rigid structure with minimal particle movement (vibrations).</li>
+                </ul>
+
+                <h3>Types of Solids</h3>
+                <p>Solids are classified into crystalline and amorphous solids.</p>
+                <table>
+                    <tr>
+                        <th>Property</th>
+                        <th>Crystalline Solids</th>
+                        <th>Amorphous Solids</th>
+                    </tr>
+                    <tr>
+                        <td>Particle Arrangement</td>
+                        <td>Regular, ordered</td>
+                        <td>Irregular, disordered</td>
+                    </tr>
+                    <tr>
+                        <td>Melting Point</td>
+                        <td>Sharp melting point</td>
+                        <td>Melts over a range</td>
+                    </tr>
+                    <tr>
+                        <td>Examples</td>
+                        <td>Salt (NaCl), Diamond, Quartz</td>
+                        <td>Glass, Rubber, Plastic</td>
+                    </tr>
+                </table>
+
+                <h3>Types of Crystalline Solids</h3>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Particles</th>
+                        <th>Bonding</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>Ionic Solids</td>
+                        <td>Ions</td>
+                        <td>Ionic bonds</td>
+                        <td>NaCl, KCl</td>
+                    </tr>
+                    <tr>
+                        <td>Covalent (Network) Solids</td>
+                        <td>Atoms</td>
+                        <td>Covalent bonds</td>
+                        <td>Diamond, Graphite, SiO₂</td>
+                    </tr>
+                    <tr>
+                        <td>Metallic Solids</td>
+                        <td>Metal atoms</td>
+                        <td>Metallic bonds</td>
+                        <td>Fe, Cu, Al</td>
+                    </tr>
+                    <tr>
+                        <td>Molecular Solids</td>
+                        <td>Molecules</td>
+                        <td>Van der Waals forces</td>
+                        <td>Ice (H₂O), CO₂ (Dry Ice)</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Phase Changes Between States</h2>
+                <ul>
+                    <li><b>Melting:</b> Solid → Liquid</li>
+                    <li><b>Freezing:</b> Liquid → Solid</li>
+                    <li><b>Vaporization:</b> Liquid → Gas</li>
+                    <li><b>Condensation:</b> Gas → Liquid</li>
+                    <li><b>Sublimation:</b> Solid → Gas (e.g., Dry Ice)</li>
+                    <li><b>Deposition:</b> Gas → Solid</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Transitions">3. Phase Transitions</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>Phase transitions are physical changes where a substance changes its state (solid, liquid, gas)
+                        due to temperature and pressure variations.</li>
+                    <li>These changes are reversible and involve energy exchange in the form of heat.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Phase Transitions</h2>
+                <table>
+                    <tr>
+                        <th>Phase Change</th>
+                        <th>From → To</th>
+                        <th>Energy Change</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>Melting</td>
+                        <td>Solid → Liquid</td>
+                        <td>Absorbs heat</td>
+                        <td>Ice melting into water</td>
+                    </tr>
+                    <tr>
+                        <td>Freezing</td>
+                        <td>Liquid → Solid</td>
+                        <td>Releases heat</td>
+                        <td>Water freezing into ice</td>
+                    </tr>
+                    <tr>
+                        <td>Vaporization</td>
+                        <td>Liquid → Gas</td>
+                        <td>Absorbs heat</td>
+                        <td>Water boiling into steam</td>
+                    </tr>
+                    <tr>
+                        <td>Condensation</td>
+                        <td>Gas → Liquid</td>
+                        <td>Releases heat</td>
+                        <td>Steam turning into water droplets</td>
+                    </tr>
+                    <tr>
+                        <td>Sublimation</td>
+                        <td>Solid → Gas</td>
+                        <td>Absorbs heat</td>
+                        <td>Dry ice turning into CO₂ gas</td>
+                    </tr>
+                    <tr>
+                        <td>Deposition</td>
+                        <td>Gas → Solid</td>
+                        <td>Releases heat</td>
+                        <td>Frost forming on a cold surface</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Explanation of Each Phase Transition</h2>
+                <ul>
+                    <li><b>Melting (Fusion)</b>
+                        <ul>
+                            <li>A solid absorbs heat energy, breaking intermolecular forces, and transitions to a
+                                liquid.</li>
+                            <li>Occurs at melting point (e.g., Ice melts at 0°C).</li>
+                        </ul>
+                    </li>
+                    <li><b>Freezing (Solidification)</b>
+                        <ul>
+                            <li>A liquid loses heat energy, forming stronger intermolecular forces, and turns into a
+                                solid.</li>
+                            <li>Occurs at freezing point (same as melting point for pure substances).</li>
+                        </ul>
+                    </li>
+                    <li><b>Vaporization (Boiling & Evaporation)</b>
+                        <ul>
+                            <li><b>Boiling:</b> Rapid vaporization at boiling point (100°C for water at 1 atm).</li>
+                            <li><b>Evaporation:</b> Slow vaporization at any temperature below boiling point.</li>
+                        </ul>
+                    </li>
+                    <li><b>Condensation</b>
+                        <ul>
+                            <li>Gas loses heat and turns into a liquid (reverse of vaporization).</li>
+                            <li>Example: Water droplets forming on a cold glass.</li>
+                        </ul>
+                    </li>
+                    <li><b>Sublimation</b>
+                        <ul>
+                            <li>A solid directly changes into a gas without becoming a liquid.</li>
+                            <li>Example: Dry ice (solid CO₂) sublimates at room temperature.</li>
+                        </ul>
+                    </li>
+                    <li><b>Deposition</b>
+                        <ul>
+                            <li>A gas directly turns into a solid without passing through the liquid phase.</li>
+                            <li>Example: Frost formation on a window.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Energy Changes in Phase Transitions</h2>
+                <ul>
+                    <li><b>Endothermic (Absorbs Heat):</b> Melting, Vaporization, Sublimation.</li>
+                    <li><b>Exothermic (Releases Heat):</b> Freezing, Condensation, Deposition.</li>
+                </ul>
+                <h3>Latent Heat</h3>
+                <ul>
+                    <li><b>Latent Heat of Fusion (ΔH<sub>fus</sub>):</b> Heat required to convert solid → liquid.</li>
+                    <li><b>Latent Heat of Vaporization (ΔH<sub>vap</sub>):</b> Heat required to convert liquid → gas.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Phase Diagram</h2>
+                <p>A phase diagram shows the relationship between temperature, pressure, and phase changes.</p>
+                <h3>Key Points on a Phase Diagram:</h3>
+                <ul>
+                    <li><b>Triple Point:</b> The temperature & pressure where solid, liquid, and gas coexist in
+                        equilibrium.</li>
+                    <li><b>Critical Point:</b> The temperature & pressure above which the gas and liquid phase become
+                        indistinguishable (supercritical fluid).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

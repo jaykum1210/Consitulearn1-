@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-physics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 19 - Electronic Devices</div>
+        <div class="topic-name">
+            <h1>1. Logic Gates</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>Logic gates are the building blocks of digital circuits.</li>
+                    <li>They perform Boolean operations (AND, OR, NOT, etc.) on binary inputs and produce a single
+                        binary
+                        output.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Basic Logic Gates</h2>
+                <h3>i. NOT Gate (Inverter)</h3>
+                <ul>
+                    <li>Operation: Reverses the input (0 → 1, 1 → 0).</li>
+                    <li>Boolean Expression: Y = A&#773;</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Input (A)</th>
+                        <th>Output (Y)</th>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+
+                <h3>ii. AND Gate</h3>
+                <ul>
+                    <li>Operation: Output is 1 only if both inputs are 1.</li>
+                    <li>Boolean Expression: Y = A &middot; B</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>Y (A &middot; B)</th>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+
+                <h3>iii. OR Gate</h3>
+                <ul>
+                    <li>Operation: Output is 1 if at least one input is 1.</li>
+                    <li>Boolean Expression: Y = A + B</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>Y (A + B)</th>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Universal Logic Gates</h2>
+                <h3>iv. NAND Gate (NOT + AND)</h3>
+                <ul>
+                    <li>Operation: Output is 0 only if both inputs are 1.</li>
+                    <li>Boolean Expression: Y = (A &middot; B)&#773;</li>
+                </ul>
+                <h3>v. NOR Gate (NOT + OR)</h3>
+                <ul>
+                    <li>Operation: Output is 1 only if both inputs are 0.</li>
+                    <li>Boolean Expression: Y = (A + B)&#773;</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Special Logic Gates</h2>
+                <h3>vi. XOR Gate (Exclusive OR)</h3>
+                <ul>
+                    <li>Operation: Output is 1 only if inputs are different.</li>
+                    <li>Boolean Expression: Y = A ⊕ B = A&#773; B + A B&#773;</li>
+                </ul>
+                <h3>vii. XNOR Gate (Exclusive NOR)</h3>
+                <ul>
+                    <li>Operation: Output is 1 only if inputs are the same.</li>
+                    <li>Boolean Expression: Y = (A ⊕ B)&#773;</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Logic Gates</h2>
+                <ul>
+                    <li>Computers & Microprocessors – Basic components of CPUs.</li>
+                    <li>Digital Circuits – Used in ALUs, registers, and memory.</li>
+                    <li>Automated Systems – Traffic lights, burglar alarms.</li>
+                    <li>Arithmetic Circuits – Adders, subtractors.</li>
+                    <li>Control Systems – Elevators, washing machines.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Semiconductor">2. Semiconductor Devices (Diodes, Transistors)</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <p>Semiconductor devices are electronic components made from materials like silicon and germanium that
+                    have
+                    properties between conductors and insulators. They are widely used in modern electronics, such as
+                    computers, mobile phones, and power systems.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Semiconductors and Their Types</h2>
+                <h3>Intrinsic Semiconductors (Pure Semiconductors)</h3>
+                <ul>
+                    <li>Made of pure silicon (Si) or germanium (Ge).</li>
+                    <li>Conductivity is low due to the absence of free charge carriers.</li>
+                    <li>At room temperature, some electrons gain energy and move to the conduction band, creating
+                        electron-hole pairs.</li>
+                </ul>
+                <h3>Extrinsic Semiconductors (Doped Semiconductors)</h3>
+                <ul>
+                    <li>Doped with impurities to increase conductivity.</li>
+                    <li><b>n-Type Semiconductor:</b> Doped with a pentavalent impurity (e.g., Phosphorus, Arsenic).
+                        Extra
+                        free electrons act as majority carriers.</li>
+                    <li><b>p-Type Semiconductor:</b> Doped with a trivalent impurity (e.g., Boron, Aluminium). Creates
+                        holes
+                        as majority carriers.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Diodes (p-n Junction Devices) </h2>
+                <h3>p-n Junction Formation</h3>
+                <ul>
+                    <li>A p-type and n-type semiconductor are joined together.</li>
+                    <li>Electrons and holes combine at the junction, forming a depletion region with no free charge
+                        carriers.</li>
+                </ul>
+                <h3>Biasing of a Diode</h3>
+                <ul>
+                    <li><b>Forward Bias:</b> p-side connected to positive, n-side to negative → Current flows.</li>
+                    <li><b>Reverse Bias:</b> p-side connected to negative, n-side to positive → No current flows.</li>
+                </ul>
+                <h3>Types of Diodes</h3>
+                <ul>
+                    <li><b>Zener Diode</b> – Used for voltage regulation.</li>
+                    <li><b>Light Emitting Diode (LED)</b> – Converts electricity into light.</li>
+                    <li><b>Photodiode</b> – Converts light into electricity.</li>
+                    <li><b>Schottky Diode</b> – High-speed switching.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Transistors (BJT & FET) </h2>
+                <h3>Bipolar Junction Transistor (BJT)</h3>
+                <ul>
+                    <li>Has three regions: Emitter (E), Base (B), Collector (C).</li>
+                    <li><b>NPN Transistor:</b> Current flows from collector to emitter.</li>
+                    <li><b>PNP Transistor:</b> Current flows from emitter to collector.</li>
+                    <li><b>Modes of Operation:</b>
+                        <ul>
+                            <li>Cut-off Region – Transistor is OFF (No current).</li>
+                            <li>Active Region – Used for amplification.</li>
+                            <li>Saturation Region – Used for switching applications.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Field Effect Transistor (FET)</h3>
+                <ul>
+                    <li>Controls current with electric field.</li>
+                    <li>Has three terminals: Source (S), Drain (D), Gate (G).</li>
+                    <li><b>Junction FET (JFET):</b> Voltage-controlled resistor.</li>
+                    <li><b>Metal Oxide Semiconductor FET (MOSFET):</b> Used in microprocessors.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Semiconductor Devices</h2>
+                <ul>
+                    <li><b>Diodes:</b> Rectifiers, LED lighting, voltage regulators.</li>
+                    <li><b>Transistors:</b> Amplifiers, logic circuits, microprocessors.</li>
+                    <li><b>FETs & MOSFETs:</b> High-speed switching, memory devices.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

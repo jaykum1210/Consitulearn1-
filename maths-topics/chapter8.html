@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-maths.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 8 - Integral Calculus</div>
+        <div class="topic-name">
+            <h1>1. Indefinite & Definite Integrals</h1>
+
+            <div class="topic-description">
+                <h2>Indefinite Integral (Antiderivative)</h2>
+                <ul>
+                    <li>The indefinite integral represents a family of functions whose derivative is the given
+                        function. It is also called the antiderivative because it essentially "reverses"
+                        differentiation.</li>
+                </ul>
+
+                <h3>Definition</h3>
+                <ul>
+                    <li>∫f(x) dx = F(x) + C</li>
+                    <p>Where:</p>
+                    <ul>
+                        <li>f(x) is the integrand (the function to be integrated).</li>
+                        <li>F(x) is the antiderivative of f(x), i.e., F'(x) = f(x).</li>
+                        <li>C is the constant of integration, representing the fact that there are infinitely many
+                            antiderivatives.</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Basic Rules</h3>
+                <ul>
+                    <li><b>Power Rule:</b> ∫xⁿ dx = (xⁿ⁺¹) / (n+1) + C (for n ≠ -1)</li>
+                    <li><b>Constant Rule:</b> ∫c dx = c * x + C</li>
+                    <li><b>Sum/Difference Rule:</b> ∫(f(x) ± g(x)) dx = ∫f(x) dx ± ∫g(x) dx</li>
+                    <li><b>Exponential Rule:</b> ∫eˣ dx = eˣ + C</li>
+                    <li><b>Trigonometric Functions:</b>
+                        <ul>
+                            <li>∫sin(x) dx = -cos(x) + C</li>
+                            <li>∫cos(x) dx = sin(x) + C</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Definite Integral</h2>
+                <p>The definite integral computes the signed area under the curve of a function between two specific
+                    limits, a and b. Unlike the indefinite integral, the definite integral results in a numerical
+                    value rather than a function.</p>
+
+                <h3>Definition</h3>
+                <ul>
+                    <li>∫<sub>a</sub><sup>b</sup> f(x) dx = F(b) - F(a)</li>
+                    <p>Where:</p>
+                    <ul>
+                        <li>f(x) is the integrand.</li>
+                        <li>F(x) is an antiderivative of f(x).</li>
+                        <li>a and b are the limits of integration.</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Interpretation</h3>
+                <p>The definite integral represents the net area between the curve f(x) and the x-axis over the
+                    interval [a, b]. If the curve lies above the axis, the area is positive; if it lies below, the
+                    area is negative.</p>
+
+                <h3>Properties</h3>
+                <ul>
+                    <li><b>Additivity:</b> ∫<sub>a</sub><sup>b</sup> f(x) dx + ∫<sub>b</sub><sup>c</sup> f(x) dx =
+                        ∫<sub>a</sub><sup>c</sup> f(x) dx</li>
+                    <li><b>Reversal of Limits:</b> ∫<sub>a</sub><sup>b</sup> f(x) dx = -∫<sub>b</sub><sup>a</sup>
+                        f(x) dx</li>
+                    <li><b>Constant Factor:</b> ∫<sub>a</sub><sup>b</sup> c ⋅ f(x) dx = c ⋅
+                        ∫<sub>a</sub><sup>b</sup> f(x) dx</li>
+                    <li><b>Zero Integral:</b> If f(x) = 0, then ∫<sub>a</sub><sup>b</sup> 0 dx = 0</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Fundamental Theorem of Calculus</h2>
+                <p>The Fundamental Theorem of Calculus connects the concepts of differentiation and integration. It
+                    has two parts:</p>
+                <ul>
+                    <li><b>Part 1:</b> If f(x) is continuous on [a, b] and F(x) is an antiderivative of f(x), then:
+                        ∫<sub>a</sub><sup>b</sup> f(x) dx = F(b) - F(a)</li>
+                    <li><b>Part 2:</b> If F(x) is defined as the integral of f(x) from a to x, then F'(x) = f(x).
+                        This shows that differentiation and integration are inverse operations.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Examples</h2>
+                <h3>Indefinite Integral:</h3>
+                <p>∫3x² dx = x³ + C</p>
+                <p>Here, f(x) = 3x², and the antiderivative is x³, with the constant of integration C.</p>
+
+                <h3>Definite Integral:</h3>
+                <p>∫<sub>1</sub><sup>3</sup> x² dx</p>
+                <p>First, find the antiderivative of x², which is x³/3. Then, evaluate the definite integral:</p>
+                <p>[x³/3]<sub>1</sub><sup>3</sup> = (27/3) - (1/3) = 26/3</p>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Properties">2. Properties and Applications of Definite Integrals: Areas Under Curves</h1>
+
+            <div class="topic-description">
+                <h2>Properties of Definite Integrals</h2>
+
+                <h3>Additivity Property</h3>
+                <p>If a function <i>f(x)</i> is continuous on an interval <span>[a, c]</span>, then the definite
+                    integral over this interval can be split into the sum of integrals over subintervals:</p>
+                <pre>∫<sub>a</sub><sup>c</sup> f(x) dx = ∫<sub>a</sub><sup>b</sup> f(x) dx + ∫<sub>b</sub><sup>c</sup> f(x) dx</pre>
+                <p>This allows you to break down a large integral into smaller, more manageable parts.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Reversal of Limits</h3>
+                <p>Reversing the limits of integration changes the sign of the integral:</p>
+                <pre>∫<sub>a</sub><sup>b</sup> f(x) dx = -∫<sub>b</sub><sup>a</sup> f(x) dx</pre>
+                <p>This property ensures consistency when switching the order of integration.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Linearity</h3>
+                <p>If <i>f(x)</i> and <i>g(x)</i> are functions and <i>c</i> is a constant, then:</p>
+                <pre>∫<sub>a</sub><sup>b</sup> [c f(x) + g(x)] dx = c ∫<sub>a</sub><sup>b</sup> f(x) dx + ∫<sub>a</sub><sup>b</sup> g(x) dx</pre>
+                <p>This property allows you to separate terms in an integral and factor out constants.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Zero Integral</h3>
+                <p>If the function <i>f(x) = 0</i> over the interval <span>[a, b]</span>, the integral is zero:</p>
+                <pre>∫<sub>a</sub><sup>b</sup> 0 dx = 0</pre>
+                <p>This is because there is no area under the curve of the zero function.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Non-negativity</h3>
+                <p>If <i>f(x)</i> is non-negative on the interval <span>[a, b]</span>, then the integral will also
+                    be non-negative:</p>
+                <pre>f(x) ≥ 0 ⇒ ∫<sub>a</sub><sup>b</sup> f(x) dx ≥ 0</pre>
+                <p>This is because the area under the curve is always positive or zero.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Fundamental Theorem of Calculus</h3>
+                <p>If <i>f(x)</i> is continuous on <span>[a, b]</span> and <i>F(x)</i> is an antiderivative of
+                    <i>f(x)</i>, then:
+                </p>
+                <pre>∫<sub>a</sub><sup>b</sup> f(x) dx = F(b) - F(a)</pre>
+                <p>This links the concept of differentiation and integration.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Definite Integrals: Areas Under Curves</h2>
+
+                <h3>i. Area Between a Curve and the X-Axis</h3>
+                <p>To find the area between a curve <i>y = f(x)</i> and the x-axis from <i>x = a</i> to <i>x =
+                        b</i>, we compute the definite integral:</p>
+                <pre>Area = ∫<sub>a</sub><sup>b</sup> f(x) dx</pre>
+                <p>This represents the net area under the curve. If <i>f(x)</i> is above the x-axis, the area is
+                    positive; if <i>f(x)</i> is below the x-axis, the area is negative.</p>
+
+                <h4>Example:</h4>
+                <p>Find the area under the curve <i>f(x) = x²</i> from <i>x = 1</i> to <i>x = 3</i>.</p>
+                <pre>∫<sub>1</sub><sup>3</sup> x² dx = [x³ / 3]<sub>1</sub><sup>3</sup> = (27 / 3) - (1 / 3) = 26 / 3</pre>
+                <p>Thus, the area under the curve from <i>x = 1</i> to <i>x = 3</i> is <i>26 / 3</i>.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>ii. Area Between Two Curves</h3>
+                <p>To find the area between two curves, say <i>y = f(x)</i> and <i>y = g(x)</i>, the formula is:</p>
+                <pre>Area = ∫<sub>a</sub><sup>b</sup> [f(x) - g(x)] dx</pre>
+                <p>This gives the area between the two curves from <i>x = a</i> to <i>x = b</i>, where <i>f(x) ≥
+                        g(x)</i>.</p>
+
+                <h4>Example:</h4>
+                <p>Find the area between the curves <i>y = x²</i> and <i>y = x</i> from <i>x = 0</i> to <i>x =
+                        1</i>.</p>
+                <pre>Area = ∫<sub>0</sub><sup>1</sup> [x - x²] dx = [(x² / 2) - (x³ / 3)]<sub>0</sub><sup>1</sup> = (1 / 2 - 1 / 3) - (0) = 1 / 6</pre>
+                <p>Thus, the area between the curves from <i>x = 0</i> to <i>x = 1</i> is <i>1 / 6</i>.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>iii. Area with Respect to the Y-Axis</h3>
+                <p>If the curve is expressed in terms of <i>y = f(x)</i>, and we want to find the area with respect
+                    to the y-axis, the integral is set up differently:</p>
+                <pre>Area = ∫<sub>y₁</sub><sup>y₂</sup> f<sup>-1</sup>(y) dy</pre>
+                <p>Where <i>f<sup>-1</sup>(y)</i> is the inverse function.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+
+                <h3>iv. Average Value of a Function</h3>
+                <p>The average value of a function <i>f(x)</i> over the interval <span>[a, b]</span> is given by:
+                </p>
+                <pre>Average value of f(x) = (1 / (b - a)) ∫<sub>a</sub><sup>b</sup> f(x) dx</pre>
+                <p>This gives the mean height of the function over the interval.</p>
+
+                <h4>Example:</h4>
+                <p>Find the average value of <i>f(x) = x²</i> from <i>x = 1</i> to <i>x = 3</i>.</p>
+                <pre>Average value = (1 / (3 - 1)) ∫<sub>1</sub><sup>3</sup> x² dx = (1 / 2) × (26 / 3) = 13 / 3</pre>
+                <p>The average value of <i>f(x) = x²</i> over the interval <i>[1, 3]</i> is <i>13 / 3</i>.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

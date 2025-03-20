@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-physics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 3 - Laws of Motion</div>
+        <div class="topic-name">
+            <h1>1. Motion in One Dimension</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <p>Newton’s Laws of Motion, formulated by <b>Sir Isaac Newton in 1687</b>, describe the relationship
+                    between the motion of an object and the forces acting on it. These laws are fundamental in
+                    understanding classical mechanics and apply to everything from everyday movements to planetary
+                    motion.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Newton’s First Law of Motion – Law of Inertia</h2>
+                <h3>Statement:</h3>
+                <p><i>"An object at rest stays at rest, and an object in motion continues in uniform motion in a
+                        straight line unless acted upon by an external unbalanced force."</i></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Explanation:</h3>
+                <ul>
+                    <li>If no net external force acts on an object, its state of motion remains unchanged.</li>
+                    <li>This means that an object will remain at rest if it was initially at rest, and it will continue
+                        moving at a constant velocity if it was already in motion.</li>
+                    <li>This tendency of an object to resist changes in its motion is called inertia.</li>
+                </ul>
+                <h3>Examples:</h3>
+                <ul>
+                    <li>A book on a table remains at rest unless someone pushes it.</li>
+                    <li>A moving bus stops suddenly, and passengers jerk forward due to inertia. </li>
+                    <li>A coin placed on a card above a glass falls straight into the glass when the card is quickly
+                        pulled away.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Mathematical Form:</h3>
+                <p>Since no external force is acting, acceleration is zero:</p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F=0⇒a=0<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v=constant
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Inertia and Mass:</h3>
+                <ul>
+                    <li>Inertia is the property of an object that resists changes in its motion.</li>
+                    <li>Mass is a measure of inertia; heavier objects have greater inertia than lighter ones.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Newton’s Second Law of Motion – Law of Force and Acceleration</h2>
+                <p><b>Statement:</b></p>
+                <p><i>"The rate of change of momentum of an object is directly proportional to the applied force and
+                        takes place in the direction of the force."</i></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Mathematical Expression:</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>F</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>d</mi>
+                                <mi>p</mi>
+                            </mrow>
+                            <mrow>
+                                <mi>d</mi>
+                                <mi>t</mi>
+                            </mrow>
+                        </mfrac>
+                    </math>
+                </p>
+
+                <p><b>Since momentum (<math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>p</mi>
+                        </math>) is given by:</b></p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>p</mi>
+                        <mo>=</mo>
+                        <mi>m</mi>
+                        <mi>v</mi>
+                    </math>
+                </p>
+
+                <p><b>Differentiating with respect to time:</b></p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>F</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>d</mi>
+                                <mo>(</mo>
+                                <mi>m</mi>
+                                <mi>v</mi>
+                                <mo>)</mo>
+                            </mrow>
+                            <mrow>
+                                <mi>d</mi>
+                                <mi>t</mi>
+                            </mrow>
+                        </mfrac>
+                    </math>
+                </p>
+                <p><b>For constant mass:</b></p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>F</mi>
+                        <mo>=</mo>
+                        <mi>m</mi>
+                        <mfrac>
+                            <mrow>
+                                <mi>d</mi>
+                                <mi>v</mi>
+                            </mrow>
+                            <mrow>
+                                <mi>d</mi>
+                                <mi>t</mi>
+                            </mrow>
+                        </mfrac>
+                        <mo>=</mo>
+                        <mi>m</mi>
+                        <mi>a</mi>
+                    </math></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Explanation:</h3>
+                <ul>
+                    <li>A force is required to change an object’s velocity (i.e., to accelerate it).</li>
+                    <li>The greater the force applied, the greater the acceleration.</li>
+                    <li>A larger mass requires a larger force to achieve the same acceleration.</li>
+                </ul>
+                <h3>Examples:</h3>
+                <ol>
+                    <li>Pushing a car vs. a bicycle: A car requires a greater force to accelerate than a bicycle.</li>
+                    <li>Kicking a football: A harder kick (greater force) results in a greater acceleration of the ball.
+                    </li>
+                    <li>Stopping a fast-moving vehicle: A larger force (stronger brakes) is required to bring a speeding
+                        vehicle to rest.</li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Special Cases:</h3>
+                <ol>
+                    <li>If force is zero, then acceleration is zero, meaning the object will move with constant velocity
+                        (First Law).</li>
+                    <li>If mass is constant, then acceleration is directly proportional to force:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        a∝F
+                    </li>
+                    <li>If force is constant, then acceleration is inversely proportional to mass:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <b><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>a</mi>
+                                <mo>&#8733;</mo> <!-- Proportionality symbol -->
+                                <mfrac>
+                                    <mn>1</mn>
+                                    <mi>m</mi>
+                                </mfrac>
+                            </math>
+                        </b>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Newton’s Third Law of Motion – Action and Reaction</h2>
+                <h3>Statement:</h3>
+                <p><i>"For every action, there is an equal and opposite reaction."</i></p>
+                <p><b>Explanation:</b></p>
+                <ul>
+                    <li>When one object exerts a force on another, the second object exerts an equal force in the
+                        opposite direction.</li>
+                    <li>These action and reaction forces always occur in pairs and act on different objects.</li>
+                    <li>They are equal in magnitude but opposite in direction.</li>
+                </ul>
+                <h3>Examples:</h3>
+                <ul>
+                    <li>Walking: When we push the ground backward with our feet (action), the ground pushes us forward
+                        (reaction).</li>
+                    <li>Recoil of a gun: When a bullet is fired, the gun moves backward due to the reaction force.</li>
+                    <li>Rocket propulsion: The exhaust gases push downward (action), and the rocket moves upward
+                        (reaction).</li>
+                    <li>Swimming: A swimmer pushes water backward, and water pushes them forward.</li>
+                </ul>
+                <h3>Mathematical Form:</h3>
+                <p>If F₁ is the force exerted by object A on object B, and F₂ is the force exerted by B on A, then:</p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub>
+                        <mi>F</mi>
+                        <mn>1</mn>
+                    </msub>
+                    <mo>=</mo>
+                    <mo>-</mo>
+                    <msub>
+                        <mi>F</mi>
+                        <mn>2</mn>
+                    </msub>
+                </math>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Newton’s Laws of Motion</h2>
+                <ol>
+                    <li>
+                        <b>In Daily Life:</b>
+                        <ul>
+                            <li>Seatbelts in cars (First Law – inertia).</li>
+                            <li>Cycling and skating (Second Law – force and acceleration).</li>
+                            <li>Jumping off a boat (Third Law – action and reaction).</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b> In Engineering & Technology:</b>
+                        <ul>
+                            <li>Bridges and buildings are designed considering Newton’s laws.</li>
+                            <li>Vehicle braking systems apply Newton’s Second Law.</li>
+                            <li>Rocket launch works based on the Third Law.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b> In Space and Astronomy:</b>
+                        <ul>
+                            <li>Satellites stay in orbit due to inertia and gravitational force.</li>
+                            <li>Planets revolve around the Sun due to Newton’s laws and gravitational force.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <hr style="height: 3px; background-color: black; border: none;">
+            <h1 id="Friction">2. Friction</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <p>Friction is a force that opposes the relative motion or the tendency of motion between two surfaces
+                    in contact. It acts parallel to the contact surface and is opposite to the direction of motion.
+                    Friction plays a crucial role in everyday life, enabling walking, driving, and even writing.
+                </p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Friction</h2>
+                <p>Friction is classified into different types based on the nature of motion:</p>
+                <ol>
+                    <hr style="height: 1px; background-color: black; border: none;">
+                    <li>
+                        <p><b>Static Friction<math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <msub>
+                                        <mi>f</mi>
+                                        <mi>s</mi>
+                                    </msub>
+                                </math></b></p>
+                        <ul>
+                            <li>The force that prevents an object from moving when a force is applied.</li>
+                            <li>It acts up to a maximum limit known as limiting friction.</li>
+                            <li>When the applied force exceeds this limit, motion starts.<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <msub>
+                                        <mi>f</mi>
+                                        <mi>s</mi>
+                                    </msub>
+                                    <mo>&le;</mo>
+                                    <msub>
+                                        <mi>&mu;</mi>
+                                        <mi>s</mi>
+                                    </msub>
+                                    <mi>N</mi>
+                                </math>
+                            </li>
+                            <p>where,</p>
+                            <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <msub>
+                                        <mi>&mu;</mi>
+                                        <mi>s</mi>
+                                    </msub>
+                                    <mo>=</mo>
+                                </math> Coefficient of static friction,
+                            </p>
+                            <p></p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>N</mi>
+                                <mo>=</mo>
+                            </math> Normal reaction force.
+                            </p>
+                        </ul>
+                        <p>Example: A heavy box on the floor does not move until a certain force is applied.</p>
+                    </li>
+                <hr style="height: 1px; background-color: black; border: none;">
+                    <li>
+                        <p><b>Kinetic (Sliding) Friction<math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                    <mi>f</mi>
+                                    <mi>k</mi>
+                                </msub>
+                            </math></b></p>
+                        <ul>
+                            <li>The force that acts when an object is already in motion.</li>
+                            <li>It is always less than static friction.<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <msub>
+                                        <mi>f</mi>
+                                        <mi>k</mi>
+                                    </msub>
+                                    <mo>=</mo>
+                                    <msub>
+                                        <mi>&mu;</mi>
+                                        <mi>k</mi>
+                                    </msub>
+                                    <mi>N</mi>
+                                </math>
+                            </li>
+                            <p>where,</p>
+                            <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <msub>
+                                        <mi>&mu;</mi>
+                                        <mi>k</mi>
+                                    </msub>
+                                    <mo>=</mo>
+                                </math> Coefficient of kinetic friction.</p>
+                        </ul>
+                        <p>Example: A moving book on a table slows down due to friction.</p>
+                    </li>
+                <hr style="height: 1px; background-color: black; border: none;">
+                    <li>
+                        <p><b>Rolling Friction <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                    <mi>f</mi>
+                                    <mi>r</mi>
+                                </msub>
+                            </math></b></p>
+                        <ul>
+                            <li>The force that opposes the rolling motion of an object.</li>
+                            <li>It is much smaller than sliding friction.<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <msub>
+                                        <mi>f</mi>
+                                        <mi>r</mi>
+                                    </msub>
+                                    <mo>=</mo>
+                                    <msub>
+                                        <mi>&mu;</mi>
+                                        <mi>r</mi>
+                                    </msub>
+                                    <mi>N</mi>
+                                </math>
+
+                            </li>
+                            <p>where,</p>
+                            <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <msub>
+                                        <mi>&mu;</mi>
+                                        <mi>r</mi>
+                                    </msub>
+                                    <mo>=</mo>
+                                </math> Coefficient of rolling friction.</p>
+
+                        </ul>
+                        Example: Rolling a ball on the ground is easier than sliding a book.
+                    </li>
+                <hr style="height: 1px; background-color: black; border: none;">
+                    <li><b>Fluid Friction (Viscous Force)</b>
+                        <ul>
+                            <li>The resistance offered by fluids (liquids or gases) to the motion of an object moving
+                                through them.</li>
+                            <li>Depends on velocity, shape, and viscosity of the fluid.</li>
+                        </ul>
+                        <p>Example: Swimming in water or air resistance on a moving car.</p>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Causes of Friction</h2>
+                <ol>
+                    <li>Irregularities of Surfaces – Microscopic roughness interlocks surfaces.</li>
+                    <li>Molecular Adhesion – When surfaces come into contact, molecular forces cause attraction.</li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Laws of Friction</h2>
+                <ul>
+                    <li>Friction depends on the nature of surfaces in contact.</li>
+                    <li>Friction is independent of the area of contact.</li>
+                    <li>Static friction is greater than kinetic friction.</li>
+                    <li>Friction is directly proportional to normal force (N):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>f=μN</b>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Advantages of Friction</h2>
+                <ul>
+                    <li>Helps in walking without slipping.</li>
+                    <li>Essential for vehicles to move and stop.</li>
+                    <li>Allows us to write using a pen or pencil.</li>
+                    <li>Provides grip between objects.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Disadvantages of Friction</h2>
+                <ul>
+                    <li>Causes wear and tear in machines.</li>
+                    <li>Produces unwanted heat and energy loss.</li>
+                    <li>Reduces efficiency in mechanical systems.</li>
+                    <li>Opposes motion, requiring extra energy.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Methods to Reduce Friction</h2>
+                <ul>
+                    <li>Lubrication – Oil or grease reduces surface roughness.</li>
+                    <li>Polishing – Smoother surfaces reduce friction.</li>
+                    <li>Use of Ball Bearings – Rolling friction is lower than sliding friction.</li>
+                    <li>Streamlining Shapes – Reduces air/water resistance in vehicles and aircraft.</li>
+                </ul>
+            </div>
+            <hr style="height: 3px; background-color: black; border: none;">
+            <h1 id="Circular-motion">3.Circular Motion Dynamics</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <p>Circular motion refers to the motion of an object along a circular path. The study of forces and
+                    dynamics involved in circular motion is called Circular Motion Dynamics.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Circular Motion</h2>
+                <p>Circular motion can be categorized based on speed and external forces:</p>
+                <ol>
+                    <li>
+                        <b>Uniform Circular Motion (UCM)</b>
+                        <ul>
+                            <li>The motion of an object in a circular path with a constant speed.</li>
+                            <li>Although speed is constant, velocity changes due to the continuous change in direction.
+                            </li>
+                            <li>
+                                The acceleration responsible for this motion is called centripetal acceleration.<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <msub>
+                                        <mi>a</mi>
+                                        <mi>c</mi>
+                                    </msub>
+                                    <mo>=</mo>
+                                    <mfrac>
+                                        <msup>
+                                            <mi>v</mi>
+                                            <mn>2</mn>
+                                        </msup>
+                                        <mi>r</mi>
+                                    </mfrac>
+                                </math>
+                            </li>
+                        </ul>
+                        <p>where,</p>
+                        <p>v = speed of the object,</p>
+                        <p>r = radius of the circular path.</p>
+                        <p>Example: A satellite orbiting the Earth.</p>
+                    </li>
+                    <li>
+                        <b>Non-Uniform Circular Motion</b>
+                        <ol>
+                            <li>The speed of the object changes while moving in a circular path.</li>
+                            <li>The object experiences both centripetal acceleration and tangential acceleration.</li>
+                        </ol>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Kinematics of Circular Motion</h2>
+                <p>In circular motion, displacement, velocity, and acceleration can be expressed in angular form:</p>
+                <ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                    <li>Angular Displacement: Angle covered by the object in radians.
+                        </math><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>&theta;</mi>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mi>s</mi>
+                                <mi>r</mi>
+                            </mfrac>
+                        </math>
+                        <p>where,</p>
+                        <p>s = arc length,</p>
+                        <p>r = radius.</p>
+                    </li>
+                <hr style="height: 1px; background-color: black; border: none;">
+                    <li>
+                        Angular Velocity: Rate of change of angular displacement.
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math
+                                xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>&omega;</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>d</mi>
+                                        <mi>&theta;</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>d</mi>
+                                        <mi>t</mi>
+                                    </mrow>
+                                </mfrac>
+                            </math></p>
+                        <p>For uniform circular motion,</p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math
+                                xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>&omega;</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mn>2</mn>
+                                        <mi>&pi;</mi>
+                                    </mrow>
+                                    <mi>T</mi>
+                                </mfrac>
+                            </math></p>
+                        <p>where T is the time period.</p>
+                    </li>
+                <hr style="height: 1px; background-color: black; border: none;">
+                    <li>
+                        Angular Acceleration (α): Rate of change of angular velocity.
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math
+                                xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>&alpha;</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>d</mi>
+                                        <mi>&omega;</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>d</mi>
+                                        <mi>t</mi>
+                                    </mrow>
+                                </mfrac>
+                            </math></p>
+                        <p>For non-uniform circular motion,<math xmlns="http://www.w3.org/1998/Math/MathML">
+
+                                <mi>&alpha;</mi>
+                                <mo>&#8800;</mo>
+                                <mn>0</mn>.
+                            </math></p>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Dynamics of Circular Motion</h2>
+                <ol>
+                    <li>Centripetal Force
+                        <ul>
+                            <li>A force directed towards the center of the circular path that keeps an object moving in
+                                a circle.</li>
+                            <li>Without it, the object would move in a straight line due to inertia.
+                                <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                        <msub>
+                                            <mi>F</mi>
+                                            <mi>c</mi>
+                                        </msub>
+                                        <mo>=</mo>
+                                        <mfrac>
+                                            <mrow>
+                                                <mi>m</mi>
+                                                <msup>
+                                                    <mi>v</mi>
+                                                    <mn>2</mn>
+                                                </msup>
+                                            </mrow>
+                                            <mi>r</mi>
+                                        </mfrac>
+                                    </math></p>
+                                <p>or,</p>
+                                <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                        <msub>
+                                            <mi>F</mi>
+                                            <mi>c</mi>
+                                        </msub>
+                                        <mo>=</mo>
+                                        <mi>m</mi>
+                                        <msup>
+                                            <mi>&omega;</mi>
+                                            <mn>2</mn>
+                                        </msup>
+                                        <mi>r</mi>
+                                    </math></p>
+                                <p>where,</p>
+                                <p>m = mass of the object,</p>
+                                <p>v = linear speed,</p>
+                                <p>ω = angular velocity,</p>
+                                <p>r = radius.</p>
+                                <p><b>Examples:</b>
+                                <ul>
+                                    <li>Gravitational force acts as a centripetal force in planetary motion.</li>
+                                    <li>Friction provides centripetal force when a car takes a turn.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Centrifugal Force (Pseudo Force)
+                                <ul>
+                                    <li>An apparent force observed in a rotating frame of reference.</li>
+                                    <li>Acts outward away from the center of rotation.
+                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math
+                                                xmlns="http://www.w3.org/1998/Math/MathML">
+                                                <msub>
+                                                    <mi>F</mi>
+                                                    <mi>cf</mi>
+                                                </msub>
+                                                <mo>=</mo>
+                                                <mfrac>
+                                                    <mrow>
+                                                        <mi>m</mi>
+                                                        <msup>
+                                                            <mi>v</mi>
+                                                            <mn>2</mn>
+                                                        </msup>
+                                                    </mrow>
+                                                    <mi>r</mi>
+                                                </mfrac>
+                                            </math></p>
+
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>Example: Feeling pushed outward when taking a sharp turn in a car.</p>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Circular Motion</h2>
+                <ol>
+                    <li>Banking of Roads – Roads are inclined at an angle to provide necessary centripetal force for
+                        vehicles.</li>
+                    <li>Motion of Satellites – Satellites remain in orbit due to gravitational centripetal force.</li>
+                    <li>Roller Coasters – Centripetal force keeps the ride on track.</li>
+                    <li>Centrifuges – Used in laboratories to separate substances based on mass.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

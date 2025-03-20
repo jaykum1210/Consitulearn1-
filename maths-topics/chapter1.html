@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-maths.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 1 - Sets, Relations & Functions</div>
+        <div class="topic-name">
+            <h1>1. Sets, Operations, and Power Set</h1>
+            <div class="topic-description">
+                <h2>i. Sets</h2>
+                <p>A <strong>set</strong> is a collection of distinct objects, called elements, written inside
+                    <code>{}</code>.
+                </p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Types of Sets:</h3>
+                <ul>
+                    <li><strong>Empty Set (∅):</strong> A set with no elements.</li>
+                    <li><strong>Finite & Infinite Sets:</strong> A set with a countable or uncountable number of
+                        elements.</li>
+                    <li><strong>Subset (⊆):</strong> A set A is a subset of B if all elements of A are in B.</li>
+                    <li><strong>Proper Subset (⊂):</strong> A subset that is not equal to the given set.</li>
+                    <li><strong>Power Set:</strong> The set of all subsets of a given set.</li>
+                    <li><strong>Universal Set (U):</strong> A set containing all elements under discussion.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Operations on Sets</h2>
+                <ul>
+                    <li><strong>Union (∪):</strong> A set containing all elements from A and B. <br> Example: If
+                        <code>A = {1,2,3}</code>, <code>B = {3,4,5}</code>, then <code>A ∪ B = {1,2,3,4,5}</code>
+                    </li>
+                    <li><strong>Intersection (∩):</strong> A set containing common elements of A and B. <br>
+                        Example: <code>A ∩ B = {3}</code></li>
+                    <li><strong>Difference (-):</strong> A set containing elements in A but not in B. <br> Example:
+                        <code>A - B = {1,2}</code>
+                    </li>
+                    <li><strong>Complement (A’):</strong> Elements in the universal set but not in A.</li>
+                    <li><strong>Symmetric Difference (Δ):</strong> Elements in either A or B but not both. <br>
+                        Example: <code>A Δ B = {1,2,4,5}</code></li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. Power Set</h2>
+                <p><strong>Definition:</strong> The set of all subsets of a given set.</p>
+                <p><strong>Formula:</strong> If A has <code>n</code> elements, then <code>P(A)</code> has
+                    <code>2^n</code> subsets.
+                </p>
+                <p><strong>Example:</strong> If <code>A = {1,2}</code>, then
+                    <code>P(A) = {∅, {1}, {2}, {1,2}}</code>.
+                </p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Properties:</h3>
+                <ul>
+                    <li>Always includes <code>{}</code> and the set itself.</li>
+                    <li>If <code>|A| = n</code>, then <code>|P(A)| = 2^n</code>.</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none; margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Relations">2. Relations</h1>
+            <div class="topic-description">
+                <p>A <strong>relation</strong> between two sets A and B is a subset of their Cartesian product
+                    <code>A × B</code>. It defines a relationship between elements of A and B.
+                </p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Relations</h2>
+                <ul>
+                    <li><strong>Empty Relation:</strong> No element of A is related to any element of B.</li>
+                    <li><strong>Universal Relation:</strong> Every element of A is related to every element of B.
+                    </li>
+                    <li><strong>Reflexive Relation:</strong> If <code>(a, a) ∈ R</code> for every
+                        <code>a ∈ A</code>.
+                    </li>
+                    <li><strong>Symmetric Relation:</strong> If <code>(a, b) ∈ R</code> implies
+                        <code>(b, a) ∈ R</code>.
+                    </li>
+                    <li><strong>Transitive Relation:</strong> If <code>(a, b) ∈ R</code> and
+                        <code>(b, c) ∈ R</code>, then <code>(a, c) ∈ R</code>.
+                    </li>
+                    <li><strong>Equivalence Relation:</strong> A relation that is reflexive, symmetric, and
+                        transitive.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Equivalence Relation</h2>
+                <p>A relation <code>R</code> on a set <code>A</code> is an equivalence relation if it satisfies:</p>
+                <ul>
+                    <li><strong>Reflexivity:</strong> <code>(a, a) ∈ R</code> for all <code>a ∈ A</code></li>
+                    <li><strong>Symmetry:</strong> If <code>(a, b) ∈ R</code>, then <code>(b, a) ∈ R</code></li>
+                    <li><strong>Transitivity:</strong> If <code>(a, b) ∈ R</code> and <code>(b, c) ∈ R</code>, then
+                        <code>(a, c) ∈ R</code>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Example:</h3>
+                <p>Consider a relation <code>R</code> on set <code>A = {1,2,3,4}</code> defined by
+                    <code>a R b</code> if <code>a mod 2 = b mod 2</code>.
+                </p>
+
+                <ul>
+                    <li><strong>Reflexive:</strong> Every element is related to itself.</li>
+                    <li><strong>Symmetric:</strong> If <code>a R b</code>, then <code>b R a</code>.</li>
+                    <li><strong>Transitive:</strong> If <code>a R b</code> and <code>b R c</code>, then
+                        <code>a R c</code>.
+                    </li>
+                </ul>
+                <p>Thus, <code>R</code> is an equivalence relation.</p>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Functions">3. Functions: One-One, Onto, and Composition</h1>
+            <div class="topic-description">
+                <p>A <strong>function</strong> is a special type of relation where each element of a set A (domain)
+                    is assigned exactly one element of a set B (codomain). It is denoted as:</p>
+                <p><code>f: A → B</code>, where A is the domain, B is the codomain, and <code>f(x)</code> is the
+                    output for each <code>x</code> in A.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>i. One-One (Injective) Function</h2>
+                <p>A function is called <strong>one-one</strong> (injective) if different elements in A map to
+                    different elements in B. This means no two different inputs have the same output.</p>
+
+                <p><strong>Mathematical Definition:</strong> If <code>f(a1) = f(a2)</code>, then
+                    <code>a1 = a2</code> (If outputs are the same, then inputs must also be the same).
+                </p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Example:</h3>
+                <p>Let <code>f(x) = 2x + 3</code>. If <code>f(a1) = f(a2)</code>, then
+                    <code>2a1 + 3 = 2a2 + 3</code>, which simplifies to <code>a1 = a2</code>. Since different values
+                    of <code>x</code> give different outputs, it is one-one.
+                </p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Graphical Representation:</h3>
+                <p>A function is one-one if any horizontal line cuts the graph at most once.</p>
+                <ul>
+                    <li><code>f(x) = x</code> and <code>f(x) = e^x</code> are one-one.</li>
+                    <li><code>f(x) = x²</code> is not one-one because <code>f(-x) = f(x)</code>.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Onto (Surjective) Function</h2>
+                <p>A function is called <strong>onto</strong> (surjective) if every element in the codomain B has at
+                    least one preimage in domain A. This means that the function covers all elements of B.</p>
+
+                <p><strong>Mathematical Definition:</strong> For every <code>b ∈ B</code>, there exists an
+                    <code>a ∈ A</code> such that <code>f(a) = b</code>.
+                </p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Example:</h3>
+                <p>Let <code>f(x) = x³</code> from <code>ℝ → ℝ</code>. Since every real number has a cube root,
+                    every <code>y ∈ ℝ</code> has a preimage <code>x = y³</code>. Thus, the function is onto.</p>
+
+                <h3>Graphical Representation:</h3>
+                <p>A function is onto if its graph covers the entire range of the codomain.</p>
+                <ul>
+                    <li><code>f(x) = x²</code> from <code>ℝ → ℝ</code> is not onto since negative numbers are
+                        missing from the range.</li>
+                    <li><code>f(x) = x³</code> is onto, as it covers all real numbers.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. One-One and Onto (Bijective) Function</h2>
+                <p>A function is called <strong>bijective</strong> if it is both one-one and onto.</p>
+
+                <h3>Properties of a Bijective Function:</h3>
+                <ul>
+                    <li>It has a unique output for every input (one-one).</li>
+                    <li>It covers the entire codomain (onto).</li>
+                    <li>It has an inverse function <code>f⁻¹</code> such that <code>f⁻¹(f(x)) = x</code>.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Example:</h3>
+                <p><code>f(x) = x + 2</code> from <code>ℝ → ℝ</code> is bijective, since it is both injective and
+                    surjective.</p>
+                <p><code>f(x) = x²</code> is not bijective because it is neither one-one nor onto.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iv. Composition of Functions</h2>
+                <p>The composition of functions is applying one function after another. If we have two functions:
+                </p>
+                <ul>
+                    <li><code>f: A → B</code></li>
+                    <li><code>g: B → C</code></li>
+                </ul>
+                <p>Then the composition is written as:</p>
+                <p><code>(g ∘ f)(x) = g(f(x))</code>, meaning that we first apply <code>f(x)</code>, then apply
+                    <code>g(x)</code> to the result.
+                </p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Example of Function Composition:</h3>
+                <p>Let:</p>
+                <ul>
+                    <li><code>f(x) = x + 2</code></li>
+                    <li><code>g(x) = x²</code></li>
+                </ul>
+                <p>Then, <code>(g ∘ f)(x) = g(f(x)) = (x + 2)²</code></p>
+
+                <h3>Properties of Function Composition:</h3>
+                <ul>
+                    <li><strong>Associativity:</strong> <code>(h ∘ g) ∘ f = h ∘ (g ∘ f)</code> — Applying functions
+                        in different orders gives the same result.</li>
+                    <li><strong>Identity Function:</strong> <code>I(x) = x</code>, if <code>I(x)</code> is the
+                        identity function, then <code>f ∘ I = I ∘ f = f</code>.</li>
+                    <li><strong>Inverse Function:</strong> If <code>f: A → B</code> and <code>g: B → A</code> such
+                        that <code>g(f(x)) = x</code>, then <code>g</code> is the inverse of <code>f</code>.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Example of Inverse Function:</h3>
+                <p>If <code>f(x) = 2x + 3</code>, then solving for <code>x</code> gives <code>x = (y - 3)/2</code>,
+                    and thus <code>f⁻¹(x) = (x - 3)/2</code>.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

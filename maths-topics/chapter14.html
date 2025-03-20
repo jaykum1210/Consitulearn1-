@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-maths.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 14 - Probability</div>
+        <div class="topic-name">
+            <h1>1. Basics of Probability</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>Probability is a branch of mathematics that deals with the likelihood or chance of an event
+                        happening. It is used to predict the outcome of uncertain events and is a fundamental
+                        concept in statistics, mathematics, and various fields like finance, engineering, and
+                        science.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Basic Terms in Probability</h2>
+                <ul>
+                    <li><b>Experiment:</b> A process or action that results in an outcome. Example: Tossing a coin,
+                        rolling a die.</li>
+                    <li><b>Sample Space (S):</b> The set of all possible outcomes of an experiment. Example: For a
+                        coin toss, the sample space is <i>S = {H, T}</i>, where <i>H</i> stands for heads and
+                        <i>T</i> for tails.
+                    </li>
+                    <li><b>Event:</b> A specific outcome or a set of outcomes from the sample space. Example:
+                        "Getting a head" is an event in the coin toss experiment.</li>
+                    <li><b>Outcome:</b> A specific result of an experiment. Example: "Heads" is an outcome in a coin
+                        toss.</li>
+                    <li><b>Favorable Outcomes:</b> The outcomes in the sample space that satisfy the event.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Probability of an Event</h2>
+                <ul>
+                    <li>The probability of an event is a number between 0 and 1 that indicates how likely the event
+                        is to occur.</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>P</mi>
+                        <mo>(</mo>
+                        <mi>A</mi>
+                        <mo>)</mo>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>Number of favorable outcomes</mi>
+                            </mrow>
+                            <mrow>
+                                <mi>Total number of outcomes in sample space</mi>
+                            </mrow>
+                        </mfrac>
+                    </math>
+                    <p>Where:</p>
+                    <ul>
+                        <li><b>P(A)</b> is the probability of event <b>A</b>.</li>
+                        <li>The value of <b>P(A)</b> ranges from 0 to 1:</li>
+                        <ul>
+                            <li><b>P(A) = 0:</b> The event will not occur.</li>
+                            <li><b>P(A) = 1:</b> The event is certain to occur.</li>
+                            <li><b>0 < P(A) < 1:</b> The event has a certain likelihood of occurring.</li>
+                        </ul>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Events</h2>
+                <ul>
+                    <li><b>Simple Event:</b> An event with a single outcome. Example: Rolling a 3 on a die.</li>
+                    <li><b>Compound Event:</b> An event with more than one outcome. Example: Getting an even number
+                        on a die (i.e., 2, 4, or 6).</li>
+                    <li><b>Mutually Exclusive Events:</b> Two events that cannot happen at the same time. Example:
+                        Getting a head and a tail on a single coin toss.</li>
+                    <li><b>Independent Events:</b> Two events where the occurrence of one does not affect the other.
+                        Example: Tossing two coins.</li>
+                    <li><b>Dependent Events:</b> Two events where the occurrence of one affects the other. Example:
+                        Drawing cards from a deck without replacement.</li>
+                    <li><b>Complementary Events:</b> Two events that cover all possible outcomes of an experiment,
+                        such that one event happening means the other does not. Example: "It will rain" and "It will
+                        not rain" are complementary events.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Basic Probability Rules</h2>
+                <ul>
+                    <li><b>Addition Rule:</b> For two mutually exclusive events, the probability of either event
+                        happening is the sum of their individual probabilities.</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>P</mi>
+                        <mo>(</mo>
+                        <mi>A</mi>
+                        <mo>or</mo>
+                        <mi>B</mi>
+                        <mo>)</mo>
+                        <mo>=</mo>
+                        <mi>P</mi>
+                        <mo>(</mo>
+                        <mi>A</mi>
+                        <mo>)</mo>
+                        <mo>+</mo>
+                        <mi>P</mi>
+                        <mo>(</mo>
+                        <mi>B</mi>
+                        <mo>)</mo>
+                    </math>
+                    <p>If <b>A</b> and <b>B</b> are mutually exclusive.</p>
+
+                    <li><b>Multiplication Rule:</b> For two independent events, the probability of both events
+                        happening is the product of their individual probabilities.</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>P</mi>
+                        <mo>(</mo>
+                        <mi>A</mi>
+                        <mo>and</mo>
+                        <mi>B</mi>
+                        <mo>)</mo>
+                        <mo>=</mo>
+                        <mi>P</mi>
+                        <mo>(</mo>
+                        <mi>A</mi>
+                        <mo>)</mo>
+                        <mo>&#215;</mo>
+                        <mi>P</mi>
+                        <mo>(</mo>
+                        <mi>B</mi>
+                        <mo>)</mo>
+                    </math>
+                    <p>If <b>A</b> and <b>B</b> are independent events.</p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Examples</h2>
+                <ul>
+                    <li><b>Coin Toss:</b></li>
+                    <ul>
+                        <li>Sample space: <i>S = {H, T}</i> (heads, tails).</li>
+                        <li>Probability of getting heads (<i>H</i>) in one toss: <math
+                                xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>P</mi>
+                                <mo>(</mo>
+                                <mi>H</mi>
+                                <mo>)</mo>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>1</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>2</mi>
+                                    </mrow>
+                                </mfrac>
+                            </math> because there is one favorable outcome (heads) and two possible outcomes (heads
+                            or tails).</li>
+                    </ul>
+                    <hr style="height: 1px; background-color: black; border: none;">
+                    <li><b>Rolling a Die:</b></li>
+                    <ul>
+                        <li>Sample space: <i>S = {1, 2, 3, 4, 5, 6}</i>.</li>
+                        <li>Probability of rolling a 3: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>P</mi>
+                                <mo>(</mo>
+                                <mi>3</mi>
+                                <mo>)</mo>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>1</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>6</mi>
+                                    </mrow>
+                                </mfrac>
+                            </math> because there is one favorable outcome (rolling a 3) and six possible outcomes
+                            (1 through 6).</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Important Probability Theorems</h2>
+                <ul>
+                    <li><b>Law of Total Probability:</b> If a sample space is divided into mutually exclusive events
+                        <i>A₁, A₂, …, Aₙ</i>, then the probability of any event <i>B</i> is the sum of the
+                        probabilities of <i>B</i> happening with each <i>Aᵢ</i>:
+                    </li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>P</mi>
+                        <mo>(</mo>
+                        <mi>B</mi>
+                        <mo>)</mo>
+                        <mo>=</mo>
+                        <mi>P</mi>
+                        <mo>(</mo>
+                        <mi>B</mi>
+                        <mo>|</mo>
+                        <mi>A</mi>
+                        <mo>₁</mo>
+                        <mo>)</mo>
+                        <mi>P</mi>
+                        <mo>(</mo>
+                        <mi>A</mi>
+                        <mo>₁</mo>
+                        <mo>)</mo>
+                        <mo>+</mo>
+                        <mi>P</mi>
+                        <mo>(</mo>
+                        <mi>B</mi>
+                        <mo>|</mo>
+                        <mi>A</mi>
+                        <mo>₂</mo>
+                        <mo>)</mo>
+                        <mi>P</mi>
+                        <mo>(</mo>
+                        <mi>A</mi>
+                        <mo>₂</mo>
+                        <mo>)</mo>
+                        <mo>+</mo>
+                        <mi>⋯</mi>
+                    </math>
+
+                    <li><b>Bayes' Theorem:</b> This theorem provides a way to update the probability of an event,
+                        based on new evidence:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>P</mi>
+                        <mo>(</mo>
+                        <mi>A</mi>
+                        <mo>|</mo>
+                        <mi>B</mi>
+                        <mo>)</mo>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>P</mi>
+                                <mo>(</mo>
+                                <mi>B</mi>
+                                <mo>|</mo>
+                                <mi>A</mi>
+                                <mo>)</mo>
+                                <mi>P</mi>
+                                <mo>(</mo>
+                                <mi>A</mi>
+                                <mo>)</mo>
+                            </mrow>
+                            <mrow>
+                                <mi>P</mi>
+                                <mo>(</mo>
+                                <mi>B</mi>
+                                <mo>)</mo>
+                            </mrow>
+                        </mfrac>
+                    </math>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Probability</h2>
+                <ul>
+                    <li><b>In Everyday Life:</b> Predicting weather, planning for risks, and assessing chances of
+                        events.</li>
+                    <li><b>In Gambling:</b> Understanding the odds in games of chance like poker, roulette, etc.
+                    </li>
+                    <li><b>In Statistics:</b> Used to model uncertainty and analyze random events.</li>
+                    <li><b>In Machine Learning:</b> Probability forms the basis for models like Naive Bayes,
+                        Bayesian networks, and probabilistic graphical models.</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Bayes">2. Bayes' Theorem</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>Bayes' Theorem is a fundamental concept in probability theory that describes how to update
+                        the probability of a hypothesis based on new evidence.</li>
+                    <li>Formula:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>P</mi>
+                                <mi>A</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>P</mi>
+                                    <mi>B|A</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>P</mi>
+                                    <mi>B</mi>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Formula for Bayes' Theorem</h2>
+                <ul>
+                    <li>The formula for Bayes' Theorem is:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>P</mi>
+                            <mi>A|B</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>P</mi>
+                                <mi>B|A</mi>
+                                <mo>&#8901;</mo>
+                                <mi>P</mi>
+                                <mi>A</mi>
+                            </mrow>
+                            <mrow>
+                                <mi>P</mi>
+                                <mi>B</mi>
+                            </mrow>
+                        </mfrac>
+                    </math>
+                    <li>Where:
+                        <ul>
+                            <li><b>P(A|B)</b> is the posterior probability: the probability of event A occurring
+                                given that event B has occurred.</li>
+                            <li><b>P(B|A)</b> is the likelihood: the probability of event B occurring given that
+                                event A is true.</li>
+                            <li><b>P(A)</b> is the prior probability: the initial probability of event A before
+                                considering event B.</li>
+                            <li><b>P(B)</b> is the evidence or marginal likelihood: the total probability of event B
+                                occurring under all possible scenarios.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Steps to Use Bayes' Theorem</h2>
+                <ul>
+                    <li><b>Identify the events:</b> Determine what events A and B represent in your problem.</li>
+                    <li><b>Calculate the prior probability:</b> Find P(A), the probability of A occurring before
+                        considering new evidence.</li>
+                    <li><b>Calculate the likelihood:</b> Find P(B|A), the probability of observing new evidence B if
+                        A is true.</li>
+                    <li><b>Calculate the evidence:</b> Find P(B), the total probability of observing evidence B,
+                        considering all possible events.</li>
+                    <li><b>Apply Bayes' Formula:</b> Use the formula to update the probability of A given the new
+                        evidence B.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example</h2>
+                <p>Consider a factory producing two types of products:</p>
+                <ul>
+                    <li>Type A: 80% of production</li>
+                    <li>Type B: 20% of production</li>
+                </ul>
+                <p>We are given that the probability of a defective product is:</p>
+                <ul>
+                    <li>P(B|A) = 0.01 (probability that Type A is defective)</li>
+                    <li>P(B|B) = 0.05 (probability that Type B is defective)</li>
+                </ul>
+                <p>A product is randomly selected and found to be defective. What is the probability that it is Type
+                    A?</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Solution:</h3>
+                <ul>
+                    <li><b>Prior Probability:</b> P(A) = 0.8 (since 80% of products are Type A)</li>
+                    <li><b>Likelihood:</b> P(B|A) = 0.01 (probability that Type A is defective)</li>
+                    <li><b>Evidence:</b> The total probability of a defective product is calculated as:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>P</mi>
+                                <mi>B</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <mrow>
+                                <mi>P</mi>
+                                <mi>B|A</mi>
+                                <mo>&#8901;</mo>
+                                <mi>P</mi>
+                                <mi>A</mi>
+                            </mrow>
+                            <mo>+</mo>
+                            <mrow>
+                                <mi>P</mi>
+                                <mi>B|B</mi>
+                                <mo>&#8901;</mo>
+                                <mi>P</mi>
+                                <mi>B</mi>
+                            </mrow>
+                        </math>
+                        = (0.01 * 0.8) + (0.05 * 0.2) = 0.008 + 0.01 = 0.018
+                    </li>
+                    <li><b>Posterior Probability:</b> Now apply Bayes' Theorem:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>P</mi>
+                                <mi>A|B</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>P</mi>
+                                    <mi>B|A</mi>
+                                    <mo>&#8901;</mo>
+                                    <mi>P</mi>
+                                    <mi>A</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>P</mi>
+                                    <mi>B</mi>
+                                </mrow>
+                            </mfrac>
+                            = (0.01 * 0.8) / 0.018 ≈ 0.444
+                        </math>
+                        Thus, the probability that the defective product is Type A is approximately 44.4%.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Key Points of Bayes' Theorem</h2>
+                <ul>
+                    <li><b>Prior Knowledge:</b> Bayes' Theorem allows you to update the probability of an event
+                        based on new evidence.</li>
+                    <li><b>Reversing Conditional Probabilities:</b> It is useful when you want to find P(A|B) but
+                        know P(B|A).</li>
+                    <li><b>Machine Learning:</b> Bayes' Theorem is used in models like Naive Bayes for
+                        classification problems.</li>
+                    <li><b>Real-Life Use:</b> It is widely used in decision-making, especially when new evidence
+                        changes the likelihood of outcomes.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Bayes' Theorem</h2>
+                <ul>
+                    <li><b>Medical Diagnosis:</b> Updating the probability of a disease based on test results.</li>
+                    <li><b>Spam Filtering:</b> Classifying emails as spam or not based on their content.</li>
+                    <li><b>Risk Assessment:</b> Evaluating the likelihood of financial or insurance-related events
+                        occurring.</li>
+                    <li><b>Machine Learning:</b> Used in algorithms like Naive Bayes to classify data based on
+                        conditional probabilities.</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px">
+        <div class="topic-name">
+            <h1 id="Binomial">3. Binomial Distribution</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>The Binomial Distribution is a probability distribution that models the number of successes
+                        in a fixed number of independent trials of a binary (yes/no) experiment.</li>
+                    <li>Each trial has two possible outcomes: success or failure.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Key Characteristics</h2>
+                <ul>
+                    <li><b>Binary Outcome:</b> Each trial has two possible outcomes, often labeled "success" and
+                        "failure."</li>
+                    <li><b>Fixed Number of Trials:</b> The experiment is conducted a fixed number of times, denoted
+                        by <i>n</i>.</li>
+                    <li><b>Constant Probability of Success:</b> The probability of success on each trial, denoted by
+                        <i>p</i>, remains the same for each trial.
+                    </li>
+                    <li><b>Independence:</b> The trials are independent of each other, meaning the outcome of one
+                        trial does not affect the others.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Binomial Distribution Formula</h2>
+                <p>The probability of observing exactly <i>k</i> successes in <i>n</i> independent trials is given
+                    by the binomial probability mass function (PMF):</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub>
+                        <mi>P</mi>
+                        <mi>X</mi>
+                    </msub>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mi>n</mi>
+                            <mi>k</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>p</mi>
+                            <msup>
+                                <mi>k</mi>
+                            </msup>
+                            <mo>(</mo>
+                            <mi>1</mi>
+                            <mo>-</mo>
+                            <mi>p</mi>
+                            <msup>
+                                <mi>n-k</mi>
+                            </msup>
+                            <mo>)</mo>
+                        </mrow>
+                    </mfrac>
+                </math>
+
+                <p>Where:</p>
+                <ul>
+                    <li><b>P(X = k):</b> Probability of exactly <i>k</i> successes in <i>n</i> trials.</li>
+                    <li><b>n:</b> Total number of trials.</li>
+                    <li><b>k:</b> Number of successes.</li>
+                    <li><b>p:</b> Probability of success on a single trial.</li>
+                    <li><b>1 - p:</b> Probability of failure on a single trial.</li>
+                    <li><b>(n choose k):</b> Binomial coefficient, the number of ways to choose <i>k</i> successes
+                        from <i>n</i> trials, calculated as:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>n</mi>
+                                <mi>!</mi>
+                            </mrow>
+                            <mfrac>
+                                <mrow>
+                                    <mi>k</mi>
+                                    <mi>!</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>(n-k)</mi>
+                                    <mi>!</mi>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Mean and Variance of Binomial Distribution</h2>
+                <ul>
+                    <li><b>Mean (μ):</b> <i>μ = n ⋅ p</i></li>
+                    <li><b>Variance (σ²):</b> <i>σ² = n ⋅ p ⋅ (1 - p)</i></li>
+                    <li><b>Standard Deviation (σ):</b> <i>σ = √(n ⋅ p ⋅ (1 - p))</i></li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example</h2>
+                <p>Suppose a factory produces light bulbs, and each bulb has a 95% chance of being functional
+                    (success) and a 5% chance of being defective (failure). If 10 bulbs are tested, what is the
+                    probability that exactly 8 bulbs are functional?</p>
+                <p><b>Given:</b></p>
+                <ul>
+                    <li><i>n = 10</i> (number of trials)</li>
+                    <li><i>p = 0.95</i> (probability of success)</li>
+                    <li><i>k = 8</i> (number of successes)</li>
+                </ul>
+
+                <p>We can use the binomial distribution formula:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub>
+                        <mi>P</mi>
+                        <mi>X</mi>
+                    </msub>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mi>10</mi>
+                            <mi>8</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>0.95</mi>
+                            <msup>
+                                <mi>8</mi>
+                            </msup>
+                            <mo>(</mo>
+                            <mi>0.05</mi>
+                            <msup>
+                                <mi>2</mi>
+                            </msup>
+                            <mo>)</mo>
+                        </mrow>
+                    </mfrac>
+                </math>
+
+                <p><b>First, calculate the binomial coefficient:</b></p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mrow>
+                        <mi>(10 choose 8)</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>10</mi>
+                                <mi>!</mi>
+                            </mrow>
+                            <mrow>
+                                <mi>8</mi>
+                                <mi>!(</mi>
+                                <mi>10-8</mi>
+                                <mi>)!</mi>
+                            </mrow>
+                        </mfrac>
+                </math>
+                <p>This simplifies to:</p>
+                <p><b>(10 choose 8) = 45</b></p>
+
+                <p><b>Now, plug in the values:</b></p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub>
+                        <mi>P</mi>
+                        <mi>X</mi>
+                    </msub>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mi>45</mi>
+                            <mi></mi>
+                        </mrow>
+                        <mrow>
+                            <mi>0.95</mi>
+                            <msup>
+                                <mi>8</mi>
+                            </msup>
+                            <mo>(</mo>
+                            <mi>0.05</mi>
+                            <msup>
+                                <mi>2</mi>
+                            </msup>
+                            <mo>)</mo>
+                        </mrow>
+                    </mfrac>
+                </math>
+                <p>Result:</p>
+                <p><b>P(X = 8) ≈ 0.0747 (7.47%)</b></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Binomial Distribution</h2>
+                <ul>
+                    <li><b>Quality Control:</b> Used in manufacturing to model the number of defective items in a
+                        batch of products.</li>
+                    <li><b>Surveying:</b> In market research to determine the number of people who agree with a
+                        certain statement out of a sample of respondents.</li>
+                    <li><b>Medical Studies:</b> To model the number of patients who recover after treatment out of a
+                        sample.</li>
+                    <li><b>Game Theory and Gambling:</b> To calculate the likelihood of a certain number of wins in
+                        a series of games or bets.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Conditions for Using the Binomial Distribution</h2>
+                <ul>
+                    <li>Fixed number of trials.</li>
+                    <li>Each trial has only two possible outcomes (success or failure).</li>
+                    <li>The trials are independent.</li>
+                    <li>The probability of success is the same for each trial.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

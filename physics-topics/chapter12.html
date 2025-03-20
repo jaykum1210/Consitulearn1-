@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-physics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 12 - Magnetic Effects of Current and Magnetism</div>
+        <div class="topic-name">
+            <h1>1. Magnetic Field Due to a Current</h1>
+
+            <div class="topic-description">
+                <h2> Magnetic Field Around a Straight Current-Carrying Conductor</h2>
+                <p>When an electric current flows through a conductor, it generates a circular magnetic field around
+                    it.
+                </p>
+                <h3>Direction of Magnetic Field:</h3>
+                <ul>
+                    <li><b>Right-Hand Thumb Rule:</b> If you point your right-hand thumb along the current
+                        direction,
+                        your curled fingers show the direction of the magnetic field.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Magnetic Field Formula (Biot-Savart Law):</h3>
+                <p>At a distance <b>r</b> from a straight wire:</p>
+                <p><b>B = (μ<sub>0</sub> I) / (2πr)</b></p>
+
+                <h4>Where:</h4>
+                <ul>
+                    <li><b>B</b> = Magnetic field strength (Tesla, T)</li>
+                    <li><b>μ<sub>0</sub></b> = Permeability of free space (<i>4π × 10⁻⁷ T⋅m/A</i>)</li>
+                    <li><b>I</b> = Current (A)</li>
+                    <li><b>r</b> = Distance from the wire (m)</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Magnetic Field of a Circular Current Loop</h2>
+                <p>A circular loop of current produces a magnetic field similar to a small bar magnet.</p>
+                <h3>Magnetic Field at Center of Loop:</h3>
+                <p><b>B = (μ<sub>0</sub> I) / (2R)</b></p>
+
+                <h4>Where:</h4>
+                <ul>
+                    <li><b>R</b> = Radius of the loop</li>
+                </ul>
+
+                <p><b>Right-Hand Thumb Rule:</b> Curl your fingers along the current direction, and your thumb
+                    points to
+                    the magnetic field direction.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2> Magnetic Field Inside a Long Solenoid</h2>
+                <p>A solenoid is a long coil of wire with closely spaced turns.</p>
+                <h3>Magnetic Field Formula:</h3>
+                <p><b>B = μ<sub>0</sub> n I</b></p>
+
+                <h4>Where:</h4>
+                <ul>
+                    <li><b>n</b> = Number of turns per unit length (N/L)</li>
+                    <li><b>I</b> = Current (A)</li>
+                </ul>
+
+                <p><b>Properties:</b></p>
+                <ul>
+                    <li>The magnetic field inside a solenoid is <b>uniform</b> and <b>parallel</b>.</li>
+                    <li>Solenoids act like bar magnets with <b>north</b> and <b>south poles</b>.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2> Magnetic Field Inside a Toroid</h2>
+                <p>A toroid is a solenoid bent into a circular shape.</p>
+
+                <h3>Magnetic Field Formula:</h3>
+                <p><b>B = (μ<sub>0</sub> N I) / (2πr)</b></p>
+
+                <h4>Where:</h4>
+                <ul>
+                    <li><b>N</b> = Total number of turns</li>
+                    <li><b>r</b> = Radius of the toroid</li>
+                </ul>
+
+                <p><b>Properties:</b></p>
+                <ul>
+                    <li>The magnetic field inside a toroid is <b>strong</b> and <b>confined within the core</b>.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Ampere">2. Ampere's Law</h1>
+            <div class="topic-description">
+                <h2>Statement of Ampere’s Law</h2>
+                <p>Ampere’s Law relates the magnetic field around a closed loop to the electric current passing
+                    through
+                    it.</p>
+
+                <h3>Mathematical Expression:</h3>
+                <p><b>∮ B ⋅ dl = μ<sub>0</sub> I<sub>enc</sub></b></p>
+
+                <h4>Where:</h4>
+                <ul>
+                    <li><b>∮ B ⋅ dl</b> = Line integral of the magnetic field around a closed loop</li>
+                    <li><b>μ<sub>0</sub></b> = Permeability of free space (<i>4π × 10⁻⁷ T⋅m/A</i>)</li>
+                    <li><b>I<sub>enc</sub></b> = Net current enclosed by the loop</li>
+                </ul>
+
+                <p>The circulation of the magnetic field around a closed path is proportional to the total current
+                    enclosed.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Ampere’s Law</h2>
+                <h3>(a) Magnetic Field Due to a Long, Straight Current-Carrying Wire</h3>
+                <p>For a straight wire carrying current <b>I</b>, the magnetic field at a distance <b>r</b> from the
+                    wire is:</p>
+                <p><b>B = (μ<sub>0</sub> I) / (2πr)</b></p>
+
+                <p><b>Properties:</b></p>
+                <ul>
+                    <li>The magnetic field forms <b>concentric circles</b> around the wire.</li>
+                    <li>Follows the <b>Right-Hand Thumb Rule</b>.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>(b) Magnetic Field Inside a Long Solenoid</h3>
+                <p>For a solenoid (a coil of wire), Ampere’s Law gives:</p>
+                <p><b>B = μ<sub>0</sub> n I</b></p>
+
+                <h4>Where:</h4>
+                <ul>
+                    <li><b>n = N / L</b> (turns per unit length)</li>
+                    <li><b>I</b> = Current (A)</li>
+                </ul>
+
+                <p><b>Properties:</b></p>
+                <ul>
+                    <li>The magnetic field inside a solenoid is <b>uniform</b> and <b>parallel</b>.</li>
+                    <li>Solenoids behave like <b>bar magnets</b> with north and south poles.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>(c) Magnetic Field Inside a Toroid</h3>
+                <p>For a toroid (a solenoid bent into a circular shape), Ampere’s Law gives:</p>
+                <p><b>B = (μ<sub>0</sub> N I) / (2πr)</b></p>
+
+                <h4>Where:</h4>
+                <ul>
+                    <li><b>N</b> = Total number of turns</li>
+                    <li><b>r</b> = Radius of the toroid</li>
+                </ul>
+
+                <p><b>Properties:</b></p>
+                <ul>
+                    <li>The magnetic field is <b>confined inside</b> the toroid.</li>
+                    <li>Stronger and more concentrated than in a solenoid.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Properties">3. Magnetic Properties of Materials</h1>
+
+            <div class="topic-description">
+                <p>Magnetic materials respond to external magnetic fields in different ways, depending on their atomic
+                    structure and electron configuration. These properties are crucial for designing electromagnets,
+                    transformers, motors, and data storage devices.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Magnetic Materials</h2>
+
+                <h3>(a) Diamagnetic Materials</h3>
+                <p><b>Definition:</b> Weakly repelled by a magnetic field.</p>
+                <p><b>Cause:</b> No permanent magnetic dipoles; induced dipoles oppose the applied field.</p>
+                <p><b>Examples:</b> Copper, Gold, Water, Bismuth.</p>
+                <p><b>Properties:</b></p>
+                <ul>
+                    <li> Negative magnetic susceptibility (χ<sub>m</sub> &lt; 0).</li>
+                    <li> No permanent magnetism.</li>
+                    <li> Weak and opposite induced magnetic moment.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>(b) Paramagnetic Materials</h3>
+                <p><b>Definition:</b> Weakly attracted by a magnetic field.</p>
+                <p><b>Cause:</b> Presence of unpaired electrons that align with the external field.</p>
+                <p><b>Examples:</b> Aluminium, Platinum, Oxygen.</p>
+                <p><b>Properties:</b></p>
+                <ul>
+                    <li> Positive but small magnetic susceptibility (χ<sub>m</sub> &gt; 0).</li>
+                    <li> Magnetism disappears when the external field is removed.</li>
+                    <li> Follows Curie's Law: χ<sub>m</sub> = C/T, where C is Curie’s constant and T is temperature.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>(c) Ferromagnetic Materials</h3>
+                <p><b>Definition:</b> Strongly attracted to a magnetic field and retain magnetism.</p>
+                <p><b>Cause:</b> Permanent atomic magnetic moments align parallel due to exchange interaction.</p>
+                <p><b>Examples:</b> Iron (Fe), Nickel (Ni), Cobalt (Co).</p>
+                <p><b>Properties:</b></p>
+                <ul>
+                    <li> Very high magnetic susceptibility (χ<sub>m</sub> ≫ 0).</li>
+                    <li> Can be permanently magnetized.</li>
+                    <li> Exhibit hysteresis (retain magnetism after field removal).</li>
+                    <li>Have a Curie temperature (T<sub>C</sub>), above which they become paramagnetic.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>(d) Antiferromagnetic Materials</h3>
+                <p><b>Definition:</b> Neighboring atomic dipoles align oppositely, canceling out magnetism.</p>
+                <p><b>Examples:</b> Manganese oxide (MnO), Nickel oxide (NiO).</p>
+                <p><b>Properties:</b></p>
+                <ul>
+                    <li> Zero net magnetization.</li>
+                    <li> Transition to paramagnetic behavior above the Néel temperature.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>(e) Ferrimagnetic Materials</h3>
+                <p><b>Definition:</b> Similar to antiferromagnetic materials, but opposing moments are unequal, leading
+                    to
+                    net magnetism.</p>
+                <p><b>Examples:</b> Magnetite (Fe<sub>3</sub>O<sub>4</sub>), Ferrites.</p>
+                <p><b>Properties:</b></p>
+                <ul>
+                    <li> Net magnetization but weaker than ferromagnetic materials.</li>
+                    <li>Used in magnetic storage and transformers.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Hysteresis Curve (Magnetization vs. Magnetic Field)</h2>
+                <p><b>Hysteresis:</b> The lag between magnetization and applied magnetic field.</p>
+                <h4>Key Points:</h4>
+                <ul>
+                    <li><b>Retentivity:</b> Residual magnetization after removing the field.</li>
+                    <li><b>Coercivity:</b> Reverse field needed to demagnetize.</li>
+                </ul>
+
+                <h4>Hard vs. Soft Magnetic Materials:</h4>
+                <ul>
+                    <li><b>Hard magnets</b> (steel) retain magnetism (high coercivity).</li>
+                    <li><b>Soft magnets</b> (iron) lose magnetism easily (low coercivity).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Magnetic Materials</h2>
+                <ul>
+                    <li> <b>Diamagnetic:</b> Magnetic levitation, superconductors.</li>
+                    <li> <b>Paramagnetic:</b> MRI scanning, oxygen detection.</li>
+                    <li> <b>Ferromagnetic:</b> Permanent magnets, transformers, electric motors.</li>
+                    <li> <b>Ferrimagnetic:</b> Data storage, microwave devices.</li>
+                    <li><b>Antiferromagnetic:</b> Spintronics, magnetic recording.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Forces">4. Forces in Magnetic Fields</h1>
+
+            <div class="topic-description">
+                <p>When a charged particle or a current-carrying conductor is placed in a magnetic field, it experiences
+                    a
+                    force. These forces play a fundamental role in electric motors, generators, and various
+                    electromagnetic
+                    applications.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>1. Force on a Moving Charge in a Magnetic Field</h2>
+
+                <h3>Lorentz Force</h3>
+                <p>When a charge <b>q</b> moves with velocity <b>v</b> in a magnetic field <b>B</b>, it experiences a
+                    force
+                    given by:</p>
+                <p><b>F = q (v × B)</b></p>
+                <p><b>Right-hand rule for direction:</b></p>
+                <ul>
+                    <li> Point fingers in the direction of <b>v</b>.</li>
+                    <li> Curl fingers towards <b>B</b>.</li>
+                    <li> Thumb points in the direction of <b>F</b> (for a positive charge, opposite for a negative
+                        charge).</li>
+                </ul>
+                <p><b>Magnitude of the force:</b></p>
+                <p><b>F = qvB sinθ</b>, where <b>θ</b> is the angle between <b>v</b> and <b>B</b>.</p>
+
+                <h4>Special Cases:</h4>
+                <ul>
+                    <li> If <b>θ = 0°</b> or <b>180°</b>, then <b>F = 0</b> (No force, charge moves straight).</li>
+                    <li>If <b>θ = 90°</b>, then <b>F = qvB</b> (Maximum force, charge moves in a circular path).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Motion of a Charged Particle in a Magnetic Field</h2>
+                <p><b>Circular Motion:</b> If <b>v</b> is perpendicular to <b>B</b>, the force acts as a centripetal
+                    force,
+                    leading to circular motion.</p>
+
+                <p><b>Radius of circular path:</b></p>
+                <p><b>r = (mv) / (qB)</b></p>
+
+                <p><b>Time period of motion:</b></p>
+                <p><b>T = (2πm) / (qB)</b></p>
+
+                <p><b>Frequency (cyclotron frequency):</b></p>
+                <p><b>f = (qB) / (2πm)</b></p>
+
+                <p><b>Helical Motion:</b> If <b>v</b> has a component along <b>B</b>, the charge moves in a helical
+                    path.
+                </p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Force on a Current-Carrying Conductor in a Magnetic Field</h2>
+                <p>When a conductor of length <b>l</b> carrying current <b>I</b> is placed in a uniform magnetic field
+                    <b>B</b>, it experiences a force:
+                </p>
+
+                <p><b>F = I (l × B)</b></p>
+                <p><b>Magnitude:</b> <b>F = IlB sinθ</b></p>
+
+                <h4>Right-hand rule for direction:</h4>
+                <ul>
+                    <li>Thumb = direction of current <b>I</b>.</li>
+                    <li> Fingers = direction of <b>B</b>.</li>
+                    <li> Palm = direction of force <b>F</b> (for a positive charge).</li>
+                </ul>
+
+                <h4>Special Cases:</h4>
+                <ul>
+                    <li> If <b>θ = 0°</b> or <b>180°</b>, then <b>F = 0</b> (No force).</li>
+                    <li> If <b>θ = 90°</b>, then <b>F = IlB</b> (Maximum force).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Force Between Two Parallel Current-Carrying Conductors</h2>
+                <p>Two parallel wires carrying currents <b>I<sub>1</sub></b> and <b>I<sub>2</sub></b> experience a force
+                    due
+                    to their magnetic fields.</p>
+
+                <p><b>Force per unit length:</b></p>
+                <p><b>F = (μ<sub>0</sub> / 2π) * (I<sub>1</sub> I<sub>2</sub> / d)</b></p>
+                <p>where <b>d</b> is the separation between the wires and <b>μ<sub>0</sub></b> is the permeability of
+                    free
+                    space.</p>
+
+                <h4>Direction of Force:</h4>
+                <ul>
+                    <li> If currents are in the same direction, the wires <b>attract</b>.</li>
+                    <li> If currents are opposite, the wires <b>repel</b>.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Torque on a Current-Carrying Loop in a Magnetic Field</h2>
+                <p>A current loop in a uniform magnetic field experiences torque, given by:</p>
+
+                <p><b>τ = NIAB sinθ</b></p>
+
+                <p>where:</p>
+                <ul>
+                    <li><b>N</b> = Number of turns.</li>
+                    <li><b>A</b> = Area of the loop.</li>
+                    <li><b>θ</b> = Angle between the normal to the loop and <b>B</b>.</li>
+                </ul>
+
+                <p>This principle is used in electric motors and galvanometers.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Magnetic Forces</h2>
+                <ul>
+                    <li> <b>Electric motors:</b> Uses force on a current-carrying loop.</li>
+                    <li> <b>Particle accelerators:</b> Uses Lorentz force to guide charged particles.</li>
+                    <li> <b>Mass spectrometers:</b> Identifies elements by bending ion paths.</li>
+                    <li><b>Magnetic levitation (Maglev trains):</b> Uses repulsion between superconducting magnets.</li>
+                    <li> <b>Electromagnetic braking:</b> Uses eddy currents to slow down moving objects.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

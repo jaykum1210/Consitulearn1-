@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-physics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 15 - Ray Optics</div>
+        <div class="topic-name">
+            <h1>1. Reflection and Refraction of Light</h1>
+            <div class="topic-description">
+                <h2>Reflection of Light</h2>
+                <h3>Definition</h3>
+                <ul>
+                    <li>Reflection is the phenomenon where light bounces off a surface instead of passing through it.
+                    </li>
+                </ul>
+                <h3>Laws of Reflection</h3>
+                <ul>
+                    <li>The angle of incidence (i) is equal to the angle of reflection (r): i = r</li>
+                    <li>The incident ray, the reflected ray, and the normal to the surface all lie in the same plane.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Types of Reflection</h3>
+                <ul>
+                    <li><b>Specular Reflection:</b> Occurs on smooth surfaces like mirrors; reflected rays remain
+                        parallel.</li>
+                    <li><b>Diffuse Reflection:</b> Occurs on rough surfaces like paper; reflected rays scatter in
+                        different directions.</li>
+                </ul>
+                <h3>Applications of Reflection</h3>
+                <ul>
+                    <li>Mirrors (plane, concave, convex)</li>
+                    <li>Periscopes and Kaleidoscopes</li>
+                    <li>Optical instruments like telescopes and microscopes</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Refraction of Light</h2>
+                <h3>Definition</h3>
+                <ul>
+                    <li>Refraction is the bending of light when it passes from one medium to another due to a change in
+                        speed.</li>
+                </ul>
+                <h3>Laws of Refraction (Snell’s Law)</h3>
+                <ul>
+                    <li>Light bends when moving between two media of different refractive indices (n):</li>
+                    <li>n<sub>1</sub> sin i = n<sub>2</sub> sin r</li>
+                    <p>where n<sub>1</sub>, n<sub>2</sub> are the refractive indices, i is the angle of incidence, and r
+                        is the angle of refraction.</p>
+                    <li>The incident ray, the refracted ray, and the normal all lie in the same plane.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Refractive Index (n)</h3>
+                <ul>
+                    <li>Given by: n = c/v</li>
+                    <p>where c = Speed of light in vacuum, v = Speed of light in the medium.</p>
+                    <li>Higher n → Light slows down → Bends towards normal.</li>
+                    <li>Lower n → Light speeds up → Bends away from normal.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Total Internal Reflection (TIR)</h3>
+                <ul>
+                    <li>Occurs when light travels from a denser to a rarer medium at an angle greater than the critical
+                        angle, causing total reflection.</li>
+                    <li>Used in optical fibers, diamonds, and periscopes.</li>
+                </ul>
+                <h3>Applications of Refraction</h3>
+                <ul>
+                    <li>Lenses (Convex & Concave)</li>
+                    <li>Prisms (Dispersion of Light)</li>
+                    <li>Optical fibers (Telecommunications)</li>
+                    <li>Mirages (Light bending due to air temperature differences)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Mirrors">2. Mirrors and Lenses</h1>
+            <div class="topic-description">
+                <h2>i. Mirrors</h2>
+                <p>A mirror is a smooth, polished surface that reflects light according to the laws of reflection.</p>
+
+                <h3>Types of Mirrors</h3>
+                <ul>
+                    <li><b>Plane Mirror</b>
+                        <ul>
+                            <li>Forms a virtual, upright, and same-size image as the object.</li>
+                            <li>Used in household mirrors, periscopes, and kaleidoscopes.</li>
+                        </ul>
+                    </li>
+                    <li><b>Spherical Mirrors</b>
+                        <ul>
+                            <li><b>Concave Mirror (Converging Mirror)</b>
+                                <ul>
+                                    <li>Reflecting surface curved inward.</li>
+                                    <li>Forms real and inverted images when the object is beyond the focal point.</li>
+                                    <li>Forms a virtual and magnified image when the object is between the focus and the
+                                        mirror.</li>
+                                    <li>Used in telescopes, shaving mirrors, headlights, and solar concentrators.</li>
+                                </ul>
+                            </li>
+                            <li><b>Convex Mirror (Diverging Mirror)</b>
+                                <ul>
+                                    <li>Reflecting surface curved outward.</li>
+                                    <li>Always forms a virtual, upright, and diminished image.</li>
+                                    <li>Used in rear-view mirrors of vehicles and security mirrors.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Mirror Formula</h3>
+                <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mfrac>
+                            <mn>1</mn>
+                            <mi>f</mi>
+                        </mfrac>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mn>1</mn>
+                            <mi>v</mi>
+                        </mfrac>
+                        <mo>+</mo>
+                        <mfrac>
+                            <mn>1</mn>
+                            <mi>u</mi>
+                        </mfrac>
+                    </math></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Lenses</h2>
+                <p>A lens is a transparent optical device that bends light rays by refraction.</p>
+
+                <h3>Types of Lenses</h3>
+                <ul>
+                    <li><b>Convex Lens (Converging Lens)</b>
+                        <ul>
+                            <li>Thicker in the middle and thinner at the edges.</li>
+                            <li>Converges light rays to a point.</li>
+                            <li>Forms real and inverted images for objects beyond the focal point.</li>
+                            <li>Forms a virtual, magnified, and upright image when the object is within the focal
+                                length.
+                            </li>
+                            <li>Used in magnifying glasses, cameras, and human eyes.</li>
+                        </ul>
+                    </li>
+                    <li><b>Concave Lens (Diverging Lens)</b>
+                        <ul>
+                            <li>Thinner in the middle and thicker at the edges.</li>
+                            <li>Diverges light rays outward.</li>
+                            <li>Always forms a virtual, upright, and diminished image.</li>
+                            <li>Used in spectacles for myopia (nearsightedness) and peepholes.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Lens Formula</h3>
+                <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mfrac>
+                            <mn>1</mn>
+                            <mi>f</mi>
+                        </mfrac>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mn>1</mn>
+                            <mi>v</mi>
+                        </mfrac>
+                        <mo>-</mo>
+                        <mfrac>
+                            <mn>1</mn>
+                            <mi>u</mi>
+                        </mfrac>
+                    </math></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. Power of a Lens</h2>
+                <p>The power (<math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>P</mi>
+                    </math>) of a lens is given by:</p>
+                <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>P</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mn>1</mn>
+                            <mi>f</mi>
+                        </mfrac>
+                        <mo>&nbsp;(in meters)</mo>
+                    </math></p>
+                <ul>
+                    <li>Unit: Diopter (D)</li>
+                    <li>Convex lens has positive power (+D).</li>
+                    <li>Concave lens has negative power (-D).</li>
+                </ul>
+
+                <h2>iv. Applications of Mirrors and Lenses</h2>
+                <ul>
+                    <li><b>Mirrors:</b> Used in rear-view mirrors, telescopes, microscopes, and makeup mirrors.</li>
+                    <li><b>Lenses:</b> Used in glasses, cameras, magnifying glasses, projectors, and optical
+                        instruments.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Prisms">3. Prisms</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>A prism is a transparent optical element with flat, polished surfaces that refract light.</li>
+                    <li>The most common type is a triangular prism, which has two triangular bases and three rectangular
+                        sides.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Refraction Through a Prism</h2>
+                <ul>
+                    <li>When light passes through a prism, it bends (refracts) due to the change in speed as it moves
+                        between different media.</li>
+                    <li>The angle of deviation (D) is the angle between the incident and emergent ray.</li>
+                </ul>
+                <h3>Prism Formula</h3>
+                <ul>
+                    <li>The deviation angle is given by:</li>
+                    <li>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>D</mi>
+                            <mo>=</mo>
+                            <msub>
+                                <mi>i</mi>
+                                <mn>1</mn>
+                            </msub>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>i</mi>
+                                <mn>2</mn>
+                            </msub>
+                            <mo>-</mo>
+                            <mi>A</mi>
+                        </math>
+                        <p>where \( i_1 \) = Angle of incidence, \( i_2 \) = Angle of emergence, \( A \) = Angle of the
+                            prism.</p>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Dispersion of Light</h2>
+                <ul>
+                    <li>When white light enters a prism, it splits into its component colors due to different refractive
+                        indices.</li>
+                    <li>This phenomenon is called dispersion.</li>
+                    <li>The spectrum follows the order: <b>VIBGYOR</b> (Violet, Indigo, Blue, Green, Yellow, Orange,
+                        Red).
+                    </li>
+                    <li>Violet bends the most (higher refractive index), and red bends the least.</li>
+                </ul>
+                <p><b>Example:</b> A rainbow is a natural example of dispersion caused by raindrops acting as tiny
+                    prisms.
+                </p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Prisms</h2>
+                <ol style="list-style-type: lower-roman;">
+                    <li>
+                        <p><b>Triangular Prism</b></p>
+                        <ul>
+                            <li>Most common type, used for dispersion and deviation of light.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Reflecting Prisms</b></p>
+                        <ul>
+                            <li>Used to change the direction of light by total internal reflection (TIR).</li>
+                            <li>Examples:
+                                <ul>
+                                    <li><b>Right-Angle Prism (90°)</b> – Used in periscopes and binoculars.</li>
+                                    <li><b>Pentaprism</b> – Used in DSLR cameras to correct image orientation.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Polarizing Prisms</b></p>
+                        <ul>
+                            <li>Used to polarize light (filter specific light waves).</li>
+                            <li>Example: <b>Nicol Prism</b> (used in microscopes and optical instruments).</li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Prisms</h2>
+                <ul>
+                    <li><b>Spectroscopy</b> – Analyzing the composition of light from stars and materials.</li>
+                    <li><b>Cameras & Binoculars</b> – Reflecting prisms adjust image orientation.</li>
+                    <li><b>Periscopes & Optical Instruments</b> – Used in submarines and microscopes.</li>
+                    <li><b>Laser Technology</b> – Prisms control and direct laser beams.</li>
+                    <li><b>Holography & 3D Imaging</b> – Used to manipulate light waves for holograms.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-physics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 1 - Physics and Measurement</div>
+        <div class="topic-name">
+            <h1>1. SI Units & Dimensions</h1>
+            <div class="topic-description">
+
+                <h3>i. What are SI Units?</h3>
+
+                <p>SI (International System of Units) is a system of standard measurements used all over the world. It
+                    ensures that measurements are the same everywhere, making it easier for scientists, engineers, and
+                    even students to understand and use.</p>
+                <p>For example, if you measure your height in India using meters, someone in the USA will understand it
+                    the same way because they also use meters in science.</p>
+                    <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Why Do We Need SI Units?</h3>
+
+                <p>Before SI units, different countries used different measurement systems. This caused confusion!
+                    Imagine someone using inches, another using centimeters, and another using cubits (an ancient unit)!
+                </p>
+                <p><b> Benefits of SI Units:</b></p>
+                <ul>
+                    <li><b>Universal</b> - The same everywhere.</li>
+                    <li><b>Easy to Use</b> - Based on the number 10</li>
+                    <li><b>Helps in Science</b> - Used in physics, chemistry, and everyday life.</li>
+                    <li><b>Prevents Mistakes</b> – Avoids confusion in measurements.</li>
+                </ul>
+                <p><b>Example:</b></p>
+                <ul>
+                    <li>A scientist in Japan and a scientist in the USA can understand each other's work easily because
+                        they both use SI units.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>ii. The 7 Fundamental SI Units</h3>
+
+                <p>The SI system is built on <b>seven basic units</b>, known as <b>fundamental units</b>. These units
+                    are used to measure different things like length, weight, and time.</p>
+                <table>
+                    <tr>
+                        <th>Quantity</th>
+                        <th>SI Unit </th>
+                        <th>Symbol</th>
+                        <th>What It Measures</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <th>Length</th>
+                        <td>Meter</td>
+                        <td>m</td>
+                        <td>Distance</td>
+                        <td>Height of a tree</td>
+                    </tr>
+                    <tr>
+                        <th>Time</th>
+                        <td>Second</td>
+                        <td>s</td>
+                        <td>Duration</td>
+                        <td>How long a song lasts</td>
+                    </tr>
+                    <tr>
+                        <th>Temperature</th>
+                        <td>Kelvin</td>
+                        <td>K</td>
+                        <td>Hot or cold</td>
+                        <td>The temperature of the sun</td>
+                    </tr>
+                    <tr>
+                        <th>Electric Current</th>
+                        <td>Ampere</td>
+                        <td>A</td>
+                        <td>Flow of electricity</td>
+                        <td>Power in a TV</td>
+                    </tr>
+                    <tr>
+                        <th>Amount of Substance</th>
+                        <td>Mole</td>
+                        <td>mol</td>
+                        <td>Number of particles</td>
+                        <td>Number of atoms in water</td>
+                    </tr>
+                    <tr>
+                        <th>Luminous Intensity</th>
+                        <td>Candela</td>
+                        <td>cd</td>
+                        <td>Brightness</td>
+                        <td>Light from a bulb</td>
+                    </tr>
+                </table>
+                <h4>Fun Fact:</h4>
+                <ul>
+                    <li>
+                        The <b>meter</b> was originally defined as <b>one ten-millionth of the distance from the equator
+                            to the North Pole!</b>
+                    </li>
+                    <li>
+                        The <b>second</b> is measured using atomic clocks that count vibrations of cesium atoms!
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>iii. Derived SI Units – Making New Units from Basic Ones!</h3>
+
+                <p>Derived units are created by combining <b>two or more fundamental SI units.</b></p>
+                <table>
+                    <tr>
+                        <th>Quantity</th>
+                        <th>SI Unit</th>
+                        <th>Symbol</th>
+                        <th>Formula</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <th>Area</th>
+                        <td>Square Meter</td>
+                        <td>m²</td>
+                        <td>Length × Width</td>
+                        <td>Area of a football field</td>
+                    </tr>
+                    <tr>
+                        <th>Volume</th>
+                        <td>Cubic Meter</td>
+                        <td>m³</td>
+                        <td>Length × Width × Height</td>
+                        <td>Water in a swimming pool</td>
+                    </tr>
+                    <tr>
+                        <th>Speed</th>
+                        <td>Meter per Second</td>
+                        <td>m/s</td>
+                        <td>Distance ÷ Time </td>
+                        <td>Speed of a moving car</td>
+                    </tr>
+                    <tr>
+                        <th>Velocity</th>
+                        <td>Meter per Second</td>
+                        <td>m/s </td>
+                        <td>Displacement ÷ Time</td>
+                        <td>Speed with direction (like 60 km/h east)</td>
+                    </tr>
+                    <tr>
+                        <th>Acceleration</th>
+                        <td>Meter per Second²</td>
+                        <td>m/s²</td>
+                        <td>Speed ÷ Time</td>
+                        <td>A car speeding up</td>
+                    </tr>
+                    <tr>
+                        <th>Force</th>
+                        <td>Newton</td>
+                        <td>N</td>
+                        <td>Mass × Acceleration</td>
+                        <td>Pushing a box</td>
+                    </tr>
+                    <tr>
+                        <th>Energy</th>
+                        <td>Joule</td>
+                        <td>J</td>
+                        <td>Force × Distance</td>
+                        <td>Eating food gives us energy</td>
+                    </tr>
+                    <tr>
+                        <th>Work</th>
+                        <td>Joule</td>
+                        <td>J</td>
+                        <td>Force × Distance</td>
+                        <td>Lifting a bag</td>
+                    </tr>
+                    <tr>
+                        <th>Power</th>
+                        <td>Watt</td>
+                        <td>W</td>
+                        <td>Energy ÷ Time</td>
+                        <td>Power of a light bulb</td>
+                    </tr>
+                    <tr>
+                        <th>Pressure</th>
+                        <td>Pascal</td>
+                        <td>Pa</td>
+                        <td>Force ÷ Area</td>
+                        <td>Air pressure in a tire</td>
+                    </tr>
+                    <tr>
+                        <th>Density</th>
+                        <td>Kilogram per Cubic Meter</td>
+                        <td>kg/m³</td>
+                        <td>Mass ÷ Volume</td>
+                        <td>Density of water</td>
+                    </tr>
+                    <tr>
+                        <th>Momentum</th>
+                        <td>Kilogram Meter per Second</td>
+                        <td>kg·m/s</td>
+                        <td>Mass × Velocity</td>
+                        <td>A moving truck has more momentum than a bicycle</td>
+                    </tr>
+                    <tr>
+                        <th>Impulse</th>
+                        <td>Newton Second</td>
+                        <td>N·s</td>
+                        <td>Force × Time</td>
+                        <td>Hitting a ball with a bat</td>
+                    </tr>
+                    <tr>
+                        <th>Frequency</th>
+                        <td>Hertz</td>
+                        <td>Hz</td>
+                        <td>1 ÷ Time (s)</td>
+                        <td>Radio waves, musical notes</td>
+                    </tr>
+                    <tr>
+                        <th>Electric Charge</th>
+                        <td>Coulomb</td>
+                        <td>C</td>
+                        <td>Current × Time</td>
+                        <td>Charge stored in a battery</td>
+                    </tr>
+                    <tr>
+                        <th>Electric Potential (Voltage)</th>
+                        <td>Volt</td>
+                        <td>V</td>
+                        <td>Energy ÷ Charge</td>
+                        <td>Voltage of a battery</td>
+                    </tr>
+                    <tr>
+                        <th>Electric Resistance</th>
+                        <td>Ohm</td>
+                        <td>Ω</td>
+                        <td>Voltage ÷ Current </td>
+                        <td>Resistance in wires</td>
+                    </tr>
+                    <tr>
+                        <th>Capacitance</th>
+                        <td>Farad</td>
+                        <td>F</td>
+                        <td>Charge ÷ Voltage</td>
+                        <td>Capacitors in electronic circuits</td>
+                    </tr>
+                    <tr>
+                        <th>Magnetic Flux</th>
+                        <td>Weber</td>
+                        <td>Wb</td>
+                        <td>Magnetic Field × Area</td>
+                        <td>Used in electromagnets</td>
+                    </tr>
+                    <tr>
+                        <th>Inductance</th>
+                        <td>Henry</td>
+                        <td>H</td>
+                        <td>Voltage ÷ (Rate of Current Change)</td>
+                        <td>Used in transformers & coils</td>
+                    </tr>
+                    <tr>
+                        <th>Luminous Flux</th>
+                        <td>Lumen</td>
+                        <td>lm</td>
+                        <td>Luminous Intensity × Area</td>
+                        <td>Brightness of a lamp</td>
+                    </tr>
+                    <tr>
+                        <th>Radioactivity</th>
+                        <td>Becquerel</td>
+                        <td>Bq</td>
+                        <td>Number of Disintegrations per Second</td>
+                        <td>Radiation measurement</td>
+                    </tr>
+                    <tr>
+                        <th>Absorbed Dose (Radiation)Gray</th>
+                        <td>Gray</td>
+                        <td>Gy</td>
+                        <td>Energy ÷ Mass</td>
+                        <td>Used in radiation therapy</td>
+                    </tr>
+                </table>
+                <h4>Fun Fact:</h4>
+                <ul>
+                    <li>The unit <b>Newton (N)</b> is named after <b>Sir Isaac Newton</b>, who discovered the laws of
+                        motion!</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>iv. What is a Dimension?</h3>
+                <p>A <b>dimension</b> tells us what a quantity is made of. It is expressed using fundamental units (like
+                    meters, kilograms, and seconds).</p>
+                <h4>Example of Dimensions:</h4>
+                <b>
+                    <ul>
+                        <li>Length = [L]</li>
+                        <li>Mass = [M]</li>
+                        <li>Time = [T]</li>
+                    </ul>
+                </b>
+                <p>When we combine units, we can express the dimensions of other physical quantities.</p>
+                <table>
+                    <tr>
+                        <th>Quantity</th>
+                        <th>Formula</th>
+                        <th>Dimensions</th>
+                    </tr>
+                    <tr>
+                        <td>Speed</td>
+                        <td>Distance ÷ Time</td>
+                        <td>[L][T]⁻¹</td>
+                    </tr>
+                    <tr>
+                        <td>Acceleration</td>
+                        <td>Speed ÷ Time</td>
+                        <td>[L][T]⁻²</td>
+                    </tr>
+                    <tr>
+                        <td>Force</td>
+                        <td>Mass × Acceleration</td>
+                        <td>[M][L][T]⁻²</td>
+                    </tr>
+                    <tr>
+                        <td>Energy</td>
+                        <td>Force × Distance</td>
+                        <td>[M][L]²[T]⁻²</td>
+                    </tr>
+                    <tr>
+                        <td>Power</td>
+                        <td>Energy ÷ Time</td>
+                        <td>[M][L]²[T]⁻³</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>v. Why are Dimensions Important?</h3>
+                <ol>
+                    <li><b>Checks if equations are correct</b> - Helps scientists verify if a formula is correct.</li>
+                    <li><b>Converts units easily</b> - Helps convert from one unit to another.</li>
+                    <li><b>Understands relationships</b> - Shows how different physical quantities are related.</li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>vi. Applications of SI Units & Dimensions in Daily Life</h3>
+
+                <p>SI units are everywhere in our daily lives! Here’s how:</p>
+                <ul>
+                    <li><b>In School</b> – Measuring length with rulers, weighing things in kilograms.</li>
+                    <li><b>In Sports</b> – Timing races in seconds, measuring distances in meters.</li>
+                    <li><b>In Cooking</b> – Measuring weight in grams and liters for liquids.</li>
+                    <li><b>In Science</b> – Experiments, physics, and chemistry use SI units.</li>
+                    <li><b>In Medicine</b> – Dosages in milligrams, body temperature in Kelvin or Celsius.</li>
+                    <li><b>In Space</b> – Astronomers use SI units to measure distances in light-years!</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>vii. Fun Facts About SI Units!</h3>
+                <ul style="list-style-type: square;">
+                    <li>The <b>kilogram </b>is the only SI unit that is still defined by a physical object – a
+                        platinum-iridium cylinder kept in France!</li>
+                    <li>The <b>speed of light</b> in a vacuum is <b>exactly 299,792,458 meters per second</b>.</li>
+                    <li>The <b>candela</b> is based on the brightness of a candle!</li>
+                    <li>The <b>Mole</b> is used to count atmos - <b>1 mole = 6.022 × 10²³ particles</b> (that’s a huge
+                        number!).</li>
+                </ul>
+            </div>
+
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+
+            <h1 id="errors">2. Errors in Measurement</h1>
+            <div class="topic-description">
+                <h3>i. What are Errors in Measurement?</h3>
+                <p>When we measure something, we try to be as accurate as possible. But sometimes, <b>small mistakes
+                        (errors) happen</b> due to various reasons, like faulty instruments, human mistakes, or
+                    environmental conditions.</p>
+                <p>For example:</p>
+                <ul>
+                    <li>
+                        If you measure a table’s length with a ruler and get <b>99 cm</b>, but the actual length is
+                        <b>100 cm</b>, then your measurement has a <b>1 cm error</b>.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <p><b> Why Do Errors Happen?</b></p>
+                <ul>
+                    <li>The measuring instrument may not be perfect.</li>
+                    <li>The person taking the measurement might make a mistake.</li>
+                    <li>External factors like temperature or wind may affect the result.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>ii. Types of Errors in Measurement</h3>
+                <p>Errors in measurement can be classified into three main types:</p>
+                <ol style="list-style-type: upper-alpha;">
+                <hr style="height: 1px; background-color: black; border: none;">
+                    <li>
+                        <h4><b>Systematic Errors</b></h4>
+                        <p>These errors happen again and again in the same way. They are caused by <b>faulty
+                                instruments, wrong methods, or external factors</b>.</p>
+                        <p><b> Example:</b></p>
+                        <p>If a clock runs <b>5 minutes fast</b>, it will always show the wrong time, leading to a
+                            <b>systematic error</b>.
+                        </p>
+                        <p><b>Causes of Systematic Errors:</b></p>
+                        <ol style="list-style-type: lower-roman;">
+                            <li>
+                                <b>Instrumental Errors</b> – Faulty or improperly calibrated measuring instruments.
+                                <ul>
+                                    <li>Example: A weighing scale that always shows 2 kg extra.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Environmental Errors</b> – External factors like temperature, humidity, or pressure
+                                affect the measurement.
+                                <ul>
+                                    <li>Example: A thermometer showing incorrect temperature due to strong sunlight.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Observational Errors</b> – Mistakes made by the person measuring.
+                                <ul>
+                                    <li>Example: Misreading the level of liquid in a measuring cylinder.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                        <hp><b>How to Reduce Systematic Errors?</b></p>
+                            <ul>
+                                <li>Use properly calibrated instruments.</li>
+                                <li>Avoid measuring under extreme conditions.</li>
+                                <li>Be careful while taking readings.</li>
+                            </ul>
+                    </li>
+                <hr style="height: 1px; background-color: black; border: none;">
+                    <li>
+                        <h4><b>Random Errors</b></h4>
+                        <p>These errors occur <b>by chance</b> and <b>are unpredictable</b>. They happen due to sudden,
+                            small, uncontrollable factors.</p>
+                        <p><b>Example:</b></p>
+                        <p>If you measure a pencil's length <b>three times</b> and get different values like <b>14.8 cm,
+                                15.0 cm, and 15.2 cm</b>, this is a <b>random error</b>.</p>
+                        <p><b>Causes of Random Errors:</b></p>
+                        <ol>
+                            <li>Sudden changes in conditions (e.g., wind affecting balance scales).</li>
+                            <li>The person taking the measurement may not use the instrument correctly.</li>
+                            <li>Tiny unpredictable variations in the instrument.</li>
+                        </ol>
+                        <p><b>How to Reduce Random Errors?</b></p>
+                        <ul>
+                            <li>Take multiple measurements and calculate the average value.</li>
+                            <li>Use high-quality measuring instruments.</li>
+                            <li>Take readings carefully and under stable conditions.</li>
+                        </ul>
+                    </li>
+                <hr style="height: 1px; background-color: black; border: none;">
+                    <li>
+                        <h4><b>Gross Errors</b></h4>
+                        <p>These errors happen due to <b>big human mistakes</b> like reading the wrong number or using
+                            the wrong instrument.</p>
+                        <p><b>Example:</b></p>
+                        <p>If someone records <b>10 cm</b> instead of <b>100 cm</b>, this is a <b>gross error</b>.</p>
+                        <p><b>Causes of Gross Errors:</b></p>
+                        <ul>
+                            <li><b>Recording mistakes</b> – Writing the wrong number.</li>
+                            <li><b>Using the wrong instrument</b> – Measuring length with a clock instead of a ruler!
+                            </li>
+                            <li><b>Not following proper procedure</b> – Forgetting to set an instrument to zero before
+                                using it.</li>
+                        </ul>
+                        <p><b>How to Reduce Gross Errors?</b></p>
+                        <ul>
+                            <li>Double-check readings before recording them.</li>
+                            <li>Be <b>careful</b> while using instruments.</li>
+                            <li>Have <b>another person verify</b> the measurement.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>iii. Absolute Error, Relative Error & Percentage Error</h3>
+                <p>To understand errors better, we use three important types of calculations:</p>
+                <ol style="list-style-type: upper-alpha;">
+                <hr style="height: 1px; background-color: black; border: none;">
+                    <li>
+                        <h4><b>Absolute Error (How Much Off?)</b></h4>
+                        <p>It tells us <b>how much the measured value differs from the actual (true) value</b>.</p>
+                        <p><b>Formula:</b></p>
+                        <h2><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Absolute Error=∣Measured Value−Actual Value∣</b>
+                        </h2>
+                        <p><b>Example:</b></p>
+                        <p>If the actual weight of a book is <b>2.0 kg</b>, but a scale shows <b>2.2 kg</b>, then:</p>
+                        <h3><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Absolute Error=∣2.2−2.0∣=0.2 kg</b>
+                        </h3>
+                    </li>
+                <hr style="height: 1px; background-color: black; border: none;">
+                    <li>
+                        <h4><b>Relative Error (Comparison with Actual Value)</b></h4>
+                        <p>It tells us <b>how big the absolute error is compared to the actual value</b>.</p>
+
+                        <p><b>Formula:</b></p>
+                        <h2>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Relative
+                                Error = (Absolute Error ÷ Actual Value)</b>
+                        </h2>
+
+                        <p><b>Example:</b></p>
+                        <p>For a book with an actual weight of <b>2.0 kg</b> and an absolute error of <b>0.2 kg</b>:</p>
+
+                        <h3>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Relative
+                                Error = 0.2 ÷ 2.0 = 0.1</b>
+                        </h3>
+                    </li>
+                <hr style="height: 1px; background-color: black; border: none;">
+                    <li>
+                        <h4><b>Percentage Error (Error in % Form)</b></h4>
+                        <p>This shows the error as a percentage, making it easier to understand.</p>
+
+                        <p><b>Formula:</b></p>
+                        <h2>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Percentage
+                                Error = Relative Error × 100%</b>
+                        </h2>
+
+                        <p><b>Example:</b></p>
+                        <p>Using the relative error <b>0.1</b>:</p>
+
+                        <h3>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Percentage
+                                Error = 0.1 × 100 = 10%</b>
+                        </h3>
+
+                        <p>So, the measurement has a <b>10% error</b>.</p>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>iv. <b>How to Minimize Errors in Measurement? </b></h3>
+                <ul>
+                    <li><b>Use High-Quality Instruments </b>Avoid External Influences.</li>
+                    <li><b> Check for Zero Error</b> – Always set the instrument to zero before using it.</li>
+                    <li><b>Repeat Measurements</b> – Take multiple readings and use the average value.</li>
+                    <li><b>Use Proper Techniques</b> – Follow the correct method for measuring.</li>
+                    <li><b>Avoid External Influences</b> – Try to measure in a controlled environment.</li>
+                </ul>
+                <h3>v. <b>Fun Facts About Measurement Errors!</b></h3>
+                <ul style="list-style-type: square;">
+                    <li> <b>NASA once lost a $125 million Mars orbiter</b> because one team used <b>miles</b> while
+                        another
+                        used <b>kilometers!</b></li>
+                    <li>A <b>tiny 0.5 cm measurement mistake</b> in a bridge design can cause a huge <b>structural
+                            failure!</b></li>
+                    <li>In 1999, a <b>500-meter</b> error caused a space probe to crash into Mars instead of orbiting
+                        it!
+                    </li>
+                </ul>
+            </div>
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Significant">3. Significant Figures</h1>
+            <div class="topic-description">
+                <h3>i. <b>What are Significant Figures?</b></h3>
+                <p>Significant figures (also called significant digits) are the digits in a number that carry meaning
+                    and contribute to its precision. They help us express numbers in a way that reflects the accuracy of
+                    measurements.</p>
+                <p><b>For example:</b></p>
+                <ul>
+                    <li><b>12.30</b> cm has <b>4 significant figures</b>(1, 2, 3, and 0).</li>
+                    <li><b>0.0045</b> kg has <b>2 significant figures</b>(4 and 5).</li>
+                </ul>
+                <h3>ii. Why are Significant Figures Important?</h3>
+                <ol style="list-style-type: upper-alpha;">
+                    <li><b>They Show Measurement Accuracy</b> – More significant figures mean a more precise
+                        measurement.</li>
+                    <li><b>They Help in Scientific Calculations</b> – Prevents exaggerated accuracy in answers.</li>
+                    <li><b>They Ensure Consistency</b> – Used in physics, chemistry, and engineering calculations.</li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>iii. Rules for Counting Significant Figures</h3>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p><b>All nonzero digits are always significant</b></p>
+                        <ul>
+                            <li>Example: 1234 has 4 significant figures (1, 2, 3, 4).</li>
+                            <li>Example: 56.78 has 4 significant figures (5, 6, 7, 8).</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Zeros between nonzero digits are significant</b></p>
+                        <ul>
+                            <li>Example: 204 has 3 significant figures (2, 0, 4).</li>
+                            <li>Example: 1002 has 4 significant figures (1, 0, 0, 2).</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Leading zeros (zeros before nonzero digits) are NOT significant</b></p>
+                        <ul>
+                            <li>Example: 0.0034 has 2 significant figures (3 and 4).</li>
+                            <li>Example: 0.000056 has 2 significant figures (5 and 6).</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Trailing zeros (zeros at the end) are significant IF there is a decimal point</b></p>
+                        <ul>
+                            <li>Example: 45.00 has 4 significant figures (4, 5, 0, 0).</li>
+                            <li>Example: 3.7800 has 5 significant figures (3, 7, 8, 0, 0).</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Trailing zeros in a whole number without a decimal point are NOT significant</b></p>
+                        <ul>
+                            <li>Example: 2500 has 2 significant figures (2 and 5).</li>
+                            <li>Example: 300000 has 1 significant figure (3).</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>In scientific notation, all digits in the coefficient are significant</b></p>
+                        <ul>
+                            <li>Example: 4.50 × 10³ has 3 significant figures (4, 5, 0).</li>
+                            <li>Example: 2.340 × 10⁶ has 4 significant figures (2, 3, 4, 0).</li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>iii. Significant Figures in Mathematical Operations</h3>
+                <ol style="list-style-type: upper-alpha;">
+                    <li>
+                        <b>Addition & Subtraction</b>
+                        <p>The result should have the same number of decimal places as the number with the <b>least
+                                decimal places</b>.</p>
+                        <ul>
+                            <li>Example: 12.345 + 1.2 = 13.545 → 13.5 (rounded to 1 decimal place).</li>
+                            <li>Example: 15.02 - 0.678 = 14.342 → 14.34 (rounded to 2 decimal places).</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Multiplication & Division</b>
+                        <p>The result should have the same number of significant figures as the number with the
+                            <b>fewest significant figures</b>.
+                        </p>
+                        <ul>
+                            <li>Example: 3.42 × 1.2 = 4.104 → 4.1 (rounded to 2 significant figures).</li>
+                            <li>Example: 25.0 ÷ 4.2 = 5.952 → 6.0 (rounded to 2 significant figures).</li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3><b>Rounding Off Significant Figures</b></h3>
+                <p><b>Rules for Rounding:</b></p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>If the digit after the last significant figure is less than 5, drop it.</p>
+                        <ul>
+                            <li>Example: 4.732 rounded to 3 significant figures → 4.73.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>If the digit after the last significant figure is 5 or greater, increase the last significant
+                            figure by 1</p>
+                        <ul>
+                            <li>Example: 5.678 rounded to 3 significant figures → 5.68.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>If rounding a number like <b>3.500 to 2 significant figures</b>, it becomes <b>3.5</b> (the
+                            trailing zero is removed).</p>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3><b>Examples of Significant Figures in Real Life</b></h3>
+                <ol>
+                    <li><b>Science & Engineering</b> - When measuring the length of an object, the number of significant
+                        figures tells how precise the measurement is.</li>
+                    <li><b>Finance & Economy</b> – Prices, exchange rates, and financial figures use significant digits
+                        for accuracy.</li>
+                    <li><b>Physics & Chemistry Experiments</b> – Measuring chemicals or force requires proper rounding
+                        to avoid errors.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

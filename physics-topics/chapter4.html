@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-physics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 4 - Work, Energy, and Power</div>
+        <div class="topic-name">
+            <h1>1.Work-Energy Theorem</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <p>The Work-Energy Theorem is a fundamental principle in physics that establishes a direct relationship
+                    between the work done on an object and its kinetic energy. It states that the net work done by all
+                    forces acting on an object is equal to the change in its kinetic energy.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Statement of Work-Energy Theorem</h2>
+                <p>The Work-Energy Theorem states:</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;W<sub>net</sub>
+                    = ΔKE = KE<sub>f</sub> − KE<sub>i</sub></p>
+                <p>where,</p>
+                <ul>
+                    <li>W<sub>net</sub> = Net work done on the object</li>
+                    <li>KE<sub>f</sub> = Final kinetic energy</li>
+                    <li>KE<sub>i</sub> = Initial kinetic energy</li>
+                </ul>
+                <p>This theorem implies that if a force does work on an object, it changes the object’s kinetic energy.
+                </p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Derivation of Work-Energy Theorem
+                </h2>
+                <p>From Newton’s Second Law of Motion,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    F=ma
+                </p>
+                <p>Multiplying both sides by displacement dx,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Fdx=madx</p>
+                <p>Using the kinematic equation vdv=adx, we replace adx, in the equation,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Fdx = mvdv</p>
+                <p>Now, integrating both sides from initial velocity <b>v<sub>i</sub></b> to final velocity
+                    <b>v<sub>f</sub></b>, we get:
+                </p>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    ∫<sub>x<sub>i</sub></sub><sup>x<sub>f</sub></sup> F dx =
+                    ∫<sub>v<sub>i</sub></sub><sup>v<sub>f</sub></sup> m v dv
+                </p>
+                <p>Since work done is given
+                    by,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    W=∫Fdx
+                </p>
+                <p>And, kinetic energy is defined
+                    as:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KE
+                    = (1/2) m v<sup>2</sup>
+                </p>
+                <p>So, the equation simplifies
+                    to:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;W<sub>net</sub>
+                    = (1/2) m v<sub>f</sub><sup>2</sup> − (1/2) m v<sub>i</sub><sup>2</sup><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;W<sub>net</sub>
+                    = KE<sub>f</sub> − KE<sub>i</sub>
+                </p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Understanding Work and Energy</h2>
+                <ol>
+                    <li>Work (W): The transfer of energy by a force acting over a displacement.
+                        <ul>
+                            <li>If work is positive, kinetic energy increases.</li>
+                            <li>If work is negative, kinetic energy decreases.</li>
+                        </ul>
+                    </li>
+                    <li>Kinetic Energy (KE): The energy possessed by a body due to its motion.
+                        <ul>
+                            <li>Formula: KE = (1/2) m v<sup>2</sup< /li>
+                            <li>Kinetic energy depends on mass (m) and velocity (v).</li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Key Points of Work-Energy Theorem</h2>
+                <ul>
+                    <li>The net work done by all forces on an object results in a change in kinetic energy.</li>
+                    <li>If work is done by external forces, kinetic energy increases or decreases.</li>
+                    <li>If no work is done, kinetic energy remains constant (conservation of energy).</li>
+                    <li>It applies to both constant and variable forces.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Work-Energy Theorem</h2>
+                <ol>
+                    <li>Free-Fall Motion
+                        <ul>
+                            <li>When an object falls under gravity, gravitational force does positive work, increasing
+                                its kinetic energy.</li>
+                        </ul>
+                    </li>
+                    <li>Braking in Vehicles
+                        <ul>
+                            <li>The brakes apply a force opposite to motion, doing negative work and decreasing kinetic
+                                energy.</li>
+                        </ul>
+                    </li>
+                    <li>Projectile Motion
+                        <ul>
+                            <li>The kinetic energy changes as the speed of the projectile varies with height.</li>
+                        </ul>
+                    </li>
+                    <li>Roller Coasters
+                        <ul>
+                            <li>Work done by gravity and external forces determines the speed at different points.</li>
+                        </ul>
+                    </li>
+                    <li>Frictional Force
+                        <ul>
+                            <li>Friction does negative work, reducing kinetic energy and bringing objects to rest.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Conservation of Mechanical Energy</h2>
+                <p>If only conservative forces (like gravity) act on an object, mechanical energy is conserved:</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>KE<sub>i</sub>
+                        + PE<sub>i</sub> = KE<sub>f</sub> + PE<sub>f</sub></b></p>
+                <p>where,</p>
+                <ul>
+                    <li>KE = Kinetic Energy</li>
+                    <li>PE = Potential Energy</li>
+                </ul>
+                <p>This principle is an extension of the Work-Energy Theorem, showing that energy is transformed but
+                    remains conserved in an isolated system.</p>
+            </div>
+            <hr style="height: 3px; background-color: black; border: none;">
+            <h1 id="Potential-Kinetic">2. Potential and Kinetic Energy</h1>
+            <div class="topic-description">
+                <h2>Kinetic Energy (KE)</h2>
+                <ul>
+                    <li>Definition: Energy possessed by a body due to its motion.
+                    </li>
+                    <li>Formula:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <p><b>KE = (1/2) m v<sup>2</sup></b></p>
+                        <p>where m = mass, v = velocity.</p>
+                    </li>
+                    <li>
+                        Characteristics:
+                        <ul>
+                            <li>Increases with speed.</li>
+                            <li>Directly proportional to mass and square of velocity.</li>
+                            <li>Completely lost if the object comes to rest.</li>
+                        </ul>
+                    </li>
+                    <li>Examples:
+                        <ul>
+                            <li>A moving car.</li>
+                            <li>A rolling ball.</li>
+                            <li>Flowing water in a river.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Potential Energy (PE)</h2>
+                <ul>
+                    <li>Definition: Energy stored in an object due to its position or configuration.</li>
+                    <li>
+                        Types:
+                        <ol>
+                            <li><b>Gravitational Potential Energy</b>
+                                <ol>
+                                    <li>Energy due to height in a gravitational field.</li>
+                                    <li>Formula: PE=mgh
+                                        <p>where m = mass, g = gravity, h = height.</p>
+                                    </li>
+                                    <li>Example: Water stored in a dam.</li>
+                                </ol>
+                            </li>
+                            <li>
+                                Elastic Potential Energy
+                                <ul>
+                                    <li>Energy stored in stretched or compressed objects (springs, rubber
+                                        bands).
+                                    </li>
+                                    <li>Formula: <p><b>PE = (1/2) k x<sup>2</sup></b></p>
+                                        <p>where k = spring constant, x = deformation.</p>
+                                    </li>
+                                    <li>Example: A stretched bow before releasing an arrow.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Relation Between KE and PE</h2>
+                <ul>
+                    <li>Interconvertible: In a closed system, energy transforms between KE and PE.</li>
+                    <li>Example:
+                        <ul>
+                            <li>A falling ball: PE → KE.</li>
+                            <li>A projectile at highest point: KE → PE.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Total Mechanical Energy (E)= E=KE+PE
+                        <ul>
+                            <li>Conserved in the absence of external forces (e.g., gravity, friction).
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications</h2>
+                <ul>
+                    <li>Hydroelectric Dams: Convert PE (stored water) into KE (flowing water) to generate electricity.
+                    </li>
+                    <li>Pendulum Motion: PE at the highest point converts to KE at the lowest point.</li>
+                    <li>Roller Coasters: Gain PE when going up, convert to KE when going down.</li>
+                </ul>
+            </div>
+            <hr style="height: 3px; background-color: black; border: none;">
+            <div class="topic-description">
+                <h1 id="power">3. Power</h1>
+
+                <p>Power is the rate at which work is done or the rate at which energy is transferred. It tells us how
+                    fast a machine or a person can do work.</p>
+
+                <h2>Definition:</h2>
+                <p>Power is defined as the amount of work done per unit time. Mathematically:</p>
+                <p><b>P = W / t</b></p>
+                <p>where:</p>
+                <ul>
+                    <li><b>P</b> = Power (Watt, W)</li>
+                    <li><b>W</b> = Work done (Joule, J)</li>
+                    <li><b>t</b> = Time taken (seconds, s)</li>
+                </ul>
+                <p><b>SI Unit:</b> Watt (W) (1 Watt = 1 Joule/second)</p>
+                <p><b>Other units:</b></p>
+                <ul>
+                    <li><b>Kilowatt (kW):</b> 1 kW = 1000 W</li>
+                    <li><b>Horsepower (HP):</b> 1 HP ≈ 746 W</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Power in Terms of Force and Velocity</h2>
+                <p>From the work formula: <b>W = F ⋅ d</b></p>
+                <p>Since velocity is displacement per unit time: <b>v = d / t</b></p>
+                <p>Power can also be written as: <b>P = F ⋅ v</b></p>
+                <p>where:</p>
+                <ul>
+                    <li><b>F</b> = Force (Newton, N)</li>
+                    <li><b>v</b> = Velocity (m/s)</li>
+                </ul>
+                <p><b>Application:</b> This formula is useful for moving objects, engines, and vehicles.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Power</h2>
+                <h3>(A) Mechanical Power</h3>
+                <p>Power used in mechanical systems involving forces and motion.</p>
+                <p><b>P = F ⋅ v</b></p>
+                <p>Used in motors, vehicles, and mechanical work.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>(B) Electrical Power</h3>
+                <p>Power used in electrical circuits. Given by:</p>
+                <p><b>P = V ⋅ I</b></p>
+                <p>where:</p>
+                <ul>
+                    <li><b>V</b> = Voltage (Volts)</li>
+                    <li><b>I</b> = Current (Amperes)</li>
+                </ul>
+                <p>Using Ohm’s Law (<b>V = I ⋅ R</b>), power can be rewritten as:</p>
+                <p><b>P = I² ⋅ R = V² / R</b></p>
+                <p>Used in household appliances, power plants, and electrical devices.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>(C) Thermal Power</h3>
+                <p>Power in terms of heat energy:</p>
+                <p><b>P = Q / t</b></p>
+                <p>where:</p>
+                <ul>
+                    <li><b>Q</b> = Heat energy transferred (J)</li>
+                    <li><b>t</b> = Time (s)</li>
+                </ul>
+                <p>Used in heat engines, radiators, and thermal systems.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>(D) Rotational Power</h3>
+                <p>Power in rotating systems:</p>
+                <p><b>P = τ ⋅ ω</b></p>
+                <p>where:</p>
+                <ul>
+                    <li><b>τ</b> = Torque (N·m)</li>
+                    <li><b>ω</b> = Angular velocity (rad/s)</li>
+                </ul>
+                <p>Used in turbines, car engines, and rotating machinery.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Average Power and Instantaneous Power</h2>
+                <h3>(A) Average Power</h3>
+                <p>Power over a period of time:</p>
+                <p><b>P<sub>avg</sub> = Total work done / Total time taken</b></p>
+                <p>Used when power changes over time (e.g., machines with variable loads).</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>(B) Instantaneous Power</h3>
+                <p>Power at a specific moment:</p>
+                <p><b>P = lim<sub>Δt → 0</sub> (ΔW / Δt)</b></p>
+                <p>Used in dynamic systems like electric circuits and engines.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Efficiency and Power Output</h2>
+                <p>Power is never fully converted into useful work due to losses (e.g., heat, friction).</p>
+                <p><b>Efficiency (η)</b></p>
+                <p><b>η = (Useful Power Output / Total Power Input) × 100</b></p>
+                <p>Efficiency is always less than 100% due to energy losses.</p>
+
+                <p><b>Examples:</b></p>
+                <ul>
+                    <li>Electric motors: ~85–95% efficiency</li>
+                    <li>Combustion engines: ~25–40% efficiency</li>
+                    <li>Incandescent bulbs: ~5% efficiency (most energy lost as heat)</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Power</h2>
+                <ul>
+                    <li><b>Electric Power Supply:</b> Used to measure household electricity usage (kWh).</li>
+                    <li><b>Automobiles & Engines:</b> Horsepower is used to measure engine performance.</li>
+                    <li><b>Renewable Energy:</b> Power output of solar panels and wind turbines.</li>
+                    <li><b>Industrial Machines:</b> Power consumption in factories and motors.</li>
+                    <li><b>Human Body Power Output:</b> A human can generate ~100-200 W of power while cycling.</li>
+                </ul>
+            </div>
+            <hr style="height: 3px; background-color: black; border: none;">
+            <h1 id="collision">4.Collision</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>A collision is an event where two or more bodies interact with each other for a very short
+                        duration, exchanging energy and momentum.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Collisions</h2>
+                <ol style="list-style-type: lower-roman;">
+                    <li>
+                        <p><b>Elastic Collision</b></p>
+                        <ul>
+                            <li>Both momentum and kinetic energy are conserved.</li>
+                            <li>No loss of energy in the form of heat or deformation.</li>
+                            <li>Example: Collision between billiard balls, atomic and molecular collisions.</li>
+                            <li>Formulas:
+                                <p>Momentum conservation:</p>
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mrow>
+                                        <msub>
+                                            <mi>m</mi>
+                                            <mn>1</mn>
+                                        </msub>
+                                        <msub>
+                                            <mi>u</mi>
+                                            <mn>1</mn>
+                                        </msub>
+                                        <mo>+</mo>
+                                        <msub>
+                                            <mi>m</mi>
+                                            <mn>2</mn>
+                                        </msub>
+                                        <msub>
+                                            <mi>u</mi>
+                                            <mn>2</mn>
+                                        </msub>
+                                        <mo>=</mo>
+                                        <msub>
+                                            <mi>m</mi>
+                                            <mn>1</mn>
+                                        </msub>
+                                        <msub>
+                                            <mi>v</mi>
+                                            <mn>1</mn>
+                                        </msub>
+                                        <mo>+</mo>
+                                        <msub>
+                                            <mi>m</mi>
+                                            <mn>2</mn>
+                                        </msub>
+                                        <msub>
+                                            <mi>v</mi>
+                                            <mn>2</mn>
+                                        </msub>
+                                    </mrow>
+                                </math>
+                                <p>Kinetic energy conservation:</p>
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mfrac>
+                                        <mn>1</mn>
+                                        <mn>2</mn>
+                                    </mfrac>
+                                    <msub>
+                                        <mi>m</mi>
+                                        <mn>1</mn>
+                                    </msub>
+                                    <msup>
+                                        <msub>
+                                            <mi>u</mi>
+                                            <mn>1</mn>
+                                        </msub>
+                                        <mn>2</mn>
+                                    </msup>
+                                    <mo>+</mo>
+                                    <mfrac>
+                                        <mn>1</mn>
+                                        <mn>2</mn>
+                                    </mfrac>
+                                    <msub>
+                                        <mi>m</mi>
+                                        <mn>2</mn>
+                                    </msub>
+                                    <msup>
+                                        <msub>
+                                            <mi>u</mi>
+                                            <mn>2</mn>
+                                        </msub>
+                                        <mn>2</mn>
+                                    </msup>
+                                    <mo>=</mo>
+                                    <mfrac>
+                                        <mn>1</mn>
+                                        <mn>2</mn>
+                                    </mfrac>
+                                    <msub>
+                                        <mi>m</mi>
+                                        <mn>1</mn>
+                                    </msub>
+                                    <msup>
+                                        <msub>
+                                            <mi>v</mi>
+                                            <mn>1</mn>
+                                        </msub>
+                                        <mn>2</mn>
+                                    </msup>
+                                    <mo>+</mo>
+                                    <mfrac>
+                                        <mn>1</mn>
+                                        <mn>2</mn>
+                                    </mfrac>
+                                    <msub>
+                                        <mi>m</mi>
+                                        <mn>2</mn>
+                                    </msub>
+                                    <msup>
+                                        <msub>
+                                            <mi>v</mi>
+                                            <mn>2</mn>
+                                        </msub>
+                                        <mn>2</mn>
+                                    </msup>
+                                </math>
+                            </li>
+                        </ul>
+                    </li>
+                <hr style="height: 1px; background-color: black; border: none;">
+                    <li>
+                        <p><b>Inelastic Collision</b></p>
+                        <ul>
+                            <li>Momentum is conserved, but kinetic energy is not conserved (some energy is lost as heat,
+                                sound, or deformation).</li>
+                            <li>Example: Car crashes, clay hitting the floor.</li>
+                        </ul>
+                    </li>
+                <hr style="height: 1px; background-color: black; border: none;">
+                    <li>
+                        <p><b>Perfectly Inelastic Collision</b></p>
+                        <ul>
+                            <li>Objects stick together after collision and move as one body.</li>
+                            <li>Maximum kinetic energy is lost.</li>
+                            <li>Example: Two pieces of clay colliding and sticking together.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Coefficient of Restitution (e)</h2>
+                <ul>
+                    <li>e measures how "elastic" a collision is:</li>
+                    <li>Formula: e = Relative velocity after collision / Relative velocity before collision</li>
+                    <li>For elastic collision: e = 1</li>
+                    <li>For inelastic collision: 0 < e < 1</li>
+                    <li>For perfectly inelastic collision: e = 0</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Collisions</h2>
+                <ul>
+                    <li>Physics & Engineering: Designing car crash safety.</li>
+                    <li>Astronomy: Understanding asteroid collisions.</li>
+                    <li>Sports: Collision of balls in games like cricket, football, and billiards.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-maths.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter - 10 Coordinate Geometry</div>
+        <div class="topic-name">
+            <h1>1. Straight Lines - Detailed Notes</h1>
+            <div class="topic-description">
+                <h2>Equation of a Straight Line</h2>
+                <p>A straight line in the coordinate plane can be represented by an equation. There are various
+                    forms depending on the given information.</p>
+
+                <h3>a. General Form of the Equation</h3>
+                <p>The general form of the equation of a straight line is:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>A</mi>
+                    <mi>x</mi>
+                    <mo>+</mo>
+                    <mi>B</mi>
+                    <mi>y</mi>
+                    <mo>+</mo>
+                    <mi>C</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                </math>
+                <ul>
+                    <li>Where A, B, and C are constants. This is the most general form and can represent any
+                        straight line.</li>
+                    <li>The slope of the line is <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>m</mi>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>-A</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>B</mi>
+                                </mrow>
+                            </mfrac>
+                        </math> (if B ≠ 0).</li>
+                    <li>The x-intercept and y-intercept can be derived from this equation.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>b. Slope-Intercept Form</h3>
+                <p>The slope-intercept form is one of the most commonly used forms to express a straight line. It is
+                    given by:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>y</mi>
+                    <mo>=</mo>
+                    <mi>m</mi>
+                    <mi>x</mi>
+                    <mo>+</mo>
+                    <mi>b</mi>
+                </math>
+                <ul>
+                    <li>Where m is the slope of the line (the rate of change of y with respect to x).</li>
+                    <li>b is the y-intercept, which is the point where the line intersects the y-axis (i.e., x = 0).
+                    </li>
+                </ul>
+                <p>Example: For the line equation <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>y</mi>
+                        <mo>=</mo>
+                        <mn>2</mn>
+                        <mi>x</mi>
+                        <mo>+</mo>
+                        <mn>3</mn>
+                    </math>:</p>
+                <ul>
+                    <li>The slope m = 2, meaning for every unit increase in x, y increases by 2 units.</li>
+                    <li>The y-intercept b = 3, meaning the line crosses the y-axis at (0, 3).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>c. Point-Slope Form</h3>
+                <p>The point-slope form of the equation of a line is useful when we know the slope of the line and a
+                    specific point on the line. It is given by:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>y</mi>
+                    <mo>-</mo>
+                    <mi>y1</mi>
+                    <mo>=</mo>
+                    <mi>m</mi>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>-</mo>
+                    <mi>x1</mi>
+                    <mo>)</mo>
+                </math>
+                <ul>
+                    <li>(x1, y1) is a point on the line.</li>
+                    <li>m is the slope of the line.</li>
+                </ul>
+                <p>Example: For a line passing through the point (1, 2) with a slope of 3:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>y</mi>
+                    <mo>-</mo>
+                    <mn>2</mn>
+                    <mo>=</mo>
+                    <mn>3</mn>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>-</mo>
+                    <mn>1</mn>
+                    <mo>)</mo>
+                </math>
+                <p>This simplifies to <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>y</mi>
+                        <mo>=</mo>
+                        <mn>3</mn>
+                        <mi>x</mi>
+                        <mo>-</mo>
+                        <mn>1</mn>
+                    </math>.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>d. Intercept Form</h3>
+                <p>The intercept form is particularly useful when we know the intercepts of the line on both the
+                    x-axis and the y-axis. It is given by:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>x</mi>
+                    <mfrac>
+                        <mrow>
+                            <mi>a</mi>
+                        </mrow>
+                        </mrow>
+                    </mfrac>
+                    <mi>y</mi>
+                    <mfrac>
+                        <mrow>
+                            <mi>b</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>c</mi>
+                        </mrow>
+                        </mrow>
+                    </mfrac>
+                </math>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Circle">2. Circle</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>A circle is a geometric shape defined as the set of all points in a plane that are
+                        equidistant from a fixed point called the center.</li>
+                    <li>The distance from the center to any point on the circle is called the radius.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Equation of a Circle</h2>
+                <ul>
+                    <li>The standard form of the equation of a circle with center \((h, k)\) and radius \(r\) is:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msup>
+                                <mi>x - h</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>+</mo>
+                            <msup>
+                                <mi>y - k</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>=</mo>
+                            <msup>
+                                <mi>r</mi>
+                                <mn>2</mn>
+                            </msup>
+                        </math>
+                    </li>
+                    <li>For example, for a circle with center \((3, -2)\) and radius 5, the equation becomes:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msup>
+                                <mi>x - 3</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>+</mo>
+                            <msup>
+                                <mi>y + 2</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>=</mo>
+                            <msup>
+                                <mi>5</mi>
+                                <mn>2</mn>
+                            </msup>
+                        </math>
+                    </li>
+
+                    <li>The general form of the equation of a circle is:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msup>
+                                <mi>x</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>+</mo>
+                            <msup>
+                                <mi>y</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>+</mo>
+                            <mn>2</mn>
+                            <mi>g</mi>
+                            <mi>x</mi>
+                            <mo>+</mo>
+                            <mn>2</mn>
+                            <mi>f</mi>
+                            <mi>y</mi>
+                            <mo>+</mo>
+                            <mi>c</mi>
+                            <mo>=</mo>
+                            <mn>0</mn>
+                        </math>
+                    </li>
+                    <li>From the general form, we can find the center and radius:
+                        <ul>
+                            <li>Center: \((-g, -f)\)</li>
+                            <li>Radius: \(r = \sqrt{g^2 + f^2 - c}\)</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Key Properties of a Circle</h2>
+                <ul>
+                    <li><b>Center:</b> The point equidistant from all points on the circle.</li>
+                    <li><b>Radius:</b> The constant distance from the center to any point on the circle.</li>
+                    <li><b>Diameter:</b> The longest chord of the circle, which is twice the radius.
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>D</mi>
+                            <mo>=</mo>
+                            <mn>2</mn>
+                            <mi>r</mi>
+                        </math>
+                    </li>
+                    <li><b>Chord:</b> A line segment joining any two points on the circle. The diameter is the
+                        longest chord.</li>
+                    <li><b>Arc:</b> A part of the circumference of a circle. A minor arc is the shorter segment,
+                        while the major arc is the longer one.</li>
+                    <li><b>Circumference:</b> The total length around the circle. The formula is:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>C</mi>
+                            <mo>=</mo>
+                            <mn>2</mn>
+                            <mi>π</mi>
+                            <mi>r</mi>
+                        </math>
+                    </li>
+                    <li><b>Area:</b> The area enclosed by the circle is given by:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>A</mi>
+                            <mo>=</mo>
+                            <mi>π</mi>
+                            <msup>
+                                <mi>r</mi>
+                                <mn>2</mn>
+                            </msup>
+                        </math>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Tangent to a Circle</h2>
+                <ul>
+                    <li>A tangent is a line that touches the circle at exactly one point, called the point of
+                        tangency.</li>
+                    <li>The tangent is always perpendicular to the radius at the point of tangency.</li>
+                    <li>For a tangent to a circle with center \((h, k)\) at a point \((x_1, y_1)\) on the circle,
+                        the equation is:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>x - h</mi>
+                                <mi>1</mi>
+                            </msub>
+                            <mo>(</mo>
+                            <mi>x - h</mi>
+                            <mo>)</mo>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>y - k</mi>
+                                <mi>1</mi>
+                            </msub>
+                            <mo>(</mo>
+                            <mi>y - k</mi>
+                            <mo>)</mo>
+                            <mo>=</mo>
+                            <msup>
+                                <mi>r</mi>
+                                <mn>2</mn>
+                            </msup>
+                        </math>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Power of a Point</h2>
+                <ul>
+                    <li>The power of a point \(P\) with respect to a circle is the square of the distance from the
+                        point to the center minus the square of the radius. If the point lies outside the circle and
+                        a secant from \(P\) intersects the circle at points \(A\) and \(B\), the power of point
+                        \(P\) is given by:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>Power</mi>
+                            <mo>=</mo>
+                            <mi>PA</mi>
+                            <mo>×</mo>
+                            <mi>PB</mi>
+                        </math>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Circles</h2>
+                <ul>
+                    <li><b>Geometry:</b> Circles are used to model things like wheels, gears, or orbits in physics.
+                    </li>
+                    <li><b>Trigonometry:</b> The unit circle plays a key role in trigonometric functions and
+                        identities.</li>
+                    <li><b>Astronomy:</b> Circles are used to describe orbits of planets and other celestial bodies.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Ellipse">3. Ellipse</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>An ellipse is a geometric shape formed by the set of all points in a plane where the sum of
+                        the
+                        distances from two fixed points, called foci, is constant.</li>
+                    <li>It can be thought of as a stretched circle.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Equation of an Ellipse</h2>
+                <ul>
+                    <li>The standard form of the equation of an ellipse with center at \((h, k)\), horizontal radius
+                        \(a\), and vertical radius \(b\) is:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mfrac>
+                                <mrow>
+                                    <msub>
+                                        <mi>(x - h)</mi>
+                                        <mi>2</mi>
+                                    </msub>
+                                </mrow>
+                                <mrow>
+                                    <msub>
+                                        <mi>a</mi>
+                                        <mi>2</mi>
+                                    </msub>
+                                </mrow>
+                            </mfrac>
+                            <mo>+</mo>
+                            <mfrac>
+                                <mrow>
+                                    <msub>
+                                        <mi>(y - k)</mi>
+                                        <mi>2</mi>
+                                    </msub>
+                                </mrow>
+                                <mrow>
+                                    <msub>
+                                        <mi>b</mi>
+                                        <mi>2</mi>
+                                    </msub>
+                                </mrow>
+                            </mfrac>
+                            <mo>=</mo>
+                            <mn>1</mn>
+                        </math>
+                    </li>
+                    <li>For a circle, where \(a = b\), the equation simplifies to the equation of a circle.</li>
+                    <li>Example: For an ellipse with center at \((2, 3)\), horizontal radius 5, and vertical radius
+                        3,
+                        the equation is:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mfrac>
+                                <mrow>
+                                    <msub>
+                                        <mi>(x - 2)</mi>
+                                        <mi>2</mi>
+                                    </msub>
+                                </mrow>
+                                <mrow>
+                                    <msub>
+                                        <mi>5</mi>
+                                        <mi>2</mi>
+                                    </msub>
+                                </mrow>
+                            </mfrac>
+                            <mo>+</mo>
+                            <mfrac>
+                                <mrow>
+                                    <msub>
+                                        <mi>(y - 3)</mi>
+                                        <mi>2</mi>
+                                    </msub>
+                                </mrow>
+                                <mrow>
+                                    <msub>
+                                        <mi>3</mi>
+                                        <mi>2</mi>
+                                    </msub>
+                                </mrow>
+                            </mfrac>
+                            <mo>=</mo>
+                            <mn>1</mn>
+                        </math>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Key Properties of an Ellipse</h2>
+                <ul>
+                    <li><b>Foci:</b> An ellipse has two foci. The sum of the distances from any point on the ellipse
+                        to
+                        the two foci is constant.</li>
+                    <li><b>Major and Minor Axes:</b> The longest diameter of the ellipse is called the major axis,
+                        and
+                        the shortest diameter is the minor axis. The center is the midpoint of both axes.</li>
+                    <li><b>Vertices:</b> The points where the ellipse intersects the major axis are called the
+                        vertices.
+                    </li>
+                    <li><b>Co-vertices:</b> The points where the ellipse intersects the minor axis are called the
+                        co-vertices.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Relations Between Axes and Foci</h2>
+                <ul>
+                    <li>The distance between the center and each focus is \(c\), where:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>c</mi>
+                            <mo>=</mo>
+                            <msup>
+                                <mi>a</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>-</mo>
+                            <msup>
+                                <mi>b</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mo> </mo>
+                            <msup>
+                                <mrow>
+                                    <mi> </mi>
+                                </mrow>
+                                <mn>1</mn>
+                            </msup>
+                        </math>
+                    </li>
+                    <li>If \(a = b\), the ellipse becomes a circle, and the foci coincide with the center.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Area of an Ellipse</h2>
+                <ul>
+                    <li>The area of an ellipse is given by the formula:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>A</mi>
+                            <mo>=</mo>
+                            <mi>π</mi>
+                            <mi>a</mi>
+                            <mi>b</mi>
+                        </math>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Ellipses</h2>
+                <ul>
+                    <li><b>Astronomy:</b> The orbits of planets and celestial bodies are elliptical.</li>
+                    <li><b>Optics:</b> Elliptical mirrors and lenses focus light effectively at the foci.</li>
+                    <li><b>Engineering:</b> Ellipses are used in the design of gears, wheels, and mechanical
+                        systems.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Parabola">4. Parabola</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>A parabola is a U-shaped curve that can open upward, downward, leftward, or rightward. It is
+                        a
+                        type of conic section that can be defined geometrically as the set of all points equidistant
+                        from a fixed point called the focus and a fixed line called the directrix. Parabolas are
+                        used in
+                        a variety of fields, from physics (projectile motion) to engineering (reflecting surfaces).
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>i. General Equation of a Parabola</h2>
+                <p>The equation of a parabola depends on its orientation in the coordinate plane and the location of
+                    its
+                    vertex.</p>
+
+                <h3>a. Standard Equation of a Parabola with a Vertical Axis (Up or Down Opening):</h3>
+                <ul>
+                    <li>The equation for a parabola that opens upward or downward is:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>y</mi>
+                            <mo>=</mo>
+                            <mi>a</mi>
+                            <mo>(</mo>
+                            <mi>x</mi>
+                            <mo>-</mo>
+                            <mi>h</mi>
+                            <mo>)</mo>
+                            <msup>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>+</mo>
+                            <mi>k</mi>
+                        </math>
+                    </li>
+                    <li>Where:
+                        <ul>
+                            <li>\((h, k)\) is the vertex of the parabola.</li>
+                            <li>\(a\) determines the width and direction of the parabola:</li>
+                            <ul>
+                                <li>If \(a > 0\), the parabola opens upward.</li>
+                                <li>If \(a < 0\), the parabola opens downward.</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>Example: The equation <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>y</mi>
+                            <mo>=</mo>
+                            <mn>2</mn>
+                            <mo>(</mo>
+                            <mi>x</mi>
+                            <mo>-</mo>
+                            <mn>1</mn>
+                            <mo>)</mo>
+                            <msup>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>+</mo>
+                            <mn>3</mn>
+                        </math> represents a parabola that opens upward, with the vertex at \((1, 3)\).</li>
+                </ul>
+
+                <h3>b. Standard Equation of a Parabola with a Horizontal Axis (Left or Right Opening):</h3>
+                <ul>
+                    <li>The equation for a parabola that opens leftward or rightward is:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>x</mi>
+                            <mo>=</mo>
+                            <mi>a</mi>
+                            <mo>(</mo>
+                            <mi>y</mi>
+                            <mo>-</mo>
+                            <mi>k</mi>
+                            <mo>)</mo>
+                            <msup>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>+</mo>
+                            <mi>h</mi>
+                        </math>
+                    </li>
+                    <li>Where:
+                        <ul>
+                            <li>\((h, k)\) is the vertex of the parabola.</li>
+                            <li>\(a\) determines the width and direction of the parabola:</li>
+                            <ul>
+                                <li>If \(a > 0\), the parabola opens rightward.</li>
+                                <li>If \(a < 0\), the parabola opens leftward.</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>Example: The equation <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>x</mi>
+                            <mo>=</mo>
+                            <mo>-</mo>
+                            <mn>3</mn>
+                            <mo>(</mo>
+                            <mi>y</mi>
+                            <mo>+</mo>
+                            <mn>2</mn>
+                            <mo>)</mo>
+                            <msup>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>+</mo>
+                            <mn>4</mn>
+                        </math> represents a parabola that opens leftward, with the vertex at \((4, -2)\).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Properties of a Parabola</h2>
+                <ul>
+                    <li><b>Vertex:</b> The vertex of a parabola is the point where the curve changes direction. It
+                        is
+                        the minimum point for a parabola that opens upward and the maximum point for a parabola that
+                        opens downward (for vertical parabolas). The vertex in the standard form \(y = a(x - h)^2 +
+                        k\)
+                        is \((h, k)\).</li>
+                    <li><b>Focus:</b> The focus of a parabola is a fixed point located on the axis of symmetry,
+                        inside
+                        the curve. It is equidistant from any point on the parabola. For vertical parabolas, the
+                        focus
+                        is at:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>(</mi>
+                            <mi>h</mi>
+                            <mo>,</mo>
+                            <mi>k</mi>
+                            <mo>+</mo>
+                            <mfrac>
+                                <mn>1</mn>
+                                <mn>4a</mn>
+                            </mfrac>
+                            <mi>)</mi>
+                        </math>
+                        if the parabola opens upward, or:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>(</mi>
+                            <mi>h</mi>
+                            <mo>,</mo>
+                            <mi>k</mi>
+                            <mo>-</mo>
+                            <mfrac>
+                                <mn>1</mn>
+                                <mn>4a</mn>
+                            </mfrac>
+                            <mi>)</mi>
+                        </math>
+                        if it opens downward.
+                    </li>
+                    <li><b>Directrix:</b> The directrix is a line that is equidistant from any point on the
+                        parabola. It
+                        lies opposite to the focus and helps define the curve. For vertical parabolas, the directrix
+                        is
+                        at:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>y</mi>
+                            <mo>=</mo>
+                            <mi>k</mi>
+                            <mo>-</mo>
+                            <mfrac>
+                                <mn>1</mn>
+                                <mn>4a</mn>
+                            </mfrac>
+                        </math>
+                        if the parabola opens upward, or:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>y</mi>
+                            <mo>=</mo>
+                            <mi>k</mi>
+                            <mo>+</mo>
+                            <mfrac>
+                                <mn>1</mn>
+                                <mn>4a</mn>
+                            </mfrac>
+                        </math>
+                        if it opens downward.
+                    </li>
+                    <li><b>Axis of Symmetry:</b> The axis of symmetry is the line that passes through the vertex and
+                        the
+                        focus, dividing the parabola into two mirror-image halves. For a vertical parabola \(y = a(x
+                        -
+                        h)^2 + k\), the axis of symmetry is the vertical line \(x = h\). For a horizontal parabola
+                        \(x =
+                        a(y - k)^2 + h\), the axis of symmetry is the horizontal line \(y = k\).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. Equation of a Parabola in General Form</h2>
+                <ul>
+                    <li>The general form of the equation of a parabola is:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>A</mi>
+                            <mi>x</mi>
+                            <msup>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>+</mo>
+                            <mi>B</mi>
+                            <mi>x</mi>
+                            <mi>y</mi>
+                            <mo>+</mo>
+                            <mi>C</mi>
+                            <mi>y</mi>
+                            <msup>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>+</mo>
+                            <mi>D</mi>
+                            <mi>x</mi>
+                            <mo>+</mo>
+                            <mi>E</mi>
+                            <mi>y</mi>
+                            <mo>+</mo>
+                            <mi>F</mi>
+                            <mo>=</mo>
+                            <mn>0</mn>
+                        </math>
+                    </li>
+                    <li>Where \(A\), \(B\), \(C\), \(D\), \(E\), and \(F\) are constants. This form can be converted
+                        into the standard form by completing the square, and it helps to determine the orientation
+                        and
+                        shape of the parabola.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iv. Focal Length</h2>
+                <ul>
+                    <li>The focal length of a parabola is the distance from the vertex to the focus. It is related
+                        to
+                        the coefficient \(a\) in the equation:</li>
+                    <ul>
+                        <li>For a parabola with a vertical axis of symmetry, the focal length is \(\frac{1}{4a}\).
+                        </li>
+                        <li>For a parabola with a horizontal axis of symmetry, the focal length is also
+                            \(\frac{1}{4a}\).</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>v. Tangent to a Parabola</h2>
+                <ul>
+                    <li>The equation of the tangent to the parabola at any point \((x_1, y_1)\) on the curve can be
+                        written as:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>y</mi>
+                            <mo>-</mo>
+                            <mi>y</mi>
+                            <msub>
+                                <mi>1</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <mi>m</mi>
+                            <mo>(</mo>
+                            <mi>x</mi>
+                            <mo>-</mo>
+                            <mi>x</mi>
+                            <msub>
+                                <mi>1</mi>
+                            </msub>
+                            <mo>)</mo>
+                        </math>
+                    </li>
+                    <li>Where \(m\) is the slope of the tangent. For vertical parabolas, the slope can be derived
+                        using
+                        the derivative of the equation of the parabola, and similarly, for horizontal parabolas, the
+                        slope can be determined.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>vi. Parametric Equations of a Parabola</h2>
+                <ul>
+                    <li>For a parabola with a vertical axis, the parametric equations are:
+                        <ul>
+                            <li><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>x</mi>
+                                    <mo>=</mo>
+                                    <mi>a</mi>
+                                    <mi>t</mi>
+                                    <msup>
+                                        <mn>2</mn>
+                                    </msup>
+                                    <mo>+</mo>
+                                    <mi>h</mi>
+                                </math></li>
+                            <li><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>y</mi>
+                                    <mo>=</mo>
+                                    <mn>2</mn>
+                                    <mi>a</mi>
+                                    <mi>t</mi>
+                                    <mo>+</mo>
+                                    <mi>k</mi>
+                                </math></li>
+                        </ul>
+                    </li>
+                    <li>For a parabola with a horizontal axis, the parametric equations are:
+                        <ul>
+                            <li><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>x</mi>
+                                    <mo>=</mo>
+                                    <mn>2</mn>
+                                    <mi>a</mi>
+                                    <mi>t</mi>
+                                    <mo>+</mo>
+                                    <mi>h</mi>
+                                </math></li>
+                            <li><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>y</mi>
+                                    <mo>=</mo>
+                                    <mi>a</mi>
+                                    <mi>t</mi>
+                                    <msup>
+                                        <mn>2</mn>
+                                    </msup>
+                                    <mo>+</mo>
+                                    <mi>k</mi>
+                                </math></li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>vii. Applications of Parabolas</h2>
+                <ul>
+                    <li><b>Projectile Motion:</b> The path of an object thrown in the air follows a parabolic
+                        trajectory. The equation of motion for an object under gravity is often modeled by a
+                        parabola.
+                    </li>
+                    <li><b>Satellite Dishes:</b> Parabolic reflectors are used in satellite dishes because they
+                        reflect
+                        incoming signals to a single point, the focus, where the receiver is located.</li>
+                    <li><b>Car Headlights:</b> Parabolic reflectors are used in car headlights, focusing light into
+                        a
+                        beam that is directed in a specific direction.</li>
+                    <li><b>Engineering:</b> Parabolic arches and bridges utilize the structural properties of
+                        parabolas
+                        to support heavy loads with minimal material.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>viii. Example of a Parabola</h2>
+                <p>Consider the equation of a parabola:
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>y</mi>
+                        <mo>=</mo>
+                        <mn>3</mn>
+                        <mo>(</mo>
+                        <mi>x</mi>
+                        <mo>-</mo>
+                        <mn>2</mn>
+                        <mo>)</mo>
+                        <msup>
+                            <mn>2</mn>
+                        </msup>
+                        <mo>+</mo>
+                        <mn>4</mn>
+                    </math>
+                </p>
+                <ul>
+                    <li>The vertex is at \((2, 4)\).</li>
+                    <li>Since \(a = 3 > 0\), the parabola opens upward.</li>
+                    <li>The focus is located at \((2, 4 + \frac{1}{4 \times 3}) = (2, 4 + \frac{1}{12}) = (2,
+                        \frac{49}{12})\).</li>
+                    <li>The directrix is the line \(y = 4 - \frac{1}{12} = \frac{47}{12}\).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
