@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-physics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 7 - Properties of Solids and Liquids</div>
+        <div class="topic-name">
+            <h1>1. Introduction to Elasticity</h1>
+            <div class="topic-description">
+                <p>Elasticity is the property of a material to regain its original shape and size after the removal of
+                    an
+                    external force.</p>
+                <p>When an external force is applied, the material deforms; once the force is removed, it tries to
+                    return to
+                    its original shape.</p>
+                <p>The study of elasticity is essential in engineering, construction, and material science.</p>
+                <h2>Example:</h2>
+                <p>A rubber band stretches when pulled but regains its original shape after release.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Stress and Strain</h2>
+                <h3>(a) Stress (σ)</h3>
+                <p>Stress is the internal restoring force per unit area within a material due to an applied external
+                    force.
+                </p>
+                <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>Stress</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mi>Force (F)</mi>
+                            <mi>Area (A)</mi>
+                        </mfrac>
+                    </math>
+                </p>
+                <p><b>Unit:</b> Pascal (Pa) or N/m<sup>2</sup></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Types of Stress:</h3>
+                <ul>
+                    <li><b>Tensile Stress:</b> When the object is stretched.</li>
+                    <li><b>Compressive Stress:</b> When the object is compressed.</li>
+                    <li><b>Shear Stress:</b> When the object is twisted or sheared.</li>
+                </ul>
+
+                <h3>(b) Strain (ε)</h3>
+                <p>Strain is the deformation per unit original dimension due to applied stress.</p>
+                <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>Strain</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mi>Change in dimension</mi>
+                            <mi>Original dimension</mi>
+                        </mfrac>
+                    </math>
+                </p>
+                <p><b>It has no units (dimensionless) because it is a ratio.</b></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Types of Strain:</h3>
+                <ul>
+                    <li><b>Longitudinal Strain:</b> Change in length per unit original length.</li>
+                    <li><b>Volumetric Strain:</b> Change in volume per unit original volume.</li>
+                    <li><b>Shear Strain:</b> Change in shape due to tangential stress.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Hooke’s Law</h2>
+                <p>Hooke’s law states that stress is directly proportional to strain, within the elastic limit.</p>
+                <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>Stress</mi>
+                        <mo>=</mo>
+                        <mi>Elastic Modulus</mi>
+                        <mo>×</mo>
+                        <mi>Strain</mi>
+                    </math>
+                </p>
+                <h3>Limitations of Hooke’s Law:</h3>
+                <ul>
+                    <li>Valid only within the elastic limit.</li>
+                    <li>Does not hold for plastic or brittle materials.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Elastic Moduli</h2>
+                <h3>(a) Young’s Modulus (E)</h3>
+                <p>Measures elasticity in length (Tensile/Compressive stress).</p>
+                <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>E</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mi>Longitudinal Stress</mi>
+                            <mi>Longitudinal Strain</mi>
+                        </mfrac>
+                    </math>
+                </p>
+                <h3>(b) Bulk Modulus (K)</h3>
+                <p>Measures elasticity in volume (Volumetric stress).</p>
+                <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>K</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mi>Volumetric Stress</mi>
+                            <mi>Volumetric Strain</mi>
+                        </mfrac>
+                    </math>
+                </p>
+                <h3>(c) Shear Modulus (G or η)</h3>
+                <p>Measures elasticity in shape (Shear stress).</p>
+                <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>G</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mi>Shear Stress</mi>
+                            <mi>Shear Strain</mi>
+                        </mfrac>
+                    </math>
+                </p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Elastic Limit and Plastic Deformation</h2>
+                <p><b>Elastic Limit:</b> The maximum stress a material can withstand and still return to its original
+                    shape.
+                </p>
+                <p><b>Plastic Deformation:</b> If stress exceeds the elastic limit, the material deforms permanently.
+                </p>
+                <h3>Example:</h3>
+                <p>A rubber band stretches elastically up to a point.</p>
+                <p>If stretched too much, it permanently deforms and does not return to its original shape.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Elasticity</h2>
+                <ul>
+                    <li><b>Construction:</b> Bridges, buildings, and beams must withstand stress without permanent
+                        deformation.</li>
+                    <li><b>Automobile Industry:</b> Car springs and tires use elasticity for impact absorption.</li>
+                    <li><b>Medical:</b> Tendons and bones exhibit elastic behavior to support movement.</li>
+                    <li><b>Sports:</b> Rackets, bows, and trampolines depend on elastic materials.</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Viscosity">2. Viscosity</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>Viscosity is the property of a fluid (liquid or gas) that describes its resistance to flow.</li>
+                    <li>It occurs due to internal friction between different layers of the fluid moving at different
+                        velocities.</li>
+                    <li>Fluids with high viscosity flow slowly (e.g., honey), while fluids with low viscosity flow
+                        easily (e.g., water).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example</h2>
+                <ul>
+                    <li>Honey has a higher viscosity than water, which means it flows slower.</li>
+                    <li>Air has a lower viscosity than oil, so it moves more freely.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Causes of Viscosity</h2>
+                <ul>
+                    <li>Viscosity arises due to the cohesive forces (intermolecular forces) between molecules in a
+                        fluid.</li>
+                    <li>In liquids, viscosity is mainly due to intermolecular attraction.</li>
+                    <li>In gases, viscosity is caused by collisions between fast-moving molecules.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Coefficient of Viscosity (η)</h2>
+                <p>The coefficient of viscosity measures a fluid’s resistance to deformation. It is defined by Newton’s
+                    Law of Viscosity:</p>
+                <p><b>F = η A (dv/dx)</b></p>
+                <ul>
+                    <li>F = force applied on the liquid layer</li>
+                    <li>A = area of the layer</li>
+                    <li>dv/dx = velocity gradient (change in velocity per unit distance)</li>
+                    <li>η = coefficient of viscosity</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Unit of Viscosity</h2>
+                <ul>
+                    <li>SI Unit: Pascal-second (Pa·s) or N·s/m²</li>
+                    <li>CGS Unit: Poise (P), where 1 Poise = 0.1 Pa·s</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Dimensional Formula</h2>
+                <p>η = [M L⁻¹ T⁻¹]</p>
+
+                <h2>Types of Fluids Based on Viscosity</h2>
+                <ol>
+                    <li><b>Newtonian Fluids</b>
+                        <ul>
+                            <li>Obey Newton’s Law of Viscosity (constant viscosity at all flow conditions).</li>
+                            <li>Examples: Water, air, alcohol.</li>
+                        </ul>
+                    </li>
+                    <li><b>Non-Newtonian Fluids</b>
+                        <ul>
+                            <li>Do not obey Newton’s law (viscosity changes with applied force).</li>
+                            <li>Examples: Blood, ketchup, quicksand.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Factors Affecting Viscosity</h2>
+                <h3>Temperature</h3>
+                <ul>
+                    <li>In liquids, viscosity decreases with increasing temperature (molecules move faster, reducing
+                        attraction).</li>
+                    <li>In gases, viscosity increases with increasing temperature (molecular collisions become more
+                        frequent).</li>
+                </ul>
+
+                <h3>Pressure</h3>
+                <ul>
+                    <li>In liquids, viscosity increases with pressure.</li>
+                    <li>In gases, viscosity is not significantly affected by pressure.</li>
+                </ul>
+
+                <h3>Molecular Composition</h3>
+                <ul>
+                    <li>Fluids with larger molecules tend to have higher viscosity.</li>
+                    <li>Example: Oils are more viscous than water due to larger molecular size.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Stokes' Law (For a Sphere Moving in a Viscous Fluid)</h2>
+                <p>When a small sphere moves through a viscous fluid, it experiences a drag force given by Stokes' Law:
+                </p>
+                <p><b>F = 6πηrv</b></p>
+                <ul>
+                    <li>F = viscous drag force</li>
+                    <li>η = viscosity of the fluid</li>
+                    <li>r = radius of the sphere</li>
+                    <li>v = velocity of the sphere</li>
+                </ul>
+                <h3>Example</h3>
+                <ul>
+                    <li>A raindrop falling through the air slows down due to air viscosity.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Terminal Velocity</h2>
+                <p>When an object falls through a viscous fluid, it reaches a constant velocity called terminal velocity
+                    (v<sub>t</sub>).</p>
+                <p>It happens when the gravitational force is balanced by the viscous drag and buoyant force. Given by:
+                </p>
+                <p><b>v<sub>t</sub> = (2r<sup>2</sup> (ρ - σ)g) / (9η)</b></p>
+                <ul>
+                    <li>r = radius of the object</li>
+                    <li>ρ = density of the object</li>
+                    <li>σ = density of the fluid</li>
+                    <li>g = acceleration due to gravity</li>
+                    <li>η = coefficient of viscosity</li>
+                </ul>
+                <h3>Examples</h3>
+                <ul>
+                    <li>A raindrop stops accelerating after reaching terminal velocity.</li>
+                    <li>A parachutist slows down due to air resistance.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Poiseuille’s Law (Flow of Liquid Through a Pipe)</h2>
+                <p>Describes the flow rate of a viscous liquid through a cylindrical pipe:</p>
+                <p><b>Q = (πr<sup>4</sup>(P<sub>1</sub> - P<sub>2</sub>)) / (8ηl)</b></p>
+                <ul>
+                    <li>Q = volume flow rate</li>
+                    <li>r = radius of the pipe</li>
+                    <li>P<sub>1</sub> - P<sub>2</sub> = pressure difference</li>
+                    <li>l = length of the pipe</li>
+                    <li>η = viscosity of the fluid</li>
+                </ul>
+                <h3>Applications</h3>
+                <ul>
+                    <li>Blood flow in veins and arteries.</li>
+                    <li>Oil flow through pipelines.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Viscosity</h2>
+                <ul>
+                    <li>Lubrication: Engine oils reduce friction between machine parts.</li>
+                    <li>Blood Flow: Blood viscosity affects circulation and heart health.</li>
+                    <li>Paints and Inks: Proper viscosity ensures smooth application.</li>
+                    <li>Aviation: Air viscosity affects aircraft aerodynamics.</li>
+                    <li>Polymer Manufacturing: Determines flow behavior in plastic molding.</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Surface">3. Surface Tension</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>Surface tension is the property of a liquid that makes its surface behave like a stretched
+                        elastic sheet.</li>
+                    <li>It arises due to cohesive forces (attractive forces between molecules) at the surface of a
+                        liquid.</li>
+                    <li>It is responsible for the formation of droplets, bubbles, and capillary action.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example</h2>
+                <ul>
+                    <li>Water droplets on a surface appear spherical due to surface tension.</li>
+                    <li>A small insect like a water strider can walk on water without sinking.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Cause of Surface Tension</h2>
+                <ul>
+                    <li>Molecules inside a liquid experience equal cohesive forces in all directions.</li>
+                    <li>Molecules at the surface experience a net inward force, as there are no liquid molecules above
+                        them.</li>
+                    <li>This inward force pulls surface molecules together, minimizing surface area.</li>
+                </ul>
+                <p><b>Analogy:</b> Surface tension is like a stretched rubber sheet on the surface of water.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Surface Tension Formula & Unit</h2>
+                <h3>(a) Surface Tension (T)</h3>
+                <p>Surface tension is defined as the force per unit length acting along the surface of a liquid:</p>
+                <p><b>T = F / L</b></p>
+                <ul>
+                    <li>T = Surface tension</li>
+                    <li>F = Force acting on the surface</li>
+                    <li>L = Length along which the force acts</li>
+                </ul>
+
+                <h3>(b) Unit of Surface Tension</h3>
+                <ul>
+                    <li>SI Unit: Newton per meter (N/m)</li>
+                    <li>CGS Unit: dyne/cm, where 1 dyne/cm = 0.001 N/m</li>
+                </ul>
+
+                <h3>(c) Dimensional Formula</h3>
+                <p><b>[T] = [M T⁻²]</b></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Factors Affecting Surface Tension</h2>
+                <h3>(a) Temperature</h3>
+                <ul>
+                    <li>Surface tension decreases with increase in temperature because molecular motion increases.</li>
+                    <li>At boiling point, surface tension becomes very low.</li>
+                </ul>
+
+                <h3>(b) Impurities</h3>
+                <ul>
+                    <li>Soluble impurities (like soap, detergents) reduce surface tension.</li>
+                    <li>Insoluble impurities (like oil, grease) increase surface tension.</li>
+                </ul>
+
+                <h3>(c) Nature of Liquid</h3>
+                <ul>
+                    <li>Liquids with strong intermolecular forces (like mercury) have high surface tension.</li>
+                    <li>Liquids with weak forces (like alcohol) have low surface tension.</li>
+                </ul>
+
+                <h3>(d) Presence of Surfactants</h3>
+                <ul>
+                    <li>Surfactants (like detergents, soaps) reduce surface tension, helping in cleaning.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Work Done in Increasing Surface Area</h2>
+                <p>To increase the surface area of a liquid film, work must be done against surface tension.</p>
+                <p>The work done (W) is given by:</p>
+                <p><b>W = T ⋅ ΔA</b></p>
+                <ul>
+                    <li>T = Surface tension</li>
+                    <li>ΔA = Increase in surface area</li>
+                </ul>
+                <h3>Example</h3>
+                <ul>
+                    <li>Blowing a soap bubble requires work to expand the surface.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Angle of Contact</h2>
+                <p>The angle of contact (θ) is the angle between the liquid surface and the solid surface at the point
+                    of contact. It determines whether a liquid will wet a surface or not.</p>
+                <ul>
+                    <li>If θ < 90°: Liquid wets the surface (e.g., water on glass).</li>
+                    <li>If θ > 90°: Liquid does not wet the surface (e.g., mercury on glass).</li>
+                </ul>
+                <h3>Example</h3>
+                <ul>
+                    <li>Water spreads on glass because the angle of contact is small.</li>
+                    <li>Mercury forms droplets on glass because the angle of contact is large.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Capillary Action (Capillarity)</h2>
+                <p>Capillary action is the rise or fall of a liquid in a narrow tube due to surface tension and adhesive
+                    forces.</p>
+                <h3>Formula for Capillary Rise (h)</h3>
+                <p><b>h = (2T cos θ) / (rρg)</b></p>
+                <ul>
+                    <li>h = Height of liquid rise</li>
+                    <li>T = Surface tension</li>
+                    <li>θ = Angle of contact</li>
+                    <li>r = Radius of the capillary tube</li>
+                    <li>ρ = Density of liquid</li>
+                    <li>g = Acceleration due to gravity</li>
+                </ul>
+                <h3>Examples of Capillary Action</h3>
+                <ul>
+                    <li>Ink rising in a pen nib.</li>
+                    <li>Water moving through plant roots and stems.</li>
+                    <li>Blotting paper absorbing ink.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Surface Tension</h2>
+                <ul>
+                    <li>Soap and Detergents: Reduce surface tension, helping in cleaning.</li>
+                    <li>Rainproof Coatings: Water does not wet surfaces due to high contact angle.</li>
+                    <li>Insect Movement on Water: Insects like water striders use surface tension to float.</li>
+                    <li>Capillary Action in Plants: Helps in water transport in trees.</li>
+                    <li>Medicine: Drops of liquid medicines maintain shape due to surface tension.</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Fluid">4.Fluid Pressure</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>Fluid pressure is the pressure exerted by a fluid (liquid or gas) at any point within it.</li>
+                    <li>It is caused by molecular collisions and depends on depth, density, and gravity.</li>
+                    <li>Fluids exert pressure in all directions.</li>
+                </ul>
+                <h2>Examples</h2>
+                <ul>
+                    <li>A diver feels more pressure as they go deeper underwater.</li>
+                    <li>Air pressure decreases as we move to higher altitudes.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Formula for Fluid Pressure</h2>
+                <p>The pressure exerted by a fluid at depth (h) is given by:</p>
+                <p><b>P = P<sub>0</sub> + ρgh</b></p>
+                <ul>
+                    <li>P = Total fluid pressure</li>
+                    <li>P<sub>0</sub> = Atmospheric pressure at the surface</li>
+                    <li>ρ = Density of the fluid</li>
+                    <li>g = Acceleration due to gravity (9.8 m/s²)</li>
+                    <li>h = Depth of the fluid</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Special Cases</h3>
+                <h4>(a) If the fluid is open to the atmosphere (e.g., a lake)</h4>
+                <p><b>P = P<sub>atm</sub> + ρgh</b></p>
+
+                <h4>(b) If the fluid is enclosed (e.g., inside a tank)</h4>
+                <p><b>P = ρgh</b></p>
+
+                <h4>(c) If pressure is the same at different depths in a connected fluid</h4>
+                <p><b>P<sub>1</sub> = P<sub>2</sub></b></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Units of Pressure</h2>
+                <h3>(a) SI Unit</h3>
+                <p>Pascal (Pa): <b>1 Pa = 1 N/m²</b></p>
+
+                <h3>(b) Other Common Units</h3>
+                <ul>
+                    <li>Atmosphere (atm): <b>1 atm = 101,325 Pa</b></li>
+                    <li>Torr (mmHg): <b>1 atm = 760 mmHg</b></li>
+                    <li>Bar: <b>1 bar = 10⁵ Pa</b></li>
+                </ul>
+
+                <h3>Example</h3>
+                <p>The pressure at sea level is <b>1 atm = 101.3 kPa</b>.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Properties of Fluid Pressure</h2>
+                <ul>
+                    <li><b>Increases with Depth:</b> Pressure increases as we go deeper in a fluid.</li>
+                    <li><b>Same in All Directions:</b> A fluid exerts pressure equally in all directions at a given
+                        depth.</li>
+                    <li><b>Independent of Shape:</b> The shape of the container does not affect pressure.</li>
+                    <li><b>Depends on Density:</b> A denser fluid exerts more pressure.</li>
+                </ul>
+
+                <h3>Examples</h3>
+                <ul>
+                    <li>Water exerts more pressure than air at the same height because water is denser.</li>
+                    <li>A dam is thicker at the bottom because the pressure is highest at greater depths.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Pascal’s Law</h2>
+                <p>Pascal’s law states that pressure applied to an enclosed fluid is transmitted equally in all
+                    directions.</p>
+                <p><b>P<sub>in</sub> = P<sub>out</sub></b></p>
+
+                <h3>Applications</h3>
+                <ul>
+                    <li><b>Hydraulic brakes:</b> Used in cars to amplify force.</li>
+                    <li><b>Hydraulic lifts:</b> Used in garages to lift heavy vehicles.</li>
+                    <li><b>Syringes:</b> Pressing the plunger transmits pressure equally in all directions.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Fluid Pressure</h2>
+                <ul>
+                    <li><b>Blood Pressure:</b> Measures the force of blood against artery walls.</li>
+                    <li><b>Scuba Diving:</b> Divers experience increased pressure underwater.</li>
+                    <li><b>Airplane Cabin Pressure:</b> Maintained to keep passengers comfortable.</li>
+                    <li><b>Weather Patterns:</b> High and low-pressure systems affect climate.</li>
+                    <li><b>Dams and Reservoirs:</b> Designed to withstand high water pressure at the base.</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 2px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Archimedes">5. Archimedes' Principle</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <p>Archimedes' principle states that:</p>
+                <blockquote>
+                    "Any object completely or partially submerged in a fluid experiences an upward buoyant force equal
+                    to the weight of the fluid displaced by the object."
+                </blockquote>
+
+                <h3>Examples</h3>
+                <ul>
+                    <li>A ship floats because the buoyant force balances its weight.</li>
+                    <li>A stone feels lighter in water due to the upward buoyant force.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Buoyant Force</h2>
+                <p>When an object is placed in a fluid (liquid or gas), it experiences an upward force called buoyant
+                    force (F<sub>b</sub>). This force is responsible for making objects appear lighter in water.</p>
+
+                <h3>Formula for Buoyant Force</h3>
+                <p><b>F<sub>b</sub> = ρ<sub>fluid</sub> ⋅ g ⋅ V<sub>displaced</sub></b></p>
+                <ul>
+                    <li>F<sub>b</sub> = Buoyant force (N)</li>
+                    <li>ρ<sub>fluid</sub> = Density of the fluid (kg/m³)</li>
+                    <li>g = Acceleration due to gravity (9.8 m/s²)</li>
+                    <li>V<sub>displaced</sub> = Volume of fluid displaced (m³)</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Conditions for Floating and Sinking</h2>
+                <p>The buoyant force determines whether an object will float or sink:</p>
+                <ul>
+                    <li><b>Object Floats:</b> Buoyant force ≥ weight of the object.</li>
+                    <li><b>Object Sinks:</b> Buoyant force < weight of the object.</li>
+                    <li><b>Object is Neutrally Buoyant:</b> Buoyant force = weight, the object remains suspended.</li>
+                </ul>
+
+                <h3>Examples</h3>
+                <ul>
+                    <li>A wooden log floats because its weight is less than the buoyant force.</li>
+                    <li>A stone sinks because its weight is greater than the buoyant force.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Archimedes' Principle</h2>
+                <ul>
+                    <li><b>Ships and Boats:</b> Ships are designed with hollow hulls to displace enough water to balance
+                        their weight.</li>
+                    <li><b>Submarines:</b> Control their buoyancy by adjusting the water inside ballast tanks.</li>
+                    <li><b>Hot Air Balloons:</b> Use the principle to float in air by reducing their density compared to
+                        the surrounding air.</li>
+                    <li><b>Hydrometers:</b> Measure the density of liquids based on how much they float.</li>
+                    <li><b>Icebergs:</b> Float because ice is less dense than water.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Mathematical Proof</h2>
+                <p>From Newton’s second law, the net force acting on a submerged object is:</p>
+                <p><b>F<sub>net</sub> = Buoyant Force − Weight of Object</b></p>
+
+                <ul>
+                    <li>If F<sub>net</sub> > 0 → The object rises (floats).</li>
+                    <li>If F<sub>net</sub>
+                        < 0 → The object sinks.</li>
+                    <li>If F<sub>net</sub> = 0 → The object remains suspended.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Relation with Density</h2>
+                <ul>
+                    <li>If density of object < density of fluid → The object floats.</li>
+                    <li>If density of object > density of fluid → The object sinks.</li>
+                </ul>
+
+                <h3>Examples</h3>
+                <ul>
+                    <li>Oil floats on water because oil has a lower density than water.</li>
+                    <li>Iron sinks in water because it has a higher density than water.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

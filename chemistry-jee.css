@@ -280,7 +280,6 @@ details[open] summary {
     font-size: 18px;
     color: #003366;
 }
-
 .accordion-content p {
     margin: 5px 0;
     padding-left: 10px;
@@ -327,8 +326,16 @@ details[open] summary {
 .topic-description tr:nth-child(even) {
     background-color: #f9f9f9;
 }
+.subtype summary{
+    background-color: #5599ee;
+    height: 35px;
+    justify-content: center;
+    font-size: 26px;
+}
+.subtype summary:hover{
+    background-color: #5599ee;
+}
 footer {
-
     background-color: #37475a;
     color: white;
     padding: 20px 0;

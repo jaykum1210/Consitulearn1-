@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-physics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 11 - Current Electricity</div>
+        <div class="topic-name">
+            <h1>1.Electric Current and Drift Velocity</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>Electric current (I) is the rate of flow of charge through a conductor.</li>
+                    <li>Formula: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>I</mi>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mi>Q</mi>
+                                <mi>t</mi>
+                            </mfrac>
+                        </math></li>
+                    <p>where I = Current (A), Q = Charge (C), t = Time (s).</p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>SI Unit</h2>
+                <ul>
+                    <li>The SI unit of electric current is the Ampere (A).</li>
+                    <li>1 Ampere = 1 Coulomb per second (1 A = 1 C/s).</li>
+                    <li>Conventional current flows from positive to negative.</li>
+                    <li>Electron flow (real charge movement) is from negative to positive.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Current</h2>
+                <ul>
+                    <li><b>Direct Current (DC)</b> → Charges flow in one direction (e.g., batteries).</li>
+                    <li><b>Alternating Current (AC)</b> → Charges change direction periodically (e.g., household
+                        electricity).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Drift Velocity (v<sub>d</sub>)</h2>
+                <ul>
+                    <li>Electrons in a conductor move randomly, but under a voltage, they drift slowly in the
+                        opposite
+                        direction of the electric field.</li>
+                    <li>Formula: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>v</mi>
+                                <mi>d</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mi>I</mi>
+                                <mrow>
+                                    <mi>nAe</mi>
+                                </mrow>
+                            </mfrac>
+                        </math></li>
+                    <p>where v<sub>d</sub> = Drift velocity (m/s), I = Current (A), n = Free electrons per unit
+                        volume,
+                        A = Cross-sectional area, e = Charge of an electron (1.6 × 10<sup>-19</sup> C).</p>
+                    <li>Drift velocity is very small (~10<sup>-4</sup> m/s), but current flows nearly instantly due
+                        to
+                        many electrons moving simultaneously.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Relation Between Current and Drift Velocity</h2>
+                <ul>
+                    <li>Since <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>I</mi>
+                            <mo>=</mo>
+                            <mi>nAe</mi>
+                            <msub>
+                                <mi>v</mi>
+                                <mi>d</mi>
+                            </msub>
+                        </math>, we observe:</li>
+                    <li>More free electrons (higher <i>n</i>) → More current.</li>
+                    <li>Larger cross-section <i>A</i> → More current flow.</li>
+                    <li>Higher drift velocity <i>v<sub>d</sub></i> → More current.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Mobility (μ)</h2>
+                <ul>
+                    <li>Mobility measures how quickly electrons move in response to an electric field.</li>
+                    <li>Formula: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>μ</mi>
+                            <mo>=</mo>
+                            <mfrac>
+                                <msub>
+                                    <mi>v</mi>
+                                    <mi>d</mi>
+                                </msub>
+                                <mi>E</mi>
+                            </mfrac>
+                        </math></li>
+                    <p>where μ = Mobility (m<sup>2</sup>/Vs), v<sub>d</sub> = Drift velocity (m/s), E = Electric
+                        field
+                        (V/m).</p>
+                    <li>Higher mobility = Faster electron movement.</li>
+                    <li>Metals have high mobility → Good conductors.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Ohm’s">2. Ohm’s Law and Resistance</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>Ohm’s Law states that the current (<b>I</b>) flowing through a conductor is directly
+                        proportional to the voltage (<b>V</b>) applied across it, provided the temperature and
+                        physical
+                        conditions remain constant.</li>
+                    <li>Formula: <b>V = IR</b></li>
+                    <p>where:</p>
+                    <ul>
+                        <li><b>V</b> = Voltage (Volts, V)</li>
+                        <li><b>I</b> = Current (Amperes, A)</li>
+                        <li><b>R</b> = Resistance (Ohms, Ω)</li>
+                    </ul>
+                    <li>If voltage increases, current increases (for a constant resistance).</li>
+                    <li>If resistance increases, current decreases (for a constant voltage).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Graphical Representation of Ohm’s Law</h2>
+                <ul>
+                    <li>A graph of V vs I is a straight line passing through the origin.</li>
+                    <li>The slope of the graph gives the resistance (<b>R</b>).</li>
+                    <li>Non-ohmic materials (e.g., diodes, filament bulbs) do not follow a straight-line graph.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Resistance (R)</h2>
+                <ul>
+                    <li>Resistance is the opposition offered by a material to the flow of electric current.</li>
+                    <li><b>SI Unit:</b> Ohm (Ω)</li>
+                    <li><b>1 Ohm:</b> A conductor has 1 Ω resistance if 1 Volt produces 1 Ampere of current.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Factors Affecting Resistance</h2>
+                <ul>
+                    <li>The resistance of a conductor depends on its length, cross-sectional area, and material.
+                    </li>
+                    <li>Formula: <b>R = ρ (L / A)</b></li>
+                    <p>where:</p>
+                    <ul>
+                        <li><b>R</b> = Resistance (Ω)</li>
+                        <li><b>ρ</b> = Resistivity (Ω⋅m) (depends on material)</li>
+                        <li><b>L</b> = Length of the conductor (m)</li>
+                        <li><b>A</b> = Cross-sectional area (m²)</li>
+                    </ul>
+                    <li>Longer wire → More resistance</li>
+                    <li>Thicker wire → Less resistance</li>
+                    <li>Higher resistivity (<b>ρ</b>) → More resistance</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Resistivity (ρ)</h2>
+                <ul>
+                    <li>Resistivity is a material property that determines how strongly it resists current flow.
+                    </li>
+                    <li><b>SI Unit:</b> Ω⋅m</li>
+                    <li>Metals have low resistivity → Good conductors.</li>
+                    <li>Insulators have high resistivity → Poor conductors.</li>
+                    <li>Order of resistivity: Metals < Semiconductors < Insulators</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Conductance and Conductivity</h2>
+                <ul>
+                    <li><b>Conductance (G)</b> = Reciprocal of resistance.</li>
+                    <li>Formula: <b>G = 1/R</b></li>
+                    <li>Unit: Siemens (S) or Ω⁻¹</li>
+                    <li><b>Conductivity (σ)</b> = Reciprocal of resistivity.</li>
+                    <li>Formula: <b>σ = 1/ρ</b></li>
+                    <li>Unit: S/m</li>
+                    <li>Higher conductivity → Better conductor.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Temperature Dependence of Resistance</h2>
+                <ul>
+                    <li><b>Metals:</b> Resistance increases with temperature.</li>
+                    <li><b>Semiconductors:</b> Resistance decreases with temperature.</li>
+                    <li><b>Superconductors:</b> At very low temperatures, resistance becomes zero!</li>
+                    <li>Formula: <b>R<sub>T</sub> = R<sub>0</sub> (1 + αT)</b></li>
+                    <p>where:</p>
+                    <ul>
+                        <li><b>R<sub>T</sub></b> = Resistance at temperature T</li>
+                        <li><b>R<sub>0</sub></b> = Resistance at reference temperature</li>
+                        <li><b>α</b> = Temperature coefficient of resistance</li>
+                    </ul>
+                    <li><b>Positive α:</b> Resistance increases with temperature (metals).</li>
+                    <li><b>Negative α:</b> Resistance decreases with temperature (semiconductors).</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Kirchhoff’s">3. Kirchhoff’s Laws</h1>
+
+            <div class="topic-description">
+                <h2>i. Kirchhoff’s Current Law (KCL) – Junction Rule</h2>
+                <p><b>Statement:</b> The sum of all currents entering a junction is equal to the sum of all currents
+                    leaving the junction.</p>
+                <p><b>Mathematical Form:</b> ∑I<sub>in</sub> = ∑I<sub>out</sub></p>
+                <ul>
+                    <li>Based on the Law of Conservation of Charge.</li>
+                    <li>A junction (or node) is a point where two or more conductors meet.</li>
+                </ul>
+
+                <h3>Example:</h3>
+                <p>If at a junction:</p>
+                <ul>
+                    <li>I<sub>1</sub> = 5A (entering)</li>
+                    <li>I<sub>2</sub> = 3A (entering)</li>
+                    <li>I<sub>3</sub> (leaving)</li>
+                </ul>
+                <p>Then by KCL:</p>
+                <p>I<sub>1</sub> + I<sub>2</sub> = I<sub>3</sub></p>
+                <p>5A + 3A = I<sub>3</sub></p>
+                <p><b>I<sub>3</sub> = 8A</b> (leaving the junction)</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Kirchhoff’s Voltage Law (KVL) – Loop Rule</h2>
+                <p><b>Statement:</b> The algebraic sum of all voltage drops and EMFs in a closed loop is always
+                    zero.
+                </p>
+                <p><b>Mathematical Form:</b> ∑V = 0</p>
+                <ul>
+                    <li>Based on the Law of Conservation of Energy.</li>
+                    <li>The total energy gained by charges in a loop must be equal to the total energy lost.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Sign Convention in KVL:</h3>
+                <ul>
+                    <li><b>Voltage rise</b> (battery, EMF) → <span style="color:green;">Positive (+)</span></li>
+                    <li><b>Voltage drop</b> (resistors, loads) → <span style="color:red;">Negative (-)</span></li>
+                </ul>
+
+                <h3>Example:</h3>
+                <p>Consider a simple circuit loop with:</p>
+                <ul>
+                    <li>A battery of 12V</li>
+                    <li>Resistor R<sub>1</sub> = 4Ω with a current of 2A</li>
+                    <li>Resistor R<sub>2</sub> = 2Ω with a current of 2A</li>
+                </ul>
+                <p>Using KVL:</p>
+                <p>V<sub>battery</sub> - V<sub>R1</sub> - V<sub>R2</sub> = 0</p>
+                <p>12V - (2A × 4Ω) - (2A × 2Ω) = 0</p>
+                <p>12V - 8V - 4V = 0</p>
+                <p>The equation holds, so the circuit follows Kirchhoff’s Voltage Law.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. Applications of Kirchhoff’s Laws</h2>
+                <ul>
+                    <li>Analyzing complex circuits (with multiple loops and junctions).</li>
+                    <li>Finding unknown currents and voltages in electrical networks.</li>
+                    <li>Used in Wheatstone bridge, mesh analysis, and nodal analysis.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Wheatstone">4. Wheatstone Bridge & Potentiometer</h1>
+
+            <div class="topic-description">
+                <h2>i. Wheatstone Bridge</h2>
+                <p>The Wheatstone Bridge is an electrical circuit used to measure an unknown resistance with high
+                    accuracy. It works on the principle of balanced bridge circuits.</p>
+
+                <h3>Principle:</h3>
+                <p>When the bridge is balanced, the ratio of resistances in one branch is equal to the ratio in the
+                    other branch.</p>
+                    <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Circuit Components:</h3>
+                <ul>
+                    <li><b>R<sub>1</sub></b> and <b>R<sub>2</sub></b> form one branch.</li>
+                    <li><b>R<sub>3</sub></b> (known resistance) and <b>R<sub>x</sub></b> (unknown resistance) form
+                        the
+                        second branch.</li>
+                    <li>A galvanometer (G) is connected between the two branches.</li>
+                    <li>A battery provides power.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Balanced Condition:</h3>
+                <p>When no current flows through the galvanometer, the bridge is balanced:</p>
+                <p>R<sub>1</sub> / R<sub>2</sub> = R<sub>3</sub> / R<sub>x</sub></p>
+
+                <h4>Solving for <b>R<sub>x</sub></b>:</h4>
+                <p><b>R<sub>x</sub> = (R<sub>3</sub> × R<sub>2</sub>) / R<sub>1</sub></b></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Applications:</h3>
+                <ul>
+                    <li>Used in resistance measurement.</li>
+                    <li>Found in strain gauges (to measure small changes in resistance).</li>
+                    <li>Used in sensor circuits.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Potentiometer</h2>
+                <p>A potentiometer is a device used to measure unknown voltage by comparing it with a known
+                    reference
+                    voltage. It is more accurate than a voltmeter since it does not draw current from the circuit.
+                </p>
+
+                <h3>Principle:</h3>
+                <p>It works on the principle that the potential drop across a wire is proportional to its length,
+                    given
+                    a uniform current flow.</p>
+                    <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Construction:</h3>
+                <ul>
+                    <li>A long uniform resistance wire is connected to a battery.</li>
+                    <li>A sliding jockey moves along the wire to measure voltage.</li>
+                    <li>A galvanometer detects the null point (zero deflection).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Formula for Voltage Measurement:</h3>
+                <p>If the null point is found at length <b>l</b>, then:</p>
+                <p><b>V<sub>x</sub> = k ⋅ l</b></p>
+                <p>where <b>k</b> is the potential gradient (V/L).</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Applications:</h3>
+                <ul>
+                    <li>Measuring EMF of a cell.</li>
+                    <li>Comparing two voltages.</li>
+                    <li>Measuring internal resistance of a battery.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. Comparison of Wheatstone Bridge & Potentiometer</h2>
+                <table>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Wheatstone Bridge</th>
+                        <th>Potentiometer</th>
+                    </tr>
+                    <tr>
+                        <td><b>Measures</b></td>
+                        <td>Resistance (R<sub>x</sub>)</td>
+                        <td>Voltage (EMF)</td>
+                    </tr>
+                    <tr>
+                        <td><b>Accuracy</b></td>
+                        <td>Moderate</td>
+                        <td>Very High</td>
+                    </tr>
+                    <tr>
+                        <td><b>Power Source</b></td>
+                        <td>Battery required</td>
+                        <td>Battery required</td>
+                    </tr>
+                    <tr>
+                        <td><b>Current Flow</b></td>
+                        <td>Uses a galvanometer to detect balance</td>
+                        <td>No current flows at balance point</td>
+                    </tr>
+                    <tr>
+                        <td><b>Applications</b></td>
+                        <td>Resistance measurement, strain gauges</td>
+                        <td>Voltage measurement, battery testing</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

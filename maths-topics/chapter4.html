@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-maths.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 4 - Permutations & Combinations</div>
+        <div class="topic-name">
+            <div class="topic-description">
+                <h1>Counting Principle (Fundamental Principle of Counting)</h1>
+                <h2>Definition</h2>
+                <ul>
+                    <li>The Counting Principle states that if there are <b>m</b> ways to perform one task and
+                        <b>n</b> ways to perform a second task, then the number of ways to perform both tasks is the
+                        product of the number of ways to perform each task.
+                    </li>
+                    <li>Formula: <b>Total Ways = m × n</b></li>
+                    <li>This can be extended to multiple tasks. If there are <b>m<sub>1</sub>, m<sub>2</sub>, ... ,
+                            m<sub>k</sub></b> ways to do each task, the total number of ways to complete all tasks
+                        is:</li>
+                    <p>Total Ways = m<sub>1</sub> × m<sub>2</sub> × ... × m<sub>k</sub></p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications</h2>
+                <ul>
+                    <li>Used in combinatorics to count possible outcomes or arrangements.</li>
+                    <li>Helps determine the number of ways to combine various tasks or events.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>P(n, r) - Permutations</h2>
+                <h2>Definition</h2>
+                <ul>
+                    <li>A permutation refers to an arrangement or ordering of objects where the order matters.</li>
+                    <li>P(n, r) represents the number of ways to arrange <b>r</b> objects from a set of <b>n</b>
+                        distinct objects, where the order of selection matters.</li>
+                    <li>Formula: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>P</mi>
+                            <mo>(</mo>
+                            <mi>n</mi>
+                            <mo>,</mo>
+                            <mi>r</mi>
+                            <mo>)</mo>
+                            <mo>=</mo>
+                            <mi>n</mi>
+                            <mo>!</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>(</mi>
+                                    <mi>n</mi>
+                                    <mo>−</mo>
+                                    <mi>r</mi>
+                                    <mi>)</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>r</mi>
+                                    <mi>!</mi>
+                                </mrow>
+                            </mfrac>
+                        </math></li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example of Permutations (P(n, r))</h2>
+                <p>Consider selecting and arranging 2 books from a collection of 5 distinct books.</p>
+                <ul>
+                    <li>n = 5, r = 2.</li>
+                    <p>Using the formula:</p>
+                    <p><b>P(5, 2) = 5! / (5-2)! = 5 × 4 = 20</b></p>
+                    <p>So, there are 20 ways to arrange 2 books out of 5.</p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications</h2>
+                <ul>
+                    <li>Used to calculate the number of ways to arrange items in specific orders.</li>
+                    <li>Important in problems where the order of selection or arrangement matters (e.g., arranging
+                        people, seats, or objects).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+
+                <h2>C(n, r) - Combinations</h2>
+                <h2>Definition</h2>
+                <ul>
+                    <li>A combination refers to the selection of objects where the order of selection does not
+                        matter.</li>
+                    <li>C(n, r) represents the number of ways to select <b>r</b> objects from a set of <b>n</b>
+                        distinct objects, where the order of selection does not matter.</li>
+                    <li>Formula: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>C</mi>
+                            <mo>(</mo>
+                            <mi>n</mi>
+                            <mo>,</mo>
+                            <mi>r</mi>
+                            <mo>)</mo>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>n</mi>
+                                    <mi>!</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>r</mi>
+                                    <mi>!</mi>
+                                    <mo>&#8290;</mo>
+                                    <mi>(</mi>
+                                    <mi>n</mi>
+                                    <mo>−</mo>
+                                    <mi>r</mi>
+                                    <mi>)</mi>
+                                    <mi>!</mi>
+                                </mrow>
+                            </mfrac>
+                        </math></li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example of Combinations (C(n, r))</h2>
+                <p>Consider selecting 2 books from a collection of 5 distinct books, where the order does not
+                    matter.</p>
+                <ul>
+                    <li>n = 5, r = 2.</li>
+                    <p>Using the formula:</p>
+                    <p><b>C(5, 2) = 5! / (2! × (5-2)!) = 5 × 4 / (2 × 1) = 10</b></p>
+                    <p>So, there are 10 ways to select 2 books from 5 where order does not matter.</p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications</h2>
+                <ul>
+                    <li>Used when order of selection is irrelevant (e.g., selecting members for a team).</li>
+                    <li>Important in probability, where the order of outcomes does not affect the result (e.g.,
+                        drawing cards from a deck).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Key Differences Between Permutations and Combinations</h2>
+                <h2>Permutations (P(n, r))</h2>
+                <ul>
+                    <li>The order of selection matters.</li>
+                    <li>For example, arranging 2 books from 5 distinct books is different from selecting them.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Combinations (C(n, r))</h2>
+                <ul>
+                    <li>The order of selection does not matter.</li>
+                    <li>For example, selecting 2 books from 5 distinct books is the same whether you pick book A
+                        first or book B first.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Permutations Example (P(n, r))</h2>
+                <p>Problem: How many different ways can a committee of 3 members be arranged from a group of 5
+                    people?</p>
+                <ul>
+                    <li>n = 5, r = 3.</li>
+                    <p>Using the formula for permutations:</p>
+                    <p><b>P(5, 3) = 5! / (5-3)! = 5 × 4 × 3 = 60</b></p>
+                    <p>So, there are 60 ways to arrange the committee.</p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Combinations Example (C(n, r))</h2>
+                <p>Problem: How many ways can a team of 3 members be selected from a group of 5 people (order
+                    doesn't matter)?</p>
+                <ul>
+                    <li>n = 5, r = 3.</li>
+                    <p>Using the formula for combinations:</p>
+                    <p><b>C(5, 3) = 5! / (3! × (5-3)!) = 5 × 4 × 3 / (3 × 2 × 1) = 10</b></p>
+                    <p>So, there are 10 ways to select the team.</p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Summary</h2>
+                <ul>
+                    <li><b>Counting Principle</b>: A fundamental rule for counting the total number of outcomes or
+                        tasks by multiplying possibilities.</li>
+                    <li><b>Permutations (P(n, r))</b>: Arrangements where the order matters, calculated using the
+                        formula <i>P(n, r) = n! / (n - r)!.</i></li>
+                    <li><b>Combinations (C(n, r))</b>: Selections where order does not matter, calculated using the
+                        formula <i>C(n, r) = n! / (r!(n - r)!).</i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

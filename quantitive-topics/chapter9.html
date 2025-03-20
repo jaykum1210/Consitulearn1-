@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-quantitative.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 9 - Logical Quantitative Reasoning</div>
+        <div class="topic-name">
+            <h1>1. Number and Letter Series</h1>
+            <div class="topic-description">
+                <h2> Number Series</h2>
+                <ul>
+                    <li>In a number series, a sequence of numbers is given, and you need to find the next number or
+                        identify the pattern that fits the sequence.</li>
+                </ul>
+
+                <h3>Example 1</h3>
+                <ul>
+                    <li>1, 4, 9, 16, 25, ___</li>
+                    <li>Pattern: These are the squares of natural numbers: 1², 2², 3², 4², 5². The next number will be
+                        6² = 36.</li>
+                </ul>
+
+                <h3>Example 2</h3>
+                <ul>
+                    <li>2, 6, 12, 20, 30, ___</li>
+                    <li>Pattern: The difference between consecutive numbers increases by 2 each time:
+                        <ul>
+                            <li>6 - 2 = 4</li>
+                            <li>12 - 6 = 6</li>
+                            <li>20 - 12 = 8</li>
+                            <li>30 - 20 = 10</li>
+                        </ul>
+                        The next difference will be 12, so the next number will be 30 + 12 = 42.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2> Letter Series</h2>
+                <ul>
+                    <li>In a letter series, a sequence of letters is given, and you need to identify the next letter or
+                        the pattern that fits the sequence.</li>
+                </ul>
+
+                <h3>Example 1</h3>
+                <ul>
+                    <li>A, C, E, G, I, ___</li>
+                    <li>Pattern: The letters are alternating every two positions in the alphabet: A, C, E, G, I. The
+                        next letter will be K.</li>
+                </ul>
+
+                <h3>Example 2</h3>
+                <ul>
+                    <li>Z, X, V, T, R, ___</li>
+                    <li>Pattern: The letters are decreasing by two positions in the alphabet: Z, X, V, T, R. The next
+                        letter will be P.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Coding">2. Coding-Decoding (Numbers & Symbols)</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>Coding-Decoding is a reasoning technique that involves transforming a given set of numbers,
+                        letters, or symbols into codes based on certain rules. The objective is to identify the pattern
+                        or logic behind the transformation.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Coding-Decoding</h2>
+                <ul>
+                    <li>Letter Coding</li>
+                    <li>Number Coding</li>
+                    <li>Symbol Coding</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Letter Coding</h2>
+                <ul>
+                    <li>In letter coding, each letter of the alphabet is replaced by another letter according to a fixed
+                        rule. The rule can be based on shifting positions, reversing the alphabet, or other
+                        manipulations.</li>
+                </ul>
+                <h3>Types of Letter Coding Patterns</h3>
+                <h4>Shift in Alphabet</h4>
+                <ul>
+                    <li>Example: A → C, B → D, C → E, ___</li>
+                    <li>Pattern: Each letter is shifted by +2.</li>
+                    <li>Answer: D → F</li>
+                </ul>
+
+                <h4>Reverse Alphabet Coding</h4>
+                <ul>
+                    <li>Example: A → Z, B → Y, C → X, ___</li>
+                    <li>Pattern: Reverse the alphabet.</li>
+                    <li>Answer: D → W</li>
+                </ul>
+
+                <h4>Positional Shift</h4>
+                <ul>
+                    <li>Example: A → 1, B → 2, C → 3, ___</li>
+                    <li>Pattern: The letters are replaced by their position numbers.</li>
+                    <li>Answer: D → 4</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Number Coding</h2>
+                <ul>
+                    <li>In number coding, a number is replaced by another number based on some mathematical
+                        relationship, which could be addition, subtraction, multiplication, division, or powers.</li>
+                </ul>
+                <h3>Types of Number Coding Patterns</h3>
+                <h4>Simple Arithmetic Operations</h4>
+                <ul>
+                    <li>Example: 3 → 6, 4 → 12, 5 → 20, ___</li>
+                    <li>Pattern: The number is multiplied by its position.</li>
+                    <li>Answer: 6 × 5 = 30</li>
+                </ul>
+
+                <h4>Squares or Cubes</h4>
+                <ul>
+                    <li>Example: 2 → 4, 3 → 9, 4 → 16, ___</li>
+                    <li>Pattern: The number is squared.</li>
+                    <li>Answer: 5 → 25</li>
+                </ul>
+
+                <h4>Prime Numbers or Factors</h4>
+                <ul>
+                    <li>Example: 3 → 9, 5 → 25, 7 → 49, ___</li>
+                    <li>Pattern: The number is squared.</li>
+                    <li>Answer: 11 → 121</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Symbol Coding</h2>
+                <ul>
+                    <li>In symbol coding, special symbols like #, $, %, *, &, etc., are used in place of numbers or
+                        letters. The key here is to decode the meaning of each symbol and how they relate to numbers or
+                        letters.</li>
+                </ul>
+                <h3>Types of Symbol Coding Patterns</h3>
+                <h4>Symbols Representing Operations</h4>
+                <ul>
+                    <li>Example: # means +, * means -, % means ×.</li>
+                    <li>Code: 6 # 3 * 2 % 4 → (6 + 3) - 2 × 4 → 9 - 2 × 4 = 9 - 8 = 1.</li>
+                </ul>
+
+                <h4>Substitution of Symbols with Numbers or Letters</h4>
+                <ul>
+                    <li>Example: * represents multiplication, % represents division.</li>
+                    <li>Code: 5 * 4 % 2 → 5 × 4 ÷ 2 = 20 ÷ 2 = 10.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Common Approaches to Solve Coding-Decoding Problems</h2>
+                <ul>
+                    <li>Look for Arithmetic Patterns: Identify if the numbers or letters are related through addition,
+                        subtraction, multiplication, division, or exponentiation.</li>
+                    <li>Position and Shifting: Sometimes, positions in the alphabet (or the number line) are key. Look
+                        for consistent shifting patterns (e.g., shifting a letter by +2 in the alphabet).</li>
+                    <li>Reverse and Symmetry: Some codes might use reverse positions, such as reversing the alphabet or
+                        number sequences.</li>
+                    <li>Understand Symbol Operations: If symbols are involved, carefully analyze the operation they
+                        represent, like +, -, ×, ÷.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Practice Examples</h2>
+                <h3>Practice Example 1:</h3>
+                <ul>
+                    <li>Code: 4 → 16, 5 → 25, 6 → 36, ___</li>
+                    <li>Pattern: The number is squared.</li>
+                    <li>Answer: 7 → 49</li>
+                </ul>
+
+                <h3>Practice Example 2:</h3>
+                <ul>
+                    <li>Code: A → Z, B → Y, C → X, ___</li>
+                    <li>Pattern: Reverse the alphabet.</li>
+                    <li>Answer: D → W</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Puzzles">3. Quantitative Puzzles</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>Quantitative puzzles are designed to test your logical reasoning and numerical abilities. These
+                        puzzles typically require solving mathematical problems using reasoning, patterns, or basic
+                        arithmetic operations.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Quantitative Puzzles</h2>
+                <ul>
+                    <li>Number Puzzles</li>
+                    <li>Age-Based Puzzles</li>
+                    <li>Time and Work Puzzles</li>
+                    <li>Profit and Loss Puzzles</li>
+                    <li>Speed, Distance, and Time Puzzles</li>
+                    <li>Mixture and Alligation Puzzles</li>
+                    <li>Ratio and Proportion Puzzles</li>
+                    <li>Clocks and Calendar Puzzles</li>
+                    <li>Blood Relations and Family Puzzles</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>i. Number Puzzles</h2>
+                <ul>
+                    <li>These puzzles involve numerical sequences, relationships, and arithmetic operations. The goal is
+                        often to find the next number in the sequence or solve for a specific number based on given
+                        conditions.</li>
+                </ul>
+                <h3>Types of Number Puzzles</h3>
+                <h4>Arithmetic Sequences</h4>
+                <ul>
+                    <li>Example: Sequence: 3, 7, 11, 15, ___</li>
+                    <li>Pattern: The difference between consecutive terms is 4 (7 - 3 = 4, 11 - 7 = 4, etc.).</li>
+                    <li>Answer: The next number is 19 (15 + 4).</li>
+                </ul>
+
+                <h4>Geometric Sequences</h4>
+                <ul>
+                    <li>Example: Sequence: 2, 6, 18, 54, ___</li>
+                    <li>Pattern: Each number is multiplied by 3.</li>
+                    <li>Answer: The next number is 162 (54 × 3).</li>
+                </ul>
+
+                <h4>Sum of Digits</h4>
+                <ul>
+                    <li>Example: Find the number if the sum of its digits equals 10 and the number is a two-digit
+                        number.</li>
+                    <li>Answer: 19 (1 + 9 = 10).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Age-Based Puzzles</h2>
+                <ul>
+                    <li>These puzzles typically involve relationships between the ages of different people, and you need
+                        to figure out the individual ages based on given conditions.</li>
+                </ul>
+                <h3>Example 1:</h3>
+                <ul>
+                    <li>John is twice as old as Peter. Five years ago, he was three times as old as Peter. How old are
+                        they now?</li>
+                    <li>Let Peter’s age be x. John's age will be 2x. Five years ago, Peter’s age was x - 5 and John’s
+                        age was 2x - 5.</li>
+                    <li>According to the condition: 2x - 5 = 3(x - 5).</li>
+                    <li>Solving the equation gives: 2x - 5 = 3x - 15, so x = 10.</li>
+                    <li>Answer: Peter is 10 years old, and John is 20 years old.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. Time and Work Puzzles</h2>
+                <ul>
+                    <li>These puzzles involve concepts like work rates and time taken to complete a task.</li>
+                </ul>
+                <h3>Example 1:</h3>
+                <ul>
+                    <li>A can complete a task in 10 days, and B can complete the same task in 15 days. How long will
+                        they take if they work together?</li>
+                    <li>Work rate of A = 1/10 (task per day).</li>
+                    <li>Work rate of B = 1/15 (task per day).</li>
+                    <li>Combined work rate = 1/10 + 1/15 = 1/6.</li>
+                    <li>Therefore, together they will complete the task in 6 days.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iv. Profit and Loss Puzzles</h2>
+                <ul>
+                    <li>These puzzles are about calculating profit, loss, cost price, and selling price based on given
+                        conditions.</li>
+                </ul>
+                <h3>Example:</h3>
+                <ul>
+                    <li>A shopkeeper buys a product for ₹100 and sells it for ₹120. What is the profit percentage?</li>
+                    <li>Profit = Selling Price - Cost Price = ₹120 - ₹100 = ₹20.</li>
+                    <li>Profit percentage = (Profit / Cost Price) × 100 = (20 / 100) × 100 = 20%.</li>
+                    <li>Answer: The profit percentage is 20%.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>v. Speed, Distance, and Time Puzzles</h2>
+                <ul>
+                    <li>These puzzles deal with the relationship between speed, distance, and time.</li>
+                </ul>
+                <h3>Example:</h3>
+                <ul>
+                    <li>A car travels from City A to City B at 60 km/h and returns from City B to City A at 40 km/h.
+                        What is the average speed for the entire journey?</li>
+                    <li>Average speed = 2 × (Speed1 × Speed2) / (Speed1 + Speed2) = 2 × 60 × 40 / (60 + 40) = 4800 / 100
+                        = 48 km/h.</li>
+                    <li>Answer: The average speed is 48 km/h.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>vi. Mixture and Alligation Puzzles</h2>
+                <ul>
+                    <li>These puzzles involve mixing two or more substances and calculating the resulting mixture's
+                        properties.</li>
+                </ul>
+                <h3>Example:</h3>
+                <ul>
+                    <li>A shopkeeper mixes two types of tea – one costing ₹20 per kg and the other ₹30 per kg – to make
+                        10 kg of a mixture that costs ₹25 per kg. How much of each type of tea is used?</li>
+                    <li>The alligation method can be used: Difference between ₹30 and ₹25 = ₹5. Difference between ₹25
+                        and ₹20 = ₹5.</li>
+                    <li>This means the two types of tea are mixed in the ratio of 1:1.</li>
+                    <li>Answer: 5 kg of each tea.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>vii. Ratio and Proportion Puzzles</h2>
+                <ul>
+                    <li>These puzzles involve comparing quantities and solving for unknown values using ratios.</li>
+                </ul>
+                <h3>Example:</h3>
+                <ul>
+                    <li>The ratio of the ages of A and B is 3:4. If A is 18 years old, how old is B?</li>
+                    <li>Let the age of B be x. Using the ratio: A / B = 3 / 4, so 18 / x = 3 / 4.</li>
+                    <li>Cross-multiply to solve for x: x = 18 × 4 / 3 = 24.</li>
+                    <li>Answer: B is 24 years old.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>viii. Clocks and Calendar Puzzles</h2>
+                <ul>
+                    <li>These puzzles are based on time, days of the week, or months.</li>
+                </ul>
+                <h3>Example:</h3>
+                <ul>
+                    <li>If today is Monday, what day will it be 100 days from now?</li>
+                    <li>Divide 100 by 7 (the number of days in a week): 100 ÷ 7 = 14 weeks and a remainder of 2.</li>
+                    <li>So, 100 days from Monday will be 2 days ahead, which is Wednesday.</li>
+                    <li>Answer: Wednesday.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ix. Blood Relations and Family Puzzles</h2>
+                <ul>
+                    <li>These puzzles involve determining the relationship between different family members based on
+                        given conditions.</li>
+                </ul>
+                <h3>Example:</h3>
+                <ul>
+                    <li>Pointing to a photograph, A said, "I have no brothers, but this boy's father is my father's
+                        son." Who is the boy in the photograph?</li>
+                    <li>"My father's son" is A himself (since A has no brothers).</li>
+                    <li>Therefore, the boy in the photograph is A’s son.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Blood">4. Blood Relation & Age Problems</h1>
+
+            <div class="topic-description">
+                <h2>Blood Relation Problems</h2>
+                <h3>Definition</h3>
+                <ul>
+                    <li>Blood relation problems involve determining the relationships between different family members
+                        based on the given conditions.</li>
+                </ul>
+
+                <h3>Key Terms</h3>
+                <ul>
+                    <li>Father: Male parent.</li>
+                    <li>Mother: Female parent.</li>
+                    <li>Brother: Male sibling.</li>
+                    <li>Sister: Female sibling.</li>
+                    <li>Uncle: Brother of one's parent.</li>
+                    <li>Aunt: Sister of one's parent.</li>
+                    <li>Nephew: Son of one's brother or sister.</li>
+                    <li>Niece: Daughter of one's brother or sister.</li>
+                    <li>Cousin: A child of one's uncle or aunt.</li>
+                </ul>
+
+                <h3>Examples:</h3>
+                <ol>
+                    <li>
+                        <p><b>Blood Relation Problem 1: Basic Blood Relation</b></p>
+                        <p>Problem: Pointing to a person in a photograph, A said, “He is the son of my father’s only
+                            son.” Who is the person in the photograph?</p>
+                        <p>Solution: "My father’s only son" refers to A (since A is the only son). Hence, the person in
+                            the photograph is A’s son.</p>
+                        <p>Answer: The person in the photograph is A’s son.</p>
+                    </li>
+                    <li>
+                        <p><b>Blood Relation Problem 2: Multiple Relations</b></p>
+                        <p>Problem: A man is looking at a picture. His friend asks, "Who are you looking at?" The man
+                            replies, "Brothers and sisters, I have none. But the father of the person in the picture is
+                            my father’s son." Who is in the picture?</p>
+                        <p>Solution: The man has no brothers, so "my father’s son" must be himself. Therefore, the
+                            person in the picture is his son.</p>
+                        <p>Answer: The person in the picture is his son.</p>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Age Problems</h2>
+                <h3>Definition</h3>
+                <ul>
+                    <li>Age problems are based on the relationships between the ages of two or more people, often over
+                        time, and require solving using algebra or arithmetic.</li>
+                </ul>
+
+                <h3>Key Terms and Approaches</h3>
+                <ul>
+                    <li>Age Difference: The age difference between two people remains constant.</li>
+                    <li>Age Ratio: Relationships between ages are given as ratios.</li>
+                    <li>Time Gap: Given conditions about how old someone was or will be at a certain point in time.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Examples:</h3>
+                <ol>
+                    <li>
+                        <p><b>Age Problem 1: Simple Age Calculation</b></p>
+                        <p>Problem: The sum of the ages of A and B is 50 years. A is 10 years older than B. What are
+                            their ages?</p>
+                        <p>Solution: Let B’s age be x. A’s age = x + 10. The sum of their ages is x + (x + 10) = 50.</p>
+                        <p>Solving: 2x + 10 = 50, so 2x = 40, and x = 20. A’s age = x + 10 = 30.</p>
+                        <p>Answer: A is 30 years old, and B is 20 years old.</p>
+                    </li>
+                    <li>
+                        <p><b>Age Problem 2: Age Difference Over Time</b></p>
+                        <p>Problem: Five years ago, A was three times as old as B. In 5 years, A will be twice as old as
+                            B. How old are A and B now?</p>
+                        <p>Solution: Let A’s present age be x and B’s present age be y. The conditions are:</p>
+                        <ul>
+                            <li>Five years ago: A’s age = x - 5, B’s age = y - 5. Hence, x - 5 = 3(y - 5) [Equation 1].
+                            </li>
+                            <li>In 5 years: A’s age = x + 5, B’s age = y + 5. Hence, x + 5 = 2(y + 5) [Equation 2].</li>
+                        </ul>
+                        <p>Solving these two equations gives x = 35 and y = 15.</p>
+                        <p>Answer: A is 35 years old, and B is 15 years old.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Direction">5. Direction Sense & Clock-Based Questions</h1>
+
+            <div class="topic-description">
+                <h2>Direction Sense Questions</h2>
+                <h3>Definition</h3>
+                <ul>
+                    <li>Direction sense problems focus on determining the final direction or position after a series of
+                        movements or turns.</li>
+                    <li>The directions involved are North (N), South (S), East (E), West (W), and sometimes intermediate
+                        directions like North-East (NE), South-East (SE), South-West (SW), and North-West (NW).</li>
+                </ul>
+
+                <h3>Important Directions</h3>
+                <ul>
+                    <li>North (N): Upward direction.</li>
+                    <li>South (S): Downward direction.</li>
+                    <li>East (E): Right direction.</li>
+                    <li>West (W): Left direction.</li>
+                    <li>North-East (NE): Between North and East.</li>
+                    <li>South-West (SW): Between South and West.</li>
+                </ul>
+
+                <h3>Examples:</h3>
+                <ol>
+                    <li>
+                        <p><b>Direction Sense Problem 1: Basic Movement</b></p>
+                        <p>Problem: A person starts walking from point A. He walks 10 meters North, turns right, walks 5
+                            meters, and then turns right again. In which direction is he now from his starting point?
+                        </p>
+                        <p>Solution:</p>
+                        <ul>
+                            <li>He starts walking North.</li>
+                            <li>After turning right, he walks East.</li>
+                            <li>After another right turn, he walks South.</li>
+                            <li>The net movement is 5 meters East and 10 meters South.</li>
+                        </ul>
+                        <p>Answer: South-East.</p>
+                    </li>
+                    <li>
+                        <p><b>Direction Sense Problem 2: Multiple Turns</b></p>
+                        <p>Problem: A man walks 10 meters north, turns left, walks 5 meters, turns left again, and walks
+                            10 meters. What is his final position relative to his starting point?</p>
+                        <p>Solution:</p>
+                        <ul>
+                            <li>Starts by walking 10 meters North.</li>
+                            <li>Turns left (West), and walks 5 meters.</li>
+                            <li>Turns left again (South), and walks 10 meters.</li>
+                            <li>He is now 5 meters West of his starting point.</li>
+                        </ul>
+                        <p>Answer: He is 5 meters West of the starting point.</p>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Clock-Based Questions</h2>
+                <h3>Definition</h3>
+                <ul>
+                    <li>Clock-based problems involve finding the position of the hour and minute hands of a clock at a
+                        given time or calculating angles between them.</li>
+                </ul>
+
+                <h3>Key Concepts</h3>
+                <ul>
+                    <li>Angle Calculation: The clock has 360°, divided into 12 hours, so each hour represents 30°.</li>
+                    <li>The minute hand moves 6° per minute (360° ÷ 60 = 6°).</li>
+                    <li>The hour hand moves 0.5° per minute (30° ÷ 60 = 0.5°).</li>
+                </ul>
+
+                <h3>Examples:</h3>
+                <ol>
+                    <li>
+                        <p><b>Clock-Based Problem 1: Finding the Angle Between Hands</b></p>
+                        <p>Problem: What is the angle between the hour and minute hands at 3:15?</p>
+                        <p>Solution:</p>
+                        <ul>
+                            <li>The hour hand is at 90° (3 × 30° = 90°).</li>
+                            <li>At 3:15, the hour hand moves 7.5° further (15 × 0.5°).</li>
+                            <li>The minute hand is at 90° (15 × 6°).</li>
+                            <li>The angle between them is: |(90° + 7.5°) - 90°| = 7.5°.</li>
+                        </ul>
+                        <p>Answer: 7.5°.</p>
+                    </li>
+                    <li>
+                        <p><b>Clock-Based Problem 2: When Do the Hands Overlap?</b></p>
+                        <p>Problem: When do the hour and minute hands overlap between 3:00 and 4:00?</p>
+                        <p>Solution:</p>
+                        <ul>
+                            <li>The hour hand is at 90° at 3:00.</li>
+                            <li>The minute hand moves faster than the hour hand.</li>
+                            <li>The equation for overlap is: 90° + 0.5° × t = 6° × t.</li>
+                            <li>Solve for t: 90° = 5.5° × t, so t = 90 ÷ 5.5 = 16.36 minutes.</li>
+                        </ul>
+                        <p>Answer: The hands overlap at 3:16:22.</p>
+                    </li>
+                    <li>
+                        <p><b>Clock-Based Problem 3: Time When Hands Are 90° Apart</b></p>
+                        <p>Problem: When are the hour and minute hands 90° apart between 3:00 and 4:00?</p>
+                        <p>Solution:</p>
+                        <ul>
+                            <li>Use the formula: θ = |30H - 5.5M| and set θ = 90°.</li>
+                            <li>Solve for M (minutes) for two different times within the hour when the hands form a 90°
+                                angle.</li>
+                            <li>The two times when the hands are 90° apart are around 3:16:22 and 3:49:09.</li>
+                        </ul>
+                        <p>Answer: 3:16:22 and 3:49:09.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

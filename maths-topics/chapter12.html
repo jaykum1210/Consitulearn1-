@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-maths.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 12 - Vector Algebra</div>
+        <div class="topic-name">
+            <h1>1. Vector and Scalar</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li><b>Scalars:</b> A scalar is a quantity that is fully described by a single numerical
+                        value and its unit. Scalars only have magnitude (size) and no direction.</li>
+                    <li><b>Vectors:</b> A vector is a quantity that is described by both magnitude and
+                        direction. It is represented by an arrow, where the length of the arrow represents the
+                        magnitude, and the direction of the arrow represents the direction of the vector.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Examples</h2>
+                <h3>Scalars:</h3>
+                <ul>
+                    <li>Mass (kg)</li>
+                    <li>Temperature (°C)</li>
+                    <li>Speed (m/s)</li>
+                    <li>Time (s)</li>
+                    <li>Distance (m)</li>
+                </ul>
+                <h3>Vectors:</h3>
+                <ul>
+                    <li>Displacement (m)</li>
+                    <li>Velocity (m/s)</li>
+                    <li>Force (N)</li>
+                    <li>Acceleration (m/s²)</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Notation</h2>
+                <ul>
+                    <li>Vectors are often denoted by bold letters or with an arrow on top. For example, vector A
+                        is written as:
+                        <p><b>𝐴</b> or <b>𝐴</b><sub>⃗</sub> or <b>A</b></p>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Components of a Vector</h2>
+                <ul>
+                    <li>A vector in 3D space can be represented in terms of its components along the x, y, and z
+                        axes. For a vector <b>A</b>, the components are:
+                        <p><b>A</b><sub>⃗</sub> = A<sub>x</sub>i<sup>^</sup> + A<sub>y</sub>j<sup>^</sup> +
+                            A<sub>z</sub>k<sup>^</sup></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Vectors">2. Components of Vectors</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>A vector can be broken down into components along specific directions, usually along the
+                        coordinate axes of a system (typically the x-axis, y-axis, and z-axis in 3D space).</li>
+                    <li>The process of breaking a vector into components simplifies vector operations and allows for
+                        easier analysis in different directions.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Components of a Vector in 2D</h2>
+                <ul>
+                    <li>In a two-dimensional Cartesian coordinate system, any vector <b>A</b> can be written as a
+                        sum of its components along the x-axis and y-axis.</li>
+                    <li>Consider a vector <b>A</b> having magnitude <b>A</b> and direction <b>θ</b> (angle with the
+                        positive x-axis).</li>
+                    <li>The vector <b>A</b> can be represented as:
+                        <p><b>A</b> = <b>A<sub>x</sub></b> <i>i</i> + <b>A<sub>y</sub></b> <i>j</i></p>
+                        <ul>
+                            <li><b>A<sub>x</sub></b> is the x-component of the vector <b>A</b></li>
+                            <li><b>A<sub>y</sub></b> is the y-component of the vector <b>A</b></li>
+                            <li><i>i</i> and <i>j</i> are unit vectors in the direction of the x-axis and y-axis,
+                                respectively.</li>
+                        </ul>
+                    </li>
+                    <li>Using trigonometry, the components of vector <b>A</b> are given by:
+                        <ul>
+                            <li><b>A<sub>x</sub></b> = A * cos(θ) (the x-component)</li>
+                            <li><b>A<sub>y</sub></b> = A * sin(θ) (the y-component)</li>
+                        </ul>
+                    </li>
+                    <li>Thus, the vector <b>A</b> in component form becomes:
+                        <p><b>A</b> = <b>A<sub>x</sub></b> <i>i</i> + <b>A<sub>y</sub></b> <i>j</i> = A * cos(θ)
+                            <i>i</i> + A * sin(θ) <i>j</i>
+                        </p>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example (2D)</h2>
+                <ul>
+                    <li>If <b>A</b> has a magnitude of 5 units and makes an angle of 30° with the positive x-axis,
+                        then:</li>
+                    <ul>
+                        <li><b>A<sub>x</sub></b> = 5 * cos(30°) = 5 * √3/2 = 4.33</li>
+                        <li><b>A<sub>y</sub></b> = 5 * sin(30°) = 5 * 1/2 = 2.5</li>
+                    </ul>
+                    <li>So, the vector <b>A</b> in component form is:
+                        <p><b>A</b> = 4.33 <i>i</i> + 2.5 <i>j</i></p>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Components of a Vector in 3D</h2>
+                <ul>
+                    <li>In a three-dimensional Cartesian coordinate system, any vector <b>A</b> can be written as a
+                        sum of its components along the x-axis, y-axis, and z-axis.</li>
+                    <li>Consider a vector <b>A</b> in 3D space, which can be represented as:
+                        <p><b>A</b> = <b>A<sub>x</sub></b> <i>i</i> + <b>A<sub>y</sub></b> <i>j</i> +
+                            <b>A<sub>z</sub></b> <i>k</i>
+                        </p>
+                        <ul>
+                            <li><b>A<sub>x</sub></b> is the x-component of the vector <b>A</b></li>
+                            <li><b>A<sub>y</sub></b> is the y-component of the vector <b>A</b></li>
+                            <li><b>A<sub>z</sub></b> is the z-component of the vector <b>A</b></li>
+                            <li><i>i</i>, <i>j</i>, <i>k</i> are unit vectors along the x-axis, y-axis, and z-axis,
+                                respectively.</li>
+                        </ul>
+                    </li>
+                    <li>If you know the magnitude <b>A</b> of the vector and the angles <b>θ<sub>x</sub></b>,
+                        <b>θ<sub>y</sub></b>, and <b>θ<sub>z</sub></b> that the vector makes with the coordinate
+                        axes, you can find the components as follows:
+                        <ul>
+                            <li><b>A<sub>x</sub></b> = A * cos(θ<sub>x</sub>)</li>
+                            <li><b>A<sub>y</sub></b> = A * cos(θ<sub>y</sub>)</li>
+                            <li><b>A<sub>z</sub></b> = A * cos(θ<sub>z</sub>)</li>
+                        </ul>
+                    </li>
+                    <li>Alternatively, if the direction cosines are given, the components can be directly calculated
+                        using:
+                        <ul>
+                            <li><b>A<sub>x</sub></b> = A * cos(α)</li>
+                            <li><b>A<sub>y</sub></b> = A * cos(β)</li>
+                            <li><b>A<sub>z</sub></b> = A * cos(γ)</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example (3D)</h2>
+                <ul>
+                    <li>Suppose a vector <b>A</b> has a magnitude of 6 units and the direction angles are:
+                        <ul>
+                            <li>α = 45° with the x-axis</li>
+                            <li>β = 60° with the y-axis</li>
+                            <li>γ = 90° with the z-axis</li>
+                        </ul>
+                    </li>
+                    <li>The components of the vector are:
+                        <ul>
+                            <li><b>A<sub>x</sub></b> = 6 * cos(45°) = 6 * √2/2 = 4.24</li>
+                            <li><b>A<sub>y</sub></b> = 6 * cos(60°) = 6 * 1/2 = 3</li>
+                            <li><b>A<sub>z</sub></b> = 6 * cos(90°) = 6 * 0 = 0</li>
+                        </ul>
+                    </li>
+                    <li>Thus, the vector <b>A</b> in component form is:
+                        <p><b>A</b> = 4.24 <i>i</i> + 3 <i>j</i> + 0 <i>k</i></p>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Unit Vectors</h2>
+                <ul>
+                    <li>Unit vectors are vectors with a magnitude of 1 and are used to define the direction of a
+                        vector in space.</li>
+                    <li>In the Cartesian coordinate system, the unit vectors are:
+                        <ul>
+                            <li><i>i</i> along the x-axis</li>
+                            <li><i>j</i> along the y-axis</li>
+                            <li><i>k</i> along the z-axis</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Rectangular Components of a Vector</h2>
+                <ul>
+                    <li>The components of a vector can be considered as projections of the vector along the
+                        coordinate axes. This is useful for vector operations such as addition, subtraction, and
+                        scalar multiplication.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Component Form of a Vector (General Case)</h2>
+                <ul>
+                    <li>In general, a vector <b>A</b> can be written in terms of its components along the axes as:
+                        <p><b>A</b> = <b>A<sub>x</sub></b> <i>i</i> + <b>A<sub>y</sub></b> <i>j</i> +
+                            <b>A<sub>z</sub></b> <i>k</i>
+                        </p>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Relation Between Magnitude and Components</h2>
+                <ul>
+                    <li>The magnitude <b>A</b> of a vector <b>A</b> = <b>A<sub>x</sub></b> <i>i</i> +
+                        <b>A<sub>y</sub></b> <i>j</i> + <b>A<sub>z</sub></b> <i>k</i> can be found using the
+                        Pythagorean theorem:
+                    </li>
+                    <ul>
+                        <li><b>A</b> = √(<b>A<sub>x</sub></b><sup>2</sup> + <b>A<sub>y</sub></b><sup>2</sup> +
+                            <b>A<sub>z</sub></b><sup>2</sup>)
+                        </li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Conclusion</h2>
+                <ul>
+                    <li>2D Vectors: A vector in 2D is represented as <b>A</b> = <b>A<sub>x</sub></b> <i>i</i> +
+                        <b>A<sub>y</sub></b> <i>j</i>, where <b>A<sub>x</sub></b> = A * cos(θ) and
+                        <b>A<sub>y</sub></b> = A * sin(θ).
+                    </li>
+                    <li>3D Vectors: A vector in 3D is represented as <b>A</b> = <b>A<sub>x</sub></b> <i>i</i> +
+                        <b>A<sub>y</sub></b> <i>j</i> + <b>A<sub>z</sub></b> <i>k</i>, where <b>A<sub>x</sub></b> =
+                        A * cos(α), <b>A<sub>y</sub></b> = A * cos(β), and <b>A<sub>z</sub></b> = A * cos(γ).
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border:none; margin-top: 20px;">
+        <div class="topic-name">
+            <div>
+                <h1 id="Dot">3. Dot Product (Scalar Product)</h1>
+
+                <div class="topic-description">
+                    <h2>Definition</h2>
+                    <ul>
+                        <li>The dot product (also called the scalar product) is a mathematical operation that takes
+                            two vectors and returns a scalar (a number, not a vector). It measures how much one
+                            vector extends in the direction of another vector.</li>
+                        <li>Formula: <b>A</b> ⋅ <b>B</b> = <b>A<sub>x</sub></b> <b>B<sub>x</sub></b> +
+                            <b>A<sub>y</sub></b> <b>B<sub>y</sub></b> + <b>A<sub>z</sub></b> <b>B<sub>z</sub></b>
+                        </li>
+                        <p>Alternatively, the dot product can also be written as: <b>A</b> ⋅ <b>B</b> = |<b>A</b>|
+                            |<b>B</b>| cos(<i>&theta;</i>),</p>
+                    </ul>
+                    <hr style="height: 1px; background-color: black; border: none;">
+                    <h2>SI Unit</h2>
+                    <ul>
+                        <li>The dot product yields a scalar result and is typically expressed in units of Joules (J)
+                            when related to work or energy.</li>
+                    </ul>
+                    <hr style="height: 1px; background-color: black; border: none;">
+                    <h2>Properties of the Dot Product</h2>
+                    <ol style="list-style-type: lower-roman;">
+                        <li><b>Commutative Property:</b> The dot product is commutative, meaning <b>A</b> ⋅ <b>B</b>
+                            = <b>B</b> ⋅ <b>A</b>.</li>
+                        <li><b>Distributive Property:</b> The dot product is distributive over vector addition,
+                            <b>A</b> ⋅ (<b>B</b> + <b>C</b>) = <b>A</b> ⋅ <b>B</b> + <b>A</b> ⋅ <b>C</b>.
+                        </li>
+                        <li><b>Scalar Multiplication:</b> The dot product of a scalar multiplied by a vector with
+                            another vector is: (k <b>A</b>) ⋅ <b>B</b> = k(<b>A</b> ⋅ <b>B</b>), where k is a
+                            scalar.</li>
+                        <li><b>Zero Dot Product:</b> If <b>A</b> ⋅ <b>B</b> = 0, the vectors <b>A</b> and <b>B</b>
+                            are perpendicular (orthogonal).</li>
+                    </ol>
+                    <hr style="height: 1px; background-color: black; border: none;">
+                    <h2>Examples of Dot Product Calculation</h2>
+                    <h3>Example 1 (Using Components)</h3>
+                    <p>Let <b>A</b> = 3<i>i</i> + 2<i>j</i> + 4<i>k</i> and <b>B</b> = 1<i>i</i> + 0<i>j</i> +
+                        5<i>k</i>. The dot product is:</p>
+                    <p><b>A</b> ⋅ <b>B</b> = (3×1) + (2×0) + (4×5) = 3 + 0 + 20 = 23</p>
+
+                    <h3>Example 2 (Using Magnitudes and Angle)</h3>
+                    <p>Let <b>A</b> and <b>B</b> have magnitudes |<b>A</b>| = 6 and |<b>B</b>| = 8, and the angle
+                        between them is 60&deg;. The dot product is:</p>
+                    <p><b>A</b> ⋅ <b>B</b> = |<b>A</b>| |<b>B</b>| cos(60&deg;) = 6 × 8 × 1/2 = 24</p>
+
+                    <h3>Example 3 (Zero Dot Product)</h3>
+                    <p>If <b>A</b> = 4<i>i</i> + 3<i>j</i> and <b>B</b> = -3<i>i</i> + 4<i>j</i>, the dot product
+                        is:</p>
+                    <p><b>A</b> ⋅ <b>B</b> = (4×-3) + (3×4) = -12 + 12 = 0</p>
+                    <hr style="height: 1px; background-color: black; border: none;">
+                    <h2>Applications of the Dot Product</h2>
+                    <ul>
+                        <li><b>Angle Between Two Vectors:</b> The formula <b>A</b> ⋅ <b>B</b> = |<b>A</b>|
+                            |<b>B</b>| cos(<i>&theta;</i>) can be used to calculate the angle between two vectors:
+                        </li>
+                        <p>cos(<i>&theta;</i>) = <b>A</b> ⋅ <b>B</b> / (|<b>A</b>| |<b>B</b>|)</p>
+                        <p><i>&theta;</i> = cos<sup>-1</sup>(<b>A</b> ⋅ <b>B</b> / (|<b>A</b>| |<b>B</b>|)).</p>
+
+                        <li><b>Work Done:</b> The work <b>W</b> done by a force <b>F</b> acting on an object over a
+                            displacement <b>d</b> is given by the dot product: <b>W</b> = <b>F</b> ⋅ <b>d</b>.</li>
+
+                        <li><b>Projection of a Vector:</b> The dot product is used to find the projection of one
+                            vector onto another. The projection of <b>A</b> onto <b>B</b> is given by:</li>
+                        <p>proj<sub><b>B</b></sub><b>A</b> = (<b>A</b> ⋅ <b>B</b>) / |<b>B</b>|<sup>2</sup> <b>B</b>
+                        </p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Triple">4. Vector Triple Product</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>The vector triple product refers to the cross product of a vector with the cross product of
+                        two other vectors.</li>
+                    <li>It involves three vectors and is often written as: <math
+                            xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>A</mi>
+                                <mo>&#x20;</mo>
+                                <mo>&#x20;</mo>
+                                <mi>×</mi>
+                            </msub>
+                            <mo>(</mo>
+                            <msub>
+                                <mi>B</mi>
+                                <mo>&#x20;</mo>
+                                <mo>&#x20;</mo>
+                                <mi>×</mi>
+                            </msub>
+                            <mi>C</mi>
+                            <mo>)</mo>
+                        </math></li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Vector Triple Product Identity</h2>
+                <ul>
+                    <li>The vector triple product identity simplifies the expression as follows:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>A</mi>
+                            <mo>&#x20;</mo>
+                            <mo>&#x20;</mo>
+                            <mi>×</mi>
+                        </msub>
+                        <mo>(</mo>
+                        <msub>
+                            <mi>B</mi>
+                            <mo>&#x20;</mo>
+                            <mo>&#x20;</mo>
+                            <mi>×</mi>
+                        </msub>
+                        <mi>C</mi>
+                        <mo>)</mo>
+                        <mo>=</mo>
+                        <mo>(</mo>
+                        <msub>
+                            <mi>A</mi>
+                            <mo>&#x20;</mo>
+                            <mo>&#x20;</mo>
+                            <mi>⋅</mi>
+                        </msub>
+                        <mi>C</mi>
+                        <mo>)</mo>
+                        <mi>B</mi>
+                        <mo>&#x20;</mo>
+                        <mo>&#x2013;</mo>
+                        <mo>(</mo>
+                        <msub>
+                            <mi>A</mi>
+                            <mo>&#x20;</mo>
+                            <mo>&#x20;</mo>
+                            <mi>⋅</mi>
+                        </msub>
+                        <mi>B</mi>
+                        <mo>)</mo>
+                        <mi>C</mi>
+                    </math>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Geometric Interpretation</h2>
+                <ul>
+                    <li>The term <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>A</mi>
+                                <mo>&#x20;</mo>
+                                <mo>&#x20;</mo>
+                                <mi>⋅</mi>
+                            </msub>
+                            <mi>C</mi>
+                            <mo>)</mo>
+                            <mi>B</mi>
+                        </math> represents a scalar multiple of <mi>B</mi> (the projection of <mi>A</mi> onto <mi>C
+                        </mi> multiplied by <mi>B</mi>).</li>
+                    <li>The term <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>A</mi>
+                                <mo>&#x20;</mo>
+                                <mo>&#x20;</mo>
+                                <mi>⋅</mi>
+                            </msub>
+                            <mi>B</mi>
+                            <mo>)</mo>
+                            <mi>C</mi>
+                        </math> represents a scalar multiple of <mi>C</mi> (the projection of <mi>A</mi> onto <mi>B
+                        </mi> multiplied by <mi>C</mi>).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Properties of the Vector Triple Product</h2>
+                <ul>
+                    <li><b>Distributive Over Vector Addition</b>: The vector triple product is distributive over
+                        vector addition.</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>A</mi>
+                            <mo>&#x20;</mo>
+                            <mo>&#x20;</mo>
+                            <mi>×</mi>
+                        </msub>
+                        <mo>(</mo>
+                        <msub>
+                            <mi>B</mi>
+                            <mo>&#x20;</mo>
+                            <mo>&#x20;</mo>
+                            <mi>+</mi>
+                        </msub>
+                        <mi>C</mi>
+                        <mo>)</mo>
+                        <mo>=</mo>
+                        <msub>
+                            <mi>A</mi>
+                            <mo>&#x20;</mo>
+                            <mo>&#x20;</mo>
+                            <mi>×</mi>
+                        </msub>
+                        <mi>B</mi>
+                        <mo>&#x20;</mo>
+                        <mo>+</mo>
+                        <msub>
+                            <mi>A</mi>
+                            <mo>&#x20;</mo>
+                            <mo>&#x20;</mo>
+                            <mi>×</mi>
+                        </msub>
+                        <mi>C</mi>
+                    </math>
+                    <li><b>Scalar Multiplication</b>: If a scalar <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>k</mi>
+                        </math> is multiplied with the vector <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>A</mi>
+                        </math>, the result follows:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mo>(</mo>
+                        <mi>k</mi>
+                        <msub>
+                            <mi>A</mi>
+                            <mo>&#x20;</mo>
+                            <mo>&#x20;</mo>
+                        </msub>
+                        <mo>)</mo>
+                        <mo>×</mo>
+                        <mo>(</mo>
+                        <msub>
+                            <mi>B</mi>
+                            <mo>&#x20;</mo>
+                            <mo>&#x20;</mo>
+                            <mi>×</mi>
+                        </msub>
+                        <mi>C</mi>
+                        <mo>)</mo>
+                        <mo>=</mo>
+                        <mi>k</mi>
+                        <mo>(</mo>
+                        <msub>
+                            <mi>A</mi>
+                            <mo>&#x20;</mo>
+                            <mo>&#x20;</mo>
+                            <mi>×</mi>
+                        </msub>
+                        <mo>(</mo>
+                        <msub>
+                            <mi>B</mi>
+                            <mo>&#x20;</mo>
+                            <mo>&#x20;</mo>
+                            <mi>×</mi>
+                        </msub>
+                        <mi>C</mi>
+                        <mo>)</mo>
+                    </math>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Simplification for Parallel Vectors</h2>
+                <ul>
+                    <li>If <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>A</mi>
+                        </math>, <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>B</mi>
+                        </math>, and <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>C</mi>
+                        </math> are coplanar, the vector triple product simplifies to zero:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>A</mi>
+                            <mo>&#x20;</mo>
+                            <mo>&#x20;</mo>
+                            <mi>×</mi>
+                        </msub>
+                        <mo>(</mo>
+                        <msub>
+                            <mi>B</mi>
+                            <mo>&#x20;</mo>
+                            <mo>&#x20;</mo>
+                            <mi>×</mi>
+                        </msub>
+                        <mi>C</mi>
+                        <mo>)</mo>
+                        <mo>=</mo>
+                        <mo>0</mo>
+                    </math>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example Calculation</h2>
+                <ul>
+                    <li>Let <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>A</mi>
+                        </math> = <mi>2i</mi> + <mi>3j</mi> + <mi>k</mi>, <math
+                            xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>B</mi>
+                        </math> = <mi>i</mi> - <mi>2j</mi> + <mi>4k</mi>, and <math
+                            xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>C</mi>
+                        </math> = <mi>3i</mi> + <mi>j</mi> - <mi>k</mi>.</li>
+                    <li>The vector triple product <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>A</mi>
+                        </math> × (<math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>B</mi>
+                        </math> × <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>C</mi>
+                        </math>) gives:</li>
+                    <ul>
+                        <li><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>A</mi>
+                            </math> × (<math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>B</mi>
+                            </math> × <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>C</mi>
+                            </math>) = <mi>8i</mi> - <mi>16j</mi> + <mi>32k</mi>
+                        </li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+
+                <h2>Applications of the Vector Triple Product</h2>
+                <ul>
+                    <li><b>Torque and Angular Momentum:</b> Used to calculate quantities like torque and angular
+                        momentum when more than one force is involved.</li>
+                    <li><b>Moment of a Force:</b> Crucial for calculating the moment of a force about a point in
+                        mechanics.</li>
+                    <li><b>Geometrical Computations:</b> Can be used to compute the volume of a parallelepiped
+                        formed by three vectors.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

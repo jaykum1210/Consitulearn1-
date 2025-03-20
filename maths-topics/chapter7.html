@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-maths.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 7 - Limits, Continuity & Differentiability</div>
+        <div class="topic-name">
+            <h1>1. Limits</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>The limit of a function \( f(x) \) as \( x \) approaches \( a \) is the value that \( f(x)
+                        \) approaches as \( x \) gets closer to \( a \). Denoted as:</li>
+                    <p>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>lim</mi>
+                                <mo> </mo>
+                                <mi>x</mi>
+                                <mo>&rarr;</mo>
+                                <mi>a</mi>
+                                <mo> </mo>
+                                <mi>f</mi>
+                                <mo>(</mo>
+                                <mi>x</mi>
+                                <mo>)</mo>
+                                <mo>=</mo>
+                                <mi>L</mi>
+                            </mrow>
+                        </math>
+                    </p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Limits</h2>
+                <ul>
+                    <li><b>Finite Limit</b>: When \( f(x) \) approaches a finite value \( L \). Example: </li>
+                    <p>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>lim</mi>
+                                <mo> </mo>
+                                <mi>x</mi>
+                                <mo>&rarr;</mo>
+                                <mn>2</mn>
+                                <mo> </mo>
+                                <mi>(3x + 1)</mi>
+                                <mo>=</mo>
+                                <mn>7</mn>
+                            </mrow>
+                        </math>
+                    </p>
+                    <li><b>Infinite Limit</b>: When \( f(x) \) grows without bound as \( x \) approaches \( a \).
+                        Example: </li>
+                    <p>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>lim</mi>
+                                <mo> </mo>
+                                <mi>x</mi>
+                                <mo>&rarr;</mo>
+                                <mn>0</mn>
+                                <mo> </mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mn>1</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>x</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mi>&#x221e;</mi>
+                            </mrow>
+                        </math>
+                    </p>
+                    <li><b>One-Sided Limit</b>: Limit from one direction: </li>
+                    <ul>
+                        <li><b>Left-hand limit</b>:
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mrow>
+                                    <mi>lim</mi>
+                                    <mo> </mo>
+                                    <mi>x</mi>
+                                    <mo>&rarr;</mo>
+                                    <mi>a</mi>
+                                    <mo>−</mo>
+                                    <mi>f</mi>
+                                    <mo>(</mo>
+                                    <mi>x</mi>
+                                    <mo>)</mo>
+                                </mrow>
+                            </math>
+                        </li>
+                        <li><b>Right-hand limit</b>:
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mrow>
+                                    <mi>lim</mi>
+                                    <mo> </mo>
+                                    <mi>x</mi>
+                                    <mo>&rarr;</mo>
+                                    <mi>a</mi>
+                                    <mo>+</mo>
+                                    <mi>f</mi>
+                                    <mo>(</mo>
+                                    <mi>x</mi>
+                                    <mo>)</mo>
+                                </mrow>
+                            </math>
+                        </li>
+                    </ul>
+                    <li><b>Limit at Infinity</b>: As \( x \to \infty \) or \( x \to -\infty \), the function
+                        approaches a value. Example: </li>
+                    <p>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>lim</mi>
+                                <mo> </mo>
+                                <mi>x</mi>
+                                <mo>&rarr;</mo>
+                                <mi>&#x221e;</mi>
+                                <mo> </mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mn>1</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>x</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mn>0</mn>
+                            </mrow>
+                        </math>
+                    </p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Properties of Limits</h2>
+                <ul>
+                    <li><b>Sum Rule:</b>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>lim</mi>
+                                <mo> </mo>
+                                <mi>x</mi>
+                                <mo>&rarr;</mo>
+                                <mi>a</mi>
+                                <mo> </mo>
+                                <mi>(f(x) + g(x))</mi>
+                                <mo>=</mo>
+                                <mi>lim</mi>
+                                <mo> </mo>
+                                <mi>x</mi>
+                                <mo>&rarr;</mo>
+                                <mi>a</mi>
+                                <mo> </mo>
+                                <mi>f(x)</mi>
+                                <mo>+</mo>
+                                <mi>lim</mi>
+                                <mo> </mo>
+                                <mi>x</mi>
+                                <mo>&rarr;</mo>
+                                <mi>a</mi>
+                                <mo> </mo>
+                                <mi>g(x)</mi>
+                            </mrow>
+                        </math>
+                    </li>
+                    <li><b>Product Rule:</b>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>lim</mi>
+                                <mo> </mo>
+                                <mi>x</mi>
+                                <mo>&rarr;</mo>
+                                <mi>a</mi>
+                                <mo> </mo>
+                                <mi>(f(x) ⋅ g(x))</mi>
+                                <mo>=</mo>
+                                <mi>lim</mi>
+                                <mo> </mo>
+                                <mi>x</mi>
+                                <mo>&rarr;</mo>
+                                <mi>a</mi>
+                                <mo> </mo>
+                                <mi>f(x)</mi>
+                                <mo>⋅</mo>
+                                <mi>lim</mi>
+                                <mo> </mo>
+                                <mi>x</mi>
+                                <mo>&rarr;</mo>
+                                <mi>a</mi>
+                                <mo> </mo>
+                                <mi>g(x)</mi>
+                            </mrow>
+                        </math>
+                    </li>
+                    <li><b>Quotient Rule:</b>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>lim</mi>
+                                <mo> </mo>
+                                <mi>x</mi>
+                                <mo>&rarr;</mo>
+                                <mi>a</mi>
+                                <mo> </mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>f(x)</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>g(x)</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>lim</mi>
+                                        <mo> </mo>
+                                        <mi>x</mi>
+                                        <mo>&rarr;</mo>
+                                        <mi>a</mi>
+                                        <mo> </mo>
+                                        <mi>f(x)</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>lim</mi>
+                                        <mo> </mo>
+                                        <mi>x</mi>
+                                        <mo>&rarr;</mo>
+                                        <mi>a</mi>
+                                        <mo> </mo>
+                                        <mi>g(x)</mi>
+                                    </mrow>
+                                </mfrac>
+                            </mrow>
+                        </math>
+                    </li>
+                    <li><b>Constant Multiple Rule:</b>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>lim</mi>
+                                <mo> </mo>
+                                <mi>x</mi>
+                                <mo>&rarr;</mo>
+                                <mi>a</mi>
+                                <mo> </mo>
+                                <mi>(c ⋅ f(x))</mi>
+                                <mo>=</mo>
+                                <mi>c</mi>
+                                <mo>⋅</mo>
+                                <mi>lim</mi>
+                                <mo> </mo>
+                                <mi>x</mi>
+                                <mo>&rarr;</mo>
+                                <mi>a</mi>
+                                <mo> </mo>
+                                <mi>f(x)</mi>
+                            </mrow>
+                        </math>
+                    </li>
+                    <li><b>Power Rule:</b>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>lim</mi>
+                                <mo> </mo>
+                                <mi>x</mi>
+                                <mo>&rarr;</mo>
+                                <mi>a</mi>
+                                <mo> </mo>
+                                <msup>
+                                    <mrow>
+                                        <mi>[f(x)]</mi>
+                                    </mrow>
+                                    <mi>n</mi>
+                                </msup>
+                                <mo>=</mo>
+                                <msup>
+                                    <mrow>
+                                        <mi>lim</mi>
+                                        <mo> </mo>
+                                        <mi>x</mi>
+                                        <mo>&rarr;</mo>
+                                        <mi>a</mi>
+                                        <mo> </mo>
+                                        <mi>f(x)</mi>
+                                    </mrow>
+                                    <mi>n</mi>
+                                </msup>
+                            </mrow>
+                        </math>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Common Techniques</h2>
+                <ul>
+                    <li><b>Direct Substitution:</b> Substitute \( x = a \) directly into the function.</li>
+                    <p>
+                        Example:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>lim</mi>
+                                <mo> </mo>
+                                <mi>x</mi>
+                                <mo>&rarr;</mo>
+                                <mn>2</mn>
+                                <mo> </mo>
+                                <mi>(3x + 1)</mi>
+                                <mo>=</mo>
+                                <mn>7</mn>
+                            </mrow>
+                        </math>
+                    </p>
+                    <li><b>Factoring:</b> Factor functions to simplify and eliminate indeterminate forms.</li>
+                    <p>
+                        Example:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>lim</mi>
+                                <mo> </mo>
+                                <mi>x</mi>
+                                <mo>&rarr;</mo>
+                                <mn>3</mn>
+                                <mo> </mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>x</mi>
+                                        <mo>−</mo>
+                                        <mn>3</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>x</mi>
+                                        <mo>²</mo>
+                                        <mo>−</mo>
+                                        <mn>9</mn>
+                                    </mrow>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mn>6</mn>
+                            </mrow>
+                        </math>
+                    </p>
+                    <li><b>L'Hopital's Rule:</b> For indeterminate forms \( \frac{0}{0} \) or \(
+                        \frac{\infty}{\infty} \), differentiate the numerator and denominator.</li>
+                    <li><b>Squeeze Theorem:</b> If \( f(x) \leq g(x) \leq h(x) \) and the limits of \( f(x) \) and
+                        \( h(x) \) are the same, then the limit of \( g(x) \) is also the same.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Important Standard Limits</h2>
+                <ul>
+                    <li>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>lim</mi>
+                                <mo> </mo>
+                                <mi>x</mi>
+                                <mo>&rarr;</mo>
+                                <mn>0</mn>
+                                <mo> </mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>sin</mi>
+                                        <mo>(</mo>
+                                        <mi>x</mi>
+                                        <mo>)</mo>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>x</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mn>1</mn>
+                            </mrow>
+                        </math>
+                    </li>
+                    <li>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>lim</mi>
+                                <mo> </mo>
+                                <mi>x</mi>
+                                <mo>&rarr;</mo>
+                                <mn>0</mn>
+                                <mo> </mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>e</mi>
+                                        <msup>
+                                            <mi>x</mi>
+                                            <mn>−1</mn>
+                                        </msup>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>x</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mn>1</mn>
+                            </mrow>
+                        </math>
+                    </li>
+                    <li>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>lim</mi>
+                                <mo> </mo>
+                                <mi>x</mi>
+                                <mo>&rarr;</mo>
+                                <mi>&#x221e;</mi>
+                                <mo> </mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mn>1</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>x</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mn>0</mn>
+                            </mrow>
+                        </math>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Continuity">2. Continuity</h1>
+            <div class="topic-description">
+                <h2>Definition of Continuity</h2>
+                <ul>
+                    <li>A function \( f(x) \) is continuous at \( x = a \) if:</li>
+                    <ul>
+                        <li><b>Defined at \( a \)</b>: \( f(a) \) exists.</li>
+                        <li><b>Limit exists at \( a \)</b>:
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mrow>
+                                    <mi>lim</mi>
+                                    <mo> </mo>
+                                    <mi>x</mi>
+                                    <mo>&rarr;</mo>
+                                    <mi>a</mi>
+                                    <mo> </mo>
+                                    <mi>f(x)</mi>
+                                </mrow>
+                            </math> exists.
+                        </li>
+                        <li><b>Function value equals the limit</b>:
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mrow>
+                                    <mi>lim</mi>
+                                    <mo> </mo>
+                                    <mi>x</mi>
+                                    <mo>&rarr;</mo>
+                                    <mi>a</mi>
+                                    <mo> </mo>
+                                    <mi>f(x)</mi>
+                                    <mo>=</mo>
+                                    <mi>f(a)</mi>
+                                </mrow>
+                            </math>.
+                        </li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Discontinuities</h2>
+                <ul>
+                    <li><b>Removable:</b> The limit exists but the function is not defined or not equal to the limit
+                        at \( x = a \).</li>
+                    <p>
+                        Example:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>f(x)</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>x</mi>
+                                        <mo>²</mo>
+                                        <mo>−</mo>
+                                        <mn>1</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>x</mi>
+                                        <mo>−</mo>
+                                        <mn>1</mn>
+                                    </mrow>
+                                </mfrac>
+                                <mo> </mo>
+                                <mi>at</mi>
+                                <mo> </mo>
+                                <mi>x</mi>
+                                <mo>=</mo>
+                                <mn>1</mn>
+                            </mrow>
+                        </math>
+                    </p>
+                    <li><b>Jump:</b> Left-hand and right-hand limits are not equal at \( x = a \).</li>
+                    <p>Example: Piecewise functions with different values on each side.</p>
+                    <li><b>Infinite:</b> Function approaches infinity as \( x \) approaches \( a \).</li>
+                    <p>
+                        Example:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>f(x)</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mn>1</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>x</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo> </mo>
+                                <mi>at</mi>
+                                <mo> </mo>
+                                <mi>x</mi>
+                                <mo>=</mo>
+                                <mn>0</mn>
+                            </mrow>
+                        </math>
+                    </p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Theorems</h2>
+                <ul>
+                    <li><b>Intermediate Value Theorem:</b> If a function is continuous on \( [a, b] \), it takes
+                        every value between \( f(a) \) and \( f(b) \).</li>
+                    <li><b>Sum, Product, and Quotient Theorems:</b> If \( f(x) \) and \( g(x) \) are continuous at
+                        \( a \), so are:
+                        <ul>
+                            <li> \( f(x) + g(x) \), </li>
+                            <li> \( f(x) \cdot g(x) \), </li>
+                            <li> \( \frac{f(x)}{g(x)} \) (if \( g(a) \neq 0 \)). </li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Key Continuous Functions</h2>
+                <ul>
+                    <li><b>Polynomials:</b> Continuous everywhere.</li>
+                    <p>Example:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>f(x)</mi>
+                                <mo>=</mo>
+                                <mi>x</mi>
+                                <msup>
+                                    <mn>2</mn>
+                                </msup>
+                            </mrow>
+                        </math>
+                    </p>
+                    <li><b>Rational Functions:</b> Continuous where the denominator is non-zero.</li>
+                    <p>Example:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>f(x)</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mn>1</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>x</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo> </mo>
+                                <mi>(continuous for</mi>
+                                <mi>x ≠ 0</mi>)
+                            </mrow>
+                        </math>
+                    </p>
+                    <li><b>Trigonometric Functions:</b> Continuous where defined.</li>
+                    <p>Example:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>f(x)</mi>
+                                <mo>=</mo>
+                                <mi>sin(x)</mi>
+                            </mrow>
+                        </math>
+                    </p>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Differentiability">3. Differentiability in Calculus</h1>
+            <div class="topic-description">
+                <h2>Definition of Differentiability</h2>
+                <ul>
+                    <li>A function \( f(x) \) is differentiable at \( x = a \) if the derivative exists at that
+                        point. Mathematically, the derivative of \( f(x) \) at \( x = a \) is:</li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                            <mi>f</mi>
+                            <mo>'</mo>
+                            <mo>(</mo>
+                            <mi>a</mi>
+                            <mo>)</mo>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>lim</mi>
+                                    <mo> </mo>
+                                    <mi>h</mi>
+                                    <mo>&rarr;</mo>
+                                    <mn>0</mn>
+                                    <mo> </mo>
+                                    <mi>f(a+h)</mi>
+                                    <mo>−</mo>
+                                    <mi>f(a)</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>h</mi>
+                                </mrow>
+                            </mfrac>
+                        </mrow>
+                    </math>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Differentiability vs Continuity</h2>
+                <ul>
+                    <li>A function must be continuous at \( x = a \) to be differentiable there, but a continuous
+                        function may not be differentiable.</li>
+                    <li>Differentiability implies continuity, but the reverse is not always true. For example, a
+                        function can be continuous at a point but not differentiable there (like \( f(x) = |x| \) at
+                        \( x = 0 \)).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Conditions for Differentiability</h2>
+                <ul>
+                    <li><b>Continuity at the point:</b> The function must be continuous at \( x = a \).</li>
+                    <li><b>No sharp corners:</b> The function must not have any sharp corners or cusps at \( x = a
+                        \).</li>
+                    <li><b>No vertical tangents:</b> The function must not have a vertical tangent at \( x = a \).
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Differentiability of Common Functions</h2>
+                <ul>
+                    <li><b>Polynomials:</b> All polynomial functions are differentiable everywhere.</li>
+                    <p>Example:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>f(x)</mi>
+                                <mo>=</mo>
+                                <mi>x</mi>
+                                <msup>
+                                    <mn>3</mn>
+                                </msup>
+                                <mo>−</mo>
+                                <mn>3</mn>
+                                <mi>x</mi>
+                                <mo>+</mo>
+                                <mn>2</mn>
+                            </mrow>
+                        </math>
+                    </p>
+
+                    <li><b>Rational Functions:</b> Differentiable where the denominator is non-zero.</li>
+                    <p>Example:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>f(x)</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mn>1</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>x</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo> </mo>
+                                <mi>for</mi>
+                                <mo> </mo>
+                                <mi>x ≠ 0</mi>
+                            </mrow>
+                        </math>
+                    </p>
+
+                    <li><b>Trigonometric Functions:</b> Basic trigonometric functions like \( \sin(x) \), \( \cos(x)
+                        \), and \( \tan(x) \) are differentiable wherever they are defined.</li>
+                    <p>Example:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>f(x)</mi>
+                                <mo>=</mo>
+                                <mi>sin(x)</mi>
+                            </mrow>
+                        </math>
+                    </p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Examples of Differentiability</h2>
+                <ul>
+                    <li><b>Example 1:</b> \( f(x) = x^2 \) is differentiable everywhere, and its derivative is \(
+                        f'(x) = 2x \).</li>
+                    <li><b>Example 2:</b> \( f(x) = |x| \) is not differentiable at \( x = 0 \) due to a sharp
+                        corner.</li>
+                    <li><b>Example 3:</b> \( f(x) = \frac{1}{x} \) is differentiable for \( x ≠ 0 \), but not at \(
+                        x = 0 \).</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Rules">4. Differentiation Rules and Applications</h1>
+            <div class="topic-description">
+                <h2>Differentiation Rules</h2>
+                <ul>
+                    <li><b>Power Rule:</b> For \( f(x) = x^n \), where \( n \) is any real number:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>f</mi>
+                                <mo>'</mo>
+                                <mo>(</mo>
+                                <mi>x</mi>
+                                <mo>)</mo>
+                                <mo>=</mo>
+                                <mi>n</mi>
+                                <mi>x</mi>
+                                <mo>^{</mo>
+                                <mi>n</mi>
+                                <mo>-</mo>
+                                <mn>1</mn>
+                                <mo>}</mo>
+                            </mrow>
+                        </math>
+                    </li>
+
+                    <li><b>Constant Rule:</b> The derivative of a constant function is zero.
+                        \( f(x) = c \Rightarrow f'(x) = 0 \)
+                    </li>
+
+                    <li><b>Sum/Difference Rule:</b> The derivative of the sum (or difference) of two functions is
+                        the sum (or difference) of their derivatives.
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>d</mi>
+                                <mo>/</mo>
+                                <mi>d</mi>
+                                <mi>x</mi>
+                                <mo>(</mo>
+                                <mi>f</mi>
+                                <mo>(</mo>
+                                <mi>x</mi>
+                                <mo>)</mo>
+                                <mo>±</mo>
+                                <mi>g</mi>
+                                <mo>(</mo>
+                                <mi>x</mi>
+                                <mo>))</mo>
+                                <mo>=</mo>
+                                <mi>f</mi>
+                                <mo>'</mo>
+                                <mo>(</mo>
+                                <mi>x</mi>
+                                <mo>)</mo>
+                                <mo>±</mo>
+                                <mi>g</mi>
+                                <mo>'</mo>
+                                <mo>(</mo>
+                                <mi>x</mi>
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+                    </li>
+
+                    <li><b>Product Rule:</b> For two functions \( f(x) \) and \( g(x) \):
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>d</mi>
+                                <mo>/</mo>
+                                <mi>d</mi>
+                                <mi>x</mi>
+                                <mo>(</mo>
+                                <mi>f</mi>
+                                <mo>(</mo>
+                                <mi>x</mi>
+                                <mo>)</mo>
+                                <mo>&#8226;</mo>
+                                <mi>g</mi>
+                                <mo>(</mo>
+                                <mi>x</mi>
+                                <mo>))</mo>
+                                <mo>=</mo>
+                                <mi>f</mi>
+                                <mo>'</mo>
+                                <mo>(</mo>
+                                <mi>x</mi>
+                                <mo>)</mo>
+                                <mi>&#8226;</mi>
+                                <mi>g</mi>
+                                <mo>(</mo>
+                                <mi>x</mi>
+                                <mo>)</mo>
+                                <mo>+</mo>
+                                <mi>f</mi>
+                                <mo>(</mo>
+                                <mi>x</mi>
+                                <mo>)</mo>
+                                <mi>&#8226;</mi>
+                                <mi>g</mi>
+                                <mo>'</mo>
+                                <mo>(</mo>
+                                <mi>x</mi>
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+                    </li>
+
+                    <li><b>Quotient Rule:</b> For two functions \( f(x) \) and \( g(x) \), where \( g(x) \neq 0 \):
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>d</mi>
+                                <mo>/</mo>
+                                <mi>d</mi>
+                                <mi>x</mi>
+                                <mo>(</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>f</mi>
+                                        <mo>(</mo>
+                                        <mi>x</mi>
+                                        <mo>)</mo>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>g</mi>
+                                        <mo>(</mo>
+                                        <mi>x</mi>
+                                        <mo>)</mo>
+                                    </mrow>
+                                </mfrac>
+                                <mo>)</mo>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>f</mi>
+                                        <mo>'</mo>
+                                        <mo>(</mo>
+                                        <mi>x</mi>
+                                        <mo>)</mo>
+                                        <mi>&#8226;</mi>
+                                        <mi>g</mi>
+                                        <mo>(</mo>
+                                        <mi>x</mi>
+                                        <mo>)</mo>
+                                        <mo>−</mo>
+                                        <mi>f</mi>
+                                        <mo>(</mo>
+                                        <mi>x</mi>
+                                        <mo>)</mo>
+                                        <mi>&#8226;</mi>
+                                        <mi>g</mi>
+                                        <mo>'</mo>
+                                        <mo>(</mo>
+                                        <mi>x</mi>
+                                        <mo>)</mo>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>g</mi>
+                                        <mo>(</mo>
+                                        <mi>x</mi>
+                                        <mo>)</mo>
+                                        <msup>
+                                            <mrow>
+                                                <mi>2</mi>
+                                            </mrow>
+                                        </msup>
+                                    </mrow>
+                                </mfrac>
+                            </mrow>
+                        </math>
+                    </li>
+
+                    <li><b>Chain Rule:</b> For a composite function \( f(g(x)) \), the derivative is:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>d</mi>
+                                <mo>/</mo>
+                                <mi>d</mi>
+                                <mi>x</mi>
+                                <mo>[</mo>
+                                <mi>f</mi>
+                                <mo>(</mo>
+                                <mi>g</mi>
+                                <mo>(</mo>
+                                <mi>x</mi>
+                                <mo>)</mo>
+                                <mo>)]</mo>
+                                <mo>=</mo>
+                                <mi>f</mi>
+                                <mo>'</mo>
+                                <mo>(</mo>
+                                <mi>g</mi>
+                                <mo>(</mo>
+                                <mi>x</mi>
+                                <mo>)</mo>
+                                <mo>)</mo>
+                                <mi>&#8226;</mi>
+                                <mi>g</mi>
+                                <mo>'</mo>
+                                <mo>(</mo>
+                                <mi>x</mi>
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Differentiation</h2>
+                <ul>
+                    <li><b>Rate of Change:</b> Differentiation is used to find the rate at which a quantity changes
+                        with respect to another variable. For example, if the position of an object is given by \(
+                        s(t) \), the derivative \( \frac{ds}{dt} \) gives the velocity, which is the rate of change
+                        of position with respect to time.
+                        <p>Example: If the position function is \( s(t) = t^2 + 3t \), the velocity is:
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mrow>
+                                    <mi>v</mi>
+                                    <mo>(</mo>
+                                    <mi>t</mi>
+                                    <mo>)</mo>
+                                    <mo>=</mo>
+                                    <mi>d</mi>
+                                    <mo>s</mo>
+                                    <mo>/</mo>
+                                    <mi>d</mi>
+                                    <mi>t</mi>
+                                    <mo>=</mo>
+                                    <mn>2</mn>
+                                    <mi>t</mi>
+                                    <mo>+</mo>
+                                    <mn>3</mn>
+                                </mrow>
+                            </math>
+                        </p>
+                    </li>
+
+                    <li><b>Tangents to Curves:</b> The slope of the tangent line to a curve at a given point is
+                        given by the derivative of the function at that point. The equation of the tangent line at
+                        \( x = a \) is:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>y</mi>
+                                <mo>−</mo>
+                                <mi>f</mi>
+                                <mo>(</mo>
+                                <mi>a</mi>
+                                <mo>)</mo>
+                                <mo>=</mo>
+                                <mi>f</mi>
+                                <mo>'</mo>
+                                <mo>(</mo>
+                                <mi>a</mi>
+                                <mo>)</mo>
+                                <mo>(</mo>
+                                <mi>x</mi>
+                                <mo>−</mo>
+                                <mi>a</mi>
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+                    </li>
+
+                    <li><b>Maxima and Minima (Optimization):</b> Differentiation is used to find the critical points
+                        of a function where the function reaches local maximum or minimum values. These points are
+                        found by setting the first derivative equal to zero (\( f'(x) = 0 \)) and analyzing the
+                        second derivative.
+                        <ul>
+                            <li>Steps to Find Maxima/Minima:
+                                <ol>
+                                    <li>Find the first derivative: \( f'(x) \)</li>
+                                    <li>Set the first derivative equal to zero: Solve \( f'(x) = 0 \) to find
+                                        critical points.</li>
+                                    <li>Find the second derivative: \( f''(x) \)</li>
+                                    <li>Determine the nature of the critical points:
+                                        <ul>
+                                            <li>If \( f''(x) > 0 \), the function has a local minimum.</li>
+                                            <li>If \( f''(x) < 0 \), the function has a local maximum.</li>
+                                            <li>If \( f''(x) = 0 \), further analysis is needed.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>Example: For \( f(x) = x^3 - 3x^2 + 2 \):
+                                <ul>
+                                    <li>First derivative: \( f'(x) = 3x^2 - 6x \)</li>
+                                    <li>Set \( f'(x) = 0 \): \( 3x(x - 2) = 0 \Rightarrow x = 0 \text{ or } x = 2 \)
+                                    </li>
+                                    <li>Second derivative: \( f''(x) = 6x - 6 \)</li>
+                                    <li>At \( x = 0 \), \( f''(0) = -6 \), indicating a local maximum.</li>
+                                    <li>At \( x = 2 \), \( f''(2) = 6 \), indicating a local minimum.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

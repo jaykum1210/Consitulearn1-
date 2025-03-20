@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-biology.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 15 - Genetics and Evolution</div>
+        <div class="topic-name">
+            <h1 id="principles-of-inheritance">1. Principles of Inheritance</h1>
+            <div class="principles-of-inheritance">
+                <p>The principles of inheritance are the fundamental concepts in genetics that describe how traits
+                    are passed from parents to offspring. These principles were first discovered by Gregor Mendel,
+                    an Austrian biologist, through his work on pea plants. Mendel's laws of inheritance laid the
+                    foundation for the modern understanding of genetics.</p>
+
+                <h2>Mendel’s Laws of Inheritance</h2>
+                <p>Mendel proposed three main laws of inheritance based on his experiments with pea plants. These
+                    laws are:</p>
+
+                <h3>i. Law of Segregation (First Law)</h3>
+                <p>This law states that each organism has two alleles (alternative forms of a gene) for each trait,
+                    one inherited from each parent. These alleles segregate (separate) during gamete formation, so
+                    each gamete carries only one allele for each trait. When two gametes fuse during fertilization,
+                    the resulting offspring receives one allele from each parent, restoring the pair of alleles for
+                    that trait.</p>
+                <p><strong>Example:</strong> For a trait like flower color (where the purple flower color (P) is
+                    dominant over white (p)):</p>
+                <pre>
+                        Parents: Pp (Purple) × Pp (Purple)
+                        Gametes: P or p from each parent
+                        Offspring: PP, Pp, Pp, pp
+                        The purple color will be observed in both PP and Pp (because P is dominant), while the white color will appear only in the pp offspring.
+                    </pre>
+
+                <h3>ii. Law of Independent Assortment (Second Law)</h3>
+                <p>This law states that genes for different traits are inherited independently of one another,
+                    provided they are located on different chromosomes or far apart on the same chromosome. The
+                    inheritance of one trait does not affect the inheritance of another trait.</p>
+                <p><strong>Example:</strong> If seed color (Y = yellow, y = green) and seed shape (R = round, r =
+                    wrinkled) are on different chromosomes, the inheritance of one trait (e.g., seed color) will not
+                    affect the inheritance of the other (e.g., seed shape).</p>
+                <pre>
+                        Parents: YyRr × YyRr
+                        Gametes: YR, Yr, yR, yr from each parent
+                        Offspring: The combination of these alleles in the offspring can be YYRR, YYRr, YyRR, YyRr, YyRr, yyRR, yyRr, etc.
+                    </pre>
+
+                <h3>iii. Law of Dominance (Third Law)</h3>
+                <p>This law states that in a heterozygous individual (with two different alleles), the dominant
+                    allele will mask the expression of the recessive allele. The recessive allele will only be
+                    expressed when the individual is homozygous recessive (having two recessive alleles for that
+                    trait).</p>
+                <p><strong>Example:</strong> For the flower color trait where purple (P) is dominant and white (p)
+                    is recessive:</p>
+                <pre>
+                        PP or Pp will result in a purple flower (because P is dominant).
+                        pp will result in a white flower (because the recessive allele p has no dominant allele to mask its expression).
+                    </pre>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Inheritance Patterns</h2>
+                <h3>i. Monohybrid Inheritance</h3>
+                <p>Monohybrid inheritance refers to the inheritance of a single trait (for example, flower color)
+                    that is controlled by one gene with two alleles. It follows Mendel's laws of segregation and
+                    dominance.</p>
+                <p><strong>Example:</strong> Cross between Pp (purple) × Pp (purple) results in offspring with a 3:1
+                    ratio of purple to white flowers.</p>
+
+                <h3>ii. Dihybrid Inheritance</h3>
+                <p>Dihybrid inheritance involves two traits, each controlled by different genes. It demonstrates the
+                    Law of Independent Assortment. When two traits are crossed, the offspring will inherit a
+                    combination of alleles for both traits.</p>
+                <p><strong>Example:</strong> A cross between YyRr (yellow, round) × YyRr (yellow, round) will result
+                    in a 9:3:3:1 ratio of combinations of yellow/green and round/wrinkled seeds.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Exceptions to Mendel’s Laws</h2>
+                <p>While Mendel’s laws are foundational, there are several exceptions that modify the simple
+                    patterns of inheritance:</p>
+
+                <h3>i. Incomplete Dominance</h3>
+                <p>Incomplete dominance occurs when the heterozygous phenotype is intermediate between the two
+                    homozygous phenotypes, instead of one allele being completely dominant over the other.</p>
+                <p><strong>Example:</strong> For flower color in some plants, if red (R) is crossed with white (W),
+                    the offspring will be pink (RW), an intermediate between red and white.</p>
+
+                <h3>ii. Co-dominance</h3>
+                <p>Co-dominance occurs when both alleles contribute equally to the phenotype, and both alleles are
+                    expressed simultaneously.</p>
+                <p><strong>Example:</strong> In human blood types, if a person inherits an A allele from one parent
+                    and a B allele from the other, the resulting blood type will be AB, with both A and B antigens
+                    expressed on the surface of red blood cells.</p>
+
+                <h3>iii. Multiple Alleles</h3>
+                <p>Some traits are controlled by more than two alleles, but an individual can have only two alleles
+                    for a gene (one from each parent).</p>
+                <p><strong>Example:</strong> Human blood type is controlled by three alleles: A, B, and O. A person
+                    can inherit two alleles, leading to four possible blood types: A, B, AB, or O.</p>
+
+                <h3>iv. Polygenic Inheritance</h3>
+                <p>Polygenic inheritance occurs when multiple genes contribute to a single trait, leading to a
+                    continuous variation in the phenotype.</p>
+                <p><strong>Example:</strong> Traits like height or skin color in humans are controlled by multiple
+                    genes, and their expression shows a range of possibilities.</p>
+
+                <h3>v. Sex-linked Inheritance</h3>
+                <p>Genes located on the X chromosome (in humans) exhibit sex-linked inheritance. Males (XY) are more
+                    likely to express recessive X-linked traits because they have only one X chromosome.</p>
+                <p><strong>Example:</strong> Hemophilia and color blindness are X-linked recessive traits. Males who
+                    inherit the X-linked recessive allele will express the disorder because they do not have a
+                    second X chromosome to mask it.</p>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none; margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="molecular-basis-of-inheritance">2. Molecular Basis of Inheritance</h1>
+            <div class="molecular-basis-of-inheritance">
+                <p>The molecular basis of inheritance refers to how genetic information is stored, transmitted, and
+                    expressed within living organisms at the molecular level. This process involves DNA
+                    (deoxyribonucleic acid), which is the carrier of genetic information, and the molecular
+                    mechanisms that control its replication, transcription, translation, and the regulation of gene
+                    expression.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>i. Structure of DNA</h2>
+                <p>DNA is the molecule responsible for carrying genetic information. Its structure is a double
+                    helix, which was discovered by James Watson and Francis Crick in 1953, with input from Rosalind
+                    Franklin.</p>
+
+                <h3>Key Features of DNA Structure:</h3>
+                <ul>
+                    <li><strong>Nucleotides:</strong> The basic building blocks of DNA, each consisting of a
+                        phosphate group, a deoxyribose sugar, and a nitrogenous base.</li>
+                    <li><strong>Bases:</strong> There are four nitrogenous bases in DNA:
+                        <ul>
+                            <li>Adenine (A)</li>
+                            <li>Thymine (T)</li>
+                            <li>Cytosine (C)</li>
+                            <li>Guanine (G)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Base Pairing:</strong> The bases pair in a specific manner:
+                        <ul>
+                            <li>Adenine (A) pairs with Thymine (T) (A-T)</li>
+                            <li>Cytosine (C) pairs with Guanine (G) (C-G)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Double Helix:</strong> The two strands of DNA are held together by hydrogen bonds
+                        between complementary base pairs, forming a double helix structure.</li>
+                    <li><strong>Antiparallel Orientation:</strong> The two strands of DNA run in opposite
+                        directions, which is important for the replication process.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. DNA Replication</h2>
+                <p>DNA replication is the process by which a cell copies its DNA before cell division. This ensures
+                    that each daughter cell receives an exact copy of the genetic information.</p>
+
+                <h3>Steps of DNA Replication:</h3>
+                <ul>
+                    <li><strong>Unwinding of DNA:</strong> The enzyme helicase unwinds the double helix by breaking
+                        the hydrogen bonds between complementary base pairs, creating two single strands of DNA.
+                    </li>
+                    <li><strong>Formation of the Replication Fork:</strong> The unwinding of the DNA creates a
+                        structure called the replication fork, where the two single strands of DNA are exposed for
+                        replication.</li>
+                    <li><strong>Priming:</strong> RNA primase synthesizes a short RNA primer, providing a starting
+                        point for DNA polymerase.</li>
+                    <li><strong>Elongation:</strong> DNA polymerase adds new nucleotides to the growing DNA strand,
+                        complementary to the template strand. On the leading strand, this occurs continuously, while
+                        on the lagging strand, it occurs in short segments called Okazaki fragments.</li>
+                    <li><strong>Replacement of RNA Primer:</strong> The RNA primer is replaced with DNA by the
+                        enzyme DNA polymerase I.</li>
+                    <li><strong>Ligating the Strands:</strong> DNA ligase seals the gaps between the Okazaki
+                        fragments, completing the formation of the new DNA strand.</li>
+                    <li><strong>Result:</strong> The process produces two identical double-stranded DNA molecules,
+                        each containing one original strand and one newly synthesized strand.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. Transcription</h2>
+                <p>Transcription is the process of converting a segment of DNA into RNA (specifically, messenger RNA
+                    or mRNA), which carries the genetic information from the DNA to the ribosome for protein
+                    synthesis.</p>
+
+                <h3>Steps of Transcription:</h3>
+                <ul>
+                    <li><strong>Initiation:</strong> The enzyme RNA polymerase binds to the promoter region of the
+                        gene and unwinds the DNA to expose the coding strand.</li>
+                    <li><strong>Elongation:</strong> RNA polymerase moves along the DNA template strand,
+                        synthesizing a complementary strand of mRNA by adding RNA nucleotides (A, U, C, G) in the 5'
+                        to 3' direction. (Note that in RNA, Uracil (U) replaces Thymine (T).)</li>
+                    <li><strong>Termination:</strong> When RNA polymerase reaches a terminator sequence on the DNA,
+                        the transcription process stops, and the newly formed mRNA molecule is released.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iv. Translation</h2>
+                <p>Translation is the process by which mRNA is used to synthesize proteins at the ribosome. The mRNA
+                    sequence is translated into a specific sequence of amino acids, forming a polypeptide chain that
+                    folds into a functional protein.</p>
+
+                <h3>Steps of Translation:</h3>
+                <ul>
+                    <li><strong>Initiation:</strong> The mRNA binds to the ribosome at the start codon (AUG), which
+                        signals the beginning of protein synthesis. The first amino acid, methionine, is brought in
+                        by the tRNA (transfer RNA), which has an anticodon complementary to the start codon.</li>
+                    <li><strong>Elongation:</strong> The ribosome moves along the mRNA, reading the codons
+                        (three-nucleotide sequences) and matching each codon with the appropriate tRNA carrying the
+                        corresponding amino acid. The amino acids are joined together by peptide bonds to form a
+                        growing polypeptide chain.</li>
+                    <li><strong>Termination:</strong> When a stop codon (UAA, UAG, or UGA) is encountered, the
+                        ribosome releases the newly synthesized protein, which then folds into its functional shape.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>v. Genetic Code</h2>
+                <p>The genetic code is the set of rules by which information encoded in mRNA is translated into
+                    proteins. It is made up of codons, which are groups of three nucleotides in mRNA that specify a
+                    particular amino acid or a stop signal.</p>
+
+                <h3>Key Features of the Genetic Code:</h3>
+                <ul>
+                    <li><strong>Universality:</strong> The genetic code is nearly universal, meaning it is the same
+                        in almost all organisms.</li>
+                    <li><strong>Redundancy:</strong> Multiple codons can encode the same amino acid, which provides
+                        some protection against mutations.</li>
+                    <li><strong>Start Codon:</strong> The codon AUG (adenine-uracil-guanine) is the start codon,
+                        signaling the beginning of translation.</li>
+                    <li><strong>Stop Codons:</strong> The codons UAA, UAG, and UGA signal the end of translation.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>vi. Regulation of Gene Expression</h2>
+                <p>Gene expression is the process by which information from a gene is used to synthesize a
+                    functional product, usually a protein. The regulation of gene expression allows cells to produce
+                    the right proteins at the right time and in the right amounts.</p>
+
+                <h3>Key Mechanisms of Gene Regulation:</h3>
+                <ul>
+                    <li><strong>Transcriptional Regulation:</strong> The amount of mRNA produced from a gene is
+                        controlled by various factors, including transcription factors that bind to specific DNA
+                        sequences to activate or repress transcription.</li>
+                    <li><strong>Post-transcriptional Regulation:</strong> After transcription, processes like RNA
+                        splicing (removing introns and joining exons), mRNA stability, and RNA interference can
+                        regulate the amount of mRNA available for translation.</li>
+                    <li><strong>Translational Regulation:</strong> The initiation of translation can be regulated by
+                        proteins that bind to mRNA and control the binding of the ribosome.</li>
+                    <li><strong>Post-translational Regulation:</strong> After translation, proteins can be modified
+                        through processes such as phosphorylation, glycosylation, or cleavage to become active or
+                        inactive.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>vii. Mutations</h2>
+                <p>Mutations are changes in the DNA sequence that can lead to changes in the protein produced. They
+                    can occur naturally or be induced by environmental factors (mutagens).</p>
+
+                <h3>Types of Mutations:</h3>
+                <ul>
+                    <li><strong>Point Mutations:</strong> A single nucleotide change that can result in a silent
+                        mutation (no change in the protein), a missense mutation (a different amino acid is
+                        incorporated), or a nonsense mutation (a stop codon is introduced).</li>
+                    <li><strong>Frameshift Mutations:</strong> Insertion or deletion of nucleotides that shift the
+                        reading frame, altering the entire protein sequence downstream.</li>
+                    <li><strong>Chromosomal Mutations:</strong> Larger-scale changes in the structure or number of
+                        chromosomes, such as deletions, duplications, inversions, or translocations.</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Evolution">3. Evolution</h1>
+            <div class="topic-description">
+                <p>Evolution is the process by which populations of organisms change over time through variations in
+                    traits and the inheritance of those traits. These changes accumulate across generations, leading
+                    to the development of new species or the modification of existing ones. Evolution is driven by
+                    natural processes such as natural selection, mutation, genetic drift, and gene flow.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Basic Concepts of Evolution</h2>
+
+                <h3>i. Variation</h3>
+                <ul>
+                    <li>Variation refers to the differences that exist among individuals in a population. These
+                        variations may be in physical traits, behaviors, or biochemical characteristics.</li>
+                    <li>Variation arises due to mutations (changes in the DNA), genetic recombination during sexual
+                        reproduction, and other genetic processes.</li>
+                </ul>
+
+                <h3>ii. Heredity</h3>
+                <ul>
+                    <li>Heredity is the passing on of traits from parents to offspring. This ensures that beneficial
+                        variations can be inherited and passed down to subsequent generations.</li>
+                </ul>
+
+                <h3>iii. Adaptation</h3>
+                <ul>
+                    <li>Adaptation is the process by which organisms become better suited to their environment.
+                        Traits that increase an organism’s chances of survival and reproduction become more common
+                        in a population over time.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Theories of Evolution</h2>
+
+                <h3>i. Lamarck's Theory of Evolution</h3>
+                <ul>
+                    <li>Jean-Baptiste Lamarck proposed that organisms evolve by acquiring characteristics during
+                        their lifetime due to environmental factors, and these acquired traits are passed on to
+                        offspring.</li>
+                    <li>He is famous for his theory of use and disuse, suggesting that parts of the body that are
+                        used more frequently become more developed, while those that are not used deteriorate.</li>
+                    <li>Example: Lamarck believed giraffes had long necks because their ancestors stretched their
+                        necks to reach higher leaves and passed this acquired trait to their offspring.</li>
+                    <li>Note: While Lamarck's theory is now discredited, it was one of the first attempts to explain
+                        how species evolve.</li>
+                </ul>
+
+                <h3>ii. Darwin’s Theory of Evolution by Natural Selection</h3>
+                <ul>
+                    <li>Charles Darwin proposed the theory of natural selection based on his observations during his
+                        voyage on the HMS Beagle. He concluded that:
+                        <ul>
+                            <li>Individuals within a species are genetically varied.</li>
+                            <li>In any given environment, some individuals are better adapted for survival than
+                                others.</li>
+                            <li>These individuals are more likely to survive, reproduce, and pass on their favorable
+                                traits to their offspring.</li>
+                            <li>Over time, natural selection leads to the accumulation of beneficial traits in a
+                                population, which may result in the formation of new species.</li>
+                        </ul>
+                    </li>
+                    <li>Key Principles of Darwin’s Theory:
+                        <ul>
+                            <li>Overproduction: Organisms produce more offspring than can survive, leading to
+                                competition for resources.</li>
+                            <li>Variation: There are variations in traits among individuals in a population.</li>
+                            <li>Struggle for Existence: Due to limited resources, individuals must compete for
+                                survival.</li>
+                            <li>Survival of the Fittest: Individuals with traits that are better suited to the
+                                environment are more likely to survive and reproduce.</li>
+                            <li>Natural Selection: Over generations, favorable traits become more common in the
+                                population.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Mechanisms of Evolution</h2>
+
+                <h3>i. Natural Selection</h3>
+                <ul>
+                    <li>Natural selection is the process where organisms with favorable traits are more likely to
+                        survive and reproduce, passing on those traits to future generations.</li>
+                    <li>Over time, this leads to the adaptation of organisms to their environment.</li>
+                    <li>Example:
+                        <ul>
+                            <li>Peppered Moth: During the Industrial Revolution, the dark-colored variety of the
+                                peppered moth became more common than the light-colored variety because they were
+                                better camouflaged against the soot-covered trees, avoiding predation.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>ii. Mutation</h3>
+                <ul>
+                    <li>Mutations are random changes in the DNA sequence that can create new traits in organisms.
+                        While most mutations are neutral or harmful, some can be beneficial and increase an
+                        organism’s chance of survival.</li>
+                    <li>Mutations provide the genetic material upon which natural selection acts.</li>
+                </ul>
+
+                <h3>iii. Genetic Drift</h3>
+                <ul>
+                    <li>Genetic drift is the random fluctuation of allele frequencies in a small population. It can
+                        lead to the loss of genetic variation over time, especially in small populations.</li>
+                    <li>Bottleneck Effect: A dramatic reduction in population size can lead to genetic drift, where
+                        the gene pool is reduced, and genetic diversity is lost.</li>
+                    <li>Founder Effect: A small group of individuals from a larger population establishes a new
+                        population, and the gene pool may differ significantly from the original population.</li>
+                </ul>
+
+                <h3>iv. Gene Flow</h3>
+                <ul>
+                    <li>Gene flow is the movement of alleles between populations through migration. When individuals
+                        from different populations interbreed, genetic material is exchanged, increasing genetic
+                        diversity in the population.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2> Evidence of Evolution</h2>
+
+                <h3>i. Fossil Record</h3>
+                <ul>
+                    <li>The fossil record shows evidence of extinct species and the gradual changes in species over
+                        time. Transitional fossils demonstrate intermediary forms between major groups of organisms,
+                        showing evolutionary progression.</li>
+                    <li>Example:
+                        <ul>
+                            <li>Archaeopteryx, a fossil showing features of both dinosaurs and birds, provides
+                                evidence of the evolutionary link between reptiles and birds.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>ii. Comparative Anatomy</h3>
+                <ul>
+                    <li>The comparison of anatomical structures between different species reveals both similarities
+                        and differences that indicate common ancestry.</li>
+                    <li>Homologous Structures: These are similar structures found in different species, indicating a
+                        common ancestor (e.g., the forelimbs of humans, whales, and bats).</li>
+                    <li>Analogous Structures: These are structures that have a similar function but evolved
+                        independently in different species (e.g., the wings of birds and insects).</li>
+                    <li>Vestigial Structures: These are remnants of organs that were functional in ancestors but
+                        have no current function (e.g., the human appendix).</li>
+                </ul>
+
+                <h3>iii. Comparative Embryology</h3>
+                <ul>
+                    <li>The study of embryos in different species shows that many species share similar
+                        developmental stages, suggesting a common origin.</li>
+                </ul>
+
+                <h3>iv. Molecular Biology</h3>
+                <ul>
+                    <li>The comparison of genetic material (DNA, RNA, and protein sequences) between species reveals
+                        evolutionary relationships. Species that are more genetically similar are more closely
+                        related.</li>
+                    <li>Example:
+                        <ul>
+                            <li>Humans and chimpanzees share about 98-99% of their DNA, indicating a recent common
+                                ancestor.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2> Speciation</h2>
+                <ul>
+                    <li>Speciation is the process by which new species arise. It occurs when populations of a
+                        species become reproductively isolated from one another, leading to the accumulation of
+                        genetic differences.</li>
+                </ul>
+
+                <h3>i. Types of Speciation:</h3>
+                <ul>
+                    <li>Allopatric Speciation: When populations are geographically separated, leading to
+                        reproductive isolation and genetic divergence.
+                        <ul>
+                            <li>Example: A population of birds is divided by a mountain range, and over time, the
+                                two groups evolve into different species.</li>
+                        </ul>
+                    </li>
+                    <li>Sympatric Speciation: When new species arise within the same geographic area due to
+                        reproductive isolation caused by factors such as behavioral differences, ecological niches,
+                        or genetic mutations.
+                        <ul>
+                            <li>Example: A group of fish in a lake evolves into two species that occupy different
+                                depths or feeding habits.</li>
+                        </ul>
+                    </li>
+                    <li>Parapatric Speciation: When populations are adjacent to each other but evolve into distinct
+                        species due to environmental differences across their range.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Evolutionary Trends</h2>
+                <ul>
+                    <li>Evolution does not follow a predetermined path but rather responds to environmental
+                        pressures. Some trends observed in evolution include:</li>
+                    <li>Adaptive Radiation: The rapid diversification of a species into multiple forms that occupy
+                        different ecological niches.</li>
+                    <li>Convergent Evolution: The process by which unrelated organisms evolve similar traits due to
+                        similar environmental pressures.</li>
+                    <li>Divergent Evolution: When two related species become more dissimilar due to different
+                        environmental pressures.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Modern Evolutionary Synthesis</h2>
+                <ul>
+                    <li>The modern synthesis of evolution combines Darwin's theory of natural selection with modern
+                        genetics. It emphasizes the role of genetic mutations, genetic drift, gene flow, and
+                        recombination in the evolution of species. This synthesis also highlights the role of
+                        population genetics in understanding how evolutionary changes occur at the genetic level.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

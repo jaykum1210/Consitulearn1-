@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-physics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 2 - Kinematics</div>
+        <div class="topic-name">
+            <h1>1. Motion in One Dimension</h1>
+            <div class="topic-description">
+                <h3>What is Motion in One Dimension?</h3>
+                <p>Motion in <b>one dimension (1D)</b> refers to movement along a straight line. The position of an
+                    object changes with time along a single axis (x-axis or y-axis).</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Important Terms</h3>
+                <ol style="list-style-type: lower-roman;">
+                    <li>
+                        <p><b>Distance (d) & Displacement (s)</b></p>
+                        <ul>
+                            <li><b>Distance:</b> Total path covered (scalar, always positive).
+                            </li>
+                            <li><b>Displacement:</b>Shortest path from start to end (vector, can be positive or
+                                negative).</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Speed & Velocity</b></p>
+                        <ul>
+                            <li><b>Speed (v)</b> = Distance/Time (scalar, no direction).</li>
+                            <li><b>Velocity (v)</b>= Displacement/Time (vector, has direction).</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Acceleration (a)</b></p>
+                        <ul>
+                            <li>Rate of change of velocity.</li>
+                            <li><b>a = (Final velocity - Initial velocity) / Time</b></li>
+                            <li><b>Unit:</b> m/s²</li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Equations of Motion</h3>
+                <p>For constant acceleration (v, u, a, s, t are used):</p>
+                <ol style="list-style-type: lower-roman;">
+                    <li><b>v = u + at</b></li>
+                    <li><b>s = ut + (1/2)at²</b></li>
+                    <li><b>v² = u² + 2as</b></li>
+                </ol>
+                <p><b>Where:</b></p>
+                <ul>
+                    <li><b>u</b> = Initial velocity</li>
+                    <li><b>v</b> = Final velocity</li>
+                    <li><b>a</b> = Acceleration</li>
+                    <li><b>s</b> = Displacement</li>
+                    <li><b>t</b> = Time</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Motion Under Gravity (Free Fall)</h3>
+                <ul>
+                    <li>When an object falls freely under gravity, acceleration <b>a = g = 9.8 m/s²</b> (downward).</li>
+                    <li>Equations of motion remain the same but with <b>a = g.</b></li>
+                </ul>
+                <p>If dropped from height <b>h:</b></p>
+                <ul>
+                    <li><b>v = u + gt</b></li>
+                    <li><b>h = ut + (1/2)gt²</b></li>
+                    <li>v² = u² + 2gh</li>
+                    <li>At highest point, <b>v = 0</b> in upward motion.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Types of Motion in One Dimension</h3>
+                <ol style="list-style-type: upper-roman;">
+                    <li><b>Uniform Motion</b> – Constant velocity, <b>a = 0</b>.</li>
+                    <li><b>Non-uniform Motion</b> – Changing velocity, <b>a ≠ 0</b>.</li>
+                    <li><b>Freely Falling Motion</b> – Motion under gravity with <b>g = 9.8 m/s²</b>.</li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Graphical Representation of Motion</h3>
+                <ol style="list-style-type: upper-alpha;">
+                    <li>Distance-Time Graph
+                        <ul>
+                            <li><b>Straight Line</b> → Uniform motion (constant speed).</li>
+                            <li><b>Curved Line</b> → Accelerated motion.</li>
+                        </ul>
+                    </li>
+                    <li>Velocity-Time Graph
+                        <ul>
+                            <li><b>Horizontal Line</b> → Constant velocity.</li>
+                            <li><b>Sloped Line</b> → Acceleration or deceleration.</li>
+                            <li><b>Area under v-t graph</b> → Displacement.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3><b>Relative Velocity</b></h3>
+                <p>The velocity of one object with respect to another.</p>
+
+                <p>If two objects move in the <b>same direction</b> with velocities v₁ and v₂:</p>
+                <p><b>Relative velocity = v₁ - v₂</b></p>
+
+                <p>If two objects move in <b>opposite directions:</b></p>
+                <p><b>Relative velocity = v₁ + v₂</b></p>
+            </div>
+            <hr style="height: 3px; background-color: black; border: none;">
+            <h1 id="motion-2d">2. Motion in Two Dimensions</h1>
+            <div class="topic-description">
+                <h3>Introduction</h3>
+                <ul>
+                    <li>Motion in Two Dimensions occurs when an object moves in a plane, meaning it has motion along
+                        both
+                        the x-axis and y-axis.</li>
+                    <li>It is described using vector quantities such as displacement, velocity, and acceleration.</li>
+                    <li>Examples include projectile motion, circular motion, and motion of a car on a curved path.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <ol>
+                    <li>
+                        <h3>Scalars and Vectors</h3>
+                        <p><b>Scalar Quantity:</b></p>
+                        <ul>
+                            <li>A quantity that has only magnitude (no direction).</li>
+                            <li>Examples: Mass, time, speed, energy, temperature.</li>
+                        </ul>
+
+                        <p><b>Vector Quantity:</b></p>
+                        <ul>
+                            <li>A quantity that has both magnitude and direction.</li>
+                            <li>Examples: Displacement, velocity, acceleration, force.</li>
+                        </ul>
+                        <p><b>Vector Representation:</b></p>
+                        <ul>
+                            <li>Represented using an arrow, where:</li>
+                            <ul>
+                                <li>Length of the arrow represents magnitude.</li>
+                                <li>Direction of the arrow shows the direction of the vector.</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <hr style="height: 1px; background-color: black; border: none;">
+                    <li>
+                        <h3> Displacement, Velocity, and Acceleration in Two Dimensions</h3>
+                        <p><b>Displacement in Two Dimensions:</b></p>
+                        <ul>
+                            <li>Displacement is a vector quantity that represents the shortest path between two points.
+                            </li>
+                            <li>If an object moves from A(x<sub>1</sub>, y<sub>1</sub>) to B(x<sub>2</sub>,
+                                y<sub>2</sub>)<br>
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mrow>
+                                        <mi>Δr</mi>
+                                        <mo>=</mo>
+                                        <msqrt>
+                                            <mrow>
+                                                <msup>
+                                                    <mrow>
+                                                        <mo>(</mo>
+                                                        <msub>
+                                                            <mi>x</mi>
+                                                            <mn>2</mn>
+                                                        </msub>
+                                                        <mo>−</mo>
+                                                        <msub>
+                                                            <mi>x</mi>
+                                                            <mn>1</mn>
+                                                        </msub>
+                                                        <mo>)</mo>
+                                                    </mrow>
+                                                    <mn>2</mn>
+                                                </msup>
+                                                <mo>+</mo>
+                                                <msup>
+                                                    <mrow>
+                                                        <mo>(</mo>
+                                                        <msub>
+                                                            <mi>y</mi>
+                                                            <mn>2</mn>
+                                                        </msub>
+                                                        <mo>−</mo>
+                                                        <msub>
+                                                            <mi>y</mi>
+                                                            <mn>1</mn>
+                                                        </msub>
+                                                        <mo>)</mo>
+                                                    </mrow>
+                                                    <mn>2</mn>
+                                                </msup>
+                                            </mrow>
+                                        </msqrt>
+                                    </mrow>
+                                </math>
+                                <p><b>Velocity in Two Dimensions:</b></p>
+                                <ul>
+                                    <li>Velocity is the rate of change of displacement.</li>
+                                    <li>It has two components:
+                                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                            <mrow>
+                                                <msub>
+                                                    <mi>v</mi>
+                                                    <mi>x</mi>
+                                                </msub>
+                                                <mo>=</mo>
+                                                <mfrac>
+                                                    <mrow>
+                                                        <mi>d</mi>
+                                                        <mi>x</mi>
+                                                    </mrow>
+                                                    <mrow>
+                                                        <mi>d</mi>
+                                                        <mi>t</mi>
+                                                    </mrow>
+                                                </mfrac>
+                                                <mo>,</mo>
+                                                <msub>
+                                                    <mi>v</mi>
+                                                    <mi>y</mi>
+                                                </msub>
+                                                <mo>=</mo>
+                                                <mfrac>
+                                                    <mrow>
+                                                        <mi>d</mi>
+                                                        <mi>y</mi>
+                                                    </mrow>
+                                                    <mrow>
+                                                        <mi>d</mi>
+                                                        <mi>t</mi>
+                                                    </mrow>
+                                                </mfrac>
+                                            </mrow>
+                                        </math>
+                                    </li>
+                                    <li>
+                                        <p>Resultant Velocity:</p>
+                                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                            <mi>v</mi>
+                                            <mo>=</mo>
+                                            <msqrt>
+                                                <mrow>
+                                                    <msup>
+                                                        <msub>
+                                                            <mi>v</mi>
+                                                            <mi>x</mi>
+                                                        </msub>
+                                                        <mn>2</mn>
+                                                    </msup>
+                                                    <mo>+</mo>
+                                                    <msup>
+                                                        <msub>
+                                                            <mi>v</mi>
+                                                            <mi>y</mi>
+                                                        </msub>
+                                                        <mn>2</mn>
+                                                    </msup>
+                                                </mrow>
+                                            </msqrt>
+                                        </math>
+                                    </li>
+                            </li>
+                            <li>
+                                <p>Direction of Velocity:</p>
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>θ</mi>
+                                    <mo>=</mo>
+                                    <msup>
+                                        <mi>tan</mi>
+                                        <mo>-1</mo>
+                                    </msup>
+                                    <mfenced>
+                                        <mfrac>
+                                            <msub>
+                                                <mi>v</mi>
+                                                <mi>y</mi>
+                                            </msub>
+                                            <msub>
+                                                <mi>v</mi>
+                                                <mi>x</mi>
+                                            </msub>
+                                        </mfrac>
+                                    </mfenced>
+                                </math>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <p><b>Acceleration in Two Dimensions:</b></p>
+                <ul>
+                    <li>Acceleration is the rate of change of velocity.</li>
+                    <li>It has two components:<br>
+                        <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                    <mi>a</mi>
+                                    <mi>x</mi>
+                                </msub>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>d</mi>
+                                        <msub>
+                                            <mi>v</mi>
+                                            <mi>x</mi>
+                                        </msub>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>d</mi>
+                                        <mi>t</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo>,</mo>
+                                <msub>
+                                    <mi>a</mi>
+                                    <mi>y</mi>
+                                </msub>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>d</mi>
+                                        <msub>
+                                            <mi>v</mi>
+                                            <mi>y</mi>
+                                        </msub>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>d</mi>
+                                        <mi>t</mi>
+                                    </mrow>
+                                </mfrac>
+                            </math>
+                        </b>
+                    </li>
+                    <li>Resultant acceleration:<br>
+                        <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>a</mi>
+                                <mo>=</mo>
+                                <msqrt>
+                                    <mrow>
+                                        <msup>
+                                            <msub>
+                                                <mi>a</mi>
+                                                <mi>x</mi>
+                                            </msub>
+                                            <mn>2</mn>
+                                        </msup>
+                                        <mo>+</mo>
+                                        <msup>
+                                            <msub>
+                                                <mi>a</mi>
+                                                <mi>y</mi>
+                                            </msub>
+                                            <mn>2</mn>
+                                        </msup>
+                                    </mrow>
+                                </msqrt>
+                            </math>
+                        </b>
+                    </li>
+                    <li>Direction of acceleration:<br>
+                        <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>θ</mi>
+                                <mo>=</mo>
+                                <msup>
+                                    <mi>tan</mi>
+                                    <mo>-1</mo>
+                                </msup>
+                                <mfenced>
+                                    <mfrac>
+                                        <msub>
+                                            <mi>a</mi>
+                                            <mi>y</mi>
+                                        </msub>
+                                        <msub>
+                                            <mi>a</mi>
+                                            <mi>x</mi>
+                                        </msub>
+                                    </mfrac>
+                                </mfenced>
+                            </math>
+                        </b>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Motion in a Plane with Constant Acceleration</h3>
+                <p>If acceleration is constant, motion can be analyzed using kinematic equations separately in the x and
+                    y directions:</p>
+                <p><b>Equations of Motion in Two Dimensions</b></p>
+                <p>For x-axis:</p>
+                <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>x</mi>
+                            <mo>=</mo>
+                            <msub>
+                                <mi>x</mi>
+                                <mn>0</mn>
+                            </msub>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>v</mi>
+                                <mrow>
+                                    <mn>0</mn>
+                                    <mi>x</mi>
+                                </mrow>
+                            </msub>
+                            <mi>t</mi>
+                            <mo>+</mo>
+                            <mfrac>
+                                <mn>1</mn>
+                                <mn>2</mn>
+                            </mfrac>
+                            <msub>
+                                <mi>a</mi>
+                                <mi>x</mi>
+                            </msub>
+                            <msup>
+                                <mi>t</mi>
+                                <mn>2</mn>
+                            </msup>
+                        </math>
+                    </b></p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <b><math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>v</mi>
+                                <mi>x</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <msub>
+                                <mi>v</mi>
+                                <mrow>
+                                    <mn>0</mn>
+                                    <mi>x</mi>
+                                </mrow>
+                            </msub>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>a</mi>
+                                <mi>x</mi>
+                            </msub>
+                            <mi>t</mi>
+                        </math></b>
+                </p>
+                <p>For y-axis:</p>
+                <p><b>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>y</mi>
+                            <mo>=</mo>
+                            <msub>
+                                <mi>y</mi>
+                                <mn>0</mn>
+                            </msub>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>v</mi>
+                                <mrow>
+                                    <mn>0</mn>
+                                    <mi>y</mi>
+                                </mrow>
+                            </msub>
+                            <mi>t</mi>
+                            <mo>+</mo>
+                            <mfrac>
+                                <mn>1</mn>
+                                <mn>2</mn>
+                            </mfrac>
+                            <msub>
+                                <mi>a</mi>
+                                <mi>y</mi>
+                            </msub>
+                            <msup>
+                                <mi>t</mi>
+                                <mn>2</mn>
+                            </msup>
+                        </math>
+                    </b></p>
+                <p><b>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>v</mi>
+                                <mi>y</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <msub>
+                                <mi>v</mi>
+                                <mrow>
+                                    <mn>0</mn>
+                                    <mi>y</mi>
+                                </mrow>
+                            </msub>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>a</mi>
+                                <mi>y</mi>
+                            </msub>
+                            <mi>t</mi>
+                        </math>
+                    </b></p>
+                <ul>
+                    <li>These equations describe motion when acceleration is constant, such as in <b>projectile
+                            motion</b>.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Projectile Motion</h3>
+                <ul>
+                    <li>Projectile motion is the motion of an object thrown into the air, subject to gravitational
+                        acceleration.</li>
+                    <li>The path followed by a projectile is called a parabola.</li>
+                    <li>
+                        Examples:
+                        <ul>
+                            <li>A ball thrown at an angle.</li>
+                            <li>A bullet fired from a gun.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <p><b>Key Assumptions of Projectile Motion:</b></p>
+                <ul>
+                    <li>The only force acting on the object is <b>gravity (g = 9.8 m/s² downward)</b>.</li>
+                    <li>No air resistance.</li>
+                    <li>Motion occurs in two perpendicular directions <b>(horizontal and vertical)</b> independently.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <p><b>Components of Velocity in Projectile Motion:</b></p>
+                <p>Horizontal velocity (<math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>v</mi>
+                            <mi>x</mi>
+                        </msub>
+                    </math>):</p>
+                <ul>
+                    <li>Remains constant because there is no acceleration in the x-direction.<br>
+                        <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                    <mi>v</mi>
+                                    <mi>x</mi>
+                                </msub>
+                                <mo>=</mo>
+                                <msub>
+                                    <mi>v</mi>
+                                    <mn>0</mn>
+                                </msub>
+                                <mo>⋅</mo>
+                                <mi>cos</mi>
+                                <mi>θ</mi>
+                            </math></p>
+                    </li>
+                </ul>
+                <p>
+                <p>Vertical velocity (<math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>v</mi>
+                            <mi>y</mi>
+                        </msub>
+                    </math>):</p>
+                </p>
+                <ul>
+                    <li>Affected by gravity (g).
+                        <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                    <mi>v</mi>
+                                    <mi>y</mi>
+                                </msub>
+                                <mo>=</mo>
+                                <msub>
+                                    <mi>v</mi>
+                                    <mn>0</mn>
+                                </msub>
+                                <mo>⋅</mo>
+                                <mi>sin</mi>
+                                <mi>θ</mi>
+                                <mo>-</mo>
+                                <mi>g</mi>
+                                <mi>t</mi>
+                            </math></p>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <p><b>Uniform Circular Motion</b></p>
+                <ul>
+                    <li>An object moving in a circular path with constant speed is said to be in Uniform Circular
+                        Motion.
+                    </li>
+                    <li>Example: Motion of a satellite around Earth.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <p><b>Characteristics of Circular Motion:</b></p>
+                <ol>
+                    <li>Speed remains constant but velocity changes due to direction change.</li>
+                    <li>There is always an acceleration towards the center (centripetal acceleration).</li>
+                    <li>The force responsible for circular motion is called centripetal force.</li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <p><b>Centripetal Acceleration:</b></p>
+                <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>a</mi>
+                            <mi>c</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <mfrac>
+                            <msup>
+                                <mi>v</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mi>r</mi>
+                        </mfrac>
+                    </math></p>
+                <p>where:</p>
+                <ul>
+                    <li>v = velocity of the object</li>
+                    <li>r = radius of the circular path</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <p><b>Centripetal Force:</b></p>
+                <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>F</mi>
+                            <mi>c</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <mi>m</mi>
+                        <mfrac>
+                            <msup>
+                                <mi>v</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mi>r</mi>
+                        </mfrac>
+                    </math></p>
+                <p>where:</p>
+                <ul>
+                    <li>m = mass of the object</li>
+                    <li>v = velocity</li>
+                    <li>r = radius of the circle</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Relative Motion in Two Dimensions</h3>
+                <p>When two objects move relative to each other, their velocities are compared using vector addition or
+                    subtraction.</p>
+                <p><b>Relative Velocity Formula:</b></p>
+                <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>v</mi>
+                            <mrow>
+                                <mi>AB</mi>
+                            </mrow>
+                        </msub>
+                        <mo>=</mo>
+                        <msub>
+                            <mi>v</mi>
+                            <mi>A</mi>
+                        </msub>
+                        <mo>-</mo>
+                        <msub>
+                            <mi>v</mi>
+                            <mi>B</mi>
+                        </msub>
+                    </math></p>
+                <p>where:</p>
+                <ul>
+                    <li>
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                    <mi>v</mi>
+                                    <mrow>
+                                        <mi>AB</mi>
+                                    </mrow>
+                                </msub>
+                                <mo>=</mo>
+                                <mtext> velocity of A relative to B</mtext>
+                            </math>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                    <mi>v</mi>
+                                    <mi>A</mi>
+                                </msub>
+                                <mo>=</mo>
+                                <mtext> velocity of A</mtext>
+                            </math>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                    <mi>v</mi>
+                                    <mi>B</mi>
+                                </msub>
+                                <mo>=</mo>
+                                <mtext> velocity of B</mtext>
+                            </math>
+                        </p>
+                    </li>
+                </ul>
+                <p><b>Example of Relative Motion:</b></p>
+                <ul>
+                    <li>A boat crossing a river when water is flowing with velocity
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>v</mi>
+                                <mi>r</mi>
+                            </msub>
+                        </math>.
+                    </li>
+                    <li>A plane flying in wind currents.</li>
+                </ul>
+            </div>
+            <hr style="height: 3px; background-color: black; border: none;">
+            <h1 id="relative-velocity">3. Relative Velocity</h1>
+            <div class="topic-description">
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>i. Introduction</h2>
+                <p>Relative velocity is the velocity of one object with respect to another. It helps in understanding
+                    motion when both observer and the object are moving.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Concept of Relative Velocity</h2>
+                <ul>
+                    <li>Velocity is always measured relative to a reference frame.</li>
+                    <li>If two objects are moving, the velocity of one object appears different when observed from the
+                        other moving object.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. Formula for Relative Velocity</h2>
+                <h3>(A) When Two Objects Move in the Same Direction</h3>
+                <p>If two objects A and B move with velocities <b>V<sub>A</sub></b> and <b>V<sub>B</sub></b> in the same
+                    direction:</p>
+                <p>Relative velocity of A with respect to B:</p>
+                <p><b>V<sub>AB</sub> = V<sub>A</sub> − V<sub>B</sub></b></p>
+                <p>Relative velocity of B with respect to A:</p>
+                <p><b>V<sub>BA</sub> = V<sub>B</sub> − V<sub>A</sub></b></p>
+                <ul>
+                    <li>If <b>V<sub>A</sub> > V<sub>B</sub></b>, A appears to move forward relative to B.</li>
+                    <li>If <b>V<sub>A</sub> &lt; V<sub>B</sub></b>, A appears to move backward relative to B.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>(B) When Two Objects Move in Opposite Directions</h3>
+                <p>If A and B move in opposite directions:</p>
+                <p><b>V<sub>AB</sub> = V<sub>A</sub> + V<sub>B</sub></b></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>(C) Relative Velocity in Two Dimensions (Vector Form)</h3>
+                <p>If two objects move at an angle to each other:</p>
+                <p><b>⃗V<sub>AB</sub> = V<sub>A</sub> − V<sub>B</sub></b></p>
+                <p>Here, the velocities are represented as vectors, and subtraction is done using vector components.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iv. Special Cases of Relative Velocity</h2>
+                <h3>Objects Moving at the Same Speed in the Same Direction</h3>
+                <p>If <b>V<sub>A</sub> = V<sub>B</sub></b>, then <b>V<sub>AB</sub> = 0</b>.</p>
+                <p>Example: Two trains moving side by side at the same speed appear stationary to passengers inside.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Objects Moving Towards Each Other</h3>
+                <p><b>V<sub>AB</sub> = V<sub>A</sub> + V<sub>B</sub></b></p>
+                <p>Example: If two cars are approaching each other with speeds 50 km/h and 30 km/h:</p>
+                <p><b>50 + 30 = 80 km/h</b></p>
+                <p>They appear to approach each other at 80 km/h.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Objects Moving Perpendicularly</h3>
+                <p>When two objects move at right angles:</p>
+                <p><b>V<sub>AB</sub> = √(V<sub>A</sub><sup>2</sup> + V<sub>B</sub><sup>2</sup>)</b></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>v. Applications of Relative Velocity</h2>
+                <ul>
+                    <li><b>Boats Crossing a River:</b> The effective velocity is the vector sum of the boat’s speed and
+                        the river’s flow.</li>
+                    <li><b>Airplane Motion in Wind:</b> Pilots adjust speed and direction to compensate for wind to
+                        maintain the correct course.</li>
+                    <li><b>Collisions and Accidents:</b> Relative velocity helps determine the impact speed between
+                        vehicles.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>vi. Example Problems</h2>
+                <h3>Example 1: Two Cars Moving in the Same Direction</h3>
+                <p>Car A moves at 60 km/h, and Car B moves at 40 km/h in the same direction.</p>
+                <p><b>V<sub>AB</sub> = 60 − 40 = 20 km/h</b></p>
+                <p>Car A appears to move forward at 20 km/h relative to car B.</p>
+
+                <h3>Example 2: Two Cyclists Moving Towards Each Other</h3>
+                <p>Cyclist A moves at 10 m/s and Cyclist B at 5 m/s in opposite directions.</p>
+                <p><b>V<sub>AB</sub> = 10 + 5 = 15 m/s</b></p>
+                <p>They approach each other at 15 m/s.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

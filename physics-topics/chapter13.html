@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-physics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head"> Chapter 13 - Electromagnetic Induction and Alternating Current</div>
+        <div class="topic-name">
+            <h1>1. Faraday’s Law and Lenz’s Law</h1>
+
+            <div class="topic-description">
+                <h2>Faraday’s Laws of Electromagnetic Induction</h2>
+                <p>Michael Faraday discovered that a changing magnetic field induces an electromotive force (EMF) in a
+                    conductor. This is the principle behind electromagnetic induction.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>First Law (Law of Induction)</h3>
+                <p>An EMF (electromotive force) is induced in a conductor whenever there is a change in the magnetic
+                    flux
+                    linked with it.</p>
+
+                <p><b>Magnetic flux (Φ<sub>B</sub>) is given by:</b></p>
+                <p><b>Φ<sub>B</sub> = B A cosθ</b></p>
+
+                <p>where:</p>
+                <ul>
+                    <li><b>B</b> = Magnetic field strength</li>
+                    <li><b>A</b> = Area of the loop</li>
+                    <li><b>θ</b> = Angle between the magnetic field and the normal to the loop</li>
+                </ul>
+
+                <h4>Ways to Change Magnetic Flux:</h4>
+                <ul>
+                    <li>Changing the magnetic field (<b>B</b>)</li>
+                    <li>Changing the area of the loop (<b>A</b>)</li>
+                    <li>Changing the angle (<b>θ</b>) between the loop and the field</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Second Law (Mathematical Formulation of Induction)</h3>
+                <p>The induced EMF is directly proportional to the rate of change of magnetic flux:</p>
+                <p><b>E = − (dΦ<sub>B</sub> / dt)</b></p>
+
+                <p>where:</p>
+                <ul>
+                    <li><b>E</b> = Induced EMF</li>
+                    <li><b>(dΦ<sub>B</sub> / dt)</b> = Rate of change of magnetic flux</li>
+                </ul>
+
+                <p>The negative sign represents <b>Lenz’s Law</b> (explained next).</p>
+
+                <p><b>For a coil with N turns:</b></p>
+                <p><b>E = − N (dΦ<sub>B</sub> / dt)</b></p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Lenz’s Law</h2>
+                <p><b>Lenz’s Law states:</b></p>
+                <p>The direction of the induced current is such that it opposes the change in magnetic flux that
+                    caused
+                    it.</p>
+
+                <h4>Explanation:</h4>
+                <ul>
+                    <li>If the magnetic flux increases, the induced current flows in a direction that <b>opposes the
+                            increase</b>.</li>
+                    <li>If the magnetic flux decreases, the induced current flows in a way that <b>tries to maintain
+                            the
+                            flux</b>.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h4>Mathematical Representation:</h4>
+                <p>The negative sign in Faraday’s Law:</p>
+                <p><b>E = − N (dΦ<sub>B</sub> / dt)</b></p>
+                <p>ensures that the induced current always opposes the change in flux.</p>
+
+                <h4>Right-Hand Rule for Lenz’s Law:</h4>
+                <ul>
+                    <li>Point your thumb in the direction of the increasing magnetic field.</li>
+                    <li> Curl your fingers – they show the direction of the induced current.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Faraday’s and Lenz’s Laws</h2>
+                <ul>
+                    <li> <b>Electric Generators:</b> Converts mechanical energy to electrical energy by rotating a coil
+                        in a
+                        magnetic field.</li>
+                    <li> <b>Transformers:</b> Uses changing flux to transfer energy between coils.</li>
+                    <li> <b>Eddy Currents:</b> Used in braking systems (e.g., magnetic brakes in roller coasters).</li>
+                    <li><b>Induction Stoves:</b> Uses electromagnetic induction to heat cookware.</li>
+                    <li> <b>Wireless Charging:</b> Transfers power via induced EMF.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Self">2. Self and Mutual Inductance</h1>
+            <div class="topic-description">
+                <h2>Self-Inductance</h2>
+                <p>Self-inductance is the property of a coil (or circuit) to oppose the change in current flowing
+                    through it
+                    by inducing an EMF in itself.</p>
+                <h3>Definition:</h3>
+                <p>When the current in a coil changes, the magnetic field around it also changes. This changing magnetic
+                    field induces an electromotive force (EMF) in the same coil, opposing the change in current.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Formula for Self-Inductance (L)</h3>
+                <p>The induced EMF (E) is proportional to the rate of change of current:</p>
+                <p><b>E = −L (dI / dt)</b></p>
+
+                <p>where:</p>
+                <ul>
+                    <li><b>L</b> = Self-inductance (Henry, H)</li>
+                    <li><b>dI / dt</b> = Rate of change of current</li>
+                </ul>
+                <p>The negative sign follows <b>Lenz’s Law</b> (opposing change in current).</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Expression for Self-Inductance</h3>
+                <p>Self-inductance is given by:</p>
+                <p><b>L = (N Φ<sub>B</sub>) / I</b></p>
+
+                <p>where:</p>
+                <ul>
+                    <li><b>N</b> = Number of turns in the coil</li>
+                    <li><b>Φ<sub>B</sub></b> = Magnetic flux linked with the coil</li>
+                    <li><b>I</b> = Current flowing through the coil</li>
+                </ul>
+
+                <p><b>For a solenoid of length l, area A, and turns per unit length n:</b></p>
+                <p><b>L = μ<sub>0</sub> μ<sub>r</sub> n² A / l</b></p>
+
+                <p>where:</p>
+                <ul>
+                    <li><b>μ<sub>0</sub></b> = Permeability of free space</li>
+                    <li><b>μ<sub>r</sub></b> = Relative permeability of the core material</li>
+                </ul>
+
+                <p><b>Example:</b> An inductor in a circuit (like a coil in a transformer).</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Mutual Inductance</h2>
+                <p>Mutual inductance is the property of two coils where a changing current in one coil induces an EMF in
+                    the
+                    other coil.</p>
+
+                <h3>Definition:</h3>
+                <p>If two coils are placed close to each other, a change in current in the first coil produces a
+                    changing
+                    magnetic field, which induces an EMF in the second coil.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Formula for Mutual Inductance (M)</h3>
+                <p>The induced EMF in the second coil due to a changing current in the first coil:</p>
+                <p><b>E<sub>2</sub> = −M (dI<sub>1</sub> / dt)</b></p>
+
+                <p>Similarly, the EMF induced in the first coil due to a changing current in the second coil:</p>
+                <p><b>E<sub>1</sub> = −M (dI<sub>2</sub> / dt)</b></p>
+
+                <p>where:</p>
+                <ul>
+                    <li><b>M</b> = Mutual inductance (Henry, H)</li>
+                    <li><b>I<sub>1</sub>, I<sub>2</sub></b> = Currents in the coils</li>
+                    <li><b>E<sub>1</sub>, E<sub>2</sub></b> = Induced EMFs in coils</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Expression for Mutual Inductance</h3>
+                <p>Mutual inductance depends on the flux linkage:</p>
+                <p><b>M = (N<sub>2</sub> Φ<sub>B2</sub>) / I<sub>1</sub> = (N<sub>1</sub> Φ<sub>B1</sub>) /
+                        I<sub>2</sub></b></p>
+
+                <p>where:</p>
+                <ul>
+                    <li><b>N<sub>1</sub>, N<sub>2</sub></b> = Number of turns in each coil</li>
+                    <li><b>Φ<sub>B1</sub>, Φ<sub>B2</sub></b> = Magnetic flux linked with the coils</li>
+                    <li><b>I<sub>1</sub>, I<sub>2</sub></b> = Currents in the coils</li>
+                </ul>
+
+                <p><b>For two long solenoids:</b></p>
+                <p><b>M = μ<sub>0</sub> μ<sub>r</sub> N<sub>1</sub> N<sub>2</sub> A / l</b></p>
+
+                <p> <b>Example:</b> Transformers use mutual inductance to transfer energy between primary and secondary
+                    coils.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Difference Between Self and Mutual Inductance</h2>
+                <table>
+                    <tr>
+                        <th>Property</th>
+                        <th>Self-Inductance (L)</th>
+                        <th>Mutual Inductance (M)</th>
+                    </tr>
+                    <tr>
+                        <td><b>Definition</b></td>
+                        <td>Induction of EMF in the same coil</td>
+                        <td>Induction of EMF in a second coil</td>
+                    </tr>
+                    <tr>
+                        <td><b>Formula</b></td>
+                        <td>E = −L (dI / dt)</td>
+                        <td>E = −M (dI / dt)</td>
+                    </tr>
+                    <tr>
+                        <td><b>Depends On</b></td>
+                        <td>Coil’s own magnetic field and turns</td>
+                        <td>Coupling between two coils</td>
+                    </tr>
+                    <tr>
+                        <td><b>Applications</b></td>
+                        <td>Inductors, solenoids</td>
+                        <td>Transformers, coupled circuits</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Inductance</h2>
+                <ul>
+                    <li><b>Transformers:</b> Uses mutual inductance to step up/down voltage.</li>
+                    <li><b>Motors & Generators:</b> Work on electromagnetic induction principles.</li>
+                    <li><b>Inductors in Circuits:</b> Store energy in magnetic fields.</li>
+                    <li><b>Wireless Power Transfer:</b> Uses mutual inductance for wireless charging.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Alternating"> 3. Alternating Current (AC) Circuits</h1>
+            <div class="topic-description">
+                <h2>Introduction to AC Circuits</h2>
+                <ul>
+                    <li>An Alternating Current (AC) circuit is a circuit where the current changes direction
+                        periodically.
+                    </li>
+                    <li>Unlike Direct Current (DC), which flows in one direction, AC varies in magnitude and direction
+                        over
+                        time.</li>
+                    <li>General form of AC voltage: V = V<sub>0</sub> sin(ωt)</li>
+                    <li>General form of AC current: I = I<sub>0</sub> sin(ωt)</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Root Mean Square (RMS) Value of AC</h2>
+                <ul>
+                    <li>Since AC voltage and current vary over time, the RMS value represents an equivalent DC value.
+                    </li>
+                    <li>Voltage (RMS): V<sub>rms</sub> = V<sub>0</sub> / √2</li>
+                    <li>Current (RMS): I<sub>rms</sub> = I<sub>0</sub> / √2</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>AC Circuit Elements</h2>
+                <h3>i. AC Through a Resistor</h3>
+                <ul>
+                    <li>Voltage and current are in phase.</li>
+                    <li>Ohm’s Law: V<sub>rms</sub> = I<sub>rms</sub> R</li>
+                    <li>Phase Difference = 0°</li>
+                </ul>
+                <h3>ii. AC Through an Inductor</h3>
+                <ul>
+                    <li>Current lags voltage by 90°.</li>
+                    <li>Inductive Reactance: X<sub>L</sub> = 2πfL</li>
+                    <li>Phase Difference = -90°</li>
+                </ul>
+                <h3>iii. AC Through a Capacitor</h3>
+                <ul>
+                    <li>Current leads voltage by 90°.</li>
+                    <li>Capacitive Reactance: X<sub>C</sub> = 1 / (2πfC)</li>
+                    <li>Phase Difference = +90°</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Series RLC Circuit</h2>
+                <ul>
+                    <li>Contains a resistor (R), an inductor (L), and a capacitor (C) connected in series.</li>
+                    <li>Impedance (Z) = √(R² + (X<sub>L</sub> - X<sub>C</sub>)²)</li>
+                    <li>Phase angle: tanϕ = (X<sub>L</sub> - X<sub>C</sub>) / R</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Resonance in AC Circuits</h2>
+                <ul>
+                    <li>Occurs when X<sub>L</sub> = X<sub>C</sub>.</li>
+                    <li>Resonant Frequency: f<sub>0</sub> = 1 / (2π√(LC))</li>
+                    <li>At resonance, impedance is minimum and current is maximum.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Power in AC Circuits</h2>
+                <ul>
+                    <li>Instantaneous Power: P = VI</li>
+                    <li>Average Power: P<sub>avg</sub> = V<sub>rms</sub> I<sub>rms</sub> cosϕ</li>
+                    <li>Power Factor = cosϕ (determines efficiency).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of AC Circuits</h2>
+                <ul>
+                    <li>Power Transmission – AC is used in electrical grids due to easy voltage transformation.</li>
+                    <li>Transformers – Work on mutual inductance for voltage regulation.</li>
+                    <li>Tuned Circuits – Used in radio, TV, and wireless communication.</li>
+                    <li>Electric Motors & Generators – Operate on AC principles.</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Generators">4. AC Generators and Transformers</h1>
+            <div class="topic-description">
+                <h2>i. AC Generator (Alternator)</h2>
+                <h3>Introduction</h3>
+                <ul>
+                    <li>An AC Generator (or Alternator) converts mechanical energy into electrical energy using
+                        electromagnetic induction.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Principle of Operation</h3>
+                <ul>
+                    <li>Based on Faraday's Law: "A changing magnetic flux through a coil induces an electromotive force
+                        (EMF) in it."</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Construction</h3>
+                <ul>
+                    <li><b>Armature (Coil)</b> – A rectangular coil of wire wound on a metal core.</li>
+                    <li><b>Magnetic Field</b> – A permanent magnet or electromagnet provides the magnetic field.</li>
+                    <li><b>Slip Rings</b> – Two metal rings connected to the coil, rotating with it.</li>
+                    <li><b>Brushes</b> – Carbon brushes transfer current to the external circuit.</li>
+                    <li><b>Shaft</b> – Rotates the coil inside the magnetic field.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Working</h3>
+                <ul>
+                    <li>The rotating coil in the magnetic field changes the magnetic flux.</li>
+                    <li>According to Faraday’s Law, an EMF (voltage) is induced.</li>
+                    <li>The direction of induced EMF follows Lenz’s Law.</li>
+                    <li>The induced voltage is alternating (AC), changing direction periodically.</li>
+                    <li>Current is collected through slip rings and brushes.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Equation of Induced EMF</h3>
+                <ul>
+                    <li>Formula: E = E<sub>0</sub> sin(ωt)</li>
+                    <p>where E<sub>0</sub> = Maximum EMF, ω = Angular frequency (2πf), t = Time.</p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Frequency of AC Output</h3>
+                <ul>
+                    <li>Formula: f = (N × P) / 120</li>
+                    <p>where N = Speed of rotation (RPM), P = Number of poles.</p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Advantages</h3>
+                <ul>
+                    <li>Simple construction – No commutators needed.</li>
+                    <li>Efficient power transmission – Easily transformed using transformers.</li>
+                    <li>Low maintenance – Uses slip rings instead of a commutator.</li>
+                    <li>Widely used – In power plants, wind turbines, hydroelectric plants, etc.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Transformers</h2>
+                <h3>Introduction</h3>
+                <ul>
+                    <li>A transformer is an electrical device that changes AC voltage while keeping the frequency
+                        constant,
+                        based on mutual induction.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Principle</h3>
+                <ul>
+                    <li>Works on Faraday's Law – A changing current in the primary coil induces a voltage in the
+                        secondary
+                        coil.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Construction</h3>
+                <ul>
+                    <li><b>Primary Coil</b> – Connected to the AC power supply.</li>
+                    <li><b>Secondary Coil</b> – Provides transformed output voltage.</li>
+                    <li><b>Iron Core</b> – Guides magnetic flux efficiently.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Working</h3>
+                <ul>
+                    <li>AC voltage in the primary coil creates a changing magnetic field.</li>
+                    <li>The flux induces an EMF in the secondary coil.</li>
+                    <li>Voltage can be increased (step-up) or decreased (step-down) depending on the turns ratio.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Transformer Equation</h3>
+                <ul>
+                    <li>Formula: V<sub>s</sub> / V<sub>p</sub> = N<sub>s</sub> / N<sub>p</sub></li>
+                    <p>where V<sub>p</sub>, V<sub>s</sub> are voltages, and N<sub>p</sub>, N<sub>s</sub> are coil turns.
+                    </p>
+                    <li><b>Step-Up Transformer:</b> N<sub>s</sub> > N<sub>p</sub> → Increases voltage.</li>
+                    <li><b>Step-Down Transformer:</b> N<sub>s</sub>
+                        < N<sub>p</sub> → Decreases voltage.
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Power in a Transformer</h3>
+                <ul>
+                    <li>Ideal transformers conserve power: P<sub>p</sub> = P<sub>s</sub></li>
+                    <li>Formula: V<sub>p</sub> I<sub>p</sub> = V<sub>s</sub> I<sub>s</sub></li>
+                    <p>If voltage increases, current decreases and vice versa.</p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Efficiency</h3>
+                <ul>
+                    <li>Formula: η = (Output Power / Input Power) × 100%</li>
+                    <li>Practical efficiency is above 95%, but losses occur due to:</li>
+                    <ul>
+                        <li><b>Copper Loss</b> – Due to resistance in wires.</li>
+                        <li><b>Iron Loss</b> – Due to hysteresis and eddy currents.</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Applications</h3>
+                <ul>
+                    <li>Power Transmission – Steps up voltage for long distances.</li>
+                    <li>Voltage Regulation – Used in stabilizers and power adapters.</li>
+                    <li>Electronics – Found in chargers, appliances, and radio circuits.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

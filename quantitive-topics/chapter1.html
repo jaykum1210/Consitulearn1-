@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-quantitative.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 1 - Arithmetic & Number System</div>
+        <div class="topic-name">
+            <h1>1. Basic Operations & BODMAS</h1>
+            <div class="topic-description">
+                <p>The basic operations in mathematics are fundamental processes that form the foundation for most
+                    mathematical calculations. These operations include:</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>1. Addition (+):</h2>
+                <p>The process of combining two or more numbers to get a larger number.</p>
+                <p><strong>Example:</strong><br>
+                    5 + 3 = 8</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>2. Subtraction (−):</h2>
+                <p>The process of removing one number from another.</p>
+                <p><strong>Example:</strong><br>
+                    7 − 4 = 3</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>3. Multiplication (×):</h2>
+                <p>The process of adding a number to itself multiple times.</p>
+                <p><strong>Example:</strong><br>
+                    6 × 3 = 18</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>4. Division (÷):</h2>
+                <p>The process of splitting a number into equal parts.</p>
+                <p><strong>Example:</strong><br>
+                    12 ÷ 4 = 3</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>BODMAS Rule</h2>
+                <p>BODMAS stands for Brackets, Orders, Division and Multiplication (from left to right), Addition and
+                    Subtraction (from left to right). It is a set of rules that helps in determining the correct order
+                    of operations to simplify expressions and avoid confusion.</p>
+
+                <ul>
+                    <li><strong>B - Brackets:</strong> First, solve expressions inside brackets (parentheses). Brackets
+                        include round brackets (), square brackets [], and curly brackets {}.</li>
+                    <p><strong>Example:</strong><br> (5 + 3) × 2 = 8 × 2 = 16</p>
+
+                    <li><strong>O - Orders:</strong> This includes powers or exponents, such as squares, cubes, square
+                        roots, etc.</li>
+                    <p><strong>Example:</strong><br> 2³ = 8</p>
+
+                    <li><strong>D and M - Division and Multiplication:</strong> After brackets and orders, division and
+                        multiplication are performed from left to right. They have equal priority, so they are handled
+                        in the order they appear.</li>
+                    <p><strong>Example:</strong><br> 10 ÷ 2 × 5 = 5 × 5 = 25</p>
+
+                    <li><strong>A and S - Addition and Subtraction:</strong> Finally, addition and subtraction are
+                        performed from left to right. These also have equal priority.</li>
+                    <p><strong>Example:</strong><br> 8 + 2 − 3 = 10 − 3 = 7</p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example of BODMAS in Action:</h2>
+                <p>Simplify the following expression:</p>
+                <p><strong>6 + (5 × 2) − 4 ÷ 2</strong></p>
+
+                <p><strong>Step 1:</strong> Brackets first<br>
+                    6 + 10 − 4 ÷ 2</p>
+
+                <p><strong>Step 2:</strong> Division<br>
+                    6 + 10 − 2</p>
+
+                <p><strong>Step 3:</strong> Addition and Subtraction (from left to right)<br>
+                    16 − 2 = 14</p>
+
+                <p>So, the result of the expression is 14.</p>
+
+                <p>Following BODMAS ensures that we always perform calculations in the correct order and get the correct
+                    results.</p>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Factors">2. Factors, Multiples, and Divisibility</h1>
+            <div class="topic-description">
+                <h2>Factors</h2>
+                <ul>
+                    <li>A factor of a number is any number that divides that number exactly, without leaving a
+                        remainder.</li>
+                    <li>Example: Factors of 12: 1, 2, 3, 4, 6, 12</li>
+                    <li>How to Find Factors:
+                        <ul>
+                            <li>Start with 1 and the number itself.</li>
+                            <li>Check for other numbers that divide the given number exactly (i.e., no remainder).</li>
+                            <li>List all such numbers.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Multiples</h2>
+                <ul>
+                    <li>A multiple of a number is the product of that number and any integer.</li>
+                    <li>Example: Multiples of 5: 5, 10, 15, 20, 25, 30, ...</li>
+                    <li>How to Find Multiples:
+                        <ul>
+                            <li>Start with the number itself.</li>
+                            <li>Multiply that number by different integers (1, 2, 3, 4, etc.).</li>
+                            <li>Continue the process to get an infinite list of multiples.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Divisibility</h2>
+                <ul>
+                    <li>A number is divisible by another number if, when divided, there is no remainder.</li>
+                    <li>Common Divisibility Rules:
+                        <ul>
+                            <li>Divisibility by 2: A number is divisible by 2 if its last digit is even (0, 2, 4, 6, 8).
+                            </li>
+                            <li>Divisibility by 3: A number is divisible by 3 if the sum of its digits is divisible by
+                                3.</li>
+                            <li>Divisibility by 4: A number is divisible by 4 if the last two digits form a number
+                                divisible by 4.</li>
+                            <li>Divisibility by 5: A number is divisible by 5 if its last digit is 0 or 5.</li>
+                            <li>Divisibility by 6: A number is divisible by 6 if it is divisible by both 2 and 3.</li>
+                            <li>Divisibility by 9: A number is divisible by 9 if the sum of its digits is divisible by
+                                9.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Relation Between Factors and Multiples</h2>
+                <ul>
+                    <li>Factors of a number are the numbers that divide it exactly.</li>
+                    <li>Multiples of a number are the numbers you get when you multiply that number by integers.</li>
+                    <li>Example:
+                        <ul>
+                            <li>Factors of 6: 1, 2, 3, 6</li>
+                            <li>Multiples of 6: 6, 12, 18, 24, 30, ...</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Summary</h2>
+                <ul>
+                    <li><b>Factors:</b> Numbers that divide a given number exactly (without a remainder).</li>
+                    <li><b>Multiples:</b> Numbers that are the product of a given number and any integer.</li>
+                    <li><b>Divisibility:</b> A rule that helps determine whether one number can be divided by another
+                        without a remainder.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="LCM">3. LCM (Least Common Multiple) & HCF (Highest Common Factor)</h1>
+            <div class="topic-description">
+                <h2>LCM (Least Common Multiple)</h2>
+                <ul>
+                    <li>The LCM of two or more numbers is the smallest number that is a multiple of all the given
+                        numbers.</li>
+                    <li>It is the smallest common multiple shared by the numbers.</li>
+                    <li>How to Find the LCM:
+                        <ul>
+                            <li>List the multiples of each number.</li>
+                            <li>Find the smallest multiple that is common to all numbers.</li>
+                            <li>Alternatively, the LCM of two numbers can also be found using the formula:
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mrow>
+                                        <mi>LCM</mi>
+                                        <mo>(</mo>
+                                        <mi>a</mi>
+                                        <mo>,</mo>
+                                        <mi>b</mi>
+                                        <mo>)</mo>
+                                        <mo>=</mo>
+                                        <mfrac>
+                                            <mrow>
+                                                <mi>|a × b|</mi>
+                                            </mrow>
+                                            <mrow>
+                                                <mi>HCF(a, b)</mi>
+                                            </mrow>
+                                        </mfrac>
+                                    </mrow>
+                                </math>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Example: Find the LCM of 4 and 6.
+                        <ul>
+                            <li>Multiples of 4: 4, 8, 12, 16, 20, 24, ...</li>
+                            <li>Multiples of 6: 6, 12, 18, 24, 30, ...</li>
+                            <li>The smallest common multiple is 12, so the LCM of 4 and 6 is 12.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>HCF (Highest Common Factor)</h2>
+                <ul>
+                    <li>The HCF of two or more numbers is the largest number that divides all the given numbers exactly,
+                        without leaving a remainder.</li>
+                    <li>It is also known as the GCD (Greatest Common Divisor).</li>
+                    <li>How to Find the HCF:
+                        <ul>
+                            <li>List the factors of each number.</li>
+                            <li>Find the largest number that is common to all the factor lists.</li>
+                            <li>Alternatively, the HCF of two numbers can also be found using the formula:
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mrow>
+                                        <mi>HCF</mi>
+                                        <mo>(</mo>
+                                        <mi>a</mi>
+                                        <mo>,</mo>
+                                        <mi>b</mi>
+                                        <mo>)</mo>
+                                        <mo>=</mo>
+                                        <mfrac>
+                                            <mrow>
+                                                <mi>|a × b|</mi>
+                                            </mrow>
+                                            <mrow>
+                                                <mi>LCM(a, b)</mi>
+                                            </mrow>
+                                        </mfrac>
+                                    </mrow>
+                                </math>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Example: Find the HCF of 12 and 18.
+                        <ul>
+                            <li>Factors of 12: 1, 2, 3, 4, 6, 12</li>
+                            <li>Factors of 18: 1, 2, 3, 6, 9, 18</li>
+                            <li>The largest common factor is 6, so the HCF of 12 and 18 is 6.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Relation Between LCM and HCF</h2>
+                <ul>
+                    <li>There is an important relationship between the LCM and HCF of two numbers:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>LCM</mi>
+                                <mo>(</mo>
+                                <mi>a</mi>
+                                <mo>,</mo>
+                                <mi>b</mi>
+                                <mo>)</mo>
+                                <mo>×</mo>
+                                <mi>HCF</mi>
+                                <mo>(</mo>
+                                <mi>a</mi>
+                                <mo>,</mo>
+                                <mi>b</mi>
+                                <mo>)</mo>
+                                <mo>=</mo>
+                                <mi>|a × b|</mi>
+                            </mrow>
+                        </math>
+                    </li>
+                    <li>Example:
+                        <ul>
+                            <li>For 12 and 18, we already know:</li>
+                            <li>LCM = 36</li>
+                            <li>HCF = 6</li>
+                            <li>Now, check the relationship:
+                                <ul>
+                                    <li>LCM(12, 18) × HCF(12, 18) = 36 × 6 = 216</li>
+                                    <li>|12 × 18| = 12 × 18 = 216</li>
+                                </ul>
+                            </li>
+                            <li>Since both results are equal, this confirms the relationship between LCM and HCF.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Prime">4. Prime Numbers & Composite Numbers</h1>
+            <div class="topic-description">
+                <h2>Prime Numbers</h2>
+                <ul>
+                    <li>A prime number is a natural number greater than 1 that has no positive divisors other than 1 and
+                        itself.</li>
+                    <li>In simple terms, it can only be divided by 1 and the number itself, meaning it cannot be formed
+                        by multiplying two smaller natural numbers.</li>
+                    <h3>Characteristics of Prime Numbers:</h3>
+                    <ul>
+                        <li>Prime numbers are greater than 1.</li>
+                        <li>They have only two factors: 1 and the number itself.</li>
+                    </ul>
+                    <h3>Examples of Prime Numbers:</h3>
+                    <ul>
+                        <li>2 (only divisible by 1 and 2)</li>
+                        <li>3 (only divisible by 1 and 3)</li>
+                        <li>5 (only divisible by 1 and 5)</li>
+                        <li>7 (only divisible by 1 and 7)</li>
+                        <li>11 (only divisible by 1 and 11)</li>
+                    </ul>
+                    <p>Notice that 2 is the only even prime number. All other even numbers are not prime because they
+                        are divisible by 2.</p>
+
+                    <h3>How to Check if a Number is Prime:</h3>
+                    <ul>
+                        <li>Check if the number <i>n</i> is divisible by any smaller number (starting from 2) up to
+                            <i>n</i>.
+                        </li>
+                        <li>If it is divisible by any number other than 1 and itself, it is not a prime number.</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Composite Numbers</h2>
+                <ul>
+                    <li>A composite number is a natural number greater than 1 that has more than two factors.</li>
+                    <li>In other words, composite numbers can be divided exactly by numbers other than 1 and themselves.
+                        These numbers can be formed by multiplying two smaller natural numbers.</li>
+
+                    <h3>Characteristics of Composite Numbers:</h3>
+                    <ul>
+                        <li>Composite numbers are greater than 1.</li>
+                        <li>They have more than two factors.</li>
+                    </ul>
+
+                    <h3>Examples of Composite Numbers:</h3>
+                    <ul>
+                        <li>4 (divisible by 1, 2, and 4)</li>
+                        <li>6 (divisible by 1, 2, 3, and 6)</li>
+                        <li>8 (divisible by 1, 2, 4, and 8)</li>
+                        <li>9 (divisible by 1, 3, and 9)</li>
+                        <li>12 (divisible by 1, 2, 3, 4, 6, and 12)</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Difference Between Prime and Composite Numbers</h2>
+                <table>
+                    <tr>
+                        <th>Property</th>
+                        <th>Prime Numbers</th>
+                        <th>Composite Numbers</th>
+                    </tr>
+                    <tr>
+                        <td>Divisors</td>
+                        <td>Exactly two divisors: 1 and itself</td>
+                        <td>More than two divisors</td>
+                    </tr>
+                    <tr>
+                        <td>Examples</td>
+                        <td>2, 3, 5, 7, 11, 13, 17</td>
+                        <td>4, 6, 8, 9, 10, 12, 14</td>
+                    </tr>
+                    <tr>
+                        <td>Even Prime</td>
+                        <td>Only 2 is even</td>
+                        <td>No even composite number is prime</td>
+                    </tr>
+                    <tr>
+                        <td>Smallest Prime</td>
+                        <td>2</td>
+                        <td>No smallest composite (smallest is 4)</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Special Case: Number 1</h2>
+                <ul>
+                    <li>The number 1 is neither a prime nor a composite number. It only has one divisor (itself), so it
+                        doesn't meet the criteria for being prime or composite.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-chemistry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 16 - Reaction Mechanisms</div>
+        <div class="topic-name">
+            <h1 id="Substitution">1. Substitution Reactions (SN1 & SN2)</h1>
+            <div class="topic-description">
+                <p>Substitution reactions are reactions in which one atom or group in a molecule is replaced by
+                    another. These reactions are common in organic chemistry, especially for alkyl halides.</p>
+                <p>There are two main types of nucleophilic substitution reactions:</p>
+                <ul>
+                    <li>SN1 (Unimolecular Nucleophilic Substitution)</li>
+                    <li>SN2 (Bimolecular Nucleophilic Substitution)</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>i. SN1 Reaction (Unimolecular Nucleophilic Substitution)</h2>
+                <ul>
+                    <li><b>Mechanism:</b> Two-step process</li>
+                    <li><b>Rate Determining Step (RDS):</b> Carbocation formation (slow step)</li>
+                    <li><b>Rate Law:</b> Rate = k [Alkyl Halide] (Depends only on substrate)</li>
+                </ul>
+
+                <h3>Steps of SN1 Reaction:</h3>
+                <ol>
+                    <li><b>Carbocation Formation (Slow Step):</b> The leaving group (e.g., Cl⁻, Br⁻, I⁻) detaches,
+                        forming a carbocation.</li>
+                    <ul>
+                        <li>Example: (CH₃)₃CBr → (CH₃)₃C⁺ + Br⁻</li>
+                    </ul>
+                    <li><b>Nucleophilic Attack (Fast Step):</b> The nucleophile (e.g., H₂O, OH⁻) attacks the
+                        carbocation.</li>
+                    <ul>
+                        <li>Example: (CH₃)₃C⁺ + H₂O → (CH₃)₃COH (Tert-Butanol)</li>
+                    </ul>
+                </ol>
+
+                <h3>Characteristics of SN1</h3>
+                <ul>
+                    <li><b>Favored by:</b> Tertiary (3°) alkyl halides (due to stable carbocation)</li>
+                    <li><b>Solvent:</b> Polar protic solvents (e.g., H₂O, alcohols)</li>
+                    <li><b>Stereochemistry:</b> Racemization (Mix of retention & inversion)</li>
+                    <li><b>Reactivity Order:</b> 3° > 2° > 1° (1° rarely undergoes SN1)</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. SN2 Reaction (Bimolecular Nucleophilic Substitution)</h2>
+                <ul>
+                    <li><b>Mechanism:</b> One-step process (concerted reaction)</li>
+                    <li><b>Rate Law:</b> Rate = k [Alkyl Halide] [Nucleophile] (Depends on both)</li>
+                </ul>
+
+                <h3>Steps of SN2 Reaction:</h3>
+                <ol>
+                    <li><b>Backside Attack:</b> The nucleophile attacks from the opposite side of the leaving group.
+                        Simultaneously, the leaving group departs.</li>
+                    <ul>
+                        <li>Example: CH₃CH₂Br + OH⁻ → CH₃CH₂OH + Br⁻</li>
+                    </ul>
+                </ol>
+
+                <h3>Characteristics of SN2</h3>
+                <ul>
+                    <li><b>Favored by:</b> Primary (1°) alkyl halides</li>
+                    <li><b>Solvent:</b> Polar aprotic solvents (e.g., DMSO, acetone)</li>
+                    <li><b>Stereochemistry:</b> Inversion of configuration (Walden inversion)</li>
+                    <li><b>Reactivity Order:</b> 1° > 2° > 3° (3° does not undergo SN2)</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Comparison: SN1 vs. SN2</h2>
+                <table>
+                    <tr>
+                        <th>Feature</th>
+                        <th>SN1</th>
+                        <th>SN2</th>
+                    </tr>
+                    <tr>
+                        <td>Rate Law</td>
+                        <td>Rate = k[RX]</td>
+                        <td>Rate = k[RX][Nu]</td>
+                    </tr>
+                    <tr>
+                        <td>Mechanism</td>
+                        <td>Two-step (Carbocation intermediate)</td>
+                        <td>One-step (Concerted)</td>
+                    </tr>
+                    <tr>
+                        <td>Nucleophile</td>
+                        <td>Weak (e.g., H₂O, ROH)</td>
+                        <td>Strong (e.g., OH⁻, CN⁻)</td>
+                    </tr>
+                    <tr>
+                        <td>Substrate</td>
+                        <td>3° > 2° > 1°</td>
+                        <td>1° > 2° > 3°</td>
+                    </tr>
+                    <tr>
+                        <td>Solvent</td>
+                        <td>Polar protic</td>
+                        <td>Polar aprotic</td>
+                    </tr>
+                    <tr>
+                        <td>Stereochemistry</td>
+                        <td>Racemization</td>
+                        <td>Inversion (Walden)</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Example Reactions</h2>
+                <h3>SN1 Example:</h3>
+                <p>(CH₃)₃CBr + H₂O → (CH₃)₃COH + HBr (Tertiary butyl alcohol)</p>
+
+                <h3>SN2 Example:</h3>
+                <p>CH₃Br + OH⁻ → CH₃OH + Br⁻ (Methanol)</p>
+            </div>
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <div class="topic-name">
+                <h1 id="Addition">2. Addition & Elimination Reactions</h1>
+                <div class="topic-description">
+                    <p>Addition and elimination reactions are fundamental types of organic reactions. Addition
+                        reactions involve adding atoms or groups to a molecule, whereas elimination reactions
+                        involve the removal of atoms or groups, often forming multiple bonds.</p>
+                    <hr style="height: 1px; background-color: black; border: none;">
+                    <h2>Addition Reactions</h2>
+                    <p><b>Definition:</b> Two reactants combine to form a single product.</p>
+                    <p><b>Common in:</b> Alkenes, Alkynes, Carbonyl compounds (Aldehydes, Ketones)</p>
+                    <p><b>General Formula:</b></p>
+                    <pre>A = B + X − Y → A − X − B − Y</pre>
+
+                    <h3>Types of Addition Reactions:</h3>
+
+                    <h4>A. Electrophilic Addition (EA)</h4>
+                    <ul>
+                        <li><b>Occurs in:</b> Alkenes & Alkynes</li>
+                        <li><b>Mechanism:</b> Electrophile (E⁺) attacks the π-bond, forming a carbocation.
+                            Nucleophile (Nu⁻) attacks the carbocation, leading to the final product.</li>
+                    </ul>
+                    <h5>Examples:</h5>
+                    <ul>
+                        <li><b>Hydrohalogenation (H-X addition):</b>
+                            <pre>CH₂=CH₂ + HBr → CH₃−CH₂Br</pre>
+                        </li>
+                        <li><b>Hydration (H₂O addition in presence of acid catalyst H₃O⁺):</b>
+                            <pre>CH₂=CH₂ + H₂O → CH₃−CH₂OH</pre>
+                        </li>
+                        <li><b>Halogenation (Br₂, Cl₂ addition):</b>
+                            <pre>CH₂=CH₂ + Br₂ → CH₂Br−CH₂Br</pre>
+                        </li>
+                    </ul>
+
+                    <h4>B. Nucleophilic Addition (NA)</h4>
+                    <ul>
+                        <li><b>Occurs in:</b> Carbonyl Compounds (Aldehydes & Ketones)</li>
+                        <li><b>Mechanism:</b> Nucleophile (Nu⁻) attacks the electrophilic carbonyl (C=O). Oxygen
+                            gets a negative charge and then stabilizes.</li>
+                    </ul>
+                    <h5>Examples:</h5>
+                    <ul>
+                        <li><b>Addition of HCN to Aldehydes & Ketones:</b>
+                            <pre>CH₃CHO + HCN → CH₃CH(OH)CN</pre>
+                        </li>
+                    </ul>
+
+                    <h4>C. Free Radical Addition</h4>
+                    <ul>
+                        <li><b>Occurs in:</b> Alkenes & Alkynes</li>
+                        <li><b>Follows:</b> Anti-Markovnikov’s Rule (Peroxide Effect)</li>
+                    </ul>
+                    <h5>Example:</h5>
+                    <ul>
+                        <li><b>HBr Addition in Presence of Peroxide:</b>
+                            <pre>CH₂=CH₂ + HBr → CH₃−CH₂Br</pre>
+                            <p>*(Br⁻ adds first due to radicals)*</p>
+                        </li>
+                    </ul>
+                    <hr style="height: 1px; background-color: black; border: none;">
+                    <h2>Elimination Reactions</h2>
+                    <p><b>Definition:</b> A single reactant splits into two products, typically forming multiple
+                        bonds.</p>
+                    <p><b>Common in:</b> Alcohols, Alkyl Halides</p>
+                    <p><b>General Formula:</b></p>
+                    <pre>                   A − X → A = B + X − Y</pre>
+                </div>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-head">
+            <h1 id="Rearrangement">3. Rearrangement Reactions</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <p>Rearrangement reactions are a class of organic reactions in which the structure of a molecule is
+                    rearranged to form a constitutional isomer. This usually involves the migration of atoms or
+                    functional groups within the molecule, leading to a more stable product.</p>
+
+                <h3>General Characteristics of Rearrangement Reactions:</h3>
+                <ul>
+                    <li>Involve the migration of atoms, groups, or bonds.</li>
+                    <li>Often proceed through carbocation, radical, or carbanion intermediates.</li>
+                    <li>Can be either intramolecular (within the same molecule) or intermolecular (between
+                        molecules).</li>
+                    <li>Lead to the formation of more stable products based on electronic effects, steric hindrance,
+                        or conjugation.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Rearrangement Reactions</h2>
+                <p>Rearrangement reactions can be broadly classified into several types:</p>
+
+                <h3>(i) Carbocation Rearrangements</h3>
+                <p>These involve the migration of alkyl or aryl groups in a reaction involving a carbocation
+                    intermediate.</p>
+                <h4>1. Wagner-Meerwein Rearrangement</h4>
+                <ul>
+                    <li>A 1,2-alkyl shift that occurs in carbocations, generally in the presence of strong acids.
+                    </li>
+                </ul>
+                <p><b>Example:</b> Tertiary alcohol + HCl → Rearranged carbocation → More stable alkyl halide.</p>
+
+                <h4>2. Pinacol-Pinacolone Rearrangement</h4>
+                <ul>
+                    <li>Occurs when vicinal diols (glycols) are treated with acids.</li>
+                    <li>One of the hydroxyl groups is protonated and lost as water, leading to a carbocation
+                        rearrangement.</li>
+                </ul>
+                <p><b>Example:</b> Pinacol → Pinacolone.</p>
+
+                <h4>3. Demjanov Rearrangement</h4>
+                <ul>
+                    <li>Involves the ring expansion of cyclic amines under acidic conditions.</li>
+                </ul>
+                <p><b>Example:</b> Cyclohexylamine + HNO₂ → Expanded ring structure.</p>
+
+                <h4>4. Benzilic Acid Rearrangement</h4>
+                <ul>
+                    <li>Involves the migration of a phenyl group in α-diketones under basic conditions.</li>
+                </ul>
+                <p><b>Example:</b> Benzil + Base → Benzilic acid.</p>
+
+                <h3>(ii) Free Radical Rearrangements</h3>
+                <p>These occur through radical intermediates.</p>
+
+                <h4>1. Wohl-Ziegler Rearrangement</h4>
+                <ul>
+                    <li>Involves the bromination of alkanes at the benzylic position using NBS (N-bromosuccinimide).
+                    </li>
+                </ul>
+                <p><b>Example:</b> Toluene + NBS → Benzyl bromide.</p>
+
+                <h4>2. Hunsdiecker Reaction</h4>
+                <ul>
+                    <li>Converts silver carboxylates into alkyl halides using bromine.</li>
+                </ul>
+                <p><b>Example:</b> Silver acetate + Br₂ → Ethyl bromide.</p>
+
+                <h3>(iii) Anionic Rearrangements</h3>
+                <p>These involve anionic intermediates.</p>
+
+                <h4>1. Favorskii Rearrangement</h4>
+                <ul>
+                    <li>Occurs when α-halo ketones react with strong bases, leading to ring contraction.</li>
+                </ul>
+                <p><b>Example:</b> Cyclopropanone formation from α-bromo ketone.</p>
+
+                <h4>2. Benzoin Rearrangement</h4>
+                <ul>
+                    <li>Occurs in the presence of cyanide ions, leading to α-hydroxy ketones.</li>
+                </ul>
+                <p><b>Example:</b> Benzaldehyde + KCN → Benzoin.</p>
+
+                <h3>(iv) Pericyclic Rearrangements</h3>
+                <p>These involve cyclic transition states and occur via concerted mechanisms.</p>
+
+                <h4>1. Cope Rearrangement</h4>
+                <ul>
+                    <li>A [3,3]-sigmatropic shift that occurs in 1,5-dienes.</li>
+                </ul>
+                <p><b>Example:</b> 1,5-hexadiene → Rearranged product.</p>
+
+                <h4>2. Claisen Rearrangement</h4>
+                <ul>
+                    <li>Involves the rearrangement of allyl aryl ethers to ortho-hydroxy aryl ketones.</li>
+                </ul>
+                <p><b>Example:</b> Allyl phenyl ether → Ortho-hydroxy aryl ketone.</p>
+
+                <h3>(v) Aromatic Rearrangements</h3>
+                <p>These involve rearrangements in aromatic systems.</p>
+
+                <h4>1. Fries Rearrangement</h4>
+                <ul>
+                    <li>Occurs when aryl esters react with aluminum chloride (AlCl₃), leading to hydroxyaryl
+                        ketones.</li>
+                </ul>
+                <p><b>Example:</b> Phenyl acetate + AlCl₃ → Hydroxyacetophenone.</p>
+
+                <h4>2. Hofmann-Martius Rearrangement</h4>
+                <ul>
+                    <li>Involves the rearrangement of aryl amines to ortho- and para-aminophenols.</li>
+                </ul>
+                <p><b>Example:</b> Aniline + Heat → o-Aminophenol and p-Aminophenol.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Mechanism of Rearrangement Reactions</h2>
+                <p>The mechanism varies depending on the type of rearrangement but generally follows these steps:
+                </p>
+                <ol>
+                    <li><b>Formation of an Intermediate:</b> The intermediate could be a carbocation, carbanion,
+                        radical, or cyclic transition state.</li>
+                    <li><b>Rearrangement Step:</b> Migration of an atom or group to a different position to achieve
+                        a more stable intermediate.</li>
+                    <li><b>Product Formation:</b> The rearranged intermediate stabilizes to give the final product.
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Rearrangement Reactions</h2>
+                <p>Rearrangement reactions are widely used in organic synthesis and industry.</p>
+
+                <h3>Pharmaceutical Industry</h3>
+                <ul>
+                    <li>Pinacol-Pinacolone rearrangement is used in the synthesis of steroids and hormones.</li>
+                    <li>Hofmann rearrangement is used in the synthesis of amides and urea derivatives.</li>
+                </ul>
+
+                <h3>Polymer Industry</h3>
+                <ul>
+                    <li>Fries rearrangement helps in the synthesis of phenolic resins.</li>
+                </ul>
+
+                <h3>Perfume and Flavor Industry</h3>
+                <ul>
+                    <li>Claisen rearrangement is useful in producing essential oils.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

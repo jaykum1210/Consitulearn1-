@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-physics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 18 - Atoms and Nuclei</div>
+        <div class="topic-name">
+            <h1>1. Atomic Models: Bohr Model</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <p>Before Bohr’s model, Thomson’s "Plum Pudding" model and Rutherford’s Nuclear model attempted to
+                    explain
+                    atomic structure. However, they failed to explain atomic stability and spectral lines.</p>
+                <p>In 1913, Niels Bohr proposed a new model of the atom based on quantum theory, which successfully
+                    explained the hydrogen spectrum.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Postulates of Bohr's Model</h2>
+                <ul>
+                    <li><b>1st Postulate:</b> Electrons move in fixed circular orbits (energy levels) around the nucleus
+                        without radiating energy.</li>
+                    <li><b>2nd Postulate:</b> Only certain discrete orbits are allowed, where the angular momentum of an
+                        electron is quantized:
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>m</mi>
+                                <mi>v</mi>
+                                <mi>r</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>n</mi>
+                                        <mi>h</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mn>2</mn>
+                                        <mi>&#x3C0;</mi>
+                                    </mrow>
+                                </mfrac>
+                            </math>
+                        </p>
+                    </li>
+                    <li><b>3rd Postulate:</b> Electrons absorb or emit energy when they jump between energy levels:
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>&#x394;E</mi>
+                                <mo>=</mo>
+                                <msub>
+                                    <mi>E</mi>
+                                    <mn>2</mn>
+                                </msub>
+                                <mo>-</mo>
+                                <msub>
+                                    <mi>E</mi>
+                                    <mn>1</mn>
+                                </msub>
+                                <mo>=</mo>
+                                <mi>h</mi>
+                                <mi>&#x3BD;</mi>
+                            </math>
+                        </p>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Energy Levels and Hydrogen Spectrum</h2>
+                <p><b>Energy of an Electron in the nth Orbit:</b></p>
+                <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>E</mi>
+                            <mi>n</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <mo>-</mo>
+                        <mfrac>
+                            <mrow>
+                                <mn>13.6</mn>
+                            </mrow>
+                            <mrow>
+                                <msup>
+                                    <mi>n</mi>
+                                    <mn>2</mn>
+                                </msup>
+                            </mrow>
+                        </mfrac>
+                        <mo>&#xA0;</mo>
+                        <mi>eV</mi>
+                    </math>
+                </p>
+
+                <p><b>Radius of nth Orbit:</b></p>
+                <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>r</mi>
+                            <mi>n</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <msup>
+                            <mi>n</mi>
+                            <mn>2</mn>
+                        </msup>
+                        <mo>&#xD7;</mo>
+                        <mn>0.529</mn>
+                        <mo>&#xA0;</mo>
+                        <mi>&#xC5;</mi>
+                    </math>
+                </p>
+
+                <h3>Hydrogen Spectral Series</h3>
+                <table>
+                    <tr>
+                        <th>Series Name</th>
+                        <th>Transition (n → m)</th>
+                        <th>Region</th>
+                    </tr>
+                    <tr>
+                        <td>Lyman</td>
+                        <td>n → 1</td>
+                        <td>UV</td>
+                    </tr>
+                    <tr>
+                        <td>Balmer</td>
+                        <td>n → 2</td>
+                        <td>Visible</td>
+                    </tr>
+                    <tr>
+                        <td>Paschen</td>
+                        <td>n → 3</td>
+                        <td>Infrared</td>
+                    </tr>
+                    <tr>
+                        <td>Brackett</td>
+                        <td>n → 4</td>
+                        <td>Infrared</td>
+                    </tr>
+                    <tr>
+                        <td>Pfund</td>
+                        <td>n → 5</td>
+                        <td>Infrared</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Success of Bohr’s Model</h2>
+                <ul>
+                    <li>Explained the stability of atoms.</li>
+                    <li>Accurately predicted hydrogen’s emission spectrum.</li>
+                    <li>Introduced quantization in atomic structure.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Limitations of Bohr’s Model</h2>
+                <ul>
+                    <li>Couldn’t explain spectra of multi-electron atoms.</li>
+                    <li>Didn’t consider electron wave nature (later explained by Schrödinger’s wave equation).</li>
+                    <li>Failed to explain Zeeman and Stark effects (splitting of spectral lines in magnetic/electric
+                        fields).</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;">
+            <h1 id="Radioactivity">2. Radioactivity </h1>
+            <div class="topic-description">
+                <h2>1Introduction</h2>
+                <ul>
+                    <li>Radioactivity is the spontaneous emission of particles or radiation from the nucleus of an
+                        unstable
+                        atom.</li>
+                    <li>Discovered by Henri Becquerel (1896) and further studied by Marie and Pierre Curie.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Radioactive Decay</h2>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Symbol</th>
+                        <th>Charge</th>
+                        <th>Mass</th>
+                        <th>Penetration Power</th>
+                    </tr>
+                    <tr>
+                        <td>Alpha (α)</td>
+                        <td><sup>4</sup>He<sup>2+</sup></td>
+                        <td>+2</td>
+                        <td>Heavy</td>
+                        <td>Low (stopped by paper)</td>
+                    </tr>
+                    <tr>
+                        <td>Beta (β)</td>
+                        <td>e⁻ or e⁺</td>
+                        <td>-1 or +1</td>
+                        <td>Light</td>
+                        <td>Medium (stopped by aluminum)</td>
+                    </tr>
+                    <tr>
+                        <td>Gamma (γ)</td>
+                        <td>-</td>
+                        <td>0</td>
+                        <td>No mass</td>
+                        <td>High (stopped by thick lead)</td>
+                    </tr>
+                </table>
+                <ul>
+                    <li><b>Alpha decay (α)</b>: A nucleus emits a helium nucleus (<sup>4</sup>He).</li>
+                    <li><b>Beta decay (β)</b>: A neutron converts into a proton, emitting an electron (β⁻) or positron
+                        (β⁺).
+                    </li>
+                    <li><b>Gamma decay (γ)</b>: Nucleus releases high-energy electromagnetic waves.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Radioactive Decay Law</h2>
+                <p>The decay of radioactive substances follows an exponential law:</p>
+                <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>N</mi>
+                        <mo>=</mo>
+                        <mi>N</mi><sub>0</sub>
+                        <msup>
+                            <mi>e</mi>
+                            <mrow>
+                                <mo>-</mo>
+                                <mi>λt</mi>
+                            </mrow>
+                        </msup>
+                    </math></p>
+                <ul>
+                    <li><b>N<sub>0</sub></b>: Initial number of nuclei</li>
+                    <li><b>N</b>: Remaining nuclei after time <i>t</i></li>
+                    <li><b>λ</b>: Decay constant</li>
+                </ul>
+                <h3>Half-life and Mean Life</h3>
+                <ul>
+                    <li>Half-life (T<sub>1/2</sub>): The time taken for half the radioactive atoms to decay.
+                        <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                    <mi>T</mi>
+                                    <mrow>1/2</mrow>
+                                </msub>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>0.693</mn>
+                                    <mi>λ</mi>
+                                </mfrac>
+                            </math></p>
+                    </li>
+                    <li>Mean life (τ): The average lifetime of a radioactive atom.
+                        <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>τ</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>1</mn>
+                                    <mi>λ</mi>
+                                </mfrac>
+                            </math></p>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Radioactivity</h2>
+                <ul>
+                    <li><b>Carbon Dating</b> – Determines the age of fossils using C-14 isotope.</li>
+                    <li><b>Nuclear Medicine</b> – Used in cancer treatment (radiotherapy).</li>
+                    <li><b>Nuclear Power</b> – Generates electricity from nuclear fission.</li>
+                    <li><b>Industrial Use</b> – Detects pipeline leaks using radioactive tracers.</li>
+                </ul>
+
+                <h2>Hazards of Radioactivity</h2>
+                <ul>
+                    <li>Causes DNA mutations and cancer.</li>
+                    <li>Leads to radiation sickness (e.g., Chernobyl, Fukushima disasters).</li>
+                    <li>Requires proper disposal to prevent environmental damage.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Nuclear">3. Nuclear Reactions </h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>A nuclear reaction occurs when the nucleus of an atom changes due to interactions with other
+                        nuclei
+                        or particles, leading to the formation of new elements and energy release.</li>
+                    <li>Unlike chemical reactions, nuclear reactions involve changes in the nucleus and are governed by
+                        the
+                        principles of mass-energy equivalence (E = mc²).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Nuclear Reactions</h2>
+                <h3>(A) Nuclear Fission </h3>
+                <ul>
+                    <li>In fission, a heavy nucleus (e.g., uranium-235) splits into two smaller nuclei, releasing energy
+                        and
+                        neutrons.</li>
+                    <li><b>Example: Uranium-235 Fission</b></li>
+                </ul>
+                <p>92<sub>235</sub>U + 0<sub>1</sub>n → 36<sub>92</sub>Kr + 56<sub>141</sub>Ba + 3 0<sub>1</sub>n +
+                    Energy
+                </p>
+                <ul>
+                    <li><b>Features of Fission:</b></li>
+                    <ul>
+                        <li>Releases a huge amount of energy (used in nuclear power plants).</li>
+                        <li>Produces chain reactions (used in nuclear bombs).</li>
+                        <li>Controlled in nuclear reactors using moderators (like graphite or heavy water).</li>
+                    </ul>
+                </ul>
+
+                <h3>(B) Nuclear Fusion </h3>
+                <ul>
+                    <li>In fusion, two light nuclei (e.g., hydrogen isotopes) combine to form a heavier nucleus,
+                        releasing
+                        even more energy than fission.</li>
+                    <li><b>Example: Hydrogen Fusion in the Sun</b></li>
+                </ul>
+                <p>1<sub>1</sub>H + 1<sub>2</sub>H → 2<sub>3</sub>He + γ (Energy)</p>
+                <ul>
+                    <li><b>Features of Fusion:</b></li>
+                    <ul>
+                        <li>Occurs in stars and hydrogen bombs.</li>
+                        <li>Requires extremely high temperature and pressure (millions of °C).</li>
+                        <li>Clean energy source (no harmful radiation or waste).</li>
+                    </ul>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2> Mass-Energy Equivalence (Einstein’s Equation)</h2>
+                <ul>
+                    <li><b>E = mc²</b></li>
+                    <li>Energy (E) is obtained by converting a small amount of mass (m) into energy.</li>
+                    <li>This principle explains the huge energy release in both fission and fusion.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Controlled vs. Uncontrolled Nuclear Reactions</h2>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Example</th>
+                        <th>Application</th>
+                    </tr>
+                    <tr>
+                        <td>Controlled Reaction</td>
+                        <td>Nuclear Reactors</td>
+                        <td>Energy production</td>
+                    </tr>
+                    <tr>
+                        <td>Uncontrolled Reaction</td>
+                        <td>Nuclear Bombs</td>
+                        <td>Weapons of mass destruction</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Nuclear Reactions</h2>
+                <ul>
+                    <li>Nuclear Power Plants – Electricity generation.</li>
+                    <li>Medical Uses – Cancer treatment (radiotherapy).</li>
+                    <li>Space Exploration – Nuclear propulsion in spacecraft.</li>
+                    <li>Weapons – Atomic and hydrogen bombs.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Dangers and Safety Measures</h2>
+                <ul>
+                    <li><b>Hazards:</b></li>
+                    <ul>
+                        <li>Radiation Exposure – Causes mutations and cancer.</li>
+                        <li>Radioactive Waste – Requires safe disposal.</li>
+                    </ul>
+                    <li><b>Safety Measures:</b></li>
+                    <ul>
+                        <li>Proper Shielding – Use of lead or concrete.</li>
+                        <li>Controlled Environment – Nuclear reactors use moderators and control rods.</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Fission">4. Nuclear Fission and Fusion </h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>Nuclear fission and fusion are processes that release vast amounts of energy by altering atomic
+                        nuclei.</li>
+                    <li>They are based on Einstein’s equation: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>E</mi>
+                            <mo>=</mo>
+                            <mi>m</mi>
+                            <msup>
+                                <mi>c</mi>
+                                <mn>2</mn>
+                            </msup>
+                        </math>, which describes mass-energy equivalence.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Nuclear Fission</h2>
+                <ul>
+                    <li>Fission is the splitting of a heavy nucleus into two smaller nuclei, releasing energy and
+                        neutrons.
+                    </li>
+                    <li>Example: <br>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msup>
+                                <mi>U</mi>
+                                <mn>235</mn>
+                            </msup>
+                            <mo>+</mo>
+                            <msup>
+                                <mi>n</mi>
+                                <mn>1</mn>
+                            </msup>
+                            <mo>&#x2192;</mo>
+                            <msup>
+                                <mi>Kr</mi>
+                                <mn>92</mn>
+                            </msup>
+                            <mo>+</mo>
+                            <msup>
+                                <mi>Ba</mi>
+                                <mn>141</mn>
+                            </msup>
+                            <mo>+</mo>
+                            <mn>3</mn>
+                            <msup>
+                                <mi>n</mi>
+                                <mn>1</mn>
+                            </msup>
+                            <mo>+</mo>
+                            <mi>Energy</mi>
+                        </math>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Nuclear Fusion </h2>
+                <ul>
+                    <li>Fusion is the combination of two light nuclei into a heavier nucleus, releasing tremendous
+                        energy.
+                    </li>
+                    <li>Example (Hydrogen Fusion in the Sun): <br>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msup>
+                                <mi>H</mi>
+                                <mn>1</mn>
+                            </msup>
+                            <mo>+</mo>
+                            <msup>
+                                <mi>H</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>&#x2192;</mo>
+                            <msup>
+                                <mi>He</mi>
+                                <mn>3</mn>
+                            </msup>
+                            <mo>+</mo>
+                            <mi>&#x3B3;</mi>
+                            <mo>+</mo>
+                            <mi>Energy</mi>
+                        </math>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Comparison: Fission vs. Fusion</h2>
+                <table>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Nuclear Fission</th>
+                        <th>Nuclear Fusion</th>
+                    </tr>
+                    <tr>
+                        <td>Definition</td>
+                        <td>Splitting of a heavy nucleus</td>
+                        <td>Combining of two light nuclei</td>
+                    </tr>
+                    <tr>
+                        <td>Example</td>
+                        <td>Uranium-235 fission</td>
+                        <td>Hydrogen fusion in the Sun</td>
+                    </tr>
+                    <tr>
+                        <td>Energy Released</td>
+                        <td>High</td>
+                        <td>Very High</td>
+                    </tr>
+                    <tr>
+                        <td>Reaction Conditions</td>
+                        <td>Can occur at room temperature with neutron bombardment</td>
+                        <td>Requires extreme temperature & pressure</td>
+                    </tr>
+                    <tr>
+                        <td>Byproducts</td>
+                        <td>Radioactive waste</td>
+                        <td>No harmful waste</td>
+                    </tr>
+                    <tr>
+                        <td>Applications</td>
+                        <td>Nuclear power plants, atomic bombs</td>
+                        <td>Sun’s energy, hydrogen bombs, future power plants</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Nuclear Reactions</h2>
+                <ul>
+                    <li><b>Nuclear Power Plants:</b> Generates electricity through controlled fission.</li>
+                    <li><b>Medical Uses:</b> Used in radiotherapy for cancer treatment.</li>
+                    <li><b>Weapons:</b> Used in atomic and hydrogen bombs.</li>
+                    <li><b>Space Exploration:</b> Nuclear propulsion systems for deep-space missions.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Dangers and Safety Measures</h2>
+                <ul>
+                    <li><b>Radiation Exposure:</b> Can cause mutations and cancer.</li>
+                    <li><b>Radioactive Waste:</b> Needs proper disposal and long-term management.</li>
+                    <li><b>Safety Measures:</b> Use of shielding (lead, concrete) and controlled environments.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

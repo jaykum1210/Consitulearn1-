@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-physics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 5 - Rotational Motion</div>
+        <div class="topic-name">
+            <h1>1. Center of Mass</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>The center of mass is the point where the entire mass of a system can be considered to be
+                        concentrated for motion analysis.</li>
+                    <li>It moves as if all external forces act at that single point.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+
+                <h2>Center of Mass Formula</h2>
+                <p>For a system of n particles:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub>
+                        <mi>X</mi>
+                        <mi>CM</mi>
+                    </msub>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <msub>
+                                <mi>m</mi>
+                                <mn>1</mn>
+                            </msub>
+                            <msub>
+                                <mi>x</mi>
+                                <mn>1</mn>
+                            </msub>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>m</mi>
+                                <mn>2</mn>
+                            </msub>
+                            <msub>
+                                <mi>x</mi>
+                                <mn>2</mn>
+                            </msub>
+                            <mo>+</mo>
+                            <mo>...</mo>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>m</mi>
+                                <mi>n</mi>
+                            </msub>
+                            <msub>
+                                <mi>x</mi>
+                                <mi>n</mi>
+                            </msub>
+                        </mrow>
+                        <mrow>
+                            <msub>
+                                <mi>m</mi>
+                                <mn>1</mn>
+                            </msub>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>m</mi>
+                                <mn>2</mn>
+                            </msub>
+                            <mo>+</mo>
+                            <mo>...</mo>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>m</mi>
+                                <mi>n</mi>
+                            </msub>
+                        </mrow>
+                    </mfrac>
+                </math>
+                <p>Similar formulas hold for Y<sub>CM</sub> and Z<sub>CM</sub>.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Center of Mass for Continuous Bodies</h2>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub>
+                        <mi>X</mi>
+                        <mi>CM</mi>
+                    </msub>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mo>&#x222B;</mo>
+                            <mi>x</mi>
+                            <mo>d</mo>
+                            <mi>m</mi>
+                        </mrow>
+                        <mrow>
+                            <mo>&#x222B;</mo>
+                            <mo>d</mo>
+                            <mi>m</mi>
+                        </mrow>
+                    </mfrac>
+                </math>
+                <p>Similar formulas apply for Y<sub>CM</sub> and Z<sub>CM</sub>.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Center of Mass of Common Objects</h2>
+                <ul>
+                    <li><b>Uniform Rod</b> (length L): Center is at midpoint.</li>
+                    <li><b>Ring/Sphere</b>: Center of mass is at geometric center.</li>
+                    <li><b>Right-Angled Triangle</b>:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>X</mi>
+                                <mi>CM</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mi>b</mi>
+                                <mn>3</mn>
+                            </mfrac>
+                            <mo>,</mo>
+                            <msub>
+                                <mi>Y</mi>
+                                <mi>CM</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mi>h</mi>
+                                <mn>3</mn>
+                            </mfrac>
+                        </math>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Motion of Center of Mass</h2>
+                <p>The center of mass moves as if all external forces act on it.</p>
+                <p>Velocity of COM:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub>
+                        <mi>V</mi>
+                        <mi>CM</mi>
+                    </msub>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <msub>
+                                <mi>m</mi>
+                                <mn>1</mn>
+                            </msub>
+                            <msub>
+                                <mi>v</mi>
+                                <mn>1</mn>
+                            </msub>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>m</mi>
+                                <mn>2</mn>
+                            </msub>
+                            <msub>
+                                <mi>v</mi>
+                                <mn>2</mn>
+                            </msub>
+                            <mo>+</mo>
+                            <mo>...</mo>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>m</mi>
+                                <mi>n</mi>
+                            </msub>
+                            <msub>
+                                <mi>v</mi>
+                                <mi>n</mi>
+                            </msub>
+                        </mrow>
+                        <mrow>
+                            <msub>
+                                <mi>m</mi>
+                                <mn>1</mn>
+                            </msub>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>m</mi>
+                                <mn>2</mn>
+                            </msub>
+                            <mo>+</mo>
+                            <mo>...</mo>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>m</mi>
+                                <mi>n</mi>
+                            </msub>
+                        </mrow>
+                    </mfrac>
+                </math>
+                <p>Acceleration of COM:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub>
+                        <mi>a</mi>
+                        <mi>CM</mi>
+                    </msub>
+                    <mo>=</mo>
+                    <mfrac>
+                        <msub>
+                            <mi>F</mi>
+                            <mi>net</mi>
+                        </msub>
+                        <mi>M</mi>
+                    </mfrac>
+                </math>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications</h2>
+                <ul>
+                    <li><b>Rocket Motion</b>: COM shifts as mass ejects.</li>
+                    <li><b>Balancing Objects</b>: Finding COM helps in stability.</li>
+                    <li><b>Astronomy</b>: Planets orbit around the COM of their system.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Key Points</h2>
+                <ul>
+                    <li>The COM follows Newton’s Laws of Motion.</li>
+                    <li>If no external force acts, the COM moves with constant velocity.</li>
+                    <li>In collisions, COM plays a crucial role in momentum conservation.</li>
+                </ul>
+            </div>
+            <hr style="height: 3px; background-color: black; border: none;">
+            <h1 id="moment-inertia">2. Moment of Inertia</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>The Moment of Inertia (I) is the rotational equivalent of mass in linear motion.</li>
+                    <li>It represents the resistance of a body to changes in its rotational motion.</li>
+                    <li>It depends on the mass distribution and the axis of rotation.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Moment of Inertia Formula</h2>
+                <ul>
+                    <li>For a system of discrete particles:
+                        <math>
+                            <mi>I</mi>
+                            <mo>=</mo>
+                            <munder>
+                                <mo>&#8721;</mo>
+                                <mi>i</mi>
+                            </munder>
+                            <msub>
+                                <mi>m</mi>
+                                <mi>i</mi>
+                            </msub>
+                            <msup>
+                                <msub>
+                                    <mi>r</mi>
+                                    <mi>i</mi>
+                                </msub>
+                                <mn>2</mn>
+                            </msup>
+                        </math>
+                    </li>
+                    <li>For a continuous body:
+                        <math>
+                            <mi>I</mi>
+                            <mo>=</mo>
+                            <msubsup>
+                                <mo>&#8747;</mo>
+                                <mi>dm</mi>
+                                <msup>
+                                    <mi>r</mi>
+                                    <mn>2</mn>
+                                </msup>
+                            </msubsup>
+                        </math>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Parallel and Perpendicular Axis Theorems</h2>
+                <ul>
+                    <li><b>Parallel Axis Theorem:</b>
+                        <math>
+                            <mi>I</mi>
+                            <mo>=</mo>
+                            <msub>
+                                <mi>I</mi>
+                                <mi>CM</mi>
+                            </msub>
+                            <mo>+</mo>
+                            <mi>M</mi>
+                            <msup>
+                                <mi>d</mi>
+                                <mn>2</mn>
+                            </msup>
+                        </math>
+                    </li>
+                    <li><b>Perpendicular Axis Theorem (for 2D bodies):</b>
+                        <math>
+                            <msub>
+                                <mi>I</mi>
+                                <mi>z</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <msub>
+                                <mi>I</mi>
+                                <mi>x</mi>
+                            </msub>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>I</mi>
+                                <mi>y</mi>
+                            </msub>
+                        </math>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Moment of Inertia of Common Objects</h2>
+                <table>
+                    <tr>
+                        <th>Shape</th>
+                        <th>Axis</th>
+                        <th>Moment of Inertia</th>
+                    </tr>
+                    <tr>
+                        <td>Rod</td>
+                        <td>Perpendicular to length through center</td>
+                        <td><math>
+                                <mfrac>
+                                    <mn>1</mn>
+                                    <mn>12</mn>
+                                </mfrac>
+                                <mi>ML</mi>
+                                <msup>
+                                    <mi>L</mi>
+                                    <mn>2</mn>
+                                </msup>
+                            </math></td>
+                    </tr>
+                    <tr>
+                        <td>Rod</td>
+                        <td>Perpendicular to length through one end</td>
+                        <td><math>
+                                <mfrac>
+                                    <mn>1</mn>
+                                    <mn>3</mn>
+                                </mfrac>
+                                <mi>ML</mi>
+                                <msup>
+                                    <mi>L</mi>
+                                    <mn>2</mn>
+                                </msup>
+                            </math></td>
+                    </tr>
+                    <tr>
+                        <td>Ring</td>
+                        <td>About its central axis</td>
+                        <td><math>
+                                <mi>MR</mi>
+                                <msup>
+                                    <mi>R</mi>
+                                    <mn>2</mn>
+                                </msup>
+                            </math></td>
+                    </tr>
+                    <tr>
+                        <td>Disc</td>
+                        <td>About its central axis</td>
+                        <td><math>
+                                <mfrac>
+                                    <mn>1</mn>
+                                    <mn>2</mn>
+                                </mfrac>
+                                <mi>MR</mi>
+                                <msup>
+                                    <mi>R</mi>
+                                    <mn>2</mn>
+                                </msup>
+                            </math></td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Rotational Kinetic Energy</h2>
+                <ul>
+                    <li>Formula:
+                        <math>
+                            <mi>KE</mi>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mn>1</mn>
+                                <mn>2</mn>
+                            </mfrac>
+                            <mi>I</mi>
+                            <msup>
+                                <mi>&#969;</mi>
+                                <mn>2</mn>
+                            </msup>
+                        </math>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Torque and Angular Momentum</h2>
+                <ul>
+                    <li>Torque: <math>
+                            <mi>&#964;</mi>
+                            <mo>=</mo>
+                            <mi>I</mi>
+                            <mi>&#945;</mi>
+                        </math></li>
+                    <li>Angular Momentum: <math>
+                            <mi>L</mi>
+                            <mo>=</mo>
+                            <mi>I</mi>
+                            <mi>&#969;</mi>
+                        </math></li>
+                    <li>Conservation of Angular Momentum:
+                        <math>
+                            <msub>
+                                <mi>I</mi>
+                                <mn>1</mn>
+                            </msub>
+                            <msub>
+                                <mi>&#969;</mi>
+                                <mn>1</mn>
+                            </msub>
+                            <mo>=</mo>
+                            <msub>
+                                <mi>I</mi>
+                                <mn>2</mn>
+                            </msub>
+                            <msub>
+                                <mi>&#969;</mi>
+                                <mn>2</mn>
+                            </msub>
+                        </math>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications</h2>
+                <ul>
+                    <li>Flywheels store rotational energy.</li>
+                    <li>Planetary motion follows angular momentum conservation.</li>
+                    <li>Athletes & Gymnasts adjust their MOI to control rotation.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Key Points</h2>
+                <ul>
+                    <li>Larger MOI → Harder to rotate.</li>
+                    <li>MOI depends on mass and distance from axis squared.</li>
+                    <li>Conservation of angular momentum is crucial in space physics.</li>
+                </ul>
+            </div>
+            <hr style="height: 3px; background-color: black; border: none;">
+            <h1 id="Angular">3. Torque and Angular Momentum</h1>
+            <div class="topic-description">
+                <h2>i. Torque (τ)</h2>
+                <h3>Definition</h3>
+                <ul>
+                    <li>Torque is the rotational equivalent of force.</li>
+                    <li>It measures the tendency of a force to cause rotational motion about an axis.</li>
+                </ul>
+                <h3>Formula</h3>
+                <ul>
+                    <li>Formula: τ = r × F = rFsinθ
+                        <p>where τ = Torque (Nm), r = Position vector (distance from axis of rotation), F = Applied
+                            force, θ = Angle between r and F.</p>
+                    </li>
+                </ul>
+                <h3>Key Points</h3>
+                <ul>
+                    <li>If θ = 0° or 180°, then τ = 0 (force acts along the line of motion).</li>
+                    <li>If θ = 90°, then τ is maximum.</li>
+                    <li>The direction of torque is given by the right-hand rule:
+                        <ul>
+                            <li>Curl fingers in the direction of rotation caused by force.</li>
+                            <li>Thumb points in the direction of torque.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Relation between Torque and Angular Acceleration</h3>
+                <ul>
+                    <li>Formula: τ = Iα
+                        <p>where I = Moment of Inertia, α = Angular acceleration.</p>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Angular Momentum (L)</h2>
+                <h3>Definition</h3>
+                <ul>
+                    <li>Angular momentum is the rotational analog of linear momentum.</li>
+                    <li>It is the product of the moment of inertia and angular velocity.</li>
+                </ul>
+                <h3>Formula</h3>
+                <ul>
+                    <li>Formula: L = r × p = Iω
+                        <p>where L = Angular momentum (kg·m²/s), p = Linear momentum (mv), ω = Angular velocity.</p>
+                    </li>
+                </ul>
+                <h3>Key Points</h3>
+                <ul>
+                    <li>If no external torque acts on a system, angular momentum remains conserved.</li>
+                    <li>Direction is determined by the right-hand rule (same as torque).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. Conservation of Angular Momentum</h2>
+                <ul>
+                    <li>Formula: L<sub>initial</sub> = L<sub>final</sub></li>
+                    <li>or I₁ω₁ = I₂ω₂</li>
+                    <li>If the moment of inertia decreases, angular velocity increases (e.g., a spinning ice skater
+                        pulling arms in).</li>
+                    <li>Important in planetary motion, rotating bodies, and gyroscopes.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iv. Relation Between Torque and Angular Momentum</h2>
+                <ul>
+                    <li>Formula: τ = dL/dt</li>
+                    <li>Torque is the rate of change of angular momentum.</li>
+                    <li>If net torque is zero, angular momentum is conserved.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>v. Applications</h2>
+                <ul>
+                    <li>Ice skaters & Gymnasts: Change body shape to control spin speed.</li>
+                    <li>Planets and Satellites: Orbit stability due to angular momentum conservation.</li>
+                    <li>Flywheels: Store rotational energy in engines.</li>
+                    <li>Gyroscopes: Used in navigation systems.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>vi. Key Differences Between Torque and Angular Momentum</h2>
+                <table>
+                    <tr>
+                        <th>Torque (τ)</th>
+                        <th>Angular Momentum (L)</th>
+                    </tr>
+                    <tr>
+                        <td>Causes rotational motion</td>
+                        <td>Describes rotational motion</td>
+                    </tr>
+                    <tr>
+                        <td>τ = r × F</td>
+                        <td>L = Iω</td>
+                    </tr>
+                    <tr>
+                        <td>Vector quantity</td>
+                        <td>Vector quantity</td>
+                    </tr>
+                    <tr>
+                        <td>Measured in Nm</td>
+                        <td>Measured in kg·m²/s</td>
+                    </tr>
+                    <tr>
+                        <td>Depends on force</td>
+                        <td>Depends on mass and speed</td>
+                    </tr>
+                </table>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>vii. Summary</h2>
+                <ul>
+                    <li>Torque initiates rotation, Angular Momentum maintains it.</li>
+                    <li>No external torque → Angular momentum is conserved.</li>
+                    <li>Used in spinning objects, planetary motion, and machines.</li>
+                </ul>
+            </div>
+            <hr style="height: 3px; background-color: black; border: none;">
+            <h1 id="Conservation">4. Conservation of Angular Momentum</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>The conservation of angular momentum states that if no external torque acts on a system, its
+                        angular momentum remains constant.</li>
+                    <li>It follows from Newton's First Law for rotational motion (an object in rotational motion
+                        continues unless acted upon by an external torque).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Mathematical Expression</h2>
+                <ul>
+                    <li>Formula: L<sub>initial</sub> = L<sub>final</sub></li>
+                    <li>Or: I<sub>1</sub>ω<sub>1</sub> = I<sub>2</sub>ω<sub>2</sub></li>
+                    <p>where:</p>
+                    <ul>
+                        <li>L = Angular Momentum</li>
+                        <li>I = Moment of Inertia</li>
+                        <li>ω = Angular Velocity</li>
+                    </ul>
+                    <li>If I decreases, ω increases and vice versa.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Explanation</h2>
+                <ul>
+                    <li>Since L = Iω, any change in moment of inertia (I) will affect angular velocity (ω) to keep L
+                        constant.</li>
+                    <li>This principle explains why a skater spins faster when pulling in arms or a planet speeds up
+                        when moving closer to the Sun.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Conservation of Angular Momentum</h2>
+                <ol style="list-style-type: lower-roman;">
+                <hr style="height: 1px; background-color: black; border: none;">
+                    <li>
+                        <p><b>Spinning Ice Skater or Dancer</b></p>
+                        <ul>
+                            <li>When a skater pulls their arms and legs inward, moment of inertia decreases.</li>
+                            <li>To conserve angular momentum, angular velocity increases (they spin faster).</li>
+                        </ul>
+                    </li>
+                <hr style="height: 1px; background-color: black; border: none;">
+                    <li>
+                        <p><b>Planetary Motion (Kepler’s 2nd Law)</b></p>
+                        <ul>
+                            <li>Planets move faster when closer to the Sun and slower when farther due to conservation
+                                of angular momentum.</li>
+                            <li>Angular momentum of planets remains constant as they orbit.</li>
+                        </ul>
+                    </li>
+                <hr style="height: 1px; background-color: black; border: none;">
+                    <li>
+                        <p><b>Neutron Stars and Black Holes</b></p>
+                        <ul>
+                            <li>When a massive star collapses, its radius decreases, leading to an increase in angular
+                                velocity, making it spin rapidly.</li>
+                            <li>This is why neutron stars and pulsars rotate at high speeds.</li>
+                        </ul>
+                    </li>
+                <hr style="height: 1px; background-color: black; border: none;">
+                    <li>
+                        <p><b>Rotating Chair Experiment</b></p>
+                        <ul>
+                            <li>A person sitting on a freely rotating chair holding weights can change their speed by
+                                pulling the weights closer or stretching arms outward.</li>
+                        </ul>
+                    </li>
+                <hr style="height: 1px; background-color: black; border: none;">
+                    <li>
+                        <p><b>Satellites and Spacecraft Motion</b></p>
+                        <ul>
+                            <li>Artificial satellites adjust their orientation using the principle of angular momentum
+                                conservation (e.g., gyroscopes in space telescopes like Hubble).</li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Relation Between Torque and Angular Momentum</h2>
+                <ul>
+                    <li>Formula: τ = dL/dt</li>
+                    <li>If net external torque is zero, τ = 0 → dL/dt = 0 → L is constant.</li>
+                    <li>If torque is applied, angular momentum changes over time.</li>
+                </ul>
+            </div>
+            <hr style="height: 3px; background-color: black; border: none;">
+            <h1 id="rolling">Rolling Motion</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>Rolling motion is a combination of translational and rotational motion of a body.</li>
+                    <li>A rolling object moves forward while also rotating about its own axis.</li>
+                    <li>Examples:
+                        <ul>
+                            <li>A rolling wheel, ball, or cylinder.</li>
+                            <li>Motion of a car’s tires on the road.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Rolling Motion</h2>
+                <ol style="list-style-type: lower-roman;">
+                    <li><b>Pure Rolling</b>
+                        <ul>
+                            <li>No slipping occurs between the rolling object and the surface.</li>
+                            <li>The velocity of the point of contact with the ground is zero.</li>
+                        </ul>
+                    </li>
+                    <li><b>Rolling with Slipping</b>
+                        <ul>
+                            <li>Occurs when friction is insufficient, causing the object to slide.</li>
+                            <li>The velocity of the point of contact with the surface is not zero.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Condition for Pure Rolling</h2>
+                <ul>
+                    <li>For a rolling object to be in pure rolling motion, the relation between translational velocity
+                        and rotational velocity is:</li>
+                    <li>Formula: v = Rω
+                        <p>where v = Linear velocity of the center of mass, R = Radius of the rolling object, ω =
+                            Angular velocity.</p>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>If v > Rω, the object is slipping forward.</li>
+                            <li>If v < Rω, the object is slipping backward.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Kinetic Energy in Rolling Motion</h2>
+                <ul>
+                    <li>Rolling motion has both translational and rotational kinetic energy.</li>
+                    <li>Formula: KE<sub>total</sub> = KE<sub>translational</sub> + KE<sub>rotational</sub></li>
+                    <li>KE<sub>total</sub> = (1/2)Mv² + (1/2)Iω²</li>
+                    <p>where M = Mass of the object, I = Moment of inertia about the center of mass, ω = Angular
+                        velocity.</p>
+                    <li>For pure rolling, substituting v = Rω:</li>
+                    <li>KE<sub>total</sub> = (1/2)Mv² + (1/2)I(v²/R²)</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Friction in Rolling Motion</h2>
+                <ul>
+                    <li>Static friction plays a key role in rolling motion.</li>
+                    <li>It prevents slipping and helps in the rolling motion.</li>
+                    <li>Rolling friction is usually small compared to kinetic friction (slipping case).</li>
+                    <li>If no friction → pure rolling cannot occur.</li>
+                    <li>More friction → higher resistance to rolling.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Acceleration in Rolling Motion</h2>
+                <ul>
+                    <li>The acceleration of the rolling body is influenced by torque and friction.</li>
+                    <li>Formula: a = F/M</li>
+                    <li>For an object rolling down an incline, the acceleration is:</li>
+                    <li>a = (g sinθ) / (1 + I/MR²)</li>
+                    <p>where g = Acceleration due to gravity, θ = Inclination angle, I = Moment of inertia.</p>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Rolling Motion on an Inclined Plane</h2>
+                <ul>
+                    <li>When a body rolls down an incline, both translation and rotation contribute to motion.</li>
+                    <li>The time taken to reach the bottom depends on moment of inertia.</li>
+                    <li>Objects with a larger moment of inertia roll slower.</li>
+                    <li>Example:
+                        <ul>
+                            <li>A solid sphere reaches the bottom faster than a ring of the same mass and radius because
+                                a ring has a higher moment of inertia.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

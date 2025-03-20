@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-physics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 10 - Electrostatics</div>
+        <div class="topic-name">
+            <h1>1. Electric Charges and Fields</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <p>Electric charges are fundamental properties of matter that cause electromagnetic interactions. The
+                    study of electric charges and their effects in space is called Electrostatics.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Types of Electric Charges</h2>
+                <ul>
+                    <li><b>Positive Charge (+q):</b> Carried by protons.</li>
+                    <li><b>Negative Charge (-q):</b> Carried by electrons.</li>
+                    <li><b>Neutral Objects:</b> Have an equal number of positive and negative charges.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Basic Properties of Charge</h2>
+                <ul>
+                    <li><b>Quantization of Charge:</b> Charge exists in discrete packets as an integral multiple of the
+                        elementary charge.</li>
+                    <li>Formula: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>q</mi>
+                            <mo>=</mo>
+                            <mo>&#xB1;</mo>
+                            <mi>n</mi>
+                            <mi>e</mi>
+                        </math> where <math>
+                            <mi>e</mi>
+                            <mo>=</mo>
+                            <mn>1.6</mn>
+                            <mo>&#xD7;</mo>
+                            <msup>
+                                <mn>10</mn>
+                                <mn>-19</mn>
+                            </msup>
+                            <mi>C</mi>
+                        </math>.</li>
+                    <li><b>Charge Conservation:</b> The total charge in an isolated system remains constant.</li>
+                    <li><b>Charge is Additive:</b> The total charge of a system is the algebraic sum of individual
+                        charges.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Coulomb’s Law</h2>
+                <p>It describes the force between two stationary point charges.</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>F</mi>
+                    <mo>=</mo>
+                    <mi>k</mi>
+                    <mo>&#xD7;</mo>
+                    <mfrac>
+                        <mrow>
+                            <mo>|</mo>
+                            <mi>q</mi><sub>1</sub>
+                            <mi>q</mi><sub>2</sub>
+                            <mo>|</mo>
+                        </mrow>
+                        <msup>
+                            <mi>r</mi>
+                            <mn>2</mn>
+                        </msup>
+                    </mfrac>
+                </math>
+                <p>where:</p>
+                <ul>
+                    <li><b>F:</b> Electrostatic force (N)</li>
+                    <li><b>k:</b> Coulomb’s constant = <math>
+                            <mn>9</mn>
+                            <mo>&#xD7;</mo>
+                            <msup>
+                                <mn>10</mn>
+                                <mn>9</mn>
+                            </msup>
+                            <mi>N</mi>
+                            <msup>
+                                <mi>m</mi>
+                                <mn>2</mn>
+                            </msup>/<msup>
+                                <mi>C</mi>
+                                <mn>2</mn>
+                            </msup>
+                        </math></li>
+                    <li><b>q<sub>1</sub>, q<sub>2</sub>:</b> Magnitudes of charges (C)</li>
+                    <li><b>r:</b> Distance between charges (m)</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Electric Field (E)</h2>
+                <p>The electric field at a point is the force experienced per unit positive charge placed at that point.
+                </p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>E</mi>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mi>F</mi>
+                        <mi>q</mi>
+                    </mfrac>
+                </math>
+                <p>For a point charge:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>E</mi>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mi>k</mi>
+                            <mo>|</mo>
+                            <mi>Q</mi>
+                            <mo>|</mo>
+                        </mrow>
+                        <msup>
+                            <mi>r</mi>
+                            <mn>2</mn>
+                        </msup>
+                    </mfrac>
+                </math>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Electric Dipole</h2>
+                <p>A system of two equal and opposite charges (+q and -q) separated by a distance 2a.</p>
+                <p><b>Dipole Moment (p):</b></p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>p</mi>
+                    <mo>=</mo>
+                    <mi>q</mi>
+                    <mo>&#xD7;</mo>
+                    <mn>2</mn>
+                    <mi>a</mi>
+                </math>
+                <p>SI Unit: Coulomb-meter (C·m)</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Electric Field of a Dipole</h2>
+                <p><b>On Axial Line:</b></p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>E</mi>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mn>2</mn>
+                            <mi>k</mi>
+                            <mi>p</mi>
+                        </mrow>
+                        <msup>
+                            <mi>r</mi>
+                            <mn>3</mn>
+                        </msup>
+                    </mfrac>
+                </math>
+                <p><b>On Equatorial Line:</b></p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>E</mi>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mi>k</mi>
+                            <mi>p</mi>
+                        </mrow>
+                        <msup>
+                            <mi>r</mi>
+                            <mn>3</mn>
+                        </msup>
+                    </mfrac>
+                </math>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Torque on a Dipole in a Uniform Electric Field</h2>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>&#x03C4;</mi>
+                    <mo>=</mo>
+                    <mi>p</mi>
+                    <mi>E</mi>
+                    <mo>sin</mo>
+                    <mi>&#x03B8;</mi>
+                </math>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Gauss's Law</h2>
+                <p>Gauss’s law states that the total electric flux through a closed surface is proportional to the total
+                    charge enclosed by the surface.</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mo>&#x222F;</mo>
+                    <mi>E</mi>
+                    <mo>&#x22C5;</mo>
+                    <mi>dA</mi>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mi>Q</mi><sub>enc</sub>
+                        <mi>&#x03B5;</mi><sub>0</sub>
+                    </mfrac>
+                </math>
+                <p>where:</p>
+                <ul>
+                    <li><b>Q<sub>enc</sub>:</b> Charge enclosed inside the surface (C)</li>
+                    <li><b>&#x03B5;<sub>0</sub>:</b> Permittivity of free space = <math>
+                            <mn>8.85</mn>
+                            <mo>&#xD7;</mo>
+                            <msup>
+                                <mn>10</mn>
+                                <mn>-12</mn>
+                            </msup>
+                            <mi>C</mi><sup>2</sup>/<mi>N</mi>
+                            <mi>m</mi><sup>2</sup>
+                        </math></li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Gauss">2. Gauss's Law</h1>
+            <div class="topic-description">
+                <ul>
+                    <li>Electric flux represents the number of electric field lines passing through a surface.</li>
+                    <li>Formula:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>&#x03A6;</mi>
+                            <msub>
+                                <mi>E</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <mo>&#x222F;</mo>
+                            <mi>E</mi>
+                            <mo>&#x22C5;</mo>
+                            <mi>dA</mi>
+                            <mo>=</mo>
+                            <mi>E</mi>
+                            <mi>A</mi>
+                            <mo>cos</mo>
+                            <mi>&#x03B8;</mi>
+                        </math>
+                        <p>where Φ<sub>E</sub> = Electric flux, E = Electric field, A = Area, θ = Angle between E and A.
+                        </p>
+                    </li>
+                    <li>If <b>E</b> is perpendicular to the surface, θ = 0° and Φ<sub>E</sub> = EA.</li>
+                    <li>If <b>E</b> is parallel to the surface, θ = 90° and Φ<sub>E</sub> = 0.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Gauss's Law</h2>
+                <ul>
+                    <li>Gauss’s Law states that the total electric flux through a closed surface is proportional to the
+                        charge enclosed.</li>
+                    <li>Formula:
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mo>&#x222F;</mo>
+                            <mi>E</mi>
+                            <mo>&#x22C5;</mo>
+                            <mi>dA</mi>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mi>Q</mi>
+                                <mrow>
+                                    <mi>&#x03B5;</mi><sub>0</sub>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                        <p>where Q = Charge enclosed, ε<sub>0</sub> = Permittivity of free space.</p>
+                    </li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Applications of Gauss’s Law</h2>
+                <ol style="list-style-type: lower-roman;">
+                    <li>
+                        <p><b>Electric Field Due to an Infinitely Long Line Charge</b></p>
+                        <ul>
+                            <li>Charge density: λ (charge per unit length).</li>
+                            <li>Using a cylindrical Gaussian surface, the electric field is:</li>
+                            <li>
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>E</mi>
+                                    <mo>=</mo>
+                                    <mfrac>
+                                        <mi>&#x03BB;</mi>
+                                        <mrow>
+                                            <mi>2</mi>
+                                            <mi>&#x03C0;</mi>
+                                            <mi>&#x03B5;</mi><sub>0</sub>
+                                            <mi>r</mi>
+                                        </mrow>
+                                    </mfrac>
+                                </math>
+                            </li>
+                            <p>where r = Distance from the line charge.</p>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Electric Field Due to an Infinite Plane Sheet of Charge</b></p>
+                        <ul>
+                            <li>Surface charge density: σ (charge per unit area).</li>
+                            <li>Using a pillbox Gaussian surface, the electric field is:</li>
+                            <li>
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>E</mi>
+                                    <mo>=</mo>
+                                    <mfrac>
+                                        <mi>&#x03C3;</mi>
+                                        <mrow>
+                                            <mi>2</mi>
+                                            <mi>&#x03B5;</mi><sub>0</sub>
+                                        </mrow>
+                                    </mfrac>
+                                </math>
+                            </li>
+                            <p>The field is uniform and does not depend on distance.</p>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Electric Field Due to a Spherical Shell</b></p>
+                        <ul>
+                            <li><b>Outside the sphere (r > R):</b> The sphere acts as a point charge.</li>
+                            <li>
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>E</mi>
+                                    <mo>=</mo>
+                                    <mfrac>
+                                        <mrow>
+                                            <mi>1</mi>
+                                            <mo>/</mo>
+                                            <mi>4</mi>
+                                            <mi>&#x03C0;</mi>
+                                            <mi>&#x03B5;</mi><sub>0</sub>
+                                        </mrow>
+                                        <mrow>
+                                            <mi>Q</mi>
+                                            <mo>/</mo>
+                                            <mi>r</mi><sup>2</sup>
+                                        </mrow>
+                                    </mfrac>
+                                </math>
+                            </li>
+                            <p>Similar to Coulomb’s Law.</p>
+                            <li><b>Inside a conductor (r < R):</b> E = 0 (Electrostatic Shielding).</li>
+                        </ul>
+                    </li>
+                </ol>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Importance of Gauss’s Law</h2>
+                <ul>
+                    <li>Simplifies electric field calculations for symmetrical charge distributions.</li>
+                    <li>Explains why electric fields inside conductors are zero.</li>
+                    <li>Used in capacitor design and electrostatic shielding.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Electric">3. Electric Potential and Electric Potential Energy</h1>
+            <div class="topic-description">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>Electric potential and electric potential energy describe how charges interact in an
+                        electric
+                        field.</li>
+                    <li><b>Electric potential (V):</b> The amount of electric potential energy per unit charge.</li>
+                    <li><b>Electric potential energy (U):</b> The energy stored due to a charge's position in an
+                        electric field.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Electric Potential (V)</h2>
+                <h3>Definition</h3>
+                <ul>
+                    <li>Electric potential at a point is the work done per unit charge to move a small test charge
+                        from
+                        infinity to that point without acceleration.</li>
+                    <li>Formula: V = W/q
+                        <p>where V = Electric potential (V), W = Work done (J), q = Charge (C).</p>
+                    </li>
+                    <li>SI unit: Volt (V)</li>
+                    <li>1 Volt = 1 Joule per Coulomb (1V = 1 J/C)</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Electric Potential Due to a Point Charge</h3>
+                <ul>
+                    <li>Formula: V = kQ/r
+                        <p>where k = 9×10<sup>9</sup> Nm<sup>2</sup>/C<sup>2</sup>, Q = Source charge (C), r =
+                            Distance
+                            from charge (m).</p>
+                    </li>
+                    <li>Potential is positive for a positive charge and negative for a negative charge.</li>
+                    <li>Electric potential is a scalar quantity.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Electric Potential Due to Multiple Charges</h3>
+                <ul>
+                    <li>For multiple charges, total potential at a point is:
+                        <p>V<sub>net</sub> = V<sub>1</sub> + V<sub>2</sub> + V<sub>3</sub> + ...</p>
+                        <p>or V<sub>net</sub> = ∑(kQ<sub>i</sub>/r<sub>i</sub>)</p>
+                    </li>
+                    <li>Unlike electric fields, electric potentials add algebraically since they are scalars.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Potential Difference (ΔV)</h3>
+                <ul>
+                    <li>Potential difference between two points A and B is:
+                        <p>ΔV = V<sub>B</sub> - V<sub>A</sub> = W<sub>AB</sub>/q</p>
+                    </li>
+                    <li>Electric field and potential difference relation: E = -dV/dr</li>
+                    <li>Electric field points in the direction of decreasing potential.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Electric Potential Energy (U)</h2>
+                <h3>Definition</h3>
+                <ul>
+                    <li>Electric potential energy is the work done in assembling a charge system or moving a charge
+                        in
+                        an electric field.</li>
+                    <li>Formula: U = qV</li>
+                    <li>SI unit: Joule (J)</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Potential Energy of a System of Two Charges</h3>
+                <ul>
+                    <li>Formula: U = kq<sub>1</sub>q<sub>2</sub>/r</li>
+                    <li>If q<sub>1</sub> and q<sub>2</sub> have the same sign, U is positive (repulsion).</li>
+                    <li>If q<sub>1</sub> and q<sub>2</sub> have opposite signs, U is negative (attraction).</li>
+                    <li>If r → ∞, then U → 0.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h3>Work Done in Moving a Charge</h3>
+                <ul>
+                    <li>Work done in moving charge q from A to B:</li>
+                    <p>W = q(V<sub>B</sub> - V<sub>A</sub>) = qΔV</p>
+                    <li>Positive work: Work done against the field (energy stored).</li>
+                    <li>Negative work: Work done by the field (energy released).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Equipotential Surfaces</h2>
+                <ul>
+                    <li>Surfaces where electric potential is constant.</li>
+                    <li>No work is required to move a charge along an equipotential surface.</li>
+                    <li>Electric field is perpendicular to equipotential surfaces.</li>
+                    <li>In a uniform field, equipotential surfaces are parallel planes.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Relation Between Electric Field and Electric Potential</h2>
+                <ul>
+                    <li>Electric field is the negative gradient of potential:</li>
+                    <p>E = -dV/dr</p>
+                    <li>Stronger electric fields correspond to greater potential differences over shorter distances.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Capacitors">4. Capacitors and Dielectrics</h1>
+            <div class="topic-description">
+                <h2>Definition</h2>
+                <ul>
+                    <li>A capacitor is an electrical component that stores electric charge and energy in an electric
+                        field.</li>
+                    <li>It consists of two conductors (plates) separated by an insulating material (dielectric).
+                    </li>
+                    <li>Symbol in circuit diagrams: Two parallel lines ( || ).</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Capacitance (C)</h2>
+                <ul>
+                    <li>Capacitance is the ability of a capacitor to store charge per unit voltage.</li>
+                    <li>Formula: C = Q/V</li>
+                    <p>where C = Capacitance (Farad, F), Q = Charge stored (Coulomb, C), V = Potential difference
+                        (Volt,
+                        V).</p>
+                    <li>SI Unit: Farad (F) → 1F = 1 C/V.</li>
+                    <li>Capacitors are usually measured in μF, nF, or pF.</li>
+                    <li>Higher capacitance means more charge storage for the same voltage.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Parallel Plate Capacitor</h2>
+                <ul>
+                    <li>Capacitance formula: C = (ε₀ A) / d</li>
+                    <p>where ε₀ = permittivity of free space (8.85×10⁻¹² F/m), A = Plate area (m²), d = Separation
+                        (m).
+                    </p>
+                    <li>Increased plate area → Higher capacitance.</li>
+                    <li>Increased separation → Lower capacitance.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Energy Stored in a Capacitor</h2>
+                <ul>
+                    <li>Energy stored formula: U = (1/2) C V²</li>
+                    <p>where U = Energy stored (J), C = Capacitance (F), V = Voltage (V).</p>
+                    <li>Energy is stored in the electric field between the plates.</li>
+                    <li>Applications: Camera flashes, power backups, oscillators.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Capacitors in Series and Parallel</h2>
+                <h3>i Series Connection</h3>
+                <ul>
+                    <li>Formula: 1/C_eq = 1/C₁ + 1/C₂ + 1/C₃ + …</li>
+                    <li>Same charge on all capacitors.</li>
+                    <li>Total voltage is the sum of individual voltages.</li>
+                    <li>Total capacitance is smaller than the smallest capacitor.</li>
+                </ul>
+                <h3>ii. Parallel Connection</h3>
+                <ul>
+                    <li>Formula: C_eq = C₁ + C₂ + C₃ + …</li>
+                    <li>Same voltage across all capacitors.</li>
+                    <li>Total charge is the sum of individual charges.</li>
+                    <li>Total capacitance is larger than any single capacitor.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Effect of Dielectrics</h2>
+                <ul>
+                    <li>Dielectric: An insulating material placed between plates to increase capacitance.</li>
+                    <li>Common dielectrics: Glass, mica, paper, plastic, ceramic.</li>
+                    <li>Formula: C' = K C</li>
+                    <p>where C' = Capacitance with dielectric, K = Dielectric constant (K > 1).</p>
+                    <li>Higher dielectric constant → Higher capacitance.</li>
+                    <li>Applications: Memory storage, signal processing, energy storage.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

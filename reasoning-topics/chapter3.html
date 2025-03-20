@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrack</title>
+    <link rel="stylesheet" href="all-reasoning.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="website icon.webp" type="image/png">
+</head>
+
+<body>
+    <!--chat bot in bottom right-->
+    <div id="chat-bot">
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLd3eoR5Mej9Uhs9_wMc5VYUr1yzbiyxbJDRg0oOwEDRj4710m4CPAaAvXhEALw_wcB&gclsrc=aw.ds"
+            alt="chat bot image" target="_blank">
+            <img src="../chat box.jpeg" class="chat-bot" alt="chat Bot Image">
+        </a>
+    </div>
+    <!--header with image, name, signup, login, list, and search-->
+    <div class="header">
+        <div class="header-left">
+            <a href="main.html"> <img src="../website logo.webp" alt="Educrack Logo"></a>
+            <h1>EduCrack</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search" name="search" placeholder="Search courses or resources">
+            <input type="text" placeholder="Search">
+            <button type="submit" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="items">
+            <ul>
+                <li class="course-dropdown">Courses
+                    <ul class="course-drop">
+                        <li class="course-names"><a href="#jee-goto">JEE</a></li>
+                        <li class="course-names"><a href="#neet-goto">NEET</a></li>
+                        <li class="course-names"><a href="#clat-goto">CLAT</a></li>
+                        <li class="course-names"><a href="#upsc-goto">UPSC</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">E-Books</a></li>
+                <li><a href="">Question Bank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="topics">
+        <div id="topic-head">Chapter 3 - Puzzles & Arrangements</div>
+        <div class="topic-name">
+            <h1>1. Seating Arrangements (Linear, Circular, Square) in Analytical Reasoning</h1>
+            <div class="topic-description">
+                <p>Seating arrangement problems are a common topic in reasoning and logical puzzles. These problems
+                    involve figuring out how people or objects can be arranged in a specific seating format. The seating
+                    arrangements can be classified into three main types: linear seating, circular seating, and square
+                    seating. Each type requires specific techniques for determining the arrangement.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>i. Linear Seating Arrangement</h2>
+                <p>In a linear seating arrangement, individuals or objects are seated in a straight line, either facing
+                    forward or backward. The challenge often involves determining the relative positions of people or
+                    objects based on certain conditions.</p>
+
+                <h3>Key Features of Linear Arrangement:</h3>
+                <ul>
+                    <li>The seating is in a straight line.</li>
+                    <li>Positions can be numbered from 1 to N (either from left to right or right to left).</li>
+                    <li>The number of people or objects to be seated is fixed.</li>
+                    <li>You may be asked to figure out the exact position of one or more individuals or objects based on
+                        given clues.</li>
+                </ul>
+
+                <h3>Types of Linear Seating Arrangements:</h3>
+                <ul>
+                    <li><b>Straight Line:</b> Individuals are seated in a row, with a specific number of positions.</li>
+                    <li><b>Facing Front or Back:</b> All individuals may be facing in one direction (forward or
+                        backward), or there may be a mix of individuals facing different directions.</li>
+                </ul>
+
+                <h3>Example of a Linear Seating Arrangement Problem:</h3>
+                <p>There are 5 friends (A, B, C, D, E) sitting in a row.</p>
+                <p><b>The clues are:</b></p>
+                <ul>
+                    <li>A is to the left of C.</li>
+                    <li>B is sitting to the right of D.</li>
+                    <li>E is sitting at the extreme right end.</li>
+                </ul>
+                <p><b>Solution:</b> Based on the clues, the arrangement can be determined. One possible solution is: D,
+                    B, A, C, E.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Circular Seating Arrangement</h2>
+                <p>In a circular seating arrangement, people are seated around a circle. The main difference between
+                    linear and circular seating is that in a circle, there are no extreme ends, and everyone is
+                    connected to two neighbors. Circular seating is typically more complex because the arrangement can
+                    either be clockwise or counterclockwise.</p>
+
+                <h3>Key Features of Circular Arrangement:</h3>
+                <ul>
+                    <li>People are seated around a circle, and there are no beginning or end positions.</li>
+                    <li>A person can be sitting at a fixed position relative to others, either clockwise or
+                        counterclockwise.</li>
+                    <li>A key feature is that the concept of "left" and "right" is important, and it can be determined
+                        based on the direction they are facing.</li>
+                </ul>
+
+                <h3>Types of Circular Seating Arrangements:</h3>
+                <ul>
+                    <li><b>Facing the Center:</b> All people are seated in a circle and face the center of the circle.
+                    </li>
+                    <li><b>Facing Outside:</b> All people are seated in a circle and face outward.</li>
+                    <li><b>Alternating Directions:</b> Some people face the center and others face outside.</li>
+                </ul>
+
+                <h3>Example of a Circular Seating Arrangement Problem:</h3>
+                <p>6 friends (A, B, C, D, E, F) are sitting around a circular table.</p>
+                <p><b>The clues are:</b></p>
+                <ul>
+                    <li>A is sitting directly opposite B.</li>
+                    <li>C is to the immediate left of A.</li>
+                    <li>D is not sitting next to E.</li>
+                    <li>F is sitting opposite C.</li>
+                </ul>
+                <p><b>Solution:</b> By using the clues, one can deduce the exact seating arrangement. For example: A, C,
+                    F, B, D, E (arranged clockwise).</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>3. Square Seating Arrangement</h2>
+                <p>A square seating arrangement is similar to a circular arrangement but arranged in a square shape. It
+                    typically involves four sides, and people are seated at the corners or along the sides. This type of
+                    seating arrangement is often used in problems involving a limited number of individuals or objects.
+                </p>
+
+                <h3>Key Features of Square Arrangement:</h3>
+                <ul>
+                    <li>People or objects are seated at the corners of a square or along the edges.</li>
+                    <li>Each person typically has a specific position relative to others.</li>
+                    <li>Similar to circular seating, directions such as "left," "right," or "opposite" are significant
+                        in square arrangements.</li>
+                </ul>
+
+                <h3>Types of Square Seating Arrangements:</h3>
+                <ul>
+                    <li><b>Corners:</b> People are seated at the four corners of the square.</li>
+                    <li><b>Around the Sides:</b> People can be seated along the sides of the square, with some seated at
+                        the corners and others in the middle of the sides.</li>
+                </ul>
+
+                <h3>Example of a Square Seating Arrangement Problem:</h3>
+                <p>4 people (P, Q, R, S) are seated at the corners of a square.</p>
+                <p><b>The clues are:</b></p>
+                <ul>
+                    <li>P is sitting at one of the corners.</li>
+                    <li>Q is sitting opposite P.</li>
+                    <li>R is sitting to the left of Q.</li>
+                </ul>
+                <p><b>Solution:</b> Based on the given clues, the seating arrangement can be determined. One possible
+                    solution is: P, R, Q, S.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Techniques to Solve Seating Arrangement Problems</h2>
+                <h3>1. Visualizing the Setup:</h3>
+                <p>Drawing a diagram or using a table can help in visualizing the arrangement.</p>
+                <ul>
+                    <li>For linear seating, a simple row can be drawn.</li>
+                    <li>For circular seating, a circle with labeled positions can be helpful.</li>
+                    <li>For square seating, a square grid can be drawn with positions at the corners.</li>
+                </ul>
+
+                <h3>2. Using Clues Efficiently:</h3>
+                <ul>
+                    <li>Start with the most specific clues (e.g., "A is sitting directly opposite B") and fill in the
+                        positions from there.</li>
+                    <li>Once a person is placed in one position, use the clues to determine the positions of others
+                        relative to them.</li>
+                    <li>Pay attention to the direction they are facing (clockwise or counterclockwise).</li>
+                </ul>
+
+                <h3>3. Elimination:</h3>
+                <p>If a person cannot be seated in certain positions due to a contradiction with the clues, eliminate
+                    those possibilities.</p>
+
+                <h3>4. Adjusting for Left or Right:</h3>
+                <p>In circular and square seating, pay attention to whether people are facing inwards or outwards, as
+                    this affects their relative positions.</p>
+            </div>
+        </div>
+        <hr style="height: 2px; background-color: black; border: none;margin-top: 20px;">
+        <div class="topic-name">
+            <h1 id="Blood">2. Blood Relations & Family Trees in Analytical Reasoning</h1>
+            <div class="topic-description">
+                <p>Blood relations and family tree problems are a common part of analytical reasoning, where the goal is
+                    to identify relationships between different individuals in a family or lineage based on given clues.
+                    These problems require logical thinking to decipher how individuals are connected, and they often
+                    involve terms like siblings, parents, spouses, uncles, aunts, cousins, etc.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>1. Blood Relations</h2>
+                <p>Blood relations refer to the direct and indirect connections between family members, which can be
+                    through blood ties (biological relationships). These relationships are described using specific
+                    terms, and the challenge in reasoning problems is to figure out these connections based on the clues
+                    provided.</p>
+
+                <h3>Common Blood Relation Terms:</h3>
+                <ul>
+                    <li><b>Father:</b> A male parent.</li>
+                    <li><b>Mother:</b> A female parent.</li>
+                    <li><b>Son:</b> A male child.</li>
+                    <li><b>Daughter:</b> A female child.</li>
+                    <li><b>Brother:</b> A male sibling.</li>
+                    <li><b>Sister:</b> A female sibling.</li>
+                    <li><b>Husband:</b> A male spouse.</li>
+                    <li><b>Wife:</b> A female spouse.</li>
+                    <li><b>Paternal Uncle:</b> The brother of one's father.</li>
+                    <li><b>Maternal Uncle:</b> The brother of one's mother.</li>
+                    <li><b>Paternal Aunt:</b> The sister of one's father.</li>
+                    <li><b>Maternal Aunt:</b> The sister of one's mother.</li>
+                    <li><b>Grandfather:</b> The father of one's parents.</li>
+                    <li><b>Grandmother:</b> The mother of one's parents.</li>
+                    <li><b>Cousin:</b> The child of one's uncle or aunt.</li>
+                    <li><b>Nephew:</b> The son of one's sibling.</li>
+                    <li><b>Niece:</b> The daughter of one's sibling.</li>
+                </ul>
+
+                <h3>Basic Types of Blood Relation Questions:</h3>
+                <ul>
+                    <li><b>Direct Blood Relations:</b> These involve relationships like father, mother, son, daughter,
+                        etc.</li>
+                    <li><b>Indirect Blood Relations:</b> These involve extended family relationships, like cousins,
+                        uncles, aunts, etc.</li>
+                    <li><b>Mixed Blood Relations:</b> These problems involve a combination of direct and indirect
+                        relationships.</li>
+                </ul>
+
+                <h3>Examples:</h3>
+                <p><b>Example 1:</b> "X is the father of Y. What is Y’s relationship with X?"</p>
+                <p><b>Solution:</b> Y is X’s son/daughter.</p>
+
+                <p><b>Example 2:</b> "A is the sister of B. B is the father of C. What is C’s relationship to A?"</p>
+                <p><b>Solution:</b> C is A’s niece/nephew.</p>
+
+                <p><b>Example 3:</b> "X is the brother of Y. Y’s daughter Z is married to W. W is the son of T. What is
+                    X’s relationship with T?"</p>
+                <p><b>Solution:</b> X is T’s brother-in-law.</p>
+
+                <h3>Example of Blood Relation Problem:</h3>
+                <p><b>Clue:</b> "A’s father is B. C is the mother of A. D is the brother of A. What is the relationship
+                    of D to C?"</p>
+                <p><b>Solution:</b> D is C’s son (as C is A’s mother, and D is A’s brother).</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>2. Family Trees</h2>
+                <p>A family tree is a diagram that represents family relationships over multiple generations. It helps
+                    in visualizing the blood relations of a person, showing ancestors, descendants, and other family
+                    members.</p>
+
+                <h3>Basic Structure of a Family Tree:</h3>
+                <ul>
+                    <li>The root of the family tree often represents the earliest known ancestor.</li>
+                    <li>The branches represent the descendants of that ancestor.</li>
+                    <li>Vertical lines show the relationship between generations.</li>
+                    <li>Horizontal lines show sibling relationships (brothers and sisters).</li>
+                </ul>
+
+                <h3>Key Points in Reading and Interpreting Family Trees:</h3>
+                <ul>
+                    <li><b>Generations:</b> Family members in the same level (or row) of a family tree are usually from
+                        the same generation.</li>
+                    <li><b>Marriage Lines:</b> A line between two individuals represents a marriage.</li>
+                    <li><b>Vertical Lines:</b> A vertical line connects parents to their children.</li>
+                    <li><b>Siblings:</b> Siblings are typically connected by horizontal lines.</li>
+                </ul>
+
+                <h3>Example of a Family Tree:</h3>
+                <p>Here’s an example of a simple family tree:</p>
+                <pre>
+            Grandfather
+                |
+        -------------------
+        |                 |
+      Father              Uncle
+        |                 |
+     ---------------      -----------
+     |             |      |         |
+  Son (X)       Daughter (Y)  Nephew (Z)
+    </pre>
+                <p><b>In this family tree:</b></p>
+                <ul>
+                    <li>Grandfather is the ancestor of all individuals.</li>
+                    <li>Father and Uncle are siblings (children of the grandfather).</li>
+                    <li>X and Y are the children of the father (siblings), while Z is the nephew of X and Y (son of the
+                        uncle).</li>
+                </ul>
+
+                <h3>Interpreting Relationships:</h3>
+                <ul>
+                    <li><b>X’s relationship with the grandfather:</b> X is the grandchild.</li>
+                    <li><b>Y’s relationship with the uncle:</b> Y is the niece of the uncle.</li>
+                    <li><b>Z’s relationship with the grandfather:</b> Z is the grandson of the grandfather.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>Techniques to Solve Blood Relations and Family Tree Problems</h2>
+                <h3>i. Visualize the Relationships:</h3>
+                <p>Whenever a family tree is mentioned, draw it out. This helps in better understanding and organizing
+                    relationships visually.</p>
+
+                <h3>ii. Work from Known Facts:</h3>
+                <p>Start with the given facts in the problem (e.g., A is the son of B) and try to work backward and
+                    forward in the family tree to establish connections.</p>
+
+                <h3>iii. Use the Correct Terms:</h3>
+                <p>Be careful with the use of family relation terms like uncle, aunt, niece, nephew, etc. The correct
+                    understanding of these terms is crucial to solving the problems.</p>
+
+                <h3>iv. Follow the Gender-specific Relationships:</h3>
+                <p>Gender is often an important factor in blood relations, especially for terms like uncle, aunt,
+                    nephew, niece, etc.</p>
+
+                <h3>v. Count Generations:</h3>
+                <p>In more complex family tree problems, counting generations can help identify the level of
+                    relationship (grandparent, grandchild, cousin, etc.).</p>
+
+                <h3>vi. Pay Attention to Marriages:</h3>
+                <p>Relationships through marriage (in-laws, husband, wife, etc.) must also be considered in family trees
+                    and blood relations.</p>
+
+                <h3>Example Problem:</h3>
+                <p><b>Clue:</b> "A is the son of B. C is the sister of B. D is the husband of C. E is the daughter of D
+                    and C. F is the son of A. What is the relationship of F to D?"</p>
+                <p><b>Solution:</b></p>
+                <ul>
+                    <li>A is the son of B, so B is A's father.</li>
+                    <li>C is the sister of B, making C A’s aunt.</li>
+                    <li>D is the husband of C, making D A’s uncle.</li>
+                    <li>E is the daughter of D and C, so E is A’s cousin.</li>
+                    <li>F is the son of A, so F is A’s son.</li>
+                    <li>Therefore, F is the nephew of D.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Distances">3. Directions & Distances in Analytical Reasoning</h1>
+            <div class="topic-description">
+                <p>In analytical reasoning, directions and distances problems are designed to test your ability to
+                    understand and interpret spatial relationships. These problems often involve a person moving in
+                    different directions, and you must calculate their final position or identify a specific point based
+                    on the given directions and distances.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>i. Directions</h2>
+                <p>Directions refer to the specific paths or movements someone follows in relation to a starting point.
+                    The four basic directions are:</p>
+                <ul>
+                    <li><b>North (N)</b></li>
+                    <li><b>South (S)</b></li>
+                    <li><b>East (E)</b></li>
+                    <li><b>West (W)</b></li>
+                </ul>
+                <p>You can also encounter intermediate directions, such as:</p>
+                <ul>
+                    <li><b>North-East (NE)</b></li>
+                    <li><b>South-East (SE)</b></li>
+                    <li><b>South-West (SW)</b></li>
+                    <li><b>North-West (NW)</b></li>
+                </ul>
+                <p>These directions are used to describe movements and locations in a coordinate-like system, where each
+                    direction corresponds to a 90° angle (or a combination of those for intermediate directions).</p>
+
+                <h3>Basic Directions Terminology:</h3>
+                <ul>
+                    <li><b>Left and Right:</b> These terms are relative to the direction the person is facing. For
+                        example, if someone is facing North, left would be West, and right would be East.</li>
+                    <li><b>Turning:</b> When someone turns (like turning 90° left or right), the direction they are
+                        facing changes, affecting the subsequent movement.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Distances</h2>
+                <p>Distances refer to how far someone travels in a particular direction. This can be measured in units
+                    like meters, kilometers, or any given unit of distance.</p>
+                <ul>
+                    <li><b>Straight-line Distance:</b> The direct distance between two points, without considering the
+                        path.</li>
+                    <li><b>Total Distance:</b> The overall distance traveled, considering all the turns and movements
+                        made.</li>
+                </ul>
+                <p>When combined with directions, distances provide a way to determine the final position of someone
+                    after traveling a certain distance in each direction.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. Types of Problems in Directions & Distances</h2>
+
+                <h3>a. Simple Direction Problems</h3>
+                <p>These problems typically involve one person moving in specific directions, and you need to figure out
+                    their final position or determine the relationship between two points.</p>
+
+                <h4>Example Problem:</h4>
+                <p>"A person starts at point X and walks 10 meters North, then turns left and walks 5 meters. Then, he
+                    turns right and walks 10 meters. In which direction is he now from his starting point?"</p>
+                <p><b>Solution:</b></p>
+                <ul>
+                    <li>Starts at point X.</li>
+                    <li>Moves 10 meters North.</li>
+                    <li>Turns left (to the West) and walks 5 meters.</li>
+                    <li>Turns right (to the North) and walks 10 meters.</li>
+                </ul>
+                <p>So, after moving, the person is 5 meters North and 5 meters West from the starting point (point X).
+                    Therefore, the final direction is North-West.</p>
+
+                <h3>b. Distance Calculation Problems</h3>
+                <p>In these problems, you are given several directions and distances, and you are asked to find the
+                    total distance or the straight-line distance between two points.</p>
+
+                <h4>Example Problem:</h4>
+                <p>"A person walks 5 km East, then 10 km North, and then 5 km West. What is the straight-line distance
+                    between the starting point and the final point?"</p>
+                <p><b>Solution:</b></p>
+                <ul>
+                    <li>The person walks 5 km East, then 5 km West, so there is no net movement in the East-West
+                        direction.</li>
+                    <li>The person walks 10 km North.</li>
+                </ul>
+                <p>Therefore, the total distance between the starting point and the final point is simply 10 km North.
+                </p>
+
+                <h3>c. Turning and Relative Directions</h3>
+                <p>These problems involve turns at various points and may include both direction changes and distance
+                    traveled.</p>
+
+                <h4>Example Problem:</h4>
+                <p>"A person walks 10 meters East, then turns right and walks 15 meters, turns right again and walks 10
+                    meters. Finally, he turns left and walks 5 meters. How far is he from his starting point?"</p>
+                <p><b>Solution:</b></p>
+                <ul>
+                    <li>Start at the origin.</li>
+                    <li>Walk 10 meters East.</li>
+                    <li>Turn right (now facing South), walk 15 meters.</li>
+                    <li>Turn right again (now facing West), walk 10 meters.</li>
+                    <li>Turn left (now facing South), walk 5 meters.</li>
+                </ul>
+                <p>Now, the person is 15 meters South and 5 meters West from the starting point. Using the Pythagorean
+                    theorem, we calculate the straight-line distance:</p>
+                <pre>Distance = sqrt(15² + 5²) = sqrt(225 + 25) = sqrt(250) ≈ 15.81 meters</pre>
+                <p>Thus, the person is approximately 15.81 meters from the starting point.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iv. Advanced Direction and Distance Problems</h2>
+                <p>Advanced problems may involve more complex movements and can involve directions like "North-East" or
+                    "South-West," as well as relative movement, such as changes in direction at different points. These
+                    problems may also require the use of the coordinate plane to find the final position.</p>
+
+                <h4>Example Problem:</h4>
+                <p>"A person starts at point P and moves 4 km North-East, then 3 km South-East. How far and in which
+                    direction is he from point P?"</p>
+                <p><b>Solution:</b></p>
+                <ul>
+                    <li>Move 4 km North-East. This is along the 45° line (diagonal), so break it into two components: 4
+                        km North and 4 km East.</li>
+                    <li>Move 3 km South-East. This is along the 45° line as well, so break it into two components: 3 km
+                        South and 3 km East.</li>
+                </ul>
+                <p>Now, sum up the movements:</p>
+                <ul>
+                    <li><b>North-South:</b> 4 km North - 3 km South = 1 km North</li>
+                    <li><b>East-West:</b> 4 km East + 3 km East = 7 km East</li>
+                </ul>
+                <p>Thus, the person is 1 km North and 7 km East from point P. The straight-line distance can be
+                    calculated using the Pythagorean theorem:</p>
+                <pre>Distance = sqrt(1² + 7²) = sqrt(1 + 49) = sqrt(50) ≈ 7.07 km</pre>
+                <p>Therefore, the person is approximately 7.07 km in the North-East direction from point P.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>v. Solving Tips for Direction & Distance Problems</h2>
+                <h3>Use Cardinal Directions:</h3>
+                <p>Always keep in mind that North, South, East, and West are fundamental directions. For non-cardinal
+                    directions, break them into their components (e.g., North-East = North + East).</p>
+
+                <h3>Diagram:</h3>
+                <p>Drawing a diagram or using a coordinate system helps visualize movements and directions. This is
+                    especially useful in complex problems involving multiple turns and distances.</p>
+
+                <h3>Apply Pythagorean Theorem:</h3>
+                <p>For calculating straight-line distances (especially in problems involving two perpendicular
+                    directions), use the Pythagorean theorem:</p>
+                <pre>Distance = sqrt(x² + y²)</pre>
+                <p>where x and y are the distances moved in the East-West and North-South directions, respectively.</p>
+
+                <h3>Relative Directions:</h3>
+                <p>When dealing with turns (left/right), ensure you update the direction the person is facing after each
+                    turn.</p>
+
+                <h3>Component Breakdown:</h3>
+                <p>For diagonal movements like North-East or South-West, break them into their North-South and East-West
+                    components to calculate distances more easily.</p>
+            </div>
+        </div>
+        <div class="topic-name">
+            <hr style="height: 3px; background-color: black; border: none;margin-top: 20px;">
+            <h1 id="Order">4. Order & Ranking in Analytical Reasoning</h1>
+            <div class="topic-description">
+                <p>Order and Ranking problems are designed to test your ability to arrange or rank individuals, objects,
+                    or entities based on certain criteria, such as height, age, speed, etc. These problems require
+                    logical deduction and sometimes mathematical calculations. The key idea is to figure out the
+                    relative position of items or individuals from the given information.</p>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>i. Types of Order & Ranking Problems</h2>
+                <h3>a. Simple Order Problems</h3>
+                <p>These problems involve arranging individuals or items in a particular order based on a given set of
+                    conditions, such as height, age, etc.</p>
+
+                <h4>Example Problem:</h4>
+                <p>"Five friends, A, B, C, D, and E, are sitting in a row. A is taller than B but shorter than C. D is
+                    taller than E but shorter than C. B is taller than E. Arrange them in order of height."</p>
+                <p><b>Solution:</b></p>
+                <ul>
+                    <li>From the given information, we know the relative height relationships:</li>
+                    <ul>
+                        <li>A > B > E</li>
+                        <li>D > E < B</li>
+                        <li>A < C, D < C</li>
+                    </ul>
+                    <li>Therefore, the order of height from shortest to tallest is: E, B, A, D, C.</li>
+                </ul>
+
+                <h3>b. Ranking Problems</h3>
+                <p>Ranking problems typically involve determining the position of an individual or an item in a ranked
+                    list, based on certain characteristics such as speed, marks, or age.</p>
+
+                <h4>Example Problem:</h4>
+                <p>"A class has 50 students. A is ranked 15th from the top, and B is ranked 20th from the bottom. What
+                    is the rank of B from the top?"</p>
+                <p><b>Solution:</b></p>
+                <ul>
+                    <li>The total number of students is 50.</li>
+                    <li>B’s position from the bottom is 20th, meaning there are 19 students below B.</li>
+                    <li>Therefore, B’s position from the top will be: 50 - 20 + 1 = 31.</li>
+                    <li>So, B is ranked 31st from the top.</li>
+                </ul>
+
+                <h3>c. Relative Position Problems</h3>
+                <p>In these problems, you are asked to find the relative position of a person or item with respect to
+                    others.</p>
+
+                <h4>Example Problem:</h4>
+                <p>"In a race of 10 runners, A finishes ahead of B, but behind C. D finishes ahead of A but behind E.
+                    Who finishes 2nd?"</p>
+                <p><b>Solution:</b></p>
+                <ul>
+                    <li>The order of finishers based on the given information is:</li>
+                    <ul>
+                        <li>C > A > B</li>
+                        <li>E > D > A</li>
+                    </ul>
+                    <li>Therefore, the finish order looks like this: C > E > D > A > B.</li>
+                    <li>Thus, E finishes 2nd.</li>
+                </ul>
+
+                <h3>d. Directional Ranking (Top-to-Bottom / Left-to-Right)</h3>
+                <p>This involves ordering or ranking entities from a given reference point, such as "from the left",
+                    "from the top", etc.</p>
+
+                <h4>Example Problem:</h4>
+                <p>"Five friends are seated in a row. A is sitting at the 1st position, B is sitting immediately to the
+                    right of A, C is sitting to the left of D, and E is sitting at the 5th position. What is the
+                    position of C?"</p>
+                <p><b>Solution:</b></p>
+                <ul>
+                    <li>A is at position 1, B is to the right of A (so B is at position 2).</li>
+                    <li>E is at position 5.</li>
+                    <li>C is to the left of D. So, D must be at position 4, and C will be at position 3.</li>
+                    <li>The positions from left to right are: A, B, C, D, E.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>ii. Key Concepts in Order & Ranking</h2>
+                <h3>a. Relative Position and Absolute Position</h3>
+                <ul>
+                    <li><b>Relative Position:</b> The position of an individual or object relative to others. For
+                        example, A is taller than B, or C finishes before D.</li>
+                    <li><b>Absolute Position:</b> The exact position in a list or ranking, such as "1st" or "10th."</li>
+                </ul>
+
+                <h3>b. Direct & Indirect Relationships</h3>
+                <ul>
+                    <li><b>Direct Relationship:</b> Explicit information about the position or order of individuals
+                        (e.g., "A is taller than B").</li>
+                    <li><b>Indirect Relationship:</b> Information about one person's position is indirectly related to
+                        others, requiring inferences (e.g., "A is taller than B, who is taller than C").</li>
+                </ul>
+
+                <h3>c. Use of Positions and Places</h3>
+                <p>For ranking problems, positions are often numbered from the top or bottom, and this numbering needs
+                    to be accounted for. Common terms to note are:</p>
+                <ul>
+                    <li><b>From the top:</b> The position starting from 1 at the top.</li>
+                    <li><b>From the bottom:</b> The position starting from 1 at the bottom, going upward.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iii. Solving Strategies for Order & Ranking Problems</h2>
+                <ul>
+                    <li><b>Create a Visual Representation:</b> Drawing a chart or a number line can be useful,
+                        especially in problems with multiple relationships.</li>
+                    <li><b>Break Down Information:</b> Start with the most direct information and build up the ranking
+                        step-by-step.</li>
+                    <li><b>Work with Known Ranks First:</b> If some positions are known, use them as anchors to fill in
+                        the rest of the information.</li>
+                    <li><b>Use Elimination:</b> If multiple conditions exist, eliminate impossible arrangements, which
+                        often leads to the correct order.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h2>iv. Practice Example Problems</h2>
+                <h4>Example 1:</h4>
+                <p>"In a group of six friends, A is taller than B but shorter than C. D is shorter than E but taller
+                    than A. E is taller than C. Arrange them from shortest to tallest."</p>
+                <p><b>Solution:</b></p>
+                <ul>
+                    <li>From the clues: A < C, A < D < E, and E> C.</li>
+                    <li>The order of height from shortest to tallest is: B, A, D, C, E.</li>
+                </ul>
+                <hr style="height: 1px; background-color: black; border: none;">
+                <h4>Example 2:</h4>
+                <p>"In a group of 8 students, A is ranked 3rd from the top. What is A’s rank from the bottom?"</p>
+                <p><b>Solution:</b></p>
+                <ul>
+                    <li>Total students = 8.</li>
+                    <li>A’s position from the top = 3rd.</li>
+                    <li>A’s position from the bottom = 8 - 3 + 1 = 6.</li>
+                    <li>Therefore, A’s rank from the bottom is 6th.</li>
+                </ul>
+
+                <h2>v. Common Terms in Order & Ranking Problems</h2>
+                <ul>
+                    <li><b>From the top:</b> Refers to positions starting from the first in the list.</li>
+                    <li><b>From the bottom:</b> Refers to positions starting from the last in the list.</li>
+                    <li><b>Before/After:</b> Indicates the relative position of one individual or item compared to
+                        another.</li>
+                    <li><b>Tied positions:</b> Sometimes individuals may have the same rank. The problem may require
+                        dealing with tied positions.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Constitution Learn</h3>
+                <p>Your one-stop destination to explore, understand, and learn about the Constitution of India.
+                    Empowering knowledge and civic awareness for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Courses</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div> <a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                    <div> <a href="https://x.com/?lang=en" target="_blank">Twitter</a> </div>
+                    <div> <a href="https://www.instagram.com/" target="_blank">Instagram</a> </div>
+                    <div> <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constitution Learn. All Rights Reserved. | <a href="privacy.html" target="_blank">Privacy
+                    Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
